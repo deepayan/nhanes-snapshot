@@ -1,0 +1,696 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0076)http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx -->
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>INS_H</TITLE>     
+<META name="title" content="NHANES 2013-2014: Insulin Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#Component_Description">Component 
+  Description</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#Eligible_Sample">Eligible 
+  Sample</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#Description_of_Laboratory_Methodology">Description 
+  of Laboratory Methodology</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#Laboratory_Method_Files">Laboratory 
+  Method Files</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#Laboratory_Quality_Assurance_and_Monitoring">Laboratory 
+  Quality Assurance and Monitoring</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#Data_Processing_and_Editing">Data 
+  Processing and Editing</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#Analytic_Notes">Analytic 
+  Notes</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#References">References</A> 
+            </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#Codebook">Codebook</A> 
+              
+  <UL id="CodebookLinks">
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#SEQN">SEQN 
+    - Respondent sequence number</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#WTSAF2YR">WTSAF2YR 
+    - Fasting Subsample MEC Weight</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#LBXIN">LBXIN 
+    - Insulin (uU/mL)</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#LBDINSI">LBDINSI 
+    - Insulin (pmol/L)</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#PHAFSTHR">PHAFSTHR 
+    - Total length of 'food fast', hours</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=1912&amp;Dataset=INS_H#PHAFSTMN">PHAFSTMN 
+    - Total length of 'food fast', minutes</A>               
+</LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>2013-2014 Data Documentation, Codebook, and Frequencies</H2>
+<H3>Insulin (INS_H)</H3>
+<H4> Data File: INS_H.xpt</H4>
+<H5 class="left">First Published: April 2016</H5>
+<H5 class="right">Last Revised: NA</H5>
+<DIV style="width: 75%; margin-left: 20%;">
+<H5 class="specialnote">Note: See Analytical Notes</H5></DIV></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P>Insulin is the primary hormone responsible for controlling glucose 
+metabolism, and its secretion is determined by plasma glucose concentration. The 
+insulin molecule is synthesized in the pancreas as pro-insulin and is later 
+cleaved to form C-peptide and insulin. The principal function of insulin is to 
+control the uptake and utilization of glucose in the peripheral tissues. Insulin 
+concentrations are severely reduced in insulin-dependent diabetes mellitus 
+(IDDM) and some other conditions, while insulin concentrations are raised in 
+non-insulin-dependent diabetes mellitus (NIDDM), obesity, and some endocrine 
+disorders.</P>
+<P>Diabetes is a leading cause of disease and death in the United States. 
+Approximately eight million Americans are known to have diabetes, and it is 
+estimated that an equal amount have undiagnosed diabetes. In 1993, nearly 18 
+percent of all deaths for persons over the age of 25 were among people with 
+diabetes. The prevalence of diabetes and overweight (one of the major risk 
+factors for diabetes) continues to increase. Substantial new efforts to prevent 
+or control diabetes have begun, including the Diabetes Prevention Trial and the 
+National Diabetes Education Program. </P>
+<P>Diabetes testing provides population data to: 1) determine a national 
+estimate of diabetes disease prevalence (diagnosed and undiagnosed); 2) identify 
+the risk factors of diabetes disease; 3) permit a national cohort to be 
+established for follow-up studies of this condition; and 4) provide critical 
+information to clinicians and public health officials for the development of 
+preventive care and community-based interventions.</P>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P>Participants aged 12 years and older who were examined in the morning session 
+were eligible.</P>
+<H2 id="Description_of_Laboratory_Methodology">Description of Laboratory 
+Methodology</H2>
+<P>The AIA-PACK IRI is a two-site immunoenzymometric assay, which is performed
+ on Tosoh AIA System analyzer. This assay is designed for the quantitative
+ measurement of Insulin (IRI) in human serum. Insulin present in the test sample
+ is bound with monoclonal antibody immobilized on a magnetic solid phase and
+ enzyme-labeled monoclonal antibody in the AIA-PACK. The magnetic beads are
+ washed to remove unbound enzyme-labeled monoclonal antibody and are then
+ incubated with a fluorogenic substrate, 4-methylumbelliferyl phosphate (4MUP).
+ The amount of enzyme-labeled monoclonal antibody that binds to the beads is
+ directly proportional to the insulin concentration in the test sample. A
+ standard curve is constructed, and unknown sample concentrations are calculated
+ using this curve.</P>
+<P>Refer to the Laboratory Method Files section for detailed laboratory 
+procedure manual(s) of the methods used.</P>
+<P>There were changes to the lab method, lab equipment and lab site for this 
+component in the NHANES 2013-2014 cycle. In the 2011-2012 cycle, the University 
+of Minnesota performed this testing. The University of Missouri-Columbia began 
+testing insulin in the 2013-2014 cycle.</P>
+<H2 id="Laboratory_Method_Files">Laboratory Method Files</H2>
+<P><A href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/labmethods/INS_H_MET_INSULIN.pdf" 
+target="_blank">Insulin</A>           <SPAN> (April 2016)</SPAN>         </P>
+<H2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+Assurance and Monitoring</H2>
+<P>Serum specimens were processed, stored, and shipped to the University of 
+Missouri-Columbia, Columbia, MO for analysis.</P>
+<P>Detailed instructions on specimen collection and processing are discussed in 
+the NHANES <A href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/manuals/2013_mec_laboratory_procedures_manual.pdf">Laboratory 
+Procedures Manual (LPM)</A>.</P>
+<P>The NHANES quality assurance and quality control (QA/QC) protocols meet the 
+1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions 
+are discussed in the NHANES <A href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/manuals/2013_mec_laboratory_procedures_manual.pdf">LPM</A>.</P>
+<P><STRONG>Mobile Examination Centers (MECs) </STRONG><BR>Laboratory team 
+performance is monitored using several techniques. NCHS and contract consultants 
+use a structured quality assurance evaluation during unscheduled visits to 
+evaluate both the quality of the laboratory work and the quality control 
+procedures. Each laboratory staff member is observed for equipment operation, 
+specimen collection and preparation; testing procedures and constructive 
+feedback are given to each staff member. Formal retraining sessions are 
+conducted annually to ensure that required skill levels were maintained.</P>
+<P><STRONG>Analytical Laboratories </STRONG><BR>NHANES uses several methods to 
+monitor the quality of the analyses performed by the contract laboratories. In 
+the MEC, these methods include performing blind split samples collected on “dry 
+run” sessions. In addition, contract laboratories randomly perform repeat 
+testing on 2% of all specimens. </P>
+<P>NCHS developed and distributed a quality control protocol for all the 
+contract laboratories which outlined the use of Westgard rules (Westgard et al, 
+1981) when running NHANES specimens. Progress reports containing any problems 
+encountered during shipping or receipt of specimens, summary statistics for each 
+control pool, QC graphs, instrument calibration, reagents, and any special 
+considerations are submitted to NCHS quarterly. The reports are reviewed for 
+trends or shifts in the data. The laboratories are required to explain any 
+identified areas of concern.</P>
+<P>All QC procedures recommended by the manufacturers were followed. Reported 
+results for all assays meet the University of Missouri’s quality control and 
+quality assurance performance criteria for accuracy and precision, similar to 
+the Westgard rules</P>
+<H2 id="Data_Processing_and_Editing">Data Processing and Editing</H2>
+<P>The data were reviewed. Incomplete data or improbable values were sent to the 
+performing laboratory for confirmation.</P>
+<P>One variable was created in this data file using the following formula:</P>
+<P><STRONG>LBXIN and LBDINSI: </STRONG><BR>The insulin value in µU/mL (LBXIN) 
+was converted to pmol/L (LBDINSI) by multiplying by 6.0 (rounded to 2 decimals). 
+</P>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P>Refer to the 2013-2014 <A href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2013">Laboratory 
+Data Overview</A> for general information on NHANES laboratory data.</P>
+<P><B>Sampling Weights</B></P>
+<P>Insulin was measured in a fasting subsample of persons 12 years and 
+older.&nbsp;</P>
+<P>The analyst is strongly encouraged to use the fasting sampling weights in 
+this file to analyze 2013-2014 insulin levels.</P>
+<P>There will be two weight files associated with the subsample for the diabetes 
+data. Use the fasting sample weights (WTSFA2YR) when analyzing the fasting 
+glucose and insulin levels only. Use the OGTT sample weights (WTSOG2YR) when 
+analyzing the insulin, fasting AND OGTT glucose levels or when analyzing ONLY 
+OGTT glucose levels. NOTE: plasma fasting glucose and OGTT weights and data are 
+in separate files (GLU_H and OGTT_H, respectively).</P>
+<P><B>Demographic and Other Related Variables</B></P>
+<P>The analysis of NHANES laboratory data must be conducted using the 
+appropriate survey design and demographic variables. The NHANES 2013-2014 
+Demographics File contains demographic data, health indicators, and other 
+related information collected during household interviews as well as the sample 
+design variables. The recommended procedure for variance estimation requires use 
+of stratum and PSU variables (SDMVSTRA and SDMVPSU, respectively) in the 
+demographic data file.</P>
+<P>The Fasting Questionnaire File includes auxiliary information such as fasting 
+status, the time of venipuncture, and the conditions precluding 
+venipuncture.</P>
+<P>The demographics and fasting questionnaire files may be linked to the 
+laboratory data file using the unique survey participant identifier (i.e., 
+SEQN).</P>
+<P>This laboratory data file can be linked to the other NHANES data files using 
+the unique survey participant identifier SEQN.</P>
+<P><B>Detection Limits</B></P>
+<P><B>&nbsp;</B>The detection limits were constant for the analyte in the data 
+set. The variable prefixed LBX (ex., LBXIN) provides the analytic result for 
+that analyte.</P>
+<P>The lower limit of detection (LLOD, in uU/mL) for insulin is:</P>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>&nbsp;<STRONG>Variable Name</STRONG></TD>
+    <TD><STRONG>&nbsp;SAS Label</STRONG></TD>
+    <TD><STRONG>LLOD&nbsp;</STRONG></TD></TR>
+  <TR>
+    <TD>&nbsp;LBXIN</TD>
+    <TD>&nbsp;Insulin</TD>
+    <TD>&nbsp;1.0</TD></TR></TBODY></TABLE>
+<P><STRONG>*Analytic Note for Change in Serum Insulin Methods from 2011-2012 
+cycle to 2013-2014 cycle</STRONG></P>
+<P><STRONG>Change in methods for serum insulin methods</STRONG></P>
+<P>There was a change in serum insulin methods from 2011-2012 to 2013-2014. In 
+2011-2012, serum insulin was performed using a chemiluminescent “sandwich” 
+immunoassay performed on the Roche Elecsys 2010 analyzer. In 2013-2014, serum 
+insulin was performed using a two-site immunoenzymometric assay performed on the 
+Tosoh AIA-900 analyzer. The geometric mean (SE) insulin of participants 
+decreased from 10.31 (0.17) µU/mL in 2011-2012 to 9.20 (0.27) µU/mL&nbsp; in 
+2013-2014. A crossover study was performed on 237 specimens performed by the 
+Roche and Tosoh insulin methods. The Roche insulin method arithmetic mean was 
+11.3% higher than the Tosoh method mean (16.01 vs. 14.39 µU/mL, respectively) 
+for the crossover study. To trend the serum insulin from 2011-2014, the insulin 
+values were log10 transformed since the distribution of values were skewed. The 
+following “backward” Deming regression can be applied to trend the 2013-2014 
+Tosoh method values to match the 2011-2012 Roche method values (µU/mL):</P>
+<P>Insulin (Roche-equivalent) = 10**(0.9765*log10(Tosoh insulin) + 0.07832)</P>
+<P>Alternatively, the following “forward” Deming regression can be applied to 
+trend the 2011-2012 Roche method values to match the 2013-2014 Tosoh method 
+values (µU/mL):</P>
+<P>Insulin (Tosoh-equivalent) = 10**(1.024*log10(Roche insulin) – 0.0802)</P>
+<P>The application of the “backward” Deming regression to the participant 
+insulin distribution of 2011-2014 can be seen in the following table:</P>
+<P></P>
+<P></P>
+<TABLE bordercolor="#000000" border="1">
+  <CAPTION align="left" valign="top">Weighted geometric mean, standard error of 
+  the geometric mean and selected percentiles for serum insulin 
+(µU/mL)</CAPTION>
+  <THEAD>
+  <TR>
+    <TH style="text-align: center;">Years</TH>
+    <TH style="text-align: center;">N</TH>
+    <TH style="text-align: center;">Geometic  Mean</TH>
+    <TH style="text-align: center;">SE Geometic Mean</TH>
+    <TH style="text-align: center;">5th percentile</TH>
+    <TH style="text-align: center;">25th percentile</TH>
+    <TH style="text-align: center;">50th percentile</TH>
+    <TH style="text-align: center;">75th percentile</TH>
+    <TH style="text-align: center;">95th percentile</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD style="text-align: center;">2011-2012</TD>
+    <TD style="text-align: center;">2704</TD>
+    <TD style="text-align: center;">10.31</TD>
+    <TD style="text-align: center;">0.17</TD>
+    <TD style="text-align: center;">3.51</TD>
+    <TD style="text-align: center;">6.47</TD>
+    <TD style="text-align: center;">10.13</TD>
+    <TD style="text-align: center;">16.21</TD>
+    <TD style="text-align: center;">32.22</TD></TR>
+  <TR>
+    <TD style="text-align: center;">Unadjusted 2013-2014</TD>
+    <TD style="text-align: center;">2848</TD>
+    <TD style="text-align: center;">9.20</TD>
+    <TD style="text-align: center;">0.27</TD>
+    <TD style="text-align: center;">3.00</TD>
+    <TD style="text-align: center;">5.74</TD>
+    <TD style="text-align: center;">8.89</TD>
+    <TD style="text-align: center;">14.38</TD>
+    <TD style="text-align: center;">31.57</TD></TR>
+  <TR>
+    <TD style="text-align: center;">Deming-adjusted 2013-2014</TD>
+    <TD style="text-align: center;">2848</TD>
+    <TD style="text-align: center;">10.46</TD>
+    <TD style="text-align: center;">0.31</TD>
+    <TD style="text-align: center;">3.50</TD>
+    <TD style="text-align: center;">6.60</TD>
+    <TD style="text-align: center;">10.12</TD>
+    <TD style="text-align: center;">16.17</TD>
+    <TD style="text-align: center;">34.86</TD></TR></TBODY></TABLE>
+<P>Serum insulin is not currently standardized or harmonized so methods can 
+differ and adjustments are recommended to trend insulin values.</P>
+<P>Please refer to the NHANES Analytic Guidelines and the on-line NHANES 
+Tutorial for further details on the use of sample weights and other analytic 
+issues.</P></DIV>
+<DIV id="References">
+<H2>References</H2>
+<UL>
+  <LI>Caudill S.P., Schleicher R.L., Pirkle J.L. Multi-rule quality control for 
+  the age-related eye disease study. Statist. Med. (2008) 
+27(20):4094-40106.</LI>
+  <LI>Westgard J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewhart chart 
+  for quality control in clinical chemistry. Clin Chem (1981) 
+27:493-501.</LI></UL></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 12 YEARS -			150 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="WTSAF2YR">WTSAF2YR - Fasting Subsample MEC Weight</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">WTSAF2YR</DD>
+  <DT>SAS Label: </DT>
+  <DD>Fasting Subsample MEC Weight</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Fasting Subsample MEC Weight</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 12 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">12937.987305 to 395978.46579</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2927</TD>
+    <TD align="right" class="values">2927</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">No Lab Result</TD>
+    <TD align="right" class="values">402</TD>
+    <TD align="right" class="values">3329</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">3329</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXIN">LBXIN - Insulin (uU/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXIN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Insulin (uU/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Insulin (uU/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 12 YEARS -			150 YEARS</DD>
+  <DT>Hard Edits: </DT>
+  <DD class="info">0 to 9999.99</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.14 to 682.48</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3093</TD>
+    <TD align="right" class="values">3093</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">236</TD>
+    <TD align="right" class="values">3329</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDINSI">LBDINSI - Insulin (pmol/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDINSI</DD>
+  <DT>SAS Label: </DT>
+  <DD>Insulin (pmol/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Insulin (pmol/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 12 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.84 to 4094.88</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3093</TD>
+    <TD align="right" class="values">3093</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">236</TD>
+    <TD align="right" class="values">3329</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="PHAFSTHR">PHAFSTHR - Total length of 'food fast', 
+hours</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">PHAFSTHR</DD>
+  <DT>SAS Label: </DT>
+  <DD>Total length of 'food fast', hours</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Total length of 'food fast', hours</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 12 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0 to 34</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3291</TD>
+    <TD align="right" class="values">3291</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">38</TD>
+    <TD align="right" class="values">3329</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="PHAFSTMN">PHAFSTMN - Total length of 'food fast', 
+minutes</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">PHAFSTMN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Total length of 'food fast', minutes</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Total length of 'food fast', minutes</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 12 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0 to 59</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3291</TD>
+    <TD align="right" class="values">3291</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">38</TD>
+    <TD align="right" class="values">3329</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>

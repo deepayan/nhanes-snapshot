@@ -1,0 +1,935 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Prostate Conditions" />
+    <meta name="DC.Subject" content="NHANES 2007-2008: Prostate Conditions Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2007-2008 Questionnaire page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&amp;CycleBeginYear=2007">
+      <title>
+						NHANES 2007-2008:
+						Prostate Conditions Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#KIQBOX1">KIQBOX1 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#KIQ081">KIQ081 - Have trouble starting to urinate?</a>
+                </li>
+                <li>
+                  <a href="#KIQ101">KIQ101 - After urinating does bladder feel empty?</a>
+                </li>
+                <li>
+                  <a href="#KIQ490">KIQ490 - Have prostate disease?</a>
+                </li>
+                <li>
+                  <a href="#KIQBOX2">KIQBOX2 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#KIQ121">KIQ121 - Ever told had enlarged prostate?</a>
+                </li>
+                <li>
+                  <a href="#KIQ141">KIQ141 - Was it a benign enlargement?</a>
+                </li>
+                <li>
+                  <a href="#KIQ161">KIQ161 - How old when told had benign enlargement</a>
+                </li>
+                <li>
+                  <a href="#KIQBOX3">KIQBOX3 - CHECK ITEM</a>
+                </li>
+                <li>
+                  <a href="#KIQ182">KIQ182 - Was the enlargement due to cancer?</a>
+                </li>
+                <li>
+                  <a href="#KIQ361">KIQ361 - Rectal exam to check for prostate cancer</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2007-2008 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Prostate Conditions (KIQ_P_E)
+			</h3>
+        <h4>
+				Data File: KIQ_P_E.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				September 2009</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p>The prostate questions in the Kidney Conditions section (variable name prefix KIQ_P_E) of the Mobile Examination Center (MEC) Interview provide personal interview data on prostate conditions and whether a rectal examination had been done to check for prostate cancer.</p>
+<p>Additional questions on other tests for prostate cancer and treatments are released with the MEC Laboratory component: Prostate Specific Antigen (PSA) Exclusion Questions and Lab Results.</p>
+<h2 id="Eligible_Sample">Eligible Sample</h2><p>The target sample for the questions in this section is males 20 years and older.</p>
+<p>Males 20-39 years of age were asked only KIQ490 “Have you ever been told by a doctor or other health professional that you have any disease of the prostate? This includes an enlarged prostate.”</p>
+<p>Males 40 years and older were asked all questions in the section.</p>
+<h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>The questions were asked in the MEC Interview, using an interviewer-administered Computer Assisted Personal Interviewing (CAPI) system.</p>
+<p>For details on the administration of the Prostate Conditions (KIQ_P_E) section, please refer to the NHANES 2007-08 MEC Interviewer Exam Manual and the Kidney Conditions (KIQ) Computer Assisted Personal Interview (CAPI) Questionnaire on the NHANES website.</p>
+<h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>The CAPI system is programmed with built-in consistency checks to reduce data entry errors. CAPI also uses online help screens to assist interviewers in defining key terms used in the questionnaire.</p>
+<p>For details on the quality assurance/quality control process for this component, please refer to the NHANES 2007-08 MEC Interviewer Manual on the NHANES website.</p>
+<h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Frequency counts were verified during the preparation of the file.</p>
+<p>Responses to KIQ161 “How old were you when you were first told that you had benign enlargement of the prostate gland?” were top coded at 80 years for consistency with the top-coded age of the survey participant.</p>
+<h2 id="Analytic_Notes">Analytic Notes</h2><p>Exam sample weights should be used for analyses. Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues. The Analytic Guidelines are available on the NHANES website.</p>
+</div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Males only 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="KIQBOX1">KIQBOX1 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">KIQBOX1</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX1. CHECK ITEM: IF SP AGE IS 20-39, GO TO KIQ490.  OTHERWISE, CONTINUE WITH KIQ081.</dd>
+            <dt>Target: </dt>
+            <dd> Males only 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="KIQ081">KIQ081 - Have trouble starting to urinate?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">KIQ081</dd>
+            <dt>SAS Label: </dt>
+            <dd>Have trouble starting to urinate?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The next set of questions is about men's health including urinary and prostate problems.  The prostate is a gland located just below the bladder.  Do you usually have trouble starting to urinate (pass water)?</dd>
+            <dt>Target: </dt>
+            <dd> Males only 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">186</td>
+                <td class="values" align="right">186</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1553</td>
+                <td class="values" align="right">1739</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1741</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1743</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3964</td>
+                <td class="values" align="right">5707</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="KIQ101">KIQ101 - After urinating does bladder feel empty?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">KIQ101</dd>
+            <dt>SAS Label: </dt>
+            <dd>After urinating does bladder feel empty?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">After urinating (passing water), does your bladder feel empty?</dd>
+            <dt>Target: </dt>
+            <dd> Males only 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1530</td>
+                <td class="values" align="right">1530</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">195</td>
+                <td class="values" align="right">1725</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">1728</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">1743</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3964</td>
+                <td class="values" align="right">5707</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="KIQ490">KIQ490 - Have prostate disease?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">KIQ490</dd>
+            <dt>SAS Label: </dt>
+            <dd>Have prostate disease?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever been told by a doctor or health professional that you have any disease of the prostate?  This includes an enlarged prostate.</dd>
+            <dt>Target: </dt>
+            <dd> Males only 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">429</td>
+                <td class="values" align="right">429</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2142</td>
+                <td class="values" align="right">2571</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">2572</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">2578</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3129</td>
+                <td class="values" align="right">5707</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="KIQBOX2">KIQBOX2 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">KIQBOX2</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX2. CHECK ITEM: IF SP AGE IS 20-39, GO TO END OF SECTION.  OTHERWISE, CONTINUE WITH KIQ121.</dd>
+            <dt>Target: </dt>
+            <dd> Males only 20 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="KIQ121">KIQ121 - Ever told had enlarged prostate?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">KIQ121</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever told had enlarged prostate?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever been told by a doctor or health professional that you had an enlarged prostate gland?</dd>
+            <dt>Target: </dt>
+            <dd> Males only 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">423</td>
+                <td class="values" align="right">423</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1313</td>
+                <td class="values" align="right">1736</td>
+                <td class="values">KIQ361  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1737</td>
+                <td class="values">KIQ361  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">1743</td>
+                <td class="values">KIQ361  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3964</td>
+                <td class="values" align="right">5707</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="KIQ141">KIQ141 - Was it a benign enlargement?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">KIQ141</dd>
+            <dt>SAS Label: </dt>
+            <dd>Was it a benign enlargement?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Was it a benign enlargement - that is, not cancerous, also called benign prostatic hypertrophy?</dd>
+            <dt>Target: </dt>
+            <dd> Males only 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">338</td>
+                <td class="values" align="right">338</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">73</td>
+                <td class="values" align="right">411</td>
+                <td class="values">KIQ182  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">411</td>
+                <td class="values">KIQ182  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">423</td>
+                <td class="values">KIQ182  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5284</td>
+                <td class="values" align="right">5707</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="KIQ161">KIQ161 - How old when told had benign enlargement</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">KIQ161</dd>
+            <dt>SAS Label: </dt>
+            <dd>How old when told had benign enlargement</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How old were you when you were first told that you had benign enlargement of the prostate gland?</dd>
+            <dt>Target: </dt>
+            <dd> Males only 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">19 to 79</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">319</td>
+                <td class="values" align="right">319</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">80</td>
+                <td class="values">80 or greater years</td>
+                <td class="values" align="right">13</td>
+                <td class="values" align="right">332</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">332</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">338</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5369</td>
+                <td class="values" align="right">5707</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="KIQBOX3">KIQBOX3 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">KIQBOX3</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX3. CHECK ITEM: GO TO KIQ361</dd>
+            <dt>Target: </dt>
+            <dd> Males only 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="KIQ182">KIQ182 - Was the enlargement due to cancer?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">KIQ182</dd>
+            <dt>SAS Label: </dt>
+            <dd>Was the enlargement due to cancer?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Was the enlargement due to cancer?</dd>
+            <dt>Target: </dt>
+            <dd> Males only 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">63</td>
+                <td class="values" align="right">63</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">75</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">75</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">85</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5622</td>
+                <td class="values" align="right">5707</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="KIQ361">KIQ361 - Rectal exam to check for prostate cancer</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">KIQ361</dd>
+            <dt>SAS Label: </dt>
+            <dd>Rectal exam to check for prostate cancer</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever had a rectal examination to check for prostate cancer?</dd>
+            <dt>Target: </dt>
+            <dd> Males only 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1292</td>
+                <td class="values" align="right">1292</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">445</td>
+                <td class="values" align="right">1737</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1738</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">1743</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3964</td>
+                <td class="values" align="right">5707</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

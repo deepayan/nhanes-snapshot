@@ -1,0 +1,739 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0074)http://adp-dhanes/Nchs/Edit/DocumentationView.aspx -->
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>FOLATE_E</TITLE>     
+<META name="title" content="NHANES 2007-2008: Folate - RBC &amp; Serum Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#Component_Description">Component 
+  Description</A>           </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#Eligible_Sample">Eligible 
+  Sample</A>           </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#Description_of_Laboratory_Methodology">Description 
+  of Laboratory Methodology</A>           </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#Laboratory_Method_Files">Laboratory 
+  Method Files</A>           </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#Laboratory_Quality_Assurance_and_Monitoring">Laboratory 
+  Quality Assurance and Monitoring</A>           </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#Data_Processing_and_Editing">Data 
+  Processing and Editing</A>           </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#Analytic_Notes">Analytic 
+  Notes</A>           </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#References">References</A> 
+            </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#Codebook">Codebook</A> 
+              
+  <UL id="CodebookLinks">
+    <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#SEQN">SEQN 
+    - Respondent sequence number</A>               </LI>
+    <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#LBDRBF">LBDRBF 
+    - RBC folate (ng/mL)</A>               </LI>
+    <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#LBXRBFSI">LBXRBFSI 
+    - RBC folate (nmol/L)</A>               </LI>
+    <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#LBDFOL">LBDFOL 
+    - Serum folate (ng/mL)</A>               </LI>
+    <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=856&amp;Dataset=FOLATE_E#LBXFOLSI">LBXFOLSI 
+    - Serum folate ( nmol/L)</A>               </LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>2007-2008 Data Documentation, Codebook, and Frequencies</H2>
+<H3>Folate - RBC &amp; Serum (FOLATE_E)</H3>
+<H4> Data File: FOLATE_E.xpt</H4>
+<H5 class="left">First Published: June 2011</H5>
+<H5 class="right">Last Revised: NA</H5></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">The objectives of this 
+component are to: 1) provide data for monitoring secular trends in measures of 
+nutritional status in the U.S. population; 2) evaluate the effect of people's 
+habits and behaviors, such as physical activity and the use of alcohol, tobacco, 
+and dietary supplements on nutritional status; and 3) evaluate the effect of 
+changes in nutrition and public health policies including welfare reform 
+legislation, food fortification policy, and child nutrition programs on the 
+nutritional status of the U.S. population. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">These data will be used 
+to estimate deficiencies and toxicities of specific nutrients in the population 
+and subgroup, to provide population reference data, and to estimate the 
+contribution of diet, supplements, and other factors to serum levels of
+ nutrients. Data will be used in research to further define nutrient
+ requirements as well as optimal levels for disease prevention and health
+ promotion. <A name="Eligible_Sample"></A>&nbsp;</P>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Examined participants
+ aged 1 year and older were eligible. </P>
+<H2 id="Description_of_Laboratory_Methodology">Description of Laboratory 
+Methodology</H2>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">In NHANES 2007-2008,
+ population folate status was assessed by measuring serum folate and whole-blood
+ folate by microbiologic assay and by calculating RBC folate using these data. 
+Microbiological assays have been used for many years to estimate the
+ concentration of folate in blood and other tissues. In the 1990s, more robust
+ and reliable procedures that use microtiter plates for higher throughput and a
+ cryopreserved antibiotic resistant microorganism to avoid having to work under
+ aseptic conditions were developed. The described procedure is an adaptation of
+ such a method, and was introduced by the National Center for Environmental
+ Health (NCEH) to NHANES in 2007. Diluted serum or whole blood is added to an
+ assay medium containing Lactobacillus rhamnosus (formerly known as 
+<I></I>Lactobacillus casei) (NCIB 10463) and all of the nutrients necessary for 
+the growth of L. rhamnosus except folate. The inoculated medium is incubated for 
+45 hours at 37<SUP>o</SUP>C. Since the growth of L. rhamnosus is proportional to 
+the amount of total folate present in serum or whole blood samples; the folate 
+level can be assessed by measuring the turbidity of the inoculated medium at 590 
+nm in a PowerWave X340 Microplate reader (Bio-Tek Instrument). The assay was 
+calibrated with 5-methyl-tetrahydrofolate from Merck Cie (Eprova). </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">There were no changes 
+to the lab method, lab equipment, or lab site for this component within the 
+NHANES 2007-2008 cycle. However, there were changes from the previous 2 years of 
+NHANES to equipment, and lab method. In 2005-2006, RBC folates and serum folates 
+were measured using the Bio-Rad Laboratories "Quantaphase II Folate" radioassay 
+kit. As mentioned above, in 2007-2008, RBC folates and serum folates were 
+measured using the microbiologic assay. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Refer to the Laboratory 
+Method Files section for detailed description on the laboratory methods 
+used.&nbsp; <BR></P>
+<H2 id="Laboratory_Method_Files">Laboratory Method Files</H2>
+<P><A href="https://wwwn.cdc.gov/nchs/data/nhanes/2007-2008/labmethods/FOLATE_E_MET.PDF" 
+target="_blank">Whole Blood and Serum Folate</A>           <SPAN> (May 
+2013)</SPAN>         </P>
+<H2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+Assurance and Monitoring</H2>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Whole blood and blood
+ serum are processed, stored, and shipped to the Division of Laboratory 
+Sciences, National Center for Environmental Health, Centers for Disease Control 
+and Prevention, Atlanta, GA for analysis. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Detailed instructions 
+on specimen collection and processing are discussed in the <A href="https://wwwn.cdc.gov/nchs/data/nhanes/2007-2008/manuals/manual_lab.pdf">NHANES
+ Laboratory Procedure Manual (LPM)</A>. Vials are stored under appropriate 
+frozen (-20<SUP>o</SUP>C) conditions until they are shipped to National Center 
+for Environmental Health for testing. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">The NHANES quality
+ assurance and quality control (QA/QC) protocols meet the 1988 Clinical
+ Laboratory Improvement Act mandates. Detailed QA/QC instructions are discussed
+ in the <A href="https://wwwn.cdc.gov/nchs/data/nhanes/2007-2008/manuals/manual_lab.pdf">NHANES 
+LPM</A>. <BR><BR><B style="mso-bidi-font-weight: normal;">Mobile Examination
+ Centers (MECs)</B><B style="mso-bidi-font-weight: normal;"> </B></P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Laboratory team 
+performance is monitored using several techniques. NCHS and contract consultants 
+use a structured quality assurance evaluation during unscheduled visits to 
+evaluate both the quality of the laboratory work and the quality-control 
+procedures. Each laboratory staff member is observed for equipment operation, 
+specimen collection and preparation; testing procedures and constructive 
+feedback are given to each staff member. Formal retraining sessions are 
+conducted annually to ensure that required skill levels were maintained. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><B style="mso-bidi-font-weight: normal;">Analytical
+ Laboratories</B><B> </B></P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">NHANES uses several 
+methods to monitor the quality of the analyses performed by the contract
+ laboratories. In the MEC, these methods include performing blind split samples 
+collected during “dry run” sessions. In addition, contract laboratories randomly 
+perform repeat testing on 2% of all specimens. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">NCHS developed and 
+distributed a quality control protocol for all the contract laboratories, which 
+outlined the use of Westgard rules (Westgard, et al. 1981) when running NHANES 
+specimens. Progress reports containing any problems encountered during shipping 
+or receipt of specimens, summary statistics for each control pool, QC graphs, 
+instrument calibration, reagents, and any special considerations are submitted 
+to NCHS quarterly. The reports are reviewed for trends or shifts in the data. 
+The laboratories are required to explain any identified areas of concern.
+&nbsp; </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">All QC procedures 
+recommended by the manufacturers were followed. Reported results for all assays 
+meet the Division of Laboratory Sciences’ quality control and quality assurance 
+performance criteria for accuracy and precision, similar to the Westgard rules 
+(Caudill, et al. 2008).&nbsp;&nbsp;<BR></P>
+<H2 id="Data_Processing_and_Editing">Data Processing and Editing</H2>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">The data were reviewed. 
+&nbsp;Incomplete data or improbable values were sent to the performing 
+laboratory for confirmation. </P>
+<P style="margin: 0in 0in 10pt 0.5in; line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 2;">Two 
+derived variables were created in this data file. The variables were created 
+using the following formula:</P>
+<P style="margin: 0in 0in 10pt 0.5in;"><B 
+style="mso-bidi-font-weight: normal;">LBDRBF</B>: The RBC folate value in nmol/L 
+RBC (LBXRBFSI) was converted to ng/mL RBC (LBDRBF) by dividing LBXRBFSI by 2.265 
+(rounded to 1 decimal).</P>
+<P style="margin: 0in 0in 10pt 0.5in;"><STRONG>LBDFOL</STRONG>: The serum folate 
+value in nmol/L (LBXFOLSI) was converted to ng/mL (LBDFOL) by dividing LBXFOLSI 
+by 2.265 (rounded to 1 decimal).</P><BR>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Refer to the <A href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2007"><SPAN 
+style="color: rgb(0, 0, 255);">2007-2008 Laboratory Data Overview</SPAN></A> for 
+general information on NHANES laboratory data. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Examined sample weights 
+should be used for analyses. Please refer to the <A href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">NHANES 
+Analytic Guidelines</A> and the on-line <A href="https://www.cdc.gov/nchs/tutorials/">NHANES 
+Tutorial</A> for&nbsp;details on the use of sample weights and other analytic 
+issues. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><B>Demographic and
+ Other Related Variables</B> </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">The analysis of NHANES 
+laboratory data must be conducted using the appropriate survey design and 
+demographic variables. The <A href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2007">NHANES 
+2007-2008 Demographics File</A> contains demographic data, health indicators, 
+and other related information collected during household interviews as well as 
+the sample design variables. The recommended procedure for variance estimation 
+requires use of stratum and PSU variables (SDMVSTRA and SDMVPSU, respectively) 
+in the demographic data file. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">The <A href="https://wwwn.cdc.gov/nchs/nhanes/2007-2008/fastqx_e.htm">Fasting
+ Questionnaire File</A> includes auxiliary information such as fasting status, 
+the time of venipuncture, and the conditions precluding venipuncture. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">This laboratory data 
+file can be linked to the other NHANES data files using the unique survey 
+participant identifier (i.e., SEQN). </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><B>Detection Limits 
+</B></P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">An exact lower limit of
+ detection (LLOD) for RBC folate cannot be calculated because the value is a 
+composite of whole blood folate, serum folate and hematocrit. Therefore, there 
+is no LLOD for the calculated value of RBC folate. Furthermore, the LOD of this 
+method for serum folate and whole blood folate depends on the dilution factor 
+(i.e., LOD = 1 nmol/L if serum is only diluted 1/20). </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><B>Serum Folate
+ Regression Equations to Compare 2007-2008 and 1999-2006 Data</B></P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><B><SPAN style="text-decoration: underline;">Background:</SPAN></B></P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">There was a change in 
+serum folate methods from 1999-2006 to 2007-2008. In 1999-2006, serum folate was 
+performed using the Bio-Rad (BR) Quantaphase II radioassay. In 2007-2008, serum 
+folate was measured using a microbiological assay (MA). Serum folate levels were 
+much higher in 2007-2008 using the MA method compared with previous data
+ (1999-2006) using the BR method. There are two variables for serum folate: one
+ expressed in conventional units (ng/mL) and one in SI units (nmol/L). For
+ 1999-2006, they were LBXFOL (ng/mL) and LBDFOLSI (nmol/L), and for 2007-2008,
+ they were LBDFOL (ng/mL) and LBXFOLSI (nmol/L). To convert conventional units
+ (ng/mL) to SI units (nmol/L), multiply by 2.265. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">A crossover study was 
+performed between the BR and MA methods by the CDC laboratory as described by 
+Fazili et al. (Fazili Z, et al. 2007). Several regression methods were examined 
+to relate the BR assay and the MA including linear, Deming, piecewise linear, 
+and fractional polynomial. The fractional polynomial regression method best fit 
+the Fazili crossover data. The forward fractional polynomial regression equation 
+is recommended to trend the serum folate data since the MA method is a more 
+accurate “gold standard” method and the BR method is no longer available. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><B><SPAN style="text-decoration: underline;">Forward 
+regression of 1999-2006 BR results (nmol/L) to match 2007-2008 MA results 
+(nmol/L): </SPAN></B></P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Convert the 1999-2006 
+BR serum folate (FOL, nmol/L) results to 2007-2008 equivalent values to match 
+the MA serum folate (FOL<SUB>adjusted</SUB>, nmol/L) results using the following 
+fractional polynomial regression equation: </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">FOL<SUB>adjusted</SUB> 
+= 10**(0.0188 * x<SUP>3 </SUP>- 2.7109 * x<SUP>-1/2</SUP> + 3.8276), where X = 
+Log<SUB>10</SUB>FOL </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><B><SPAN style="text-decoration: underline;">Example
+ calculation:</SPAN></B><B style="mso-bidi-font-weight: normal;"><SPAN style="text-decoration: underline;"> 
+</SPAN></B></P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">For NHANES 2005-2006, 
+sequence number (SEQN) = 31128, serum folate (LBDFOLSI) = 30.4 nmol/L </P>
+<P style="margin: 0in 0.5in 0pt; line-height: 15.95pt;">FOL<SUB>adjusted </SUB>= 
+10**[0.0188 * (Log<SUB>10</SUB>30.4)<SUP>3 </SUP>– 2.7109 * 
+(Log<SUB>10</SUB>30.4)<SUP>-1/2</SUP> + 3.8276] <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+= 10**(0.0188 * 1.48287<SUP>3</SUP> – 2.7109 * 1.48287<SUP>-1/2</SUP> + 3.8276) 
+</P>
+<P 
+style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+= 45.9955 <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+= 46 nmol/L <BR><BR><B>Red Blood Cell Folate - Comparison of 2007-2008 and 
+1999-2006 Data<SPAN style="text-decoration: underline;"></SPAN></B></P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><B><SPAN style="text-decoration: underline;">Background: 
+</SPAN></B><BR>There was a change in red blood cell (RBC) folate methods from 
+1999-2006 to 2007-2008. In 1999-2006, RBC folate measurements were performed 
+using the Bio-Rad (BR) Quanta Phase II radioassay. In 2007-2008, RBC folate was 
+measured using a microbiological assay (MA). RBC folate levels were much higher 
+in 2007-2008 using the MA method compared with previous data (1999-2006) using 
+the BR method. There are two variables for RBC folate: one expressed in 
+conventional units (ng/mL) and one in SI units (nmol/L). For 1999-2006, they 
+were LBXRBF (ng/mL) and LBDRBFSI (nmol/L), and for 2007-2008, they were LBDRBF 
+(ng/mL) and LBXRBFSI (nmol/L). To convert conventional units (ng/mL) to SI units 
+(nmol/L), multiply by 2.265. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">A crossover study for 
+whole blood folate (WBF) was performed between the BR and MA assays by the CDC 
+laboratory as described by Fazili et al. (Fazili Z, et al. 2008). The authors 
+showed that while the WBF values for the BR assay measured lower than the MA 
+(average 45%), there was a different relationship between the two assays
+ depending on the 5,10-methylenetetrahydrofolate reductase (MTHFR) C677T
+ polymorphism. Whole blood samples from persons with the T/T genotype showed a
+ smaller difference between the two assays (average 31%) compared to whole blood
+ samples from persons with the C/C and C/T genotype (average 48%). The reason
+ for this was that the BR assay recovered the various folate forms differently
+ compared to the MA assay. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">The MTHFR genotype
+ information is not available for NHANES 1999-2008 and the genotype-specific
+ regression equations reported by Fazili et al. cannot be used. Using the
+ crossover data for all genotypes presented in the Fazili et al. paper, several
+ regression methods were evaluated to relate the BR assay and the MA method for
+ the WBF data for 1999-2008. These regression methods included the linear,
+ Deming, piecewise linear, and fractional polynomial models. The linear
+ regression model for WBF best fit the Fazili crossover data. As presented in
+ the analytic note on serum folate, the fractional polynomial regression model
+ was applied to adjust the serum folate data. This was necessary because serum
+ folate is part of the equation to calculate RBC folate. A forward regression
+ model is recommended to trend the RBC folate data since the MA method is
+ considered a more accurate “gold standard” method and the BR method is no
+ longer available. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><B><SPAN style="text-decoration: underline;">Forward 
+regression of 1999-2006 BR results (nmol/L) to match 2007-2008 MA results 
+(nmol/L):</SPAN></B> </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">Since the Fazili
+ crossover study presents WBF data rather than RBC folate data, it is necessary
+ to first convert RBC folate data to WBF data before applying any regression
+ equation to make the data sets comparable. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">The following algorithm 
+is recommended: <BR>1) Convert the 1999-2006 BR RBC folate (RBF, nmol/L) to 
+whole-blood folate (WBF, nmol/L) using the hematocrit (HCT, %) and the BR serum 
+folate (FOL, nmol/L) in the following equation: </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">WBF = (RBF * HCT/100) + 
+FOL * [1.0 - (HCT/100)] </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">The hematocrit can be 
+obtained from the NHANES hematology files containing the complete blood count. 
+</P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">2) Apply the following 
+forward linear regression to obtain an adjusted WBF (WBF<SUB>adjusted</SUB>) 
+using WBF from step 1 to match the 2007-2008 MA WBF: </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">WBF<SUB>adjusted</SUB> 
+= 10**[0.2204 + (1.017 * Log<SUB>10</SUB>WBF)] </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">3) Convert the
+ 1999-2006 BR serum folate (FOL, nmol/L) results to 2007-2008 equivalent values
+ to match the MA serum folate (FOL<SUB>adjusted</SUB>, nmol/L) results using the 
+forward fractional polynomial regression equation specified in the analytic note 
+on serum folate: </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">FOL<SUB>adjusted</SUB> 
+= 10**(0.0188 * X<SUP>3</SUP> – 2.7109 * X<SUP>-1/2</SUP> + 3.8276), where X = 
+Log<SUB>10</SUB>FOL</P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">4) Calculate 
+RBF<SUB>adjusted</SUB> by using WBF<SUB>adjusted</SUB> (from step 2) and
+ FOL<SUB>adjusted</SUB> (from step 3): </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">RBF<SUB>adjusted 
+</SUB>= {WBF<SUB>adjusted</SUB> – [FOL<SUB>adjusted</SUB> * (1.0 - (HCT/100))]} 
+/ (HCT/100) </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">The analyst is
+ cautioned that trending RBC folate by this procedure does not use
+ genotype-specific equations as the MTHFR genotype was not determined in NHANES.
+ This may slightly underestimate RBC folate concentrations for some participants
+ and overestimate concentrations for others. </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;"><B><SPAN style="text-decoration: underline;">Example
+ calculation: </SPAN></B></P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">1) WBF = (378.3*
+ 41.4/100) + 30.4 * [1.0 - (41.4/100)] <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 174.4306
+ nmol/L </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">2) WBF<SUB>adjusted 
+</SUB>= 10**(0.2204 + 1.017 * Log<SUB>10</SUB>174.4306) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+= 10**(0.2204 + 1.017 * 2.24162) <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+= 316.323 nmol/L </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">3) FOL<SUB>adjusted 
+</SUB>= 10**[0.0188 * (Log<SUB>10</SUB>30.4)<SUP>3 </SUP>– 2.7109 * 
+(Log<SUB>10</SUB>30.4)<SUP>-1/2</SUP> + 3.8276] <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+= 10**(0.0188 * 1.48287<SUP>3</SUP> – 2.7109 * 1.48287<SUP>-1/2</SUP> + 3.8276) 
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+= 45.9955 nmol/L </P>
+<P style="margin: 0in 0.5in 12pt; line-height: 15.95pt;">4) 
+RBF<SUB>adjusted</SUB> = {316.323 – [45.9955 * (1.0 - (41.4/100))]} / (41.4/100) 
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+≈ 699 nmol/L </P><BR></DIV>
+<DIV id="References">
+<H2>References</H2>
+<UL>
+  <LI>Caudill, S.P., Schleicher, R.L., Pirkle, J.L. Multi-rule quality control 
+  for the age-related eye disease study. Statist Med (2008); 
+  27(20):4094-40106.</LI>
+  <LI>Fazili Z, Pfeiffer CM, Zhang M, Jain RB, Koontz D. Influence of 
+  5,10-methylenetetrahydrofolate reductase polymorphism on whole-blood folate 
+  concentrations measured by LC-MS/MS, microbiologic assay, and Bio-Rad 
+  radioassay. Clin Chem (2008); 54(1):197-201.</LI>
+  <LI>Fazili Z, Pfeiffer CM, Zhang M. Comparison of serum folate species 
+  analyzed by LC-MS/MS with total folate measured by microbiological assay and 
+  Bio-Rad assay. Clin Chem (2007); 53(4):781-4.</LI>
+  <LI>Westgard J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewhart chart 
+  for quality control in clinical chemistry. Clin Chem (1981); 
+27:493-501.</LI></UL></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDRBF">LBDRBF - RBC folate (ng/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDRBF</DD>
+  <DT>SAS Label: </DT>
+  <DD>RBC folate (ng/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">RBC folate (ng/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">85.7 to 2984.5</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">8243</TD>
+    <TD align="right" class="values">8243</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1064</TD>
+    <TD align="right" class="values">9307</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXRBFSI">LBXRBFSI - RBC folate (nmol/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXRBFSI</DD>
+  <DT>SAS Label: </DT>
+  <DD>RBC folate (nmol/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">RBC folate (nmol/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">194 to 6760</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">8243</TD>
+    <TD align="right" class="values">8243</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1064</TD>
+    <TD align="right" class="values">9307</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDFOL">LBDFOL - Serum folate (ng/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDFOL</DD>
+  <DT>SAS Label: </DT>
+  <DD>Serum folate (ng/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Serum folate (ng/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">2.2 to 209.3</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">8205</TD>
+    <TD align="right" class="values">8205</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1102</TD>
+    <TD align="right" class="values">9307</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXFOLSI">LBXFOLSI - Serum folate ( nmol/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXFOLSI</DD>
+  <DT>SAS Label: </DT>
+  <DD>Serum folate ( nmol/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Serum folate ( nmol/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">5 to 474</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">8205</TD>
+    <TD align="right" class="values">8205</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1102</TD>
+    <TD align="right" class="values">9307</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>

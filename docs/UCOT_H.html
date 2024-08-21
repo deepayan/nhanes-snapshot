@@ -1,0 +1,1344 @@
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>UCOT_H</TITLE>     
+<META name="title" content="NHANES 2013-2014: Cotinine, Hydroxycotinine, &amp; Other Nicotine Metabolites and Analogs - Urine Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   </HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="#Component_Description">Component Description</A>           </LI>
+  <LI><A href="#Eligible_Sample">Eligible Sample</A>           </LI>
+  <LI><A href="#Description_of_Laboratory_Methodology">Description of Laboratory 
+  Methodology</A>           </LI>
+  <LI><A href="#Laboratory_Method_Files">Laboratory Method Files</A>           
+  </LI>
+  <LI><A href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+  Assurance and Monitoring</A>           </LI>
+  <LI><A href="#Data_Processing_and_Editing">Data Processing and Editing</A>     
+        </LI>
+  <LI><A href="#Analytic_Notes">Analytic Notes</A>           </LI>
+  <LI><A href="#References">References</A>           </LI>
+  <LI><A href="#Codebook">Codebook</A>             
+  <UL id="CodebookLinks">
+    <LI><A href="#SEQN">SEQN - Respondent sequence number</A>               
+</LI>
+    <LI><A href="#WTSA2YR">WTSA2YR - Subsample A Weight</A>               </LI>
+    <LI><A href="#URXCOTT">URXCOTT - Total Cotinine, urine (ng/mL)</A>           
+        </LI>
+    <LI><A href="#URDCOTLC">URDCOTLC - Total Cotinine, urine Comment Code</A>    
+               </LI>
+    <LI><A href="#URXHCTT">URXHCTT - Total Hydroxycotinine, urine (ng/mL)</A>    
+               </LI>
+    <LI><A href="#URDHCTLC">URDHCTLC - Total Hydroxycotinine, urine Comt 
+    Code</A>               </LI>
+    <LI><A href="#URXANBT">URXANBT - Anabasine, urine (ng/mL)</A>               
+    </LI>
+    <LI><A href="#URDANBLC">URDANBLC - Anabasine, urine Comment Code</A>         
+          </LI>
+    <LI><A href="#URXANTT">URXANTT - Anatabine, urine (ng/mL)</A>               
+    </LI>
+    <LI><A href="#URDANTLC">URDANTLC - Anatabine, urine Comment Code</A>         
+          </LI>
+    <LI><A href="#URXCOXT">URXCOXT - Cotinine-n-oxide, urine (ng/mL)</A>         
+          </LI>
+    <LI><A href="#URDCOXLC">URDCOXLC - Cotinine-n-oxide, urine Comment Code</A>  
+                 </LI>
+    <LI><A href="#URXNICT">URXNICT - Nicotine, urine (ng/mL)</A>               
+    </LI>
+    <LI><A href="#URDNICLC">URDNICLC - Nicotine, urine Comment Code</A>          
+         </LI>
+    <LI><A href="#URXNNCT">URXNNCT - Nornicotine, urine (ng/mL)</A>              
+     </LI>
+    <LI><A href="#URDNCTLC">URDNCTLC - Nornicotine, urine Comment Code</A>       
+            </LI>
+    <LI><A href="#URXNOXT">URXNOXT - Nicotine-1 N-oxide, urine (ng/mL)</A>       
+            </LI>
+    <LI><A href="#URDNOXLC">URDNOXLC - Nicotine-1 N-oxide, urine Comment 
+    Code</A>               </LI>
+    <LI><A href="#URDTNE2">URDTNE2 - TNE - 2 (nmol/mL)</A>               </LI>
+    <LI><A href="#URDTNE3">URDTNE3 - TNE - 3 (nmol/mL)</A>               </LI>
+    <LI><A href="#URDTNE6">URDTNE6 - TNE - 6 (nmol/mL)</A>               
+  </LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>2013-2014 Data Documentation, Codebook, and Frequencies</H2>
+<H3>Cotinine, Hydroxycotinine, &amp; Other Nicotine Metabolites and Analogs - 
+Urine (UCOT_H)</H3>
+<H4> Data File: UCOT_H.xpt</H4>
+<H5 class="left">First Published: May 2019</H5>
+<H5 class="right">Last Revised: NA</H5></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P>The specific aims of the component are: 1) to measure the prevalence and 
+extent of tobacco use; 2) to estimate the extent of exposure to environmental 
+tobacco smoke (ETS), and determine trends in exposure to ETS; and 3) to describe 
+the relationship between tobacco use (as well as exposure to ETS) and chronic 
+health conditions, including respiratory and cardiovascular diseases.</P>
+<P>Nicotine is the primary tobacco-specific alkaloid in tobacco plants and 
+tobacco smoke. Although, nicotine is not a direct cause of most diseases 
+associated with tobacco use, it is highly addictive, which can lead to tobacco 
+product dependence and chronic exposure to the carcinogens and bioactive 
+compounds in tobacco. The presence of nicotine in biological specimens indicates 
+exposure to tobacco, either through the active use of tobacco, or from passive 
+exposure to secondhand smoke (SHS). Trans-3’-hydroxycotinine and cotinine are 
+the two predominant nicotine metabolites in urine. Because their concentrations 
+are greater and their elimination half-lives are longer, these metabolites are
+ generally preferred over nicotine itself as exposure biomarkers. The
+ concentration ratio of hydroxycotinine to cotinine has been used as an index of
+ cytochrome P-450 A6 activity. The relative concentration of nicotine to its 
+five major metabolites (hydroxycotinine, cotinine, cotinine-N-oxide,
+ nicotine-N-oxide, and nornicotine) is of interest when elucidating differences 
+in metabolic profiles of various ethnic, age, and gender groups (James E. 
+McGuffey, 2013). Furthermore, the sum of these metabolites may more accurately 
+describe the exposure of individuals and groups to tobacco products compared to 
+the most commonly used biomarker, urinary cotinine. Lastly, anatabine and 
+anabasine are nicotine analogs in tobacco product, and are precursors for 
+nitrosamines, which are known carcinogens. Therefore, levels of these two 
+compounds have been used in monitoring compliance of smoking cessation programs 
+as well as in biomonitoring for nitrosamine-related studies.</P>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P>Examined participants aged 6 years and older were eligible.</P>
+<H2 id="Description_of_Laboratory_Methodology">Description of Laboratory 
+Methodology</H2>
+<P>“Total” urinary nicotine metabolites, including the free and the glucuronide 
+conjugated forms, are measured by two separate isotope dilution high-performance 
+liquid chromatography/tandem mass spectrometric (HPLC-MS/MS) methods based on 
+the cotinine cutoff value of 20 ng/mL so that the markedly different levels of
+ nicotine exposure biomarkers can be optimally quantified in both users and
+ non-users. For samples with cotinine levels above or equal to 20 ng/mL, the 
+“Nicotine Metabolites and Analogs in Urine” method (Urinary Nicotine Metabolites 
+and Analogs Laboratory Procedure Manual) was applied, and nicotine, its five 
+metabolites (cotinine, trans-3'-hydroxycotinine, nicotine-N-oxide,
+ cotinine-N-oxide, and nornicotine), anatabine and anabasine were measured. 
+Briefly, a 100 µL urine sample is spiked with a labeled internal standard 
+mixture and incubated with beta-glucuronidase to hydrolyze the conjugated 
+analytes. Following the incubation period, proteins and salts in the sample are
+ precipitated with cold acetone. The sample is centrifuged and part of the
+ supernatant is transferred and evaporated to remove acetone. The sample is
+ further diluted approximately 5-fold prior to analysis on a HPLC-MS/MS system
+ using electrospray ionization. Chromatography is performed using a C18
+ analytical column; mass spectrometric analysis is carried out under positive
+ mode using scheduled multiple reaction monitoring. One quantitation transition,
+ one confirmation transition, and one corresponding internal standard transition
+ are monitored for each of the&nbsp;eight analytes.</P>
+<P>For samples with cotinine levels less than 20 ng/mL, the “Cotinine and 
+Hydroxycotinine in Urine” method (Urinary Cotinine and Hydroxycotinine 
+Laboratory Procedure Manual) was applied to measure only the cotinine and 
+trans-3’-hydroxycotinine levels. Briefly, a 200 uL urine sample is spiked with 
+labeled internal standard mixture and incubated with beta-glucuronidase to 
+hydrolyze the conjugated analytes. Following the incubation period, the sample 
+is basified and applied to a supported liquid extraction plate. The two analytes 
+are extracted with 5% (v/v) isopropanol in methylene chloride. The organic 
+extract is concentrated and the residue is injected onto a C18 UHPLC 
+(ultra-high-performance liquid chromatography) column. The eluent from these 
+injections is monitored by atmospheric pressure chemical ionization 
+(APCI)-MS/MS. One quantitation transition, one confirmation transition, and one 
+corresponding internal standard transition are monitored for each of the two 
+analytes.</P>
+<P>Sample concentration is derived from the ratios of native-to-labeled 
+compounds in the sample by comparing to a standard curve. Adequate method 
+performance has been confirmed with criteria established internally.</P>
+<P>Refer to the Laboratory Method Files section for a detailed description of 
+the laboratory methods used. </P>
+<P>This is a new component in the NHANES 2013-2014 cycle.</P>
+<H2 id="Laboratory_Method_Files">Laboratory Method Files</H2>
+<P><A href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/labmethods/UCOT_H_UCOTS_H_Urinary_Cotinine_and_Hydroxycotinine_MET.pdf" 
+target="_blank">Urinary Cotinine and Hydroxycotinine Laboratory Procedure 
+Manual</A>           <SPAN> (May 2019)</SPAN>         </P>
+<P><A href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/labmethods/UCOT_H_UCOTS_H_Urinary_Nicotine_Metabolites_and_Analogs.pdf" 
+target="_blank">Urinary Nicotine Metabolites and Analogs Laboratory Procedure 
+Manual</A>           <SPAN> (May 2019)</SPAN>         </P>
+<H2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+Assurance and Monitoring</H2>
+<P>Urine specimens&nbsp;are processed, stored, and shipped to the Division of 
+Laboratory Sciences, National Center for Environmental Health, and Centers for 
+Disease Control and Prevention for analysis. </P>
+<P>Detailed instructions on specimen collection and processing are discussed in 
+the <A href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/manuals/2013_MEC_Laboratory_Procedures_Manual.pdf">NHANES
+ Laboratory Procedures Manual (LPM)</A>. Vials are stored under appropriate 
+frozen (–30°C) conditions until they are shipped to National Center for 
+Environmental Health for testing.</P>
+<P>The NHANES quality assurance and quality control (QA/QC) protocols meet the 
+1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions 
+are discussed in the&nbsp;<A href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/manuals/2013_MEC_Laboratory_Procedures_Manual.pdf">NHANES
+ LPM</A>.</P>
+<P><B>Mobile Examination Centers (MECs)</B></P>
+<P>Laboratory team performance is monitored using several techniques. NCHS and 
+contract consultants use a structured competency assessment evaluation during 
+visits to evaluate both the quality of the laboratory work and the 
+quality-control procedures. Each laboratory staff member is observed for 
+equipment operation, specimen collection and preparation; testing procedures and 
+constructive feedback are given to each staff member. Formal retraining sessions 
+are conducted annually to ensure that required skill levels were maintained. 
+</P>
+<P><B>Analytical Laboratories </B></P>
+<P>NHANES uses several methods to monitor the quality of the analyses performed 
+by the contract laboratories. In the MEC, these methods include performing blind 
+split samples collected on “dry run” sessions. In addition, contract 
+laboratories randomly perform repeat testing on 2% of all specimens.</P>
+<P>NCHS developed and distributed a quality control protocol for all CDC and 
+contract laboratories, which outlined the use of Westgard rules (Westgard et 
+al., 1981) when running NHANES specimens. Progress reports containing any 
+problems encountered during shipping or receipt of specimens, summary statistics 
+for each control pool, QC graphs, instrument calibration, reagents, and any 
+special considerations are submitted to NCHS quarterly. The reports are reviewed 
+for trends or shifts in the data. The laboratories are required to explain any
+ identified areas of concern.</P>
+<P>All QC procedures recommended by the manufacturers were followed. Reported 
+results for all assays meet the Division of Laboratory Sciences quality control 
+and quality assurance performance criteria for accuracy and precision, similar 
+to the Westgard rules (Caudill, et al., 2008). </P>
+<H2 id="Data_Processing_and_Editing">Data Processing and Editing</H2>
+<P>The data were reviewed. Incomplete data or improbable values were sent to the 
+performing laboratory for confirmation.</P>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P>Urinary nicotine metabolites and analogs (nicotine-N-oxide, cotinine-N-oxide, 
+and nornicotine) and urinary minor tobacco alkaloids&nbsp;(anatabine and 
+anabasine) were not measured if urinary cotinine (URXCOTT) results were less 
+than 20 ng/mL.</P>
+<P>Refer to the <A href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2013">2013-2014
+ Laboratory Data Overview</A> for general information on NHANES laboratory 
+data.</P>
+<P>Please refer to the NHANES <A href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx" 
+target="_blank">Analytic Guidelines&nbsp;</A>and the on-line NHANES&nbsp;<A 
+href="http://www.cdc.gov/nchs/tutorials/" target="_blank">Tutorial</A> for 
+further details on the use of sample weights and other analytic issues.</P>
+<P><B>Subsample Weights</B></P>
+<P>Urinary cotinine, hydroxycotinine, and other nicotine metabolites and analogs 
+were assessed in a one-third subsample of participants 6 years and older. 
+Special sample weights are required to analyze these data properly. Specific 
+sample weights for this subsample are included in this data file and should be 
+used when analyzing these data.</P>
+<P><B>Demographic and Other Related Variables</B></P>
+<P>The analysis of NHANES laboratory data must be conducted using the 
+appropriate survey design and demographic variables. The <A href="https://wwwn.cdc.gov/Nchs/Nhanes/2013-2014/DEMO_H.htm">NHANES 
+2013-2014 Demographics File</A> contains demographic data, health indicators, 
+and other related information collected during household interviews as well as 
+the sample weight variables. The recommended procedure for variance estimation
+ requires use of stratum and PSU variables (SDMVSTRA and SDMVPSU, respectively)
+ in the demographic data file. &nbsp;</P>
+<P>The laboratory data file can be linked to the other NHANES data files using 
+the unique survey participant identifier (i.e., SEQN).</P>
+<P><B>Total Nicotine Equivalents (TNE) Calculations</B></P>
+<P>Total Nicotine Equivalents (TNE) were calculated for each analysis for which 
+total results were available for all analytes by dividing the concentration in 
+ng/mL by the MW for each analyte.&nbsp; NIST’s molecular weight, which include 4 
+digits after the decimal point, were used in TNE calculations. If any of the 
+individual analyte values used in the respective formulas are missing, the TNE 
+variable was set to missing.</P>
+<P><B>TNE-2 = </B>(Total Cotinine /176.2151) + (Total
+ Trans-3’-Hydroxycotinine/192.2145) nmol/mL</P>
+<P><B>TNE-3 =</B> (Total Nicotine/162.2316) + (Total Cotinine /176.2151) +
+ (Total Trans-3’-Hydroxycotinine/192.2145) nmol/mL</P>
+<P><B>TNE-6 = </B>(Total Nicotine/162.2316) + (Total Cotinine /176.2151) +
+ (Total Trans-3’-Hydroxycotinine/192.2145) + (Total (S)-Cotinine N-oxide/ 
+192.2145) + ((1’S,2’S)-Nicotine 1’-oxide/ 178.231) + ((R,S)-Nornicotine/ 
+148.2050) nmol/mL</P>
+<P><B>Detection Limits</B></P>
+<P>The detection limits were constant for all of the analytes in the data set. 
+Two variables are provided for each of these analytes. The variable name ending 
+in “LC” (ex., URDCOTLC) indicates whether the result was below the limit of 
+detection: the value “0” means that the result was at or above the limit of 
+detection, “1” indicates that the result was below the limit of detection. For 
+analytes with analytic results below the lower limit of detection (ex. URDCOTLC 
+=1), an imputed fill value was placed in the analyte results field. This value 
+is the lower limit of detection divided by the square root of 2 (LLOD/sqrt[2]). 
+The other variable prefixed URX (ex., URXCOTT) provides the analytic result for 
+the analyte. </P>
+<P>The lower limit of detection (LLOD in ng/mL) for Cotinine, Hydroxycotinine, 
+&amp; Nicotine Metabolites and Analogs in urine is:</P>
+<DIV style="text-align: center;">
+<TABLE border="1" cellspacing="0" cellpadding="0">
+  <THEAD>
+  <TR>
+    <TD style="width: 167px; text-align: left;">
+      <P style="text-align: center;"><B>VARIABLE</B></P></TD>
+    <TD style="width: 308px; text-align: left;">
+      <P style="text-align: center;"><B>SAS LABEL</B></P></TD>
+    <TD style="width: 141px; text-align: left;">
+      <P style="text-align: center;"><B>LLOD</B></P></TD></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD style="width: 167px; text-align: left;">
+      <P style="text-align: center;">URXANBT</P></TD>
+    <TD style="width: 308px; text-align: left;">
+      <P style="text-align: center;">Anabasine, urine            (ng/mL)</P></TD>
+    <TD style="width: 141px; text-align: left;">
+      <P style="text-align: center;">0.51</P></TD></TR>
+  <TR>
+    <TD style="width: 167px; text-align: left;">
+      <P style="text-align: center;">URXANTT</P></TD>
+    <TD style="width: 308px; text-align: left;">
+      <P style="text-align: center;">Anatabine, urine            (ng/mL)</P></TD>
+    <TD style="width: 141px; text-align: left;">
+      <P style="text-align: center;">0.39</P></TD></TR>
+  <TR>
+    <TD style="width: 167px; text-align: left;">
+      <P style="text-align: center;">URXCOTT</P></TD>
+    <TD style="width: 308px; text-align: left;">
+      <P style="text-align: center;">Total Cotinine,            urine 
+    (ng/mL)</P></TD>
+    <TD style="width: 141px; text-align: left;">
+      <P style="text-align: center;">0.03</P></TD></TR>
+  <TR>
+    <TD style="width: 167px; text-align: left;">
+      <P style="text-align: center;">URXCOXT</P></TD>
+    <TD style="width: 308px; text-align: left;">
+      <P style="text-align: center;">Cotinine-n-oxide,            urine 
+      (ng/mL)</P></TD>
+    <TD style="width: 141px; text-align: left;">
+      <P style="text-align: center;">2.02</P></TD></TR>
+  <TR>
+    <TD style="width: 167px; text-align: left;">
+      <P style="text-align: center;">URXHCTT</P></TD>
+    <TD style="width: 308px; text-align: left;">
+      <P style="text-align: center;">Total Hydroxycotinine,            urine 
+      (ng/mL)</P></TD>
+    <TD style="width: 141px; text-align: left;">
+      <P style="text-align: center;">0.03</P></TD></TR>
+  <TR>
+    <TD style="width: 167px; text-align: left;">
+      <P style="text-align: center;">URXNICT</P></TD>
+    <TD style="width: 308px; text-align: left;">
+      <P style="text-align: center;">Nicotine, urine            (ng/mL)</P></TD>
+    <TD style="width: 141px; text-align: left;">
+      <P style="text-align: center;">10.50</P></TD></TR>
+  <TR>
+    <TD style="width: 167px; text-align: left;">
+      <P style="text-align: center;">URXNNCT</P></TD>
+    <TD style="width: 308px; text-align: left;">
+      <P style="text-align: center;">Nornicotine, urine            
+(ng/mL)</P></TD>
+    <TD style="width: 141px; text-align: left;">
+      <P style="text-align: center;">2.50</P></TD></TR>
+  <TR>
+    <TD style="width: 167px; text-align: left;">
+      <P style="text-align: center;">URXNOXT</P></TD>
+    <TD style="width: 308px; text-align: left;">
+      <P style="text-align: center;">Nicotine-1 N-oxide,            urine 
+      (ng/mL)</P></TD>
+    <TD style="width: 141px; text-align: left;">
+      <P style="text-align: center;">2.50</P></TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV id="References">
+<H2>References</H2>
+<UL>
+  <LI>
+  <P style="margin: 8.4pt 45.75pt 8.4pt 20px; line-height: normal;">Caudill, 
+  S.P., Schleicher, R.L., Pirkle, J.L. Multi-rule quality control for the 
+  age-related eye disease study. Statist. Med. (2008) 
+27(20):4094-40106.</P></LI>
+  <LI>
+  <P style="margin: 8.4pt 45.75pt 8.4pt 20px; line-height: normal;">Hukkanen J, 
+  Jacob P, Benowitz NL. Metabolism and disposition kinetics of nicotine. 
+  Pharmacol Rev. 2005;57(1):79-115. </P></LI>
+  <LI>
+  <P style="margin: 8.4pt 45.75pt 8.4pt 20px; line-height: normal;">McGuffey JE, 
+  Wei B, Bernert JT, Morrow JC, Xia B, et al. (2014) Validation of a LC-MS/MS 
+  Method for Quantifying Urinary Nicotine, Six Nicotine Metabolites and the 
+  Minor Tobacco Alkaloids—Anatabine and Anabasine—in Smokers’ Urine. PLoS ONE 
+  9(7): e101816. doi:10.1371/journal.pone.0101816.</P></LI>
+  <LI>
+  <P style="margin: 8.4pt 45.75pt 8.4pt 20px; line-height: normal;">Wei B, Feng 
+  J, Rehmani IJ, et al. A high-throughput robotic sample preparation system and
+   HPLC-MS/MS for measuring urinary anatabine, anabasine, nicotine and major
+   nicotine metabolites. Clin Chim Acta. 2014;436:290-297.</P></LI>
+  <LI>
+  <P style="margin: 8.4pt 45.75pt 8.4pt 20px; line-height: normal;">Westgard 
+  J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewhart chart for quality 
+  control in clinical chemistry. Clin Chem (1981) 27:493-501.</P></LI></UL></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="WTSA2YR">WTSA2YR - Subsample A Weight</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">WTSA2YR</DD>
+  <DT>SAS Label: </DT>
+  <DD>Subsample A Weight</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Subsample A Weight</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">16284.37488 to 530325.34726</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2724</TD>
+    <TD align="right" class="values">2724</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">No Lab Result</TD>
+    <TD align="right" class="values">31</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXCOTT">URXCOTT - Total Cotinine, urine (ng/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXCOTT</DD>
+  <DT>SAS Label: </DT>
+  <DD>Total Cotinine, urine (ng/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Total Cotinine, urine (ng/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.021 to 26800</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2572</TD>
+    <TD align="right" class="values">2572</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">183</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDCOTLC">URDCOTLC - Total Cotinine, urine Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDCOTLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Total Cotinine, urine Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Total Cotinine, urine Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above detection limit</TD>
+    <TD align="right" class="values">2513</TD>
+    <TD align="right" class="values">2513</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">59</TD>
+    <TD align="right" class="values">2572</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">183</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXHCTT">URXHCTT - Total Hydroxycotinine, urine 
+(ng/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXHCTT</DD>
+  <DT>SAS Label: </DT>
+  <DD>Total Hydroxycotinine, urine (ng/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Total Hydroxycotinine, urine (ng/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.021 to 70600</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2572</TD>
+    <TD align="right" class="values">2572</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">183</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDHCTLC">URDHCTLC - Total Hydroxycotinine, urine Comt 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDHCTLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Total Hydroxycotinine, urine Comt Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Total Hydroxycotinine, urine Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above detection limit</TD>
+    <TD align="right" class="values">2519</TD>
+    <TD align="right" class="values">2519</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">53</TD>
+    <TD align="right" class="values">2572</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">183</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXANBT">URXANBT - Anabasine, urine (ng/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXANBT</DD>
+  <DT>SAS Label: </DT>
+  <DD>Anabasine, urine (ng/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Anabasine, urine (ng/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.36 to 171</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">615</TD>
+    <TD align="right" class="values">615</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">2140</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDANBLC">URDANBLC - Anabasine, urine Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDANBLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Anabasine, urine Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Anabasine, urine Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above detection limit</TD>
+    <TD align="right" class="values">467</TD>
+    <TD align="right" class="values">467</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">148</TD>
+    <TD align="right" class="values">615</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Result not obtained, cotinine (URXCOTT) result below 20 
+      ng/mL</TD>
+    <TD align="right" class="values">1957</TD>
+    <TD align="right" class="values">2572</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">183</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXANTT">URXANTT - Anatabine, urine (ng/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXANTT</DD>
+  <DT>SAS Label: </DT>
+  <DD>Anatabine, urine (ng/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Anatabine, urine (ng/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.28 to 462</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">615</TD>
+    <TD align="right" class="values">615</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">2140</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDANTLC">URDANTLC - Anatabine, urine Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDANTLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Anatabine, urine Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Anatabine, urine Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above detection limit</TD>
+    <TD align="right" class="values">472</TD>
+    <TD align="right" class="values">472</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">143</TD>
+    <TD align="right" class="values">615</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Result not obtained, cotinine (URXCOTT) result below 20 
+      ng/mL</TD>
+    <TD align="right" class="values">1957</TD>
+    <TD align="right" class="values">2572</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">183</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXCOXT">URXCOXT - Cotinine-n-oxide, urine (ng/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXCOXT</DD>
+  <DT>SAS Label: </DT>
+  <DD>Cotinine-n-oxide, urine (ng/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Cotinine-n-oxide, urine (ng/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1.43 to 3280</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">615</TD>
+    <TD align="right" class="values">615</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">2140</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDCOXLC">URDCOXLC - Cotinine-n-oxide, urine Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDCOXLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Cotinine-n-oxide, urine Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Cotinine-n-oxide, urine Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above detection limit</TD>
+    <TD align="right" class="values">606</TD>
+    <TD align="right" class="values">606</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">9</TD>
+    <TD align="right" class="values">615</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Result not obtained, cotinine (URXCOTT) result below 20 
+      ng/mL</TD>
+    <TD align="right" class="values">1957</TD>
+    <TD align="right" class="values">2572</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">183</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXNICT">URXNICT - Nicotine, urine (ng/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXNICT</DD>
+  <DT>SAS Label: </DT>
+  <DD>Nicotine, urine (ng/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Nicotine, urine (ng/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">7.42 to 32100</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">615</TD>
+    <TD align="right" class="values">615</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">2140</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDNICLC">URDNICLC - Nicotine, urine Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDNICLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Nicotine, urine Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Nicotine, urine Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above detection limit</TD>
+    <TD align="right" class="values">538</TD>
+    <TD align="right" class="values">538</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">77</TD>
+    <TD align="right" class="values">615</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Result not obtained, cotinine (URXCOTT) result below 20 
+      ng/mL</TD>
+    <TD align="right" class="values">1957</TD>
+    <TD align="right" class="values">2572</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">183</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXNNCT">URXNNCT - Nornicotine, urine (ng/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXNNCT</DD>
+  <DT>SAS Label: </DT>
+  <DD>Nornicotine, urine (ng/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Nornicotine, urine (ng/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1.77 to 613</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">614</TD>
+    <TD align="right" class="values">614</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">2141</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDNCTLC">URDNCTLC - Nornicotine, urine Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDNCTLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Nornicotine, urine Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Nornicotine, urine Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above detection limit</TD>
+    <TD align="right" class="values">486</TD>
+    <TD align="right" class="values">486</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">128</TD>
+    <TD align="right" class="values">614</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Result not obtained, cotinine (URXCOTT) result below 20 
+      ng/mL</TD>
+    <TD align="right" class="values">1957</TD>
+    <TD align="right" class="values">2571</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">184</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXNOXT">URXNOXT - Nicotine-1 N-oxide, urine 
+(ng/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXNOXT</DD>
+  <DT>SAS Label: </DT>
+  <DD>Nicotine-1 N-oxide, urine (ng/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Nicotine-1 N-oxide, urine (ng/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1.77 to 6120</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">615</TD>
+    <TD align="right" class="values">615</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">2140</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDNOXLC">URDNOXLC - Nicotine-1 N-oxide, urine Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDNOXLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Nicotine-1 N-oxide, urine Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Nicotine-1 N-oxide, urine Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above detection limit</TD>
+    <TD align="right" class="values">579</TD>
+    <TD align="right" class="values">579</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">36</TD>
+    <TD align="right" class="values">615</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Result not obtained, cotinine (URXCOTT) result below 20 
+      ng/mL</TD>
+    <TD align="right" class="values">1957</TD>
+    <TD align="right" class="values">2572</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">183</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDTNE2">URDTNE2 - TNE - 2 (nmol/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDTNE2</DD>
+  <DT>SAS Label: </DT>
+  <DD>TNE - 2 (nmol/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Total Nicotine Equivalents (TNE) - 2 (nmol/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0002 to 519.4</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2572</TD>
+    <TD align="right" class="values">2572</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">183</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDTNE3">URDTNE3 - TNE - 3 (nmol/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDTNE3</DD>
+  <DT>SAS Label: </DT>
+  <DD>TNE - 3 (nmol/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Total Nicotine Equivalents (TNE) - 3 (nmol/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.255 to 717.3</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">615</TD>
+    <TD align="right" class="values">615</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">2140</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDTNE6">URDTNE6 - TNE - 6 (nmol/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDTNE6</DD>
+  <DT>SAS Label: </DT>
+  <DD>TNE - 6 (nmol/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Total Nicotine Equivalents (TNE) - 6 (nmol/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.2983 to 768.2</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">614</TD>
+    <TD align="right" class="values">614</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">2141</TD>
+    <TD align="right" class="values">2755</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>

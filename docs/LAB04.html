@@ -1,0 +1,2244 @@
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>LAB04</TITLE>     
+<META name="title" content="NHANES 1999-2000: Volatile Organic Compounds - Blood &amp; Water Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   </HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="#Component_Description">Component Description</A>           </LI>
+  <LI><A href="#Eligible_Sample">Eligible Sample</A>           </LI>
+  <LI><A href="#Description_of_Laboratory_Methodology">Description of Laboratory 
+  Methodology</A>           </LI>
+  <LI><A href="#Data_Processing_and_Editing">Data Processing and Editing</A>     
+        </LI>
+  <LI><A href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+  Assurance and Monitoring</A>           </LI>
+  <LI><A href="#Analytic_Notes">Analytic Notes</A>           </LI>
+  <LI><A href="#References">References</A>           </LI>
+  <LI><A href="#Codebook">Codebook</A>             
+  <UL id="CodebookLinks">
+    <LI><A href="#SEQN">SEQN - Respondent sequence number</A>               
+</LI>
+    <LI><A href="#WTSVOC2Y">WTSVOC2Y - VOC subsample 2 yr MEC Weight</A>         
+          </LI>
+    <LI><A href="#WTSVOC4Y">WTSVOC4Y - VOC subsample 4 yr MEC Weight</A>         
+          </LI>
+    <LI><A href="#LBXWBF">LBXWBF - Water Bromoform (ng/ml)</A>               
+    </LI>
+    <LI><A href="#LBXWCF">LBXWCF - Water Chloroform (ng/ml)</A>               
+    </LI>
+    <LI><A href="#LBXWBM">LBXWBM - Water Bromodichloromethane (ng/ml)</A>        
+           </LI>
+    <LI><A href="#LBXWCM">LBXWCM - Water Dibromochloromethane (ng/ml)</A>        
+           </LI>
+    <LI><A href="#LBXWME">LBXWME - Water MTBE (ng/ml)</A>               </LI>
+    <LI><A href="#LBXV4C">LBXV4C - Blood Tetrachloroethene (ng/ml)</A>           
+        </LI>
+    <LI><A href="#LBXVBF">LBXVBF - Blood Bromoform (pg/ml)</A>               
+    </LI>
+    <LI><A href="#LBXVBM">LBXVBM - Blood Bromodichloromethane (pg/ml)</A>        
+           </LI>
+    <LI><A href="#LBXVBZ">LBXVBZ - Blood Benzene (ng/ml)</A>               </LI>
+    <LI><A href="#LBXVCF">LBXVCF - Blood Chloroform (pg/ml)</A>               
+    </LI>
+    <LI><A href="#LBXVCM">LBXVCM - Blood Dibromochloromethane (pg/ml)</A>        
+           </LI>
+    <LI><A href="#LBXVCT">LBXVCT - Blood Carbon Tetrachloride (ng/ml)</A>        
+           </LI>
+    <LI><A href="#LBXVDB">LBXVDB - Blood 1,4-Dichlorobenzene (ng/ml)</A>         
+          </LI>
+    <LI><A href="#LBXVEB">LBXVEB - Blood Ethylbenzene (ng/ml)</A>               
+    </LI>
+    <LI><A href="#LBXVME">LBXVME - Blood MTBE (pg/ml)</A>               </LI>
+    <LI><A href="#LBXVOX">LBXVOX - Blood o-Xylene (ng/ml)</A>               
+</LI>
+    <LI><A href="#LBXVST">LBXVST - Blood Styrene (ng/ml)</A>               </LI>
+    <LI><A href="#LBXVTC">LBXVTC - Blood Trichloroethene (ng/ml)</A>             
+      </LI>
+    <LI><A href="#LBXV3A">LBXV3A - Blood 1,1,1-Trichloroethane (ng/ml)</A>       
+            </LI>
+    <LI><A href="#LBXVTO">LBXVTO - Blood Toluene (ng/ml)</A>               </LI>
+    <LI><A href="#LBXVXY">LBXVXY - Blood m-/p-Xylene (ng/ml)</A>               
+    </LI>
+    <LI><A href="#LBDWBFLC">LBDWBFLC - Water Bromoform Comment Code</A>          
+         </LI>
+    <LI><A href="#LBDWCFLC">LBDWCFLC - Water Chloroform Comment Code</A>         
+          </LI>
+    <LI><A href="#LBDWBMLC">LBDWBMLC - Water Bromodichloromethane Comment 
+    Code</A>               </LI>
+    <LI><A href="#LBDWCMLC">LBDWCMLC - Water Dibromochloromethane Comment 
+    Code</A>               </LI>
+    <LI><A href="#LBDWMELC">LBDWMELC - Water MTBE Comment Code</A>               
+    </LI>
+    <LI><A href="#LBDV4CLC">LBDV4CLC - Blood Tetrachloroethene Comment Code</A>  
+                 </LI>
+    <LI><A href="#LBDVBFLC">LBDVBFLC - Blood Bromoform Comment Code</A>          
+         </LI>
+    <LI><A href="#LBDVBMLC">LBDVBMLC - Blood Bromodichloromethane Comment 
+    Code</A>               </LI>
+    <LI><A href="#LBDVBZLC">LBDVBZLC - Blood Benzene Comment Code</A>            
+       </LI>
+    <LI><A href="#LBDVCFLC">LBDVCFLC - Blood Chloroform Comment Code</A>         
+          </LI>
+    <LI><A href="#LBDVCMLC">LBDVCMLC - Blood Dibromochloromethane Comment 
+    Code</A>               </LI>
+    <LI><A href="#LBDVCTLC">LBDVCTLC - Blood Carbon Tetrachloride Comment 
+    Code</A>               </LI>
+    <LI><A href="#LBDVDBLC">LBDVDBLC - Blood 1,4-Dichlorobenzene Comment 
+    Code</A>               </LI>
+    <LI><A href="#LBDVEBLC">LBDVEBLC - Blood Ethylbenzene Comment Code</A>       
+            </LI>
+    <LI><A href="#LBDVMELC">LBDVMELC - Blood MTBE Comment Code</A>               
+    </LI>
+    <LI><A href="#LBDVOXLC">LBDVOXLC - Blood o-Xylene Comment Code</A>           
+        </LI>
+    <LI><A href="#LBDVSTLC">LBDVSTLC - Blood Styrene Comment Code</A>            
+       </LI>
+    <LI><A href="#LBDVTCLC">LBDVTCLC - Blood Trichloroethene Comment Code</A>    
+               </LI>
+    <LI><A href="#LBDV3ALC">LBDV3ALC - Blood 1,1,1-Trichloroethane Comment 
+    Code</A>               </LI>
+    <LI><A href="#LBDVTOLC">LBDVTOLC - Blood Toluene Comment Code</A>            
+       </LI>
+    <LI><A href="#LBDVXYLC">LBDVXYLC - Blood m-/p-Xylene Comment Code</A>        
+           </LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>1999-2000 Data Documentation, Codebook, and Frequencies</H2>
+<H3>Volatile Organic Compounds - Blood &amp; Water (LAB04)</H3>
+<H4> Data File: LAB04.xpt</H4>
+<H5 class="left">First Published: December 2006</H5>
+<H5 class="right">Last Revised: NA</H5></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P><STRONG>Volatile Organic Compounds (Human Blood):</STRONG> </P>
+<P>Exposure to volatile organic compounds (VOCs) is ubiquitous. Chronic exposure 
+to extremely high levels of some VOCs can lead to cancer and neurocognitive 
+dysfunction (1,2). </P>
+<P>Nearly 200 air toxics have been associated with adverse health effects in 
+occupational studies or laboratory studies, but have not been monitored in 
+general population groups. Information on levels of exposure to these compounds 
+as measured by their levels in blood is essential to determine the need for 
+regulatory mechanisms to reduce the levels of hazardous air pollutants to which 
+the general population is exposed. </P>
+<P><STRONG>Volatile Organic Compounds (Home Tap Water):</STRONG> </P>
+<P>In addition to assessing levels of VOCs in blood, VOC levels will be measured 
+in home tap water specimens provided by NHANES participants. Specifically, 
+trihalomethanes (THMs) and the fuel additive methyl tertiary-butyl ether (MTBE) 
+are measured in thesesamples.</P>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P>In 1999, the eligible sample was a one-fourth subsample of persons 20–59 
+years; in 2000, it was a one-third subsample of persons 20–59 years. There were 
+no component-specific exclusions. </P>
+<H2 id="Description_of_Laboratory_Methodology">Description of Laboratory 
+Methodology</H2>
+<P>Measurements of Trihalomethanes (THMs) and MTBE in Tap <BR> Water: </P>
+<P>The prevalence of water disinfection by-products in drinking water <BR>
+ supplies has raised concerns about possible health effects from chronic <BR>
+ exposure to these compounds. The objective is to support studies <BR> exploring 
+the relationship between exposure to THMs and health <BR> effects. </P>
+<P>This automated analytical method uses headspace solid-phase microextraction 
+(SPME) coupled with capillary gas chromatography and mass spectrometry (3). This 
+method quantitates trace levels of THMs (chloroform, bromodichloromethane, 
+dibromochloromethane, and&nbsp;bromoform) and MTBE in tap water. Detection 
+limits of less than 100 pg/mL for all analytes and linear ranges of three orders 
+of magnitude are adequate for measuring the THMs in tap water samples tested 
+from across the United States. THMs are stable for extended periods in tap water 
+samples after quenching of residual chlorine and buffering to pH 6.5, thus 
+enabling larger epidemiologic field studies with simplified sample collection 
+protocols. </P>
+<P><STRONG>Measurements of THMs and MTBE in Whole Blood</STRONG> </P>
+<P>The prevalence of water disinfection by-products (e.g. THMs) in tap water has 
+raised concerns about possible health effects from chronic exposure to these 
+compounds. Exposure to the fuel oxygenate MTBE has also raised concerns. People 
+can be exposed to THMs and MTBE through a variety of sources, including use of 
+household tap water that contains these chemicals. The objective of this study 
+is to support studies exploring the relationship between health effects and 
+exposure to THMs and MTBE. THMs and MTBE were quantified in human blood using 
+capillary gas chromatography (GC) and high-resolution mass spectrometry (MS) 
+with selected ion mass detection and isotope-dilution techniques (4). This 
+method quantified trace levels of THMs (chloroform, bromodichloromethane, 
+dibromochloromethane, and bromoform) and MTBE in human blood. Analyte responses 
+were adequate for measuring background levels after extraction of these volatile 
+organic compounds with either purge-and-trap extraction or headspace SPME. 
+Detection limits ranged from 0.3–2.4 pg/mL, with linear ranges of three orders 
+of magnitude. This method provided adequate sensitivity for measuring the THMs 
+and MTBE in most blood samples tested from diverse U.S. reference 
+population.</P>
+<P><STRONG>Measurements of other VOCs in Whole Blood</STRONG> </P>
+<P>An additional 11 VOCs were measured in human blood using SPME in conjunction 
+with gas chromatography and bench top quadrupole mass spectrometer (5). A 
+combination of SPME and multiple single-ion monitoring minimizes the 
+interferences and chemical noise associated with whole-blood samples. Detection 
+limits are below 50 ppt (pg/mL) for a majority of the VOCs tested. </P>
+<H2 id="Data_Processing_and_Editing">Data Processing and Editing</H2>
+<P>Automated data collection procedures for the survey were introduced in NHANES 
+1999–2000. In the MECs and analytical laboratories, data for the laboratory 
+component are recorded directly onto a computerized data collection form. The 
+system is centrally integrated, and it allows for ongoing monitoring of much of 
+the data. Although the complete blood count and pregnancy analyses are performed 
+in the MEC laboratory, most analyses are conducted elsewhere by approximately 21 
+laboratories across the United States.&nbsp;</P>
+<P>Guidelines have been developed that provide standards for naming variables, 
+filling missing values, and handling missing records. NCHS staff, assisted by 
+contract staff, has developed data-editing specifications that check data sets 
+for valid codes, ranges, and skip- pattern consistencies and examine the 
+consistency of values between interrelated variables. Comments have been 
+reviewed and recoded. NCHS staff verifies extremely high and low values whenever 
+possible, and numerous consistency checks are performed. Nonetheless, users 
+should examine the range and frequency of values before analyzing 
+data.&nbsp;&nbsp;</P>
+<P><STRONG>Data Editing</STRONG> </P>
+<P>The data editing specifications are as follows: </P>
+<UL>
+  <LI>Age and gender checks</LI>
+  <LI>Total number of observations complete for each field </LI>
+  <LI>No field overlap, truncated values, or weird results </LI>
+  <LI>Direct data entry (DDE) errors </LI>
+  <LI>Abnormal results confirmed by lab </LI>
+  <LI>Test algorithm performed • Checked comment codes to resolve missing 
+  results and missing records </LI>
+  <LI>All missing results and missing MEC-examined records are accounted </LI>
+  <LI>Duplicate records were verified and deleted </LI></UL>
+<P>&nbsp;</P>
+<H2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+Assurance and Monitoring</H2>
+<P><STRONG>Mobile Examination Centers (MECs)</STRONG> </P>
+<P>Laboratory team performance is monitored using several techniques. </P>
+<P>NCHS and contract consultants use a structured quality assurance evaluation 
+during unscheduled visits to evaluate both the quality of the laboratory work 
+and the quality-control procedures. Each laboratory staff person is observed for 
+equipment operation, specimen collection and preparation; testing procedures and 
+constructive feedback are given to each staff. Formal retraining sessions are 
+conducted annually to ensure that required skill levels were maintained. </P>
+<P>The NHANES QA/QC protocols meet the 1988 Clinical Laboratory Improvement Act 
+mandates. Detailed QA/QC instructions are discussed in the NHANES LPM. </P>
+<P><STRONG>Analytical Laboratories</STRONG> </P>
+<P>NHANES uses several methods to monitor the quality of the analyses performed 
+by the contract laboratories. In the MEC, these methods include performing 
+second examinations on previously examined participants and blind split samples 
+collected on "dry run" sessions. In addition, contract laboratories randomly 
+perform repeat testing on 2.0% of all specimens. </P>
+<P>NCHS developed and distributed a quality control protocol for all the 
+contract laboratories which outlined the Westgaard rules used when running 
+NHANES specimens. Progress reports containing any problems encountered during 
+shipping or receipt of specimens, summary statistics for each control pool, QC 
+graphs, instrument calibration, reagents, and any special considerations are 
+submitted to NCHS and Westat quarterly. The reports are reviewed for trends or 
+shifts in the data. The laboratories are required to explain any identified 
+areas of concern. NCHS/Westat is currently reviewing these reports. </P>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P>Measures of volatile organic compounds in blood and water were assessed in a 
+subsample of participants aged 20–59. Use the special weights included in this 
+data file when analyzing data. Please refer to the Analytic Guidelines for 
+further details on the use of sample weights and other analytic issues. </P>
+<P>The analysis of NHANES 1999-2000 laboratory data must be conducted with the 
+key survey design and basic demographic variables. The recommended procedure for 
+variance estimation requires use of stratum and PSU variables (SDMVSTRA and 
+SDMVPSU, respectively), which are included in the demographic data file for each 
+data release. The NHANES 1999-2000 Household Questionnaire and Demographic Data 
+Files contain demographic data, health indicators, and other related information 
+collected during household interviews. The phlebotomy file includes auxiliary 
+information such as the conditions precluding venipuncture. The demographic, 
+household questionnaire and phlebotomy files may be linked to the laboratory 
+data file using the unique survey participant identifier SEQN. </P>
+<P><STRONG>Detection limits</STRONG> </P>
+<P>The detection limit was variable for many of the analytes in the data set. In 
+addition two variables are provided for each of these analytes. The variable 
+named LBD___LC indicates whether the result was below the limit of detection. 
+There are three values: "0", "1", and "2". "0" means that the result was at or 
+above the limit of detection. "1" indicates that the result was below the limit 
+of detection. "2" means the result was above the limit of detection. </P>
+<P>The other variable named LBX___ provides the analytic result for that 
+analyte. In cases, where the result was below the limit of detection, the value 
+for that variable is the detection limit divided by the square root of two. 
+</P></DIV>
+<DIV id="References">
+<H2>References</H2>
+<UL>
+  <LI>Blount BC, Kobelski RJ, McElprang DO, Ashley DL, Morrow JC, Chambers DM, 
+  Cardinali FL (2006) Quantification of 31 Volatile Organic Compounds in Whole 
+  Blood Using Solid-Phase Microextraction and Gas Chromatography/Mass 
+  Spectrometry. J. Chromatography B. 832(2):292-301.</LI>
+  <LI>Bonin MA, Silva LK, Smith MM, Ashley DL, Blount BC (2005) Measurement of 
+  trihalomethanes and methyl tert-butyl ether in whole blood using gas 
+  chromatography with high-resolution mass spectrometry. J Anal Toxicol. 
+  29(2):81-89.</LI>
+  <LI>Cardinali FL, Ashley DL, Morrow JC, Moll DM, Blount BC (2004), Measurement 
+  of Trihalomethanes and Methyl Tertiary-Butyl Ether in Tap Water Using 
+  Solid-Phase Microextraction GC/MS, Journal of <BR>Chromatographic Sciences, 
+  42:200-206.</LI>
+  <LI>Morandi MT, Stock TH. Personal Exposures to Toxic Air Pollutants, Vol. 2. 
+  Houston, TX; The University of Texas – Houston, Health Science Center, School 
+  of Public Health: 1998.</LI>
+  <LI>U.S. Occupational Safety and Health Administration (OSHA). Organic Vapors, 
+  Method 07 in Analytical Methods Manual. Salt Lake City, Utah; OSHA Analytical 
+  Laboratory: 1985. </LI></UL></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="WTSVOC2Y">WTSVOC2Y - VOC subsample 2 yr MEC Weight</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">WTSVOC2Y</DD>
+  <DT>SAS Label: </DT>
+  <DD>VOC subsample 2 yr MEC Weight</DD>
+  <DT>English Text: </DT>
+  <DD class="info"></DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">6703.435144 to 992877.35227</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">669</TD>
+    <TD align="right" class="values">669</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Non-Respondent</TD>
+    <TD align="right" class="values">182</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="WTSVOC4Y">WTSVOC4Y - VOC subsample 4 yr MEC Weight</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">WTSVOC4Y</DD>
+  <DT>SAS Label: </DT>
+  <DD>VOC subsample 4 yr MEC Weight</DD>
+  <DT>English Text: </DT>
+  <DD class="info"></DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">2836.3452371 to 306407.42974</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">669</TD>
+    <TD align="right" class="values">669</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Non-Respondent</TD>
+    <TD align="right" class="values">182</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXWBF">LBXWBF - Water Bromoform (ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXWBF</DD>
+  <DT>SAS Label: </DT>
+  <DD>Water Bromoform (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Bromoform Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0327 to 48.3</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">617</TD>
+    <TD align="right" class="values">617</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">234</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXWCF">LBXWCF - Water Chloroform (ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXWCF</DD>
+  <DT>SAS Label: </DT>
+  <DD>Water Chloroform (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Chloroform Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.1506 to 233</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">630</TD>
+    <TD align="right" class="values">630</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">221</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXWBM">LBXWBM - Water Bromodichloromethane 
+(ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXWBM</DD>
+  <DT>SAS Label: </DT>
+  <DD>Water Bromodichloromethane (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Bromodichloromethane Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0785 to 39.3</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">622</TD>
+    <TD align="right" class="values">622</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">229</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXWCM">LBXWCM - Water Dibromochloromethane 
+(ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXWCM</DD>
+  <DT>SAS Label: </DT>
+  <DD>Water Dibromochloromethane (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Dibromochloromethane Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0785 to 31.7</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">617</TD>
+    <TD align="right" class="values">617</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">234</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXWME">LBXWME - Water MTBE (ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXWME</DD>
+  <DT>SAS Label: </DT>
+  <DD>Water MTBE (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Methyl tert. butyl ether (MTBE) Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0707 to 25.4</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">620</TD>
+    <TD align="right" class="values">620</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">231</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXV4C">LBXV4C - Blood Tetrachloroethene (ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXV4C</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Tetrachloroethene (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Tetrachloroethene Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0144 to 9.7</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">286</TD>
+    <TD align="right" class="values">286</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">565</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVBF">LBXVBF - Blood Bromoform (pg/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVBF</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Bromoform (pg/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Bromoform Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.3543 to 20.3</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">330</TD>
+    <TD align="right" class="values">330</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">521</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVBM">LBXVBM - Blood Bromodichloromethane 
+(pg/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVBM</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Bromodichloromethane (pg/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Bromodichloromethane Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.1563 to 47.4</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">354</TD>
+    <TD align="right" class="values">354</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">497</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVBZ">LBXVBZ - Blood Benzene (ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVBZ</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Benzene (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Benzene Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0323 to 1.69</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">300</TD>
+    <TD align="right" class="values">300</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">551</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVCF">LBXVCF - Blood Chloroform (pg/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVCF</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Chloroform (pg/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Chloroform Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">6.42 to 1570</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">255</TD>
+    <TD align="right" class="values">255</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">596</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVCM">LBXVCM - Blood Dibromochloromethane 
+(pg/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVCM</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Dibromochloromethane (pg/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Dibromochloromethane Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.152 to 57</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">350</TD>
+    <TD align="right" class="values">350</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">501</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVCT">LBXVCT - Blood Carbon Tetrachloride 
+(ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVCT</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Carbon Tetrachloride (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Carbon Tetrachloride Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.007 to 0.116</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">287</TD>
+    <TD align="right" class="values">287</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">564</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVDB">LBXVDB - Blood 1,4-Dichlorobenzene (ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVDB</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood 1,4-Dichlorobenzene (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">1,4-Dichlorobenzene Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.026 to 249</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">304</TD>
+    <TD align="right" class="values">304</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">547</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVEB">LBXVEB - Blood Ethylbenzene (ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVEB</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Ethylbenzene (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Ethylbenzene Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.01 to 5.16</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">262</TD>
+    <TD align="right" class="values">262</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">589</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVME">LBXVME - Blood MTBE (pg/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVME</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood MTBE (pg/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Methyl t-Butyl Ether (MTBE) Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.784 to 6270</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">284</TD>
+    <TD align="right" class="values">284</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">567</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVOX">LBXVOX - Blood o-Xylene (ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVOX</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood o-Xylene (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">o-Xylene Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.021 to 6.42</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">309</TD>
+    <TD align="right" class="values">309</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">542</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVST">LBXVST - Blood Styrene (ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVST</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Styrene (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Styrene Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0066 to 9.45</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">284</TD>
+    <TD align="right" class="values">284</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">567</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVTC">LBXVTC - Blood Trichloroethene (ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVTC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Trichloroethene (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Trichloroethene Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0066 to 0.923</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">303</TD>
+    <TD align="right" class="values">303</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">548</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXV3A">LBXV3A - Blood 1,1,1-Trichloroethane 
+(ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXV3A</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood 1,1,1-Trichloroethane (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">1,1,1-Trichloroethane Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0161 to 4.26</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">286</TD>
+    <TD align="right" class="values">286</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">565</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVTO">LBXVTO - Blood Toluene (ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVTO</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Toluene (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Toluene Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0231 to 10.2</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">304</TD>
+    <TD align="right" class="values">304</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">547</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXVXY">LBXVXY - Blood m-/p-Xylene (ng/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXVXY</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood m-/p-Xylene (ng/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">m-/p-Xylene Result</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0358 to 14.3</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">296</TD>
+    <TD align="right" class="values">296</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">555</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDWBFLC">LBDWBFLC - Water Bromoform Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDWBFLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Water Bromoform Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Bromoform Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">428</TD>
+    <TD align="right" class="values">428</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">188</TD>
+    <TD align="right" class="values">616</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">617</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">234</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDWCFLC">LBDWCFLC - Water Chloroform Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDWCFLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Water Chloroform Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Chloroform Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">526</TD>
+    <TD align="right" class="values">526</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">103</TD>
+    <TD align="right" class="values">629</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">630</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">221</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDWBMLC">LBDWBMLC - Water Bromodichloromethane Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDWBMLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Water Bromodichloromethane Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Bromodichloromethane Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">521</TD>
+    <TD align="right" class="values">521</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">101</TD>
+    <TD align="right" class="values">622</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">622</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">229</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDWCMLC">LBDWCMLC - Water Dibromochloromethane Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDWCMLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Water Dibromochloromethane Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info"></DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">531</TD>
+    <TD align="right" class="values">531</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">86</TD>
+    <TD align="right" class="values">617</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">617</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">234</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDWMELC">LBDWMELC - Water MTBE Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDWMELC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Water MTBE Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Methyl tert. butyl ether (MTBE) Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">180</TD>
+    <TD align="right" class="values">180</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">440</TD>
+    <TD align="right" class="values">620</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">620</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">231</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDV4CLC">LBDV4CLC - Blood Tetrachloroethene Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDV4CLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Tetrachloroethene Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Tetrachloroethene Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">218</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">65</TD>
+    <TD align="right" class="values">283</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">3</TD>
+    <TD align="right" class="values">286</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">565</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVBFLC">LBDVBFLC - Blood Bromoform Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVBFLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Bromoform Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Bromoform Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">251</TD>
+    <TD align="right" class="values">251</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">79</TD>
+    <TD align="right" class="values">330</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">330</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">521</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVBMLC">LBDVBMLC - Blood Bromodichloromethane Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVBMLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Bromodichloromethane Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Bromodichloromethane Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">336</TD>
+    <TD align="right" class="values">336</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">18</TD>
+    <TD align="right" class="values">354</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">354</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">497</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVBZLC">LBDVBZLC - Blood Benzene Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVBZLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Benzene Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Benzene Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">300</TD>
+    <TD align="right" class="values">300</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">300</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">300</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">551</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVCFLC">LBDVCFLC - Blood Chloroform Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVCFLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Chloroform Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Chloroform Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">253</TD>
+    <TD align="right" class="values">253</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">253</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">2</TD>
+    <TD align="right" class="values">255</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">596</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVCMLC">LBDVCMLC - Blood Dibromochloromethane Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVCMLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Dibromochloromethane Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Dibromochloromethane Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">303</TD>
+    <TD align="right" class="values">303</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">47</TD>
+    <TD align="right" class="values">350</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">350</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">501</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVCTLC">LBDVCTLC - Blood Carbon Tetrachloride Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVCTLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Carbon Tetrachloride Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Carbon Tetrachloride Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">87</TD>
+    <TD align="right" class="values">87</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">200</TD>
+    <TD align="right" class="values">287</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">287</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">564</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVDBLC">LBDVDBLC - Blood 1,4-Dichlorobenzene Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVDBLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood 1,4-Dichlorobenzene Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">1,4-Dichlorobenzene Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">253</TD>
+    <TD align="right" class="values">253</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">34</TD>
+    <TD align="right" class="values">287</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">17</TD>
+    <TD align="right" class="values">304</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">547</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVEBLC">LBDVEBLC - Blood Ethylbenzene Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVEBLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Ethylbenzene Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Ethylbenzene Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">235</TD>
+    <TD align="right" class="values">235</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Lilmit</TD>
+    <TD align="right" class="values">26</TD>
+    <TD align="right" class="values">261</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">262</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">589</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVMELC">LBDVMELC - Blood MTBE Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVMELC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood MTBE Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">MTBE Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">247</TD>
+    <TD align="right" class="values">247</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">4</TD>
+    <TD align="right" class="values">251</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">33</TD>
+    <TD align="right" class="values">284</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">567</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVOXLC">LBDVOXLC - Blood o-Xylene Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVOXLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood o-Xylene Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">o-Xylene Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">180</TD>
+    <TD align="right" class="values">180</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">128</TD>
+    <TD align="right" class="values">308</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">309</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">542</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVSTLC">LBDVSTLC - Blood Styrene Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVSTLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Styrene Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Styrene Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">268</TD>
+    <TD align="right" class="values">268</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">15</TD>
+    <TD align="right" class="values">283</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">284</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">567</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVTCLC">LBDVTCLC - Blood Trichloroethene Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVTCLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Trichloroethene Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Trichloroethene Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">34</TD>
+    <TD align="right" class="values">34</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">268</TD>
+    <TD align="right" class="values">302</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">303</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">548</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDV3ALC">LBDV3ALC - Blood 1,1,1-Trichloroethane 
+Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDV3ALC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood 1,1,1-Trichloroethane Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">1,1,1-Trichloroethane Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">11</TD>
+    <TD align="right" class="values">11</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">274</TD>
+    <TD align="right" class="values">285</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">286</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">565</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVTOLC">LBDVTOLC - Blood Toluene Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVTOLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood Toluene Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Toluene Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">294</TD>
+    <TD align="right" class="values">294</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">4</TD>
+    <TD align="right" class="values">298</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">6</TD>
+    <TD align="right" class="values">304</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">547</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDVXYLC">LBDVXYLC - Blood m-/p-Xylene Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDVXYLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Blood m-/p-Xylene Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">m-/p-Xylene Comment</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 20 YEARS -			59 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Detectable Result</TD>
+    <TD align="right" class="values">284</TD>
+    <TD align="right" class="values">284</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below Detectable Limit</TD>
+    <TD align="right" class="values">10</TD>
+    <TD align="right" class="values">294</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Detectable Result and Exceeds the Calibrated Range of 
+      Assay</TD>
+    <TD align="right" class="values">2</TD>
+    <TD align="right" class="values">296</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">555</TD>
+    <TD align="right" class="values">851</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>

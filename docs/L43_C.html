@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Vitamin B6" />
+    <meta name="DC.Subject" content="NHANES 2003-2004: Vitamin B6 Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2004 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2004:
+						Vitamin B6 Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LBXVB6">LBXVB6 - Vitamin B6(Pyridoxal 5'-phosphate)nmol/L</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Vitamin B6 (L43_C)
+			</h3>
+        <h4>
+				Data File: L43_C.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				February 2007</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>The objectives of this component are: </p>
+<ol>
+    <li>to provide data for monitoring secular trends in measures of nutritional status in the U.S. population; </li>
+    <li>to evaluate the effect of people's habits and behaviors such as physical activity and the use of alcohol, tobacco, and dietary supplements on people's nutritional status; and </li>
+    <li>to evaluate the effect of changes in nutrition and public health policies including welfare reform legislation, food fortification policy, and child nutrition programs on the nutritional status of the U.S. population. </li>
+</ol>
+<p>These data will be used to estimate deficiencies and toxicities of specific nutrients in the population and subgroups, to provide population reference data, and to estimate the contribution of diet, supplements, and other factors to serum levels of nutrients. Data will be used for research to further define nutrient requirements as well as optimal levels for disease prevention and health promotion.</p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>Participants aged 1 year and older were tested.</p></div>
+        <h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2>
+        <div class="block"><p>Pyridoxal 5&rsquo;- phosphate (PLP) is the biologically active form of the vitamin B6. Vitamin B6 is involved in numerous metabolic pathways as an enzyme cofactor. Homocysteine (HCY), a risk factor for cardiovascular and other diseases, is converted to cysteine by PLP-dependent transsulfuration enzymes. A major cause of homocysteinemia is insufficient intake of vitamin B6, vitamin B12, and folic acid, all of which are also necessary for HCY metabolism. Clinical studies suggest that vitamin B6 is independently associated with increased risk for cardiovascular disease. Recent studies have shown that plasma PLP levels are significantly decreased in other pathological conditions, including rheumatoid arthritis. High tHcy and low vitamin B6 plasma levels are associated with an increased risk for deep venous thrombosis (DVT) independent of other established risk factors for DVT. The association of low vitamin B6 levels with the risk for DVT is also independent of the tHCY levels. Testing for Vitamin B6 (Pyridoxal 5'-phosphate) began in 2003. </p>
+<p>A detailed description of the laboratory procedures can be found at the NHANES web site.</p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>Specimens were processed, stored and shipped to the AntiCancer, Inc. in San Diego, California. Detailed specimen collection and processing instructions was discussed in the NHANES LPM. Read the LABDOC file for detailed data processing and editing protocols. The analytical methods were described in the Description of the Laboratory Methodology section. </p>
+<p>There was no top coding in this file. </p>
+<p>Detailed instructions on specimen collection and processing can be found at NHANES web site.</p></div>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2>
+        <div class="block"><p>The NHANES quality control and quality assurance protocols (QA/QC) meet the 1988 Clinical Laboratory Improvement Act mandates. A detailed quality control and quality assurance instruction was discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols. </p>
+<p>A detailed description of the quality assurance and quality control procedures can be found at the NHANES web site.</p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>The analysis of NHANES 2003-2004 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2003-2004 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. They also contain all survey design variables and sample weights for these age groups. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN.</p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights.</p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Cattaneo, M., Lombardi, R., Bucciarelli, A.L., Manrucci, P.M.. Low Plasma Levels of Vitamin B6 are Independently Associated with a Heightened Risk of Deep-Vin Thrombosis. Circulation 2001;104: 2442- 2446.</li>
+          <li>D&rsquo;Angelo, A., Selhub, J. Homocysteine and Thrombotic Disease. Blood 1997; 90, 1-11.</li>
+          <li>Friso, S., Jacques, P.F., Wilson, P.W., F. Rosenberg, I.H. and Selhub, J. Low Circulating Vitamin B6 is Associated with Elevation of the Inflammation Marker C- Reactive Protein Independently of Plasma Homocysteine Levels. Circulation 2001; 103: 2788-2791.</li>
+          <li>Kuller, L.H., Evans, R.W. Homocysteine/Vitamins and Cardiovascular Disease. Circulation. 1998; 98,196-199.</li>
+          <li>Mansoor, M., Kistensen, O., Hervig, T., Bates, C.J., et al. Plasma Total Homocysteine Reponse to Oral Doses of Folic Acid and Pyridoxine Hydrochloride ( Vitamin B6 ) in Healthy Individuals. Oral Doses of Vitamin B6 Reduce Concentration of Serum Folate. Scand J Clin Lab Invest 1999; 59, 139-146.</li>
+          <li>Rimm, E.B., Willett, W.C., Hu, F.B. et al. Folate and Vitamin B6 From Diet and Supplements in Relation to Risk of Coronary Heart Disease Among Women. JAMA, 1998; 279: 359-364.</li>
+          <li>Robinson K, Arheart K, Refsum H, Brattstrom L, Boers G, Ueland P, et al. Low circulating folate and vitamin B6 concentrations: risk factors for stroke, peripheral vascular disease, and coronary artery disease. Circulation 1998;97:437-43.</li>
+          <li>Robinson K, Mayer EL, Miller DP, Green R, Van Lente F, Gupta A, et al. Hyperhomocysteinemia and low phridoxal phosphate, common and independent reversible risk factors for coronary artery disease. Circulation 1995; 92:2825-30.</li>
+          <li>Schnyder G, Roffi M, Pin R, Flammer Y, Lange H, Eberli FR, et al. Decreased rate of coronary restenosis after lowering of plasma homocysteine levels. N Engl J Med 2001; 345: 1593-600.</li>
+          <li>Seshadri S, Beiser A, Selhub J, Jacques PF, Rosenberg IH, D&rsquo;Agostino RB, et al. Plasma homocysteine as a risk factor for dementia and Alzheimer&rsquo;s disease. N Engl J Med 2002; 346:476-83.</li>
+          <li>Tiet NW. Vitamins. In: Burtis CA, Ashwood ER, eds. Textbook of clinical chemistry, 2nd ed. Philadelphia: WB Saunders, 1994: 1300-4.</li>
+          <li>Ueland, P.M. Resum, H., Bersford, S.A.A., et al. The Controversy over Homocysteine and Cardiovscular Risk. Am J Clin Natr. 2000; 72, 324-332.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXVB6">LBXVB6 - Vitamin B6(Pyridoxal 5'-phosphate)nmol/L</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXVB6</dd>
+            <dt>SAS Label: </dt>
+            <dd>Vitamin B6(Pyridoxal 5'-phosphate)nmol/L</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Vitamin B6 (Pyridoxal 5'-phosphate) test results (nmol/L).</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10 to 962</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">6862</td>
+                <td class="values" align="right">6862</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7.1</td>
+                <td class="values">Fill Value of Limit of Detection</td>
+                <td class="values" align="right">960</td>
+                <td class="values" align="right">7822</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1357</td>
+                <td class="values" align="right">9179</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

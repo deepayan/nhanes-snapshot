@@ -1,0 +1,504 @@
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>WHQMEC_J</TITLE>     
+<META name="title" content="NHANES 2017-2018: Weight History - Youth Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   </HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="#Component_Description">Component Description</A>           </LI>
+  <LI><A href="#Eligible_Sample">Eligible Sample</A>           </LI>
+  <LI><A href="#Interview_Setting_and_Mode_of_Administration">Interview Setting 
+  and Mode of Administration</A>           </LI>
+  <LI><A href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; 
+  Quality Control</A>           </LI>
+  <LI><A href="#Data_Processing_and_Editing">Data Processing and Editing</A>     
+        </LI>
+  <LI><A href="#Analytic_Notes">Analytic Notes</A>           </LI>
+  <LI><A href="#Codebook">Codebook</A>             
+  <UL id="CodebookLinks">
+    <LI><A href="#SEQN">SEQN - Respondent sequence number</A>               
+</LI>
+    <LI><A href="#WHQ030M">WHQ030M - How do you consider your weight</A>         
+          </LI>
+    <LI><A href="#WHQ500">WHQ500 - Trying to do about weight</A>               
+    </LI>
+    <LI><A href="#WHQ520">WHQ520 - How often tried to lose weight</A>            
+       </LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>2017-2018 Data Documentation, Codebook, and Frequencies</H2>
+<H3>Weight History - Youth (WHQMEC_J)</H3>
+<H4> Data File: WHQMEC_J.xpt</H4>
+<H5 class="left">First Published: June 2020</H5>
+<H5 class="right">Last Revised: NA</H5></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P>The Weight History section of the Mobile Examination Center (MEC) Interview 
+(variable name prefix WHQMEC) provides personal interview data on topics related 
+to body weight in youth 8-15 years of age. These topics include self-perception 
+of weight and dieting attempts.</P>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P>The target sample for the questions in this section is youth aged 8-15 years. 
+</P>
+<H2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode 
+of Administration</H2>
+<P>The questions were asked in the MEC, by trained interviewers, using the 
+Computer-Assisted Personal Interview (CAPI) system as part of the MEC interview. 
+Proxy respondents were not permitted for this section. </P>
+<P>For details on the administration of WHQMEC_J, refer to the NHANES 2017-2018 
+MEC Interviewers Procedures Manual and the 2017-2018 Weight History 
+questionnaire on the NHANES website.</P>
+<H2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality 
+Control</H2>
+<P>The CAPI system is programmed with built-in consistency checks to reduce data 
+entry errors. CAPI also uses online help screens to assist interviewers in 
+defining key terms used in the questionnaire. </P>
+<P>For details on the quality assurance/quality control process for this 
+component, please refer to the NHANES 2017-18 MEC Interviewer Procedures 
+Manual.</P>
+<H2 id="Data_Processing_and_Editing">Data Processing and Editing</H2>
+<P>Frequency counts were verified during the preparation of the file. </P>
+<P>Responses to WHQ030m, which asks if adolescents consider themselves now to be 
+fat or overweight, too thin, or about the right weight, can be compared with 
+proxy responses to WHQ030e in the Early Childhood questionnaire (ECQ) section. 
+</P>
+<P>Exam sample weights should be used for analyses.</P>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P>Please refer to the <A href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx" 
+target="_blank">NHANES Analytic Guidelines</A> and the on-line <A href="https://wwwn.cdc.gov/nchs/nhanes/tutorials/default.aspx" 
+target="_blank">NHANES Tutorial</A> for further details on the use of sample 
+weights and other analytic issues.</P></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 8 YEARS -			15 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="WHQ030M">WHQ030M - How do you consider your weight</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">WHQ030M</DD>
+  <DT>SAS Label: </DT>
+  <DD>How do you consider your weight</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Do you consider yourself now to be . . .</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 8 YEARS -			15 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Fat or overweight</TD>
+    <TD align="right" class="values">234</TD>
+    <TD align="right" class="values">234</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Too thin</TD>
+    <TD align="right" class="values">79</TD>
+    <TD align="right" class="values">313</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">About the right weight</TD>
+    <TD align="right" class="values">929</TD>
+    <TD align="right" class="values">1242</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">7</TD>
+    <TD class="values">Refused</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">1243</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">9</TD>
+    <TD class="values">Don't know</TD>
+    <TD align="right" class="values">5</TD>
+    <TD align="right" class="values">1248</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">56</TD>
+    <TD align="right" class="values">1304</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="WHQ500">WHQ500 - Trying to do about weight</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">WHQ500</DD>
+  <DT>SAS Label: </DT>
+  <DD>Trying to do about weight</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Which of the following are you trying to do about your 
+  weight:</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 8 YEARS -			15 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Lose weight</TD>
+    <TD align="right" class="values">440</TD>
+    <TD align="right" class="values">440</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Gain weight</TD>
+    <TD align="right" class="values">161</TD>
+    <TD align="right" class="values">601</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">Stay the same weight</TD>
+    <TD align="right" class="values">290</TD>
+    <TD align="right" class="values">891</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">4</TD>
+    <TD class="values">Not trying to do anything about your weight</TD>
+    <TD align="right" class="values">355</TD>
+    <TD align="right" class="values">1246</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">7</TD>
+    <TD class="values">Refused</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">1246</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">9</TD>
+    <TD class="values">Don't know</TD>
+    <TD align="right" class="values">2</TD>
+    <TD align="right" class="values">1248</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">56</TD>
+    <TD align="right" class="values">1304</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="WHQ520">WHQ520 - How often tried to lose weight</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">WHQ520</DD>
+  <DT>SAS Label: </DT>
+  <DD>How often tried to lose weight</DD>
+  <DT>English Text: </DT>
+  <DD class="info">In the past year, how often have you tried to lose weight?  
+  Would you say . . .</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 8 YEARS -			15 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Never</TD>
+    <TD align="right" class="values">484</TD>
+    <TD align="right" class="values">484</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Sometimes</TD>
+    <TD align="right" class="values">634</TD>
+    <TD align="right" class="values">1118</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">A lot</TD>
+    <TD align="right" class="values">130</TD>
+    <TD align="right" class="values">1248</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">7</TD>
+    <TD class="values">Refused</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">1248</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">9</TD>
+    <TD class="values">Don't know</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">1248</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">56</TD>
+    <TD align="right" class="values">1304</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>

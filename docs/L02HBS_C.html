@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Hepatitis B Surface Antibody" />
+    <meta name="DC.Subject" content="NHANES 2003-2004: Hepatitis B Surface Antibody Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2004 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2004:
+						Hepatitis B Surface Antibody Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LBXHBS">LBXHBS - Hepatitis B Surface Antibody</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Hepatitis B Surface Antibody (L02HBS_C)
+			</h3>
+        <h4>
+				Data File: L02HBS_C.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				May 2008</h5>
+        <h5 class="right">
+				Last Revised:
+				May 2008</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p>Hepatitis viruses constitute a major public health problem because of the morbidity and mortality associated with the acute and chronic consequences of these infections. New immunization strategies have been developed to eliminate the spread of hepatitis B virus (HBV) and hepatitis A virus (HAV) in the United States. Recommendations have also been developed for the prevention and control of hepatitis C virus <br />
+(HCV) infection. Because of the high rate of asymptomatic infection with these viruses, information about the prevalence of these diseases is needed to monitor prevention efforts. By testing a nationally representative sample of the U.S. population, NHANES will provide the most reliable estimates of age-specific prevalence needed to evaluate the effectiveness of the strategies to prevent these infections. In <br />
+addition, NHANES provides the means to better define the epidemiology of other hepatitis viruses. NHANES testing for markers of infection with hepatitis viruses will be used to determine secular trends in infection rates across most age and racial/ethnic groups, and will provide a national picture of the epidemiologic determinants of these infections.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>All participants aged 2 years and older are eligible to be tested.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p>The AUSAB EIA for anti-HBs uses the &ldquo;sandwich principle&rdquo; a solid phase enzyme-linked immunoassay technique (1, 2) to detect anti-HBs levels in serum or plasma. Polystyrene beads coated with human Hepatitis B Surface Antigen (HBsAg) are incubated with either the patient specimen or the appropriate controls. </p>
+<p>During incubation, antibody, if present, is immunologically coupled to the solid phase antigen. After removal of the unbound material and washing of the bead, human HBsAg tagged with biotin (B-HBsAg) and rabbit anti-biotin, conjugated with horseradish peroxidase (anti-H- HRPO), are incubated with the antibody-antigen complex on the beads. The biotinylated surface antigen binds to this complex crating an antigen-antibody-antigen &ldquo;sandwich&rdquo;. The anti-biotin horseradish peroxidase binds to the biotin component of the &ldquo;sandwich&rdquo;, forming a sold phase network. Unbound conjugates are removed and the beads are washed. Next, o-Phenylenediamine (OPD) solution containing hydrogen peroxide is added to the bead, and after incubation, a yellow color develops in proportion to the amount of anti-HBs which is bound to the bead. Within limits, the greater the amount of antibody in the sample, the higher the absorbance. The enzyme reaction is stopped by the addition of acid. The absorbance of controls and specimens is determined using a spectrophotometer with wavelength set at 492 nm. Testing for anti-HBs can be useful for: a) evaluating the recovery and prognosis of patents infected with HBV, b) screening for potential vaccine recipients, and c) epidemiologic factors associated with transmission of HBV. The detection of anti-HBs is indicative of a prior immunologic exposure to the antigen or vaccine. </p>
+<p>The anti-HBs standards contained in the AUSAB quantitation panel kit are assayed with the AUSAB EIA for the quantitative determination of anti-HBs in human serum or plasma. The concentration of anti-HBs expressed in milli-international units per mL (mIU/mL) is determined by comparison with a standard curve generated from measurement of the standards run in duplicate with the AUSAB EIA kit. A curve is obtained by plotting the anti-HBs concentration of the standard vs. the absorbance. The anti-HBs concentration of specimens run concurrently with the standards can then be read from the curve. Specimens with values above the highest standard can be diluted with the specimen dilution buffer and retested. For the purposes of this study, samples with an absorbance above the highest standard curve will not be diluted, but reported out as &gt; 150 mIU/mL.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Blood specimens are processed, stored, and shipped to the Division of Viral Hepatitis, National Center for Infectious Diseases, National Centers for Disease Control and Prevention. Detailed specimen collection and <br />
+processing instructions are discussed in the NHANES LPM. Read the LABDOC file for detailed data processing and editing protocols. The analytical methods are described in the Description of Laboratory Methodology section above. Detailed instructions on specimen collection and processing can be found on the NHANES website.</p><h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>The NHANES quality assurance and quality control (QA/QC) protocols meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and quality assurance instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols. A detailed description of the quality assurance and quality control procedures can be found on the NHANES website.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The analysis of NHANES laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. They also contain all survey design variables and sample weights for these age groups. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN.</p></div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXHBS">LBXHBS - Hepatitis B Surface Antibody</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXHBS</dd>
+            <dt>SAS Label: </dt>
+            <dd>Hepatitis B Surface Antibody</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Hepatitis B surface antibody (anti-HBs)</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Hepatitis B Surface Antibody</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 2 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Positive</td>
+                <td class="values" align="right">2961</td>
+                <td class="values" align="right">2961</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Negative</td>
+                <td class="values" align="right">5032</td>
+                <td class="values" align="right">7993</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">854</td>
+                <td class="values" align="right">8847</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

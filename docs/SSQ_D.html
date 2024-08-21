@@ -1,0 +1,1459 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Social Support" />
+    <meta name="DC.Subject" content="NHANES 2005-2006: Social Support Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2005-2006 Questionnaire page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&amp;CycleBeginYear=2005">
+      <title>
+						NHANES 2005-2006:
+						Social Support Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#SSQ011">SSQ011 - Anyone to help with emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021A">SSQ021A - Spouse gives most emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021B">SSQ021B - Daughter gives most emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021C">SSQ021C - Son gives most emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021D">SSQ021D - Sibling gives most emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021E">SSQ021E - Parent gives most emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021F">SSQ021F - Other relative gives emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021G">SSQ021G - Neighbors give most emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021H">SSQ021H - Co-workers give most emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021I">SSQ021I - Church members give emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021J">SSQ021J - Club members give most emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021K">SSQ021K - Professionls give most emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021L">SSQ021L - Friends give most emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021M">SSQ021M - Others give most emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ021N">SSQ021N - No one gives most emotional support</a>
+                </li>
+                <li>
+                  <a href="#SSQ031">SSQ031 - Needed more support in past year</a>
+                </li>
+                <li>
+                  <a href="#SSQ041">SSQ041 - How much more support needed</a>
+                </li>
+                <li>
+                  <a href="#SSD044">SSD044 - How often attend church per year</a>
+                </li>
+                <li>
+                  <a href="#SSQ051">SSQ051 - Anyone to help with financial support</a>
+                </li>
+                <li>
+                  <a href="#SSQ061">SSQ061 - Number of close friends</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2005-2006 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Social Support (SSQ_D)
+			</h3>
+        <h4>
+				Data File: SSQ_D.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				December 2007</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>The social support section provides personal interview data on emotional, material, and network (the number of members in a network) support. The questions were selected from the Yale Health and Aging Study (MacArthur Studies of Successful Aging) and the Social Network Index &ndash; Alameda County Study. Starting in 2005, an additional question about attendance at church or religious services was added to the social support section.</p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>All survey participants 40 or more years of age were eligible. Before 2005, only participants 60 or more years of age were eligible.</p></div>
+        <h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2>
+        <div class="block"><p>The questions were asked in the home, using the Computer-Assisted Personal Interviewing -CAPI (interviewer administered) system.</p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>Edits were made to ensure the completeness, consistency, and analytic usefulness of the data. The number of times that a respondent reported attending church or religious services (SSD044) was originally reported as number of times per day, week, month, or year and converted to times per year.</p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>Since the questions were asked in the household interview, the interview sample weights may be used in their analysis. However, if the data is joined with data from the Mobile Examination Center (MEC), the MEC sample weights should be used. </p>
+<p>Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues.</p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Berkman LF, Seeman TE, Albert M, Blazer D, Kahn R, Mohs R, Finch C, Schneider E, Cotman C, McClearn G, et al. High, usual and impaired functioning in community-dwelling older men and women: findings from the MacArthur Foundation Research Network on Successful Aging. J Clin Epidemiol. 1993 Oct;46(10):1129-40.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ011">SSQ011 - Anyone to help with emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ011</dd>
+            <dt>SAS Label: </dt>
+            <dd>Anyone to help with emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now I would like to ask a few questions about {your/SP's} friends and family.  Can {you/SP} count on anyone to provide {you/him/her} with emotional support such as talking over problems or helping {you/him/her} make a difficult decision?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2786</td>
+                <td class="values" align="right">2786</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">229</td>
+                <td class="values" align="right">3015</td>
+                <td class="values">SSD044  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">SP doesn't need help</td>
+                <td class="values" align="right">30</td>
+                <td class="values" align="right">3045</td>
+                <td class="values">SSD044  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">3049</td>
+                <td class="values">SSD044  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">3055</td>
+                <td class="values">SSD044  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021A">SSQ021A - Spouse gives most emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021A</dd>
+            <dt>SAS Label: </dt>
+            <dd>Spouse gives most emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10</td>
+                <td class="values">Spouse</td>
+                <td class="values" align="right">1416</td>
+                <td class="values" align="right">1416</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1416</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">1420</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1636</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021B">SSQ021B - Daughter gives most emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Daughter gives most emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">11</td>
+                <td class="values">Daughter</td>
+                <td class="values" align="right">752</td>
+                <td class="values" align="right">752</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2304</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021C">SSQ021C - Son gives most emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Son gives most emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">12</td>
+                <td class="values">Son</td>
+                <td class="values" align="right">499</td>
+                <td class="values" align="right">499</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2557</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021D">SSQ021D - Sibling gives most emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021D</dd>
+            <dt>SAS Label: </dt>
+            <dd>Sibling gives most emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">13</td>
+                <td class="values">Sister/brother</td>
+                <td class="values" align="right">477</td>
+                <td class="values" align="right">477</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2579</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021E">SSQ021E - Parent gives most emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021E</dd>
+            <dt>SAS Label: </dt>
+            <dd>Parent gives most emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">14</td>
+                <td class="values">Parent</td>
+                <td class="values" align="right">227</td>
+                <td class="values" align="right">227</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2829</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021F">SSQ021F - Other relative gives emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021F</dd>
+            <dt>SAS Label: </dt>
+            <dd>Other relative gives emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">15</td>
+                <td class="values">Other relative</td>
+                <td class="values" align="right">224</td>
+                <td class="values" align="right">224</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2832</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021G">SSQ021G - Neighbors give most emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021G</dd>
+            <dt>SAS Label: </dt>
+            <dd>Neighbors give most emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">16</td>
+                <td class="values">Neighbors</td>
+                <td class="values" align="right">29</td>
+                <td class="values" align="right">29</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3027</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021H">SSQ021H - Co-workers give most emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021H</dd>
+            <dt>SAS Label: </dt>
+            <dd>Co-workers give most emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">17</td>
+                <td class="values">Co-workers</td>
+                <td class="values" align="right">37</td>
+                <td class="values" align="right">37</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3019</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021I">SSQ021I - Church members give emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021I</dd>
+            <dt>SAS Label: </dt>
+            <dd>Church members give emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">18</td>
+                <td class="values">Church members</td>
+                <td class="values" align="right">155</td>
+                <td class="values" align="right">155</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2901</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021J">SSQ021J - Club members give most emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021J</dd>
+            <dt>SAS Label: </dt>
+            <dd>Club members give most emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">19</td>
+                <td class="values">Club members</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">10</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3046</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021K">SSQ021K - Professionls give most emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021K</dd>
+            <dt>SAS Label: </dt>
+            <dd>Professionls give most emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">20</td>
+                <td class="values">Professionals</td>
+                <td class="values" align="right">27</td>
+                <td class="values" align="right">27</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3029</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021L">SSQ021L - Friends give most emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021L</dd>
+            <dt>SAS Label: </dt>
+            <dd>Friends give most emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">21</td>
+                <td class="values">Friends</td>
+                <td class="values" align="right">744</td>
+                <td class="values" align="right">744</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2312</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021M">SSQ021M - Others give most emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021M</dd>
+            <dt>SAS Label: </dt>
+            <dd>Others give most emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">22</td>
+                <td class="values">Other</td>
+                <td class="values" align="right">67</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2989</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ021N">SSQ021N - No one gives most emotional support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ021N</dd>
+            <dt>SAS Label: </dt>
+            <dd>No one gives most emotional support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the last 12 months, who was most helpful in providing {you/SP} with emotional support?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE ALL THAT APPLY</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">23</td>
+                <td class="values">No one</td>
+                <td class="values" align="right">20</td>
+                <td class="values" align="right">20</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3036</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ031">SSQ031 - Needed more support in past year</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ031</dd>
+            <dt>SAS Label: </dt>
+            <dd>Needed more support in past year</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[In the last 12 months], could {you/SP} have used more emotional support than {you/s/he} received?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">596</td>
+                <td class="values" align="right">596</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2175</td>
+                <td class="values" align="right">2771</td>
+                <td class="values">SSD044  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2771</td>
+                <td class="values">SSD044  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">2786</td>
+                <td class="values">SSD044  </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">270</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ041">SSQ041 - How much more support needed</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ041</dd>
+            <dt>SAS Label: </dt>
+            <dd>How much more support needed</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Would you say that {you/SP} could have used . . .</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A lot more emotional support</td>
+                <td class="values" align="right">159</td>
+                <td class="values" align="right">159</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Some emotional support</td>
+                <td class="values" align="right">201</td>
+                <td class="values" align="right">360</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A little more emotional support</td>
+                <td class="values" align="right">235</td>
+                <td class="values" align="right">595</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">595</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">596</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2460</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSD044">SSD044 - How often attend church per year</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSD044</dd>
+            <dt>SAS Label: </dt>
+            <dd>How often attend church per year</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How often {do you/does SP} attend church or religious services?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Enter number of days</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 2557</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3038</td>
+                <td class="values" align="right">3038</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">3045</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">3055</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ051">SSQ051 - Anyone to help with financial support</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ051</dd>
+            <dt>SAS Label: </dt>
+            <dd>Anyone to help with financial support</dd>
+            <dt>English Text: </dt>
+            <dd class="info">If {you/SP} need{s} some extra help financially, could {you/s/he} count on anyone to help {you/him/her}; for example, by paying any bills, housing costs, hospital visits, or providing {you/him/her} with food or clothes?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2250</td>
+                <td class="values" align="right">2250</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">709</td>
+                <td class="values" align="right">2959</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Offered help but wouldn't accept it</td>
+                <td class="values" align="right">60</td>
+                <td class="values" align="right">3019</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">3025</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">30</td>
+                <td class="values" align="right">3055</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSQ061">SSQ061 - Number of close friends</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSQ061</dd>
+            <dt>SAS Label: </dt>
+            <dd>Number of close friends</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In general, how many close friends {do you/does SP} have?  PROBE:  By "close friends" I mean relatives or non-relatives that {you s/he} feel{s} at ease with, can talk to about private matters, and can call on for help.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER OF CLOSE FRIENDS.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 40 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 50</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 50</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3025</td>
+                <td class="values" align="right">3025</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">3031</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">23</td>
+                <td class="values" align="right">3054</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">3056</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

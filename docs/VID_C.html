@@ -1,0 +1,438 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Vitamin D" />
+    <meta name="DC.Subject" content="NHANES 2003-2004: Vitamin D Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2004 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2004:
+						Vitamin D Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Method_Files">Laboratory Method Files</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LBDVIDMS">LBDVIDMS - Vitamin D (nmol/L)</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2004 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Vitamin D (VID_C)
+			</h3>
+        <h4>
+				Data File: VID_C.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				September 2007</h5>
+        <h5 class="right">
+				Last Revised:
+				October 2015</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p><strong>See Analytical Note for 25-Hydroxyvitamin D Data Analysis using NHANES III (1988-1994), NHANES 2001-2006, and NHANES 2007-2010 at
+<br />
+<a href="https://wwwn.cdc.gov/nchs/nhanes/vitamind/analyticalnote.aspx">https://wwwn.cdc.gov/nchs/nhanes/vitamind/analyticalnote.aspx</a><br />
+</strong></p>
+<p>The objectives of this component are: </p>
+<p>1.	To provide data for monitoring secular trends in measures of nutritional status in the U.S. population;</p>
+<p>2.	To evaluate the effect of people's habits and behaviors such as physical activity and the use of alcohol, tobacco, and dietary supplements on people's nutritional status; and</p>
+<p>3.	To evaluate the effect of changes in nutrition and public health policies including welfare reform legislation, food fortification policy, and child nutrition programs on the nutritional status of the U.S. population. </p>
+<p>These data will be used to estimate risks for deficiencies and toxicities of specific nutrients in the population and subgroups, to provide population reference data, and to estimate the contribution of diet, supplements, and other factors to serum levels of nutrients. Data will be used for research to further define nutrient requirements as well as optimal levels for disease prevention and health promotion.</p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>Examined participants aged&nbsp;1 years and older were eligible.</p></div>
+        <h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2>
+        <div class="block"><p>The Diasorin (formerly Incstar) 25-Hydroxyvitamin D (25OHD) assay consists of a two-step procedure. The first procedure involves an extraction of 25OHD&nbsp;metabolites from serum with acetonitrile. Following extraction, the sample is assayed by using an equilibrium RIA procedure. The RIA method is based on an antibody with specificity to several mono- and di-hydroxyvitamin D metabolites. The sample, antibody, and tracer are incubated for 90 min at 20-25 &deg;C. Phase separation is accomplished after a 20-minute incubation at 20-25 &deg;C with a second antibody-precipitating complex. A buffer is added after this incubation and prior to centrifugation to reduce non-specific binding.</p>
+<p>Refer to the Laboratory Method Files section for a detailed laboratory procedure manual of the method used.</p>
+<p>There were no changes to the lab method, lab equipment, or lab site for this component from the NHANES 2001-2002 cycle.</p>
+<br /></div>
+        <h2 id="Laboratory_Method_Files">Laboratory Method Files</h2>
+        <div class="block">
+          <p><a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2003-2004/labmethods/VID_C_met_Vitamin_D.pdf">25-Hydroxyvitamin D</a><span> (October 2015)</span></p>
+        </div>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2>
+        <div class="block"><p>Serum specimens are processed, stored, and shipped to the Division of Laboratory Sciences, National Center for Environmental Health, Centers for Disease Control and Prevention, Atlanta, GA for analysis.
+</p>
+<p>Detailed instructions on specimen collection and processing are discussed in the NHANES <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2003-2004/manuals/lab.pdf">Laboratory Procedures Manual</a>. Vials are stored under appropriate frozen (&ndash;30&deg;C) conditions until they are shipped to the National Center for Environmental Health for testing.
+</p>
+<p>The NHANES quality assurance and quality control (QA/QC) protocols meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions are discussed in the NHANES <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2003-2004/manuals/lab.pdf">Laboratory Procedures Manual</a>.
+</p>
+<p><strong>Mobile Examination Centers (MECs) </strong></p>
+<p>Laboratory team performance is monitored using several techniques. NCHS and contract consultants use a structured quality assurance evaluation during unscheduled visits to evaluate both the quality of the laboratory work and the quality-control procedures. Each laboratory staff member is observed for equipment operation, specimen collection and preparation; testing procedures and constructive feedback are given to each staff member. Formal retraining sessions are conducted annually to ensure that required skill levels are maintained. </p>
+<p><strong>Analytical Laboratories </strong></p>
+<p>NHANES uses several methods to monitor the quality of the analyses performed by the laboratories. In the MEC, these methods include performing blind split samples collected on &ldquo;dry run&rdquo; sessions. In addition, contract laboratories randomly perform repeat testing on 2% of all specimens. </p>
+<p>NCHS developed and distributed a quality control protocol for all the contract laboratories which outlined the use of Westgard rules (Westgard, et al. 1981) when running NHANES specimens. Progress reports containing any problems encountered during shipping or receipt of specimens, summary statistics for each control pool, QC graphs, instrument calibration, reagents, and any special considerations are submitted to NCHS quarterly. The reports are reviewed for trends or shifts in the data. The laboratories are required to explain any areas of concern.</p>
+<p>All QC procedures recommended by the manufacturers were followed. Reported results for all assays meet the Division of Laboratory Science&rsquo;s quality control and quality assurance performance criteria for accuracy and precision, similar to the Westgard rules (Caudill, et al., 2008).
+</p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>The data were reviewed. Incomplete data or improbable values were sent to the performing laboratory for confirmation.</p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p><strong>See Analytical Note for 25-Hydroxyvitamin D Data Analysis using NHANES III (1988-1994), NHANES 2001-2006, and NHANES 2007-2010 at <a href="https://wwwn.cdc.gov/nchs/nhanes/vitamind/analyticalnote.aspx">https://wwwn.cdc.gov/nchs/nhanes/vitamind/analyticalnote.aspx</a>
+</strong></p>
+<p>Refer to the <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2003">2003-2004 Laboratory Data Overview</a> for general information on NHANES laboratory data.</p>
+<p><strong>Demographic and Other Related Variables</strong></p>
+<p>The analysis of NHANES laboratory data must be conducted using the appropriate survey design and demographic variables. The <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2003">NHANES 2003-2004 Demographics File</a> contains demographic data, health indicators, and other related information collected during household interviews as well as the sample design variables. The recommended procedure for variance estimation requires use of stratum and PSU variables (SDMVSTRA and SDMVPSU, respectively) in the demographic data file.</p>
+<p>The <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2003">Fasting Questionnaire File</a> includes auxiliary information such as fasting status, the time of venipuncture, and the conditions precluding venipuncture.</p>
+<p>This laboratory data file can be linked to the other NHANES data files using the unique survey participant identifier (i.e., SEQN).
+</p>
+<p><strong>Detection Limits</strong></p>
+<p>There were no values below the limit of detection of 3.75 nmol/L.</p>
+<p>Please refer to the <a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx" target="_blank">NHANES Analytic Guidelines</a> and the on-line <a href="https://www.cdc.gov/nchs/tutorials/" target="_blank">NHANES Tutorial</a> for further details on the use of sample weights and other analytic issues.
+</p>
+<p><strong>Former RIA-Harmonized Data Files and Documentation</strong></p>
+<p><a href="https://wwwn.cdc.gov/nchs/nhanes/vitamind/riamethod.aspx">Click here for RIA-Harmonized Vitamin D Analytic Note, Data Files and Documentation</a></p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Caudill, S.P., Schleicher, R.L., Pirkle, J.L. Multi-rule quality control for the age-related eye disease study. Statist. Med. (2008) 27(20):4094-40106.</li>
+          <li>Phinney KW. Development of a standard reference material for vitamin D in serum. Am J Clin Nutr 2008 August 1;88(2):511S-512S.</li>
+          <li>Westgard J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewhart chart for quality control in clinical chemistry. Clin Chem (1981) 27:493-501.</li>
+          <li>Yetley EA, Pfeiffer CM, Schleicher RL, et al. NHANES monitoring of serum 25-hydroxyvitamin D: A roundtable summary. J. Nutr. 2010;140:2030S-2045S.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDVIDMS">LBDVIDMS - Vitamin D (nmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDVIDMS</dd>
+            <dt>SAS Label: </dt>
+            <dd>Vitamin D (nmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Vitamin D (nmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9.1 to 198</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8294</td>
+                <td class="values" align="right">8294</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">885</td>
+                <td class="values" align="right">9179</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1402 @@
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>DXXSPN_J</TITLE>     
+<META name="title" content="NHANES 2017-2018: Dual-Energy X-ray Absorptiometry - Spine  Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#Component_Description">Component 
+  Description</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#Eligible_Sample">Eligible 
+  Sample</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#Protocol_and_Procedure">Protocol 
+  and Procedure</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#Quality_Assurance_&amp;_Quality_Control">Quality 
+  Assurance &amp; Quality Control</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#Data_Processing_and_Editing">Data 
+  Processing and Editing</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#Analytic_Notes">Analytic 
+  Notes</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#References">References</A> 
+            </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#Codebook">Codebook</A> 
+              
+  <UL id="CodebookLinks">
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#SEQN">SEQN 
+    - Respondent sequence number</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXASPNST">DXASPNST 
+    - Spine scan status</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXOSBCC">DXXOSBCC 
+    - Total spine BMD invalidity code</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL1BCC">DXXL1BCC 
+    - L1 BMD invalidity code</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL2BCC">DXXL2BCC 
+    - L2 BMD invalidity code</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL3BCC">DXXL3BCC 
+    - L3 BMD invalidity code</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL4BCC">DXXL4BCC 
+    - L4 BMD invalidity code</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXOSBMD">DXXOSBMD 
+    - Total spine BMD</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXOSBMC">DXXOSBMC 
+    - Total spine BMC</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXOSA">DXXOSA 
+    - Total spine area</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL1BMD">DXXL1BMD 
+    - L1 BMD</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL1BMC">DXXL1BMC 
+    - L1 BMC</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL1A">DXXL1A 
+    - L1 area</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL2BMD">DXXL2BMD 
+    - L2 BMD</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL2BMC">DXXL2BMC 
+    - L2 BMC</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL2A">DXXL2A 
+    - L2 area</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL3BMD">DXXL3BMD 
+    - L3 BMD</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL3BMC">DXXL3BMC 
+    - L3 BMC</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL3A">DXXL3A 
+    - L3 area</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL4BMD">DXXL4BMD 
+    - L4 BMD</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL4BMC">DXXL4BMC 
+    - L4 BMC</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXXL4A">DXXL4A 
+    - L4 area</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXASPNK">DXASPNK 
+    - Calculated K for spine</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=6370&amp;Dataset=DXXSPN_J#DXASPND0">DXASPND0 
+    - Calculated DO for spine</A>               </LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>2017-2018 Data Documentation, Codebook, and Frequencies</H2>
+<H3>Dual-Energy X-ray Absorptiometry - Spine  (DXXSPN_J)</H3>
+<H4> Data File: DXXSPN_J.xpt</H4>
+<H5 class="left">First Published: May 2020</H5>
+<H5 class="right">Last Revised: NA</H5></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P>Users of the 2017-2018 dual-energy X-ray absorptiometry spine bone data 
+(DXXSPN_J) are encouraged to read the documentation before accessing the data 
+file.  </P>
+<P>Dual-energy x-ray absorptiometry (DXA) is the most widely accepted method of 
+measuring bone density due in part to its speed, ease of use, and low radiation 
+exposure (Baran, 1997; Genant, 1996; Heymsfield, 1989; and Njeh, 1999). DXA 
+scans of the lumbar spine have been administered in the NHANES mobile 
+examination center (MEC) from 2005-2010, 2013-2014, and 2017-2018. </P>
+<P>The spine scans provide bone measurements for the total spine and vertebrae 
+L1 – L4. Measurements include:</P>
+<UL>
+  <LI>Bone mineral content (BMC) (gm) </LI>
+  <LI>Bone area (cm<SUP>2</SUP>)  </LI>
+  <LI>Bone mineral density (BMD) (gm/cm<SUP>2</SUP>)  </LI></UL>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P>Participants aged 50 years of age and over were eligible. Pregnant females 
+were excluded from the DXA examination. Participants who were excluded from the 
+DXA examination for reasons other than pregnancy were eligible nonrespondents. 
+Reasons for exclusion from the DXA examination were as follows: </P>
+<UL>
+  <LI> Pregnancy (positive urine pregnancy test and/or self-report at the time 
+  of the DXA examination). </LI>
+  <LI> Self-reported history of radiographic contrast material (barium) use in 
+  past 7 days. </LI>
+  <LI> Measured weight over 450 pounds (DXA table limitation). </LI></UL>
+<P>Participants were excluded from the spine scan if they reported a Harrington 
+Rod in the spine for scoliosis. </P>
+<P>The variable DXASPNST indicates the examination status for the spine scan.  
+The codes for DXASPNST are as follows:</P>
+<P><SPAN style="text-decoration: underline;">DXASPNST – spine scan examination 
+status variable </SPAN><BR>1 = Spine scan completed, and all vertebrae are valid 
+<BR>2 = Spine scan completed, but one or more vertebrae are invalid <BR>4 = 
+Spine not scanned, weight &gt; 450 lbs <BR>5 = Spine not scanned, other reason 
+</P>
+<P>The main reasons for completed, but invalid, spine scans were an insufficient 
+scan area or partial scan, degenerative disease/severe scoliosis, and sclerotic 
+spine/spinal fusion/laminectomy. The “Not scanned, other reason” code includes 
+no time to complete the examination, pregnancy test not completed, and 
+participant refusal, as well as exclusion for reasons other than pregnancy, such 
+as a medical test. </P>
+<P>&nbsp;</P>
+<H2 id="Protocol_and_Procedure">Protocol and Procedure</H2>
+<P>The spine scans were acquired on Hologic Discovery model A densitometers 
+(Hologic, Inc., Bedford, Massachusetts), using software version Apex 3.2. The 
+radiation exposure from DXA for the spine scan is extremely low at less than 20 
+uSv. All scans in the DXXSPN_J file were analyzed with Hologic APEX version 4.0 
+software.   </P>
+<P>The DXA examinations were administered by trained and certified radiology 
+technologists. Further details of the DXA examination protocol are documented in 
+<A href="https://wwwn.cdc.gov/nchs/data/nhanes/2017-2018/manuals/Body_Composition_Procedures_Manual_2018.pdf">the 
+Body Composition Procedures Manual </A>on the NHANES website. </P>
+<H2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality 
+Control</H2>
+<P>A high level of quality control was maintained throughout the DXA data 
+collection and scan analysis, including a rigorous phantom scanning schedule. 
+</P>
+<P><STRONG>Monitoring of Field Staff and Densitometers </STRONG> <BR>Staff from 
+the National Center for Health Statistics (NCHS) and the NHANES data collection 
+contractor monitored technologist acquisition performance through in-person 
+observations in the field. Retraining sessions were conducted with the 
+technologists annually and as needed to reinforce correct techniques and 
+appropriate protocol. In addition, technologist performance codes were recorded 
+by the NHANES quality control center Shepherd Research Lab at the University of 
+California, San Francisco (UCSF), Department of Radiology (2017) and at the 
+University of Hawaii (UH) Cancer Center (2018) during review of participant 
+scans. The codes documented when the technologist had deviated from acquisition 
+procedures and where scan quality could have been improved. The performance 
+codes were tracked for each technologist individually and a summary was reported 
+to NCHS on a quarterly basis. Additional feedback on technologist performance 
+was provided by the Shepherd Research Lab when problems were noted during review 
+of the scans. Constant communication was maintained throughout the year among 
+the Shepherd Research Lab, the NCHS, and the data collection contractor 
+regarding any issues that arose.</P>
+<P>Hologic service engineers performed all routine densitometer maintenance and 
+repairs. Copies of all reports completed by the manufacturer’s service engineers 
+were sent to the quality control center when the scanners were serviced or 
+repaired so any changes in measurement as a result of the work could be 
+assessed. </P>
+<P><STRONG>Scan Analysis </STRONG> <BR>Each participant scan and phantom scan 
+was reviewed and analyzed by the Shepherd Research Lab using standard radiologic 
+techniques and study-specific protocols developed for the NHANES. The Hologic 
+software, APEX verson 4.0 (Hologic) was used to analyze all spine scans acquired 
+in 2017-18. Expert review was conducted by the Shepherd Research Lab on 100% of 
+analyzed participant scans to verify the accuracy and consistency of the 
+results.  </P>
+<P><STRONG>Invalidity Codes </STRONG> <BR>Invalidity codes were applied by the 
+Shepherd Research Lab to indicate the reasons spine regions of interest (ROI) 
+could not be analyzed accurately. The invalidity codes are provided in the data 
+file (see Data Processing and Editing section for a more detailed description of 
+the invalidity codes). </P>
+<P><STRONG>Quality Control Scans </STRONG> <BR>The quality control phantoms were 
+scanned according to a predetermined schedule. The Hologic Anthropomorphic Spine 
+Phantom that traveled with each MEC was scanned daily as required by the 
+manufacturer to ensure accurate calibration of the densitometer. The Hologic 
+Femur Phantom was scanned once each week. A Hologic Spine (HSP-Q96) Phantom and 
+a Hologic Block Phantom circulated among the MECs and were scanned at the start 
+of operations at each survey site.  </P>
+<P>The complete phantom scanning schedule is described in the Body Composition 
+Procedures Manual on the NHANES website.</P>
+<P>In 2017-2018, longitudinal monitoring was conducted through daily spine 
+phantom scans as required by the manufacturer and through the once weekly femur 
+phantom scans in order to correct any scanner-related changes in participant 
+data. The circulating HSP-Q96 and block phantoms, which were scanned at the 
+start of operations at each site, provided additional data for use in 
+longitudinal monitoring and cross calibration.  </P>
+<P>The Shepherd Research Lab used the Cumulative Statistics method (CUSUM) and 
+the MEC-specific phantom data to determine breaks in the calibration of the 
+densitometers over the course of the survey (Lu, 1996). No shifting or drifting 
+of the MEC-specific spine phantom values was found for any of the three MECs 
+during 2017-2018. Therefore, no corrections to the participant data were needed. 
+ Comparison of data for the phantoms that circulated among the MECs indicated no 
+statistically significant differences so that data from the three MECs could be 
+combined. </P>
+<P>Several data quality issues were addressed through the quality control 
+program. Direct feedback given to the technologists regarding acquisition 
+problems affecting the quality of the scans and yearly refresher training 
+resulted in improved technologist performance. The rigorous schedule of quality 
+control scans provided continuous monitoring of machine performance.  The expert 
+review procedures helped to ensure that scan analysis was accurate and 
+consistent.</P>
+<P>&nbsp;</P>
+<H2 id="Data_Processing_and_Editing">Data Processing and Editing</H2>
+<P>During the editing process, data were reviewed for completeness, consistency, 
+and outliers. Back-end edits of the data were performed when errors were 
+identified. </P>
+<P><STRONG>Invalidity Codes </STRONG> <BR>Invalidity codes were included in the 
+data file to indicate the reasons and spine regions of interest (ROI) could not 
+be analyzed accurately. Invalidity codes were applicable to completed scans only 
+(DXASPNST = 1 or 2). If a participant was not scanned, all invalidity codes are 
+missing. </P>
+<P>The invalidity codes are provided in the data file as follows: </P>
+<P><SPAN style="text-decoration: underline;">Invalidity codes</SPAN> <BR>
+DXXOSBCC = total spine BMD <BR>DXXL1BCC = L1 vertebra BMD <BR>DXXL2BCC = L2 
+vertebra BMD <BR>DXXL3BCC = L3 vertebra BMD <BR>DXXL4BCC = L4 vertebra BMD </P>
+<P><SPAN style="text-decoration: underline;">Values for DXXL1BCC, DXXL2BCC, 
+DXXL3BCC, DXXL4BCC </SPAN><BR>0 = Valid data <BR>1 = Removable or non-removable 
+objects <BR>3 = Excessive x-ray “noise” due to obesity <BR>4 = Insufficient scan 
+area <BR>5 = Movement <BR>6 = (degenerative diseases, spinal fusion, fractures) 
+</P>
+<P><SPAN style="text-decoration: underline;">Values for DXXOSBCC</SPAN> <BR>0 = 
+valid data <BR>1 = invalid data  </P>
+<P>If one or more spine vertebrae were coded as invalid, total spine BMD was 
+coded as invalid (DXXOSBCC = 1) and all spine data were set to missing.  </P>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P>The NHANES examination sample weights should be used for any analyses using 
+the DXXSPN_J data. Please refer to the <A href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">NHANES 
+Analytic Guidelines </A>  and the on-line <A href="https://wwwn.cdc.gov/nchs/nhanes/tutorials/default.aspx">NHANES 
+Tutorial</A>  for further details on the use of sample weights and other 
+analytic issues. Both of these are available on the the <A href="http://www.cdc.gov/nchs/nhanes.htm">NHANES 
+website</A>. </P></DIV>
+<DIV id="References">
+<H2>References</H2>
+<UL>
+  <LI>Baran DT, Faulkner KG, Genant HK, Miller PD, Pacifici  R. Diagnosis and 
+  management of osteoporosis: guidelines for the utilization of bone 
+  densitometry.Calcif Tissue Int 1997:62:433-440.</LI>
+  <LI>Genant HK, Engelke K, Fuerst T, Güer C-C, Grampp S, Harris ST, Jergas M, 
+  Lang T, Lu Y, Majumdar S, Mathur A, Takada M.  Noninvasive assessment of bone 
+  mineral and structure: state of the art. J Bone Miner Res 1996; 
+11:707-30.</LI>
+  <LI>Heymsfield SB, Wang J, Heshka S, Kehayias JJ, Pierson RN Jr. Dual-photon 
+  absorptiometry: comparison of bone mineral and soft tissue measurements in 
+  vivo with established methods. Am J Clin Nutr 1989; 49:1283-9.</LI>
+  <LI>Hololgic Product Support: Discovery. <A 
+  href="http://www.hologic.com/">http://www.hologic.com/</A>           </LI>
+  <LI>ISCD Official Positions 2007. October 2007. <A href="http://www.iscd.org/Visitors/positions/OfficialPositionsText.cfm.">http://www.iscd.org/Visitors/positions/OfficialPositionsText.cfm.</A> 
+            </LI>
+  <LI>Lu Y, Mathur AK, Blunt BA, et al. Dual X-ray absorptiometry quality 
+  control: comparison of visual examination and process-control charts. JBMR 
+  1996; 11:626-37.</LI>
+  <LI>Njeh CF, Fuerst T, Hans D, Blake GM, Genant HK. Radiation exposure in bone 
+  mineral density assessment.  Appl Radiat Isot 1999; 50:215-36.</LI></UL></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXASPNST">DXASPNST - Spine scan status</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXASPNST</DD>
+  <DT>SAS Label: </DT>
+  <DD>Spine scan status</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Spine scan status</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Spine scan completed, all vertebrae are valid</TD>
+    <TD align="right" class="values">1274</TD>
+    <TD align="right" class="values">1274</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Spine scan completed, but one or more vertebrae are 
+      invalid</TD>
+    <TD align="right" class="values">1199</TD>
+    <TD align="right" class="values">2473</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">4</TD>
+    <TD class="values">Spine not scanned, weight &gt; 450 lbs</TD>
+    <TD align="right" class="values">2</TD>
+    <TD align="right" class="values">2475</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">5</TD>
+    <TD class="values">Spine not scanned, other reason</TD>
+    <TD align="right" class="values">423</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXOSBCC">DXXOSBCC - Total spine BMD invalidity 
+code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXOSBCC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Total spine BMD invalidity code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Total spine BMD invalidity code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Valid data</TD>
+    <TD align="right" class="values">1274</TD>
+    <TD align="right" class="values">1274</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Invalid data</TD>
+    <TD align="right" class="values">1199</TD>
+    <TD align="right" class="values">2473</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">425</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL1BCC">DXXL1BCC - L1 BMD invalidity code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL1BCC</DD>
+  <DT>SAS Label: </DT>
+  <DD>L1 BMD invalidity code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L1 BMD invalidity code </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Valid data</TD>
+    <TD align="right" class="values">2219</TD>
+    <TD align="right" class="values">2219</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Removable or non-removable objects</TD>
+    <TD align="right" class="values">18</TD>
+    <TD align="right" class="values">2237</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">Excessive x-ray noise due to morbid obesity</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">2237</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">4</TD>
+    <TD class="values">Insufficient scan area</TD>
+    <TD align="right" class="values">7</TD>
+    <TD align="right" class="values">2244</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">5</TD>
+    <TD class="values">Movement</TD>
+    <TD align="right" class="values">3</TD>
+    <TD align="right" class="values">2247</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">6</TD>
+    <TD class="values">Other (degenerative diseases, spinal fusion, 
+    fractures)</TD>
+    <TD align="right" class="values">226</TD>
+    <TD align="right" class="values">2473</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">425</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL2BCC">DXXL2BCC - L2 BMD invalidity code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL2BCC</DD>
+  <DT>SAS Label: </DT>
+  <DD>L2 BMD invalidity code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L2 BMD invalidity code </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Valid data</TD>
+    <TD align="right" class="values">1985</TD>
+    <TD align="right" class="values">1985</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Removable or non-removable objects</TD>
+    <TD align="right" class="values">24</TD>
+    <TD align="right" class="values">2009</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">Excessive x-ray noise due to morbid obesity</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">2009</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">4</TD>
+    <TD class="values">Insufficient scan area</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">2009</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">5</TD>
+    <TD class="values">Movement</TD>
+    <TD align="right" class="values">3</TD>
+    <TD align="right" class="values">2012</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">6</TD>
+    <TD class="values">Other (degenerative diseases, spinal fusion, 
+    fractures)</TD>
+    <TD align="right" class="values">461</TD>
+    <TD align="right" class="values">2473</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">425</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL3BCC">DXXL3BCC - L3 BMD invalidity code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL3BCC</DD>
+  <DT>SAS Label: </DT>
+  <DD>L3 BMD invalidity code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L3 BMD invalidity code </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Valid data</TD>
+    <TD align="right" class="values">1922</TD>
+    <TD align="right" class="values">1922</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Removable or non-removable objects</TD>
+    <TD align="right" class="values">34</TD>
+    <TD align="right" class="values">1956</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">Excessive x-ray noise due to morbid obesity</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">1956</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">4</TD>
+    <TD class="values">Insufficient scan area</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">1956</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">5</TD>
+    <TD class="values">Movement</TD>
+    <TD align="right" class="values">2</TD>
+    <TD align="right" class="values">1958</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">6</TD>
+    <TD class="values">Other (degenerative diseases, spinal fusion, 
+    fractures)</TD>
+    <TD align="right" class="values">515</TD>
+    <TD align="right" class="values">2473</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">425</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL4BCC">DXXL4BCC - L4 BMD invalidity code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL4BCC</DD>
+  <DT>SAS Label: </DT>
+  <DD>L4 BMD invalidity code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L4 BMD invalidity code </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Valid data</TD>
+    <TD align="right" class="values">1743</TD>
+    <TD align="right" class="values">1743</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Removable or non-removable objects</TD>
+    <TD align="right" class="values">45</TD>
+    <TD align="right" class="values">1788</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">Excessive x-ray noise due to morbid obesity</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">1788</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">4</TD>
+    <TD class="values">Insufficient scan area</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">1789</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">5</TD>
+    <TD class="values">Movement</TD>
+    <TD align="right" class="values">3</TD>
+    <TD align="right" class="values">1792</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">6</TD>
+    <TD class="values">Other (degenerative diseases, spinal fusion, 
+    fractures)</TD>
+    <TD align="right" class="values">681</TD>
+    <TD align="right" class="values">2473</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">425</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXOSBMD">DXXOSBMD - Total spine BMD</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXOSBMD</DD>
+  <DT>SAS Label: </DT>
+  <DD>Total spine BMD</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Total spine BMD </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.454 to 1.796</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">1274</TD>
+    <TD align="right" class="values">1274</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1624</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXOSBMC">DXXOSBMC - Total spine BMC</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXOSBMC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Total spine BMC</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Total spine BMC </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">10.19 to 132.18</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">1274</TD>
+    <TD align="right" class="values">1274</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1624</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXOSA">DXXOSA - Total spine area</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXOSA</DD>
+  <DT>SAS Label: </DT>
+  <DD>Total spine area</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Total spine area </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">15.56 to 91.61</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">1274</TD>
+    <TD align="right" class="values">1274</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1624</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL1BMD">DXXL1BMD - L1 BMD</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL1BMD</DD>
+  <DT>SAS Label: </DT>
+  <DD>L1 BMD</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L1 BMD </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0 to 1.684</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2213</TD>
+    <TD align="right" class="values">2213</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">685</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL1BMC">DXXL1BMC - L1 BMC</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL1BMC</DD>
+  <DT>SAS Label: </DT>
+  <DD>L1 BMC</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L1 BMC</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0 to 34.41</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2213</TD>
+    <TD align="right" class="values">2213</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">685</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL1A">DXXL1A - L1 area</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL1A</DD>
+  <DT>SAS Label: </DT>
+  <DD>L1 area</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L1 area </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0 to 24.93</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2213</TD>
+    <TD align="right" class="values">2213</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">685</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL2BMD">DXXL2BMD - L2 BMD</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL2BMD</DD>
+  <DT>SAS Label: </DT>
+  <DD>L2 BMD</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L2 BMD </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.461 to 1.796</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">1980</TD>
+    <TD align="right" class="values">1980</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">918</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL2BMC">DXXL2BMC - L2 BMC</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL2BMC</DD>
+  <DT>SAS Label: </DT>
+  <DD>L2 BMC</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L2 BMC </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">5.37 to 38.53</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">1980</TD>
+    <TD align="right" class="values">1980</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">918</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL2A">DXXL2A - L2 area</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL2A</DD>
+  <DT>SAS Label: </DT>
+  <DD>L2 area</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L2 area </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">7.88 to 23.86</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">1980</TD>
+    <TD align="right" class="values">1980</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">918</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL3BMD">DXXL3BMD - L3 BMD</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL3BMD</DD>
+  <DT>SAS Label: </DT>
+  <DD>L3 BMD</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L3 BMD </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.461 to 2.035</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">1914</TD>
+    <TD align="right" class="values">1914</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">984</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL3BMC">DXXL3BMC - L3 BMC</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL3BMC</DD>
+  <DT>SAS Label: </DT>
+  <DD>L3 BMC</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L3 BMC </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">4.76 to 44.01</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">1914</TD>
+    <TD align="right" class="values">1914</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">984</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL3A">DXXL3A - L3 area</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL3A</DD>
+  <DT>SAS Label: </DT>
+  <DD>L3 area</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L3 area </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">8.83 to 25.39</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">1914</TD>
+    <TD align="right" class="values">1914</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">984</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL4BMD">DXXL4BMD - L4 BMD</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL4BMD</DD>
+  <DT>SAS Label: </DT>
+  <DD>L4 BMD</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L4 BMD </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.452 to 2.85</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">1734</TD>
+    <TD align="right" class="values">1734</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1164</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL4BMC">DXXL4BMC - L4 BMC</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL4BMC</DD>
+  <DT>SAS Label: </DT>
+  <DD>L4 BMC</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L4 BMC </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">5.43 to 59.77</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">1734</TD>
+    <TD align="right" class="values">1734</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1164</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXXL4A">DXXL4A - L4 area</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXXL4A</DD>
+  <DT>SAS Label: </DT>
+  <DD>L4 area</DD>
+  <DT>English Text: </DT>
+  <DD class="info">L4 area </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">9.84 to 28.39</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">1734</TD>
+    <TD align="right" class="values">1734</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1164</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXASPNK">DXASPNK - Calculated K for spine</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXASPNK</DD>
+  <DT>SAS Label: </DT>
+  <DD>Calculated K for spine</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Calculated K for spine  </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1.1119 to 1.1628</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2463</TD>
+    <TD align="right" class="values">2463</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">435</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="DXASPND0">DXASPND0 - Calculated DO for spine</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">DXASPND0</DD>
+  <DT>SAS Label: </DT>
+  <DD>Calculated DO for spine</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Calculated DO for spine  </DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 50 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">33.1402 to 49.5598</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2463</TD>
+    <TD align="right" class="values">2463</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">435</TD>
+    <TD align="right" class="values">2898</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>

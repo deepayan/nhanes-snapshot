@@ -1,0 +1,450 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0071)http://adp-dhanes/Nchs/Edit/DocumentationView.aspx -->
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>L05_B</TITLE>     
+<META name="title" content="NHANES 2001-2002: Chlamydia &amp; Gonorrhea - Urine Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=541&amp;Dataset=L05_B#Component_Description">Component 
+  Description</A>           </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=541&amp;Dataset=L05_B#Eligible_Sample">Eligible 
+  Sample</A>           </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=541&amp;Dataset=L05_B#Description_of_Laboratory_Methodology">Description 
+  of Laboratory Methodology</A>           </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=541&amp;Dataset=L05_B#Laboratory_Quality_Assurance_and_Monitoring">Laboratory 
+  Quality Assurance and Monitoring</A>           </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=541&amp;Dataset=L05_B#Data_Processing_and_Editing">Data 
+  Processing and Editing</A>           </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=541&amp;Dataset=L05_B#Analytic_Notes">Analytic 
+  Notes</A>           </LI>
+  <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=541&amp;Dataset=L05_B#Codebook">Codebook</A> 
+              
+  <UL id="CodebookLinks">
+    <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=541&amp;Dataset=L05_B#SEQN">SEQN 
+    - Respondent sequence number</A>               </LI>
+    <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=541&amp;Dataset=L05_B#URXUGC">URXUGC 
+    - Gonorrhea, urine</A>               </LI>
+    <LI><A href="http://adp-dhanes/Nchs/Edit/DocumentationView.aspx?Id=541&amp;Dataset=L05_B#URXUCL">URXUCL 
+    - Chlamydia, urine</A>               </LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>2001-2002 Data Documentation, Codebook, and Frequencies</H2>
+<H3>Chlamydia &amp; Gonorrhea - Urine (L05_B)</H3>
+<H4> Data File: L05_B.xpt</H4>
+<H5 class="left">First Published: May 2004</H5>
+<H5 class="right">Last Revised: NA</H5></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P><STRONG>Urinary chlamydia and Urinary gonorrhea</STRONG> </P>
+<P>Sexually transmitted infections caused by Chlamydia trachomatis and Neisseria 
+gonorrhoeae may lead to pelvic inflammatory disease, ectopic pregnancy, 
+infertility, and chronic pelvic pain in women. They are associated with 
+increased risk of HIV transmission. Pregnant women may transmit infection to 
+their newborn causing serious medical complications. At present there are no 
+reliable estimates on the prevalence of chlamydial and gonococcal infection in 
+the general population of the United States. </P>
+<P>NHANES offers an opportunity to assess the prevalence of chlamydia and 
+gonococcal infection in the general population and to monitor trends in 
+prevalence as prevention programs are established and expanded.</P>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P>Participants aged 14 to 39 years were tested. The public data file includes 
+data for persons 18-39 years of age. Please see <EM>Analytic 
+Notes&nbsp;</EM>about the release of data for adolescents 14-17 years of 
+age.</P>
+<H2 id="Description_of_Laboratory_Methodology">Description of Laboratory 
+Methodology</H2>
+<P><STRONG>Urinary chlamydia</STRONG> </P>
+<P>The <EM>Chlamydia trachomatis</EM> assay uses LCR TM (ligase chain reaction) 
+amplification technology in the LCx Probe System for the direct, qualitative 
+detection of plasmid DNA of <EM>Chlamydia trachomatis</EM>. <BR>The LCx 
+<EM>Chlamydia trachomatis</EM> assay uses the nucleic acid amplication method 
+LCR to detect the presence of <EM>C. trachomatis</EM> plasmid DNA directly in 
+clinical specimens. </P>
+<P>The four oligonucleotide probes in the LCx assay recognize and hybridize to a 
+specific target sequence within the <EM>C. trachomatis</EM> plasmid DNA. The 
+oligonuleotides are designed to be complementary to the target sequence so that 
+in the presence of target, the probes will bind adjacent to one another. They 
+can then be enzymatically joined to form the amplification product, which 
+subsequently serves as an additional target sequence during further rounds of 
+amplication. The product of the LCR reaction is detected on the Abbott LCx 
+analyzer. </P>
+<P><STRONG>Urinary gonorrhea</STRONG> </P>
+<P>The Neisseria gonorrhoeae assay uses LCR TM (ligase chain reaction) 
+amplification technology in the LCx Probe System for the direct, qualitative 
+detection of a specific target nucleic acid sequence in the Opa gene of 
+<EM>Neisseria gonorrhoeae</EM>. </P>
+<P>The LCx <EM>Neisseria gonorrhoeae</EM> assay uses the nucleic acid 
+amplication method LCR to detect the presence of <EM>Neisseria gonorrhoeae</EM>. 
+The four oligonucleotide probes in the LCx assay recognize and hybridize to a 
+specific target sequence within the Opa gene of <EM>Neisseria gonorrhoeae</EM> 
+DNA. The oligonuleotides are designed to be complementary to the target sequence 
+so that in the presence of target, the probes will bind adjacent to one another. 
+They can then be enzymatically joined to form the amplification product which 
+subsequently serves as an additional target sequence during further rounds of 
+amplication. The product of the LCR reaction is detected on the Abbott LCx 
+analyzer.</P>
+<H2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+Assurance and Monitoring</H2>
+<P>The NHANES quality control and quality assurance protocols (QA/QC) meet the 
+1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and 
+quality assurance instructions are discussed in the NHANES Laboratory/Medical
+ Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC 
+protocols.</P>
+<H2 id="Data_Processing_and_Editing">Data Processing and Editing</H2>
+<P>Urine specimens were processed, stored and shipped to the Division of STD 
+Prevention Laboratory, National Center for HIV/AIDS, Viral Hepatitis, STD and TB 
+Prevention,&nbsp;Centers for Disease Control and Prevention, Atlanta, GA for 
+analysis. Detailed specimen collection and processing instructions are discussed 
+in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the 
+LABDOC file for detailed data processing and editing protocols. The analytical 
+methods are described in the Description of the Laboratory 
+Methodology&nbsp;section.</P>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P>The public release data file includes&nbsp;urinary chlamydia and 
+gonorrhea&nbsp;data for participants aged 18–39. Data for youth aged 14–17 years 
+are available through the <A href="https://www.cdc.gov/rdc/">NCHS Research Data 
+Center (RDC)</A>.</P></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 18 YEARS -			39 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUGC">URXUGC - Gonorrhea, urine</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUGC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Gonorrhea, urine</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Gonorrhea, urine</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 18 YEARS -			39 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Positive</TD>
+    <TD align="right" class="values">10</TD>
+    <TD align="right" class="values">10</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Negative</TD>
+    <TD align="right" class="values">2305</TD>
+    <TD align="right" class="values">2315</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">Indeterminate</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">2315</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">93</TD>
+    <TD align="right" class="values">2408</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUCL">URXUCL - Chlamydia, urine</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUCL</DD>
+  <DT>SAS Label: </DT>
+  <DD>Chlamydia, urine</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Chlamydia, urine</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 18 YEARS -			39 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Positive</TD>
+    <TD align="right" class="values">67</TD>
+    <TD align="right" class="values">67</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Negative</TD>
+    <TD align="right" class="values">2248</TD>
+    <TD align="right" class="values">2315</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">Indeterminate</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">2315</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">93</TD>
+    <TD align="right" class="values">2408</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>

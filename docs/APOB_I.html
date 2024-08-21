@@ -1,0 +1,593 @@
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>APOB_I</TITLE>     
+<META name="title" content="NHANES 2015-2016: Apolipoprotein B Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   </HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="#Component_Description">Component Description</A>           </LI>
+  <LI><A href="#Eligible_Sample">Eligible Sample</A>           </LI>
+  <LI><A href="#Description_of_Laboratory_Methodology">Description of Laboratory 
+  Methodology</A>           </LI>
+  <LI><A href="#Laboratory_Method_Files">Laboratory Method Files</A>           
+  </LI>
+  <LI><A href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+  Assurance and Monitoring</A>           </LI>
+  <LI><A href="#Data_Processing_and_Editing">Data Processing and Editing</A>     
+        </LI>
+  <LI><A href="#Analytic_Notes">Analytic Notes</A>           </LI>
+  <LI><A href="#References">References</A>           </LI>
+  <LI><A href="#Codebook">Codebook</A>             
+  <UL id="CodebookLinks">
+    <LI><A href="#SEQN">SEQN - Respondent sequence number</A>               
+</LI>
+    <LI><A href="#WTSAF2YR">WTSAF2YR - Fasting Subsample 2 Year MEC Weight</A>   
+                </LI>
+    <LI><A href="#LBXAPB">LBXAPB - Apolipoprotein (B) (mg/dL)</A>               
+    </LI>
+    <LI><A href="#LBDAPBSI">LBDAPBSI - Apolipoprotein (B) (g/L)</A>              
+     </LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>2015-2016 Data Documentation, Codebook, and Frequencies</H2>
+<H3>Apolipoprotein B (APOB_I)</H3>
+<H4> Data File: APOB_I.xpt</H4>
+<H5 class="left">First Published: January 2019</H5>
+<H5 class="right">Last Revised: NA</H5>
+<DIV style="width: 75%; margin-left: 20%;">
+<H5 class="specialnote">Note: See Analytic Note on Regression equations to 
+compare 2015-2016 and 2013-2014 Apolipoprotein B data </H5></DIV></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">The 
+goals of this component are: 1) to monitor the prevalence and trends in major 
+cardiovascular conditions, and overall risk factors in the U.S.; and 2) to 
+evaluate prevention and treatment programs targeting cardiovascular disease in 
+the United States.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">Blood 
+lipid levels are the main elements of the cardiovascular disease laboratory 
+component in NHANES. Cardiovascular disease is the leading cause of death in the 
+United States. The data will be used to monitor the status of hyperlipidemia, 
+and the success of the National Cholesterol Education Program.</P>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">Participants 
+aged 12 years and older, who were examined in the morning session, were 
+eligible.</P>
+<H2 id="Description_of_Laboratory_Methodology">Description of Laboratory 
+Methodology</H2>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">In 
+an immunochemical reaction, apolipoprotein B (Apo B) in a human serum sample 
+will form immune complexes with specific antibodies. These complexes scatter a 
+beam of light passed through the sample. The intensity of the scattered light is
+ proportional to the concentration of Apo B in the sample. The result is 
+evaluated by comparison with a standard of known concentration. <BR><BR> Apo B 
+is the main protein component of LDL and accounts for approximately 95% of the 
+total protein content of LDL. Apo B is necessary for the reaction with LDL 
+receptors in the liver and on cell walls, and is thus involved in transporting 
+cholesterol from the liver to the vessel cell. Elevated levels of Apo B are 
+frequently found in patients with atherosclerotic vascular changes and are a 
+risk factor for atherosclerosis.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">Refer 
+to the Laboratory Method Files section for a detailed description of the 
+laboratory methods used.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">There 
+were no changes to the lab method, or lab site for this component in the NHANES 
+2015-2016 cycle. However there was a change in lab equipment. In the 2013-2014 
+cycle, Apo B was measured on the Siemens Prospec chemistry analyzer. In the 
+2015-2016 cycle, Apo B was measured on the Roche Cobas 6000 chemistry analyzers. 
+Please see Analytic Notes section for additional information comparing data 
+between the 2013-2014 and 2015-2016 survey cycles.</P>
+<H2 id="Laboratory_Method_Files">Laboratory Method Files</H2>
+<P><A href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/labmethods/APOB_I_MET.pdf" 
+target="_blank">Apolipoprotein B</A>           <SPAN> (January 2019)</SPAN>      
+   </P>
+<H2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+Assurance and Monitoring</H2>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">Serum 
+specimens were processed, stored, and shipped to University of Minnesota, 
+Minneapolis, MN for analysis.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">Detailed
+ instructions on specimen collection and processing are discussed in the NHANES 
+<A href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/manuals/2016_MEC_Laboratory_Procedures_Manual.pdf">Laboratory
+ Procedures Manual (LPM)</A>. Vials are stored under appropriate frozen (–30°C) 
+conditions until they are shipped to University of Minnesota for testing.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">The 
+NHANES quality assurance and quality control (QA/QC) protocols meet the 1988 
+Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions are 
+discussed in the <A href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/manuals/2016_MEC_Laboratory_Procedures_Manual.pdf">NHANES 
+LPM</A>.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;"><B>Mobile 
+Examination Centers (MECs)</B></P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">Laboratory 
+team performance is monitored using several techniques. NCHS and contract
+ consultants use a structured competency assessment evaluation during visits to
+ evaluate both the quality of the laboratory work and the quality-control
+ procedures. Each laboratory staff member is observed for equipment operation,
+ specimen collection and preparation; testing procedures and constructive 
+feedback are given to each staff member. Formal retraining sessions are 
+conducted annually to ensure that required skill levels were maintained.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;"><B>Analytical
+ Laboratories</B> </P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">NHANES 
+uses several methods to monitor the quality of the analyses performed by the 
+contract laboratories. In the MEC, these methods include performing blind split 
+samples collected on “dry run” sessions. In addition, contract laboratories 
+randomly perform repeat testing on 2% of all specimens.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">NCHS 
+developed and distributed a quality control protocol for all CDC and contract 
+laboratories, which outlined the use of Westgard rules (Westgard et al, 1981) 
+when running NHANES specimens. Progress reports containing any problems 
+encountered during shipping or receipt of specimens, summary statistics for each 
+control pool, QC graphs, instrument calibration, reagents, and any special 
+considerations are submitted to NCHS quarterly. The reports are reviewed for 
+trends or shifts in the data. The laboratories are required to explain any 
+identified areas of concern.</P>
+<H2 id="Data_Processing_and_Editing">Data Processing and Editing</H2>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">The 
+data were reviewed. Incomplete data or improbable values were sent to the 
+performing laboratory for confirmation.</P>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">Refer 
+to the <A href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overview.aspx?BeginYear=2015"><SPAN 
+style="color: rgb(0, 51, 153);">2015-2016 Laboratory Data Overview</SPAN></A> 
+for general information on NHANES laboratory data.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">Please 
+refer to the NHANES <A href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx" 
+target="_blank">Analytic Guidelines </A>and the on-line NHANES <A href="http://www.cdc.gov/nchs/tutorials/" 
+target="_blank">Tutorial</A> for details on the use of sample weights and 
+analytic issues.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;"><B>Subsample 
+Weights</B></P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">Apo 
+B was measured in a fasting subsample of participants 12 years and older. 
+Special sample weights are required to analyze these data properly. Specific 
+sample weights for this subsample are included in this data file and should be 
+used when analyzing these data.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;"><B>Demographic 
+and Other Related Variables</B></P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">The 
+analysis of NHANES laboratory data must be conducted using the appropriate 
+survey design and demographic variables. The <A href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2015" 
+target="_blank"><SPAN style="color: rgb(0, 51, 153);">NHANES 2015-2016 
+Demographics File</SPAN></A>&nbsp;contains demographic data, health indicators, 
+and other related information collected during household interviews as well as 
+the sample design variables. The recommended procedure for variance estimation 
+requires use of stratum and PSU variables (SDMVSTRA and SDMVPSU, respectively) 
+in the demographic data file.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">The 
+<SPAN style="color: rgb(0, 51, 153);"><A href="https://wwwn.cdc.gov/nchs/nhanes/2015-2016/fastqx_i.htm">Fasting 
+Questionnaire File</A></SPAN>&nbsp;includes auxiliary information such as 
+fasting status, length of fast and the time of venipuncture.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">This 
+laboratory data file can be linked to the other NHANES data files using the 
+unique survey participant identifier (i.e., SEQN).</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;"><B>Detection 
+Limits </B></P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">The 
+detection limits were constant for all of the analytes in the data set. The 
+variable prefixed LBX (ex., LBXAPB) provides the analytic result for that 
+analyte.</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">The 
+lower limit of detection (LLOD in mg/dL) for Apolipoprotein (B):</P>
+<DIV style="text-align: center;">
+<TABLE width="0" style="border: currentColor; border-image: none; width: 372.3pt; border-collapse: collapse; mso-border-alt: solid black .75pt; mso-yfti-tbllook: 1184; mso-padding-alt: 1.5pt 1.5pt 1.5pt 1.5pt;" 
+border="1" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR style="height: 11.25pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+    <TD style="padding: 3.75pt; border: 1pt solid windowtext; border-image: none; height: 11.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center;"><B style="mso-bidi-font-weight: normal;">Variable 
+      Name</B></P></TD>
+    <TD style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext rgb(0, 0, 0); padding: 3.75pt; border-image: none; height: 11.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center;"><B style="mso-bidi-font-weight: normal;">SAS 
+      Label</B></P></TD>
+    <TD style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext rgb(0, 0, 0); padding: 3.75pt; border-image: none; height: 11.25pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center;"><B style="mso-bidi-font-weight: normal;">LLOD</B></P></TD></TR>
+  <TR style="height: 10.5pt; mso-yfti-irow: 1; mso-yfti-lastrow: yes;">
+    <TD style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; height: 10.5pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center;">LBXAPB</P></TD>
+    <TD style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; height: 10.5pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center;">Apolipoprotein         
+         (B) (mg/dL)</P></TD>
+    <TD style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; height: 10.5pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P 
+style="margin: 0in 0in 0pt; text-align: center;">25.0</P></TD></TR></TBODY></TABLE></DIV>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;"><B>&nbsp;</B></P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;"><B>Apo 
+B regression equations to compare 2015-16 and 2013-14 data: </B></P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">A 
+method validation (bridging) study was performed to compare results from an 
+instrument and method change in 2015-2016 cycle using NHANES samples from late 
+2014. The Roche Cobas 6000 Chemistry Analyzer (turbidimetric immunoassay) was 
+used for all of the 2015-2016 cycle, while the Siemens ProSpec Analyzer 
+(nephelometric immunoassay) was used in the 2013-2014 cycle. Randomly selected 
+serum samples (n=105) from NHANES participants in 2014 were measured using both 
+instruments, and the results were used to conduct the analysis. On average, 
+apolipoprotein B values measured from the Roche Cobas 6000 Chemistry Analyzer 
+(new instrument and turbidimetric method) were 3.7% higher than values from the 
+Siemens ProSpec Analyzer (old instrument and nephelometric method) (p&lt;.0001), 
+and the correlation coefficient (r) between the measurements was 0.988. 
+Regression analyses were performed using Analyse-it, v4.30.4. Given that the 
+data showed proportional differences in variability, a weighted Deming 
+regression was chosen to adjust the serum Apo B results (mg/dL). The forward and 
+backward equations are below: </P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;"><SPAN 
+style="text-decoration: underline;">Forward</SPAN>:&nbsp;<B>Y</B> <I>(Cobas 
+6000)</I> <B>= 1.001</B> (95%CI: 0.9798 to 1.023) <B>* X</B> <I>(Siemens 
+ProSpec)</I> <B>+ 2.883</B> (95%CI: 1.217 to 4.550)</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;"><SPAN 
+style="text-decoration: underline;">Backward</SPAN>: <B>Y</B> <I>(Siemens 
+ProSpec)</I> <B>= 0.9988 </B>(95%CI: 0.9774 to 1.020) <B>* X</B> <I>(Cobas 
+6000)</I> <B>- 2.880</B> (95%CI: -4.601 to -1.158)</P>
+<P style="line-height: 15.95pt; margin-top: 0in; margin-right: 0.5in; margin-bottom: 12pt;">These 
+regression equations should be used when examining trends of serum 
+apolipoprotein B data across 2015-2016 and 2007-2014 cycles, or when combining 
+2015-2016 data with these previous cycles. For analysis involving apolipoprotein 
+data from NHANES 2015-2016 and 2005-2006 cycles, please refer to the 
+documentation accompanying 2005-2006 Apo B data (<A href="https://wwwn.cdc.gov/Nchs/Nhanes/2005-2006/TRIGLY_D.htm" 
+target="_blank"><SPAN style="color: rgb(0, 51, 153);">APOB_D</SPAN></A>) for 
+additional adjustments, as a different instrument and laboratory were used to 
+analyze 2005-2006 data.</P></DIV>
+<DIV id="References">
+<H2>References</H2>
+<UL>
+  <LI>
+  <P style="margin: 8.4pt 0.5in 10pt 0in; line-height: normal; mso-margin-bottom-alt: auto;">Westgard 
+  J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewhart chart for quality 
+  control in clinical chemistry. Clin Chem (1981) 27:493-501.</P></LI></UL></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 12 YEARS -			150 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="WTSAF2YR">WTSAF2YR - Fasting Subsample 2 Year MEC 
+Weight</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">WTSAF2YR</DD>
+  <DT>SAS Label: </DT>
+  <DD>Fasting Subsample 2 Year MEC Weight</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Fasting Subsample 2 Year MEC Weight</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 12 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">13612.331812 to 521632.18583</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2743</TD>
+    <TD align="right" class="values">2743</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">No Lab Result</TD>
+    <TD align="right" class="values">448</TD>
+    <TD align="right" class="values">3191</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">3191</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXAPB">LBXAPB - Apolipoprotein (B) (mg/dL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXAPB</DD>
+  <DT>SAS Label: </DT>
+  <DD>Apolipoprotein (B) (mg/dL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Apolipoprotein (B) (mg/dL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 12 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">22 to 211</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2722</TD>
+    <TD align="right" class="values">2722</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">469</TD>
+    <TD align="right" class="values">3191</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDAPBSI">LBDAPBSI - Apolipoprotein (B) (g/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDAPBSI</DD>
+  <DT>SAS Label: </DT>
+  <DD>Apolipoprotein (B) (g/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Apolipoprotein (B) (g/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 12 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.22 to 2.11</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2722</TD>
+    <TD align="right" class="values">2722</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">469</TD>
+    <TD align="right" class="values">3191</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>

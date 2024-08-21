@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Parathyroid Hormone" />
+    <meta name="DC.Subject" content="NHANES 2005-2006: Parathyroid Hormone Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2005-2006 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2005">
+      <title>
+						NHANES 2005-2006:
+						Parathyroid Hormone Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LBXPT21">LBXPT21 - Parathyroid Hormone(Elecys method) pg/mL</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2005-2006 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Parathyroid Hormone (PTH_D)
+			</h3>
+        <h4>
+				Data File: PTH_D.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				January 2008</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p><strong>Parathyroid Hormone (PTH)</strong> </p>
+<p>Evaluation of bone mineral status will utilize an evaluation of vitamin D status based on two analytes: serum 25-hydroxyvitamin D and parathyroid hormone (PTH). Vitamin D is essential for active intestinal calcium absorption and plays a central role in maintaining calcium homeostasis and skeletal integrity. In addition, vitamin D has recently been linked to other non-skeletal conditions of public health significance, such as hypertension and cancer. Vitamin D is derived mainly from cutaneous synthesis in the presence of ultraviolet sunlight, whereas dietary intake constitutes a minor fraction. Serum 25(OH D) is the best indicator of vitamin D status. It is converted in the kidney, stimulated by PTH, to the hormonally active metabolite 1,25-dihydroxyvitamin D [1,25 (OH)2D]. Serum PTH concentration is a very sensitive indicator of calcium homeostasis and vitamin D deficiency. The inclusion of this measure to the NHANES laboratory protocol will increase the usefulness of the vitamin D measurement in evaluating vitamin D status, particularly as it relates to skeletal status. The inclusion of both of these markers in the NHANES survey will provide a more complete picture of vitamin D status.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 6 years and older.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p>The Elecsys 1010 analyzer is a fully automatic run-oriented analyzer system for the determination of immunological tests using the ECL/Origen electrochemiluminescent process. All components and reagents for routine analysis are integrated in or on the analyzer. Parathyroid hormone is measured on the Elecsys 1010 using a sandwich principle. </p>
+<ul>
+    <li>1st incubation: 50 &mu;l sample, a biotinylated monoclonal PTH-specific antibody and monoclonal PTH-specific antibody labeled with a ruthenium complex form a sandwich complex. </li>
+    <li>2nd incubation: After addition of streptavidin-labeled microparticles, the complex produced is bound to the solid phase via biotin-streptavidin interaction. </li>
+    <li>The reaction mixture is aspirated into the measuring cell where the microparticles are magnetically captured onto the surface of the electrode. Unbound substances are then removed with ProCell. Application of a voltage to the electrode then induces chemiluminescent emission which is measured by a photomultiplier. </li>
+    <li>Results are determined via a calibration curve. This curve is instrument-specifically generated by a 2-point calibration and a master curve provided via the reagent barcode. </li>
+    <li>Total duration of assay is 9 minutes on the Elecsys 1010.</li>
+</ul>
+<p>Parathyroid hormone (PTH) is an 84 amino acid peptide produced by the parathyroid gland. Since the PTH molecule undergoes extensive proteolytic modifications, human serum contains both the intact molecule and several fragments. The biologically active N-terminal fragment has a half-life of only a few minutes. The secretory activity of the parathyroid gland can be determined by the selective measurement of the (mainly) intact parathyroid hormone. This Elecsys 1010 method is for the in vitro quantitative determination of intact parathyroid hormone in human serum and plasma. Together with vitamin D and calcitonin, PTH brings about the mobilization of calcium and phosphate from the skeletal system and increases the uptake of calcium in the intestine and the excretion of phosphate via the kidneys. Secretion of PTH is inhibited by high calcium concentrations and is promoted by low calcium concentrations. The ratios of intact hormone to peptide fragments may vary from individual to individual as well as between patients with hyperparathyroidism or chronic renal failure. The concentration of metabolically inactive PTH fragments increases in renal failure. </p>
+<p>There were no changes to the equipment, lab method, or lab site from the previous 2 years. </p>
+<p>A detailed description of the laboratory method used can be found on the NHANES website.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Blood specimens are processed, stored and shipped to University of Washington, Seattle, WA. Detailed specimen collection and processing instructions are discussed in the NHANES LPM. Read the LABDOC file for detailed data processing and editing protocols. The analytical methods are described in the Analytic methodology section.</p>
+<p>There were no derived variables in this file. </p>
+<p>Detailed instructions on specimen collection and processing can be found on the NHANES website.&nbsp;</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The analysis of NHANES 2005&ndash;2006 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2005&ndash;2006 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. They also contain sample weights for these age groups. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN.</p></div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXPT21">LBXPT21 - Parathyroid Hormone(Elecys method) pg/mL</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXPT21</dd>
+            <dt>SAS Label: </dt>
+            <dd>Parathyroid Hormone(Elecys method) pg/mL</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Parathyroid Hormone(Elecys method) pg/mL</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9 to 491</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">7331</td>
+                <td class="values" align="right">7331</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6.36</td>
+                <td class="values">At or below detection limit fill value</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">7346</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">740</td>
+                <td class="values" align="right">8086</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1457 @@
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>UM_I</TITLE>     
+<META name="title" content="NHANES 2015-2016: Metals - Urine  Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   </HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="#Component_Description">Component Description</A>           </LI>
+  <LI><A href="#Eligible_Sample">Eligible Sample</A>           </LI>
+  <LI><A href="#Description_of_Laboratory_Methodology">Description of Laboratory 
+  Methodology</A>           </LI>
+  <LI><A href="#Laboratory_Method_Files">Laboratory Method Files</A>           
+  </LI>
+  <LI><A href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+  Assurance and Monitoring</A>           </LI>
+  <LI><A href="#Data_Processing_and_Editing">Data Processing and Editing</A>     
+        </LI>
+  <LI><A href="#Analytic_Notes">Analytic Notes</A>           </LI>
+  <LI><A href="#References">References</A>           </LI>
+  <LI><A href="#Codebook">Codebook</A>             
+  <UL id="CodebookLinks">
+    <LI><A href="#SEQN">SEQN - Respondent sequence number</A>               
+</LI>
+    <LI><A href="#WTSA2YR">WTSA2YR - Subsample A weights</A>               </LI>
+    <LI><A href="#URXUBA">URXUBA - Barium, urine (ug/L)</A>               </LI>
+    <LI><A href="#URDUBALC">URDUBALC - Urinary Barium Comment Code</A>           
+        </LI>
+    <LI><A href="#URXUCD">URXUCD - Cadmium, urine (ug/L)</A>               </LI>
+    <LI><A href="#URDUCDLC">URDUCDLC - Urinary Cadmium Comment Code</A>          
+         </LI>
+    <LI><A href="#URXUCO">URXUCO - Cobalt, urine (ug/L)</A>               </LI>
+    <LI><A href="#URDUCOLC">URDUCOLC - Urinary Cobalt Comment Code</A>           
+        </LI>
+    <LI><A href="#URXUCS">URXUCS - Cesium, urine (ug/L)</A>               </LI>
+    <LI><A href="#URDUCSLC">URDUCSLC - Urinary Cesium Comment Code</A>           
+        </LI>
+    <LI><A href="#URXUMO">URXUMO - Molybdenum, urine (ug/L)</A>               
+    </LI>
+    <LI><A href="#URDUMOLC">URDUMOLC - Urinary Molybdenum Comment Code</A>       
+            </LI>
+    <LI><A href="#URXUMN">URXUMN - Manganese, urine (ug/L)</A>               
+    </LI>
+    <LI><A href="#URDUMNLC">URDUMNLC - Urinary Mn Comment Code</A>               
+    </LI>
+    <LI><A href="#URXUPB">URXUPB - Lead, urine (ug/L)</A>               </LI>
+    <LI><A href="#URDUPBLC">URDUPBLC - Urinary Lead Comment Code</A>             
+      </LI>
+    <LI><A href="#URXUSB">URXUSB - Antimony, urine (ug/L)</A>               
+</LI>
+    <LI><A href="#URDUSBLC">URDUSBLC - Urinary Antimony Comment Code</A>         
+          </LI>
+    <LI><A href="#URXUSN">URXUSN - Tin, urine (ug/L)</A>               </LI>
+    <LI><A href="#URDUSNLC">URDUSNLC - USN Comment Code</A>               </LI>
+    <LI><A href="#URXUSR">URXUSR - Strontium, urine (ug/L)</A>               
+    </LI>
+    <LI><A href="#URDUSRLC">URDUSRLC - USR Comment Code</A>               </LI>
+    <LI><A href="#URXUTL">URXUTL - Thallium, urine (ug/L)</A>               
+</LI>
+    <LI><A href="#URDUTLLC">URDUTLLC - Urinary Thallium Comment Code</A>         
+          </LI>
+    <LI><A href="#URXUTU">URXUTU - Tungsten, urine (ug/L)</A>               
+</LI>
+    <LI><A href="#URDUTULC">URDUTULC - Urinary Tungsten Comment Code</A>         
+          </LI>
+    <LI><A href="#URXUUR">URXUUR - Uranium, urine (ug/L)</A>               </LI>
+    <LI><A href="#URDUURLC">URDUURLC - Urinary Uranium Comment Code</A>          
+         </LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>2015-2016 Data Documentation, Codebook, and Frequencies</H2>
+<H3>Metals - Urine  (UM_I)</H3>
+<H4> Data File: UM_I.xpt</H4>
+<H5 class="left">First Published: June 2018</H5>
+<H5 class="right">Last Revised: NA</H5></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P>Trace metals have been associated with adverse health effects in occupational 
+studies or laboratory studies, but have not been monitored in general population 
+groups.</P>
+<P>This method is used to achieve rapid and accurate quantifications of multiple 
+elements of toxicological and nutritional interest. The method is sensitive and 
+rapid enough to analyze urine specimens from subjects suspected of being exposed 
+to a number of important toxic elements, or to evaluate environmental or other 
+non-occupational exposure to these same elements.<BR></P>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P>All examined participants aged 3 to 5 years were eligible and participants 
+aged 6 years and older from a one-third subsample were eligible.</P>
+<H2 id="Description_of_Laboratory_Methodology">Description of Laboratory 
+Methodology</H2>
+<P>This method directly measures multiple metals in urine specimens using mass 
+spectrometry after a simple dilution sample preparation step. Liquid samples are 
+introduced into the mass spectrometer through the inductively coupled plasma 
+(ICP) ionization source, reduced to small droplets in an argon aerosol via a 
+nebulizer, and then the droplets enter the ICP. The ions first pass through a 
+focusing region, followed by the dynamic reaction cell (DRC), the quadrupole 
+mass filter, and finally are selectively counted in rapid sequence at the 
+detector allowing individual isotopes of an element to be determined. </P>
+<P>Refer to the Laboratory Method Files section for a detailed description of 
+the laboratory methods used. <BR></P>
+<P>There were no changes to the lab method, lab equipment, or lab site for this 
+component in the NHANES 2015-2016 cycle.<BR></P>
+<H2 id="Laboratory_Method_Files">Laboratory Method Files</H2>
+<P><A href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/labmethods/UTAS_UTASS_UM_UMS_I_MET.PDF" 
+target="_blank">Urinary Metals and Total Arsenic Laboratory Procedure Manual</A> 
+          <SPAN> (June 2018)</SPAN>         </P>
+<H2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+Assurance and Monitoring</H2>
+<P>Urine samples are processed, stored, and shipped to the Division of 
+Laboratory Sciences, National Center for Environmental Health, Centers for 
+Disease Control and Prevention, Atlanta, GA for analysis. <BR></P>
+<P>Detailed instructions on specimen collection and processing are discussed in 
+the NHANES <A href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/manuals/2016_MEC_Laboratory_Procedures_Manual.pdf">Laboratory 
+Procedures Manual (LPM)</A>. Vials are stored under appropriate frozen (–30°C) 
+conditions until they are shipped to National Center for Environmental Health 
+for testing. </P>
+<P>The NHANES quality assurance and quality control (QA/QC) protocols meet the 
+1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions 
+are discussed in the <A href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/manuals/2016_MEC_Laboratory_Procedures_Manual.pdf">NHANES 
+LPM</A>.</P>
+<P><STRONG>Mobile Examination Centers (MECs) </STRONG><BR></P>
+<P>Laboratory team performance is monitored using several techniques. NCHS and 
+contract consultants use a structured competency assessment evaluation during 
+visits to evaluate both the quality of the laboratory work and the 
+quality-control procedures. Each laboratory staff member is observed for 
+equipment operation, specimen collection and preparation; testing procedures and 
+constructive feedback are given to each staff member. Formal retraining sessions 
+are conducted annually to ensure that required skill levels were maintained. 
+</P>
+<P><STRONG>Analytical Laboratories </STRONG><BR></P>
+<P>NHANES uses several methods to monitor the quality of the analyses performed 
+by the contract laboratories. In the MEC, these methods include performing blind 
+split samples collected on “dry run” sessions. In addition, contract 
+laboratories randomly perform repeat testing on 2% of all specimens. <BR></P>
+<P>NCHS developed and distributed a quality control protocol for all CDC and 
+contract laboratories, which outlined the use of Westgard rules (Westgard, et 
+al. 1981) used when running NHANES specimens. Progress reports containing any 
+problems encountered during shipping or receipt of specimens, summary statistics 
+for each control pool, QC graphs, instrument calibration, reagents, and any 
+special considerations are submitted to NCHS quarterly. The reports are reviewed 
+for trends or shifts in the data. The laboratories are required to explain any 
+identified areas of concern. <BR></P>
+<P>All QC procedures recommended by the manufacturers were followed. Reported 
+results for all assays meet the Division of Laboratory Sciences’ quality control 
+and quality assurance performance criteria for accuracy and precision, similar 
+to the Westgard rules (Caudill et al., 2008). </P>
+<H2 id="Data_Processing_and_Editing">Data Processing and Editing</H2>
+<P>The data were reviewed. Incomplete data or improbable values were sent to the 
+performing laboratory for confirmation.</P>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P>Refer to the <A href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2015">2015-2016 
+Laboratory Data Overview</A>&nbsp;for general information on NHANES laboratory 
+data.</P>
+<P><STRONG>Subsample Weights<BR></STRONG>Urinary metals were measured in a full 
+sample of participants ages 3-5 and a one-third subsample of participants 6 
+years and older. Special sample weights are required to analyze these data 
+properly. Specific sample weights for this subsample are included in this data 
+file and should be used when analyzing these data.</P>
+<P><STRONG><STRONG>Demographic and Other Related 
+Variables</STRONG><BR></STRONG>The analysis of NHANES laboratory data must be 
+conducted using the appropriate survey design and demographic variables. The 
+NHANES <A href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2015">2015-2016 
+Demographic Data</A> File contains demographic and sample design variables. The 
+recommended procedure for variance estimation requires use of stratum and PSU 
+variables (SDMVSTRA and SDMVPSU, respectively) in the demographic data file.</P>
+<P>Starting in the 2015-2016 NHANES cycle, the variable URXUCR (urine 
+creatinine) will not be reported in this file.  URXUCR can be found in the data 
+file titled Albumin &amp; Creatinine&nbsp;- Urine.</P>
+<P>This laboratory data file can be linked to the other NHANES data files using 
+the unique survey participant identifier SEQN.</P>
+<P><STRONG>Detection Limits<BR></STRONG>The detection limits were constant for 
+all of the analytes in the data set. Two variables are provided for each of 
+these analytes. The variable name ending in “LC” (ex., URDUBALC) indicates 
+whether the result was below the limit of detection: the value “0” means that 
+the result was at or above the limit of detection, “1” indicates that the result 
+was below the limit of detection.  For analytes with analytic results below the 
+lower limit of detection (ex., URDUBALC=1), an imputed fill value was placed in 
+the analyte results field. This value is the lower limit of detection divided by 
+the square root of 2 (LLOD/sqrt[2]). The other variable prefixed URX (ex., 
+URXUBA) provides the analytic result for that analyte.</P>
+<P>The lower limit of detection (LLOD, in µg/L) for the urinary&nbsp;metals in 
+the data set is: </P>
+<TABLE bordercolor="#000000" border="1">
+  <CAPTION align="left" valign="top"></CAPTION>
+  <THEAD>
+  <TR>
+    <TH>Variable Name</TH>
+    <TH>SAS Label</TH>
+    <TH>LLOD</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD>URXUBA</TD>
+    <TD>Urinary Barium</TD>
+    <TD>0.060</TD></TR>
+  <TR>
+    <TD>URXUCD</TD>
+    <TD>Urinary Cadmium</TD>
+    <TD>0.036</TD></TR>
+  <TR>
+    <TD>URXUCS</TD>
+    <TD>Urinary Cesium</TD>
+    <TD>0.086</TD></TR>
+  <TR>
+    <TD>URXUCO</TD>
+    <TD>Urinary Cobalt</TD>
+    <TD>0.023</TD></TR>
+  <TR>
+    <TD>URXUMN</TD>
+    <TD>Urinary Manganese</TD>
+    <TD>0.130</TD></TR>
+  <TR>
+    <TD>URXUMO</TD>
+    <TD>Urinary Molybdenum</TD>
+    <TD>0.800</TD></TR>
+  <TR>
+    <TD>URXUPB</TD>
+    <TD>Urinary Lead</TD>
+    <TD>0.030</TD></TR>
+  <TR>
+    <TD>URXUSB</TD>
+    <TD>Urinary Antimony</TD>
+    <TD>0.022</TD></TR>
+  <TR>
+    <TD>URXUSR</TD>
+    <TD>Urinary Strontium</TD>
+    <TD>2.340</TD></TR>
+  <TR>
+    <TD>URXUTL</TD>
+    <TD>Urinary Thallium</TD>
+    <TD>0.018</TD></TR>
+  <TR>
+    <TD>URXUSN</TD>
+    <TD>Urinary Tin</TD>
+    <TD>0.090</TD></TR>
+  <TR>
+    <TD>URXUTU</TD>
+    <TD>Urinary Tungsten</TD>
+    <TD>0.018</TD></TR>
+  <TR>
+    <TD>URXUUR</TD>
+    <TD>Urinary Uranium</TD>
+    <TD>0.002&nbsp;</TD></TR></TBODY></TABLE>
+<P>Please refer to the NHANES <A href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx" 
+target="_blank">Analytic Guidelines</A>&nbsp;and the on-line NHANES&nbsp;<A 
+href="https://www.cdc.gov/nchs/tutorials/" target="_blank">Tutorial</A>&nbsp;for 
+further details on the use of sample weights and other analytic 
+issues.</P></DIV>
+<DIV id="References">
+<H2>References</H2>
+<UL>
+  <LI>Caudill SP, Schleicher RL, Pirkle JL. Multi-rule quality control for the 
+  age-related eye disease study. Statist Med 2008; 27:4094-106.</LI>
+  <LI>Westgard J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewhart chart 
+  for quality control in clinical chemistry. Clin Chem 1981. 
+27:493-501.</LI></UL></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="WTSA2YR">WTSA2YR - Subsample A weights</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">WTSA2YR</DD>
+  <DT>SAS Label: </DT>
+  <DD>Subsample A weights</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Subsample A weights</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">6552.119284 to 708844.24678</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3231</TD>
+    <TD align="right" class="values">3231</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Participants 6+ years with no lab specimen</TD>
+    <TD align="right" class="values">48</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUBA">URXUBA - Barium, urine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUBA</DD>
+  <DT>SAS Label: </DT>
+  <DD>Barium, urine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Barium, urine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.042 to 58.66</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUBALC">URDUBALC - Urinary Barium Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUBALC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Barium Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Barium Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">3041</TD>
+    <TD align="right" class="values">3041</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">20</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUCD">URXUCD - Cadmium, urine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUCD</DD>
+  <DT>SAS Label: </DT>
+  <DD>Cadmium, urine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Cadmium, urine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.025 to 3.141</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUCDLC">URDUCDLC - Urinary Cadmium Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUCDLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Cadmium Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Cadmium Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">2282</TD>
+    <TD align="right" class="values">2282</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">779</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUCO">URXUCO - Cobalt, urine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUCO</DD>
+  <DT>SAS Label: </DT>
+  <DD>Cobalt, urine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Cobalt, urine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.016 to 33.661</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUCOLC">URDUCOLC - Urinary Cobalt Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUCOLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Cobalt Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Cobalt Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 6 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">3058</TD>
+    <TD align="right" class="values">3058</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">3</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUCS">URXUCS - Cesium, urine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUCS</DD>
+  <DT>SAS Label: </DT>
+  <DD>Cesium, urine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Cesium, urine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.061 to 110.873</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUCSLC">URDUCSLC - Urinary Cesium Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUCSLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Cesium Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Cesium Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">3060</TD>
+    <TD align="right" class="values">3060</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">1</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUMO">URXUMO - Molybdenum, urine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUMO</DD>
+  <DT>SAS Label: </DT>
+  <DD>Molybdenum, urine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Molybdenum, urine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1.18 to 1023.13</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3060</TD>
+    <TD align="right" class="values">3060</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">219</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUMOLC">URDUMOLC - Urinary Molybdenum Comment 
+Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUMOLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Molybdenum Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Molybdenum Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">3060</TD>
+    <TD align="right" class="values">3060</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">3060</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">219</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUMN">URXUMN - Manganese, urine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUMN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Manganese, urine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Manganese, urine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.092 to 18.17</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUMNLC">URDUMNLC - Urinary Mn Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUMNLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Mn Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Mn Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">967</TD>
+    <TD align="right" class="values">967</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">2094</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUPB">URXUPB - Lead, urine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUPB</DD>
+  <DT>SAS Label: </DT>
+  <DD>Lead, urine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Lead, urine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.02 to 18.53</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUPBLC">URDUPBLC - Urinary Lead Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUPBLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Lead Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Lead Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">3049</TD>
+    <TD align="right" class="values">3049</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">12</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUSB">URXUSB - Antimony, urine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUSB</DD>
+  <DT>SAS Label: </DT>
+  <DD>Antimony, urine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Antimony, urine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.016 to 14.291</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUSBLC">URDUSBLC - Urinary Antimony Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUSBLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Antimony Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Antimony Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">2530</TD>
+    <TD align="right" class="values">2530</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">531</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUSN">URXUSN - Tin, urine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUSN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Tin, urine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Tin, urine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.064 to 86.39</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3060</TD>
+    <TD align="right" class="values">3060</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">219</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUSNLC">URDUSNLC - USN Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUSNLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>USN Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">USN Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">2921</TD>
+    <TD align="right" class="values">2921</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">139</TD>
+    <TD align="right" class="values">3060</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">219</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUSR">URXUSR - Strontium, urine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUSR</DD>
+  <DT>SAS Label: </DT>
+  <DD>Strontium, urine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Strontium, urine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1.655 to 927.71</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUSRLC">URDUSRLC - USR Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUSRLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>USR Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">USR Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">3056</TD>
+    <TD align="right" class="values">3056</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">5</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUTL">URXUTL - Thallium, urine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUTL</DD>
+  <DT>SAS Label: </DT>
+  <DD>Thallium, urine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Thallium, urine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.013 to 7.658</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUTLLC">URDUTLLC - Urinary Thallium Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUTLLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Thallium Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Thallium Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">3053</TD>
+    <TD align="right" class="values">3053</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">8</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUTU">URXUTU - Tungsten, urine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUTU</DD>
+  <DT>SAS Label: </DT>
+  <DD>Tungsten, urine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Tungsten, urine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.013 to 8.164</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3060</TD>
+    <TD align="right" class="values">3060</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">219</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUTULC">URDUTULC - Urinary Tungsten Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUTULC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Tungsten Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Tungsten Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">2744</TD>
+    <TD align="right" class="values">2744</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">316</TD>
+    <TD align="right" class="values">3060</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">219</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUUR">URXUUR - Uranium, urine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUUR</DD>
+  <DT>SAS Label: </DT>
+  <DD>Uranium, urine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Uranium, urine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0014 to 0.7696</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUURLC">URDUURLC - Urinary Uranium Comment Code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUURLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Uranium Comment Code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Uranium Comment Code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">2489</TD>
+    <TD align="right" class="values">2489</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">572</TD>
+    <TD align="right" class="values">3061</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">218</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>

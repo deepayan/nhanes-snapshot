@@ -1,0 +1,546 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Cytomegalovirus IgG &amp; IgM Antibodies - Serum" />
+    <meta name="DC.Subject" content="NHANES 2011-2012: Cytomegalovirus IgG &amp; IgM Antibodies - Serum Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2011-2012 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2011">
+      <title>
+						NHANES 2011-2012:
+						Cytomegalovirus IgG &amp; IgM Antibodies - Serum Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LBXIGG">LBXIGG - Cytomegalovirus (IgG)</a>
+                </li>
+                <li>
+                  <a href="#LBXIGGA">LBXIGGA - Cytomegalovirus (IgG) avidity</a>
+                </li>
+                <li>
+                  <a href="#LBXIGM">LBXIGM - Cytomegalovirus   (IgM) </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2011-2012 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Cytomegalovirus IgG &amp; IgM Antibodies - Serum (CMV_G)
+			</h3>
+        <h4>
+				Data File: CMV_G.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				October 2013</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>CMV usually does not cause significant disease in healthy individuals, but pregnant women can transmit CMV to their unborn babies, who are then at risk. Congenital CMV infection is a significant source of morbidity among children, causing a wide range of clinical outcomes including hearing loss, mental retardation, and even death.</p>
+<p>During 1988-1994, 36% of 6-11 year old children had evidence of ever being infected with CMV, while currently, 0.7% of infants are born with congenital infection each year. However, the seroprevalence among children who may acquire infection postnatally until the age of 5 has yet to be described at the national level. <br />
+<br />
+Young children with CMV infection shed the virus in high titers and are a major source of transmission to other susceptible children and adults, which is of special concern for pregnant women. For this reason, characterizing infection among children less than 6 years old is essential to expanding our understanding of important transmission exposures, mainly breastfeeding and close contact during childcare, and patterns of primary and recurrent infections. Such information would inform the development of prevention strategies to protect vulnerable populations including pregnant women and their fetuses.</p>
+<p>Additionally, young children have been identified as a potential target population for CMV vaccine development, recently ranked of highest priority by the Institute of Medicine. Describing the serological profile of children under the age of 6 would improve our understanding of immunity during early childhood and facilitate vaccine development. </p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>Survey participants aged 1 to 5 years were eligible to be tested.</p></div>
+        <h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2>
+        <div class="block"><p>Blood specimens were processed, stored, and shipped to the National Center for Infectious Diseases, Centers for Disease Control and Prevention. Detailed specimen collection and processing instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM).</p>
+<p>CMV antigen detects specific antibody in serum. CMV is clinically important in several patient populations. CMV Immunoglobulin G (IgG) Enzyme-linked immuno sorbent assay (ELISA) use computer programs designed by Biomerieux. All NHANES specimen numbers were scanned by the barcode reader. The VIDAS instrument read specimen reactivity and assigned numeric values. </p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>The analytical methods are described in the Description of Laboratory Methodology section above.</p>
+<p>Detailed instructions on specimen collection and processing can be found on the NHANES website.</p>
+<p>CMV testing was new to NHANES in 2011. </p></div>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2>
+        <div class="block"><p>The NHANES quality assurance and quality control (QA/QC) protocols meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and quality assurance instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). </p>
+<p>A detailed description of the quality assurance and quality control procedures can be found on the NHANES website. </p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>Refer to the 2011-2012 <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2011">Laboratory Data Overview</a> for general information on NHANES laboratory data.</p>
+<p>The analysis of NHANES 2011-2012&nbsp;laboratory data must be conducted using the appropriate survey design and demographic variables. Please refer to the NHANES <a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx" target="_blank">Analytic Guidelines</a> and the on-line NHANES <a href="https://www.cdc.gov/nchs/tutorials/">Tutorial</a> for further details on the use of sample weights and other analytic issues. Please note that the available results for Cytomegalovirus (IgG) avidity and Cytomegalovirus (IgM) do not meet the minimum NHANES sample size requirements to provide reliable estimates. The <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2011">NHANES 2011-2012 Demographics File</a> contains demographic data, health indicators, and other related information collected during household interviews as well as the sample weight variables. The <a href="https://wwwn.cdc.gov/nchs/nhanes/2011-2012/fastqx_g.htm">Fasting Questionnaire File</a> includes auxiliary information such as fasting status, the time of venipuncture, and the conditions precluding venipuncture. The demographics and fasting questionnaire files may be linked to the laboratory data file using the unique survey participant identifier (i.e., SEQN).</p>
+<p>Exam sample weights should be used for analyses. Please refer to the NHANES <a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">Analytic Guidelines</a>&nbsp;and the on-line NHANES <a href="https://www.cdc.gov/nchs/tutorials/">Tutorial</a>&nbsp;for further details on the use of sample weights and other analytic issues.</p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Ahlfors H., Ivarsson S.A., Johnsson T. and Svanberg L. Acta Paediatr Scand 71, 1982, 109-113.</li>
+          <li>Horodniceanu F., Michelson S. Archives of Virology, 1980,64,287-301.</li>
+          <li>Yolken R.H., Stopa P.J. Journal of Clin. Microbiology, 1980, Vol II, N&deg;6, 546-551.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			5 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXIGG">LBXIGG - Cytomegalovirus (IgG)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXIGG</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cytomegalovirus (IgG)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cytomegalovirus (IgG)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			5 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">positive</td>
+                <td class="values" align="right">192</td>
+                <td class="values" align="right">192</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">negative</td>
+                <td class="values" align="right">506</td>
+                <td class="values" align="right">698</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">indeterminate</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">699</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">436</td>
+                <td class="values" align="right">1135</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXIGGA">LBXIGGA - Cytomegalovirus (IgG) avidity</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXIGGA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cytomegalovirus (IgG) avidity</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cytomegalovirus (IgG) avidity</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			5 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">low</td>
+                <td class="values" align="right">24</td>
+                <td class="values" align="right">24</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">high</td>
+                <td class="values" align="right">160</td>
+                <td class="values" align="right">184</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">indeterminate</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">192</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">943</td>
+                <td class="values" align="right">1135</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXIGM">LBXIGM - Cytomegalovirus   (IgM) </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXIGM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cytomegalovirus   (IgM) </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Cytomegalovirus   (IgM) </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			5 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">positive</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">11</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">negative</td>
+                <td class="values" align="right">688</td>
+                <td class="values" align="right">699</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">indeterminate</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">699</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">436</td>
+                <td class="values" align="right">1135</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

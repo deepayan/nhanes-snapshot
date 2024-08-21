@@ -1,0 +1,414 @@
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>SSKL_H</TITLE>     
+<META name="title" content="NHANES 2013-2014: Klotho - Serum (Surplus) Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=7616&amp;Dataset=SSKL_H#Component_Description">Component 
+  Description</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=7616&amp;Dataset=SSKL_H#Eligible_Sample">Eligible 
+  Sample</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=7616&amp;Dataset=SSKL_H#Description_of_Laboratory_Methodology">Description 
+  of Laboratory Methodology</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=7616&amp;Dataset=SSKL_H#Laboratory_Quality_Assurance_and_Monitoring">Laboratory 
+  Quality Assurance and Monitoring</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=7616&amp;Dataset=SSKL_H#Analytic_Notes">Analytic 
+  Notes</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=7616&amp;Dataset=SSKL_H#References">References</A> 
+            </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=7616&amp;Dataset=SSKL_H#Codebook">Codebook</A> 
+              
+  <UL id="CodebookLinks">
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=7616&amp;Dataset=SSKL_H#SEQN">SEQN 
+    - Respondent sequence number</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=7616&amp;Dataset=SSKL_H#SSKLOTH">SSKLOTH 
+    - Klotho (pg/ml)</A>               </LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>2013-2014 Data Documentation, Codebook, and Frequencies</H2>
+<H3>Klotho - Serum (Surplus) (SSKL_H)</H3>
+<H4> Data File: SSKL_H.xpt</H4>
+<H5 class="left">First Published: April 2021</H5>
+<H5 class="right">Last Revised: NA</H5></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P>Soluble alpha-Klotho is a pleiotropic protein that act as a paracrine and 
+endocrine hormonal factor in multiple organs. Decreased alpha-Klotho levels have 
+been associated with early aging symptoms in animal models of aging. 
+Determination of Klotho concentrations was performed on frozen NHANES 2013-2014 
+samples that were received and tested during the period 2019-2020. Analyses were 
+performed by a commercially available ELISA kit produced by IBL International, 
+Japan. </P>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P>Available pristine serum samples from 40-79 year old participants in NHANES 
+2013-2014 cycles, who gave consent for their samples to be used in future 
+research, were analyzed with the IBL ELISA method.</P>
+<H2 id="Description_of_Laboratory_Methodology">Description of Laboratory 
+Methodology</H2>
+<P>The Northwest Lipid Metabolism and Diabetes Research Laboratories, Division 
+of Metabolism, Endocrinology, and Nutrition, University of Washington, performed 
+analyses on all but four fresh-frozen (pristine) samples received from the 
+Centers for Disease Control and Prevention. </P>
+<P>Prior to the start of the study, an extensive validation of the IBL ELISA 
+method for measurement of Klotho concentration in human samples was performed 
+and the results of the Validation provided to the study investigators. </P>
+<P>In summary, 1) the assay standard curves and the relative signals of the 
+calibrator concentrations were consistently within the criteria specified by the 
+manufacturer, 2) the obtained assay sensitivity was calculated to be 4.33 pg/mL 
+while the manufacturer claimed sensitivity was 6.15 pg/mL, 3) two samples with 
+very high and high Klotho concentrations were used at different dilution to 
+evaluate the assay linearity. Plots of the expected vs. the obtained values, 
+demonstrated an excellent linearity in the assay measurement range (R2 = 0.998 
+and 0.997, respectively), 4) the intra-assay precision obtained on two 
+recombinant Klotho samples and two human samples exhibited a coefficient of 
+variation of 3.2% and 3.9% for the recombinant and 2.3% and 3.3% for the human 
+samples, 5) The same samples analyzed in duplicate over 4 different days, showed 
+an inter-assay CV of 2.8% and 3.5% for the recombinant samples and 3.8% and 3.4% 
+for the human samples, 5) the reference ranges were evaluated in 114 samples 
+from apparently healthy donors and the alpha-Klotho levels ranged from 285.8 to 
+1638.6 pg/mL with a mean of 698.0 pg/mL.</P>
+<P>All sample analyses were performed in duplicate according to the 
+manufacturer’s protocol and all the results were checked to meet the 
+laboratory’s standardized criteria for acceptability prior to being released for 
+reporting.</P>
+<H2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+Assurance and Monitoring</H2>
+<P>Samples were received on dry ice and each package was inspected by the 
+laboratory’s receiving area personnel. Samples were scanned, data compared with 
+those on the received electronic manifest and entered into the laboratory 
+information system. All samples were stored at -80◦C until predefined batches of 
+samples were daily provided to the technicians for analyses. </P>
+<P>Samples were analyzed in duplicate and the average of the two values used to 
+calculate the final value.&nbsp;Two quality control samples with low and high
+ concentration of Klotho were also analyzed in duplicate in each ELISA plate. 
+Results of analyses were automatically transmitted from the instrument to the
+ laboratory Oracle Management System and results evaluated by the area
+ supervisor. Samples with duplicate results exceeding 10% were flagged for 
+analyses to be repeated. If the value of a quality control sample was not within 
+the 2SD of the assigned value, the entire analytical run was rejected, and 
+sample analyses repeated. </P>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P><B>Demographic and Other Related Variables </B></P>
+<P>The analysis of NHANES 2013-2014 laboratory data must be conducted using the 
+appropriate survey design and demographic variables. The NHANES Demographic 
+Files contain demographic data, health indicators, and other related information 
+collected during household interviews as well as the sample design variables. 
+The recommended procedure for variance estimation requires use of stratum and 
+PSU variables (SDMVSTRA and SDMVPSU, respectively) in the demographic data file. 
+</P>
+<P><B>Detection Limits</B> </P>
+<P>The assay sensitivity was 6 pg/mL. There are&nbsp;no Klotho 
+specific&nbsp;cut-points to be used as indicators of biological age. The 
+reference ranges evaluated in 114 samples from apparently healthy donors 
+indicated the alpha-Klotho levels ranged from 285.8 to 1638.6 pg/mL with a mean 
+of 698.0 pg/mL.</P>
+<P>Exam sample weights should be used for analyses. Please refer to the NHANES 
+<A href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx" target="_blank">Analytic
+ Guidelines</A> and the on-line NHANES <A href="https://www.cdc.gov/nchs/tutorials/">Tutorial</A> 
+for further details on the use of sample weights and other analytic 
+issues.</P></DIV>
+<DIV id="References">
+<H2>References</H2>
+<UL>
+  <LI>Drew et al. Association between soluble Klotho and change in kidney 
+  function: The healthy aging and body composition study. J Am Soc Nephrol 2017; 
+  28: 1959-1966</LI>
+  <LI>Yamazaki Y et al. Establishment of a sandwich ELISA for soluble 
+  alpha-Klotho measurements: Age-dependent change of soluble alpha-Klotho levels 
+  in healthy subjects. Biochem Biophys Res Comm.2017; 398:513-518</LI></UL></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 40 YEARS -			79 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SSKLOTH">SSKLOTH - Klotho (pg/ml)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SSKLOTH</DD>
+  <DT>SAS Label: </DT>
+  <DD>Klotho (pg/ml)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Klotho (pg/ml)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 40 YEARS -			79 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">151.3 to 2605.1</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">2767</TD>
+    <TD align="right" class="values">2767</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">2767</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>

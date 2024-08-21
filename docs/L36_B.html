@@ -1,0 +1,587 @@
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>L36_B</TITLE>     
+<META name="title" content="NHANES 2001-2002: Syphilis-IgG, Syphilis Rapid Plasma Reagin (RPR) &amp; Treponema pallidum Particle Agglutination (TP-PA) Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   </HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="#Component_Description">Component Description</A>           </LI>
+  <LI><A href="#Eligible_Sample">Eligible Sample</A>           </LI>
+  <LI><A href="#Description_of_Laboratory_Methodology">Description of Laboratory 
+  Methodology</A>           </LI>
+  <LI><A href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+  Assurance and Monitoring</A>           </LI>
+  <LI><A href="#Data_Processing_and_Editing">Data Processing and Editing</A>     
+        </LI>
+  <LI><A href="#Analytic_Notes">Analytic Notes</A>           </LI>
+  <LI><A href="#References">References</A>           </LI>
+  <LI><A href="#Codebook">Codebook</A>             
+  <UL id="CodebookLinks">
+    <LI><A href="#SEQN">SEQN - Respondent sequence number</A>               
+</LI>
+    <LI><A href="#LBXSY1">LBXSY1 - Syphilis IgG EIA</A>               </LI>
+    <LI><A href="#LBDSY3">LBDSY3 - Syphilis RPR Titer Level</A>               
+    </LI>
+    <LI><A href="#LBDSY4">LBDSY4 - Syphilis TP-PA</A>               
+</LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>2001-2002 Data Documentation, Codebook, and Frequencies</H2>
+<H3>Syphilis-IgG, Syphilis Rapid Plasma Reagin (RPR) &amp; Treponema pallidum 
+Particle Agglutination (TP-PA) (L36_B)</H3>
+<H4> Data File: L36_B.xpt</H4>
+<H5 class="left">First Published: September 2003</H5>
+<H5 class="right">Last Revised: May 2004</H5></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P>Although there has been a marked decrease in the number of primary and 
+secondary syphilis cases in the United States, there has been very little 
+decrease in the number of reported cases of late latent and tertiary syphilis 
+over the past 20 years. This suggests that there may be a large pool of infected 
+but asymptomatic persons. Although the primary and secondary stages of syphilis 
+are infectious and associated with fetal wastage and the congenital syphilis 
+syndrome, the tertiary stage is associated with a vasculitis that may cause 
+neurologic and cardiovascular manifestations and other chronic problems. 
+Similarly, primary and secondary syphilis increase the risk of HIV acquisition 
+and transmission while latent disease may be associated with progression of HIV 
+disease to AIDS and more prominent neurologic disease in HIV-infected persons. 
+Despite the importance of syphilis as a risk factor for both chronic disease and 
+the progression of HIV infection, there has not been a population-based measure 
+of syphilis prevalence for the United States since 1980. Because these are often 
+asymptomatic stages of infection and may lead to severe neurologic or 
+cardiovascular complications, it is important to document a decrease in the late 
+stages of syphilis that have resulted from our extraordinary efforts to reduce 
+primary and secondary syphilis. NHANES offers a unique opportunity to estimate 
+the prevalence of reactive serologic tests as an estimate of the prevalence of 
+syphilis infections in the general population, to identify and confirm risk 
+factors for syphilis, to confirm the risk for HIV infection and HIV-related 
+neurologic disease among Americans with syphilis, and to monitor trends in 
+prevalence as syphilis detection and treatment programs are established and 
+expanded.</P>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P>Participants aged 18 to 49 years were tested.</P>
+<H2 id="Description_of_Laboratory_Methodology">Description of Laboratory 
+Methodology</H2>
+<P><STRONG>Syphilis-G enzyme immunoassay (EIA)</STRONG> </P>
+<P>The Captia Syphilis-G enzyme immunoassay (EIA) is an indirect method for the 
+detection of IgG antibodies to <EM>Treponema pallidum </EM>(Pope&nbsp;et al., 
+1998; Lefevre et al., 1990; Nayar et al., 1993; Silletti&nbsp;et al., 
+1995;&nbsp;Young et al., 1995). Currently, CDC recommends that the test be used 
+in the clinical laboratory as a confirmatory test for the diagnosis of syphilis. 
+However, the test may be used as a screening test and is FDA approved for such 
+use in clinical laboratories and blood banks. <EM>T. pallidum</EM> antigens are 
+coated onto the wells of a 96-well microtiter plate. A dilution of the patient’s 
+serum is added to the well to allow any <EM>T. pallidum</EM> specific antibodies 
+present to bind to the treponemal antigens. Biotinylated anti-human IgG labeled 
+with strepavidin-peroxidase is used to detect the patient’s antibody. After 
+rinsing off the excess antibodies, an enzyme substrate is added for detection. 
+If the patient has antibodies to <EM>T. pallidum</EM>, a color reaction takes 
+place. The intensity of the color development is proportional to the amount of 
+antibody present. This color change can then be read using a plate reader, which 
+eliminates subjective interpretation of the results. </P>
+<P><STRONG>Rapid plasma reagin (RPR)</STRONG> </P>
+<P>The rapid plasma reagin (RPR) 18-mm circle card test is a macroscopic, 
+nontreponemal flocculation card test used to screen for syphilis (Portnoy et 
+al., 1962; Portnoy et al., 1963; Portnoy et al., 1965; Hynson Westcott and 
+Dunning et al., 1977). The antigen is prepared from a modified Venereal Disease 
+Research Laboratory (VDRL) antigen suspension containing choline chloride to 
+eliminate the need to heat inactivate serum, ethylene-diamine-tetra- acetic acid 
+(EDTA) to enhance the stability of the suspension, and finely divided charcoal 
+particles as a visualizing agent. In the test, the RPR antigen is mixed with 
+unheated or heated serum or with unheated plasma on a plastic-coated card. The 
+RPR test measures IgM and IgG antibodies to lipoidal material released from 
+damaged host cells as well as to lipoprotein-like material, and possibly 
+cardiolipin released from the treponemes (Matthews et al., 1979; Belisle&nbsp;et 
+al., 1994). The anti lipoidal antibodies are antibodies that are produced not 
+only as a consequence of syphilis and other treponemal diseases, but also in 
+response to nontreponemal diseases of an acute and chronic nature in which 
+tissue damage occurs (Catterall et al., 1972). If antibodies are present, they 
+combine with the lipid particles of the antigen, causing them to agglutinate. 
+The charcoal particles coagglutinate with the antibodies and show up as black 
+clumps against the white card. If antibodies are not present, the test mixture 
+is uniformly gray. The test can be purchased in kit form or in component parts 
+from many commercial sources. Without some other evidence for the diagnosis of 
+syphilis, a reactive nontreponemal test does not confirm <EM>T. pallidum</EM> 
+infection. </P>
+<P><STRONG><EM>Treponema pallidum </EM>particle agglutination (TP-PA)</STRONG> 
+</P>
+<P>The Serodia <EM>Treponema pallidum</EM> particle agglutination (TP-PA) test 
+is a treponemal test for the serologic detection of antibodies to the various 
+species and subspecies of pathogenic Treponema, the causative agents of 
+syphilis, yaws, pinta, bejel, and endemic syphilis. The test is a passive 
+agglutination procedure based on the agglutination of gel particles sensitized 
+with <EM>T. pallidum</EM> antigens by antibodies found in the patient's serumm 
+(Deguchi et al., 1994; Pope et al., 2000; Pope et al., 2000).&nbsp;The test is 
+intended as a confirmatory test to replace the microhemagglutination assay for 
+antibodies to <EM>T. pallidum</EM> (MHA-TP). </P>
+<P>Serum containing antibodies to pathogenic treponemes react with gel particles 
+sensitized with sonicated <EM>T. pallidum</EM>, Nichols strain (the antigen), to 
+form a smooth mat of agglutinated gel particles in the microtiter tray well. If 
+antibodies are not present, the particles settle to the bottom of the tray well, 
+forming a characteristic compact button of unagglutinated particles. The 
+unsensitized gel particle control well for each serum should also show this 
+compact button, or the absence of agglutination. </P>
+<P>The TP-PA test is used to confirm the reactive results (Pope et al., 2000; 
+Pope et al., 2000) of a nontreponemal screening test for syphilis, such as the 
+Venereal Disease Research Laboratory (VDRL) slide test, or as a diagnostic test 
+in patients with a nonreactive nontreponemal test but with signs or symptoms 
+suggestive of late syphilis. </P>
+<P><STRONG>Testing algorithm for NHANES specimens</STRONG> </P>
+<P>All serum specimens were tested for IgG antibody by the EIA assay. If results 
+of this assay were positive or equivocal, the specimens were tested using the 
+RPR test. If the RPR test was negative, the TP-PA test was performed on the 
+sample. </P>
+<P><STRONG>Suggested interpretation of laboratory results.</STRONG> </P>
+<P>LBXSY1= Syphilis-G enzyme immunoassay (EIA) <BR> LBDSY3= Rapid plasma reagin 
+(RPR) <BR> LBDSY4= <EM>Treponema pallidum</EM> particle agglutination (TP-PA) 
+</P>
+<P>Recent positive syphilis infection: <BR> (LBXSY =1 or LBXSY1=3) and (LBDSY3 
+&gt;=8) </P>
+<P>Remote positive syphilis infection: <BR> (LBXSY1 =1 or LBXSY1=3) and (0&lt;= 
+LBDSY3 &lt;8) and (LBDSY4=1) </P>
+<P>No infection: <BR> LBXSY1=2 </P>
+<P>OR </P>
+<P>(LBXSY1=1 or LBXSY1=3) and (0&lt;=LBDSY3&lt;8) and (LBDSY4=2)</P>
+<H2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+Assurance and Monitoring</H2>
+<P>The NHANES quality control and quality assurance protocols (QA/QC) meet the 
+1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and 
+quality assurance instructions are discussed in the NHANES Laboratory/Medical 
+Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC 
+protocols.</P>
+<H2 id="Data_Processing_and_Editing">Data Processing and Editing</H2>
+<P>Serum specimens were processed, stored and shipped to Division of STD 
+Prevention Laboratory, National Center for HIV/AIDS, Viral Hepatitis, STD, and 
+TB Prevention,&nbsp;Centers for Disease Control and Prevention, Atlanta, 
+Georgia. Detailed specimen collection and processing instructions are discussed 
+in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the 
+LABDOC file for detailed data processing and editing protocols. The analytical 
+methods are described in the Description of the Laboratory Methodology 
+section.</P>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P>The analysis of NHANES 2001-2002 laboratory data must be conducted with the 
+key survey design and basic demographic variables. The NHANES 2001-2002 
+Household Questionnaire Data Files contain demographic data, health indicators, 
+and other related information collected during household interviews. They also 
+contain all survey design variables and sample weights for these age groups. The 
+phlebotomy file includes auxiliary information such as the conditions precluding 
+venipuncture. The household questionnaire and phlebotomy files may be linked to 
+the laboratory data file using the unique survey participant identifier 
+SEQN.</P></DIV>
+<DIV id="References">
+<H2>References</H2>
+<UL>
+  <LI>Belisle JT, Brandt ME et al. Fatty acids of Treponema pallidum and 
+  Borrelia burgdorferi lipoproteins. J Bacteriol 1994;176:2151-7.</LI>
+  <LI>Catterall, RD. Presidential address to the M.S.S.V.D.: Systemic disease 
+  and the biological false-positive reaction. Br J Vener Dis 1972;48:1-12.</LI>
+  <LI>Deguchi M, Hosotsubo H, Yamashita N, Ohmine T and Asari S. Evaluation of 
+  gelatin particle agglutination method for detection of Treponema pallidum 
+  antibody. Journal of the Japanese Association of Infectious Diseases 1994; 
+  68:1271-7.</LI>
+  <LI>Hynson Westcott and Dunning, RPR Macro-Vue Card Test - Procedures Manual. 
+  Baltimore, MD 1977.</LI>
+  <LI>Lefevre JC, Bertrand MA, and Bauriaud R. Evaluation of the Captia enzyme 
+  immunoassays for detection of immunoglobulins G and M to Treponema pallidum in 
+  syphilis. J Clin Microbiol 1990;28:1704-7.</LI>
+  <LI>Matthews HM, Yang TK, Jenkin HM. Unique lipid composition of Treponema 
+  pallidum (Nichols virulent strain). Infect Immun 1979;24:713-9.</LI>
+  <LI>Nayar R, and Campos JM. Evaluation of the DCL Syphilis-G enzyme 
+  immunoassay test kit for the serologic diagnosis of syphilis. Amer J Clin 
+  Pathol 1993;99:282-5.</LI>
+  <LI>Pope V and Fears MB. Serodia Treponema pallidum passive particle 
+  agglutination (TP-PA) test, In: Larsen SA, Pope V, Johnson, RE, and Kennedy 
+  EJ, Jr. (eds). A Manual of Tests for Syphilis, Supplement. American Public 
+  Health Association, Washington, DC. 2000:363-78.</LI>
+  <LI>Pope V, Fears MB, Morrill WE, Castro A, and Kikkert SE. 2000. Comparison 
+  of the Serodia Treponema pallidum particle agglutination, Captia Syphilis-G, 
+  and SpiroTek Reagin II tests with standard test techniques for diagnosis of 
+  syphilis. J Clin Microbiol 38:2543-2545.</LI>
+  <LI>Pope V, Fears MB. Captia Syphilis-G: an enzyme immunoassay for treponemal 
+  antibodies. In: Larsen SA, Pope V, Johnson RE, Kennedy EJ (ed.) A manual of 
+  tests for syphilis. American Public Health Association, Washington, DC. 
+  1998:332-45.</LI>
+  <LI>Portnoy J, Brewer JH, Harris A. Rapid plasma reagin card test for syphilis 
+  and other treponematoses. Public Health Rep 1962;77:645-52.</LI>
+  <LI>Portnoy J. A note on the performance of modifications of the rapid plasma 
+  reagin (RPR) card test for syphilis, for use in large scale testing. Public 
+  Hlth Lab 1965;23:43.</LI>
+  <LI>Portnoy J. Modifications of the rapid plasma reagin (RPR) card test for 
+  syphilis, for use in large scale testing. Am J Clin Pathol 1963;40:473-9.</LI>
+  <LI>Silletti RP. Comparison of CAPTIA Syphilis G enzyme immunoassay with rapid 
+  plasma reagin test for detection of syphilis. J Clin Microbiol 
+  1995;33:1829-31.</LI></UL></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 18 YEARS -			49 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXSY1">LBXSY1 - Syphilis IgG EIA</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXSY1</DD>
+  <DT>SAS Label: </DT>
+  <DD>Syphilis IgG EIA</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Syphilis IgG EIA</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 18 YEARS -			49 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Positive</TD>
+    <TD align="right" class="values">59</TD>
+    <TD align="right" class="values">59</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Negative</TD>
+    <TD align="right" class="values">2965</TD>
+    <TD align="right" class="values">3024</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">Indeterminate</TD>
+    <TD align="right" class="values">4</TD>
+    <TD align="right" class="values">3028</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">271</TD>
+    <TD align="right" class="values">3299</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDSY3">LBDSY3 - Syphilis RPR Titer Level</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDSY3</DD>
+  <DT>SAS Label: </DT>
+  <DD>Syphilis RPR Titer Level</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Syphilis RPR (rapid plasmin test) titer level</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 18 YEARS -			49 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0 to 128</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">63</TD>
+    <TD align="right" class="values">63</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">3236</TD>
+    <TD align="right" class="values">3299</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDSY4">LBDSY4 - Syphilis TP-PA</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDSY4</DD>
+  <DT>SAS Label: </DT>
+  <DD>Syphilis TP-PA</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Syphilis treponemal pallidum agglutin (TPA)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 18 YEARS -			49 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Positive</TD>
+    <TD align="right" class="values">34</TD>
+    <TD align="right" class="values">34</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">2</TD>
+    <TD class="values">Negative</TD>
+    <TD align="right" class="values">24</TD>
+    <TD align="right" class="values">58</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">3</TD>
+    <TD class="values">Indeterminate</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">58</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">3241</TD>
+    <TD align="right" class="values">3299</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>

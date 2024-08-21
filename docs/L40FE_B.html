@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Iron, Total Iron Binding Capacity (TIBC), &amp; Transferrin Saturation" />
+    <meta name="DC.Subject" content="NHANES 2001-2002: Iron, Total Iron Binding Capacity (TIBC), &amp; Transferrin Saturation Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2001-2002 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2001">
+      <title>
+						NHANES 2001-2002:
+						Iron, Total Iron Binding Capacity (TIBC), &amp; Transferrin Saturation Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LBXIRN">LBXIRN - Iron, frozen (ug/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDIRNSI">LBDIRNSI - Iron, frozen (umol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBDTIB">LBDTIB - Total iron binding capacity (ug/dL)</a>
+                </li>
+                <li>
+                  <a href="#LBDTIBSI">LBDTIBSI - Total iron binding capacity (umol/L)</a>
+                </li>
+                <li>
+                  <a href="#LBDPCT">LBDPCT - Transferrin saturation (%)</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2001-2002 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Iron, Total Iron Binding Capacity (TIBC), &amp; Transferrin Saturation (L40FE_B)
+			</h3>
+        <h4>
+				Data File: L40FE_B.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				August 2005</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p>The specific objective of this component is to determine the prevalence of iron deficiency anemia using iron and TIBC (transferrin saturation) in conjunction with ferritin and erythrocyte protoporphyrin. The general objectives of the nutritional biochemistry components are: </p>
+<ol>
+    <li>to provide data for monitoring secular trends in measures of nutritional status in the U.S. population; </li>
+    <li>to evaluate the effect of people's habits and behaviors such as physical activity and the use of alcohol, tobacco, and dietary supplements on people's nutritional status; and </li>
+    <li>to evaluate the effect of changes in nutrition and public health policies including welfare reform legislation, food fortification policy, and child nutrition programs on the nutritional status of the U.S. population. </li>
+</ol>
+<p>These data will be used to estimate deficiencies and toxicities of specific nutrients in the population and subgroups, to provide population reference data, and to estimate the contribution of diet, supplements, and other factors to serum levels of nutrients. Data will be used for research to further define nutrient requirements as well as optimal levels for disease prevention and health promotion.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 1 year and older who do not meet any of the exclusion criteria are eligible.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p>The iron and TIBC tests were performed in two labs for NHANES 2001&ndash;2002.</p>
+<p><strong>Division of Laboratory Services, NCEH, CDC:</strong> </p>
+<p>Serum iron and TIBC tests were measured by a modification of the automated AAII-25 colorimetric method, which was based on the procedures of Giovaniello et al. and Ramsey. The method was modified to be performed on an Alpkem Flow Solutions 3000 (rapid-flow analysis) system. Iron was quantitated by measuring the intensity of the violet complex formed in the reaction between ferrozine and Fe++ in acetate buffer and measured at 562 nm. Thiourea was added to complex Cu++, which can also bind with ferrozine and yield falsely elevated iron values. For the TIBC test, serum was mixed with 400 g/dL iron solution to saturate the iron-binding sites of the serum transferrin molecules. Magnesium carbonate was used to remove excess iron. Centrifugation was used to precipitate the magnesium carbonate, and the supernatant was measured for iron content. </p>
+<p><strong>Collaborative Laboratory Services</strong> </p>
+<ol style="list-style-type: upper-alpha;">
+    <li>The method used to measure the iron concentration was a timed-endpoint method. In the reaction, iron was released from transferrin by acetic acid and reduced to the ferrous state by hydroxylamine and thioglycolate. The ferrous ion was complexed with the FerroZine Iron reagent. The system monitored the change in absorbance at 560 nm at a fixed time interval. This change in absorbance was directly proportional to the concentration of iron in the sample. The iron was measured on the Beckman/Coulter LX20 analyzer. </li>
+    <li>TIBC was calculated indirectly using the unsaturated iron binding capacity (UIBC) method. </li>
+</ol>
+<p>A known ferrous iron standard of 105 &mu;mol/L (586 &mu;g/dL) was incubated with serum at a pH of 7.9, which saturates the available binding sites on serum transferrin. The unbound excess iron was then complexed with ferene to form ferrous ferene, a blue complex, which was measured by the Beckman/Coulter LX 20 analyzer. The UIBC was equal to the total iron added minus the excess iron. The TIBC is the sum of iron and UIBC. </p>
+<p>The transferrin saturation value was calculated as (iron/TIBC) &times; 100%. The iron variable name is LBXIRN, the TIBC variable name is LBXTIB, and the transferrin saturation is LBDPCT.&nbsp;</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Specimens were processed, stored, and shipped to Division of Laboratory Sciences, National Center for Environmental Health, Centers for Disease Control and Prevention, Atlanta, Georgia, and to Collaborative Laboratory Services in Ottumwa, Iowa. Detailed specimen collection and processing instructions are discussed in the NHANES LPM. Read the LABDOC file for detailed data processing and editing protocols. The analytical methods are described in detail in the Description of the Laboratory Methodology section.</p><h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>The NHANES quality control and quality assurance protocols (QA/QC) meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and quality assurance instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The Division of Laboratory Sciences, National Center for Environmental Health, Centers for Disease Control and Prevention performed testing in 2001, and Collaborative Laboratory Services at Ottumwa, Iowa performed testing in 2002. </p>
+<p>The analysis of NHANES 2001&ndash;2002 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2001&ndash;2002 Household Questionnaire Data files contain demographic data, health indicators, and other related information collected during household interviews. They also contain all survey design variables and sample weights for these age groups. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN. </p>
+<p>The LBXIRN is the reference iron method and was used with TIBC to calculate the transferrin saturation (LBXPCT). Do not use the chemistry profile iron (LBXSIR) to calculate the transferrin saturation. <br />
+Adjustment of data between the laboratories: The distributions of sample person results were compared between the Division of Laboratory Sciences Lab (2001) and the Collaborative Laboratory Services Lab (2002). The means of the sample person distributions for the two labs were compared using a weighted t test. The mean of iron showed no significant difference (p &gt; 0.05) for the two labs. The TIBC test had significantly (p &lt; 0.05) different means. A cross-over study between the two labs was performed to establish linear regression equations to convert Collaborative Laboratory Services values to the Division of Laboratory Sciences Laboratory values . The regression equations were applied to the TIBC test, and a weighted t test was done after regression. The weighted t test revealed no significant differences (p &gt; 0.05) of TIBC means between the two labs after regression.</p></div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXIRN">LBXIRN - Iron, frozen (ug/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXIRN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Iron, frozen (ug/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Iron, frozen (ug/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">3 to 357</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8814</td>
+                <td class="values" align="right">8814</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1115</td>
+                <td class="values" align="right">9929</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDIRNSI">LBDIRNSI - Iron, frozen (umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDIRNSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Iron, frozen (umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Iron, frozen (umol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.54 to 63.90</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8814</td>
+                <td class="values" align="right">8814</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1115</td>
+                <td class="values" align="right">9929</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDTIB">LBDTIB - Total iron binding capacity (ug/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDTIB</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total iron binding capacity (ug/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total iron binding capacity (ug/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">33 to 765</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8762</td>
+                <td class="values" align="right">8762</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1167</td>
+                <td class="values" align="right">9929</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDTIBSI">LBDTIBSI - Total iron binding capacity (umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDTIBSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total iron binding capacity (umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total iron binding capacity (umol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5.91 to 136.94</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8762</td>
+                <td class="values" align="right">8762</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1167</td>
+                <td class="values" align="right">9929</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDPCT">LBDPCT - Transferrin saturation (%)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDPCT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Transferrin saturation (%)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Transferrin saturation (%)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.5 to 124.2</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">8759</td>
+                <td class="values" align="right">8759</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1170</td>
+                <td class="values" align="right">9929</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2026 @@
+﻿<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>FOLFMS_G</TITLE>     
+<META name="title" content="NHANES 2011-2012: Folate Forms - Total &amp; Individual - Serum  Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   </HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="#Component_Description">Component Description</A>           </LI>
+  <LI><A href="#Eligible_Sample">Eligible Sample</A>           </LI>
+  <LI><A href="#Description_of_Laboratory_Methodology">Description of Laboratory 
+  Methodology</A>           </LI>
+  <LI><A href="#Laboratory_Method_Files">Laboratory Method Files</A>           
+  </LI>
+  <LI><A href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+  Assurance and Monitoring</A>           </LI>
+  <LI><A href="#Data_Processing_and_Editing">Data Processing and Editing</A>     
+        </LI>
+  <LI><A href="#Analytic_Notes">Analytic Notes</A>           </LI>
+  <LI><A href="#References">References</A>           </LI>
+  <LI><A href="#Codebook">Codebook</A>             
+  <UL id="CodebookLinks">
+    <LI><A href="#SEQN">SEQN - Respondent sequence number</A>               
+</LI>
+    <LI><A href="#LBDFOTSI">LBDFOTSI - Serum total folate (nmol/L)</A>           
+        </LI>
+    <LI><A href="#LBDFOT">LBDFOT - Serum total folate (ng/mL)</A>               
+    </LI>
+    <LI><A href="#LBXSF1SI">LBXSF1SI - 5-Methyl-tetrahydrofolate (nmol/L)</A>    
+               </LI>
+    <LI><A href="#LBDSF1LC">LBDSF1LC - 5-Methyl-tetrahydrofolate cmt</A>         
+          </LI>
+    <LI><A href="#LBXSF2SI">LBXSF2SI - Folic acid (nmol/L)</A>               
+    </LI>
+    <LI><A href="#LBDSF2LC">LBDSF2LC - Folic acid cmt</A>               </LI>
+    <LI><A href="#LBXSF3SI">LBXSF3SI - 5-Formyl-tetrahydrofolate (nmol/L)</A>    
+               </LI>
+    <LI><A href="#LBDSF3LC">LBDSF3LC - 5-Formyl-tetrahydrofolate cmt</A>         
+          </LI>
+    <LI><A href="#LBXSF4SI">LBXSF4SI - Tetrahydrofolate (nmol/L)</A>             
+      </LI>
+    <LI><A href="#LBDSF4LC">LBDSF4LC - Tetrahydrofolate cmt</A>               
+    </LI>
+    <LI><A href="#LBXSF5SI">LBXSF5SI - 5,10-Methenyl-tetrahydrofolate 
+    (nmol/L)</A>               </LI>
+    <LI><A href="#LBDSF5LC">LBDSF5LC - 5,10-Methenyl-tetrahydrofolate cmt</A>    
+               </LI>
+    <LI><A href="#LBXSF6SI">LBXSF6SI - Mefox oxidation product (nmol/L)</A>      
+             </LI>
+    <LI><A href="#LBDSF6LC">LBDSF6LC - Mefox oxidation product cmt</A>           
+        </LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>2011-2012 Data Documentation, Codebook, and Frequencies</H2>
+<H3>Folate Forms - Total &amp; Individual - Serum  (FOLFMS_G)</H3>
+<H4> Data File: FOLFMS_G.xpt</H4>
+<H5 class="left">First Published: May 2014</H5>
+<H5 class="right">Last Revised: February 2019</H5></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P style="margin-left: 40px;">The objectives of this component are to: 1) 
+provide data for monitoring secular trends in measures of nutritional status in 
+the U.S. population; 2) evaluate the effect of people's habits and behaviors, 
+such as physical activity and the use of alcohol, tobacco, and dietary 
+supplements on nutritional status; and 3) evaluate the effect of changes in 
+nutrition and public health policies including welfare reform legislation, food 
+fortification policy, and child nutrition programs on the nutritional status of 
+the U.S. population. <BR><BR> These data will be used to estimate deficiencies 
+and toxicities of specific nutrients in the population and subgroup, to provide 
+population reference data, and to estimate the contribution of diet, 
+supplements, and other factors to serum levels of nutrients. Data will be used 
+in research to further define nutrient requirements as well as optimal levels 
+for disease prevention and health promotion. <BR></P>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P style="margin-left: 40px;">Examined participants aged 1 year and older were 
+eligible.  </P>
+<H2 id="Description_of_Laboratory_Methodology">Description of Laboratory 
+Methodology</H2>
+<P style="margin-left: 40px;">Five folate forms, 5-methyl-tetrahydrofolate, 
+folic acid, 5-formyl-tetrahydrofolate, tetrahydrofolate, 
+5,10-methenyl-tetrahydrofolate, and an oxidation product of 
+5-methyl-tetrahydrofolate called MeFox (pyrazino-s-triazine derivative of 
+4-α-hydroxy-5-methyl-tetrahydrofolate) are measured by isotope-dilution high 
+performance liquid chromatography coupled to tandem mass spectrometry (LC-MS/MS) 
+(Fazili and Pfeiffer, 2013). The assay is performed by combining specimen (275 
+μL serum) with ammonium formate buffer and an internal standard mixture. Sample 
+extraction and clean-up is performed by automated solid phase extraction (SPE) 
+using 96-well phenyl SPE plates and takes ~5 h for a 96-well plate. Folate forms 
+are separated within 6 min using isocratic mobile phase conditions and measured 
+by LC-MS/MS. Quantitation is based on peak area ratios interpolated against a 
+five-point aqueous calibration curve.</P>
+<P style="margin-left: 40px;">Refer to the Laboratory Method Files section for
+ detailed description on the laboratory methods used.</P>
+<H2 id="Laboratory_Method_Files">Laboratory Method Files</H2>
+<P><A href="https://wwwn.cdc.gov/nchs/data/nhanes/2011-2012/labmethods/FOLFMS_G_MET.PDF" 
+target="_blank">Folate Vitamers</A>           <SPAN> (May 2014)</SPAN>         
+</P>
+<H2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+Assurance and Monitoring</H2>
+<P style="margin-left: 40px;">Serum specimens are processed, stored, and shipped 
+to the Division of Laboratory Sciences, National Center for Environmental 
+Health, Centers for Disease Control and Prevention, Atlanta, GA for 
+analysis.</P>
+<P style="margin-left: 40px;">Detailed instructions on specimen collection and 
+processing are discussed in the <A href="https://wwwn.cdc.gov/nchs/data/nhanes/2011-2012/manuals/2011-12_laboratory_procedures_manual.pdf">NHANES 
+Laboratory Procedure Manual (LPM)</A>. Vials are stored under appropriate frozen 
+(–20°C) conditions until they are shipped to National Center for Environmental 
+Health for testing. </P>
+<P style="margin-left: 40px;">The NHANES quality assurance and quality control 
+(QA/QC) protocols meet the 1988 Clinical Laboratory Improvement Act mandates. 
+Detailed QA/QC instructions are discussed in the NHANES <A href="https://wwwn.cdc.gov/nchs/data/nhanes/2011-2012/manuals/2011-12_laboratory_procedures_manual.pdf">LPM</A>. 
+</P>
+<P style="margin-left: 40px;"><STRONG>Mobile Examination Centers 
+(MECs)</STRONG></P>
+<P style="margin-left: 40px;">Laboratory team performance is monitored using 
+several techniques. NCHS and contract consultants use a structured quality 
+assurance evaluation during unscheduled visits to evaluate both the quality of 
+the laboratory work and the quality-control procedures. Each laboratory staff 
+member is observed for equipment operation, specimen collection and preparation; 
+testing procedures and constructive feedback are given to each staff member. 
+Formal retraining sessions are conducted annually to ensure that required skill 
+levels were maintained.</P>
+<P style="margin-left: 40px;"><STRONG>Analytical Laboratories</STRONG></P>
+<P style="margin-left: 40px;">NHANES uses several methods to monitor the quality 
+of the analyses performed by the contract laboratories. In the MEC, these 
+methods include performing blind split samples collected during “dry run” 
+sessions. In addition, contract laboratories randomly perform repeat testing on 
+2% of all specimens.</P>
+<P style="margin-left: 40px;">NCHS developed and distributed a quality control 
+protocol for all the contract laboratories, which outlined the use of Westgard 
+rules (Westgard, et al. 1981) when running NHANES specimens. Progress reports 
+containing any problems encountered during shipping or receipt of specimens, 
+summary statistics for each control pool, QC graphs, instrument calibration, 
+reagents, and any special considerations are submitted to NCHS quarterly. The 
+reports are reviewed for trends or shifts in the data. The laboratories are 
+required to explain any identified areas of concern.</P>
+<P style="margin-left: 40px;">All QC procedures recommended by the manufacturers 
+were followed. Reported results for all assays meet the Division 
+of&nbsp;Laboratory Sciences’ quality control and quality assurance performance 
+criteria for accuracy and precision, similar to the Westgard rules (Caudill, et 
+al. 2008).</P>
+<H2 id="Data_Processing_and_Editing">Data Processing and Editing</H2>
+<P style="margin-left: 40px;">The data were reviewed.  Incomplete data or 
+improbable values were sent to the performing laboratory for confirmation. </P>
+<P style="margin-left: 40px;">One variable was created in this data file. The 
+variable (LBDFOT) was created using the following formula: </P>
+<P style="margin-left: 40px;"><STRONG>LBDFOT: </STRONG>The serum 
+total&nbsp;folate value in nmol/L (LBDFOTSI) was converted to ng/mL (LBDFOT) by 
+dividing LBDFOTSI by 2.265 (rounded to 3 significant figures). </P>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P style="margin-left: 40px;">Refer to the <A href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2011">2011
+ - 2012 Laboratory Data Overview</A> for general information on NHANES 
+laboratory data. </P>
+<P style="margin-left: 40px;">Examined sample weights should be used for 
+analyses. Please refer to the NHANES <A href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">Analytic
+ Guidelines</A> and the on-line NHANES <A href="http://www.cdc.gov/nchs/tutorials/" 
+target="_blank">Tutorial</A> for details on the use of sample weights and other 
+analytic issues.</P>
+<P style="margin: 0in 0.5in 12pt 31.5pt; line-height: 15.95pt;"><STRONG>Serum 
+Folate Forms for 2011–2012 </STRONG></P>
+<P style="margin-left: 40px;">The NHANES 2011–2012 is the first survey cycle 
+where a comprehensive list of serum folate forms has been measured by 
+isotope-dilution high performance liquid chromatography coupled to tandem mass 
+spectrometry (LC-MS/MS) (Table 1). Serum total folate (LBDFOTSI) was calculated 
+by adding LBXSF1SI-LBXSF5SI.  LBXSF6SI was not included in the total folate 
+calculation, due to evidence that it may already be present <EM>in vivo</EM>. 
+(Pfeiffer, et al. 2015). An imputed value of LOD divided by the square root of 2 
+was used for individual folate forms with results that were &lt; LOD. No 
+LBDFOTSI was calculated if the result for one or more of the folate forms was 
+missing.</P>
+<P style="margin-left: 40px;"><STRONG>Table 1.  </STRONG>Folate forms measured 
+by LC-MS/MS <BR></P>
+<DIV style="text-align: center;">
+<TABLE style="border: currentColor; border-image: none; border-collapse: collapse; mso-border-alt: solid black .75pt; mso-yfti-tbllook: 1184; mso-padding-alt: 1.5pt 1.5pt 1.5pt 1.5pt;" 
+border="1" cellspacing="0" cellpadding="0">
+  <THEAD>
+  <TR style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+    <TD style="background: rgb(244, 244, 225); padding: 3.75pt; border: 1pt solid black; border-image: none; width: 234.4pt; mso-border-alt: solid black .75pt;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>Analyte</B></P></TD>
+    <TD style="background: rgb(244, 244, 225); border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 3.75pt; border-image: none; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>Abbreviation</B></P></TD>
+    <TD style="background: rgb(244, 244, 225); border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 3.75pt; border-image: none; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>Variable 
+      Name</B></P></TD></TR></THEAD>
+  <TBODY>
+  <TR style="mso-yfti-irow: 1;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; width: 234.4pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P 
+      style="margin: 0in 0in 0pt; line-height: normal;">5-Methyl-tetrahydrofolate</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">5-methylTHF</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">LBXSF1SI</P></TD></TR>
+  <TR style="mso-yfti-irow: 2;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; width: 234.4pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">Pteroylglutamic       
+           acid</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">Folic            
+      acid</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">LBXSF2SI</P></TD></TR>
+  <TR style="mso-yfti-irow: 3;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; width: 234.4pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P 
+      style="margin: 0in 0in 0pt; line-height: normal;">5-Formyl-tetrahydrofolate</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">5-formylTHF</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">LBXSF3SI</P></TD></TR>
+  <TR style="mso-yfti-irow: 4;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; width: 234.4pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P 
+    style="margin: 0in 0in 0pt; line-height: normal;">Tetrahydrofolate</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">THF</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">LBXSF4SI</P></TD></TR>
+  <TR style="mso-yfti-irow: 5;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; width: 234.4pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P 
+      style="margin: 0in 0in 0pt; line-height: normal;">5,10-Methenyl-tetrahydrofolate</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P 
+    style="margin: 0in 0in 0pt; line-height: normal;">5,10-methenylTHF</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">LBXSF5SI</P></TD></TR>
+  <TR style="mso-yfti-irow: 6;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; width: 234.4pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">Pyrazino-s-triazine 
+      derivative of 4-α-hydroxy-5-methyl-tetrahydrofolate</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">MeFox</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">LBXSF6SI</P></TD></TR>
+  <TR style="mso-yfti-irow: 7; mso-yfti-lastrow: yes;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; width: 234.4pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">Serum            
+      total folate (sum of folate forms)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal;">tFOL</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P 
+  style="margin: 0in 0in 0pt; line-height: normal;">LBDFOTSI</P></TD></TR></TBODY></TABLE></DIV>
+<P><STRONG>&nbsp;</STRONG></P>
+<P><STRONG>NHANES Demographic and Other Related Variables </STRONG></P>
+<P style="margin-left: 40px;">The analysis of NHANES laboratory data must be 
+conducted using the appropriate survey design and demographic variables. The <A 
+href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2011">NHANES 
+2011-2012 Demographics File</A> contains demographic data, health indicators, 
+and other related information collected during household interviews as well as 
+the sample design variables. The recommended procedure for variance estimation 
+requires use of stratum and PSU variables (SDMVSTRA and SDMVPSU, respectively) 
+in the demographic data file. </P>
+<P style="margin-left: 40px;">The <A href="https://wwwn.cdc.gov/Nchs/Nhanes/2011-2012/FASTQX_G.htm">Fasting 
+Questionnaire File</A> includes auxiliary information such as fasting status, 
+the time of venipuncture, and the conditions precluding venipuncture. </P>
+<P style="margin-left: 40px;">This laboratory data file can be linked to the 
+other NHANES data files using the unique survey participant identifier (i.e., 
+SEQN). </P>
+<P style="margin-left: 40px;"><STRONG>Detection Limits </STRONG></P>
+<P style="margin-left: 40px;">The detection limits were constant for all of the 
+analytes in the data set. Two variables are provided for each of these analytes. 
+The variable name ending in “LC” (ex., LBDSF1LC) indicates whether the result 
+was below the limit of detection: the value “0” means that the result was at or 
+above the limit of detection, “1” indicates that the result was below the limit 
+of detection. The other variable prefixed LBX (ex., LBXSF1SI) provides the 
+analytic result for that analyte. For analytes with analytic results below the 
+lower limit of detection (ex., LBDSF1LC=1), an imputed fill value was placed in 
+the analyte results field. This value is the lower limit of detection divided by 
+the square root of 2 (LLOD/sqrt[2]). </P>
+<P style="margin-left: 40px;">The lower limit of detection (LLOD, in nmol/L) for 
+the 6 folate forms are shown below. Because total folate is calculated from the 
+sum of folate forms, a lower limit of detection does not apply. The LLOD 
+specified for folic acid is the corrected LLOD after taking the folic acid 
+calibration bias into consideration<SPAN 
+style="font-family: Calibri;"></SPAN></P>
+<P style="margin-left: 40px;"><SPAN style="font-family: Calibri;"></SPAN>(see 
+below “<B style="mso-bidi-font-weight: normal;">Correction of Serum Folic Acid 
+and Total Folate Results for NHANES 2011-2012</B>” session). The original LLOD 
+for folic acid was 0.14 nmol/L.</P>
+<TABLE width="0" style="margin: auto auto auto 132pt; border: currentColor; border-image: none; width: 327.9pt; border-collapse: collapse; mso-border-alt: solid black .75pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in;" 
+border="1" cellspacing="0" cellpadding="0">
+  <THEAD></THEAD></TABLE>
+<TABLE width="0" style="margin: auto auto auto 30.2pt; border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 1.45pt .05in 1.45pt .05in; mso-table-layout-alt: fixed;" 
+border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+    <TD valign="top" style="padding: 1.5pt; border: 1pt solid black; border-image: none; width: 81pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>Variable 
+      Name</B></P></TD>
+    <TD valign="top" style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 3.75pt; border-image: none; width: 212.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>SAS 
+      Label</B></P></TD>
+    <TD valign="top" style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 3.75pt; border-image: none; width: 34.1pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>LLOD</B></P></TD></TR></TBODY>
+  <TBODY>
+  <TR style="mso-yfti-irow: 1;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 1.5pt; border-image: none; width: 81pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">LBXSF1SI</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 212.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">5-Methyl-tetrahydrofolate</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 34.1pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.31</P></TD></TR>
+  <TR style="mso-yfti-irow: 2;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 1.5pt; border-image: none; width: 81pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">LBXSF2SI</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 212.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">Folic 
+      acid</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 34.1pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.09</P></TD></TR>
+  <TR style="mso-yfti-irow: 3;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 1.5pt; border-image: none; width: 81pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">LBXSF3SI</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 212.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">5-Formyl-tetrahydrofolate</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 34.1pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.30</P></TD></TR>
+  <TR style="mso-yfti-irow: 4;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 1.5pt; border-image: none; width: 81pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">LBXSF4SI</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 212.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">Tetrahydrofolate</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 34.1pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.37</P></TD></TR>
+  <TR style="mso-yfti-irow: 5;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 1.5pt; border-image: none; width: 81pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">LBXSF5SI</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 212.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">5,10-Methenyl-tetrahydrofolate</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 34.1pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.34</P></TD></TR>
+  <TR style="mso-yfti-irow: 6;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 1.5pt; border-image: none; width: 81pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">LBXSF6SI</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 212.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">Mefox 
+      oxidation product</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 34.1pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.34</P></TD></TR>
+  <TR style="mso-yfti-irow: 7; mso-yfti-lastrow: yes;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 1.5pt; border-image: none; width: 81pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">LBDFOTSI</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 212.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">Serum 
+      total folate</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; width: 34.1pt; background-color: transparent;"> 
+                 &nbsp;&nbsp;&nbsp; n/a</TD></TR></TBODY></TABLE>
+<P style="margin-left: 40px;"><STRONG>&nbsp;</STRONG></P>
+<P style="margin-left: 40px;"><STRONG>Comparability of Serum Folate Forms in 
+NHANES 2011–2012 versus Previous Survey Cycles</STRONG></P>
+<P style="margin-left: 40px;">For serum total folate, the weighted distributions 
+of the NHANES 2011–2012 data were similar to the NHANES 2007–2008 and 2009–2010 
+data measured by microbiologic assay (MBA) (Table 2). </P>
+<P style="margin-left: 40px;"><STRONG>Table 2.</STRONG>  Weighted mean (95% 
+confidence interval) and selected percentiles for serum total folate (nmol/L) in 
+1 year and older NHANES participants </P>
+<TABLE width="0" style="margin: auto auto auto 30.2pt; border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 1.45pt .05in 1.45pt .05in; mso-table-layout-alt: fixed;" 
+border="0" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR style="height: 9.65pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+    <TD valign="top" style="padding: 1.45pt 0.05in; border: 1pt solid black; border-image: none; width: 71.65pt; height: 9.65pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-themecolor: text1;" 
+    rowspan="2">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><A 
+      name="_GoBack"></A><B style="mso-bidi-font-weight: normal;">Survey 
+      cycle</B></P></TD>
+    <TD valign="top" style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 1.45pt 0.05in; border-image: none; width: 67.6pt; height: 9.65pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1;" 
+    rowspan="2">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B 
+      style="mso-bidi-font-weight: normal;">Variable name</B></P></TD>
+    <TD valign="top" style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 1.45pt 0.05in; border-image: none; width: 45.25pt; height: 9.65pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1;" 
+    rowspan="2">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B 
+      style="mso-bidi-font-weight: normal;">Method</B></P></TD>
+    <TD valign="top" style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 1.45pt 0.05in; border-image: none; width: 13.5pt; height: 9.65pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1;" 
+    rowspan="2">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B 
+      style="mso-bidi-font-weight: normal;">n</B></P></TD>
+    <TD valign="top" style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 1.45pt 0.05in; border-image: none; width: 131.6pt; height: 9.65pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1;" 
+    rowspan="2">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B 
+      style="mso-bidi-font-weight: normal;">Mean </B></P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B 
+      style="mso-bidi-font-weight: normal;">(95% CI)</B></P></TD>
+    <TD valign="top" style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 1.45pt 0.05in; border-image: none; width: 138.25pt; height: 9.65pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1;" 
+    colspan="5">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B 
+      style="mso-bidi-font-weight: normal;">Percentiles</B></P></TD></TR>
+  <TR style="height: 10.25pt; mso-yfti-irow: 1;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 10.25pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B 
+      style="mso-bidi-font-weight: normal;">5<SUP>th</SUP></B></P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 10.25pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B 
+      style="mso-bidi-font-weight: normal;">25<SUP>th</SUP></B></P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 10.25pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B 
+      style="mso-bidi-font-weight: normal;">50<SUP>th</SUP></B></P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 10.25pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B 
+      style="mso-bidi-font-weight: normal;">75<SUP>th</SUP></B></P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 10.25pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B 
+      style="mso-bidi-font-weight: normal;">95<SUP>th</SUP></B></P></TD></TR>
+  <TR style="height: 17.5pt; mso-yfti-irow: 2;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 1.45pt 0.05in; border-image: none; width: 71.65pt; height: 17.5pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">2007–2008</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 67.6pt; height: 17.5pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">LBXFOLSI</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 45.25pt; height: 17.5pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">MBA</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 13.5pt; height: 17.5pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">8205</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 131.6pt; height: 17.5pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">45.8</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(44.3 
+      – 47.3)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 17.5pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">14.8</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 17.5pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">27.1</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 17.5pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">40.5</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 17.5pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">57.9</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 17.5pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">92.6</P></TD></TR>
+  <TR style="height: 12.9pt; mso-yfti-irow: 3;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 1.45pt 0.05in; border-image: none; width: 71.65pt; height: 12.9pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">2009–2010</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 67.6pt; height: 12.9pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">LBXFOLSI</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 45.25pt; height: 12.9pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">MBA</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 13.5pt; height: 12.9pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">8713</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 131.6pt; height: 12.9pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">44.9</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(43.7 
+      – 46.0)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 12.9pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">14.5</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 12.9pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">26.2</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 12.9pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">39.1</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 12.9pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">56.3</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 12.9pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">90.1</P></TD></TR>
+  <TR style="height: 10.35pt; mso-yfti-irow: 4; mso-yfti-lastrow: yes;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 1.45pt 0.05in; border-image: none; width: 71.65pt; height: 10.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">2011–2012</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 67.6pt; height: 10.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">LBDFOTSI</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 45.25pt; height: 10.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">LC-MS/MS</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 13.5pt; height: 10.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">7459</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 131.6pt; height: 10.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">46.9</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(45.6 
+      - 48.2)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 10.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">17.3</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 10.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">28.6</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 10.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">41.3</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 10.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">58.7</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 27.65pt; height: 10.35pt; background-color: transparent; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt; mso-border-themecolor: text1; mso-border-left-themecolor: text1; mso-border-bottom-themecolor: text1; mso-border-right-themecolor: text1; mso-border-top-themecolor: text1;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">92.5</P></TD></TR></TBODY></TABLE>
+<P style="margin-left: 40px;">&nbsp;</P>
+<P style="margin-left: 40px;">There is a difference between NHANES 2011–2012 and 
+previous survey cycles as to how the serum was treated prior to placing it into 
+frozen storage. During NHANES 2011–2012, ascorbic acid (0.5% w/v) was added to 
+freshly prepared serum samples except during the beginning of 2011 when ascorbic 
+acid was inadvertently not added to the serum for 530 samples. We obtained 
+similar weighted distributions for serum total folate and folate forms whether 
+we included (“All”) or excluded (“With AA”) the 530 samples without additional 
+ascorbic acid (Table 3). Results from these 530 samples were included in the 
+NHANES 2011–2012 data set. </P>
+<P style="margin-left: 40px;"><STRONG>Table 3.</STRONG>  Weighted mean (95% 
+confidence interval) and selected percentiles for serum total folate (nmol/L) 
+and folate forms (nmol/L)&nbsp;in 1 year and older NHANES participants, 
+2011–2012 <SPAN style="font-family: Calibri;"></SPAN></P>
+<TABLE width="0" style="margin: auto auto auto 30.2pt; border: currentColor; border-image: none; border-collapse: collapse; mso-border-alt: solid black .75pt; mso-yfti-tbllook: 1184; mso-padding-alt: 1.45pt .05in 1.45pt .05in; mso-table-layout-alt: fixed;" 
+border="1" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+    <TD valign="top" style="padding: 0in 5.4pt; border: 1pt solid black; border-image: none; width: 72.8pt; background-color: transparent;" 
+    rowspan="2">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><A 
+      name="_GoBack"></A><B>&nbsp;</B></P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>Analyte</B></P></TD>
+    <TD valign="top" style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 0in 5.4pt; border-image: none; width: 0.75in; background-color: transparent;" 
+    rowspan="2">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>&nbsp;</B></P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>Samples</B></P></TD>
+    <TD valign="top" style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 0in 5.4pt; border-image: none; width: 35.85pt; background-color: transparent;" 
+    rowspan="2">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>&nbsp;</B></P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>n</B></P></TD>
+    <TD valign="top" style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 0in 5.4pt; border-image: none; width: 144.05pt; background-color: transparent;" 
+    rowspan="2">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><STRONG>Mean</STRONG></P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><STRONG>(95% 
+      CI)</STRONG></P></TD>
+    <TD valign="top" style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 0in 5.4pt; border-image: none; width: 185pt; background-color: transparent;" 
+    colspan="5">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>Weighted 
+      percentiles </B></P></TD></TR>
+  <TR style="mso-yfti-irow: 1;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>5<SUP>th</SUP></B></P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>25<SUP>th</SUP></B></P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>50<SUP>th</SUP></B></P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>75<SUP>th</SUP></B></P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;"><B>95<SUP>th</SUP></B></P></TD></TR>
+  <TR style="mso-yfti-irow: 2;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">tFOL</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">All</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">7459</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">46.9</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(45.6 
+      - 48.2)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">17.3</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">28.6</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">41.3</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">58.7</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">92.5</P></TD></TR>
+  <TR style="mso-yfti-irow: 3;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P style="margin: 0in 0in 8pt; line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">&nbsp;</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">With 
+      AA</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">6931</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">47.1</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(45.7 
+      - 48.4)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">17.3</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">28.7</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">41.6</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">59.0</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">92.9</P></TD></TR>
+  <TR style="mso-yfti-irow: 4;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">5-methylTHF</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">All</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">7471</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">42.9</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(41.5 
+      - 44.3)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">14.7</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">26.1</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">38.4</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">54.7</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">84.7</P></TD></TR>
+  <TR style="mso-yfti-irow: 5;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">&nbsp;</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">With 
+      AA</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">6943</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">43.3</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(41.9 
+      - 44.7)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">14.9</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">26.2</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">38.7</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">55.1</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">85.2</P></TD></TR>
+  <TR style="mso-yfti-irow: 6;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">Folic 
+      acid</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">All</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">7479</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">2.01</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(1.83 
+      - 2.20)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.353</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.552</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.735</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">1.07</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">5.89</P></TD></TR>
+  <TR style="mso-yfti-irow: 7;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">&nbsp;</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">With 
+      AA</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">6951</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">2.04</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(1.85 
+      - 2.23)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.363</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.562</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.743</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">1.08</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">6.12</P></TD></TR>
+  <TR style="mso-yfti-irow: 8;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">5-formylTHF</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">All</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">7483</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.238</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(0.216 
+      - 0.260)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.212</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.212</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.212</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.212</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.212</P></TD></TR>
+  <TR style="mso-yfti-irow: 9;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">&nbsp;</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">With 
+      AA</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">6955</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.239</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(0.216 
+      - 0.263)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.212</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.212</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.212</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.212</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.212</P></TD></TR>
+  <TR style="mso-yfti-irow: 10;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">THF</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">All</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">7478</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">1.46</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(1.08 
+      - 1.85)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.262</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.621</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.960</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">1.55</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">4.65</P></TD></TR>
+  <TR style="mso-yfti-irow: 11;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">&nbsp;</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">With 
+      AA</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">6950</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">1.35</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(1.01 
+      - 1.68)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.262</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.592</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.919</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">1.37</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">4.46</P></TD></TR>
+  <TR style="mso-yfti-irow: 12;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">5,10-methenylTHF</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">All</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">7483</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.259</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(0.255 
+      - 0.263)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.240</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.240</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.240</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.240</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.240</P></TD></TR>
+  <TR style="mso-yfti-irow: 13;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">&nbsp;</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">With 
+      AA</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">6955</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.260</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(0.256 
+      - 0.265)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.240</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.240</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.240</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.240</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.240</P></TD></TR>
+  <TR style="mso-yfti-irow: 14;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">MeFox</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">All</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">7486</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">1.95</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(1.87 
+      - 2.03)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.530</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.934</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">1.49</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">2.43</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">4.81</P></TD></TR>
+  <TR style="mso-yfti-irow: 15; mso-yfti-lastrow: yes;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 0in 5.4pt; border-image: none; width: 72.8pt; background-color: transparent;">
+      <P style="margin: 0in 0in 8pt; line-height: normal; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto;">&nbsp;</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 0in 5.4pt; width: 0.75in; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">With 
+      AA</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 35.85pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">6958</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 144.05pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">1.96</P>
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">(1.88 
+      - 2.04)</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.530</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">0.942</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">1.51</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 37.6pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">2.45</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 0in 5.4pt; width: 36.4pt; background-color: transparent;">
+      <P 
+      style="margin: 0in 0in 0pt; text-align: center; line-height: normal;">4.81</P></TD></TR></TBODY></TABLE>
+<P style="margin-left: 40px;">&nbsp;</P>
+<P style="margin-left: 40px;">In addition to the five biologically active folate 
+vitamers, MeFox (LBXSF6SI), an oxidation product of 5-methylTHF, was also 
+measured by the LC-MS/MS method as part of the folate forms profile in the 
+2011-2012 survey cycle. As mentioned above, MeFox was not included in the total 
+folate calculation in the current dataset. </P>
+<P style="margin-left: 40px;">No conclusive evidence exists on whether to 
+include MeFox as part of the total folate. However, there is clear evidence that 
+the total folate concentration will be slightly underestimated if MeFox is not 
+accounted for. MeFox appears to be formed during the pre-analytical phase (blood 
+collection and processing) (Hannisdal, et al. 2009). Therefore, a small portion 
+of “active” folate may be lost after the blood has been collected. The 
+analytical phase of the CDC method (extraction of serum and LC-MS/MS 
+measurement) does not generate additional MeFox (Fazili and Pfeiffer, 2013). It 
+is not clear, whether MeFox is exclusively formed <EM>in vitro </EM>or may 
+already be present<EM> in vivo</EM>. In rats, administration of radio-labeled 
+folic acid resulted in the excretion of several labeled products: a precursor of 
+MeFox (4-α-hydroxy-5-methylTHF), 5-methylTHF, 10-formyl-folic acid, and 
+<EM>p</EM>-aminobenzoyl-L-glutamate, a folate breakdown product (Barford, et al. 
+1978). It is therefore conceivable that a small portion of the MeFox measured in 
+serum may already be in circulation when the blood is collected. By not 
+including MeFox in the total folate calculation, we err on the side of caution 
+with the interpretation of population folate status by slightly underestimating 
+it by less than 5% in average (Pfeiffer, et al. 2015). In addition, the 
+microbiologic assay method used in the two previous survey cycles (NHANES 
+2007–2008 and 2009–2010) to measure serum total folate does not recognize the 
+biologically inactive MeFox. Therefore, using serum total folate calculated 
+without MeFox makes it comparable to the data from these previous cycles. </P>
+<P style="margin-left: 40px;">Previous survey cycles provided limited 
+information on selected folate forms. Serum 5-methylTHF and folic acid 
+concentrations were measured by Tufts University using HPLC with electrochemical 
+detection in American seniors (≥60 y) in NHANES 1999–2002 as part of a surplus 
+specimen project (Bailey, et al. 2010; Morris, et al. 2010). Please see the 
+NHANES web site for descriptions of the <A href="https://wwwn.cdc.gov/Nchs/Nhanes/1999-2000/SSFOL_A.htm">1990-2000 
+surplus specimen folate data.</A> See also the <A href="https://wwwn.cdc.gov/Nchs/Nhanes/2001-2002/SSFOL_B.htm">2001-2002 
+surplus specimen folate data.</A> </P>
+<P style="margin-left: 40px;">Furthermore, serum 5-methylTHF and folic acid 
+concentrations were measured by CDC using LC-MS/MS in a random one-third 
+subsample of the entire population 1 year and older in NHANES 2007–2008. Please 
+see the Documentation for this <A href=" https://wwwn.cdc.gov/Nchs/Nhanes/2007-2008/FOLFMS_E.htm">2007-2008 
+folate forms data </A> on the NHANES web site. </P>
+<P style="margin-left: 40px;"><STRONG>Correction of Serum Folic Acid and Total 
+Folate Results for NHANES 2011-2012 </STRONG></P>
+<P style="margin-left: 40px;">In the 2011-2012 survey cycle, the CDC Nutritional 
+Biomarkers Laboratory measured serum folate vitamers, including folic acid, by 
+isotope-dilution high performance liquid chromatography coupled to tandem mass 
+spectrometry (LC-MS/MS) and the NHANES data were first published in May 2014. In 
+2015, the CDC laboratory discovered a calibration bias in the folic acid 
+determination that resulted in overestimation of folic acid concentrations by 
+about 25% as a result of solubility issues with the calibrator (Fazili, et al. 
+2017). The laboratory corrected the assay and conducted a crossover study to 
+adjust the incorrect folic acid results. Using 23 serum quality control (QC) 
+materials analyzed over 10 days (concentration range 0.60–12 nmol/L), the 
+Pearson correlation for new vs. original folic acid results was r = 1.0. </P>
+<P style="margin-left: 40px;">The weighted Deming regression was (nmol/L): </P>
+<P style="margin-left: 40px;">LBXSF2SI<SUB>new</SUB>  = 0.7586 * 
+LBXSF2SI<SUB>original</SUB> – 0.016; 95% CI of slope (0.7448 to 0.7724) and 
+intercept (-0.03367 to 0.001678), or </P>
+<P style="margin-left: 40px;">LBXSF2SI<SUB>original</SUB> = 1.318 * 
+LBXSF2SI<SUB>new </SUB>+ 0.02109; 95% CI of slope (1.294 to 1.342)&nbsp;and 
+intercept (-0.001921 to 0.04409). </P>
+<P style="margin-left: 40px;">The laboratory also randomly selected 
+approximately 10% of the NHANES 2011–2012 serum samples stratified by 4 time 
+periods based on date of analysis (n = 800) and reanalyzed 25% of samples from 
+each time period by random selection based on available sample volume (n = 196; 
+concentration range 0.27–45.7 nmol/L). The Pearson correlation for new vs. 
+original folic acid results was r = 0.994 and the weighted Deming regression 
+equation was not significantly different from the equation obtained with 23 
+serum QC materials (overlapping 95% confidence intervals for slope [0.7179 to 
+0.8097] and intercept [-0.04707 to 0.03792]). </P>
+<P style="margin-left: 40px;">The original folic acid results were adjusted 
+using the weighted Deming regression obtained with 23 serum QC materials and 
+released in the present file. The original limit of detection (LOD) of 0.14 
+nmol/L was also adjusted using the same regression equation (new LOD 0.09 
+nmol/L). If the original folic acid result was less than the original LOD, which 
+was the case for&nbsp;5 samples in NHANES 2011–2012, the new folic acid result 
+was also adjusted to less than the new LOD. </P>
+<P style="margin-left: 40px;">Folic acid (LBXSF2SI) is a minor contributor to 
+serum total folate (LBDFOTSI) (about 5%) and is part of the formula to calculate 
+serum total folate. The original serum total folate results were revised using 
+the new folic acid results and released in the present file. </P>
+<P style="margin-left: 40px;">&nbsp;LBDFOTSI<SUB>new</SUB> = 
+LBDFOTSI<SUB>original</SUB> – LBXSF2SI<SUB>original</SUB> + 
+LBXSF2SI<SUB>new</SUB> </P>
+<P style="margin-left: 40px;">The folic acid correction resulted in an 
+approximately 25% lowering of concentrations across the entire folic acid 
+distribution, while serum total folate concentrations decreased by about 1–2% 
+(Table 4). </P>
+<P style="margin-left: 40px;"><STRONG>Table 4.</STRONG> Comparison of new and 
+original serum folic acid and total folate results </P>
+<DIV style="text-align: center;">
+<TABLE width="0" style="border: currentColor; border-image: none; border-collapse: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 1.45pt .05in 1.45pt .05in; mso-table-layout-alt: fixed; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext;" 
+border="1" cellspacing="0" cellpadding="0">
+  <TBODY>
+  <TR style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+    <TD style="padding: 1.45pt 0.05in; border: 1pt solid windowtext; border-image: none; width: 93.35pt; background-color: transparent; mso-border-alt: solid windowtext .5pt;" 
+    rowspan="2">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;"><B 
+      style="mso-bidi-font-weight: normal;">Compound</B></P></TD>
+    <TD style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; border-image: none; width: 63pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" 
+    rowspan="2">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;"><B 
+      style="mso-bidi-font-weight: normal;">Data</B></P></TD>
+    <TD style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; border-image: none; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" 
+    rowspan="2">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;"><B 
+      style="mso-bidi-font-weight: normal;"><I style="mso-bidi-font-style: normal;">n</I></B></P></TD>
+    <TD valign="top" style="border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; border-image: none; width: 256.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt;" 
+    colspan="5">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;"><B 
+      style="mso-bidi-font-weight: normal;">Unweighted percentiles            
+      (nmol/L)</B></P></TD></TR>
+  <TR style="mso-yfti-irow: 1;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;"><B 
+      style="mso-bidi-font-weight: normal;">5th</B></P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;"><B 
+      style="mso-bidi-font-weight: normal;">25th</B></P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 0.75in; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;"><B 
+      style="mso-bidi-font-weight: normal;">50th</B></P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 0.75in; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;"><B 
+      style="mso-bidi-font-weight: normal;">75th</B></P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;"><B 
+      style="mso-bidi-font-weight: normal;">95th</B></P></TD></TR>
+  <TR style="mso-yfti-irow: 2;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 1.45pt 0.05in; border-image: none; width: 93.35pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal; -ms-layout-grid-mode: char;">Folic 
+                 acid </P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 63pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">Original</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">7479</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">0.480</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">0.740</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 0.75in; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">0.990</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 0.75in; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">1.45</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">7.62</P></TD></TR>
+  <TR style="mso-yfti-irow: 3;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 1.45pt 0.05in; border-image: none; width: 93.35pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal; -ms-layout-grid-mode: char;">&nbsp;</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 63pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">New<B> 
+      </B></P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">7479</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">0.348</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">0.545</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 0.75in; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">0.735</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 0.75in; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">1.08</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">5.76</P></TD></TR>
+  <TR style="mso-yfti-irow: 4;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 1.45pt 0.05in; border-image: none; width: 93.35pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal; -ms-layout-grid-mode: char;">Serum 
+                 total folate</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 63pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">Original</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">7459</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">17.2</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">28.9</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 0.75in; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">42.1</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 0.75in; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">59.9</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">93.1</P></TD></TR>
+  <TR style="mso-yfti-irow: 5; mso-yfti-lastrow: yes;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) windowtext windowtext; padding: 1.45pt 0.05in; border-image: none; width: 93.35pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; line-height: normal; -ms-layout-grid-mode: char;">&nbsp;</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 63pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">New</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">7459</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">17.0</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">28.7</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 0.75in; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">41.8</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 0.75in; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">59.4</P></TD>
+    <TD valign="bottom" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) windowtext windowtext rgb(0, 0, 0); padding: 1.45pt 0.05in; width: 49.5pt; background-color: transparent; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt;">
+      <P style="margin: 0in 0in 0pt; text-align: center; line-height: normal; -ms-layout-grid-mode: char;">91.5</P></TD></TR></TBODY></TABLE></DIV>
+<P>&nbsp;</P></DIV>
+<DIV id="References">
+<H2>References</H2>
+<UL>
+  <LI>Bailey RL, Mills JL, Yetley EA, Gahche JJ, Pfeiffer CM, Dwyer JT, Dodd KW, 
+  et al. Unmetabolized serum folic acid and its relation to folic acid intake 
+  from diet and supplements in a nationally representative sample of adults aged 
+  ≥60 y in the United States. Am J Clin Nutr. 2010;92:383–9.</LI>
+  <LI>Barford PA, Staff FJ, Blair JA. The metabolic fate of [2-14C]folic acid 
+  and a mixture of [2-14C]-and [3’,5’,9-3H]-folic acid in the rat. Biochem J. 
+  1978;174:579–83.</LI>
+  <LI>Caudill, S.P., Schleicher, R.L., Pirkle, J.L. Multi-rule quality control 
+  for the age-related eye disease study. Statist. Med. (2008) 
+  27(20):4094-40106.</LI>
+  <LI>Fazili Z and Pfeiffer CM. Accounting for an isobaric interference allows 
+  correct determination of folate vitamers in serum by isotope dilution-liquid 
+  chromatography-tandem mass spectrometry. J Nutr. 2013; 143:108-13.</LI>
+  <LI>Fazili Z, Sternberg M, Paladugula N, Pfeiffer C. Two International 
+  Round-Robin Studies Showed Good Comparability of 5-Methyltetrahydrofolate but 
+  Poor Comparability of Folic Acid Measured in Serum by Different 
+  High-Performance Liquid Chromatography–Tandem Mass Spectrometry Methods. J 
+  Nutr. 2017;147(9): 1815–1825.</LI>
+  <LI>Hannisdal R, Ueland PM, Eussen SJ, Svardal A, Hustad S. Analytical 
+  recovery of folate degradation products formed in human serum and plasma at 
+  room temperature. J Nutr, 2009; <BR> 139:1415–8. <BR></LI>
+  <LI>Morris MS, Jacques PF, Rosenbert IH, Selhub J. Circulating unmetabolized 
+  folic acid and 5-methyltetrahydrofolate in relation to anemia, macrocytosis, 
+  and cognitive test performance in American seniors. Am J Clin Nutr. 
+  2010;91:1733–44.</LI>
+  <LI>Pfeiffer C, Sternberg M, Fazili M, Lacher D, Zhang M, Johnson C, Hammer H, 
+  Baily R, Rader J, Yamini S, Berry RJ, Yetley E.  British Journal of Nutrition 
+  (2015) 113:1965:1977.</LI>
+  <LI>Westgard J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewhart chart 
+  for quality control in clinical chemistry. Clin Chem (1981) 
+27:493-501.</LI></UL></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDFOTSI">LBDFOTSI - Serum total folate (nmol/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDFOTSI</DD>
+  <DT>SAS Label: </DT>
+  <DD>Serum total folate (nmol/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Serum total folate (nmol/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">3.06 to 316</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">7459</TD>
+    <TD align="right" class="values">7459</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1497</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDFOT">LBDFOT - Serum total folate (ng/mL)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDFOT</DD>
+  <DT>SAS Label: </DT>
+  <DD>Serum total folate (ng/mL)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Serum total folate (ng/mL)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1.35 to 140</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">7459</TD>
+    <TD align="right" class="values">7459</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1497</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXSF1SI">LBXSF1SI - 5-Methyl-tetrahydrofolate 
+(nmol/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXSF1SI</DD>
+  <DT>SAS Label: </DT>
+  <DD>5-Methyl-tetrahydrofolate (nmol/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">5-Methyl-tetrahydrofolate (nmol/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1.88 to 295</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">7471</TD>
+    <TD align="right" class="values">7471</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1485</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDSF1LC">LBDSF1LC - 5-Methyl-tetrahydrofolate cmt</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDSF1LC</DD>
+  <DT>SAS Label: </DT>
+  <DD>5-Methyl-tetrahydrofolate cmt</DD>
+  <DT>English Text: </DT>
+  <DD class="info">5-Methyl-tetrahydrofolic comment code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">7471</TD>
+    <TD align="right" class="values">7471</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">7471</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1485</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXSF2SI">LBXSF2SI - Folic acid (nmol/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXSF2SI</DD>
+  <DT>SAS Label: </DT>
+  <DD>Folic acid (nmol/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Folic acid (nmol/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.0636 to 214</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">7479</TD>
+    <TD align="right" class="values">7479</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1477</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDSF2LC">LBDSF2LC - Folic acid cmt</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDSF2LC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Folic acid cmt</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Folic acid comment code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">7474</TD>
+    <TD align="right" class="values">7474</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">5</TD>
+    <TD align="right" class="values">7479</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1477</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXSF3SI">LBXSF3SI - 5-Formyl-tetrahydrofolate 
+(nmol/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXSF3SI</DD>
+  <DT>SAS Label: </DT>
+  <DD>5-Formyl-tetrahydrofolate (nmol/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">5-Formyl-tetrahydrofolate (nmol/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.212 to 31.6</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">7483</TD>
+    <TD align="right" class="values">7483</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1473</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDSF3LC">LBDSF3LC - 5-Formyl-tetrahydrofolate cmt</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDSF3LC</DD>
+  <DT>SAS Label: </DT>
+  <DD>5-Formyl-tetrahydrofolate cmt</DD>
+  <DT>English Text: </DT>
+  <DD class="info">5-Formyl-tetrahydrofolate comment code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">242</TD>
+    <TD align="right" class="values">242</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">7241</TD>
+    <TD align="right" class="values">7483</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1473</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXSF4SI">LBXSF4SI - Tetrahydrofolate (nmol/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXSF4SI</DD>
+  <DT>SAS Label: </DT>
+  <DD>Tetrahydrofolate (nmol/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Tetrahydrofolate (nmol/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.262 to 11.5</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">7478</TD>
+    <TD align="right" class="values">7478</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1478</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDSF4LC">LBDSF4LC - Tetrahydrofolate cmt</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDSF4LC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Tetrahydrofolate cmt</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Tetrahydrofolate comment code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">6354</TD>
+    <TD align="right" class="values">6354</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">1124</TD>
+    <TD align="right" class="values">7478</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1478</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXSF5SI">LBXSF5SI - 5,10-Methenyl-tetrahydrofolate 
+(nmol/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXSF5SI</DD>
+  <DT>SAS Label: </DT>
+  <DD>5,10-Methenyl-tetrahydrofolate (nmol/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">5,10-Methenyl-tetrahydrofolate (nmol/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.24 to 4.38</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">7483</TD>
+    <TD align="right" class="values">7483</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1473</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDSF5LC">LBDSF5LC - 5,10-Methenyl-tetrahydrofolate 
+cmt</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDSF5LC</DD>
+  <DT>SAS Label: </DT>
+  <DD>5,10-Methenyl-tetrahydrofolate cmt</DD>
+  <DT>English Text: </DT>
+  <DD class="info">5,10-Methenyl-tetrahydrofolate comment code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">379</TD>
+    <TD align="right" class="values">379</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">7104</TD>
+    <TD align="right" class="values">7483</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1473</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBXSF6SI">LBXSF6SI - Mefox oxidation product 
+(nmol/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBXSF6SI</DD>
+  <DT>SAS Label: </DT>
+  <DD>Mefox oxidation product (nmol/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Mefox oxidation product (nmol/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.24 to 20.4</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">7486</TD>
+    <TD align="right" class="values">7486</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1470</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="LBDSF6LC">LBDSF6LC - Mefox oxidation product cmt</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">LBDSF6LC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Mefox oxidation product cmt</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Mefox oxidation product comment code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 1 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">7356</TD>
+    <TD align="right" class="values">7356</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">130</TD>
+    <TD align="right" class="values">7486</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">1470</TD>
+    <TD align="right" class="values">8956</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>

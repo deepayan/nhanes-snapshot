@@ -1,0 +1,1001 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0076)http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx -->
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" lang="en" xml:lang="en" xmlns="http://www.w3c.org/1999/xhtml"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+     
+<META http-equiv="content-type" content="text/html; charset=utf-8">     
+<TITLE>UAS_I</TITLE>     
+<META name="title" content="NHANES 2015-2016: Speciated Arsenics - Urine Data Documentation, Codebook, and Frequencies"> 
+    
+<STYLE type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</STYLE>
+     
+<STYLE type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</STYLE>
+   
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD>   
+<BODY class="nhanes-doc">
+<DIV id="toc">
+<H3>Table of Contents</H3>
+<DIV id="toc-scroll">
+<UL>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#Component_Description">Component 
+  Description</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#Eligible_Sample">Eligible 
+  Sample</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#Description_of_Laboratory_Methodology">Description 
+  of Laboratory Methodology</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#Laboratory_Method_Files">Laboratory 
+  Method Files</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#Laboratory_Quality_Assurance_and_Monitoring">Laboratory 
+  Quality Assurance and Monitoring</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#Data_Processing_and_Editing">Data 
+  Processing and Editing</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#Analytic_Notes">Analytic 
+  Notes</A>           </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#References">References</A> 
+            </LI>
+  <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#Codebook">Codebook</A> 
+              
+  <UL id="CodebookLinks">
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#SEQN">SEQN 
+    - Respondent sequence number</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#WTSA2YR">WTSA2YR 
+    - Subsample A weights</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#URXUAS3">URXUAS3 
+    - Urinary Arsenous acid (ug/L)</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#URDUA3LC">URDUA3LC 
+    - Urinary Arsenous acid comment code</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#URXUAS5">URXUAS5 
+    - Urinary Arsenic acid (ug/L)</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#URDUA5LC">URDUA5LC 
+    - Urinary Arsenic acid comment code</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#URXUAB">URXUAB 
+    - Urinary Arsenobetaine (ug/L)</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#URDUABLC">URDUABLC 
+    - Urinary Arsenobetaine comment code</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#URXUAC">URXUAC 
+    - Urinary Arsenocholine (ug/L)</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#URDUACLC">URDUACLC 
+    - Urinary Arsenocholine comment code</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#URXUDMA">URXUDMA 
+    - Urinary Dimethylarsinic acid (ug/L)</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#URDUDALC">URDUDALC 
+    - Urinary Dimethylarsonic acid comment</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#URXUMMA">URXUMMA 
+    - Urinary Monomethylarsonic acid (ug/L)</A>               </LI>
+    <LI><A href="http://dspp-hane-1601/Nchs/Edit/DocumentationView.aspx?Id=2135&amp;Dataset=UAS_I#URDUMMAL">URDUMMAL 
+    - Urinary Monomethylarsonic acid comment </A>               
+</LI></UL></LI></UL></DIV></DIV>
+<DIV id="wrapper">
+<DIV id="PageHeader">
+<H1>National Health and Nutrition Examination Survey</H1>
+<H2>2015-2016 Data Documentation, Codebook, and Frequencies			 </H2>
+<H3>Speciated Arsenics - Urine (UAS_I)			 </H3>
+<H4> Data File: UAS_I.xpt			 </H4>
+<H5 class="left">				First Published: June 2018</H5>
+<H5 class="right">				Last Revised: NA</H5></DIV>
+<DIV id="Sections">
+<H2 id="Component_Description">Component Description</H2>
+<P>Arsenic is widely distributed in the earth’s crust and is found most often in 
+ground water rather than surface water. People encounter arsenic in many 
+chemical forms that vary greatly in toxicity. The most toxic of the naturally 
+occurring arsenic compounds are inorganic forms of arsenic and their methylated 
+metabolites. Less toxic are the organic arsenic compounds.</P>
+<H2 id="Eligible_Sample">Eligible Sample</H2>
+<P>All examined participants aged 3 to 5 years were eligible and participants 
+aged 6 years and older from a one-third subsample were eligible.</P>
+<H2 id="Description_of_Laboratory_Methodology">Description of Laboratory 
+Methodology</H2>
+<P><B>Arsenobetaine, arsenocholine,&nbsp;monomethylarsonic acid, dimethylarsinic 
+acid, arsenous (III) acid, arsenic (V) acid </B></P>
+<P>The concentration of speciated arsenics is determined by using high 
+performance liquid chromatography (HPLC) to separate the species coupled to an 
+ICP-DRC-MS to detect the arsenic species. This analytical technique is based on 
+separation by anion-exchange chromatography (IC), followed by detection using 
+quadrupole ICP-MS technology, and includes DRC™ technology (Baranov VI et al., 
+1999), which minimizes or eliminates many argon-based polyatomic interferences 
+(Tanner S et al., 2000) will require 0.5 mL of urine. Arsenic species column 
+separation is largely achieved due to differences in charge-charge interactions 
+of each negatively charged arsenic component in the mobile phase, with the
+ positively-charged quaternary ammonium groups bound at the column’s
+ solid-liquid interface. Upon exit from the column, the chromatographic eluent
+ goes through a nebulizer, where it is converted into an aerosol upon entering
+ the spray chamber. </P>
+<P>Carried by a stream of argon gas, a portion of the aerosol is transported 
+through the spray chamber and then through the central channel of the plasma, 
+where it is heated to temperatures of 6000-8000° K. This thermal energy atomizes 
+and ionizes the sample. The ions and the argon enter the mass spectrometer 
+through an interface that separates the ICP, which is operating at atmospheric 
+pressure (approximately 760 torr), from the mass spectrometer, which is 
+operating at approximately 10<SUP>-5</SUP> torr. </P>
+<P>The mass spectrometer permits detection of ions at each mass-to-charge ratio 
+in rapid sequence, which allows the determination of individual isotopes of an 
+element. Once inside the mass spectrometer, the ions pass through the ion 
+optics, then through the DRC™, and finally through the mass-analyzing quadrupole 
+before being detected as they strike the surface of the detector. The ion optics 
+uses an electrical field to focus the ion beam into the DRC™. </P>
+<P>The DRC™ component is pressurized with an appropriate reaction gas and 
+contains a quadrupole. In the DRC™, elimination or reduction of argon-based 
+polyatomic interferences takes place through the interaction of the reaction gas 
+with the interfering polyatomic species in the incoming ion beam. The quadrupole 
+in the DRC™ allows elimination of unwanted reaction by-products that would 
+otherwise react to form new interferences. </P>
+<P>Refer to the Laboratory Method Files section for a detailed description of 
+the laboratory methods used. </P>
+<P>There were no changes to the lab method, lab equipment, or lab site for this 
+component in the NHANES 2015-2016 cycle. </P>
+<H2 id="Laboratory_Method_Files">Laboratory Method Files</H2>
+<P><A href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/labmethods/UAS_UASS_I_MET.PDF" 
+target="_blank">Arsenics - Speciated - Urine Laboratory Procedure Manual</A>     
+      <SPAN> (June 2018)</SPAN>         </P>
+<H2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality 
+Assurance and Monitoring</H2>
+<P>Urine samples are processed, stored, and shipped to the Division of 
+Laboratory Sciences, National Center for Environmental Health, Centers for 
+Disease Control and Prevention, Atlanta, GA for analysis. </P>
+<P>Detailed instructions on specimen collection and processing are discussed in 
+the <A href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/manuals/2016_MEC_Laboratory_Procedures_Manual.pdf">NHANES 
+LPM</A> Vials are stored under appropriate frozen (–30°C) conditions until they
+ are shipped to National Center for Environmental Health for testing. </P>
+<P>The NHANES quality assurance and quality control (QA/QC) protocols meet the 
+1988 Clinical Laboratory Improvement Amendment mandates. Detailed QA/QC 
+instructions are discussed in the <A href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/manuals/2016_MEC_Laboratory_Procedures_Manual.pdf">NHANES 
+Laboratory Procedures Manual (LPM)</A>. </P>
+<P><B>Mobile Examination Centers (MECs) </B></P>
+<P>Laboratory team performance is monitored using several techniques. NCHS and 
+contract consultants use a structured competency assessment evaluation during 
+visits to evaluate both the quality of the laboratory work and the 
+quality-control procedures. Each laboratory staff member is observed for 
+equipment operation, specimen collection and preparation; testing procedures and 
+constructive feedback are given to each staff member. Formal retraining sessions 
+are conducted annually to ensure that required skill levels were maintained. 
+</P>
+<P><B>Analytical Laboratories </B></P>
+<P>NHANES uses several methods to monitor the quality of the analyses performed 
+by the contract laboratories. In the MEC, these methods include performing blind 
+split samples collected on “dry run” sessions. In addition, contract 
+laboratories randomly perform repeat testing on 2% of all specimens. </P>
+<P>NCHS developed and distributed a quality control protocol for all CDC and 
+contract laboratories, which outlined the use of Westgard rules (Westgard et al, 
+1981) when running NHANES specimens. Progress reports containing any problems 
+encountered during shipping or receipt of specimens, summary statistics for each 
+control pool, QC graphs, instrument calibration, reagents, and any special 
+considerations are submitted to NCHS quarterly. The reports are reviewed for 
+trends or shifts in the data. The laboratories are required to explain any 
+identified areas of concern. </P>
+<P>All QC procedures recommended by the manufacturers were followed. Reported 
+results for all assays meet the Division of Laboratory Sciences’ quality control 
+and quality assurance performance criteria for accuracy and precision, similar 
+to the Westgard rules (Caudill et al, 2008). </P>
+<H2 id="Data_Processing_and_Editing">Data Processing and Editing</H2>
+<P>The data were reviewed. Incomplete data or improbable values were sent to the 
+performing laboratory for confirmation.</P>
+<H2 id="Analytic_Notes">Analytic Notes</H2>
+<P>Refer to the <A href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2015">2015-2016 
+Laboratory Data Overview</A> for general information on NHANES laboratory data. 
+</P>
+<P><B>Subsample Weights </B><BR><BR>Urinary speciated arsenics were measured in 
+a full sample of participants ages 3-5 and a one-third subsample of persons 6 
+years and older. Special sample weights are required to analyze these data 
+properly. Specific sample weights for this subsample are included in this data 
+file and should be used when analyzing these data. <BR><BR><B>Demographic and 
+Other Related Variables </B></P>
+<P>The analysis of NHANES laboratory data must be conducted the appropriate 
+survey design and demographic variables. The NHANES <A href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2015">2015-2016 
+Demographics File</A>&nbsp;contains demographic data, health indicators, and 
+other related information collected during household interviews as well as the 
+sample design variables. The recommended procedure for variance estimation 
+requires use of stratum and PSU variables (SDMVSTRA and SDMVPSU, respectively) 
+in the demographic data file. <BR></P>
+<P>Starting in the 2015-2016 NHANES cycle, the variable URXUCR (urine 
+creatinine) will not be reported in this file.  URXUCR can be found in the data 
+file titled Albumin &amp; Creatinine – Urine. </P>This laboratory data file can 
+be linked to the other NHANES data files using the unique survey participant 
+identifier (i.e., SEQN). <BR><BR><B>Detection Limits </B> 
+<P>The detection limits were constant for all of the analytes in the data set. 
+Two variables are provided for each of these analytes. The variable name ending 
+in “LC” (ex., URDUASLC) indicates whether the result was below the limit of 
+detection: the value “0” means that the result was at or above the limit of 
+detection, “1” indicates that the result was below the limit of detection. For 
+analytes with analytic results below the lower limit of detection (ex., 
+URDUASLC=1), an imputed fill value was placed in the analyte results field. This 
+value is the lower limit of detection divided by square root of 2 (LLOD/sqrt 
+[2]). The other variable prefixed URX (ex., URXUAS) provides the analytic result 
+for the analyte. <BR><BR>The lower limit of detection (LLOD, in µg/L) for 
+the&nbsp;speciated arsenics is: </P>
+<TABLE style="margin: auto auto auto 70.85pt; border: currentColor; border-image: none; border-collapse: collapse; mso-border-alt: solid black .75pt; mso-yfti-tbllook: 1184; mso-padding-alt: 1.5pt 1.5pt 1.5pt 1.5pt;" 
+border="1" cellspacing="0" cellpadding="0">
+  <THEAD>
+  <TR style="mso-yfti-irow: 0; mso-yfti-firstrow: yes;">
+    <TD valign="top" style="background: rgb(244, 244, 225); padding: 3.75pt; border: 1pt solid black; border-image: none; mso-border-alt: solid black .75pt;">
+      <P 
+      style="margin: 0in 0in 12pt; text-align: center; line-height: normal;"><B>Variable 
+                 Name</B></P></TD>
+    <TD valign="top" style="background: rgb(244, 244, 225); border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 3.75pt; border-image: none; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt;">
+      <P 
+      style="margin: 0in 0in 12pt; text-align: center; line-height: normal;"><B>SAS 
+                 Label</B></P></TD>
+    <TD valign="top" style="background: rgb(244, 244, 225); border-width: 1pt 1pt 1pt 0px; border-style: solid solid solid none; border-color: black black black rgb(0, 0, 0); padding: 3.75pt; border-image: none; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt;">
+      <P 
+      style="margin: 0in 0in 12pt; text-align: center; line-height: normal;"><B>LLOD</B></P></TD></TR></THEAD>
+  <TBODY>
+  <TR style="mso-yfti-irow: 1;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">URXUAS3</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">Urinary Arsenous     
+             Acid</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">0.12</P></TD></TR>
+  <TR style="mso-yfti-irow: 2;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">URXUAS5</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">Urinary Arsenic      
+            acid</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">0.79</P></TD></TR>
+  <TR style="mso-yfti-irow: 3;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">URXUAB</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">Urinary 
+      Arsenobetaine</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">1.16</P></TD></TR>
+  <TR style="mso-yfti-irow: 4;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">URXUAC</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">Urinary            
+      Arsenocholine</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">0.11</P></TD></TR>
+  <TR style="mso-yfti-irow: 5;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">URXUDMA</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">Urinary            
+      Dimethylarsinic Acid</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">1.91</P></TD></TR>
+  <TR style="mso-yfti-irow: 6; mso-yfti-lastrow: yes;">
+    <TD valign="top" style="border-width: 0px 1pt 1pt; border-style: none solid solid; border-color: rgb(0, 0, 0) black black; padding: 3.75pt; border-image: none; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">URXUMMA</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P style="margin: 0in 0in 12pt; line-height: normal;">Urinary            
+      Monomethylarsonic Acid</P></TD>
+    <TD valign="top" style="border-width: 0px 1pt 1pt 0px; border-style: none solid solid none; border-color: rgb(0, 0, 0) black black rgb(0, 0, 0); padding: 3.75pt; background-color: transparent; mso-border-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt;">
+      <P 
+  style="margin: 0in 0in 12pt; line-height: normal;">0.20</P></TD></TR></TBODY></TABLE>
+<P>Please refer to the NHANES <A href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">Analytic 
+Guidelines</A> and the on-line NHANES <A href="https://www.cdc.gov/nchs/tutorials/">Tutorial</A> 
+for further details on the use of sample weights and other analytic 
+issues.</P></DIV>
+<DIV id="References">
+<H2>References</H2>
+<UL>
+  <LI>Baranov VI, Tanner SD. A dynamic reaction cell for inductively coupled 
+  plasma mass spectrometry (ICP-DRC-MS). Part 1. The rf-field energy 
+  contribution in thermodynamics of ion-molecule reactions. J. Anal. At. 
+  Spectrom. 1999;14:1133-1142.</LI>
+  <LI>Caudill S.P., Schleicher R.L., Pirkle J.L. Multi-rule quality control for 
+  the age-related eye disease study. Statist. Med. (2008) 27(20:4094-40106.</LI>
+  <LI>Tanner S, Baranov VI, Vollkopf U. A dynamic reaction cell for inductively 
+  coupled plasma mass spectroscopy (ICP-DRC-MS). Part III. Optimization and 
+  analytical performance. J. Anal. At. Spectrom. 2000;15:1261-1269.</LI>
+  <LI>Westgard J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewhart chart 
+  for quality control in clinical chemistry. Clin Chem (1981) 
+27:493-501.</LI></UL></DIV>
+<DIV id="Codebook">
+<H2>Codebook and Frequencies</H2>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">SEQN</DD>
+  <DT>SAS Label: </DT>
+  <DD>Respondent sequence number</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Respondent sequence number.</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="WTSA2YR">WTSA2YR - Subsample A weights</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">WTSA2YR</DD>
+  <DT>SAS Label: </DT>
+  <DD>Subsample A weights</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Subsample A weights</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">6552.119284 to 708844.24678</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3231</TD>
+    <TD align="right" class="values">3231</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">Participants 6+ years with no lab specimen</TD>
+    <TD align="right" class="values">48</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">0</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUAS3">URXUAS3 - Urinary Arsenous acid (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUAS3</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Arsenous acid (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Arsenous acid (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.08 to 8.82</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">185</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUA3LC">URDUA3LC - Urinary Arsenous acid comment 
+code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUA3LC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Arsenous acid comment code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Arsenous acid comment code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">1640</TD>
+    <TD align="right" class="values">1640</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">1454</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">185</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUAS5">URXUAS5 - Urinary Arsenic acid (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUAS5</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Arsenic acid (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Arsenic acid (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.56 to 4.54</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">185</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUA5LC">URDUA5LC - Urinary Arsenic acid comment 
+code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUA5LC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Arsenic acid comment code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Arsenic acid comment code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">97</TD>
+    <TD align="right" class="values">97</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">2997</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">185</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUAB">URXUAB - Urinary Arsenobetaine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUAB</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Arsenobetaine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Arsenobetaine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.82 to 662.24</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">185</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUABLC">URDUABLC - Urinary Arsenobetaine comment 
+code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUABLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Arsenobetaine comment code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Arsenobetaine comment code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">1230</TD>
+    <TD align="right" class="values">1230</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">1864</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">185</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUAC">URXUAC - Urinary Arsenocholine (ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUAC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Arsenocholine (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Arsenocholine (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.08 to 10.98</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">185</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUACLC">URDUACLC - Urinary Arsenocholine comment 
+code</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUACLC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Arsenocholine comment code</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Arsenocholine comment code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">534</TD>
+    <TD align="right" class="values">534</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">2560</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">185</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUDMA">URXUDMA - Urinary Dimethylarsinic acid 
+(ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUDMA</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Dimethylarsinic acid (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Dimethylarsinic acid (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">1.35 to 149.62</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">185</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUDALC">URDUDALC - Urinary Dimethylarsonic acid 
+comment</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUDALC</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Dimethylarsonic acid comment</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Dimethylarsinic acid comment code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limlt</TD>
+    <TD align="right" class="values">2208</TD>
+    <TD align="right" class="values">2208</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">Below lower detection limit</TD>
+    <TD align="right" class="values">886</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">185</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URXUMMA">URXUMMA - Urinary Monomethylarsonic acid 
+(ug/L)</H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URXUMMA</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Monomethylarsonic acid (ug/L)</DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Monomethylarsonic acid (ug/L)</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0.14 to 12.09</TD>
+    <TD class="values">Range of Values</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">185</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV>
+<DIV class="pagebreak">
+<H3 class="vartitle" id="URDUMMAL">URDUMMAL - Urinary Monomethylarsonic acid 
+comment </H3>
+<DL>
+  <DT>Variable Name: </DT>
+  <DD class="info">URDUMMAL</DD>
+  <DT>SAS Label: </DT>
+  <DD>Urinary Monomethylarsonic acid comment </DD>
+  <DT>English Text: </DT>
+  <DD class="info">Urinary Monomethylarsonic acid comment code</DD>
+  <DT>Target: </DT>
+  <DD> Both males and females 3 YEARS -			150 YEARS</DD></DL>
+<TABLE class="values">
+  <THEAD>
+  <TR>
+    <TH class="values" scope="column">Code or Value</TH>
+    <TH class="values" scope="column">Value Description</TH>
+    <TH class="values" scope="column">Count</TH>
+    <TH class="values" scope="column">Cumulative</TH>
+    <TH class="values" scope="column">Skip to Item</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class="values" scope="row">0</TD>
+    <TD class="values">At or above the detection limit</TD>
+    <TD align="right" class="values">1724</TD>
+    <TD align="right" class="values">1724</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">1</TD>
+    <TD class="values">below lower detection limit</TD>
+    <TD align="right" class="values">1370</TD>
+    <TD align="right" class="values">3094</TD>
+    <TD class="values"></TD></TR>
+  <TR>
+    <TD class="values" scope="row">.</TD>
+    <TD class="values">Missing</TD>
+    <TD align="right" class="values">185</TD>
+    <TD align="right" class="values">3279</TD>
+    <TD class="values"></TD></TR></TBODY></TABLE></DIV></DIV></DIV></BODY></HTML>
