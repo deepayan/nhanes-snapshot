@@ -50,61 +50,34 @@ downloaded from the CDC website more than once _unless_ it has been
 updated, even if the process is repeated after six months (provided
 the cache has not been removed).
 
-## Download and convert to CSV
+## Download raw data and convert to CSV
 
 The script `code/convert2csv.R` downloads the XPT files and converts
 them to CSV files, keeping track of updates. It should be run from the
-top-level directory. If the local cache is enabled as described above, this can be done as
-
-, e.g., as
+top-level directory. If the local cache is enabled as described above,
+this can be done from the command line using
 
 ```r
 export NHANES_TABLE_BASE="http://127.0.0.1:8080/cdc"
 R --vanilla < code/convert2csv.R
 ```
 
+To download directly from the CDC website, skip setting the
+environment variable.
 
-```
-Sys.setenv(NHANES_TABLE_BASE = "http://127.0.0.1:8080/cdc")
+## Download documentation files
 
-library(nhanesA)
-nhanesOptions(use.db = FALSE, log.access = TRUE)
-mf <- nhanesManifest()
+To download the HTML documentation files, similarly run
 
-## Remove the tables we will not download (usually because they are
-## large; some others have already been removed by nhanesManifest())
-
-mf <- subset(mf, !startsWith(Table, "PAXMIN"))
-mf <- mf[order(mf$Table), ]
-
-FILEROOT <- "./Data"
-
-for (x in mf$Table) {
-    rawcsv <- sprintf("%s/%s.csv", FILEROOT, x)
-    if (!file.exists(rawcsv)) {
-        cat(x, " -> ", rawcsv, fill = TRUE)
-        d <- nhanes(x, translated = FALSE)
-        if (is.data.frame(d))
-            write.csv(d, file = rawcsv, row.names = FALSE)
-    }
-}
-
-for (x in mf$Table) {
-    rawcsv <- sprintf("%s/%s.rds", FILEROOT, x)
-    if (!file.exists(rawcsv)) {
-        cat(x, " -> ", rawcsv, fill = TRUE)
-        d <- nhanes(x, translated = FALSE)
-        if (is.data.frame(d))
-            saveRDS(d, file = rawcsv, compress = "xz")
-    }
-}
-
-
+```r
+export NHANES_TABLE_BASE="http://127.0.0.1:8080/cdc"
+R --vanilla < code/htmldoc.R
 ```
 
-## Download documentation files and extract codebooks
+## Generate codebooks
 
 TODO
+
 
 
 
