@@ -8,13 +8,21 @@ options(warn = 1)
 
 library(nhanesA)
 nhanesOptions(use.db = FALSE, log.access = TRUE)
-mf <- nhanesManifest()
+mf_pub <- nhanesManifest("public") # only for checking
 
-## We remove some tables from the download list because they are
-## large, but we will keep their documentation anyway.
-
-mf <- subset(mf, !startsWith(Table, "PAXMIN"))
+mf <- nhanesManifest("limitedaccess")
 mf <- mf[order(mf$Table), ]
+
+## Make sure there are no overlaps:
+
+commonTable <- intersect(mf_pub$Table, mf$Table)
+commonURL <- intersect(mf_pub$DocURL, mf$DocURL)
+if (length(commonTable) || length(commonURL)) {
+    stop("Common tables or doc URLs in public and limited access manifests... Aborting.")
+}
+
+## Remove the tables we will not download (usually because they are
+## large; some others have already been removed by nhanesManifest())
 
 DOCROOT <- "./docs"
 TSROOT <- "./timestamp"
@@ -23,11 +31,6 @@ TSROOT <- "./timestamp"
 ## <TSROOT>/foo.txt which contains the corresponding
 ## mf$Date.Published[i] field. If this file exists and is identical to
 ## the current value, we do not attempt to update.
-
-## However, even if the file is added / updated, do NOT update the
-## timestamp... We expect the HTML docs to be downloaded AFTER the
-## data, and that process should have updated all timestamps as
-## necessary.
 
 update_needed <- function(mf, i)
 {
@@ -45,10 +48,13 @@ DOC_PREFIX <- Sys.getenv("NHANES_TABLE_BASE", unset = "https://wwwn.cdc.gov")
 for (i in seq_len(nrow(mf))) {
     x <- mf$Table[i]
     if (update_needed(mf, i)) {
+        timestamp <- sprintf("%s/%s.txt", TSROOT, x)
         docfile <- sprintf("%s/%s.html", DOCROOT, x)
         message(x, " -> ", docfile)
         url <- paste0(DOC_PREFIX, mf$DocURL[i])
         download.file(url, destfile = docfile)
+        ## add timestamp
+        cat(mf$Date.Published[i], file = timestamp, fill = TRUE)
     }
     else message("skipping: ", x)
 }

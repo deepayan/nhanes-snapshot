@@ -67,12 +67,22 @@ environment variable.
 
 ## Download documentation files
 
-To download the HTML documentation files, similarly run
+To download the HTML documentation files (for publicly accessible
+datasets), similarly run
 
 ```r
 export NHANES_TABLE_BASE="http://127.0.0.1:8080/cdc"
 R --vanilla < code/htmldoc.R
 ```
+
+To download the HTML documentation files for limited access datasets, run
+
+```r
+export NHANES_TABLE_BASE="http://127.0.0.1:8080/cdc"
+R --vanilla < code/htmldoc-limited-access.R
+```
+
+
 
 ## Generate codebooks
 

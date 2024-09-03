@@ -10,8 +10,8 @@ library(nhanesA)
 nhanesOptions(use.db = FALSE, log.access = TRUE)
 mf <- nhanesManifest()
 
-## We remove some tables from the download list because they are
-## large, but we will keep their documentation anyway.
+## Remove the tables we will not download (usually because they are
+## large; some others have already been removed by nhanesManifest())
 
 mf <- subset(mf, !startsWith(Table, "PAXMIN"))
 mf <- mf[order(mf$Table), ]
