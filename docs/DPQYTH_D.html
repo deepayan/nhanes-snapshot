@@ -1,0 +1,1254 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>DPQYTH_D</title>
+    <meta name="title" content="NHANES 2005-2006: Mental Health - Depression Screener - Youth Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0 3em 1em;
+					text-align: left;
+					}
+
+					.nhanes-doc ol,
+					.nhanes-doc ul {
+					margin-left: 2.4em;
+					margin-bottom: 1.2em;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					}
+
+					.nhanes-doc li {
+					margin-top: 0.6em;
+					}
+
+					.nhanes-doc #toc ul,
+					.nhanes-doc #References ul {
+					margin-left: 0em;
+					}
+
+					.nhanes-doc #Sections ol ul,
+					.nhanes-doc #Sections ul ul {
+					margin-left: 0;
+					}
+
+					.nhanes-doc #Sections ol ol,
+					.nhanes-doc #Sections ul ol {
+					margin-left: -1.2em;
+					}
+
+					.nhanes-doc #Sections li {
+					margin-left: 1.2em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					padding: 0;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#DPQ001">DPQ001 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="#DPQ010">DPQ010 - Little interest in doing things</a>
+              </li>
+              <li>
+                <a href="#DPQ020">DPQ020 - Feeling down, depressed, or hopeless</a>
+              </li>
+              <li>
+                <a href="#DPQ030">DPQ030 - Trouble sleeping or sleeping too much</a>
+              </li>
+              <li>
+                <a href="#DPQ040">DPQ040 - Feeling tired or having little energy</a>
+              </li>
+              <li>
+                <a href="#DPQ050">DPQ050 - Poor appetite or overeating</a>
+              </li>
+              <li>
+                <a href="#DPQ060">DPQ060 - Feeling bad about yourself</a>
+              </li>
+              <li>
+                <a href="#DPQ070">DPQ070 - Trouble concentrating on things</a>
+              </li>
+              <li>
+                <a href="#DPQ080">DPQ080 - Moving or speaking slowly or too fast</a>
+              </li>
+              <li>
+                <a href="#DPQ090">DPQ090 - Thought you would be better off dead</a>
+              </li>
+              <li>
+                <a href="#DPQ095">DPQ095 - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="#DPQ100">DPQ100 - Difficulty these problems have caused</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2005-2006 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Mental Health - Depression Screener - Youth (DPQYTH_D)</h3>
+        <h4>RDC Only  Data File: DPQYTH_D.xpt</h4>
+        <h5 class="left">First Published: April 2008</h5>
+        <h5 class="right">Last Revised: NA</h5>
+        <h5 class="left">Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>Depression was measured using the Patient Health Questionnaire (PHQ-9), a nine-item screening instrument that asks questions about the frequency of symptoms of depression over the past 2 weeks. A final follow-up question assesses the overall impairment of the depressive symptoms. Response categories "not at all," "several days," "more than half the days" and "nearly every day" were given a score ranging from 0 to 3. A total score was calculated ranging from 0 to 27. A score of 10 or higher has been well validated and is commonly used in clinical studies to define depression. Other methods for defining depression based on this instrument are also used. </p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Mobile examination center participants 12 years and older were eligible. No proxies were permitted to answer these questions. Only data from youths aged 12-17 years are included in this restricted data file. A public use data file DPQ_G is available for adults 18+ years.</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>These questions were asked&nbsp; by trained interviewers in Spanish or English using the Computer-Assisted Personal Interviewing (CAPI) system during the MEC private interview..</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>The CAPI system is programmed with built-in consistency checks to reduce data entry errors. CAPI also uses online help screens to assist interviewers in defining key terms used in the questionnaire.</p>
+<p>Approximately 5% of the interviews were recorded and reviewed for quality control purposes. </p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>        <p>Edits were made to ensure the completeness, consistency and analytic usefulness of the data.</p>
+<h2 id="Analytic_Notes">Analytic Notes</h2><p>Depression and depression severity have been defined using various methods in the scientific literature. Researchers may want to pay special attention to records with item non-response (questions that have missing, &ldquo;don&rsquo;t know&rdquo; or &ldquo;refusal&rdquo; responses) in deriving a score or severity measure. </p>
+<p>MEC exam sample weights should be used for the analyses.</p>
+<p>Please refer to the NHANES Analytic Guidelines and the on-line NHANES Tutorial for further details on the use of sample weights and other analytic issues.&nbsp;<br />
+&nbsp;</p></div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>Kroenke K, Spitzer RL. The PHQ-9: a new depression and diagnostic severity measure. Psych Annals 2002; 32:509-21.</li>
+          <li>Kroenke&nbsp;K, Spitzer RL, William JB. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med 2001; 16: 1606-13.</li>
+          <li>Spitzer RL, Kroenke K, Williams JB. Validation and utility of a self-report version of Prime MD: the PHQ primary care study. JAMA 1999; 282: 1737-44.</li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			17 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DPQ001">DPQ001 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DPQ001</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 1.  CHECK ITEM DPQ001: 	IF INTERVIEW DONE ONLY WITH SURVEY PARTICIPANT (CODED '1' IN RIQ005), CONTINUE.  OTHERWISE, GO TO NEXT SECTION.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			17 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DPQ010">DPQ010 - Little interest in doing things</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DPQ010</dd>
+            <dt>SAS Label: </dt>
+            <dd>Little interest in doing things</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Over the last 2 weeks, how often have you been bothered by the following problems: little interest or pleasure in doing things?  Would you say...</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HANDCARD DPQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			17 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not at all</td>
+                <td class="values" align="right">1183</td>
+                <td class="values" align="right">1183</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Several days</td>
+                <td class="values" align="right">255</td>
+                <td class="values" align="right">1438</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">More than half the days</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">1489</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Nearly every day</td>
+                <td class="values" align="right">25</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">132</td>
+                <td class="values" align="right">1646</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DPQ020">DPQ020 - Feeling down, depressed, or hopeless</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DPQ020</dd>
+            <dt>SAS Label: </dt>
+            <dd>Feeling down, depressed, or hopeless</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[Over the last 2 weeks, how often have you been bothered by the following problems:] feeling down, depressed, or hopeless?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HANDCARD DPQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			17 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not at all</td>
+                <td class="values" align="right">1185</td>
+                <td class="values" align="right">1185</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Several days</td>
+                <td class="values" align="right">269</td>
+                <td class="values" align="right">1454</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">More than half the days</td>
+                <td class="values" align="right">39</td>
+                <td class="values" align="right">1493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Nearly every day</td>
+                <td class="values" align="right">21</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">132</td>
+                <td class="values" align="right">1646</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DPQ030">DPQ030 - Trouble sleeping or sleeping too much</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DPQ030</dd>
+            <dt>SAS Label: </dt>
+            <dd>Trouble sleeping or sleeping too much</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[Over the last 2 weeks, how often have you been bothered by the following problems:] trouble falling or staying asleep, or sleeping too much?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HANDCARD DPQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			17 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not at all</td>
+                <td class="values" align="right">1015</td>
+                <td class="values" align="right">1015</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Several days</td>
+                <td class="values" align="right">381</td>
+                <td class="values" align="right">1396</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">More than half the days</td>
+                <td class="values" align="right">66</td>
+                <td class="values" align="right">1462</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Nearly every day</td>
+                <td class="values" align="right">52</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">132</td>
+                <td class="values" align="right">1646</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DPQ040">DPQ040 - Feeling tired or having little energy</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DPQ040</dd>
+            <dt>SAS Label: </dt>
+            <dd>Feeling tired or having little energy</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[Over the last 2 weeks, how often have you been bothered by the following problems:] feeling tired or having little energy?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HANDCARD DPQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			17 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not at all</td>
+                <td class="values" align="right">833</td>
+                <td class="values" align="right">833</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Several days</td>
+                <td class="values" align="right">546</td>
+                <td class="values" align="right">1379</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">More than half the days</td>
+                <td class="values" align="right">86</td>
+                <td class="values" align="right">1465</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Nearly every day</td>
+                <td class="values" align="right">49</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">132</td>
+                <td class="values" align="right">1646</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DPQ050">DPQ050 - Poor appetite or overeating</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DPQ050</dd>
+            <dt>SAS Label: </dt>
+            <dd>Poor appetite or overeating</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[Over the last 2 weeks, how often have you been bothered by the following problems:] poor appetite or overeating?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HANDCARD DPQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			17 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not at all</td>
+                <td class="values" align="right">1247</td>
+                <td class="values" align="right">1247</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Several days</td>
+                <td class="values" align="right">213</td>
+                <td class="values" align="right">1460</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">More than half the days</td>
+                <td class="values" align="right">33</td>
+                <td class="values" align="right">1493</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Nearly every day</td>
+                <td class="values" align="right">21</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">132</td>
+                <td class="values" align="right">1646</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DPQ060">DPQ060 - Feeling bad about yourself</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DPQ060</dd>
+            <dt>SAS Label: </dt>
+            <dd>Feeling bad about yourself</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[Over the last 2 weeks, how often have you been bothered by the following problems:] feeling bad about yourself - or that you are a failure or have let yourself or your family down?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HANDCARD DPQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			17 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not at all</td>
+                <td class="values" align="right">1291</td>
+                <td class="values" align="right">1291</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Several days</td>
+                <td class="values" align="right">172</td>
+                <td class="values" align="right">1463</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">More than half the days</td>
+                <td class="values" align="right">32</td>
+                <td class="values" align="right">1495</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Nearly every day</td>
+                <td class="values" align="right">19</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">132</td>
+                <td class="values" align="right">1646</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DPQ070">DPQ070 - Trouble concentrating on things</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DPQ070</dd>
+            <dt>SAS Label: </dt>
+            <dd>Trouble concentrating on things</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[Over the last 2 weeks, how often have you been bothered by the following problems:] trouble concentrating on things, such as reading the newspaper or watching TV?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HANDCARD DPQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			17 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not at all</td>
+                <td class="values" align="right">1179</td>
+                <td class="values" align="right">1179</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Several days</td>
+                <td class="values" align="right">271</td>
+                <td class="values" align="right">1450</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">More than half the days</td>
+                <td class="values" align="right">35</td>
+                <td class="values" align="right">1485</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Nearly every day</td>
+                <td class="values" align="right">29</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">132</td>
+                <td class="values" align="right">1646</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DPQ080">DPQ080 - Moving or speaking slowly or too fast</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DPQ080</dd>
+            <dt>SAS Label: </dt>
+            <dd>Moving or speaking slowly or too fast</dd>
+            <dt>English Text: </dt>
+            <dd class="info">[Over the last 2 weeks, how often have you been bothered by the following problems:] moving or speaking so slowly that other people could have noticed?  Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HANDCARD DPQ1</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			17 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not at all</td>
+                <td class="values" align="right">1359</td>
+                <td class="values" align="right">1359</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Several days</td>
+                <td class="values" align="right">122</td>
+                <td class="values" align="right">1481</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">More than half the days</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">1499</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Nearly every day</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">1513</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1513</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">132</td>
+                <td class="values" align="right">1646</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DPQ090">DPQ090 - Thought you would be better off dead</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DPQ090</dd>
+            <dt>SAS Label: </dt>
+            <dd>Thought you would be better off dead</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Over the last 2 weeks, how often have you been bothered by the following problems: Thoughts that you would be better off dead or of hurting yourself in some way?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER INSTRUCTION:  IF DPQ.090 CODED 1, 2, OR 3 PLEASE COMPLETE MENTAL HEALTH OBSERVATION FOR PHYSICIAN REVIEW AT CONCLUSION OF INTERVIEW.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			17 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not at all</td>
+                <td class="values" align="right">1424</td>
+                <td class="values" align="right">1424</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Several days</td>
+                <td class="values" align="right">72</td>
+                <td class="values" align="right">1496</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">More than half the days</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">1508</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Nearly every day</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">132</td>
+                <td class="values" align="right">1646</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DPQ095">DPQ095 - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DPQ095</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">BOX 2.  CHECK ITEM DPQ095: 	IF RESPONSE TO ANY OF QUESTIONS DPQ010 - DPQ090 = 1, 2, OR 3, GO TO DPQ100.  OTHERWISE, GO TO NEXT SECTION.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			17 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DPQ100">DPQ100 - Difficulty these problems have caused</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DPQ100</dd>
+            <dt>SAS Label: </dt>
+            <dd>Difficulty these problems have caused</dd>
+            <dt>English Text: </dt>
+            <dd class="info">How difficult have these problems made it for you to do your work, take care of things at home, or get along with people?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			17 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not at all difficult</td>
+                <td class="values" align="right">797</td>
+                <td class="values" align="right">797</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Somewhat difficult</td>
+                <td class="values" align="right">224</td>
+                <td class="values" align="right">1021</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Very difficult</td>
+                <td class="values" align="right">20</td>
+                <td class="values" align="right">1041</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Extremely difficult</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">1046</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1046</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1046</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">600</td>
+                <td class="values" align="right">1646</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

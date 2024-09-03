@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Second Day Lab General Documentation" />
+    <meta name="DC.Subject" content="NHANES 2000-2000: Second Day Lab General Documentation Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2000-2000 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2000">
+      <title>
+						NHANES 2000-2000:
+						Second Day Lab General Documentation Data Documentation</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2000-2000 Data Documentation</h2>
+        <h3>Second Day Lab General Documentation (doc_2000)
+			</h3>
+        <h4>RDC Only 
+				Data File: doc_2000.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				March 2010</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+        <h5 class="left">
+					Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (https://www.cdc.gov/rdc).
+				</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p><strong>Introduction</strong></p>
+<p>The NHANES 2000 Second Day Laboratory Exam was part of a special study of second day examinations conducted in the NHANES mobile examination center (MEC). The second day exams were conducted for quality assurance and for research purposes. Measures of intra-individual variation can be evaluated from the comparison of the primary exam and second day exam data. The second day laboratory exam was performed on selected laboratory tests. </p>
+<p>The documentation, codebooks and data for the second day laboratory examinations can be found in the Second Day Laboratory Examination files for NHANES 2000. The second day exam methods were the same as the primary exam methods and can be found in the Laboratory Procedures Manuals for NHANES 1999l-2000. The information on the overall NHANES 1999-2000 survey is relevant for the second exam examinations, including the general guidelines for data users, a description of the survey, sample design, analysis guidelines and a description of the data preparation and processing procedures. </p>
+<p>The NHANES 2000 Second Day Laboratory Exam data are available only through the NCHS Research Data Center. A one year data set could potentially disclose the identity of survey participants.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p><strong>Sample design and survey description</strong></p>
+<p>No statistical sampling design was applied for the second day laboratory exam. The sample represented a self-selected, nonrandom sample of about five percent obtained by selecting approximately 20 participants from the roughly 400 sample persons examined at each survey stand. </p>
+<p>The mobile examination staff recruited the participants for the second exam who had their blood drawn for laboratory tests and completed most of their first examinations. The participants were generally asked to come no earlier than 8 days after their initial MEC exam. The participants were given the option to decline the second day laboratory exam. Also, the participants were re-numerated for the second day exams. </p>
+<p>The participants were recruited for the second day laboratory exams using the following criteria: 1) approximately 20 participants volunteered for phlebotomy for each stand, representing approximately a 5% sample, 2) approximately uniform age distribution for participants ages 16-69, 3) selection of about half men and half women, 4) selection of approximately equal number of non-Hispanic blacks and whites, and Mexican Americans. The participants were not matched to their previous session (morning, afternoon, evening). Participants were not recruited from households where the VOC (volatile organic compound) exam was performed during the first exam. Also, participants were not selected from households with children ages 8-15 years. </p>
+<p>The second day laboratory exams were conducted over the same time period as the primary exams for a particular survey stand (location) by the same MEC staff. The second laboratory exams were administered using the same protocols as for the primary exam.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The second day laboratory exam was a self-selected nonrandom sample. Hence, there are no statistical sample weights associated with the second day laboratory exams. Special caution should be used in the analysis of the second day exam data. All analyses should include an investigation of the potential selection bias of the small nonrandom second day exam sample. Careful attention to identifying and evaluating differences in important characteristics (e.g., age, gender and race-ethnicity) between the second day exam sample and the first (primary) day sample should be considered. </p>
+<p>The second exam data can be linked to the primary exam data and the household interview data using the unique participant identifier (SEQN). This is necessary to obtain the demographic data for the sample. NCHS recommends that the survey design variables (e.g., sample weights) not be linked with the second exam data, since the survey design variables were created for the primary sample. </p>
+<p>Because the second day laboratory exams were identical to the first (primary) day laboratory exams, the file structure for the second exams is the same as for the primary exam files. The variable nomenclature is the same with the following important distinction: the first or primary exam variable names have a &lsquo;X&rsquo; or &lsquo;D&rsquo; in the third position, while the second exam variable names have a '2' in the third position (e.g., 'LBXBCD' for the primary exam and &lsquo;LB2BCD&rsquo; for the second exam).</p></div>
+    </div>
+  </body>
+</html>

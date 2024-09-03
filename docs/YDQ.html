@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Mental Health Diagnostic Interview - Youth" />
+    <meta name="DC.Subject" content="NHANES 1999-2004: Mental Health Diagnostic Interview - Youth Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 1999-2004 Questionnaire page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&amp;CycleBeginYear=1999">
+      <title>
+						NHANES 1999-2004:
+						Mental Health Diagnostic Interview - Youth Data Documentation</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Appendix_1:_NHANES_DISC_Modules_and_Sample_Sizes,_1999-2004">Appendix 1: NHANES DISC Modules and Sample Sizes, 1999-2004</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>1999-2004 Data Documentation</h2>
+        <h3>Mental Health Diagnostic Interview - Youth (YDQ)
+			</h3>
+        <h4>RDC Only 
+				Data File: YDQ.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				October 2006</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+        <h5 class="left">
+					Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (https://www.cdc.gov/rdc).
+				</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>The National Institute of Mental Health Diagnostic Interview Schedule for Children, Version 4 (NIMH DISC IV or &ldquo;DISC&rdquo;) is a highly structured diagnostic interview used to assess psychiatric diagnoses of children and adolescents. The DISC was designed to be administered by interviewers with no formal clinical training following the rules and conventions outlined in the DISC training manual (see: DISC Interviewer&rsquo;s Manual). The DISC questions elicit the diagnostic criteria specified in the Diagnostic and Statistical Manual of Mental Disorders - Fourth Edition (DSM-IV) and the WHO International Classification of Diseases, Version 10 (ICD-10). </p>
+<p>The Generic or &ldquo;12 month&rdquo; DISC was used in NHANES. Seven of the 34 diagnostic assessments were included in NHANES over the 6 year period that the DISC was administered: Generalized Anxiety Disorder, Panic Disorder, Eating Disorder, Elimination Disorders, Major Depression/Dysthymic Disorder, Attention Deficit Disorder/Hyperactivity (ADD/ADHD), and Conduct Disorder. In each module, questions are asked about specific symptoms during the past year, and then follow-up questions in case of positive endorsement. Two of the DISC modules in NHANES, Eating Disorder and Major Depression/Dysthymic Disorder, were comprised of two parallel interviews, a youth-informant interview (DISC-Y) administered in-person to children asked questions about themselves, and a parent-informant interview (DISC -P) administered by telephone to a parents or caretaker asked questions about their child. Only the DISC-Y was administered for Generalized Anxiety Disorder and Panic Disorder, and only the DISC-P was administered for Elimination Disorder, ADD/ADHD, and Conduct Disorder. Depending on the module, responses and diagnostic scores derived from the interviews can be combined or examined separately. </p>
+<p>In NHANES, the Generalized Anxiety Disorder and Panic Disorder were administered from 1999-2004, the remainder of the five modules were administered from 2000-2004. See Appendix 1 for details. </p>
+<p>Interviewers used the computerized version of the NIMH DISC IV (C-DISC, IV) owned and distributed by the DISC Group, Division of Child and Adolescent Psychiatry, Columbia University, New York to conduct the interview.</p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>Examined sample ages 8-19 years by informant and ages, as follows: </p>
+<ul>
+    <li>General Anxiety Disorder: youths 8-19 yrs </li>
+    <li>Panic Disorder: youths 8-19 yrs </li>
+    <li>Eating Disorders: youths 8-19 years, parents of youths 8-15 yrs </li>
+    <li>Elimination: parents 8-11 yrs </li>
+    <li>Depression: youths 8-19 yrs, parents of youths 8-15 yrs </li>
+    <li>ADHD: parents of youths 8-15 yrs </li>
+    <li>Conduct Disorder: parents of youths 8-15</li>
+</ul></div>
+        <h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2>
+        <div class="block"><p><strong>Youth Interview (DISC &ndash; Y): </strong></p>
+<p>Mobile Examination Center (MEC). </p>
+<p>The DISC was one portion of the private interview that was administered during the MEC examination. </p>
+<p><strong>Parent Interview (DISC &ndash; P): </strong></p>
+<p>Telephone interview, post examination </p>
+<p>Within 4-28 days of the DISC-Y, a parent or other adult member of the household was contacted by telephone and ask to complete the interview about the child. The respondent for this interview was determined at the time of the DISC-Y administration in the MEC. The mother was the preferred respondent, however, if the child did not live with the mother, the child was asked what adult he or she has lived with, who has taken care of him or her in the past year, and to whom the child felt the closest. </p>
+<p>Both the DISC-Y and DISC-P were conducted by bilingual interviewers in English or Spanish. No proxy respondents or translators were used in situations when the respondents could not self-report.</p></div>
+        <h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2>
+        <div class="block"><p>The C-DISC 4.0 computerized version of the NIMH DISC included skip patterns, and checks for logical relationships but the C-DISC did not include consistency checks, valid response checks, and checks for logical relationships between modules. </p>
+<p>Interviewers were trained to administer the modules as described in the DISC Interviewer&rsquo;s Manual and the NHANES MEC Interview Manual. Training, over a three day period, included practice sessions in Spanish and English with actual participants. The training session emphasized interview standardization and provided information on the strategies for difficult situations. Interviewers also were observed periodically by supervisors and approximately 5% of the interviews were recorded, with the respondent&rsquo;s permission, for quality control review.</p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>The original DISC variable names were changed for to be consistent with the format of other NHANES variables. Data sets, with original format data, are available upon request. The NHANES code books contain the NHANES variable names as well as the original data collection variable names. The seven data sets are named as follows: </p>
+<p>YDQG: Generalized Anxiety Disorder <br />
+YDQP: Panic Disorder <br />
+YDQE: Eating Disorder <br />
+YDQL: Elimination Disorder <br />
+YDQD: Depression <br />
+YDQA: ADHD <br />
+YDQC: Conduct Disorder </p>
+<p>Data editing included reviews of consistency checks within but not between modules. All records of four respondents were set to missing because gender or age values were inconsistent with the NHANES demographic file. </p>
+<p>Data editing was performed prior to the running the diagnostic scoring algorithms. The few data fields that required open-ended responses are not included in the data sets. </p>
+<p>Sample sizes for each of the DISC modules, along with the total number of missing records, are presented in Appendix 1.</p>
+<p><strong>Algorithms And Scoring</strong></p>
+<p>SAS single-informant scoring algorithms were used to generate diagnoses, criteria or symptoms present for the past year and past 4 weeks. </p>
+<p>Algorithms were supplied by the DISC Group, Division of Child and Adolescent Psychiatry, Columbia University, New York. Version &ldquo;L&rdquo; was the final version of the algorithm used to process the NHANES DISC data from 1999-2004. These algorithms are discussed in detail in the <span style="text-decoration: underline;">Generic DISC 4 Scoring</span> <span style="text-decoration: underline;">Manual</span>, and copies are available on request. Analysts may choose to modify existing algorithms; however this will require using the data sets generated from the original data collection mode, also available from NCHS upon request. </p>
+<p>Please note that because only a subset of the DISC modules was administered during NHANES, there are subtypes for the diagnostic variables that, although shown in the algorithms, they are not present in the data set. For example, Panic Disorder was not assessed with or without Agoraphobia because Agoraphobia was not assessed in NHANES.</p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p><strong>General notes: </strong></p>
+<p>The data files available in the NCHS Research Data Center for the seven DISC modules combine the full five year (2000-2004) or six year (1999-2004) period that the instruments were administered in NHANES. The accompanying codebooks also cover the full administration periods. </p>
+<p>The DISC instruments, scoring algorithms and Interviewer Training Manual (see references) available to the analyst contain question names and numbering in the original DISC data collection format. </p>
+<p>The DISC was administered as part of the examination; therefore, all analyses of these data will be conducted using the Examination Weights. It is strongly suggested, based on the rarity of most of the psychiatric diagnoses and scores, that analyses be conducted using combined 1999-2004 (Generalized Anxiety and Panic Disorder only) or 2000-2004 for the additional five modules. Refer to the NHANES Analytic Guidelines to derive weights for multiple years. </p>
+<p>The Youth Conduct Disorder DISC Predictive Scale (YCQ_A, YCQ_B, YCQ_C), an eight question instrument based on the full DISC conduct order module was administered during the MEC examination during the Audio computer-assisted self-interview (ACASI) for 12-19 year olds. These data files are also available through the NCHS Research Data Center. </p>
+<p><strong>Specific notes: </strong></p>
+<p>Eating disorders (YDQE): Because height and weight of participants are essential for determining the diagnosis of eating disorders, measured height and weight obtained from the NHANES Anthropometry examination (BMX) were used in the scoring algorithms. When these measurements were not available, self-reported weights were substituted. The variables YDAEN01 (height measured) and YDQEN02 (weight measured) were created as flag variables to distinguish measured from self-reported values in this data set. </p>
+<p>Eating Disorders (YDQE) and Depression (YDQD) modules: These data sets have individual responses for youth and parent informants, in addition to youth, parent and combined symptom counts and diagnostic scores. The variable YDARTYPE should be used to select the informant record type.</p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Columbia University DISC Development Group, <span style="text-decoration: underline;">Generic DISC Scoring Manual</span>, March 2006.</li>
+          <li>Columbia University DISC Development Group, <span style="text-decoration: underline;">Interviewer Manual</span>, March 2006.</li>
+          <li>Shaffer D, Fisher P, Lucas CP, Dulcan MK, Schwab-Stone ME. NIMH Diagnostic Interview Schedule for Children Version IV (NIMH DISC-IV): description, differences from previous versions, and reliability of some common diagnoses. <span style="text-decoration: underline;">J Am</span> <span style="text-decoration: underline;">Acad Child Adolesc Psychiatry</span>, 2000 Jan; 39(1): 28-38.</li>
+        </ul>
+      </div>
+      <div id="Appendices" xmlns="">
+        <div id="Appendix">
+          <h2 id="Appendix_1:_NHANES_DISC_Modules_and_Sample_Sizes,_1999-2004">Appendix 1: NHANES DISC Modules and Sample Sizes, 1999-2004</h2><table>
+    <caption>Table 1: Respondents, years of data collection, and number of variables by module Module</caption>
+    <thead>
+        <tr>
+            <th>Component</th>
+            <th>Respondents</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Number of variables</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>YDQ<strong>A</strong>: Attention Deficit Disorder / Hyperactivity</td>
+            <td>Parent Only&nbsp;</td>
+            <td align="right">2000</td>
+            <td align="right">2004</td>
+            <td align="right">274</td>
+        </tr>
+        <tr>
+            <td>YDQ<strong>C</strong>: Conduct Disorder&nbsp;</td>
+            <td>Parent Only&nbsp;</td>
+            <td align="right">2000</td>
+            <td align="right">2004</td>
+            <td align="right">316</td>
+        </tr>
+        <tr>
+            <td>YDQ<strong>D</strong>: Major Depression / Dysthymic Disorder&nbsp;</td>
+            <td>Youth and Parent</td>
+            <td align="right">2000</td>
+            <td align="right">2004</td>
+            <td align="right">325</td>
+        </tr>
+        <tr>
+            <td>YDQ<strong>E</strong>: Eating Disorders&nbsp;</td>
+            <td>Youth and Parent&nbsp;</td>
+            <td align="right">2000</td>
+            <td align="right">2004</td>
+            <td align="right">175</td>
+        </tr>
+        <tr>
+            <td>YDQ<strong>G</strong>: Generalized Anxiety Disorder&nbsp;</td>
+            <td>Youth Only&nbsp;</td>
+            <td align="right">1999</td>
+            <td align="right">2004</td>
+            <td align="right">149</td>
+        </tr>
+        <tr>
+            <td>YDQ<strong>L</strong>: Elimination Disorders&nbsp;</td>
+            <td>Parent Only&nbsp;</td>
+            <td align="right">2000</td>
+            <td align="right">2004</td>
+            <td align="right">227</td>
+        </tr>
+        <tr>
+            <td>YDQ<strong>P</strong>: Panic&nbsp;</td>
+            <td>Youth Only&nbsp;</td>
+            <td align="right">1999</td>
+            <td align="right">2004</td>
+            <td align="right">173</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>
+<table>
+    <caption>Table 2: Age range and sample sizes by module and record type Module and record type (if applicable) </caption>
+    <thead>
+        <tr>
+            <th>Component</th>
+            <th>Age</th>
+            <th>Number of records </th>
+            <th>Number of records with missing data </th>
+            <th>Number of records without missing data </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="width: 227px;" valign="top">
+            <p>YDQ<strong>A</strong>: Attention Deficit Disorder / Hyperactivity </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">8-15 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">4,872 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">867 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">4,005 </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 227px;" valign="top">
+            <p>YDQ<strong>C</strong>: Conduct Disorder </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">8-15 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">4,872 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">867 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">4,005 </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 227px;" valign="top">
+            <p>YDQ<strong>D</strong>: Major Depression / Dysthymic Disorder (Youth) </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">8-19 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">7,851 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">691 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">7,160 </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 227px;" valign="top">
+            <p>YDQ<strong>D</strong>: Major Depression / Dysthymic Disorder (Parent) </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">8-15 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">4,872 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">863 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">4,009 </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 227px;" valign="top">
+            <p>YDQ<strong>D</strong>: Major Depression / Dysthymic Disorder (Combined) </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">8-15 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">4,872 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">913 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">3,959 </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 227px;" valign="top">
+            <p>YDQ<strong>E</strong>: Eating Disorders (Youth) </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">8-19 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">7,851 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">685 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">7,166 </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 227px;" valign="top">
+            <p>YDQ<strong>E</strong>: Eating Disorders (Parent) </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">8-15 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">4,872 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">852 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">4,020 </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 227px;" valign="top">
+            <p>YDQ<strong>E</strong>: Eating Disorders (Combined) </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">8-15 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">4,872 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">902 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">3,970 </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 227px;" valign="top">
+            <p>YDQ<strong>G</strong>: Generalized Anxiety Disorder </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">8-19 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">9,152 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">705 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">8,447 </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 227px;" valign="top">
+            <p>YDQ<strong>L</strong>: Elimination Disorders </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">8-11 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">1,833 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">381 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">1,452 </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 227px;" valign="top">
+            <p>YDQ<strong>P</strong>: Panic </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">8-19 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">9,152 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">703 </p>
+            </td>
+            <td style="width: 137px;" valign="top">
+            <p style="text-align: center;">8,449 </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</p></div>
+      </div>
+    </div>
+  </body>
+</html>

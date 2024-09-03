@@ -1,0 +1,749 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>ALQYTH</title>
+    <meta name="title" content="NHANES 1999-2000: Alcohol Use - Youth Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#ALQ010">ALQ010 - Age when first drank alcohol</a>
+              </li>
+              <li>
+                <a href="#ALD020">ALD020 - # days drank alcohol over lifetime</a>
+              </li>
+              <li>
+                <a href="#ALD030">ALD030 - # days drank alcohol over past 30 days</a>
+              </li>
+              <li>
+                <a href="#ALD040">ALD040 - # days w/5 or more drinks/past 30 days</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>1999-2000 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Alcohol Use - Youth (ALQYTH)</h3>
+        <h4>RDC Only  Data File: ALQYTH.xpt</h4>
+        <h5 class="left">First Published: January 2007</h5>
+        <h5 class="right">Last Revised: NA</h5>
+        <h5 class="left">Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (https://www.cdc.gov/rdc).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>This short section on alcohol use (ALQ) focused on age of first drink (initiation), lifetime and current use (past 30 days). Questions were not specific to type of alcohol used.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>12-19 years.</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>The NHANES Audio Computer Assisted Interview (ACASI) was administered in a private room in the MEC. Interviews were conducted in English and Spanish. The ACASI enables respondents to hear questions through earphones as well as read the questions on the computer monitor. The respondents proceeded through the questions at their own speed; touch screens were used to select responses to the questions. No proxy respondents or translators were permitted.</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>Data collections software included consistency checks, including range checks, valid response checks, and checks for logical relationships. Soft edits alerted respondents to a potential error or problems, but allowed the respondents to proceed after confirming that the entry was correct. Hard edits prohibited the respondents from continuing with the ACASI until the error was corrected.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The reported answers to questions ALD030 and ALD040 have been edited for consistency with answers to preceding questions. If any respondent reported a greater number of days for ALD030 (During the past 30 days, on how many days did you have at least one drink of alcohol?) than for ALD020 (During your life, on how many days have you had at least one drink of alcohol?), ALD030 was set to the largest value consistent with the answer to ALD020. Similar if any respondent reported a greater number of days for ALD040 (During the past 30 days, on how many days did you have 5 or more drinks of alcohol in a row, that is, within a couple of hours?) than for either ALD020 or ALD030, ALD040 was set to the largest value consistent with the answers to ALD020 and ALD030.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>Alcohol questions for respondents, ages 20+ years are also available.</p></div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			19 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ALQ010">ALQ010 - Age when first drank alcohol</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ALQ010</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age when first drank alcohol</dd>
+            <dt>English Text: </dt>
+            <dd class="info">English Text: The following questions ask about alcohol use. This includes beer, wine, wine coolers, and liquor such as rum, gin, vodka, or whiskey. This does not include drinking a few sips of wine for religious purposes. How old were you when you had your first drink of alcohol, other than a few sips? </dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select one of the following choices.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">I have never had a drink of alcohol, other than a few sips</td>
+                <td class="values" align="right">1009</td>
+                <td class="values" align="right">1009</td>
+                <td class="values">End of SEnd of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">8 years old or younger</td>
+                <td class="values" align="right">105</td>
+                <td class="values" align="right">1114</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">9 or 10 years old</td>
+                <td class="values" align="right">86</td>
+                <td class="values" align="right">1200</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">11 or 12 years old</td>
+                <td class="values" align="right">173</td>
+                <td class="values" align="right">1373</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">13 or 14 years old</td>
+                <td class="values" align="right">326</td>
+                <td class="values" align="right">1699</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">15 or 16 years old</td>
+                <td class="values" align="right">273</td>
+                <td class="values" align="right">1972</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">17 years old or older</td>
+                <td class="values" align="right">137</td>
+                <td class="values" align="right">2109</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">23</td>
+                <td class="values" align="right">2132</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">32</td>
+                <td class="values" align="right">2164</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">150</td>
+                <td class="values" align="right">2314</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ALD020">ALD020 - # days drank alcohol over lifetime</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ALD020</dd>
+            <dt>SAS Label: </dt>
+            <dd># days drank alcohol over lifetime</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During your life, on how many days have you had at least one drink of alcohol?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select one of the following choices.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">0 days</td>
+                <td class="values" align="right">135</td>
+                <td class="values" align="right">135</td>
+                <td class="values">End of SEnd of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">1 or 2 days</td>
+                <td class="values" align="right">328</td>
+                <td class="values" align="right">463</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3 to 9 days</td>
+                <td class="values" align="right">203</td>
+                <td class="values" align="right">666</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">10 to 19 days</td>
+                <td class="values" align="right">144</td>
+                <td class="values" align="right">810</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">20 to 39 days</td>
+                <td class="values" align="right">126</td>
+                <td class="values" align="right">936</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">40 to 99 days</td>
+                <td class="values" align="right">114</td>
+                <td class="values" align="right">1050</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">100 or more days</td>
+                <td class="values" align="right">90</td>
+                <td class="values" align="right">1140</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">1146</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">1155</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1159</td>
+                <td class="values" align="right">2314</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ALD030">ALD030 - # days drank alcohol over past 30 days</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ALD030</dd>
+            <dt>SAS Label: </dt>
+            <dd># days drank alcohol over past 30 days</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 30 days, on how many days did you have at least one drink of alcohol?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select one of the following choices.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">0 days</td>
+                <td class="values" align="right">415</td>
+                <td class="values" align="right">415</td>
+                <td class="values">End of SEnd of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">1 or 2 days</td>
+                <td class="values" align="right">338</td>
+                <td class="values" align="right">753</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3 to 5 days</td>
+                <td class="values" align="right">108</td>
+                <td class="values" align="right">861</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">6 to 9 days</td>
+                <td class="values" align="right">77</td>
+                <td class="values" align="right">938</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">10 to 19 days</td>
+                <td class="values" align="right">47</td>
+                <td class="values" align="right">985</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">20 to 29 days</td>
+                <td class="values" align="right">22</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">All 30 days</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">1011</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">1015</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1294</td>
+                <td class="values" align="right">2314</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="ALD040">ALD040 - # days w/5 or more drinks/past 30 days</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">ALD040</dd>
+            <dt>SAS Label: </dt>
+            <dd># days w/5 or more drinks/past 30 days</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 30 days, on how many days did you have 5 or more drinks of alcohol in a row, that is, within a couple of hours?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">VERBAL INSTRUCTIONS TO SP:  Please select one of the following choices.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 12 YEARS -
+			19 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">0 days</td>
+                <td class="values" align="right">275</td>
+                <td class="values" align="right">275</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">1 day</td>
+                <td class="values" align="right">109</td>
+                <td class="values" align="right">384</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">2 days</td>
+                <td class="values" align="right">81</td>
+                <td class="values" align="right">465</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">3 to 5 days</td>
+                <td class="values" align="right">73</td>
+                <td class="values" align="right">538</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">6 to 9 days</td>
+                <td class="values" align="right">36</td>
+                <td class="values" align="right">574</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">10 to 19 days</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">589</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">20 or more days</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">598</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">602</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">605</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1709</td>
+                <td class="values" align="right">2314</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

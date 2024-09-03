@@ -1,0 +1,1184 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>THYD_K_R</title>
+    <meta name="title" content="NHANES 2019-March 2020: Thyroid Profile - Serum Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0 3em 1em;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					padding: 0 3em 1em;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					padding: 0;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Method_Files">Laboratory Method Files</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#LBXTSH1">LBXTSH1 - Thyroid stimulating hormone (mIU/L)</a>
+              </li>
+              <li>
+                <a href="#LBXATG">LBXATG - Thyroglobulin antibodies (pmol/L)</a>
+              </li>
+              <li>
+                <a href="#LBDATGLC">LBDATGLC - Thyroglobulin antibodies Comment Code</a>
+              </li>
+              <li>
+                <a href="#LBXT3F">LBXT3F - Triiodothyronine, free (FT3) (pmol/L)</a>
+              </li>
+              <li>
+                <a href="#LBXTT3">LBXTT3 - Triiodothyronine, total (TT3) (ng/dL)</a>
+              </li>
+              <li>
+                <a href="#LBXT4F">LBXT4F - Thyroxine, free (FT4) (ng/dL)</a>
+              </li>
+              <li>
+                <a href="#LBXTT4">LBXTT4 - Thyroxine, total (TT4) (nmol/L)</a>
+              </li>
+              <li>
+                <a href="#LBXTPO">LBXTPO - Thyroid Peroxidase antibodies (IU/mL)</a>
+              </li>
+              <li>
+                <a href="#LBDTPOLC">LBDTPOLC - Thyroid Peroxidase ab Comment Code</a>
+              </li>
+              <li>
+                <a href="#LBXTGN">LBXTGN - Thyroglobulin (ng/mL)</a>
+              </li>
+              <li>
+                <a href="#LBDTGNLC">LBDTGNLC - Thyroglobulin Comment Code</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2019-March 2020 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Thyroid Profile - Serum (THYD_K_R)</h3>
+        <h4>RDC Only  Data File: THYD_K_R.xpt</h4>
+        <h5 class="left">First Published: December 2021</h5>
+        <h5 class="right">Last Revised: NA</h5>
+        <h5 class="left">Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The NHANES program suspended field operations in March 2020 due to the coronavirus disease 2019 (COVID-19) pandemic. As a result, data collection for the NHANES 2019-2020 cycle was not completed.  Data collected in 2019-March 2020 can be accessed as convenience samples through the <a href="https://www.cdc.gov/rdc/">NCHS Research Data Center (RDC)</a>. Any analyses based solely on the 2019-March 2020 data would not be generalizable to the U.S. civilian non-institutionalized population. Please refer to the Analytic Notes section for more details on the use of the data.</p>
+<p>Specific goals of the
+thyroid profile component include providing data to: 1) assess overall thyroid status and function; 2) assess thyroid
+disorders, such as hypo- and hyperthyroidism conditions; and 3) assess the association
+between dietary and urinary iodine measures, and iodine utilization-related
+compounds, such as perchlorate, nitrate, thiocyanate, and selenium.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>All examined participants aged 3 to 5 years were eligible, and participants aged 6 years and older from a one-third subsample  in the NHANES 2019-March 2020 convenience sample were eligible. </p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p>All methods, with
+the exception of thyroglobulin, were measured on the Roche Cobas 6000 (c501
+module) analyzer. Thyroglobulin was analyzed on the Immulite 2000 XPI Analyzer.</p>
+<p><b><span style="text-decoration: underline;">Roche Cobas
+Analyzer</span></b></p>
+<p><b>Thyroglobulin Antibodies</b></p>
+<p>This Roche assay
+uses a competition principle. The sample is incubated with biotinylated Tg and
+the antibodies of the sample bind the antigen. After the addition of anti-Tg
+antibodies labeled with ruthenium complex and streptavidin-coated
+microparticles, the immunocomplex produced becomes bound to the solid phase via
+interaction of biotin and streptavidin. The reaction mixture is aspirated into
+the measuring cell where the microparticles are magnetically captured onto the
+surface of the electrode. Unbound substances are then removed with
+ProCell/ProCell M. Application of a voltage to the electrode then induces
+chemiluminescent emission which is measured by a photomultiplier.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p><b>Thyroid Peroxidase
+Antibodies (TPO)</b></p>
+<p>This Roche assay
+uses a competition principle. The sample is incubated with anti-TPO antibodies
+labeled with a ruthenium complexa.&nbsp; After
+the addition of biotinylated TPO and streptavidin-coated microparticles, the
+anti-TPO antibodies in the sample compete with the ruthenium-labeled anti-TPO
+antibodies for the biotinylated TPO antigen. The entire complex becomes bound
+to the solid phase via interaction of biotin and streptavidin. The reaction
+mixture is aspirated into the measuring cell where the microparticles are magnetically
+captured onto the surface of the electrode. Unbound substances are then removed
+with ProCell/ProCell M. Application of a voltage to the electrode then induces
+chemiluminescent emission which is measured by a photomultiplier.</p>
+<p><b>Thyroid Stimulating
+Hormone (TSH)</b></p>
+<p>This Roche assay
+uses a sandwich principle. 50 &mu;L of sample, a biotinylated monoclonal
+TSH-specific antibody and a monoclonal TSH-specific antibody labeled with a
+ruthenium complex react to form a sandwich complex. After the addition of
+streptavidin-coated microparticles, the complex becomes bound to the solid
+phase via interaction of biotin and streptavidin. The reaction mixture is
+aspirated into the measuring cell where the microparticles are magnetically
+captured onto the surface of the electrode. Unbound substances are then removed
+with ProCell/ProCell M. Application of a voltage to the electrode then induces
+chemiluminescent emission which is measured by a photomultiplier.</p>
+<p><b>Triiodothyronine
+(T3), Free</b></p>
+<p>This Roche assay uses
+a competition principle. 15 &mu;L of sample and an anti-T3-specific antibody
+labeled with a ruthenium complex are incubated together. After the addition of
+biotinylated T3 and streptavidin-coated microparticles, the still-free binding
+sites of the labeled antibody become occupied, with formation of an
+antibody-hapten complex. The entire complex is bound to the solid phase via
+interaction of biotin and streptavidin. The reaction mixture is aspirated into
+the measuring cell where the microparticles are magnetically captured onto the
+surface of the electrode. Unbound substances are then removed with
+ProCell/ProCell M. Application of a voltage to the electrode then induces
+chemiluminescent emission which is measured by a photomultiplier.</p>
+<p><b>Triiodothyronine
+(T3), Total</b></p>
+<p>This Roche assay
+uses a competition principle. 30 &mu;L of sample and a T3-specific antibody
+labeled with a ruthenium complex are incubated together; bound T3 is released
+from the binding proteins in the sample by ANS. After the addition of streptavidin-coated
+microparticles and biotinylated T3, the still-free binding sites of the labeled
+antibody become occupied, with formation of an antibody-hapten complex. The
+entire complex becomes bound to the solid phase via interaction of biotin and streptavidin.
+The reaction mixture is aspirated into the measuring cell where the
+microparticles are magnetically captured onto the surface of the electrode.
+Unbound substances are then removed with ProCell/ProCell M. Application of a
+voltage to the electrode then induces chemiluminescent emission which is
+measured by a photomultiplier.</p>
+<p><b>Thyroxine (T4), Free</b></p>
+<p>The determination
+of free thyroxine is an important element in clinical routine diagnostics in
+this Roche assay. Free T4 is measured together with TSH when thyroid function
+disorders are suspected. The determination of fT4 is also suitable for
+monitoring thyrosuppressive therapy. This assay uses a competition principle.
+15 &mu;L of sample is incubated with a T4‑specific antibody labeled with a ruthenium complex. After the addition of
+biotinylated T4 and streptavidin‑coated microparticles, the still-free binding sites of the labeled antibody
+become occupied, with formation of an antibody‑hapten complex. The entire complex becomes bound to the solid phase via
+interaction of biotin and streptavidin. The reaction mixture is aspirated into
+the measuring cell where the microparticles are magnetically captured onto the
+surface of the electrode. Unbound substances are then removed with
+ProCell/ProCell M. Application of a voltage to the electrode then induces
+chemiluminescent emission which is measured by a photomultiplier.</p>
+<p><b>Thyroxine(T4), Total
+</b></p>
+<p>This Roche assay
+uses a competition principle. 15 &mu;L of sample is incubated with a T4-specific
+antibody labeled with a ruthenium complex; bound T4 is released from binding
+proteins in the sample by ANS. After the addition of streptavidin-coated
+microparticles and biotinylated T4, the still-free binding sites of the labeled
+antibody become occupied, with formation of an antibody-hapten complex. The
+entire complex becomes bound to the solid phase via interaction of biotin and
+streptavidin. The reaction mixture is aspirated into the measuring cell where
+the microparticles are magnetically captured onto the surface of the electrode.
+Unbound substances are then removed with ProCell/ProCell M. Application of a
+voltage to the electrode then induces chemiluminescent emission which is
+measured by a photomultiplier.</p>
+<p><b><span style="text-decoration: underline;">Siemens Immulite
+2000 XPI Analyzer</span></b></p>
+<p><b>Thyroglobulin</b></p>
+<p>The Siemens
+Immulite 2000 XPI measurement for thyroglobulin (TGN) is a Quantitative
+Chemiluminescent Immunometric Assay. The instrument uses assay-specific
+antibody or antigen-coated polystyrene beads as the solid phase. A bead is
+dispensed into a specially designed Reaction Tube, which serves as the vessel
+for the incubation, wash, and signal development processes. After the sample is
+incubated with an alkaline phosphatase-labeled reagent, the reaction mixture is
+separated from the bead by spinning the Reaction Tube at high speed along its
+vertical axis. The fluid is transferred to a Coaxial Sump Chamber, which is
+integral to the Bead/Tube Wash Station. Four discrete washes occur within
+seconds, allowing the Reaction Tubes to be processed sequentially with uniform
+timing. The bead remains in the Reaction Tube with no residual unbound label. The
+bound label is then quantified using the dioxetane substrate to produce light.
+Light is emitted when the chemiluminescent substrate reacts with the alkaline
+phosphatase label bound to the bead. The amount of light emitted is proportional
+to the amount of analyte originally present in the sample. This light emission
+is detected by the Photomultiplier Tube (PMT) and results are calculated for
+each sample.</p>
+<p>Refer to the
+Laboratory Method Files section for a detailed description of the laboratory
+methods used.</p>
+<p>This is a new
+component in the NHANES 2019-2020 survey cycle.</p><h2 id="Laboratory_Method_Files">Laboratory Method Files</h2>
+        <p>
+          <a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/labmethods/THYROD-K-MET-Thyroglobulin-Antibodies-508.pdf">Thyroglobulin antibodies Laboratory Procedure Manual</a>
+          <span> (December 2020)</span>
+        </p>
+        <p>
+          <a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/labmethods/THYROD-K-MET-FT3-508.pdf">FT3 Laboratory Procedure Manual</a>
+          <span> (December 2020)</span>
+        </p>
+        <p>
+          <a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/labmethods/THYROD-K-MET-TT3-508.pdf">TT3 Laboratory Procedure Manual</a>
+          <span> (December 2020)</span>
+        </p>
+        <p>
+          <a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/labmethods/THYROD-K-MET-FT4-508.pdf">FT4 Laboratory Procedure Manual</a>
+          <span> (December 2020)</span>
+        </p>
+        <p>
+          <a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/labmethods/THYROD-K-MET-TT4-508.pdf">TT4 Laboratory Procedure Manual</a>
+          <span> (December 2020)</span>
+        </p>
+        <p>
+          <a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/labmethods/THYROD-K-MET-TPO-508.pdf">TPO antibodies Laboratory Procedure Manual</a>
+          <span> (December 2020)</span>
+        </p>
+        <p>
+          <a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/labmethods/THYROD-K-MET-Thyroglobulin-508.pdf">Thyroglobulin Laboratory Procedure Manual</a>
+          <span> (December 2020)</span>
+        </p>
+        <p>
+          <a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/labmethods/THYROD-K-MET-TSH-508.pdf">TSH Laboratory Procedure Manual</a>
+          <span> (December 2020)</span>
+        </p>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>Serum specimens were
+processed, stored, and shipped to the University of Minnesota, Minneapolis, MN
+for analysis.</p>
+<p>Detailed instructions on specimen collection and processing are discussed
+in the <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/manuals/2020-MEC-Laboratory-Procedures-Manual-508.pdf">NHANES Laboratory Procedures Manual
+(LPM)</a>. Vials were stored under appropriate frozen (&ndash;30&deg;C) conditions until they
+were shipped to the University of Minnesota for testing.</p>
+<p>The NHANES quality assurance and quality control (QA/QC) protocols meet the
+1988 Clinical Laboratory Improvement Amendments mandates. Detailed QA/QC instructions
+are discussed in the <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/manuals/2020-MEC-Laboratory-Procedures-Manual-508.pdf">NHANES LPM</a>.</p>
+<p><strong>Mobile Examination
+Centers (MECs)</strong> </p>
+<p>Laboratory team
+performance is monitored using several techniques. NCHS and contract
+consultants use a structured competency assessment evaluation during visits to
+evaluate both the quality of the laboratory work and the QC procedures. Each
+laboratory staff member is observed for equipment operation, specimen
+collection and preparation; testing procedures and constructive feedback are
+given to each staff member. Formal retraining sessions are conducted annually
+to ensure that required skill levels were maintained.</p>
+<p><strong>Analytical
+Laboratories</strong> </p>
+<p>NHANES uses
+several methods to monitor the quality of the analyses performed by the
+contract laboratories. In the MEC, these methods include performing blind split
+specimens collected on &ldquo;dry run&rdquo; sessions. In addition, contract laboratories
+randomly perform repeat testing on 2% of all specimens. </p>
+<p>NCHS developed and
+distributed a QC protocol for all CDC and contract laboratories,
+which outlined the use of Westgard rules (Westgard et al., 1981) when testing
+NHANES specimens. Progress reports containing any problems encountered during
+shipping or receipt of specimens, summary statistics for each control pool, QC
+graphs, instrument calibration, reagents, and any special considerations are
+submitted to NCHS quarterly. The reports are reviewed for trends or shifts in
+the data. The laboratories are required to explain any identified areas of
+concern.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The data were
+reviewed. Incomplete data or improbable values were sent to the performing laboratory
+for confirmation.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The COVID-19 pandemic required suspension of NHANES 2019-2020 field operations in March 2020 after data were collected in 18 of the 30 survey locations in the 2019-2020 sample. Data collection was cancelled for the remaining 12 locations. Calculation of survey weights for this partial cycle is not possible due to incomplete data collection. Therefore, data from survey components that were only collected in 2019-March 2020 are made available as convenience samples through <a href="https://www.cdc.gov/rdc/">NCHS's Research Data Center (RDC)</a> because unbiased estimates for the NHANES target population cannot be produced with these samples. </p>
+<p>For survey components conducted in both 2017-2018 and 2019-2020 cycles, data collected from 2019 to March 2020 were combined with data from 2017 to 2018 to form a nationally representative sample of NHANES 2017-March 2020 pre-pandemic data. Please see the <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;Cycle=2017-2020">NHANES 2017-March 2020 pre-pandemic data</a> page for detailed information on this combined sample.
+</p>
+<p>Refer to the <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2019">2019-2020 Laboratory Data Overview</a>&nbsp;for general
+information on NHANES laboratory&nbsp;data.&nbsp;
+</p>
+<p>
+There are over 800 laboratory tests performed on NHANES participants. However, not all participants provided biospecimens or enough volume for all the tests to be performed. The specimen availability can also vary by age or other population characteristics. For example, in 2019-2020, approximately 71% of children aged 1-17 years who were examined in the MEC provided a blood specimen through phlebotomy, while 94% of examined adults age 18 and older provided a blood specimen. Analysts should be aware of this and evaluate the extent of missing data in the dataset related to the outcome of interest as well as any predictor variables used in the analyses as needed. </p>
+<p><strong>Demographic and
+Other Related Variables </strong></p>
+<p>The analysis of
+NHANES laboratory data may require additional demographic variables. The <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2019">NHANES 2019-March 2020 Demographics File</a> contains demographic data, health indicators, and
+other related information collected during household interviews.</p>
+<p>The laboratory
+data file can be linked to the Demographics file and other NHANES data files in the 2019-March 2020 convenience sample using the unique survey
+participant identifier (i.e., SEQN).<br />
+</p>
+<p><strong>Detection Limits</strong> </p>
+<p>The detection
+limits were constant for this analyte in the data set. </p>
+<p>The lower limits
+of detection (LLOD) for thyroid profile: </p>
+<div style="text-align: center;">
+<table width="571" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td style="width: 143px;">
+            <p style="text-align: center;"><strong>Variable Name</strong></p>
+            </td>
+            <td style="width: 324px;">
+            <p style="text-align: center;"><strong>Analyte Description</strong></p>
+            </td>
+            <td style="width: 104px;">
+            <p style="text-align: center;"><strong>LLOD</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" style="width: 143px;">
+            <p style="text-align: center;">LBXTSH1</p>
+            </td>
+            <td valign="top" style="width: 324px;">
+            <p style="text-align: center;">Thyroid stimulating
+            hormone (TSH) (mIU/L)</p>
+            </td>
+            <td style="width: 104px;">
+            <p style="text-align: center;">0.005</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" style="width: 143px;">
+            <p style="text-align: center;">LBXATG</p>
+            </td>
+            <td valign="top" style="width: 324px;">
+            <p style="text-align: center;">Thyroglobulin
+            antibodies (pmol/L)</p>
+            </td>
+            <td style="width: 104px;">
+            <p style="text-align: center;">10</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" style="width: 143px;">
+            <p style="text-align: center;">LBXT3F</p>
+            </td>
+            <td valign="top" style="width: 324px;">
+            <p style="text-align: center;">Triiodothyronine,
+            free (FT3) (pmol/L)</p>
+            </td>
+            <td style="width: 104px;">
+            <p style="text-align: center;">0.6</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" style="width: 143px;">
+            <p style="text-align: center;">LBXTT3</p>
+            </td>
+            <td valign="top" style="width: 324px;">
+            <p style="text-align: center;">Triiodothyronine,
+            total (TT3) (ng/dL)</p>
+            </td>
+            <td style="width: 104px;">
+            <p style="text-align: center;">19.5</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" style="width: 143px;">
+            <p style="text-align: center;">LBXT4F</p>
+            </td>
+            <td valign="top" style="width: 324px;">
+            <p style="text-align: center;">Thyroxine, free
+            (FT4) (ng/dL)</p>
+            </td>
+            <td style="width: 104px;">
+            <p style="text-align: center;">0.101</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" style="width: 143px;">
+            <p style="text-align: center;">LBXTT4</p>
+            </td>
+            <td valign="top" style="width: 324px;">
+            <p style="text-align: center;">Thyroxine, total
+            (TT4) (nmol/L)</p>
+            </td>
+            <td style="width: 104px;">
+            <p style="text-align: center;">5.4</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" style="width: 143px;">
+            <p style="text-align: center;">LBXTPO</p>
+            </td>
+            <td valign="top" style="width: 324px;">
+            <p style="text-align: center;">Thyroid Peroxidase
+            (TPO) antibodies (IU/mL)</p>
+            </td>
+            <td style="width: 104px;">
+            <p style="text-align: center;">5.0</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" style="width: 143px;">
+            <p style="text-align: center;">LBXTGN</p>
+            </td>
+            <td valign="top" style="width: 324px;">
+            <p style="text-align: center;">Thyroglobulin
+            (ng/mL)</p>
+            </td>
+            <td style="width: 104px;">
+            <p style="text-align: center;">0.9</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p>&nbsp;</p></div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>Westgard J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewhart chart for quality control in clinical chemistry. Clin Chem (1981) 27:493-501.</li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTSH1">LBXTSH1 - Thyroid stimulating hormone (mIU/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTSH1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Thyroid stimulating hormone (mIU/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Thyroid stimulating hormone (TSH) (mIU/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.01 to 43</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1553</td>
+                <td class="values" align="right">1553</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">358</td>
+                <td class="values" align="right">1911</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXATG">LBXATG - Thyroglobulin antibodies (pmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXATG</dd>
+            <dt>SAS Label: </dt>
+            <dd>Thyroglobulin antibodies (pmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Thyroglobulin antibodies (pmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">7 to 1618</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1551</td>
+                <td class="values" align="right">1551</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">360</td>
+                <td class="values" align="right">1911</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDATGLC">LBDATGLC - Thyroglobulin antibodies Comment Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDATGLC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Thyroglobulin antibodies Comment Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Thyroglobulin antibodies Comment Code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above detection limit</td>
+                <td class="values" align="right">285</td>
+                <td class="values" align="right">285</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">1266</td>
+                <td class="values" align="right">1551</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">360</td>
+                <td class="values" align="right">1911</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXT3F">LBXT3F - Triiodothyronine, free (FT3) (pmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXT3F</dd>
+            <dt>SAS Label: </dt>
+            <dd>Triiodothyronine, free (FT3) (pmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Triiodothyronine, free (FT3) (pmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2.1 to 11.5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1553</td>
+                <td class="values" align="right">1553</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">358</td>
+                <td class="values" align="right">1911</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTT3">LBXTT3 - Triiodothyronine, total (TT3) (ng/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTT3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Triiodothyronine, total (TT3) (ng/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Triiodothyronine, total (TT3) (ng/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">45 to 443</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1553</td>
+                <td class="values" align="right">1553</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">358</td>
+                <td class="values" align="right">1911</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXT4F">LBXT4F - Thyroxine, free (FT4) (ng/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXT4F</dd>
+            <dt>SAS Label: </dt>
+            <dd>Thyroxine, free (FT4) (ng/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Thyroxine, free (FT4) (ng/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.58 to 2.53</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1553</td>
+                <td class="values" align="right">1553</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">358</td>
+                <td class="values" align="right">1911</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTT4">LBXTT4 - Thyroxine, total (TT4) (nmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTT4</dd>
+            <dt>SAS Label: </dt>
+            <dd>Thyroxine, total (TT4) (nmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Thyroxine, total (TT4) (nmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">43.4 to 213</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1552</td>
+                <td class="values" align="right">1552</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">359</td>
+                <td class="values" align="right">1911</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTPO">LBXTPO - Thyroid Peroxidase antibodies (IU/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTPO</dd>
+            <dt>SAS Label: </dt>
+            <dd>Thyroid Peroxidase antibodies (IU/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Thyroid Peroxidase (TPO) antibodies (IU/mL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">4 to 2231</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1553</td>
+                <td class="values" align="right">1553</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">358</td>
+                <td class="values" align="right">1911</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDTPOLC">LBDTPOLC - Thyroid Peroxidase ab Comment Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDTPOLC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Thyroid Peroxidase ab Comment Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Thyroid Peroxidase (TPO) antibodies Comment Code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above detection limit</td>
+                <td class="values" align="right">1534</td>
+                <td class="values" align="right">1534</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">19</td>
+                <td class="values" align="right">1553</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">358</td>
+                <td class="values" align="right">1911</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTGN">LBXTGN - Thyroglobulin (ng/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTGN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Thyroglobulin (ng/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Thyroglobulin (ng/mL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.6 to 2631</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1551</td>
+                <td class="values" align="right">1551</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">360</td>
+                <td class="values" align="right">1911</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDTGNLC">LBDTGNLC - Thyroglobulin Comment Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDTGNLC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Thyroglobulin Comment Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Thyroglobulin Comment Code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above detection limit</td>
+                <td class="values" align="right">1496</td>
+                <td class="values" align="right">1496</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">55</td>
+                <td class="values" align="right">1551</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">360</td>
+                <td class="values" align="right">1911</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

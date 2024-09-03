@@ -1,0 +1,868 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Vitamin A &amp; Vitamin E, Second Exam" />
+    <meta name="DC.Subject" content="NHANES 2000-2000: Vitamin A &amp; Vitamin E, Second Exam Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2000-2000 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2000">
+      <title>
+						NHANES 2000-2000:
+						Vitamin A &amp; Vitamin E, Second Exam Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LB2DAY">LB2DAY - Days between 1st and 2nd exam </a>
+                </li>
+                <li>
+                  <a href="#LB2GTC">LB2GTC - gamma-tocopherol(ug/dL)</a>
+                </li>
+                <li>
+                  <a href="#LB2GTCSI">LB2GTCSI - gamma-tocopherol(umol/L)</a>
+                </li>
+                <li>
+                  <a href="#LB2RPL">LB2RPL - Retinyl palmitate(ug/dL)</a>
+                </li>
+                <li>
+                  <a href="#LB2RPLSI">LB2RPLSI - Retinyl palmitate(umol/L)</a>
+                </li>
+                <li>
+                  <a href="#LB2RST">LB2RST - Retinyl stearate(ug/dL)</a>
+                </li>
+                <li>
+                  <a href="#LB2RSTSI">LB2RSTSI - Retinyl stearate(umol/L)</a>
+                </li>
+                <li>
+                  <a href="#LB2VIA">LB2VIA - Retinol(ug/dL)</a>
+                </li>
+                <li>
+                  <a href="#LB2VIASI">LB2VIASI - Retinol (umol/L)</a>
+                </li>
+                <li>
+                  <a href="#LB2VIE">LB2VIE - alpha-tocopherol(ug/dL)</a>
+                </li>
+                <li>
+                  <a href="#LB2VIESI">LB2VIESI - alpha-tocopherol(umol/L)</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2000-2000 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Vitamin A &amp; Vitamin E, Second Exam (VIT_2_R)
+			</h3>
+        <h4>RDC Only 
+				Data File: VIT_2_R.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				August 2010</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+        <h5 class="left">
+					Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (https://www.cdc.gov/rdc).
+				</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p><strong>Second Day Exams</strong> </p>
+<p><strong>See the general documentation on Second Day laboratory exams.</strong> Also, see the documentation for the primary exam data for Laboratory 6 (Vitamins A, E and Carotenoids). <br />
+<br />
+<strong>Vitamin A (retinol, retinyl palmitate, retinyl stearate), and Vitamin E (a-tocopherol and y-tocopherol)</strong><br />
+<br />
+The objectives of this component are: 1) to provide data for monitoring secular trends in measures of nutritional status in the U.S. population; 2) to evaluate the effect of people's habits and behaviors such as physical activity and the use of alcohol, tobacco, and dietary supplements on people's nutritional status; and 3) to evaluate the effect of changes in nutrition and public health policies including welfare reform legislation, food fortification policy, and child nutrition programs on the nutritional status of the U.S. population. These data will be used to estimate deficiencies and toxicities of specific nutrients in the population and subgroups, to provide population reference data, and to estimate the contribution of diet, supplements, and other factors to serum levels of nutrients. Data will be used for research to further define nutrient requirements as well as optimal levels for disease prevention and health promotion. </p>
+<h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 16-69 years who do not meet any of the exclusion criteria are eligible.</p>
+<h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p>Serum concentrations of vitamins A (retinol) and E (&#945; and&#160;&#947;-tocopherol), two retinyl esters, and six carotenoids are measured using high performance liquid chromatography with photodiode array detection. A small volume (100 uL) of serum is mixed with an ethanol solution containing two internal standards- retinyl butyrate and nonapreno-&#946;-carotene (C45). The micronutrients are extracted from the aqueous phase into hexane and dried under vacuum. The extract is redissolved in ethanol and acetonitrile and is filtered to remove any insoluble material. An aliquot of the filtrate is injected onto a C18 reversed phase column and isocratically eluted with a mobile phase consisting of equal parts of ethanol and acetonitrile. Absorbance of these substances in solution is linearly proportional to concentration, thus spectrophotometric methods are used for quantitative analysis. Three wavelengths, approximately corresponding to absorption maxima, namely, 300, 325, and 450 nm, are simultaneously monitored and chromatograms are recorded. Quantitation is accomplished by comparing the peak height of the analyte in the unknown with the peak height of a known amount of the same analyte in a calibrator solution. Calculations are corrected based on the peak height of the internal standard in the unknown compared with the peak height of the internal standard in the calibrator solution. Retinol and the retinyl esters are compared with retinyl butyrate at 325 nm, &#945; and&#160;&#947;-tocopherol are compared with retinyl butyrate at 300 nm, and the carotenoids are compared with C45 at 450 nm.</p>
+<h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Serum specimens were processed, stored, and shipped to the Division of Laboratory Sciences, National Center for Environmental Health, and Centers for Disease Control and Prevention for analysis. </p>
+<p>Detailed specimen collection and processing instructions are discussed in the NHANES LPM. Vials were stored under appropriate frozen (–20°C) conditions until they were shipped to National Center for Environmental Health for testing. </p>
+<p>This file contains no top coding. </p>
+<p>Derived variables were created in this data file. The formula for their derivatization is as follows: <br />
+<br />
+The vitamin A (retinol) results in ug/dL were converted into umol/L by multiplying by 0.03491. <br />
+<br />
+The retinyl palmitate results in ug/dL were converted into umol/L by multiplying by 0.03491. <br />
+<br />
+The retinyl stearate results in ug/dL were converted into umol/L by multiplying by 0.03491. <br />
+<br />
+The vitamin E (a-tocopherol) results in ug/dL were converted into umol/L by multiplying by 0.02322. <br />
+<br />
+The y-tocopherol results in ug/dL were converted into umol/L by multiplying by 0.02402. </p>
+<h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>The NHANES quality assurance and quality control (QA/QC) protocols meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols.</p>
+<p>A detailed description of the quality assurance and quality control procedures can be found on the NHANES website. </p>
+<h2 id="Analytic_Notes">Analytic Notes</h2><p><span style="text-decoration: underline;">The second day exam data was a convenience sample and thus did not have sample weights.</span> The analysis of NHANES 2000 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2000 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. The Household Questionnaire Data Files also contain all survey design variables and sample weights required to analyze these data. The Phlebotomy Examination file includes auxiliary information on duration of fasting, the time of day of the venipuncture, and the conditions precluding venipuncture. The Household Questionnaire and Phlebotomy Exam files may be linked to the laboratory data file using the unique survey participant identifier SEQN.</p>
+</div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LB2DAY">LB2DAY - Days between 1st and 2nd exam </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LB2DAY</dd>
+            <dt>SAS Label: </dt>
+            <dd>Days between 1st and 2nd exam </dd>
+            <dt>English Text: </dt>
+            <dd class="info">The number of days between the collection of the first and second exam</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">6 to 51</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">300</td>
+                <td class="values" align="right">300</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">302</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LB2GTC">LB2GTC - gamma-tocopherol(ug/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LB2GTC</dd>
+            <dt>SAS Label: </dt>
+            <dd>gamma-tocopherol(ug/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">gamma-tocopherol(ug/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 9999</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">25.5 to 987</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">275</td>
+                <td class="values" align="right">275</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">27</td>
+                <td class="values" align="right">302</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LB2GTCSI">LB2GTCSI - gamma-tocopherol(umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LB2GTCSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>gamma-tocopherol(umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">gamma-tocopherol(umol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.61 to 23.69</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">275</td>
+                <td class="values" align="right">275</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">27</td>
+                <td class="values" align="right">302</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LB2RPL">LB2RPL - Retinyl palmitate(ug/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LB2RPL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Retinyl palmitate(ug/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Retinyl palmitate(ug/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 999</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.14 to 18.7</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">269</td>
+                <td class="values" align="right">269</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">33</td>
+                <td class="values" align="right">302</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LB2RPLSI">LB2RPLSI - Retinyl palmitate(umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LB2RPLSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Retinyl palmitate(umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Retinyl palmitate(umol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 0.65</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">269</td>
+                <td class="values" align="right">269</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">33</td>
+                <td class="values" align="right">302</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LB2RST">LB2RST - Retinyl stearate(ug/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LB2RST</dd>
+            <dt>SAS Label: </dt>
+            <dd>Retinyl stearate(ug/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Retinyl stearate(ug/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 999</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.35 to 7.1</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">255</td>
+                <td class="values" align="right">255</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">47</td>
+                <td class="values" align="right">302</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LB2RSTSI">LB2RSTSI - Retinyl stearate(umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LB2RSTSI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Retinyl stearate(umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Retinyl stearate(umol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.01 to 0.25</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">255</td>
+                <td class="values" align="right">255</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">47</td>
+                <td class="values" align="right">302</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LB2VIA">LB2VIA - Retinol(ug/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LB2VIA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Retinol(ug/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Retinol(ug/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 999</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">22.1 to 232.3</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">300</td>
+                <td class="values" align="right">300</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">302</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LB2VIASI">LB2VIASI - Retinol (umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LB2VIASI</dd>
+            <dt>SAS Label: </dt>
+            <dd>Retinol (umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Retinol(umol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.77 to 8.11</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">300</td>
+                <td class="values" align="right">300</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">302</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LB2VIE">LB2VIE - alpha-tocopherol(ug/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LB2VIE</dd>
+            <dt>SAS Label: </dt>
+            <dd>alpha-tocopherol(ug/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">alpha-tocopherol(ug/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 9999</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">413.7 to 4235.6</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">300</td>
+                <td class="values" align="right">300</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">302</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LB2VIESI">LB2VIESI - alpha-tocopherol(umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LB2VIESI</dd>
+            <dt>SAS Label: </dt>
+            <dd>alpha-tocopherol(umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">alpha-tocopherol(umol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9.61 to 98.35</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">300</td>
+                <td class="values" align="right">300</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">302</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

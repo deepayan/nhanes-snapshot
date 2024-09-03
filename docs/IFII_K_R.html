@@ -1,0 +1,762 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>IFII_K_R</title>
+    <meta name="title" content="NHANES 2019-March 2020: Infant Formula Database – Ingredient Information Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0 3em 1em;
+					text-align: left;
+					}
+
+					.nhanes-doc ol,
+					.nhanes-doc ul {
+					margin-left: 2.4em;
+					margin-bottom: 1.2em;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					}
+
+					.nhanes-doc li {
+					margin-top: 0.6em;
+					}
+
+					.nhanes-doc #toc ul,
+					.nhanes-doc #References ul {
+					margin-left: 0em;
+					}
+
+					.nhanes-doc #Sections ol ul,
+					.nhanes-doc #Sections ul ul {
+					margin-left: 0;
+					}
+
+					.nhanes-doc #Sections ol ol,
+					.nhanes-doc #Sections ul ol {
+					margin-left: -1.2em;
+					}
+
+					.nhanes-doc #Sections li {
+					margin-left: 1.2em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					padding: 0;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#IFPID">IFPID - Formula product ID number</a>
+              </li>
+              <li>
+                <a href="#IFNAME">IFNAME - Formula name</a>
+              </li>
+              <li>
+                <a href="#IFIID">IFIID - Ingredient ID number</a>
+              </li>
+              <li>
+                <a href="#IFINNAME">IFINNAME - Ingredient name</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#Appendix_1:_Rules_for_Classifying_Nutrient_Category">Appendix 1: Rules for Classifying Nutrient Category</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2019-March 2020 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Infant Formula Database – Ingredient Information (IFII_K_R)</h3>
+        <h4>RDC Only  Data File: IFII_K_R.xpt</h4>
+        <h5 class="left">First Published: April 2023</h5>
+        <h5 class="right">Last Revised: NA</h5>
+        <h5 class="left">Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The NHANES program suspended field operations in March 2020 due to the coronavirus disease 2019 (COVID-19) pandemic. As a result, data collection for the NHANES 2019-2020 cycle was not completed. Data collected in 2019-March 2020 can be accessed as convenience samples through the <a href="https://www.cdc.gov/rdc/" target="_blank">NCHS Research Data Center (RDC)</a>. Any analyses based solely on the 2019-March 2020 data would not be generalizable to the U.S. civilian non-institutionalized population. Please refer to the Analytic Notes section for more details on the use of the data.</p>
+<p>The Infant Formula Questionnaire (IFQ) section provides information on infant formula consumed by survey participants aged 0-24 months old during the 14-day period prior to the interview. In 2019, additional questions on infant feeding and introduction of first foods were added to the survey to fill gaps in scientific knowledge and support evidence-based programs and policies related to early childhood nutrition (see details at: <a href="https://wwwn.cdc.gov/Nchs/Nhanes/limited_access/DB24_K_R.htm" target="_blank">DB24_K_R</a>). To complement these data, the infant formula questions were also added in 2019 to capture infant formulas consumed by survey participants (see details at: <a href="https://wwwn.cdc.gov/Nchs/Nhanes/limited_access/IFGF_K_R.htm" target="_blank">IFQF_K_R</a>). Analysts are encouraged to read the documentations to understand the structure of these files.</p>
+<p>The NHANES Infant Formula Database (NHANES IFD) contains detailed information on the Infant Formulas (IF) reported in IFQ. The NHANES-IFD release consists of four datasets containing information on the following: Infant Formula Product Information (IFPI), Infant Formula Nutrient Information (IFNI), Infant Formula Ingredient Information (IFII), and Infant Formula Label Descriptor (IFLD). These files incorporate all products that have been reported by respondents in the 2019&ndash;March 2020 survey.&nbsp;</p>
+<p>The NHANES IFD is maintained by NHANES nutritionists. Attempts were made to obtain a product label for all reported infant formulas from sources such as the manufacturer or retailer, the Internet, and company catalogs. Selected label information was then entered into the IFD including, but not limited to: supplement name; manufacturer and/or distributor; serving size; form of serving size; nutrients and amounts; and ingredients. The nutrient information entered into the database was taken directly from the nutrient list on the label or carton. The IFD was used to assist with data editing and then made available to the public in four data files (IFPI, IFNI, IFII, and IFLD).</p>
+<p>In addition to entering labels into the IF database, NHANES nutritionists also created and maintained generic infant formulas in the database. Generics were created in the database when a reported formula has partial information provided, such as a store brand formula name and the manufacturer, but no ingredient information available. Private label manufacturers often make products with identical ingredients and nutrient content for different brands. These generic IFs were linked to the ingredients and nutrient content of another product with identical manufacturer and product characteristics. For example, a Brand X Gentle Infant Formula Milk-based Powder was reported, but no label information on ingredient or nutrient content was located. However, there is a label for Brand Y Gentle Infant Formula Milk-based Powder, made by the same manufacturer, in the NHANES IFD. A generic record would be created in the IFD for the Brand X product with ingredient and nutrient content information from Brand Y.&nbsp;</p>
+<div>&nbsp;</div><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The NHANES IFD was used for processing and editing of the infant formula data.</p>
+<p><strong>IFPID:</strong> <span style="text-decoration: underline;">Infant Formula Product ID Number</span><br />
+A unique number assigned to each product entered in the NHANES IFD.</p>
+<p><strong>IFNAME:</strong> <span style="text-decoration: underline;">Name of Infant Formula</span><br />
+The name from the front of the product label. The brand name was generally entered first (i.e., Enfamil), followed by the actual product name (i.e., Gentle). Information such as the formula base (i.e., milk-based) of the product, formula form (i.e., Powder, Ready to Use), and other label descriptors that help distinguish a product from a similar product (i.e., DHA, Lutein, Vitamin E,) were also included if they were on the front of the product label.&nbsp;</p>
+<p><strong>IFBASE:</strong> <span style="text-decoration: underline;">Formula Base</span><br />
+The base (i.e., Milk, Soy) of the formula from the front of the product label.</p>
+<p><strong>IFTARGET:</strong> <span style="text-decoration: underline;">Formula Target</span><br />
+The target (i.e., Newborn, Infant, Toddler, Combined Infant/Toddler) of the formula, usually found on the front of the label.</p>
+<p><strong>IFFORM:</strong> <span style="text-decoration: underline;">Formula Form</span><br />
+The form (i.e., Powder, Ready to Use, Liquid Concentrate) of the formula, usually found on the front of the label.</p>
+<p><strong>IFCONAG:</strong> <span style="text-decoration: underline;">Formula Consumer Age</span><br />
+The consumer age (i.e., 0-3 Months, 0-12 Months, 6-12 Months, 12 Months &amp; Up, etc.) of the formula, usually found on the front of the label.</p>
+<p><strong>IFSERQNT:</strong> <span style="text-decoration: underline;">Formula Serving Quantity</span><br />
+The quantity of the formula serving size.</p>
+<p><strong>IFSERUNT:</strong> <span style="text-decoration: underline;">Formula Serving Unit</span><br />
+The unit (scoop, fluid ounces, bottle, cup, etc.) of the formula serving size.</p>
+<p><strong>IFVERSION:</strong> <span style="text-decoration: underline;">Formula Version</span><br />
+The formula version. All formulas started at version 1.</p>
+<p><strong>IFSOURCE:</strong> <span style="text-decoration: underline;">Formula Source</span><br />
+The source (i.e., Product Label, Product Catalog, Internet, etc.) of each formula label recorded in the IFD.</p>
+<p><strong>IFNID:</strong> <span style="text-decoration: underline;">Nutrient ID Number</span><br />
+The new unique nutrient ID created by the IFD for each nutrient recorded from the product label&rsquo;s nutrient list.</p>
+<p><strong>IFNUNAME:</strong> <span style="text-decoration: underline;">Nutrient Name</span><br />
+Nutrient names were recorded from the product label&rsquo;s nutrient list.</p>
+<p><strong>NUOPER:</strong> <span style="text-decoration: underline;">Nutrient Operator</span><br />
+A symbol =, &lt;, or &gt; that came from the product label&rsquo;s nutrient list.</p>
+<p><strong>NUQNTY:</strong> <span style="text-decoration: underline;">Nutrient Quantity</span><br />
+Nutrient quantity were recorded for each nutrient listed from the product label&rsquo;s nutrient list.&nbsp;</p>
+<p><strong>NUUNIT:</strong> <span style="text-decoration: underline;">Nutrient Unit</span><br />
+Nutrient unit were recorded for each nutrient listed from the product label&rsquo;s nutrient list.</p>
+<p><strong>NUCAT:</strong> <span style="text-decoration: underline;">Nutrient Category</span><br />
+Nutrient categories included: Vitamin, Mineral, Amino Acid, Essential Fatty Acid, Prebiotic, Probiotic, Other. These were assigned by NHANES staff. (Please see <strong>Appendix 1</strong>: Rules for Classifying Nutrient Category.)</p>
+<p><strong>IFIID:</strong> <span style="text-decoration: underline;">Ingredient ID Number</span><br />
+The new unique ingredient ID created by the IFD for each ingredient recorded from the product label.</p>
+<p><strong>IFINNAME:</strong> <span style="text-decoration: underline;">Ingredient Name</span><br />
+Ingredient names were recorded from the product label.</p>
+<p><strong>IFLDID:</strong> <span style="text-decoration: underline;">Label Descriptor ID Number</span><br />
+The new unique label descriptor ID created by the IFD for each description recorded from the product label.</p>
+<p><strong>IFLDNAME:</strong> <span style="text-decoration: underline;">Label Descriptor Name</span><br />
+Label descriptor names were recorded from the product label.</p>
+<p>The NHANES IFD contains information on all IF reported from 2019-March 2020. These data are made available to the public in four files. See below for the file layout for each individual dataset. These four datasets can be linked by infant formula product ID number (IFPID), which is a unique product identifier.&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+</p>
+<table bordercolor="#000000" border="1">
+    <caption valign="top" align="left"><strong>(IFPI): Infant Formula Product Information</strong></caption>
+    <thead>
+        <tr>
+            <th>Variable Name</th>
+            <th>Variable Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>IFPID</td>
+            <td>Formula product ID number</td>
+        </tr>
+        <tr>
+            <td>IFNAME</td>
+            <td>Formula name</td>
+        </tr>
+        <tr>
+            <td>IFBASE</td>
+            <td>Formula base</td>
+        </tr>
+        <tr>
+            <td>IFTARGET</td>
+            <td>Formula target</td>
+        </tr>
+        <tr>
+            <td>IFFORM</td>
+            <td>Formula form</td>
+        </tr>
+        <tr>
+            <td>IFCONAG</td>
+            <td>Formula consumer age</td>
+        </tr>
+        <tr>
+            <td>IFSERQNT</td>
+            <td>Formula serving quantity</td>
+        </tr>
+        <tr>
+            <td>IFSERUNT</td>
+            <td>Formula Serving unit</td>
+        </tr>
+        <tr>
+            <td>IFVERSION</td>
+            <td>Formula version</td>
+        </tr>
+        <tr>
+            <td>IFSOURCE</td>
+            <td>Formula source</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>
+</p>
+<p>
+</p>
+<table bordercolor="#000000" border="1">
+    <caption valign="top" align="left"><strong>(IFNI): Infant Formula Nutrient Information</strong></caption>
+    <thead>
+        <tr>
+            <th>Variable Name</th>
+            <th>Variable Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>IFPID</td>
+            <td>Formula product ID number</td>
+        </tr>
+        <tr>
+            <td>IFNAME</td>
+            <td>Formula name</td>
+        </tr>
+        <tr>
+            <td>IFNID</td>
+            <td>Nutrient ID number</td>
+        </tr>
+        <tr>
+            <td>IFNUNAME</td>
+            <td>Nutrient name</td>
+        </tr>
+        <tr>
+            <td>NUOPER</td>
+            <td>Nutrient Operator</td>
+        </tr>
+        <tr>
+            <td>NUQNTY</td>
+            <td>Nutrient quantity</td>
+        </tr>
+        <tr>
+            <td>NUUNIT</td>
+            <td>Nutrient unit</td>
+        </tr>
+        <tr>
+            <td>NUCAT</td>
+            <td>Nutrient category</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>
+</p>
+<table bordercolor="#000000" border="1">
+    <caption valign="top" align="left"><strong>(IFII): Infant Formula Ingredient Information</strong></caption>
+    <thead>
+        <tr>
+            <th>Variable Name</th>
+            <th>Variable Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>IFPID</td>
+            <td>Formula product ID number</td>
+        </tr>
+        <tr>
+            <td>IFNAME</td>
+            <td>Formula name</td>
+        </tr>
+        <tr>
+            <td>IFIID</td>
+            <td>Ingredient ID number</td>
+        </tr>
+        <tr>
+            <td>IFINNAME</td>
+            <td>Ingredient name</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>
+</p>
+<table bordercolor="#000000" border="1">
+    <caption valign="top" align="left"><strong>(IFLD): Infant Formula Label Descriptor</strong></caption>
+    <thead>
+        <tr>
+            <th>Variable Name</th>
+            <th>Variable Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>IFPID</td>
+            <td>Formula product ID number</td>
+        </tr>
+        <tr>
+            <td>IFNAME</td>
+            <td>Formula name</td>
+        </tr>
+        <tr>
+            <td>IFLDID</td>
+            <td>Label Descriptor ID number</td>
+        </tr>
+        <tr>
+            <td>IFLDNAME</td>
+            <td>Label Descriptor name</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The COVID-19 pandemic required suspension of NHANES 2019-2020 field operations in March 2020 after data were collected in 18 of the 30 survey locations in the 2019-2020 sample. Data collection was cancelled for the remaining 12 locations. Calculation of survey weights for this partial cycle is not possible due to incomplete data collection. Therefore, data from survey components that were only collected in 2019-March 2020 are made available as convenience samples through <a href="https://www.cdc.gov/rdc/" target="_blank">NCHS's Research Data Center (RDC)</a> because unbiased estimates for the NHANES target population cannot be produced with these samples.</p>
+<p>For survey components conducted in both 2017-2018 and 2019-2020 cycles, data collected from 2019 to March 2020 were combined with data from 2017 to 2018 to form a nationally representative sample of <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Cycle=2017-2020" target="_blank">NHANES 2017-March 2020 pre-pandemic data</a>. Please see the NHANES 2017-March 2020 pre-pandemic data page for detailed information on this combined sample.</p>
+<p><strong>Source of Product Information</strong><br />
+The best source of product information is the label itself, but when this cannot be obtained, other sources are used. Information from other sources may not always be an accurate reflection of what is actually on the infant formula label. This is true for the infant formula&rsquo;s apparent name as well as for the nutrients. The apparent name on the container is most important, since interviewers see the infant formula container and record the name as it appears to them. Differences from what appears on the label are particularly noted for information from the Internet (name and nutrients), and infant formula carton (name). In addition, infant formula companies may change the appearance of a label and thus the apparent name without changing the content or may change content with minimal change to the label, or may change both. Attempts were made to obtain updated labels as they come onto the market, but cannot guarantee complete success. The source of the infant formula information (i.e., IFSOURCE) is included in the IFPI dataset.</p>
+<p><strong>Using Self-Reported Data</strong><br />
+NHANES data are self-reported and recorded by interviewers, and thus may contain inconsistencies or errors. Some inconsistencies have been edited; however, users may notice additional inconsistencies. Users are advised to assess the data and edit it as deemed appropriate for the analyses being undertaken.<br />
+</p>
+<div>&nbsp;</div></div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="IFPID">IFPID - Formula product ID number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">IFPID</dd>
+            <dt>SAS Label: </dt>
+            <dd>Formula product ID number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Formula product ID number</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 MONTHS -
+			24 MONTHS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2 to 68</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2778</td>
+                <td class="values" align="right">2778</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="IFNAME">IFNAME - Formula name</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">IFNAME</dd>
+            <dt>SAS Label: </dt>
+            <dd>Formula name</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Formula name</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 MONTHS -
+			24 MONTHS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">Formula name</td>
+                <td class="values">Value was recorded</td>
+                <td class="values" align="right">2778</td>
+                <td class="values" align="right">2778</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">&lt; blank &gt;</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="IFIID">IFIID - Ingredient ID number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">IFIID</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ingredient ID number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Ingredient ID number</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 MONTHS -
+			24 MONTHS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 169</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">2778</td>
+                <td class="values" align="right">2778</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="IFINNAME">IFINNAME - Ingredient name</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">IFINNAME</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ingredient name</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Ingredient name</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 MONTHS -
+			24 MONTHS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">Ingredient name</td>
+                <td class="values">Value was recorded</td>
+                <td class="values" align="right">2778</td>
+                <td class="values" align="right">2778</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">&lt; blank &gt;</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2778</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="Appendices">
+        <div id="Appendix">
+          <h2 id="Appendix_1:_Rules_for_Classifying_Nutrient_Category">Appendix 1: Rules for Classifying Nutrient Category</h2><p><strong><span style="text-decoration: underline;">VITAMINS</span></strong><br />
+<strong>A nutrient is classified as a vitamin if it is a single vitamin listed by its name (e.g., vitamin A).</strong></p>
+<p><strong>The following appear in infant formula as a source of vitamins and are therefore classified as a vitamin:&nbsp;</strong></p>
+<p><span style="white-space: pre;">	</span>&bull;	Vitamin B1/Thiamin<br />
+<span style="white-space: pre;">	</span>&bull;	Vitamin B2/Riboflavin<br />
+<span style="white-space: pre;">	</span>&bull;	Vitamin B3/Niacin<br />
+<span style="white-space: pre;">	</span>&bull;	Vitamin B5/Pantothenic Acid<br />
+<span style="white-space: pre;">	</span>&bull;	Vitamin B6<br />
+<span style="white-space: pre;">	</span>&bull;	Vitamin B12<br />
+<span style="white-space: pre;">	</span>&bull;	Vitamin C/Ascorbic Acid&nbsp;<br />
+<span style="white-space: pre;">	</span>&bull;	Vitamin D<br />
+<span style="white-space: pre;">	</span>&bull;	Vitamin E<br />
+<span style="white-space: pre;">	</span>&bull;	Vitamin K<br />
+<span style="white-space: pre;">	</span>&bull;	Biotin&nbsp;<br />
+<span style="white-space: pre;">	</span>&bull;	Choline<br />
+<span style="white-space: pre;">	</span>&bull;	Folic Acid/Folate: Folic Acid (Folacin)</p>
+<p><strong><span style="text-decoration: underline;">MINERALS</span></strong></p>
+<p><strong>A nutrient is classified as a mineral if it is a macro or micromineral (trace element) in its elemental form (e.g., iron).</strong></p>
+<p><strong>The following are classified as minerals:</strong></p>
+<p><span style="white-space: pre;">	</span>&bull;	Calcium<br />
+<span style="white-space: pre;">	</span>&bull;	Chromium<br />
+<span style="white-space: pre;">	</span>&bull;	Copper<br />
+<span style="white-space: pre;">	</span>&bull;	Iodine<br />
+<span style="white-space: pre;">	</span>&bull;	Iron<br />
+<span style="white-space: pre;">	</span>&bull;	Magnesium<br />
+<span style="white-space: pre;">	</span>&bull;	Manganese<br />
+<span style="white-space: pre;">	</span>&bull;	Molybdenum<br />
+<span style="white-space: pre;">	</span>&bull;	Phosphorus<br />
+<span style="white-space: pre;">	</span>&bull;	Selenium<br />
+<span style="white-space: pre;">	</span>&bull;	Zinc</p>
+<p><strong><span style="text-decoration: underline;">AMINO ACIDS</span></strong></p>
+<p><strong>A nutrient is classified as an amino acid if it is an essential or nonessential amino acid. It can exist in its free form (e.g., taurine).</strong></p>
+<p>The following nutrient is classified as amino acid:</p>
+<p><span style="white-space: pre;">	</span>&bull;	Taurine</p>
+<p><strong><span style="text-decoration: underline;">OTHER</span></strong></p>
+<p>The following are examples of nutrients that would be classified as "other":</p>
+<p>
+<span style="white-space: pre;">	</span>&bull;	an electrolyte (e.g., chloride, potassium, sodium)<br />
+<span style="white-space: pre;">	</span>&bull;	Calories, calories from fat<br />
+<span style="white-space: pre;">	</span>&bull;	Carbohydrate: Total Carbohydrate, Carbohydrate, Dietary Fiber, Total Sugars, Sugars, <span style="white-space: pre;">	</span>Added&nbsp;Sugars<br />
+<span style="white-space: pre;">	</span>&bull;	Fat: Total Fat, Fat, Milk Fat, Monounsaturated Fat, Polyunsaturated Fat, Saturated Fat, <span style="white-space: pre;">	</span>Trans&nbsp;Fat, Cholesterol<br />
+<span style="white-space: pre;">	</span>&bull;	Protein: Milk Protein, Protein Equivalent, Proteins<br />
+<span style="white-space: pre;">	</span>&bull;	Water<br />
+<span style="white-space: pre;">	</span>&bull;	Inositol&nbsp;</p>
+<p><strong><span style="text-decoration: underline;">Essential Fatty Acid</span></strong></p>
+<p><strong>A nutrient is classified as an essential fatty acid if it is listed as an essential fatty acid.</strong>&nbsp;</p>
+<p>The following nutrients are classified as an essential fatty acid:</p>
+<p><span style="white-space: pre;">	</span>&bull;	Alpha-Linolenic Acid (ALA)<br />
+<span style="white-space: pre;">	</span>&bull;	DHA (Docosahexaenoic Acid)<br />
+<span style="white-space: pre;">	</span>&bull;	Linoleic Acid<br />
+</p>
+<div>&nbsp;</div></div>
+      </div>
+    </div>
+  </body>
+</html>

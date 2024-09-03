@@ -1,0 +1,604 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SSFA_B_R</title>
+    <meta name="title" content="NHANES 2001-2002: Folate - Folic acid &amp; 5-methyltetrahydrofolate - Serum (Surplus) Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0 3em 1em;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					padding: 0 3em 1em;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					padding: 0;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#SSSF1">SSSF1 - 5-Methyltetrahydrofolic acid (nmol/L) </a>
+              </li>
+              <li>
+                <a href="#SSSF2">SSSF2 - Folic Acid (nmol/L)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2001-2002 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Folate - Folic acid &amp; 5-methyltetrahydrofolate - Serum (Surplus) (SSFA_B_R)</h3>
+        <h4>RDC Only  Data File: SSFA_B_R.xpt</h4>
+        <h5 class="left">First Published: July 2014</h5>
+        <h5 class="right">Last Revised: May 2022</h5>
+        <h5 class="left">Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+        <div style="width: 75%; margin-left: 20%">
+          <h5 class="specialnote">Note: The NHANES Biospecimen Program processes were reevaluated in 2021 and 2022 to monitor quality control after a procedural error was identified. This error did not pose any risk of participant disclosure. Addressing this error resulted in the removal of some records from various stored biospecimen data files between 1999 and 2018 that did not meet program standards. After a comprehensive review of all stored specimen datasets, this data file was modified to remove records (<5% of records) that were initially included in error. No data values were altered. The overall estimates from these files were examined and are consistent with the previous file. However, not all possible analyses were performed. For any queries related to this dataset please email the Biospecimen Program at serumplasmaurine@cdc.gov.</h5>
+        </div>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>Measurement of folic acid and 5-methyltetrahydrofolate (5-methylTHF) in a subset of stored serum samples from NHANES 2001-2002 to allow comparison of CDC liquid chromatography tandem mass spectrometry (LC-MS/MS) method to data generated previously by Tufts University HPLC method with electrochemical detection.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Selected participants 60 years and older who
+provided informed consent for further testing of stored specimen. See &ldquo;Analytic
+Notes&rdquo; session for details on selection criteria.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p><strong>Measurement of folic acid and 5-methyltetrahydrofolate.</strong></p>
+<p>An isotope-dilution tandem mass spectrometry method coupled to liquid chromatography (LC-MS/MS) was used to measure folate forms in serum. To prepare samples for analysis, serum (275 &micro;L) was mixed with ammonium formate buffer and amended with internal standard mixture that contained 13C5-labeled folate forms. Sample clean-up was performed using a 100-mg phenyl solid phase extraction (SPE) 96-well plate (Bond Elut 96; Agilent Technologies) and an automated 8-probe SPE system (Gilson 215; Gilson Inc.). Samples were eluted from the SPE plate with an organic elution buffer containing ascorbic acid and analyzed overnight by LC-MS/MS in positive ion mode using electrospray ionization on an AB Sciex 5500 triple-quadrupole MS system (Applied Biosystems) coupled to a HP1200C LC system (Agilent Technologies). Chromatographic separation was achieved using a Luna C-8 (2) analytical column (Phenomenex) with an isocratic mobile phase and a total run time of 7 min. Quantitation was performed by peak area ratio (analyte to internal standard) and based on a 6-point aqueous calibration curve that was carried through all sample preparation steps. The calibration range was 0&ndash;100 nmol/L for 5-methylTHF, and 0&ndash;50 nmol/L for folic acid. Values higher than the highest calibrator were diluted with 0.1% ascorbic acid and repeated for confirmation. </p>
+<table>
+    <caption>Limits of detection (LOD)</caption>
+    <thead>
+        <tr>
+            <th id="ms__id12_heading_0">&nbsp;<strong>Analyte Name</strong></th>
+            <th id="ms__id12_heading_1">&nbsp;Variable Name</th>
+            <th id="ms__id12_heading_2">&nbsp;LOD (nmol/L)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td headers="ms__id12_heading_0">&nbsp;Serum 5-methyltetrahydrofolate</td>
+            <td headers="ms__id12_heading_1">&nbsp;SSSF1</td>
+            <td headers="ms__id12_heading_2">&nbsp;0.31</td>
+        </tr>
+        <tr>
+            <td headers="ms__id12_heading_0">&nbsp;Serum folic acid</td>
+            <td headers="ms__id12_heading_1">&nbsp;SSSF2</td>
+            <td headers="ms__id12_heading_2">&nbsp;0.09</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p><h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>The laboratory and method were certified according to the Clinical Laboratory Improvement Amendments (1988) guidelines.</p>
+<p>In-house prepared serum quality control pools at three levels were analyzed in every run in duplicate and evaluated for validity against pre-established means and control limits by use of a multi-rule quality control program. </p>
+<div>
+</div>
+<table align="center">
+    <caption>Performance of QC pools during the study period (Oct&ndash;Dec 2013) </caption>
+    <thead>
+        <tr>
+            <th id="ms__id61_heading_0"><strong>QC Pool</strong>&nbsp;</th>
+            <th id="ms__id61_heading_1">&nbsp;Analyte</th>
+            <th id="ms__id61_heading_2">n&nbsp;</th>
+            <th id="ms__id61_heading_3"><strong>Mean (nmol/L)</strong>&nbsp;</th>
+            <th id="ms__id61_heading_4"><strong>SD (nmol/L)</strong>&nbsp;</th>
+            <th id="ms__id61_heading_5"><strong>CV (%)</strong>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td headers="ms__id61_heading_0">&nbsp;LS11430d_LC</td>
+            <td headers="ms__id61_heading_1">&nbsp;SSSF1</td>
+            <td headers="ms__id61_heading_2">&nbsp;10</td>
+            <td headers="ms__id61_heading_3">&nbsp;18.6</td>
+            <td headers="ms__id61_heading_4">&nbsp;0.54</td>
+            <td headers="ms__id61_heading_5">&nbsp;2.9%</td>
+        </tr>
+        <tr>
+            <td headers="ms__id61_heading_0">&nbsp;MS11431d_LC</td>
+            <td headers="ms__id61_heading_1">&nbsp;SSSF1</td>
+            <td headers="ms__id61_heading_2">&nbsp;10</td>
+            <td headers="ms__id61_heading_3">&nbsp;34.2</td>
+            <td headers="ms__id61_heading_4">&nbsp;0.81</td>
+            <td headers="ms__id61_heading_5">&nbsp;2.4%</td>
+        </tr>
+        <tr>
+            <td headers="ms__id61_heading_0">&nbsp;HS11432d_LC</td>
+            <td headers="ms__id61_heading_1">&nbsp;SSSF1</td>
+            <td headers="ms__id61_heading_2">&nbsp;10</td>
+            <td headers="ms__id61_heading_3">&nbsp;49.7</td>
+            <td headers="ms__id61_heading_4">&nbsp;1.54</td>
+            <td headers="ms__id61_heading_5">&nbsp;3.1%</td>
+        </tr>
+        <tr>
+            <td headers="ms__id61_heading_0">&nbsp;LS11430d_LC</td>
+            <td headers="ms__id61_heading_1">&nbsp;SSSF2</td>
+            <td headers="ms__id61_heading_2">&nbsp;12</td>
+            <td headers="ms__id61_heading_3">&nbsp;0.66</td>
+            <td headers="ms__id61_heading_4">&nbsp;0.10</td>
+            <td headers="ms__id61_heading_5">&nbsp;14.7%</td>
+        </tr>
+        <tr>
+            <td headers="ms__id61_heading_0">&nbsp;MS11431d_LC</td>
+            <td headers="ms__id61_heading_1">&nbsp;SSSF2</td>
+            <td headers="ms__id61_heading_2">&nbsp;12</td>
+            <td headers="ms__id61_heading_3">&nbsp;5.46</td>
+            <td headers="ms__id61_heading_4">&nbsp;0.44</td>
+            <td headers="ms__id61_heading_5">&nbsp;8.0%</td>
+        </tr>
+        <tr>
+            <td headers="ms__id61_heading_0">&nbsp;HS11432d_LC</td>
+            <td headers="ms__id61_heading_1">&nbsp;SSSF2</td>
+            <td headers="ms__id61_heading_2">&nbsp;12</td>
+            <td headers="ms__id61_heading_3">&nbsp;10.2</td>
+            <td headers="ms__id61_heading_4">&nbsp;0.62</td>
+            <td headers="ms__id61_heading_5">&nbsp;6.1%</td>
+        </tr>
+    </tbody>
+</table>
+<p>The method achieved satisfactory performance using the National Institute of Standards and Technology standard reference material 1950, matching the certified value [uncertainty] for 5-methylTHF (26.7 vs. 26.9 [0.70] nmol/L) and the reference value for folic acid (4.03 vs. 3.42 [1.02] nmol/L).</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Data
+were received after all the laboratory testing was complete. The data were not
+edited for extreme values.</p>
+<p>Data Access: Data will only be
+available through the Research Data Center.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>Samples were selected
+from 650 surplus serum
+samples from participants 60 years and older from NHANES 2001-2002 who provided informed
+consent for further testing of stored specimen and where there was
+sufficient specimen volume for the proposed analyses. Samples were selected based
+on their folic acid concentration (as measured in a previous surplus specimen project
+by Tufts University) to ensure a folic acid distribution throughout the
+reported concentration range.</p>
+<p style="text-align: left;">The current project did
+not use pristine (never thawed) samples, because the laboratory showed that
+multiple freeze/thawing cycles do not cause a noticeable loss of folate forms
+(1). In recent in-house studies, the laboratory also saw that multiple serum QC
+pools stored for up to 10 years at -70&deg;C did not appear to lose folic acid,
+that three serum QC pools stored for up to 1 year at -20&deg;C did not lose folic
+acid, and that three serum QC pools stored refrigerated for 1 year lost on
+average only 6.6% folic acid (unpublished data). While a storage-related
+increase in serum folic acid may be rationalized as a result of tetrahydrofolate
+(THF) oxidation, this is unlikely if samples are stored at -70&deg;C. In three
+serum QC pools stored for up to 7 years at -70&deg;C the laboratory did not observe
+a loss of trace levels of THF (&le;1 nmol/L). Furthermore, THF concentrations are
+generally very low in serum, often below the LOD. Lastly, the serum samples
+used by the Tufts method in the previous project were also surplus specimens
+that had been through two or more freeze/thawing cycles and would therefore be
+expected to show similar changes in folate forms, if any.</p>
+<p><b>Correction Needed
+for Serum Folic Acid Results for 2001-2002 NHANES Surplus Sera Project</b></p>
+<p style="text-align: left;">For
+NHANES samples collected in the 2001-2002 cycle, the CDC Nutritional Biomarkers
+Laboratory measured serum 5-methyl-tetrahydrofolate and folic
+acid by isotope-dilution high performance liquid chromatography coupled to
+tandem mass spectrometry (LC-MS/MS) to compare their results to Tufts
+University HPLC method. These data were first published to the Research Data
+Center in July 2014. In 2015, the CDC laboratory discovered a calibration bias
+in the folic acid determination that resulted in overestimation of folic acid
+concentrations by about 25% as a result of solubility issues with the
+calibrator (see Analytic Notes for &ldquo;<a href="https://wwwn.cdc.gov/Nchs/Nhanes/2011-2012/FOLFMS_G.htm">Folate Forms &ndash;
+Serum&rdquo; in NHANES 2011&ndash;2012</a>). The laboratory
+corrected the assay and conducted a crossover study to assess whether folic
+acid data from various NHANES survey cycles needed to be adjusted. Based on the
+crossover study, the CDC folic acid results in this dataset have been corrected
+for the calibration bias using the following equation: New folic acid = 0.7586
+* Original folic acid &ndash; 0.00016. </p>
+<p><b>Comparability of
+Serum 5-methylTHF and Folic Acid Concentrations Measured by CDC versus NHANES
+1999-2002 Concentrations Measured by Tufts</b></p>
+<p>Serum 5-methylTHF
+and folic acid concentrations were measured by Tufts University using HPLC with
+electrochemical detection in American seniors (&ge;60 y) in NHANES 1999&ndash;2002 as
+part of a surplus specimen project to assess the relationship to anemia,
+macrocytosis and cognitive test performance (Bailey, et al. 2010; Morris, et
+al. 2010). To assess method differences between Tufts and CDC, a method
+comparison study was performed in 2013 on 311 surplus serum specimens from
+American seniors (&ge;60 y) in NHANES 2001&ndash;2002. Results for serum 5-methylTHF
+compared well between the two methods: mean (95% CI, nmol/L): 47.7 (44.5&ndash;50.9)
+[CDC] and 48.6 (45.8&ndash;51.4) [Tufts]; median (95% CI, nmol/L): 42.9 (38.2&ndash;45.4)
+[CDC] and 45.0 (41.3&ndash;48.0) [Tufts]; Pearson r: 0.89; no bias based on Deming
+regression (using log-transformed data) and Bland Altman relative difference
+analysis. </p>
+<p>As mentioned
+above, the CDC folic acid results reported in this dataset have been corrected
+for the calibration bias. The CDC method detected folic acid in all samples
+(LOD = 0.09 nmol/L), while the detection rate of the Tufts method (LOD = 0.18
+nmol/L) was ~35% in the full sample set (n = 1330; See the <a href="https://wwwn.cdc.gov/Nchs/Nhanes/limited_access/SSFOL_B.htm">2001-2002
+Surplus Sera Folate (SSFOL_B)</a> data).
+Overall, the correlation was low in the surplus sample set (Pearson r: 0.64, n
+= 311). In the subset of samples that had detectable folic acid results by the
+Tufts method (n = 163) and that did not include extreme outliers (n = 156;
+difference between the two results was &lt;20 nmol/L), the CDC folic acid
+results were on average comparable to the Tufts results: mean (95% CI, nmol/L):
+3.71 (2.40&ndash;5.02) [CDC] and 3.11 (2.19&ndash;4.02) [Tufts]; median (95% CI, nmol/L):
+1.10 (0.99&ndash;1.37) [CDC] and 1.20 (0.88&ndash;1.62) [Tufts]; Pearson r: 0.92; Deming
+slope using log-transformed data (95%CI): 0.89 (0.76 to 1.02); Deming intercept
+using log-transformed data (95% CI): 0.06 (0.00 to 0.12); Bland Altman relative
+difference (95% CI): 10.3% (-1.9% to 22.5%). </p>
+<p>Samples with
+sufficient sample volume (n = 17) were repeated by the CDC method; the repeat
+results confirmed the original results and were on average (SD) 5% (7%) higher
+for folic acid and 2% (5%) higher for 5-methylTHF. </p>
+<p>The findings from
+this method comparison study suggest that the NHANES 1999&ndash;2002 Tufts surplus
+results can be compared for 5-methylTHF to the NHANES 2007&ndash;2008 CDC results.
+However, the comparability for folic acid is limited due to the different
+detection rates for these two methods. &nbsp; </p>
+<p>
+The current study is a method comparison project and there was no intent
+to establish population estimates, therefore, no special sample weights are used with these analyses or prepared for this dataset.</p></div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>Bailey RL, Mills JL, Yetley EA, Gahche JJ, Pfeiffer CM, Dwyer JT, Dodd KW, et al. Unmetabolized serum folic acid and its relation to folic acid intake from diet and supplements in a nationally representative sample of adults aged &ge;60 y in the United States. Am J Clin Nutr. 2010;92:383&ndash;9.</li>
+          <li>Caudill SP, Schleicher RL, Pirkle JL. 2008. Multi-rule quality control for the age-related eye disease study. Stat Med 27:4094-4106.</li>
+          <li>Clinical Laboratory Improvement Amendment. Public Law 100-578. 1988. 10-31-1988.</li>
+          <li>Fazili Z, Pfeiffer CM. Accounting for an isobaric interference allows correct determination of folate vitamers in serum by isotope dilution-liquid chromatography-tandem mass spectrometry. J Nutr. 2012;143:108&ndash;13.</li>
+          <li>Fazili Z, Pfeiffer CM. Measurement of folates in serum and conventionally prepared whole blood lysates: application of an automated 96-well plate isotope-dilution tandem mass spectrometry method. Clin Chem. 2004;50:2378&ndash;81.</li>
+          <li>Morris MS, Jacques PF, Rosenberg IH, Selhub J. Circulating unmetabolized folic acid and 5-methyltetrahydrofolate in relation to anemia, macrocytosis, and cognitive test performance in American seniors. Am J Clin Nutr. 2010;91:1733&ndash;44.</li>
+          <li>Pfeiffer CM, Fazili Z, McCoy L, Zhang M, Gunter EW. Determination of folate vitamers in human serum by stable-isotope-dilution tandem mass spectrometry and comparison with radioassay and microbiologic assay. Clin Chem. 2004;50:423&ndash;32.</li>
+          <li>Phinney KW, Ballihaut G, Bedner M, Benford BS, Camara JE, Christopher SJ, et al. Development of a standard reference material for metabolomics research. Anal Chem. 2013;85:11732-8.</li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSSF1">SSSF1 - 5-Methyltetrahydrofolic acid (nmol/L) </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSSF1</dd>
+            <dt>SAS Label: </dt>
+            <dd>5-Methyltetrahydrofolic acid (nmol/L) </dd>
+            <dt>English Text: </dt>
+            <dd class="info">5-Methyltetrahydrofolic acid (nmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">6.8 to 130.3</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">252</td>
+                <td class="values" align="right">252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">45</td>
+                <td class="values" align="right">297</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSSF2">SSSF2 - Folic Acid (nmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSSF2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Folic Acid (nmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Folic Acid (nmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.18 to 66.71</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">297</td>
+                <td class="values" align="right">297</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">297</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

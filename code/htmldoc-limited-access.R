@@ -10,6 +10,8 @@ library(nhanesA)
 nhanesOptions(use.db = FALSE, log.access = TRUE)
 mf_pub <- nhanesManifest("public") # only for checking
 
+## FIXME: delete 'All Years' row?
+
 mf <- nhanesManifest("limitedaccess")
 mf <- mf[order(mf$Table), ]
 

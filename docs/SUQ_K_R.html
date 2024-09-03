@@ -1,0 +1,1060 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SUQ_K_R</title>
+    <meta name="title" content="NHANES 2019-March 2020: Salt Use Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0 3em 1em;
+					text-align: left;
+					}
+
+					.nhanes-doc ol,
+					.nhanes-doc ul {
+					margin-left: 2.4em;
+					margin-bottom: 1.2em;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					}
+
+					.nhanes-doc li {
+					margin-top: 0.6em;
+					}
+
+					.nhanes-doc #toc ul,
+					.nhanes-doc #References ul {
+					margin-left: 0em;
+					}
+
+					.nhanes-doc #Sections ol ul,
+					.nhanes-doc #Sections ul ul {
+					margin-left: 0;
+					}
+
+					.nhanes-doc #Sections ol ol,
+					.nhanes-doc #Sections ul ol {
+					margin-left: -1.2em;
+					}
+
+					.nhanes-doc #Sections li {
+					margin-left: 1.2em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					padding: 0;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#SUQ010G">SUQ010G - Salt use</a>
+              </li>
+              <li>
+                <a href="#SUD010Q">SUD010Q - Number of salt containers seen</a>
+              </li>
+              <li>
+                <a href="#INSTANCE">INSTANCE - Salt container ID</a>
+              </li>
+              <li>
+                <a href="#SUQ020">SUQ020 - How is salt used?</a>
+              </li>
+              <li>
+                <a href="#SUQ030">SUQ030 - Low sodium mentioned on package?</a>
+              </li>
+              <li>
+                <a href="#SUQ040">SUQ040 - Potassium chloride as ingredient?</a>
+              </li>
+              <li>
+                <a href="#SUQ050">SUQ050 - Is salt package labeled as iodized?</a>
+              </li>
+              <li>
+                <a href="#SUQ060">SUQ060 - Iodine listed in food label?</a>
+              </li>
+              <li>
+                <a href="#IOSALT">IOSALT - Iodized Salt</a>
+              </li>
+              <li>
+                <a href="#SUD070">SUD070 - Permission for salt collection?</a>
+              </li>
+              <li>
+                <a href="#SUD080">SUD080 - Sample obtained for testing?</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2019-March 2020 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Salt Use (SUQ_K_R)</h3>
+        <h4>RDC Only  Data File: SUQ_K_R.xpt</h4>
+        <h5 class="left">First Published: February 2023</h5>
+        <h5 class="right">Last Revised: NA</h5>
+        <h5 class="left">Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The NHANES program suspended field operations in March 2020 due to the coronavirus disease 2019 (COVID-19) pandemic. As a result, data collection for the NHANES 2019-2020 cycle was not completed. Data collected in 2019-March 2020 can be accessed as convenience samples through the <a href="https://www.cdc.gov/rdc/" target="_blank">NCHS Research Data Center (RDC)</a>. Any analyses based solely on the 2019-March 2020 data would not be generalizable to the U.S. civilian non-institutionalized population. Please refer to the Analytic Notes section for more details on the use of the data.</p>
+<p>The Salt Use questionnaire (variable name prefix SUQ) provides information on the salt(s) used in the household. These questions were added to the survey in 2019 with the focus on assessing the use of iodized salt in the household among U.S. populations. Ensuring adequate iodine intake is a key element of public health practice, as iodine deficiency is the leading cause of preventable mental retardation in newborns worldwide. Insufficient intake can lead to disordered thyroid function in pregnant women, low iodine stores in newborn infants, and altered thyroid function in other susceptible individuals. Iodized salt is one of the main sources of iodine intake in the U.S., along with others including dairy products, eggs, baked goods, and some dietary supplements. Although some salts have iodine added, these iodine levels tend to degrade over time, thus current contribution of iodized household salt is unknown in the U.S. (Hollowell et al., 1998). This new set of questions collects information from the container(s) of the salt(s) used at home to help determine whether iodized salt was used. It also facilitates the collection of salt samples from households for iodine level testing.&nbsp;</p>
+<p>During the household interview, the interviewer asked to see the container for the salt that is usually added to food at the table and the salt that is usually used in cooking or preparing foods at home. This included ordinary salt, sea salt, seasoning salts, lite salt, and salt substitutes. If more than one salt product was used in the household, the most frequently used two salts were recorded. For each salt recorded, the following information was collected by the interviewer through the observation of the salt container(s) provided:</p>
+<p style="margin-left: 40px;">&bull;	Whether the phrase &ldquo;lite&rdquo;, &ldquo;lower sodium&rdquo;, &ldquo;less sodium&rdquo;, &ldquo;sodium free&rdquo;, or a &ldquo;salt substitute&rdquo; was mentioned on the container label;<br />
+&bull;	Whether &ldquo;potassium chloride&rdquo; was included in the ingredient list;<br />
+&bull;	Whether the phrase &ldquo;supplies iodine&rdquo;, &ldquo;supplies iodide&rdquo;, or is &ldquo;iodized&rdquo; was mentioned on the container label; and<br />
+&bull;	Whether the word &ldquo;iodine&rdquo;, &ldquo;iodide&rdquo;, or &ldquo;iodate&rdquo; was included in the nutrition facts panel or the ingredient list.</p>
+<p>The questionnaire instrument used the above information to identify salts that were eligible to be collected for laboratory testing. This included salts containing iodine, and salts with an unlabeled container or where the original packaging was not available or too difficult to read. The interviewer collected the eligible salt sample(s) and obtained additional information for the sample(s). Please refer to the <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/manuals/2020-Interviewer-Procedures-Manual-508.pdf" target="_blank">National Health and Nutrition Examination Survey (NHANES) Interviewer Procedures Manual 2020 (cdc.gov)</a> for additional information on the SUQ and salt sample collection. Laboratory results from salt samples were reported in the dataset <a href="https://wwwn.cdc.gov/Nchs/Nhanes/limited_access/IODS_K_R.htm" target="_blank">Iodine - Salt (IODS_K_R)</a> that is available through RDC as well.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>All participants in the NHANES 2019-March 2020 convenience sample were eligible.&nbsp;</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>These questions were asked in the home to an adult respondent, by trained interviewers, using the Computer Assisted Personal Interview (CAPI) system.&nbsp;</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>The CAPI system is programmed with built-in consistency checks to reduce data entry errors. CAPI also uses online help screens to assist interviewers in defining key terms used in the questionnaire. All data was reviewed by the NHANES field office staff for accuracy and completeness.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Frequency counts were checked, "skip" patterns were verified, and the reasonableness of question responses was reviewed. Edits were made to some variables to ensure the completeness, consistency, and analytic usefulness of the data. Edits were also made, when necessary, to address data disclosure concerns. When a variable was modified globally, as part of the editing process, the third letter in the variable name was changed from a Q (i.e., SUQ) to a D (i.e., SUD).&nbsp;</p>
+<p><strong>SUD010Q</strong>: This variable indicated the number of salt containers seen during the interview. &ldquo;No container seen&rdquo; (SUD010Q=0) was coded if: 1) a salt was reported being used in the household but no container was available at the time of interview (i.e., SUQ010G=0); 2) no salt was reported being used in the household (i.e., SUQ010G=2); or 3) the respondent refused to answer (i.e., SUQ010G=7) or did not know about the salt use in the household (i.e., SUQ010G=9).&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+<p><strong>INSTANCE</strong>: The current dataset includes, for each participant, one record for each salt container reported in the household. This variable encoded the unique salt container ID for each instance of salt reported. If no salt was reported or a container was not provided for the household, the record has this data item, INSTANCE, coded as missing (&ldquo;.&rdquo;).</p>
+<p><strong>IOSALT</strong>: This variable was created to provide information on whether the reported salt was iodized.&nbsp; The salt was deemed as iodized (IOSALT=1), if: 1) the text on the salt container label mentioned that the salt "supplies iodine", "supplies iodide", or is "iodized" (i.e., SUQ050=1); or 2) the word "iodine", "iodide", or "iodate" was included in the nutrition facts panel or the ingredient list on the container label (i.e., SUQ060=1). If the salt was provided in an unlabeled container (e.g., a saltshaker or grinder), the interviewer was instructed to ask to see the original packaging for the salt. If the original packaging was not available (i.e., SUQ030=4), or if the text on the provided container label or packaging was not legible (i.e., SUQ030=3), the salt iodization status was coded as &ldquo;cannot be ascertain by package&rdquo; (IOSALT=3).</p>
+<p><strong>SUD070</strong>: During the interview, the interviewer asked permission to collect 2 teaspoons of salt sample for laboratory testing on iodine level if there is a participant in the household that was 3 years or older, and the salt was identified as iodized or its iodization status could not be determined by the package (i.e., IOSALT=1 or 3). This variable indicated whether the respondent gave permission to collect the salt sample. Later in 2019, due to budget constraint, the testing sample for iodized salt had to be further limited to only those households that also had participants included in the thyroid panel testing (all examined participants aged 3 to 5 years, and participants aged 6 years and older from a one-third subsample were eligible). Participants who came from a household with an iodized salt identified (including those that could not be ascertained by the package) but did not have collection permission requested had their salt records coded as such in SUD070 (SUD070=3).&nbsp; &nbsp; &nbsp;&nbsp;</p>
+<p><strong>SUD080</strong>: This variable indicated whether the salt sample was obtained for testing, and if not, the reason the samples were not obtained. In 2019-March 2020, the most frequent issue we encountered was that there was not enough salt left in the container to collect for testing.&nbsp;</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The COVID-19 pandemic required suspension of NHANES 2019-2020 field operations in March 2020 after data were collected in 18 of the 30 survey locations in the 2019-2020 sample. Data collection was cancelled for the remaining 12 locations. Calculation of survey weights for this partial cycle is not possible due to incomplete data collection. Therefore, data from survey components that were only collected in 2019-March 2020 are made available as convenience samples through <a href="https://www.cdc.gov/rdc/" target="_blank">NCHS's Research Data Center (RDC)</a> because unbiased estimates for the NHANES target population cannot be produced with these samples.&nbsp;</p>
+<p>For survey components conducted in both 2017-2018 and 2019-2020 cycles, data collected from 2019 to March 2020 were combined with data from 2017 to 2018 to form a nationally representative sample of NHANES 2017-March 2020 pre-pandemic data. Please see the&nbsp;<a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Cycle=2017-2020" target="_blank">NHANES 2017-March 2020 pre-pandemic data</a> page for detailed information on this combined sample.</p>
+<p>The current dataset contains one record for each salt container reported in the household. Therefore, for participants who lived in a household with more than one salt product used, they could have up to two records under their survey participant identifier, SEQN. For these participants, the record with INSTANCE = 1 contains information from the first reported salt, and the record with INSTANCE = 2 contains information from the second salt. This dataset can be merged to the laboratory dataset <a href="https://wwwn.cdc.gov/Nchs/Nhanes/limited_access/IODS_K_R.htm" target="_blank">Iodine - Salt (IODS_K_R)</a>, using SEQN, to obtain the iodine level for each salt sample collected. Laboratory results reported in LBXSL1 (first salt collection) and LBXSL2 (second salt collection) in the IODS_K_R file are corresponding to the information in the records with INSTANCE = 1 and INSTANCE = 2 for the same participant in the present SUQ_K_R file, respectively.&nbsp; &nbsp;&nbsp;</p></div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>Hollowell, JE et al. 1998. Iodine nutrition in the United States. Trends and public health implications: Iodine excretion data from National Health and Nutrition Examination Surveys I and III (1971-74 and 1988-94). J Clin Endocrinol Metab 83:3401-3408.</li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SUQ010G">SUQ010G - Salt use</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SUQ010G</dd>
+            <dt>SAS Label: </dt>
+            <dd>Salt use</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now I'll be asking some questions about the types of salt used most often in {your/this} household.  May I please see the container for the salt that is usually added to food at the table and the salt that is usually used in cooking or preparing foods. This includes ordinary salt, sea salt, seasoning salts, lite salt and salt substitutes.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">READ IF PARTICIPANT WANTS TO REPORT MORE THAN 2 SALTS: This is the salt most frequently used and not salts you may use occasionally. You may report up to 2 salts.  INTERVIEWER INSTRUCTION: DO NOT INCLUDE "SALT FREE" SEASONINGS SUCH AS MRS. DASH OR BENSON'S GOURMET SEASONINGS' TABLE TASTY.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Salt used but no container available</td>
+                <td class="values" align="right">249</td>
+                <td class="values" align="right">249</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Salt used and container(s) seen</td>
+                <td class="values" align="right">6877</td>
+                <td class="values" align="right">7126</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Salt is not used in the household</td>
+                <td class="values" align="right">388</td>
+                <td class="values" align="right">7514</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">30</td>
+                <td class="values" align="right">7544</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">7544</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">330</td>
+                <td class="values" align="right">7874</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SUD010Q">SUD010Q - Number of salt containers seen</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SUD010Q</dd>
+            <dt>SAS Label: </dt>
+            <dd>Number of salt containers seen</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now I'll be asking some questions about the types of salt used most often in {your/this} household.  May I please see the container for the salt that is usually added to food at the table and the salt that is usually used in cooking or preparing foods. This includes ordinary salt, sea salt, seasoning salts, lite salt and salt substitutes.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">ENTER NUMBER OF CONTAINERS SEEN
+CAPI INSTRUCTION: HARD EDIT: 1-2.  IF MORE THAN TWO SALT CONTAINERS ARE ENTERED, DISPLAY "I can only enter information about 2 salts.  Which two do you most frequently use?"  
+HARD EDIT: 0. IF SUQ.010Q=0, DISPLAY "INVALID RESPONSE". IF ZERO CONTAINERS SEEN, GO BACK TO SUQ.010G AND SELECT ANOTHER RESPONSE.
+IF RIQ.006=SOMEONE NOT LIVING IN HH, FILL "this."</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No container seen</td>
+                <td class="values" align="right">667</td>
+                <td class="values" align="right">667</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">One container seen</td>
+                <td class="values" align="right">3741</td>
+                <td class="values" align="right">4408</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Two containers seen</td>
+                <td class="values" align="right">3136</td>
+                <td class="values" align="right">7544</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">330</td>
+                <td class="values" align="right">7874</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="INSTANCE">INSTANCE - Salt container ID</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">INSTANCE</dd>
+            <dt>SAS Label: </dt>
+            <dd>Salt container ID</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Instance of salt</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">The first salt container seen</td>
+                <td class="values" align="right">5309</td>
+                <td class="values" align="right">5309</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">The second salt container seen</td>
+                <td class="values" align="right">1568</td>
+                <td class="values" align="right">6877</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">997</td>
+                <td class="values" align="right">7874</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SUQ020">SUQ020 - How is salt used?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SUQ020</dd>
+            <dt>SAS Label: </dt>
+            <dd>How is salt used?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Is this salt used most frequently at the table, in cooking, or do you use it for both?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER INSTRUCTION: HOLDING THE [FIRST, SECOND] SALT IDENTIFIED.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">At the table</td>
+                <td class="values" align="right">595</td>
+                <td class="values" align="right">595</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">In cooking</td>
+                <td class="values" align="right">2613</td>
+                <td class="values" align="right">3208</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">At the table and in cooking</td>
+                <td class="values" align="right">3669</td>
+                <td class="values" align="right">6877</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6877</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">6877</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">997</td>
+                <td class="values" align="right">7874</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SUQ030">SUQ030 - Low sodium mentioned on package?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SUQ030</dd>
+            <dt>SAS Label: </dt>
+            <dd>Low sodium mentioned on package?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">DOES THE PACKAGING MENTION THAT THE SALT IS "LITE", "LOWER SODIUM", "LESS SODIUM", "SODIUM FREE", OR A "SALT SUBSTITUTE"?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER INSTRUCTION: IF AN UNLABELED SALT CONTAINER WAS PROVIDED, SUCH AS A SALT SHAKER OR GRINDER, ASK TO SEE THE ORIGINAL PACKAGING FOR THE SALT INSIDE THE CONTAINER.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">455</td>
+                <td class="values" align="right">455</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6192</td>
+                <td class="values" align="right">6647</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Package not legible</td>
+                <td class="values" align="right">26</td>
+                <td class="values" align="right">6673</td>
+                <td class="values">IOSALT</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">No package available</td>
+                <td class="values" align="right">204</td>
+                <td class="values" align="right">6877</td>
+                <td class="values">IOSALT</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">997</td>
+                <td class="values" align="right">7874</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SUQ040">SUQ040 - Potassium chloride as ingredient?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SUQ040</dd>
+            <dt>SAS Label: </dt>
+            <dd>Potassium chloride as ingredient?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">IS "POTASSIUM CHLORIDE" INCLUDED IN THE INGREDIENT LIST?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">330</td>
+                <td class="values" align="right">330</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">6317</td>
+                <td class="values" align="right">6647</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1227</td>
+                <td class="values" align="right">7874</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SUQ050">SUQ050 - Is salt package labeled as iodized?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SUQ050</dd>
+            <dt>SAS Label: </dt>
+            <dd>Is salt package labeled as iodized?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">DOES THE PACKAGING MENTION THAT THE SALT "SUPPLIES IODINE", "SUPPLIES IODIDE", OR IS "IODIZED"?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2751</td>
+                <td class="values" align="right">2751</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">3896</td>
+                <td class="values" align="right">6647</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1227</td>
+                <td class="values" align="right">7874</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SUQ060">SUQ060 - Iodine listed in food label?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SUQ060</dd>
+            <dt>SAS Label: </dt>
+            <dd>Iodine listed in food label?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">IS THE WORD "IODINE", "IODIDE", OR "IODATE"  INCLUDED IN THE NUTRITION FACTS PANEL OR THE INGREDIENT LIST?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2608</td>
+                <td class="values" align="right">2608</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">4037</td>
+                <td class="values" align="right">6645</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1229</td>
+                <td class="values" align="right">7874</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="IOSALT">IOSALT - Iodized Salt</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">IOSALT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Iodized Salt</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Iodized salt?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2799</td>
+                <td class="values" align="right">2799</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">3848</td>
+                <td class="values" align="right">6647</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Cannot be ascertain by package</td>
+                <td class="values" align="right">230</td>
+                <td class="values" align="right">6877</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">997</td>
+                <td class="values" align="right">7874</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SUD070">SUD070 - Permission for salt collection?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SUD070</dd>
+            <dt>SAS Label: </dt>
+            <dd>Permission for salt collection?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">NHANES is studying the salt used in people's homes.  I would like to collect about 2 teaspoons of this salt for our study.  May I please take a small sample of this salt?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2154</td>
+                <td class="values" align="right">2154</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">37</td>
+                <td class="values" align="right">2191</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Did not ask for permission because the HH is not in the thyroid panel lab testing subsample</td>
+                <td class="values" align="right">559</td>
+                <td class="values" align="right">2750</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5124</td>
+                <td class="values" align="right">7874</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SUD080">SUD080 - Sample obtained for testing?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SUD080</dd>
+            <dt>SAS Label: </dt>
+            <dd>Sample obtained for testing?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">WAS A SAMPLE OF SALT OBTAINED FOR TESTING?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">COLLECT SALT SAMPLE FOLLOWING PROTOCOL INSTRUCTIONS ON SALT HANDCARD.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 3 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2121</td>
+                <td class="values" align="right">2121</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No, not enough salt provided</td>
+                <td class="values" align="right">22</td>
+                <td class="values" align="right">2143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">No, collector error</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">2148</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">No, other</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">2154</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5720</td>
+                <td class="values" align="right">7874</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

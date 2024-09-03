@@ -1,0 +1,779 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Albumin &amp; Creatinine - Urine" />
+    <meta name="DC.Subject" content="NHANES 2011-2011: Albumin &amp; Creatinine - Urine Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2011-2011 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2011">
+      <title>
+						NHANES 2011-2011:
+						Albumin &amp; Creatinine - Urine Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Method_Files">Laboratory Method Files</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#URXUMA2">URXUMA2 - Second albumin, urine (ug/mL)</a>
+                </li>
+                <li>
+                  <a href="#URDMA2LC">URDMA2LC - 2nd albumin, urine (ug/mL) comment code</a>
+                </li>
+                <li>
+                  <a href="#URDUMA2S">URDUMA2S - Second albumin, urine (mg/L)</a>
+                </li>
+                <li>
+                  <a href="#URXUCR2">URXUCR2 - Second creatinine (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#URDCR2LC">URDCR2LC - 2nd creatinine urine(mg/dL) comment code</a>
+                </li>
+                <li>
+                  <a href="#URDUCR2S">URDUCR2S - Second Creatinine, urine (umol/L)</a>
+                </li>
+                <li>
+                  <a href="#URDACT2">URDACT2 - Second albumin creatinine ratio (mg/g)</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2011-2011 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Albumin &amp; Creatinine - Urine (ALCR_G_R)
+			</h3>
+        <h4>RDC Only 
+				Data File: ALCR_G_R.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				August 2016</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+        <h5 class="left">
+					Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (https://www.cdc.gov/rdc).
+				</h5>
+        <div style="width: 75%; margin-left: 20%">
+          <h5 class="specialnote">
+						Note: See Analytical Note on comparing the urine albumin-creatinine ratio of the random urine (first collection) and the follow-up first-morning void urine (second collection).</h5>
+        </div>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>Urinary albumin and urinary creatinine are measured in a random urine sample collected in the MEC (first collection) and a first morning void urine sample collected by the participant at home (second collection). Urine albumin-creatinine ratio is used to classify stages of chronic kidney disease. In addition, the urine creatinine is used to standardize the collection of urine analytes such as environmental chemicals.</p>
+<p><strong><span style="text-decoration: underline;">Albumin-Creatinine Ratio (ACR): </span></strong><br />
+Chronic kidney disease (CKD) is a serious condition associated with premature mortality, decreased quality of life, and increased health-care expenditures. Untreated CKD can result in end-stage renal disease and necessitate dialysis or kidney transplantation. Risk factors for CKD include cardiovascular disease, diabetes, hypertension, and obesity.</p>
+<p>Persistent albuminuria is used to determine kidney damage for categorizing persons as having stage 1 and stage 2 CKD. Two urine samples are needed to assess persistent albuminuria and confirm the presence of kidney damage.</p>
+<p>Increased microalbuminuria is a sign of renal disease and may be predictive of nephropathy risk in patients with insulin-dependent diabetes. Various large cohort studies have shown that microalbuminuria is a strong risk predictor for cardiovascular morbidity and all-cause mortality. Because urinary albumin excretion follows a circadian rhythm, the preferred method to collect urine for albumin assessment is to collect a 24 hour urine specimen. However, a 24-hour urine collection is inconvenient to obtain in NHANES for logistical reasons. Therefore, measurement of urinary albumin and creatinine concentrations are performed and an albumin:creatinine ratio (ACR) was determined from both a random urine and a first morning void.
+</p>
+<p>Creatinine is produced by creatine and creatine phosphate as a result of muscle metabolic
+processes. Creatinine is the waste product derived from muscle creatinine and is released into the blood at a relatively constant rate. It is then excreted by glomerular filtration during normal renal function. The amount of creatinine per unit of muscle mass is constant; therefore, increased blood creatinine is the best indicator of impaired kidney function.</p>
+<p>Creatinine measurement is useful in the diagnosis and treatment of renal diseases, in monitoring renal dialysis, and is used to standardize other urinary analytes (e.g. environmental chemicals). The ratio of urine albumin to urine creatinine is used to predict nephropathy risk in diabetic patients.</p>
+<p>Since the ACR depends not only on urinary albumin but also on urinary creatinine excretion, it will be affected by gender and age because muscle mass is lower in females than in males and decreases with age. The urine albumin-creatinine ratio is calculated as:</p>
+<p>ACR(mg/g) = urine albumin (mg/dL) / Urine creatinine (g/dL)</p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>Examined participants aged 6 years and older.</p></div>
+        <h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2>
+        <div class="block"><p><strong>Urinary albumin</strong> <br />
+A solid-phase fluorescent immunoassay for the measurement of human urinary albumin is described by Chavers et al. (Chavers, BM, Kidney Int. 1984; 25:576&ndash;578). The fluorescent immunoassay is a non-competitive, double-antibody method for the determination of human albumin in urine. Antibody to human albumin is covalently attached to derivatized polyacrylamide beads. The solid-phase antibody is reacted with a urine specimen, and the urine albumin-antigen complexes with the solid-phase antibody. This complex then reacts with fluorescein-labeled antibody. The unattached fluorescent antibody is then removed by washing during centrifugation. The fluorescence of the stable solid-phase antibody complex is determined with a fluorometer; the fluorescence is directly proportional to the amount of urine albumin present. The standard curve is 0.5&ndash;20 &mu;g/mL of albumin.</p>
+<p>Results of the fluorescent immunoassay (FIA) are reproducible, and the test is accurate and sensitive for the detection of human urinary albumin excretion. It is especially useful for the measurement of low levels of urinary albumin not detectable by dipstick methods. The FIA assay resembles the radio-immunoassay (RIA) in technique and sensitivity without the potential health hazards associated with the handling of isotopes in the laboratory (Chavers, BM, Kidney Int. 1984; 25:576&ndash;578). </p>
+<p><strong>Urinary Creatinine using the Roche/Hitachi Modular P Chemistry Analyzer </strong><br />
+In this enzymatic method creatinine is converted to creatine under the activity of creatininase. Creatine is then acted upon by creatinase to form sarcosine and urea. Sarcosine oxidase converts sarcosine to glycine and hydrogen peroxide, and the hydrogen peroxide reacts with a chromophore in the presence of peroxidase to produce a colored product that is measured at 546 nm (secondary wavelength = 700 nm). This is an endpoint reaction that agrees well with recognized HPLC methods, and it has the advantage over Jaffe picric acid-based methods that are susceptible to interferences from non-creatinine chromogens.</p>
+<p>Refer to the Laboratory Method Files section for detailed laboratory procedure manual(s) of the methods used.</p>
+<p>There were no changes to the lab method, equipment, or lab site for this component in the NHANES 2011-2012 cycle.
+</p></div>
+        <h2 id="Laboratory_Method_Files">Laboratory Method Files</h2>
+        <div class="block">
+          <p><a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2011-2012/labmethods/ALCR_G_R_MET_ALBUMIN.pdf">Urinary Albumin</a><span> (August 2016)</span></p>
+          <p><a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2011-2012/labmethods/ALCR_G_R_MET_CREATININE.pdf">Urinary Creatinine</a><span> (August 2016)</span></p>
+        </div>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2>
+        <div class="block"><p>Urine specimens are processed, stored and shipped to University of Minnesota, Minneapolis, MN for analysis.</p>
+<p>Detailed instructions on specimen collection and processing are discussed in the NHANES Laboratory Procedure Manual (LPM).  Vials are stored under appropriate frozen (-30<span><sup>o</sup></span>C) conditions until they are shipped to University of Minnesota, Minneapolis, MN for testing.
+<br />
+The NHANES quality control and quality assurance protocols (QA/QC) meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions are discussed in the <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2011-2012/manuals/2011-12_laboratory_procedures_manual.pdf">NHANES Laboratory Procedures Manual (LPM)</a>.
+</p>
+<p><strong>Mobile Examination Centers (MECs)</strong></p>
+<p>Laboratory team performance is monitored using several techniques. NCHS and contract consultants use a structured quality assurance evaluation during unscheduled visits to evaluate both the quality of the laboratory work and the quality-control procedures. Each laboratory staff member is observed for equipment operation and maintenance; specimen collection and preparation; testing procedures and constructive feedback are given to each staff member. A comprehensive competency assessment program has been implemented to cover direct observations of routing specimen testing; monitoring the recording and reporting of test results; worksheets; review of quality control records, proficiency testing results and preventative maintenance records; direct observation of performance of instrument maintenance and function checks and assessment of problem solving skills.  Formal retraining sessions are conducted annually to ensure that required skill levels were maintained. </p>
+<p><strong>Analytical Laboratories</strong></p>
+<p>NHANES uses several methods to monitor the quality of the analyses performed by the contract laboratories. In the MEC, these methods include performing blind split samples collected during &ldquo;dry run&rdquo; sessions. In addition, contract laboratories randomly perform repeat testing on 2% of all specimens.</p>
+<p>NCHS developed and distributed a quality control protocol for all the contract laboratories, which outlined the use of Westgard rules when running NHANES specimens. Progress reports containing any problems encountered during shipping or receipt of specimens, summary statistics for each control pool, QC graphs, instrument calibration, reagents, and any special considerations are submitted to NCHS quarterly. The reports are reviewed for trends or shifts in the data. The laboratories are required to explain any identified areas of concern.
+</p>
+<br /></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>The data were reviewed.  Incomplete data or improbable values were sent to the performing laboratory for confirmation.</p>
+<p>Two calculated variables, URDACT and URDACT2, were created in this data file:</p>
+<p>The random (first collection) urine albumin (URXUMA) in ug/mL and urine creatinine (URXUCR) in mg/dL were converted to the albumin/creatinine ratio (URDACT) in mg/g.:
+</p>
+<p><span style="text-decoration: underline;">URDACT = URXUMA/URXUCR x 100, round to .01</span></p>
+<p>The morning void urine (second collection) albumin (URXUMA2) in ug/mL and second urine creatinine (URXUCR2) in mg/dL were converted to the second albumin/creatinine ratio (URDACT2) in mg/g:</p>
+<p><span style="text-decoration: underline;">URDACT2 = URXUMA2/URXUCR2 x 100, round to .01</span></p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>Refer to the <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2011">2011-2012 Laboratory Data Overview</a> for general information on NHANES laboratory data.</p>
+<p><strong>Analytic note on comparing the urine albumin-creatinine ratio of the random urine (first collection) and the follow-up first-morning void urine (second collection)</strong></p>
+<p>Persistent albuminuria, as measured by the urine albumin-creatinine ratio (ACR) in two urines from an individual, is used to determine the prevalence of stages 1 and 2 of chronic kidney disease. In NHANES 2011-2011, two urine samples were collected from participants&rsquo; ages 6 years and older. A random urine was initially collected in the NHANES mobile examination center (MEC). Participants were then asked to collect a first-morning void urine in their home within 10 days of the MEC examination. Information about the random (first collection) urine albumin and urine creatinine can be found at: <a href="https://wwwn.cdc.gov/nchs/nhanes/2011-2012/alb_cr_g.htm">https://wwwn.cdc.gov/nchs/nhanes/2011-2012/alb_cr_g.htm</a>.</p>
+<p>The random urine sample (first collection) has a higher mean ACR compared with the mean of the first-morning void urine (second collection) because of factors such as orthostatic (postural) proteinuria and exercise. For participants 20 years and older in NHANES 2009-2010 (n=5247), the weighted (using MEC examined sample weights) mean random ACR (first collection) was 23.7 mg/g and the mean first-morning void ACR (second collection) was 15.9 mg/g. The median random urine ACR (first collection) was 6.0 mg/g and the first-morning void ACR (second collection) was 4.5 mg/g. The percent of participants with an ACR 30 mg/g or greater was 7.7% for the random urine (first collection) and 3.4% for the first-morning void (second collection).</p>
+<p>It is recommended that data users carefully interpret the differences between the random and the follow-up first-morning void urine results to estimate the prevalence of persistent albuminuria. The users should take into consideration the expected and observed differences between the random and first-morning void results because of the difference in collection times. In NHANES III, a study of two random urines was used to estimate persistent albuminuria. The comparison of estimates of the prevalence of albuminuria from the random and follow-up first-morning void urines may be of interest since both types of specimens are usually collected in the clinical evaluation of albuminuria.</p>
+<p><strong>NHANES Demographic and Other Related Variables</strong></p>
+<p>The analysis of NHANES laboratory data must be conducted using the appropriate survey design and demographic variables. The NHANES 2011-2012 <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2011">Demographics File</a> contains demographic data, health indicators, and other related information collected during household interviews as well as the sample design variables. The recommended procedure for variance estimation requires use of stratum and PSU variables (SDMVSTRA and SDMVPSU, respectively) in the demographic data file.</p>
+<p>This laboratory data file can be linked to the other NHANES data files using the unique survey participant identifier (i.e., SEQN).</p>
+<p>The public release data file includes ALCR_G_R data for participants aged 6-150 and are available through the NCHS Research Data Center (RDC).
+</p>
+<p><strong>Detection Limits</strong></p>
+<p>The detection limit was constant for all of the analytes in the data set. Two variables are provided for each of these analytes. The variable name ending in &ldquo;LC&rdquo; (ex., URAUMALC) indicates whether the result was below the limit of detection: the value &ldquo;0&rdquo; means that the result was at or above the limit of detection, &ldquo;1&rdquo; indicates that the result was below the limit of detection. For analytes with analytic results below the lower limit of detection (ex., URAUMALC=1), an imputed fill value was placed in the analyte results field. This value is the lower limit of detection divided by square root of 2 (LLOD/sqrt [2]). The other variable prefixed URX (ex. URXUMA) provides the analytic result for that analyte.
+</p>
+<p><strong>The lower limit of detection (LLOD, in &micro;g/mL) for albumin and LLOD, in mg/dL for creatinine.</strong></p>
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Variable Name&nbsp;</strong></td>
+            <td><strong>SAS Label&nbsp;</strong></td>
+            <td><strong>LLOD&nbsp;</strong></td>
+        </tr>
+        <tr>
+            <td>&nbsp;URXUMA2</td>
+            <td>&nbsp;Second albumin (&micro;g/mL)</td>
+            <td>&nbsp;0.3</td>
+        </tr>
+        <tr>
+            <td>&nbsp;URXUCR2</td>
+            <td>&nbsp;Second creatinine (mg/dL)</td>
+            <td>&nbsp;1.0</td>
+        </tr>
+    </tbody>
+</table>
+<p>Please refer to the NHANES <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2011-2012/analytic_guidelines_11_12.pdf">Analytic Guidelines</a> and the on-line <a href="https://www.cdc.gov/nchs/tutorials/" target="_blank">NHANES Tutorial</a> for further details on the use of sample weights and other analytic issues.<br />
+<br />
+</p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Burtis,CA, Ashwood, EA, Bruns, DE, eds. Tietz Textbook of Clinical Chemistry and Molecular Diagnosis. Elsevier Inc., 2006.<br />.</li>
+          <li>Chavers BM, Simonson J, Michael AF. A solid-phase fluorescent immunoassay for the measurement of human urinary albumin. Kidney Int. 1984;25:576&ndash;578.</li>
+          <li>Creatinine Measurement Module Operating and Service Instructions, Beckman ASTRA. Brea (CA): Beckman Instruments, Inc., 1979.</li>
+          <li>Kaplan LA, Pesce AJ, editors, Clinical Chemistry Theory, Analysis and Correlation. St. Louis: CV Mosby Company, 1984:416&ndash;1261.</li>
+          <li>Maintenance Guide, Beckman ASTRA. Brea (CA): Beckman Instruments, Inc., 1982.</li>
+          <li>National Kidney Foundation. K/DOQI Clinical Practice Guidelines for Chronic Kidney Disease: Evaluation, Classification and Stratification. Table 14: Prevalence of Stages of Chronic Kidney Disease and Levels of Kidney Function in the US. Am J Kidney Dis 39:S1-S266, 2002 (suppl 1).</li>
+          <li>NHANES home urine collection manual. Available from: <a href="http://www.cdc.gov/nchs/data/nhanes/nhanes_09_10/HomeUrine.pdf ">http://www.cdc.gov/nchs/data/nhanes/nhanes_09_10/HomeUrine.pdf </a></li>
+          <li>NHANES Laboratory Procedural Manual. Section 5: Urine Specimen Collection and Processing, <br />. Available from: <a href="http://www.cdc.gov/nchs/data/nhanes/nhanes_09_10/Lab.pdf">http://www.cdc.gov/nchs/data/nhanes/nhanes_09_10/Lab.pdf</a></li>
+          <li>Operating and Service Instructions, Beckman ASTRA. Brea (CA): Beckman Instruments, Inc., 1986.<br />.</li>
+          <li>Tietz NW, editor, Textbook of Clinical Chemistry. Philadelphia: WB Saunders Company, 1986;775&ndash;1392.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URXUMA2">URXUMA2 - Second albumin, urine (ug/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URXUMA2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Second albumin, urine (ug/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Second albumin, urine (ug/mL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.21 to 12100</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3547</td>
+                <td class="values" align="right">3547</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">402</td>
+                <td class="values" align="right">3949</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDMA2LC">URDMA2LC - 2nd albumin, urine (ug/mL) comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDMA2LC</dd>
+            <dt>SAS Label: </dt>
+            <dd>2nd albumin, urine (ug/mL) comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">2nd albumin, urine (ug/mL) comment code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">3543</td>
+                <td class="values" align="right">3543</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">3547</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">402</td>
+                <td class="values" align="right">3949</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDUMA2S">URDUMA2S - Second albumin, urine (mg/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDUMA2S</dd>
+            <dt>SAS Label: </dt>
+            <dd>Second albumin, urine (mg/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Second albumin, urine (mg/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.21 to 12100</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3547</td>
+                <td class="values" align="right">3547</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">402</td>
+                <td class="values" align="right">3949</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URXUCR2">URXUCR2 - Second creatinine (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URXUCR2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Second creatinine (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Second creatinine (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">4 to 520</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3546</td>
+                <td class="values" align="right">3546</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">403</td>
+                <td class="values" align="right">3949</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDCR2LC">URDCR2LC - 2nd creatinine urine(mg/dL) comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDCR2LC</dd>
+            <dt>SAS Label: </dt>
+            <dd>2nd creatinine urine(mg/dL) comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">2nd creatinine urine(mg/dL) comment code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above the detection limit</td>
+                <td class="values" align="right">3546</td>
+                <td class="values" align="right">3546</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3546</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">403</td>
+                <td class="values" align="right">3949</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDUCR2S">URDUCR2S - Second Creatinine, urine (umol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDUCR2S</dd>
+            <dt>SAS Label: </dt>
+            <dd>Second Creatinine, urine (umol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Second Creatinine, urine (umol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">353.6 to 45968</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3546</td>
+                <td class="values" align="right">3546</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">403</td>
+                <td class="values" align="right">3949</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDACT2">URDACT2 - Second albumin creatinine ratio (mg/g)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDACT2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Second albumin creatinine ratio (mg/g)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Second albumin creatinine ratio (mg/g)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.69 to 20166.67</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3546</td>
+                <td class="values" align="right">3546</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">403</td>
+                <td class="values" align="right">3949</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

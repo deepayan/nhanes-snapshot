@@ -1,0 +1,1600 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SSUE10_R</title>
+    <meta name="title" content="NHANES 2010-2010: Sodium, Potassium &amp; Chloride - Casual Urine Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0 3em 1em;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					padding: 0 3em 1em;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					padding: 0;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#WTNA">WTNA - SSUE10_R 1 year weight</a>
+              </li>
+              <li>
+                <a href="#WTNA01">WTNA01 - SSUE10_R 1 year weight - Jackknife 01</a>
+              </li>
+              <li>
+                <a href="#WTNA02">WTNA02 - SSUE10_R 1 year weight - Jackknife 02</a>
+              </li>
+              <li>
+                <a href="#WTNA03">WTNA03 - SSUE10_R 1 year weight - Jackknife 03</a>
+              </li>
+              <li>
+                <a href="#WTNA04">WTNA04 - SSUE10_R 1 year weight - Jackknife 04</a>
+              </li>
+              <li>
+                <a href="#WTNA05">WTNA05 - SSUE10_R 1 year weight - Jackknife 05</a>
+              </li>
+              <li>
+                <a href="#WTNA06">WTNA06 - SSUE10_R 1 year weight - Jackknife 06</a>
+              </li>
+              <li>
+                <a href="#WTNA07">WTNA07 - SSUE10_R 1 year weight - Jackknife 07</a>
+              </li>
+              <li>
+                <a href="#WTNA08">WTNA08 - SSUE10_R 1 year weight - Jackknife 08</a>
+              </li>
+              <li>
+                <a href="#WTNA09">WTNA09 - SSUE10_R 1 year weight - Jackknife 09</a>
+              </li>
+              <li>
+                <a href="#WTNA10">WTNA10 - SSUE10_R 1 year weight - Jackknife 10</a>
+              </li>
+              <li>
+                <a href="#WTNA11">WTNA11 - SSUE10_R 1 year weight - Jackknife 11</a>
+              </li>
+              <li>
+                <a href="#WTNA12">WTNA12 - SSUE10_R 1 year weight - Jackknife 12</a>
+              </li>
+              <li>
+                <a href="#WTNA13">WTNA13 - SSUE10_R 1 year weight - Jackknife 13</a>
+              </li>
+              <li>
+                <a href="#WTNA14">WTNA14 - SSUE10_R 1 year weight - Jackknife 14</a>
+              </li>
+              <li>
+                <a href="#WTNA15">WTNA15 - SSUE10_R 1 year weight - Jackknife 15</a>
+              </li>
+              <li>
+                <a href="#SSUNAMP">SSUNAMP - Urine Sodium (mmol/L) MEC spot urine</a>
+              </li>
+              <li>
+                <a href="#SSUNAHP">SSUNAHP - Na (mmol/L) Urine first morning void</a>
+              </li>
+              <li>
+                <a href="#SSUKMP">SSUKMP - Urine Potassium (mmol/L)  MEC spot urine</a>
+              </li>
+              <li>
+                <a href="#SSUKHP">SSUKHP - K (mmol/L) Urine first morning void</a>
+              </li>
+              <li>
+                <a href="#SSUCLMP">SSUCLMP - Urine Chloride (mmol/L) MEC spot urine</a>
+              </li>
+              <li>
+                <a href="#SSUCLHP">SSUCLHP - Cl (mmol/L) Urine first morning void</a>
+              </li>
+              <li>
+                <a href="#T_VPSU">T_VPSU - Taylor Series-Variance PSU Identifier</a>
+              </li>
+              <li>
+                <a href="#T_VSTRAT">T_VSTRAT - Taylor Series-Variance Strata Identifier</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2010-2010 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Sodium, Potassium &amp; Chloride - Casual Urine (SSUE10_R)</h3>
+        <h4>RDC Only  Data File: SSUE10_R.xpt</h4>
+        <h5 class="left">First Published: September 2012</h5>
+        <h5 class="right">Last Revised: May 2022</h5>
+        <h5 class="left">Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+        <div style="width: 75%; margin-left: 20%">
+          <h5 class="specialnote">Note: The NHANES Biospecimen Program processes were reevaluated in 2021 and 2022 to monitor quality control after a procedural error was identified. This error did not pose any risk of participant disclosure. Addressing this error resulted in the removal of some records from various stored biospecimen data files between 1999 and 2018 that did not meet program standards. After a comprehensive review of all stored specimen datasets, this data file was modified to remove records (10-<15% of records) that were initially included in error. No data values were altered. However, survey weights were adjusted. For each analyte included in this data file, it was determined that overall and for stratified sex, age, and race/Hispanic origin groups, the updated file using the new sample weights resulted in an estimate within the 95% confidence limit calculated using the original file and sample weights.  However, not all possible analyses were performed. For any queries related to this dataset please email the Biospecimen Program at serumplasmaurine@cdc.gov.</h5>
+        </div>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>Measurement of sodium, potassium, and chloride in a subset of stored casual urine samples from NHANES 2010.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>1,275 participants aged 6 years and above from a one-third subsample of NHANES 2010 (for which urine iodine values are available) who provided a casual urine sample at the Mobile Examination Center and 1,345 participants aged 6 years and above from the same one-third subsample of NHANES 2010 who provided a first-morning void urine sample for a total of 2,620 samples; most participants provided both types of samples</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p><strong>Measurement of Urine Sodium, Potassium, and Chloride</strong></p>
+<p><strong></strong>All assays were conducted using the Cobas ISE/Na<sup>+</sup>, K<sup>+</sup>, Cl<sup>-</sup> assay performed on the Roche Modular P instrument. The measurement of electrolytes in urine via ion-selective electrode (ISE) is an established and widely used procedure in routine clinical laboratories. The ISE makes use of the unique properties of certain membrane materials to develop an electrical potential for the measurement of ions in solution. The method quantitatively determines sodium, potassium and chloride in urine. The manufacturer has standardized this method against primary calibrators prepared gravimetrically from purified salts. Two levels of standard are provided by the manufacturer for daily calibration. The volume of urine needed per test is 150 &micro;L (combined measurement of sodium, potassium, and chloride).&nbsp;</p>
+<p>
+<table border="1" bordercolor="#000000">
+    <caption valign="top">Analyte codes and limits of detection (LOD):</caption>
+    <thead>
+        <tr>
+            <th>Analyte name</th>
+            <th>Analyte code</th>
+            <th>LOD (mmol/L)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Urine sodium (Na<sup>+</sup>)</td>
+            <td>UNA</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Urine potassium (K<sup>+</sup>)</td>
+            <td>UK</td>
+            <td>1.5</td>
+        </tr>
+        <tr>
+            <td>Urine chloride (Cl<sup>-</sup>)</td>
+            <td>UCL</td>
+            <td>10</td>
+        </tr>
+    </tbody>
+</table>
+</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Data were received after all the laboratory testing was complete. The data were not edited for extreme values.</p>
+<p>Data will only be available through the Research Data Center. </p><h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>The laboratory and method were certified according to the Clinical Laboratory Improvement Amendments (1988) guidelines. </p>
+<p>For urine Na<sup>+</sup>, K<sup>+</sup> and Cl<sup>- </sup>, commercially prepared quality control material was purchased from CLINIQA in two levels (LIQUID QC<sup>TM</sup> 1 and LIQUID QC<sup>TM</sup> 2). The controls are liquid and ready for use. Stability of the constituents at 2-8&deg;C is 36 months or until the expiration date, whichever comes first. Bench QC pools were characterized to determine the mean and control limits by analyzing duplicate samples in at least 20 runs. After establishment of the control limits of the pools, QC samples contained within each analytical run were evaluated for validity by use of a multi-rule quality control program. </p>
+<p>
+<table border="1" bordercolor="#000000">
+    <caption valign="top">Performance of QC pools during the study period (Aug&nbsp;&ndash;&nbsp;Oct 2011):</caption>
+    <thead>
+        <tr>
+            <th>QC Pool</th>
+            <th>Analyte</th>
+            <th>N</th>
+            <th>Mean (mmol/L)</th>
+            <th>SD (mmol/L)</th>
+            <th>CV (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>LIQUID QC<sup>TM</sup> 1</td>
+            <td>UNA</td>
+            <td>64</td>
+            <td>67.7</td>
+            <td>1.23</td>
+            <td>1.8%</td>
+        </tr>
+        <tr>
+            <td>LIQUID QC<sup>TM</sup> 2</td>
+            <td>UNA</td>
+            <td>64</td>
+            <td>158</td>
+            <td>0.92</td>
+            <td>0.6%</td>
+        </tr>
+        <tr>
+            <td>LIQUID QC<sup>TM</sup> 1</td>
+            <td>UK</td>
+            <td>64</td>
+            <td>29.5</td>
+            <td>0.55</td>
+            <td>1.9%</td>
+        </tr>
+        <tr>
+            <td>LIQUID QC<sup>TM</sup> 2</td>
+            <td>UK</td>
+            <td>64</td>
+            <td>80.6</td>
+            <td>2.34</td>
+            <td>2.9%</td>
+        </tr>
+        <tr>
+            <td>LIQUID QC<sup>TM</sup> 1</td>
+            <td>UCL</td>
+            <td>64</td>
+            <td>84.1</td>
+            <td>1.13</td>
+            <td>1.3%</td>
+        </tr>
+        <tr>
+            <td>LIQUID QC<sup>TM</sup> 2</td>
+            <td>UCL</td>
+            <td>64</td>
+            <td>190</td>
+            <td>1.56</td>
+            <td>0.8%</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p>The laboratory achieved satisfactory participation in the CAP proficiency testing surveys during 2011 for the urine chemistry surveys for sodium, potassium, and chloride and for the linearity and calibration verification surveys for sodium. </p>
+<p>The laboratory also included blind QC samples (high or low pool) in each run at a rate of 1 blind QC in every 20 samples. These samples were labeled the same as unknown participant samples and therefore remained unrecognized by the analyst. </p>
+<p>
+<table border="1" bordercolor="#000000">
+    <caption valign="top">Performance of blind QC pools during the study period:</caption>
+    <thead>
+        <tr>
+            <th>Blind QC Pool</th>
+            <th>Analyte</th>
+            <th>N</th>
+            <th>Mean (mmol/L)</th>
+            <th>SD (mmol/L)</th>
+            <th>CV</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Low</td>
+            <td>UNA</td>
+            <td>61</td>
+            <td>165</td>
+            <td>0.94</td>
+            <td>0.6%</td>
+        </tr>
+        <tr>
+            <td>High</td>
+            <td>UNA</td>
+            <td>64</td>
+            <td>56.6</td>
+            <td>1.04</td>
+            <td>1.8%</td>
+        </tr>
+        <tr>
+            <td>Low</td>
+            <td>UK</td>
+            <td>61</td>
+            <td>79.8</td>
+            <td>2.42</td>
+            <td>3.0%</td>
+        </tr>
+        <tr>
+            <td>High</td>
+            <td>UK</td>
+            <td>64</td>
+            <td>38.6</td>
+            <td>0.74</td>
+            <td>1.9%</td>
+        </tr>
+        <tr>
+            <td>Low</td>
+            <td>UCL</td>
+            <td>61</td>
+            <td>182</td>
+            <td>2.12</td>
+            <td>1.2%</td>
+        </tr>
+        <tr>
+            <td>High</td>
+            <td>UCL</td>
+            <td>64</td>
+            <td>57.4</td>
+            <td>0.84</td>
+            <td>1.5%</td>
+        </tr>
+    </tbody>
+</table>
+</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>Samples were selected from the 1/3 urinary iodine subsample for sample participants aged 6 and over that provided informed consent for further testing of stored specimen and had a non-missing urinary creatinine measure. In addition, 55 sample participants with untreated hypertension from the full examination sample (not already included in the1/3 urinary iodine subsample) that provided informed consent for further testing of stored specimen and had a non-missing urinary creatinine measure were selected. </p>
+<p>Weights were created to account for non-response and to sum to the examination weights for 2010. The adjustment factors were based on age categories, race and Hispanic origin, and gender. The data were collected only for a single year (2010) rather than a typical NHANES 2-year data collection period, therefore, the single year urine sodium weight, WTNA, should be used in estimating the prevalence and in testing statistical hypotheses using these data. The delete 1 Jackknife method rather than Taylor Series Linearization is recommended for variance estimation (Wolters, 2007). The delete 1 Jackknife method is a replication method, using a design based method for variance estimation. Fifteen delete 1 jackknife replicate weights, WTNA01-WTNA15, are provided for variance estimation using the delete 1 Jackknife method. To calculate the nominal degrees of freedom of the estimated variance, unmasked variance units (which differ from the Masked Variance Unit codes provided for the two year public-use files) are provided. These unmasked variance units are needed to determine the critical value for the Student&rsquo;s t statistic used to construct confidence intervals.</p>
+<p>All statistical analyses using these data should assess the relative standard error of the estimates, the degrees of freedom and the design effect. The three diagnostics listed above are important to assess the reliability of the estimates. Please refer to the NHANES Analytic Guidelines and the on-line NHANES Tutorial for further details on the use of sample weights and other analytic issues. Both of these are available on the NHANES website.</p></div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>Caudill SP, Schleicher RL, Pirkle JL. 2008. Multi-rule quality control for the age-related eye disease study. Stat Med 27:4094-4106.</li>
+          <li>Clinical Laboratory Improvement Amendment. Public Law 100-578. 1988. 10-31-1988.</li>
+          <li>Roche Diagnostics ISE/Na<sup>+</sup>, K<sup>+</sup>, Cl<sup>-</sup> Package insert, 2009-03, V6.</li>
+          <li>Wolters, KM. Variance Estimation, 2nd edition. Springer-Verlag Publishers. 2007. Chapter 4: jackknife method for variance estimation.</li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA">WTNA - SSUE10_R 1 year weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">32739.375084 to 1007498.6325</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1307</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA01">WTNA01 - SSUE10_R 1 year weight - Jackknife 01</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA01</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 01</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 01</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">34151.588331 to 1011511.35</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1223</td>
+                <td class="values" align="right">1223</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">84</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA02">WTNA02 - SSUE10_R 1 year weight - Jackknife 02</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA02</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 02</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 02</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">33753.145663 to 1045874.2129</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1218</td>
+                <td class="values" align="right">1218</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">89</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA03">WTNA03 - SSUE10_R 1 year weight - Jackknife 03</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA03</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 03</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 03</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">35245.693611 to 1007175.7781</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1235</td>
+                <td class="values" align="right">1235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">72</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA04">WTNA04 - SSUE10_R 1 year weight - Jackknife 04</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA04</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 04</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 04</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">32707.090034 to 1013311.7916</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1221</td>
+                <td class="values" align="right">1221</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">86</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA05">WTNA05 - SSUE10_R 1 year weight - Jackknife 05</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA05</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 05</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 05</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">34148.926673 to 950367.95687</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1225</td>
+                <td class="values" align="right">1225</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">82</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA06">WTNA06 - SSUE10_R 1 year weight - Jackknife 06</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA06</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 06</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 06</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">33852.098099 to 1040984.4455</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1226</td>
+                <td class="values" align="right">1226</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">81</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA07">WTNA07 - SSUE10_R 1 year weight - Jackknife 07</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA07</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 07</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 07</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">38774.459144 to 1000211.798</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1247</td>
+                <td class="values" align="right">1247</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">60</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA08">WTNA08 - SSUE10_R 1 year weight - Jackknife 08</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA08</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 08</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 08</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">32561.6348 to 986033.86972</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1196</td>
+                <td class="values" align="right">1196</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">111</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA09">WTNA09 - SSUE10_R 1 year weight - Jackknife 09</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA09</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 09</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 09</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">33969.699709 to 953403.25574</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1220</td>
+                <td class="values" align="right">1220</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">87</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA10">WTNA10 - SSUE10_R 1 year weight - Jackknife 10</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA10</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 10</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 10</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">39698.886694 to 982003.41499</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1193</td>
+                <td class="values" align="right">1193</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">114</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA11">WTNA11 - SSUE10_R 1 year weight - Jackknife 11</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA11</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 11</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 11</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">32613.771822 to 994024.10739</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1235</td>
+                <td class="values" align="right">1235</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">72</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA12">WTNA12 - SSUE10_R 1 year weight - Jackknife 12</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA12</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 12</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 12</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">33242.058592 to 1043959.757</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1211</td>
+                <td class="values" align="right">1211</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">96</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA13">WTNA13 - SSUE10_R 1 year weight - Jackknife 13</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA13</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 13</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 13</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">36284.75939 to 1045145.7129</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1195</td>
+                <td class="values" align="right">1195</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">112</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA14">WTNA14 - SSUE10_R 1 year weight - Jackknife 14</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA14</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 14</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 14</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">34958.445986 to 1026734.9983</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1232</td>
+                <td class="values" align="right">1232</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">75</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTNA15">WTNA15 - SSUE10_R 1 year weight - Jackknife 15</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTNA15</dd>
+            <dt>SAS Label: </dt>
+            <dd>SSUE10_R 1 year weight - Jackknife 15</dd>
+            <dt>English Text: </dt>
+            <dd class="info">SSUE10_R 1 year weight - Jackknife replicate weight 15</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">38340.785546 to 1030000.5178</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1221</td>
+                <td class="values" align="right">1221</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">86</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSUNAMP">SSUNAMP - Urine Sodium (mmol/L) MEC spot urine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSUNAMP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Urine Sodium (mmol/L) MEC spot urine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urine Sodium (mmol/L) MEC spot urine</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">7.1 to 324</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1275</td>
+                <td class="values" align="right">1275</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">32</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSUNAHP">SSUNAHP - Na (mmol/L) Urine first morning void</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSUNAHP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Na (mmol/L) Urine first morning void</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urine Sodium (mmol/L) First morning void</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">7.1 to 359</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1166</td>
+                <td class="values" align="right">1166</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">141</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSUKMP">SSUKMP - Urine Potassium (mmol/L)  MEC spot urine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSUKMP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Urine Potassium (mmol/L)  MEC spot urine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urine Potassium (mmol/L)</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Urine Potassium (mmol/L) MEC spot urine</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2.3 to 212</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1275</td>
+                <td class="values" align="right">1275</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">32</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSUKHP">SSUKHP - K (mmol/L) Urine first morning void</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSUKHP</dd>
+            <dt>SAS Label: </dt>
+            <dd>K (mmol/L) Urine first morning void</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urine Potassium (mmol/L) First morning void</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">4 to 160</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1166</td>
+                <td class="values" align="right">1166</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">141</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSUCLMP">SSUCLMP - Urine Chloride (mmol/L) MEC spot urine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSUCLMP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Urine Chloride (mmol/L) MEC spot urine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urine Chloride (mmol/L)</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Urine Chloride (mmol/L) MEC spot urine</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">7.1 to 369</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1275</td>
+                <td class="values" align="right">1275</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">32</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSUCLHP">SSUCLHP - Cl (mmol/L) Urine first morning void</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSUCLHP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Cl (mmol/L) Urine first morning void</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urine Chloride (mmol/L) First morning void</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">7.1 to 330</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1166</td>
+                <td class="values" align="right">1166</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">141</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="T_VPSU">T_VPSU - Taylor Series-Variance PSU Identifier</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">T_VPSU</dd>
+            <dt>SAS Label: </dt>
+            <dd>Taylor Series-Variance PSU Identifier</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Taylor Series-Variance PSU Identifier</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 2</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1307</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="T_VSTRAT">T_VSTRAT - Taylor Series-Variance Strata Identifier</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">T_VSTRAT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Taylor Series-Variance Strata Identifier</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Taylor Series-Variance Strata Identifier</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 15</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1307</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1307</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

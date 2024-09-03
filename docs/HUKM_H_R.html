@@ -1,0 +1,3819 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Kidney Markers - Home Urine Collection" />
+    <meta name="DC.Subject" content="NHANES 2014-2014: Kidney Markers - Home Urine Collection Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2014-2014 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2014">
+      <title>
+						NHANES 2014-2014:
+						Kidney Markers - Home Urine Collection Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Method_Files">Laboratory Method Files</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#URDHVOLM">URDHVOLM - Volume of AM Collections</a>
+                </li>
+                <li>
+                  <a href="#URDHVOLE">URDHVOLE - Volume of PM Collections</a>
+                </li>
+                <li>
+                  <a href="#URDDAYM">URDDAYM  - Day of the Week (AM Collection)</a>
+                </li>
+                <li>
+                  <a href="#URDDAYE">URDDAYE  - Day of the Week (PM Collection)</a>
+                </li>
+                <li>
+                  <a href="#URDDBUHM">URDDBUHM - # of days b/w AM HUC and 24-hour urine</a>
+                </li>
+                <li>
+                  <a href="#URDDBUHE">URDDBUHE - # of days b/w PM HUC and 24-hour urine</a>
+                </li>
+                <li>
+                  <a href="#URDHCSTS">URDHCSTS - HUC Status Code</a>
+                </li>
+                <li>
+                  <a href="#URHMAM">URHMAM   - Albumin, Urine AM Collection (ug/dL)</a>
+                </li>
+                <li>
+                  <a href="#URHMAE">URHMAE   - Albumin, Urine PM Collection (ug/dL)</a>
+                </li>
+                <li>
+                  <a href="#URDMAELC">URDMAELC - Albumin, Urine PM Comment Code</a>
+                </li>
+                <li>
+                  <a href="#URHCAM">URHCAM   - Calcium, Urine AM Collection (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#URHCAE">URHCAE   - Calcium, Urine PM Collection (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#URHCRM">URHCRM   - Creatinine, Urine AM Collection (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#URHCRE">URHCRE   - Creatinine, Urine PM Collection (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#URHMGM">URHMGM   - Magnesium, Urine AM Collection (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#URHMGE">URHMGE   - Magnesium, Urine PM Collection (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#URHOXM">URHOXM   - Oxalate, Urine AM Collection (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#URDOXMLC">URDOXMLC - Oxalate, Urine AM Comment Code</a>
+                </li>
+                <li>
+                  <a href="#URHOXE">URHOXE   - Oxalate, Urine PM Collection (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#URDOXELC">URDOXELC - Oxalate, Urine PM Comment Code</a>
+                </li>
+                <li>
+                  <a href="#URHPHM">URHPHM   - Phosphorus, Urine AM Collection (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#URHPHE">URHPHE   - Phosphorus, Urine PM Collection (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#URDPHELC">URDPHELC - Phosphorus, Urine PM Comment Code </a>
+                </li>
+                <li>
+                  <a href="#URHUNM">URHUNM   - Urea Nitrogen AM Collection (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#URDUNMLC">URDUNMLC - Urea Nitrogen, Urine AM Comment Code</a>
+                </li>
+                <li>
+                  <a href="#URHUNE">URHUNE   - Urea Nitrogen PM Collection (mg/dL)</a>
+                </li>
+                <li>
+                  <a href="#URDUNELC">URDUNELC - Urea Nitrogen, Urine PM Comment Code</a>
+                </li>
+                <li>
+                  <a href="#VPSU">VPSU - Variance PSU </a>
+                </li>
+                <li>
+                  <a href="#VSTRA">VSTRA - Variance stratum</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR">WT1YUR - 1 year urine weight</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR01">WT1YUR01 - 1 year urine weight - Jackknife 01</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR02">WT1YUR02 - 1 year urine weight - Jackknife 02</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR03">WT1YUR03 - 1 year urine weight - Jackknife 03</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR04">WT1YUR04 - 1 year urine weight - Jackknife 04</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR05">WT1YUR05 - 1 year urine weight - Jackknife 05</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR06">WT1YUR06 - 1 year urine weight - Jackknife 06</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR07">WT1YUR07 - 1 year urine weight - Jackknife 07</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR08">WT1YUR08 - 1 year urine weight - Jackknife 08</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR09">WT1YUR09 - 1 year urine weight - Jackknife 09</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR10">WT1YUR10 - 1 year urine weight - Jackknife 10</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR11">WT1YUR11 - 1 year urine weight - Jackknife 11</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR12">WT1YUR12 - 1 year urine weight - Jackknife 12</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR13">WT1YUR13 - 1 year urine weight - Jackknife 13</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR14">WT1YUR14 - 1 year urine weight - Jackknife 14</a>
+                </li>
+                <li>
+                  <a href="#WT1YUR15">WT1YUR15 - 1 year urine weight - Jackknife 15</a>
+                </li>
+                <li>
+                  <a href="#VPSUBRR">VPSUBRR - Variance PSU for BRR</a>
+                </li>
+                <li>
+                  <a href="#VSTRABRR">VSTRABRR - Variance stratum for BRR</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB01">WT1YUB01 - 1 year urine weight - Fay's BRR 01</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB02">WT1YUB02 - 1 year urine weight - Fay's BRR 02</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB03">WT1YUB03 - 1 year urine weight - Fay's BRR 03</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB04">WT1YUB04 - 1 year urine weight - Fay's BRR 04</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB05">WT1YUB05 - 1 year urine weight - Fay's BRR 05</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB06">WT1YUB06 - 1 year urine weight - Fay's BRR 06</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB07">WT1YUB07 - 1 year urine weight - Fay's BRR 07</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB08">WT1YUB08 - 1 year urine weight - Fay's BRR 08</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB09">WT1YUB09 - 1 year urine weight - Fay's BRR 09</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB10">WT1YUB10 - 1 year urine weight - Fay's BRR 10</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB11">WT1YUB11 - 1 year urine weight - Fay's BRR 11</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB12">WT1YUB12 - 1 year urine weight - Fay's BRR 12</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB13">WT1YUB13 - 1 year urine weight - Fay's BRR 13</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB14">WT1YUB14 - 1 year urine weight - Fay's BRR 14</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB15">WT1YUB15 - 1 year urine weight - Fay's BRR 15</a>
+                </li>
+                <li>
+                  <a href="#WT1YUB16">WT1YUB16 - 1 year urine weight - Fay's BRR 16</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2014-2014 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Kidney Markers - Home Urine Collection (HUKM_H_R)
+			</h3>
+        <h4>RDC Only 
+				Data File: HUKM_H_R.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				October 2015</h5>
+        <h5 class="right">
+				Last Revised:
+				September 2016</h5>
+        <h5 class="left">
+					Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (https://www.cdc.gov/rdc).
+				</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>In 2014, a random half sample of non-pregnant participants aged 20-69 years and examined in the mobile examination center (MEC) were asked to collect their urines for a 24-hour period. Those who completed the 24-hour urine collection were given a home urine collection (HUC) kit and asked to collect two urine specimens at their home: a void in the evening and the first void of the following morning. The home urine collection was measured in 2014 of the 2013-2014 NHANES cycle to examine the utility of spot urine specimens in estimating 24-hour excretion for various analytes at the population level.</p>
+<p>Separate datasets were produced to include laboratory results of analytes from the home urine collections. The present file contains analyte data for urine kidney markers (albumin, creatinine, calcium, magnesium, oxalate, phosphorus, and urea nitrogen). </p>
+<p>Urinary kidney markers are a diverse set of analytes often used to measure many complex and serious medical conditions including: obesity, renal disease, cardiac disease, hypertension, diabetes and hepatic disease. Each analyte provides unique information that may provide greater insight into many of the challenging public health issues that are prevalent in the U.S. Additionally, some of these kidney markers also aid in the assessment of nutritional status. When used in conjunction with measurements of dietary sodium over a 24-hour period, kidney marker measurements may aid in providing enhanced understanding of how to efficiently address many of these growing public health concerns.</p>
+<p>To reduce the risk of inadvertent disclosure, all data from this 1-year home urine collection can only be accessed through the NCHS Research Data Center (RDC). Instructions for requesting use of these data are available at the RDC website (<a href="https://www.cdc.gov/rdc/">https://www.cdc.gov/rdc/</a>). </p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>A random one-half sample of all examined participants aged 20-69 years, except a few eliminated based on exclusion criteria such as pregnancy, were asked to collect a 24-hour urine specimen. Those who completed the 24-hour urine collection were eligible for the home urine collection.</p></div>
+        <h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2>
+        <div class="block"><p><strong>1. Albumin</strong></p>
+<p>A fluorescent immunoassay for the measurement of human urinary albumin is described by Chavers et al. The methodology involves solid-phase, non-competitive, double-antibody reaction. Urine specimen albumin antigen reacts with albumin antibody that is covalently attached to polyacrylamide beads. This resulting solid-phase antibody complex is then reacted with fluorescein-labeled antibody. Unattached fluorescent antibody and other proteins are removed by centrifugation. The fluorescence of the stable solid-phase double-antibody complex is measured with a fluorometer and is directly proportional to the amount of urine albumin present. The standard line calibration material is human serum albumin with a range of 0.5 to 20 &micro;g/mL.</p>
+<p><strong>2. Creatinine</strong></p>
+<p>In this enzymatic method, creatinine is converted to creatine under the activity of creatininase. Creatine is then acted upon by creatinase to form sarcosine and urea. Sarcosine oxidase converts sarcosine to glycine and hydrogen peroxide, and the hydrogen peroxide reacts with chromophore in the presence of peroxidase to produce a color product that is measured at 546 nm (secondary wavelength = 700 nm). This is an endpoint reaction that agrees well with recognized HPLC methods, and it has the advantage over Jaffe picric acid-based methods that are susceptible to interferences from non-creatinine chromogens.</p>
+<p><strong>3. Phosphorus</strong></p>
+<p>This method utilizes ammonium molybdate as the color-forming reagent. Measurement of the final product occurs at 340 nm (secondary wavelength 700 nm). Inorganic phosphate forms an ammonium phosphomolybdate complex having the formula ((NH4)3[PO4] (MoO3)12) with ammonium molybdate in the presence of sulfuric acid. The concentration of phosphomolybdate formed is directly proportional to the inorganic phosphate concentration.</p>
+<p><strong>4. Magnesium</strong></p>
+<p>In this method magnesium reacts with Chlorophosphonazo III (CPZ III) and causes an increase in absorbance.  EGTA is added to inhibit calcium interference.  Addition of EDTA to the reaction allows for accurate sample blanking. The reaction is a two-point, end-point method that is measured photometrically at 660 nm.</p>
+<p><strong>5. Calcium</strong></p>
+<p>In this method calcium reacts with 5-nitro-5&rsquo;-methyl-BAPTA (NM-BAPTA) in an alkaline environment to form a complex that is measured at 340nm. When EDTA is added to the reaction, two new complexes form, and the change in absorbance is directly proportional to the calcium concentration.</p>
+<p><strong>6. Oxalate</strong></p>
+<p>This method is an enzymatic process, based on the oxidation of oxalate by oxalate oxidase, followed by measurement of hydrogen peroxide produced during the reaction by a peroxidase-catalyzed reaction. The primary measuring wavelength is 600 nm, and the secondary measuring wavelength is 700 nm. The procedure is specific for oxalate.</p>
+<p><strong>7. Urea Nitrogen</strong></p>
+<p>This method utilizes a coupled enzyme reaction (urease, followed by glutamate dehydrogenase), with measurement of NADH (converting to NAD+) occurring at 340 nm.</p>
+<p>Refer to the Laboratory Method Files section for detailed laboratory procedure manual(s) of the methods used.</p>
+<p>There were no changes to the lab method, lab equipment, or lab site for this component in the NHANES 2014 cycle for albumin and creatinine. The home urine collection, 24-hour collection and MEC collection used the lab method, lab equipment, and lab site from previous cycles.   Phosphorus, magnesium, calcium, oxalate, and urea nitrogen were new to the 24-hour and home urine collection for 2014 testing only.<br />
+<br />
+</p></div>
+        <h2 id="Laboratory_Method_Files">Laboratory Method Files</h2>
+        <div class="block">
+          <p><a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/labmethods/HUKM_H_R_MET_ALBUMIN.PDF">Albumin - Kidney Markers - Home Urine Collection</a><span> (October 2015)</span></p>
+          <p><a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/labmethods/HUKM_H_R_MET_CREATININE.pdf">Creatinine - Kidney Markers - Home Urine Colleciton</a><span> (October 2015)</span></p>
+          <p><a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/labmethods/HUKM_H_R_MET_URINE_CALCIUM.PDF">Calcium - Kidney Markers - Home Urine Collection</a><span> (October 2015)</span></p>
+          <p><a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/labmethods/HUKM_H_R_MET_URINE_PHOSPHORUS.pdf">Phosphorus - Kidney Markers - Home Urine Collection</a><span> (October 2015)</span></p>
+          <p><a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/labmethods/HUKM_H_R_MET_URINE_MAGNESIUM.pdf">Magnesium - Kidney Markers - Home Urine Collection</a><span> (October 2015)</span></p>
+          <p><a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/labmethods/HUKM_H_R_MET_URINE_OXALATE.pdf">Oxalate - Kidney Markers - Home Urine Collection</a><span> (October 2015)</span></p>
+          <p><a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/labmethods/HUKM_H_R_MET_URINE_UREANITROGEN.pdf">Urea Nitrogen - Kidney Markers - Home Urine Collection</a><span> (October 2015)</span></p>
+        </div>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2>
+        <div class="block"><p>Participants were instructed to use the HUC kit to collect one urine void in the evening between 5:30 pm and their bedtime, and the first void when they woke up the next morning. After collection, they were asked to mail the kit to the University of Minnesota, Minneapolis, MN for processing and analysis.</p>
+<p>Detailed instructions on specimen collection and processing are discussed in the&nbsp;<a href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/manuals/home_urine_collection.pdf">NHANES Home Urine Collection Manual</a>. </p>
+<p>The NHANES quality assurance and quality control (QA/QC) protocols meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions are discussed in the NHANES <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2013-2014/manuals/2013_mec_laboratory_procedures_manual.pdf">Laboratory Procedures Manual (LPM)</a>.</p>
+<p><strong>Mobile Examination Centers (MECs)</strong></p>
+<p>Laboratory team performance is monitored using several techniques. NCHS and contract consultants use a structured quality assurance evaluation during unscheduled visits to evaluate both the quality of the laboratory work and the quality-control procedures. Each laboratory staff member is observed for equipment operation, specimen collection and preparation; testing procedures and constructive feedback are given to each staff member. Formal retraining sessions are conducted annually to ensure that required skill levels were maintained.</p>
+<p><strong>Analytical Laboratories</strong></p>
+<p>NHANES uses several methods to monitor the quality of the analyses performed by the contract laboratories. In the MEC, these methods include performing blind split samples collected during &ldquo;dry run&rdquo; sessions. In addition, contract laboratories randomly perform repeat testing on 2% of all specimens.</p>
+<p>NCHS developed and distributed a quality control protocol for all the contract laboratories, which outlined the use of Westgard rules (Westgard, et al. 1981) when running NHANES specimens. Progress reports containing any problems encountered during shipping or receipt of specimens, summary statistics for each control pool, QC graphs, instrument calibration, reagents, and any special considerations are submitted to NCHS quarterly. The reports are reviewed for trends or shifts in the data. The laboratories are required to explain any identified areas of concern. </p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>The data were reviewed. Incomplete data or improbable values were sent to the performing laboratory for confirmation.</p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>Number of days between the home urine collection and the first 24-hour urine collection: two variables (URDDBUHM for the morning HUC and URDDBUHE for the evening HUC) are included to indicate the number of days between the  morning or evening home urine collection and the day the first 24-hour urine collection was completed. A positive value in URDDBUHM or URDDBUHE indicates the 24-hour urine collection occurred prior to the home urine collection. A value of "0" indicates the 24-hour urine collection occurred on the same date as the urine collection.</p>
+<p>Refer to the <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2013">2013 - 2014 Laboratory Data Overview</a> for general information on NHANES laboratory data.</p>
+<p><strong>Subsample Weights</strong></p>
+<p>Urine kidney markers were measured in a random one-half subsample of participants, aged 20 to 69 years, who were compliant in a 24-hour urine sample collection and completed an additional home urine collection. Special sample weights are required to analyze these data properly. Specific sample weights for this subsample are included in this data file and should be used when analyzing these data.</p>
+<p><strong>Demographic and Other Related Variables</strong></p>
+<p>The analysis of NHANES laboratory data must be conducted using the appropriate survey design and demographic variables. The <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2013">NHANES 2013-2014 Demographics File</a> contains demographic data, health indicators, and other related information collected during household interviews.</p>
+<p>This laboratory data file can be linked to the other NHANES data files using the unique survey participant identifier (i.e., SEQN).</p>
+<p><strong>Detection Limits</strong></p>
+<p>The detection limits were constant for this analyte in the data set. Two variables are provided for each of these analytes. The variable name ending in &ldquo;LC&rdquo; (ex., URDMAMLC) indicates whether the result was below the limit of detection: the value &ldquo;0&rdquo; means that the result was at or above the limit of detection, &ldquo;1&rdquo; indicates that the result was below the limit of detection.  For analytes with analytic results below the lower limit of detection (ex., URDMAMLC =1), an imputed fill value was placed in the analyte results field. This value is the lower limit of detection divided by the square root of 2 (LLOD/sqrt[2]). The other variable prefixed URH (ex., URHMAM) provides the analytic result for that analyte.</p>
+<p>The lower limit of detection (LLOD) for Home Urine Collection &ndash; Morning and Evening Collections:</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<table bordercolor="#000000" border="1">
+    <caption align="left" valign="top"></caption>
+    <thead>
+        <tr>
+            <th>Variable Name</th>
+            <th>SAS Label</th>
+            <th>LLOD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>URHMAM</td>
+            <td>Albumin, Urine AM (&micro;g/mL)</td>
+            <td>0.30</td>
+        </tr>
+        <tr>
+            <td>URHCAM</td>
+            <td>Calcium, Urine AM (mg/dL)</td>
+            <td>0.30</td>
+        </tr>
+        <tr>
+            <td>URHCRM</td>
+            <td>Creatinine, Urine AM (mg/dL)</td>
+            <td>1.10</td>
+        </tr>
+        <tr>
+            <td>URHMGM</td>
+            <td>Magnesium, Urine AM (mg/dL)</td>
+            <td>0.60</td>
+        </tr>
+        <tr>
+            <td>URHOXM</td>
+            <td>Oxalate, Urine AM (mg/L)</td>
+            <td>1.76</td>
+        </tr>
+        <tr>
+            <td>URHPHM</td>
+            <td>Phosphorus, Urine AM (mg/dL)</td>
+            <td>3.00</td>
+        </tr>
+        <tr>
+            <td>URHUNM</td>
+            <td>Urea Nitrogen, Urine AM (mg/dL)</td>
+            <td>112.00</td>
+        </tr>
+        <tr>
+            <td>URHMAE</td>
+            <td>Albumin, Urine PM (&micro;g/mL)</td>
+            <td>0.30</td>
+        </tr>
+        <tr>
+            <td>URHCAE</td>
+            <td>Calcium, Urine PM (mg/dL)</td>
+            <td>0.30</td>
+        </tr>
+        <tr>
+            <td>URHCRE</td>
+            <td>Creatinine, Urine PM (mg/dL)</td>
+            <td>1.10</td>
+        </tr>
+        <tr>
+            <td>URHMGE</td>
+            <td>Magnesium, Urine PM (mg/dL)</td>
+            <td>0.60</td>
+        </tr>
+        <tr>
+            <td>URHOXE</td>
+            <td>Oxalate, Urine PM (mg/L)</td>
+            <td>1.76</td>
+        </tr>
+        <tr>
+            <td>URHPHE</td>
+            <td>Phosphorus, Urine PM (mg/dL)</td>
+            <td>3.00</td>
+        </tr>
+        <tr>
+            <td>URHUNE</td>
+            <td>Urea Nitrogen, Urine PM (mg/dL)</td>
+            <td>112.00</td>
+        </tr>
+    </tbody>
+</table>
+<p>Please refer to the NHANES <a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">Analytic Guidelines</a> and the on-line NHANES <a href="https://www.cdc.gov/nchs/tutorials/">Tutorial</a> for further details on the use of sample weights and other analytic issues.</p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Caudill S.P., Schleicher R.L., Pirkle J.L. Multi-rule quality control for the age-related eye disease study. Statist. Med. (2008) 27(20):4094-40106.</li>
+          <li>Chavers BM, Simonson J, Michael AF. A solid-phase fluorescent immunoassay for the measurement of human urinary albumin. Kidney Int. 1984; 25: 576-8.</li>
+          <li>Westgard J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewhart chart for quality control in clinical chemistry. Clin Chem (1981) 27:493-501.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDHVOLM">URDHVOLM - Volume of AM Collections</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDHVOLM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Volume of AM Collections</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Volume of AM Collections</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">17.2 to 1747</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">646</td>
+                <td class="values" align="right">646</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">181</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDHVOLE">URDHVOLE - Volume of PM Collections</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDHVOLE</dd>
+            <dt>SAS Label: </dt>
+            <dd>Volume of PM Collections</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Volume of PM Collections</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9.1 to 462.7</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">632</td>
+                <td class="values" align="right">632</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">195</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDDAYM">URDDAYM  - Day of the Week (AM Collection)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDDAYM </dd>
+            <dt>SAS Label: </dt>
+            <dd>Day of the Week (AM Collection)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Day of the Week (AM Collection)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Sunday</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">5</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Monday</td>
+                <td class="values" align="right">152</td>
+                <td class="values" align="right">157</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Tuesday</td>
+                <td class="values" align="right">146</td>
+                <td class="values" align="right">303</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Wednesday</td>
+                <td class="values" align="right">101</td>
+                <td class="values" align="right">404</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Thursday</td>
+                <td class="values" align="right">108</td>
+                <td class="values" align="right">512</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Friday</td>
+                <td class="values" align="right">73</td>
+                <td class="values" align="right">585</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Saturday</td>
+                <td class="values" align="right">43</td>
+                <td class="values" align="right">628</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">199</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDDAYE">URDDAYE  - Day of the Week (PM Collection)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDDAYE </dd>
+            <dt>SAS Label: </dt>
+            <dd>Day of the Week (PM Collection)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Day of the Week (PM Collection)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Sunday</td>
+                <td class="values" align="right">140</td>
+                <td class="values" align="right">140</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Monday</td>
+                <td class="values" align="right">148</td>
+                <td class="values" align="right">288</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Tuesday</td>
+                <td class="values" align="right">104</td>
+                <td class="values" align="right">392</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Wednesday</td>
+                <td class="values" align="right">110</td>
+                <td class="values" align="right">502</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Thursday</td>
+                <td class="values" align="right">69</td>
+                <td class="values" align="right">571</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Friday</td>
+                <td class="values" align="right">44</td>
+                <td class="values" align="right">615</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Saturday</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">619</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">208</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDDBUHM">URDDBUHM - # of days b/w AM HUC and 24-hour urine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDDBUHM</dd>
+            <dt>SAS Label: </dt>
+            <dd># of days b/w AM HUC and 24-hour urine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Number of days between the day of the morning home urine collection and the first 24-hour urine collection</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2 to 165</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">627</td>
+                <td class="values" align="right">627</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">200</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDDBUHE">URDDBUHE - # of days b/w PM HUC and 24-hour urine</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDDBUHE</dd>
+            <dt>SAS Label: </dt>
+            <dd># of days b/w PM HUC and 24-hour urine</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Number of days between the day of the evening home urine collection and the first 24-hour urine collection</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 164</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">618</td>
+                <td class="values" align="right">618</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">209</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDHCSTS">URDHCSTS - HUC Status Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDHCSTS</dd>
+            <dt>SAS Label: </dt>
+            <dd>HUC Status Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HUC Status Code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Both AM and PM Collections</td>
+                <td class="values" align="right">625</td>
+                <td class="values" align="right">625</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">AM Collection Only</td>
+                <td class="values" align="right">21</td>
+                <td class="values" align="right">646</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">PM Collection Only</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">653</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">174</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHMAM">URHMAM   - Albumin, Urine AM Collection (ug/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHMAM  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Albumin, Urine AM Collection (ug/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Albumin, Urine AM Collection (ug/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.3 to 6440</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">646</td>
+                <td class="values" align="right">646</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">181</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHMAE">URHMAE   - Albumin, Urine PM Collection (ug/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHMAE  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Albumin, Urine PM Collection (ug/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Albumin, Urine PM Collection (ug/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.02 to 3100</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">632</td>
+                <td class="values" align="right">632</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">195</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDMAELC">URDMAELC - Albumin, Urine PM Comment Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDMAELC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Albumin, Urine PM Comment Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Albumin, Urine PM Comment Code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above detection limit</td>
+                <td class="values" align="right">630</td>
+                <td class="values" align="right">630</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">632</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">195</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHCAM">URHCAM   - Calcium, Urine AM Collection (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHCAM  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Calcium, Urine AM Collection (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Calcium, Urine AM Collection (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.1 to 59.6</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">646</td>
+                <td class="values" align="right">646</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">181</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHCAE">URHCAE   - Calcium, Urine PM Collection (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHCAE  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Calcium, Urine PM Collection (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Calcium, Urine PM Collection (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.1 to 87.7</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">632</td>
+                <td class="values" align="right">632</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">195</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHCRM">URHCRM   - Creatinine, Urine AM Collection (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHCRM  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Creatinine, Urine AM Collection (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Creatinine, Urine AM Collection (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 486</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">646</td>
+                <td class="values" align="right">646</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">181</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHCRE">URHCRE   - Creatinine, Urine PM Collection (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHCRE  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Creatinine, Urine PM Collection (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Creatinine, Urine PM Collection (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 602</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">632</td>
+                <td class="values" align="right">632</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">195</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHMGM">URHMGM   - Magnesium, Urine AM Collection (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHMGM  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Magnesium, Urine AM Collection (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Magnesium, Urine AM Collection (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.2 to 33.8</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">646</td>
+                <td class="values" align="right">646</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">181</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHMGE">URHMGE   - Magnesium, Urine PM Collection (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHMGE  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Magnesium, Urine PM Collection (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Magnesium, Urine PM Collection (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.1 to 35.9</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">632</td>
+                <td class="values" align="right">632</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">195</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHOXM">URHOXM   - Oxalate, Urine AM Collection (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHOXM  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Oxalate, Urine AM Collection (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Oxalate, Urine AM Collection (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1.24 to 76.56</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">646</td>
+                <td class="values" align="right">646</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">181</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDOXMLC">URDOXMLC - Oxalate, Urine AM Comment Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDOXMLC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Oxalate, Urine AM Comment Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Oxalate, Urine AM Comment Code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above detection limit</td>
+                <td class="values" align="right">644</td>
+                <td class="values" align="right">644</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">646</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">181</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHOXE">URHOXE   - Oxalate, Urine PM Collection (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHOXE  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Oxalate, Urine PM Collection (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Oxalate, Urine PM Collection (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1.24 to 86.24</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">632</td>
+                <td class="values" align="right">632</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">195</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDOXELC">URDOXELC - Oxalate, Urine PM Comment Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDOXELC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Oxalate, Urine PM Comment Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Oxalate, Urine PM Comment Code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above detection limit</td>
+                <td class="values" align="right">630</td>
+                <td class="values" align="right">630</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">632</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">195</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHPHM">URHPHM   - Phosphorus, Urine AM Collection (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHPHM  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Phosphorus, Urine AM Collection (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Phosphorus, Urine AM Collection (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.5 to 263.5</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">646</td>
+                <td class="values" align="right">646</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">181</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHPHE">URHPHE   - Phosphorus, Urine PM Collection (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHPHE  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Phosphorus, Urine PM Collection (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Phosphorus, Urine PM Collection (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2.2 to 307.1</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">632</td>
+                <td class="values" align="right">632</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">195</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDPHELC">URDPHELC - Phosphorus, Urine PM Comment Code </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDPHELC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Phosphorus, Urine PM Comment Code </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Phosphorus, Urine PM Comment Code </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above detection limit</td>
+                <td class="values" align="right">630</td>
+                <td class="values" align="right">630</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">632</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">195</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHUNM">URHUNM   - Urea Nitrogen AM Collection (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHUNM  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Urea Nitrogen AM Collection (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urea Nitrogen AM Collection (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">79 to 2066</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">646</td>
+                <td class="values" align="right">646</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">181</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDUNMLC">URDUNMLC - Urea Nitrogen, Urine AM Comment Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDUNMLC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Urea Nitrogen, Urine AM Comment Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urea Nitrogen, Urine AM Comment Code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above detection limit</td>
+                <td class="values" align="right">640</td>
+                <td class="values" align="right">640</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">646</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">181</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URHUNE">URHUNE   - Urea Nitrogen PM Collection (mg/dL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URHUNE  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Urea Nitrogen PM Collection (mg/dL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urea Nitrogen PM Collection (mg/dL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">79 to 1854</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">632</td>
+                <td class="values" align="right">632</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">195</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="URDUNELC">URDUNELC - Urea Nitrogen, Urine PM Comment Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">URDUNELC</dd>
+            <dt>SAS Label: </dt>
+            <dd>Urea Nitrogen, Urine PM Comment Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urea Nitrogen, Urine PM Comment Code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above detection limit</td>
+                <td class="values" align="right">622</td>
+                <td class="values" align="right">622</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below lower detection limit</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">632</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">195</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VPSU">VPSU - Variance PSU </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VPSU</dd>
+            <dt>SAS Label: </dt>
+            <dd>Variance PSU </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Variance primary sampling unit (PSU)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 15</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VSTRA">VSTRA - Variance stratum</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VSTRA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Variance stratum</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Variance stratum</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">1</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR">WT1YUR - 1 year urine weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">26626.969653 to 1039861.6547</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR01">WT1YUR01 - 1 year urine weight - Jackknife 01</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR01</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 01</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 01
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">32988.435668 to 1087823.4451</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">775</td>
+                <td class="values" align="right">775</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">52</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR02">WT1YUR02 - 1 year urine weight - Jackknife 02</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR02</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 02</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 02
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">30811.629073 to 1108478.079</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">757</td>
+                <td class="values" align="right">757</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">70</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR03">WT1YUR03 - 1 year urine weight - Jackknife 03</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR03</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 03</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 03
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">32444.744583 to 1124054.7132</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">760</td>
+                <td class="values" align="right">760</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">67</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR04">WT1YUR04 - 1 year urine weight - Jackknife 04</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR04</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 04</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 04
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">30122.038208 to 1088100.7098</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">748</td>
+                <td class="values" align="right">748</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">79</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR05">WT1YUR05 - 1 year urine weight - Jackknife 05</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR05</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 05</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 05
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">26595.342712 to 1386604.9599</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">764</td>
+                <td class="values" align="right">764</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">63</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR06">WT1YUR06 - 1 year urine weight - Jackknife 06</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR06</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 06</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 06
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">25525.240772 to 1185899.8756</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">779</td>
+                <td class="values" align="right">779</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">48</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR07">WT1YUR07 - 1 year urine weight - Jackknife 07</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR07</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 07</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 07
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">29254.953947 to 1238634.2445</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">751</td>
+                <td class="values" align="right">751</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">76</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR08">WT1YUR08 - 1 year urine weight - Jackknife 08</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR08</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 08</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 08
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">27922.235179 to 994400.70164</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">787</td>
+                <td class="values" align="right">787</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">40</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR09">WT1YUR09 - 1 year urine weight - Jackknife 09</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR09</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 09</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 09
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">27354.825857 to 1046225.3276</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">778</td>
+                <td class="values" align="right">778</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">49</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR10">WT1YUR10 - 1 year urine weight - Jackknife 10</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR10</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 10</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 10
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">26787.826959 to 1085325.7097</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">776</td>
+                <td class="values" align="right">776</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">51</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR11">WT1YUR11 - 1 year urine weight - Jackknife 11</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR11</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 11</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 11
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">28902.632671 to 1039358.8672</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">792</td>
+                <td class="values" align="right">792</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">35</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR12">WT1YUR12 - 1 year urine weight - Jackknife 12</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR12</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 12</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 12
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">28817.414878 to 1276503.1858</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">771</td>
+                <td class="values" align="right">771</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">56</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR13">WT1YUR13 - 1 year urine weight - Jackknife 13</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR13</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 13</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 13
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">30806.914324 to 1126511.0723</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">779</td>
+                <td class="values" align="right">779</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">48</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR14">WT1YUR14 - 1 year urine weight - Jackknife 14</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR14</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 14</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 14</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">28423.967242 to 1136146.2984</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">767</td>
+                <td class="values" align="right">767</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">60</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUR15">WT1YUR15 - 1 year urine weight - Jackknife 15</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUR15</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Jackknife 15</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Jackknife replicate weight 15</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">29944.843186 to 1053222.6222</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">794</td>
+                <td class="values" align="right">794</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in replicate sample or no complete urine collection</td>
+                <td class="values" align="right">33</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VPSUBRR">VPSUBRR - Variance PSU for BRR</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VPSUBRR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Variance PSU for BRR</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Variance PSU for use with BRR weights</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 2</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VSTRABRR">VSTRABRR - Variance stratum for BRR</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VSTRABRR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Variance stratum for BRR</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Variance stratum for use with BRR weights</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">1</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB01">WT1YUB01 - 1 year urine weight - Fay's BRR 01</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB01</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 01</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 01</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9708.117363 to 1993228.0013</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB02">WT1YUB02 - 1 year urine weight - Fay's BRR 02</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB02</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 02</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 02</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">8349.837846 to 1606031.1301</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB03">WT1YUB03 - 1 year urine weight - Fay's BRR 03</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB03</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 03</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 03</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9901.051122 to 1842177.1645</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB04">WT1YUB04 - 1 year urine weight - Fay's BRR 04</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB04</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 04</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 04</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">7565.591177 to 1701923.7682</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB05">WT1YUB05 - 1 year urine weight - Fay's BRR 05</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB05</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 05</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 05</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">8593.837633 to 1729983.0084</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB06">WT1YUB06 - 1 year urine weight - Fay's BRR 06</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB06</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 06</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 06</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">7080.034439 to 1837031.7658</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB07">WT1YUB07 - 1 year urine weight - Fay's BRR 07</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB07</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 07</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 07</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9349.310683 to 1769525.1682</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB08">WT1YUB08 - 1 year urine weight - Fay's BRR 08</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB08</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 08</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 08</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">8094.557196 to 1663257.4171</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB09">WT1YUB09 - 1 year urine weight - Fay's BRR 09</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB09</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 09</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 09</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9247.466513 to 1825840.209</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB10">WT1YUB10 - 1 year urine weight - Fay's BRR 10</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB10</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 10</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 10</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">7819.636741 to 1625507.9938</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB11">WT1YUB11 - 1 year urine weight - Fay's BRR 11</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB11</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 11</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 11</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10596.04009 to 1661523.21</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB12">WT1YUB12 - 1 year urine weight - Fay's BRR 12</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB12</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 12</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 12</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9613.933744 to 1699918.537</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB13">WT1YUB13 - 1 year urine weight - Fay's BRR 13</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB13</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 13</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 13</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9982.528076 to 1491089.5334</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB14">WT1YUB14 - 1 year urine weight - Fay's BRR 14</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB14</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 14</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 14</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">8619.090806 to 1978559.1055</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB15">WT1YUB15 - 1 year urine weight - Fay's BRR 15</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB15</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 15</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 15</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">12595.358001 to 1688513.1145</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WT1YUB16">WT1YUB16 - 1 year urine weight - Fay's BRR 16</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WT1YUB16</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 year urine weight - Fay's BRR 16</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 year urine weight: Fay’s adjusted balanced repeated replication (Fay’s BRR) weight 16</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">8365.095245 to 1734825.4197</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">827</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete urine collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">827</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

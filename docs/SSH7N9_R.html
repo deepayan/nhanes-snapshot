@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Avian Influenza A (H7N9) &amp; Seasonal Influenza Viruses Antibodies (Surplus)" />
+    <meta name="DC.Subject" content="NHANES 2010-2010: Avian Influenza A (H7N9) &amp; Seasonal Influenza Viruses Antibodies (Surplus) Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2010-2010 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2010">
+      <title>
+						NHANES 2010-2010:
+						Avian Influenza A (H7N9) &amp; Seasonal Influenza Viruses Antibodies (Surplus) Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#SSMNH7N9">SSMNH7N9 - Influenza A/Anhui/1/2013 H7N9</a>
+                </li>
+                <li>
+                  <a href="#SSHIH7N9">SSHIH7N9 - Influenza A/Anhui/1/2013 H7N9 BPL</a>
+                </li>
+                <li>
+                  <a href="#SSM3N2PR">SSM3N2PR - Influenza A/Perth/16/2009 A9H3N2 </a>
+                </li>
+                <li>
+                  <a href="#SSH3N2PR">SSH3N2PR - Influenza A/Perth/16/2009 H3N2</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2010-2010 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Avian Influenza A (H7N9) &amp; Seasonal Influenza Viruses Antibodies (Surplus) (SSH7N9_R)
+			</h3>
+        <h4>RDC Only 
+				Data File: SSH7N9_R.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				November 2013</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+        <h5 class="left">
+					Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (https://www.cdc.gov/rdc).
+				</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>Influenza serological testing of stored sera from NHANES 2010 collection, across all age groups, were used in this study to determine the population level of cross reactive antibodies to avian influenza A (H7N9) virus and related influenza viruses. This data release contains the hemagglutination inhibition (HI) and microneutralization (MN) assay titers to H7N9 viruses and seasonal H3N2 viruses.</p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>A sample of participants across 9 age groups from stored NHANES 2010 sera (N = 900).</p></div>
+        <h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2>
+        <div class="block"><p>Antibody titers against H7N9 and seasonal H3N2 influenza viruses were measured with hemagglutination inhibition (HI) assay and microneutralization (MN) assays at Influenza Division, Centers for Disease Control and Prevention. </p>
+<p>The selected H7N9 virus target was A/Anhui/1/2013. Seasonal H3N2 virus A/Perth/16/2009 was used as control. </p>
+<p>The geometric mean titers are reported in both HI and MN assays. Because H7N9 is a novel influenza virus and currently there are not infected cases identified in US, a cut off value has not been determined.</p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>Data was compiled after all the antibody testing was complete. The data were not edited.</p>
+<p>Data will only be available through the Research Data Center. </p></div>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2>
+        <div class="block"><p>All QC procedures were followed according to established laboratory Special Operation Procedures. </p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>There are four variables:</p>
+<p>MN A/Anhui/1/2013 (H7N9): Geometric mean of microneutralization (MN) titers against the influenza H7N9 virus A/Anhui/1/2013.</p>
+<p>MN A/Perth/16/2009 (H3N2): Geometric mean of microneutralization (MN) titers against the influenza H3N2 virus A/Perth/16/2009.</p>
+<p>HI A/Anhui/1/2013 BPL (H7N9): Geometric mean of hemagglutination inhibition titers (HI) against the BPL inactivated influenza H7N9 virus A/Anhui/1/2013.</p>
+<p>HI A/Perth/16/2009 (H3N2): Geometric mean of hemagglutination inhibition (HI) titers against the BPL inactivated influenza H3N2 virus A/Perth/16/2009.</p>
+<p>A titer of 5 means the titer achieved by the sera specimen is below the detection level of the assay (negative). The samples were assayed at 1:10 pre dilution , titers &lt;10 were documented as 5 for calculation purposes.</p>
+<p>&nbsp;</p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Uyeki TM, Cox NJ. Global concerns regarding novel influenza A (H7N9) virus infections. N Engl J Med 2013 368(20):1862-4.</li>
+          <li>World Health Organization. WHO global influenza surveillance network: Manual for the laboratory diagnosis and virological surveillance of influenza. 2011. Available from: <a href="http://whqlibdoc.who.int/publications/2011/9789241548090_eng.pdf">http://whqlibdoc.who.int/publications/2011/9789241548090_eng.pdf</a></li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSMNH7N9">SSMNH7N9 - Influenza A/Anhui/1/2013 H7N9</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSMNH7N9</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Anhui/1/2013 H7N9</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/Anhui/H7N9/1/2013/wild type virus</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 7</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">900</td>
+                <td class="values" align="right">900</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">900</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSHIH7N9">SSHIH7N9 - Influenza A/Anhui/1/2013 H7N9 BPL</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSHIH7N9</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Anhui/1/2013 H7N9 BPL</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A BPL inactivated Anhui/H7N9 2013 wild type virus/Brisbane/59/2007</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 40</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">900</td>
+                <td class="values" align="right">900</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">900</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSM3N2PR">SSM3N2PR - Influenza A/Perth/16/2009 A9H3N2 </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSM3N2PR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Perth/16/2009 A9H3N2 </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A9H3N2 virus MN A/Perth 16/2009</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 1280</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">900</td>
+                <td class="values" align="right">900</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">900</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSH3N2PR">SSH3N2PR - Influenza A/Perth/16/2009 H3N2</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSH3N2PR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Perth/16/2009 H3N2</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/H3N2 virus HI A/Perth/16/2009 seasonal H3N2 influenza virus</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 1280</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">900</td>
+                <td class="values" align="right">900</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">900</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

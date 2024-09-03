@@ -1,0 +1,753 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>TB_K_R</title>
+    <meta name="title" content="NHANES 2019-March 2020: Tuberculosis - Quantiferon TB Gold Plus Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0 3em 1em;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					padding: 0 3em 1em;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					padding: 0;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Method_Files">Laboratory Method Files</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#LBXTBN">LBXTBN - TB Nil control result</a>
+              </li>
+              <li>
+                <a href="#LBXTBM">LBXTBM - TB Mitogen control result</a>
+              </li>
+              <li>
+                <a href="#LBXTB1">LBXTB1 - TB1 Antigen result</a>
+              </li>
+              <li>
+                <a href="#LBXTB2">LBXTB2 - TB2 Antigen result</a>
+              </li>
+              <li>
+                <a href="#LBXTBIN">LBXTBIN - TB coded result</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2019-March 2020 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Tuberculosis - Quantiferon TB Gold Plus (TB_K_R)</h3>
+        <h4>RDC Only  Data File: TB_K_R.xpt</h4>
+        <h5 class="left">First Published: January 2022</h5>
+        <h5 class="right">Last Revised: NA</h5>
+        <h5 class="left">Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The NHANES program suspended field operations in March 2020 due to the coronavirus disease 2019 (COVID-19) pandemic. As a result, data collection for the NHANES 2019-2020 cycle was not completed.  Data collected in 2019-March 2020 can be accessed as convenience samples through the NCHS Research Data Center (RDC). Any analyses based solely on the 2019-March 2020 data would not be generalizable to the U.S. civilian non-institutionalized population. Please refer to the Analytic Notes section for more details on the use of the data.</p>
+<p>Tuberculosis is a
+communicable disease caused by infection with M. tuberculosis complex
+organisms, which typically spreads to new hosts via airborne droplet nuclei
+from patients with respiratory tuberculosis disease. A newly infected individual
+can become ill from tuberculosis within weeks to months, or can remain latently
+infected for years. Latent tuberculosis infection (LTBI), a non-communicable
+asymptomatic condition, persists in some, who might develop tuberculosis
+disease months or years later.</p>
+<p>Specific goals of
+the TB component include providing data to support public health programs in the control, prevention, and eventual
+elimination of tuberculosis (TB) in the United States. </p><h2 id="Eligible_Sample">Eligible Sample</h2><p>All examined foreign-born participants aged 6 to 59 years and all participants
+aged 60 years and older in the NHANES 2019-March 2020 convenience samples were eligible.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p>The QuantiFERON&reg;-TB
+Gold Plus assay is an in vitro diagnostic test using a peptide cocktail
+simulating ESAT-6 and CFP-10 proteins to stimulate cells in heparinized whole
+blood. The
+QuantiFERON&reg;-TB Gold Plus assay tests for Cell Mediated Immune (CMI) responses
+to peptide antigens that simulate mycobacterial proteins. These proteins,
+(ESAT-6 and CFP-10) are absent from all BCG strains and from most
+non-tuberculous mycobacteria with the exception of M. kansasii, M. szulgai and
+M. marinum. Individuals infected with M. tuberculosis complex organisms (M.
+tuberculosis, M. bovis, M. africanum, M. microti, M. canetti) usually have
+lymphocytes in their blood that recognize these and other mycobacterial
+antigens. This recognition process involves the generation and secretion of the
+cytokine, IFN-&gamma;.&nbsp; The detection and
+subsequent quantification of IFN-&gamma; forms the basis of this test.</p>
+<p>The QFT Gold Plus
+system uses specialized blood collection tubes, which are used to collect whole
+blood via venipuncture, which include a Nil control tube, two TB Antigen tubes
+and a Mitogen tube (positive control). The QFT-Plus has two distinct TB antigen
+tubes: TB Antigen Tube 1 (TB1) and TB Antigen Tube 2 (TB2). Both tubes contain
+peptide antigens from the MTB-complex-associated antigens, ESAT-6 and CFP-10.
+Both the TB1 and TB2 tubes contain peptides from ESAT-6 and CFP-10 that are
+designated to elicit CMI response form CD4 T-helper lymphocytes; the TB2 tube
+contains an additional set of peptides targeted to the induction of CMI
+responses from CD8+ cytotoxic T lymphocytes. The tubes are shaken to mix
+antigen with the whole blood and incubated at 37&deg;C for 16 to 24 hours.&nbsp; Following the incubation period, plasma is
+harvested and the amount of IFN-&gamma; that was produced in response to the peptide
+antigens is measured by ELISA. Results for the test samples are reported in
+International Units (IU) relative to a standard curve prepared by testing
+dilutions of a recombinant human IFN-&gamma; standard.</p>
+<p>Refer to the
+Laboratory Method Files section for a detailed description of the laboratory
+methods used.</p>
+<p>This is a new
+component in the NHANES 2019-2020 survey cycle.</p><h2 id="Laboratory_Method_Files">Laboratory Method Files</h2>
+        <p>
+          <a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/labmethods/TB-K-R-MET-508.pdf">Tuberculosis - Quantiferon TB Gold Plus</a>
+          <span> (January 2022)</span>
+        </p>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>Serum specimens were
+processed, stored, and shipped to the University of Washington Clinical Virology
+Laboratory, Seattle, WA for analysis.</p>
+<p>Detailed instructions on specimen collection and processing are discussed
+in the <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/manuals/2020-MEC-Laboratory-Procedures-Manual-508.pdf" target="_blank">NHANES Laboratory Procedures Manual (LPM)</a>. Samples were
+incubated at 37&deg;C &plusmn; 1&deg;C for 16-24 hours in the mobile examination center before
+aliquoting into vials. Vials were stored under appropriate refrigerated (2-8&deg;C)
+conditions until they were shipped to the University of Washington for testing.</p>
+<p>The NHANES quality assurance and quality control (QA/QC) protocols meet the
+1988 Clinical Laboratory Improvement Amendments mandates. Detailed QA/QC instructions
+are discussed in the <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/manuals/2020-MEC-Laboratory-Procedures-Manual-508.pdf" target="_blank">NHANES LPM</a>.</p>
+<p><b>Mobile Examination
+Centers (MECs)</b> </p>
+<p>Laboratory team
+performance is monitored using several techniques. NCHS and contract
+consultants use a structured competency assessment evaluation during visits to
+evaluate both the quality of the laboratory work and the QC procedures. Each
+laboratory staff member is observed for equipment operation, specimen
+collection and preparation; testing procedures and constructive feedback are
+given to each staff member. Formal retraining sessions are conducted annually
+to ensure that required skill levels were maintained.</p>
+<p><b>Analytical
+Laboratories</b> </p>
+<p>NHANES uses
+several methods to monitor the quality of the analyses performed by the
+contract laboratories. In the MEC, these methods include performing blind split
+specimens collected on &ldquo;dry run&rdquo; sessions. In addition, contract laboratories
+randomly perform repeat testing on 2% of all specimens. </p>
+<p>NCHS developed and
+distributed a quality control protocol for all CDC and contract laboratories,
+which outlined the use of Westgard rules (Westgard et al., 1981) when testing
+NHANES specimens. Progress reports containing any problems encountered during
+shipping or receipt of specimens, summary statistics for each control pool, QC
+graphs, instrument calibration, reagents, and any special considerations are
+submitted to NCHS quarterly. The reports are reviewed for trends or shifts in
+the data. The laboratories are required to explain any identified areas of
+concern.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The data were
+reviewed. Incomplete data or improbable values were sent to the performing laboratory
+for confirmation.</p><h2 id="Analytic_Notes">Analytic Notes</h2><html>
+    <head>
+    </head>
+    <body>
+        <p>The COVID-19 pandemic required suspension of NHANES 2019-2020 field operations in March 2020 after data were collected in 18 of the 30 survey locations in the 2019-2020 sample. Data collection was cancelled for the remaining 12 locations. Calculation of survey weights for this partial cycle is not possible due to incomplete data collection. Therefore, data from survey components that were only collected in 2019-March 2020 are made available as convenience samples through <a href="https://www.cdc.gov/rdc/">NCHS's Research Data Center (RDC)</a> because unbiased estimates for the NHANES target population cannot be produced with these samples.</p>
+        <p>For survey components conducted in both 2017-2018 and 2019-2020 cycles, data collected from 2019 to March 2020 were combined with data from 2017 to 2018 to form a nationally representative sample of NHANES 2017-March 2020 pre-pandemic data. Please see the <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;Cycle=2017-2020">NHANES 2017-March 2020 pre-pandemic data</a> page for detailed information on this combined sample.</p>
+        <p>QuantiFERON&reg;-TB
+        Gold Plus results are interpreted using the following criteria: </p>
+        <style>
+            table, th, td {
+            border:1px solid black;
+            border-collapse: collapse;
+            style="text-align: center;
+            }
+        </style>
+        <div style="text-align: center;">
+        <table style="width: 100%;">
+            <tbody>
+                <tr style="height: 70px;">
+                    <th>Nil [IU/mL]</th>
+                    <th>TB1 Antigen minus Nil <br />
+                    [IU/mL]</th>
+                    <th>TB2 Antigen minus Nil <br />
+                    [IU/mL]</th>
+                    <th>Mitogen minus Nil <br />
+                    [IU/mL]</th>
+                    <th>QuantiFERON&reg;-<br />
+                    TB Plus Result</th>
+                    <th>Reporting</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center;" rowspan="5"> ⋜ 8.0</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;"> ⋝ 0.35 and ⋝ 25% of Nil value</td>
+                    <td style="text-align: center;">Any</td>
+                    <td style="text-align: center;" rowspan="2"> Any</td>
+                    <td style="text-align: center;" rowspan="2">Positive</td>
+                    <td style="text-align: center;">POC</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Any</td>
+                    <td style="text-align: center;">⋝ 0.35 and ⋝ 25% of Nil value</td>
+                    <td style="text-align: center;">POC</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;" rowspan="2">    &lt; 0.35 <br />
+                    OR <br />
+                    ⋝ 0.35 and &lt; 25% of Nil value </td>
+                    <td style="text-align: center;" rowspan="2">    &lt; 0.35 <br />
+                    OR <br />
+                    ⋝ 0.35 and &lt; 25% of Nil value </td>
+                    <td style="text-align: center;">⋝ 0.5</td>
+                    <td style="text-align: center;">Negative</td>
+                    <td style="text-align: center;">NRN</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">&lt; 0.5</td>
+                    <td style="text-align: center;">Indeterminate</td>
+                    <td style="text-align: center;">INDET</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">&gt; 8.0</td>
+                    <td style="text-align: center;">Any</td>
+                    <td style="text-align: center;">Any</td>
+                    <td style="text-align: center;">Any</td>
+                    <td style="text-align: center;">Indeterminate</td>
+                    <td style="text-align: center;">INDET</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <p style="margin: 0in 0.5in 0pt; line-height: 15.95pt;">&nbsp;</p>
+        <p>Refer to the <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2019" target="_blank">2019-2020 Laboratory Data Overview </a>for
+        general information on NHANES laboratory data.</p>
+        <p>
+        There are over 800 laboratory tests performed on NHANES participants. However, not all participants provided biospecimens or enough volume for all the tests to be performed. The specimen availability can also vary by age or other population characteristics. For example, in 2019-2020, approximately 71% of children aged 1-17 years who were examined in the MEC provided a blood specimen through phlebotomy, while 94% of examined adults age 18 and older provided a blood specimen. Analysts should be aware of this and evaluate the extent of missing data in the dataset related to the outcome of interest as well as any predictor variables used in the analyses as needed.
+        <br />
+        </p>
+        <p><strong>Demographic and
+        Other Related Variables </strong></p>
+        <p>The analysis of
+        NHANES laboratory data may require additional demographic variables. The <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2019" target="_blank">NHANES2019-March 2020 Demographics File </a>contains demographic data, health
+        indicators, and other related information collected during household interviews.&nbsp;</p>
+        <p>The laboratory
+        data file can be linked to the Demographics file and other NHANES data files in the 2019-March 2020 convenience sample using the unique survey
+        participant identifier (i.e., SEQN).</p>
+    </body>
+</html></div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>Westgard J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewhart chart for quality control in clinical chemistry. Clin Chem (1981) 27:493-501.</li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTBN">LBXTBN - TB Nil control result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTBN</dd>
+            <dt>SAS Label: </dt>
+            <dd>TB Nil control result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">TB Nil control result - Negative Control</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.01 to 11</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1581</td>
+                <td class="values" align="right">1581</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">267</td>
+                <td class="values" align="right">1848</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTBM">LBXTBM - TB Mitogen control result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTBM</dd>
+            <dt>SAS Label: </dt>
+            <dd>TB Mitogen control result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">TB Mitogen control result - Positive Control</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.02 to 11</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1581</td>
+                <td class="values" align="right">1581</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">267</td>
+                <td class="values" align="right">1848</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTB1">LBXTB1 - TB1 Antigen result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTB1</dd>
+            <dt>SAS Label: </dt>
+            <dd>TB1 Antigen result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">TB1 Antigen result - Primarily detects CD4 T cell response</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.01 to 11</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1581</td>
+                <td class="values" align="right">1581</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">267</td>
+                <td class="values" align="right">1848</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTB2">LBXTB2 - TB2 Antigen result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTB2</dd>
+            <dt>SAS Label: </dt>
+            <dd>TB2 Antigen result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">TB2 Antigen result - Optimized for detection of CD4 and CD8 T cell responses</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.01 to 11</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1581</td>
+                <td class="values" align="right">1581</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">267</td>
+                <td class="values" align="right">1848</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBXTBIN">LBXTBIN - TB coded result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBXTBIN</dd>
+            <dt>SAS Label: </dt>
+            <dd>TB coded result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">TB coded result</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Positive</td>
+                <td class="values" align="right">142</td>
+                <td class="values" align="right">142</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Negative</td>
+                <td class="values" align="right">1422</td>
+                <td class="values" align="right">1564</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Indeterminate – Low mitogen</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">1579</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Indeterminate – High Nil</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1581</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">267</td>
+                <td class="values" align="right">1848</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

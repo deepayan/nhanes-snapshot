@@ -1,0 +1,723 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Electrolytes - Urine" />
+    <meta name="DC.Subject" content="NHANES 2003-2006: Electrolytes - Urine Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2003-2006 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2003">
+      <title>
+						NHANES 2003-2006:
+						Electrolytes - Urine Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#SSUNAP">SSUNAP - Urine Sodium (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#SSUKP">SSUKP - Urine Potassium (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#SSUCLP">SSUCLP - Urine Chloride (mmol/L)</a>
+                </li>
+                <li>
+                  <a href="#SSWT0306">SSWT0306 - Subsample weight</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2003-2006 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Electrolytes - Urine (SSUECD_R)
+			</h3>
+        <h4>RDC Only 
+				Data File: SSUECD_R.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				September 2012</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+        <h5 class="left">
+					Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (https://www.cdc.gov/rdc).
+				</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>Measurement of sodium, potassium, and chloride in a subset of stored casual urine samples from NHANES 2003-2006.</p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>1,241 participants aged 20-59 years of age from the 1/3 urinary iodine subsample of NHANES 2003-2006; selection was based on blood pressure and reported sodium intake levels as described below to ensure a wide range of values for these two related measures </p>
+<p>Samples were selected from the 1/3 urinary iodine subsample for untreated non-hypertensives who met the criteria listed below:</p>
+<ul>
+    <li>ages 20-59 </li>
+    <li>not taking blood pressure meds </li>
+    <li>not pregnant </li>
+    <li>not taking angiotensin converting enzyme (ACE) inhibitor, angiotensin II inhibitors meds, not taking a diuretic </li>
+    <li>having provided informed consent for further testing of stored specimen </li>
+    <li>non-missing sodium intake value </li>
+    <li>having a non-missing urine creatinine measure. </li>
+</ul>
+<p>This group of untreated non-hypertensives was then stratified into 8 groups based on their blood pressure category and sodium intake from one dietary recall. Based on these 8 strata sample persons were randomly selected with equal numbers per strata. The untreated hypertensives from the full examination sample (not limited to the 1/3 urinary iodine subsample) that fit the above criteria were all included to form a ninth stratum. </p>
+<p>&nbsp;</p></div>
+        <h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2>
+        <div class="block"><p><strong>Measurement of Urine Sodium, Potassium, and Chloride</strong></p>
+<p><strong></strong>All assays were conducted using the Cobas ISE/Na<sup>+</sup>, K<sup>+</sup>, Cl<sup>-</sup> assay performed on the Roche Modular P instrument. The measurement of electrolytes in urine via ion-selective electrode (ISE) is an established and widely used procedure in routine clinical laboratories. The ISE makes use of the unique properties of certain membrane materials to develop an electrical potential for the measurement of ions in solution. The method quantitatively determines sodium, potassium and chloride in urine. The manufacturer has standardized this method against primary calibrators prepared gravimetrically from purified salts. Two levels of standard are provided by the manufacturer for daily calibration. The volume of urine needed per test is 150 &micro;L (combined measurement of sodium, potassium, and chloride).&nbsp;</p>
+<p>
+<table border="1" bordercolor="#000000">
+    <caption valign="top">Analyte codes and limits of detection (LOD):</caption>
+    <thead>
+        <tr>
+            <th>Analyte name</th>
+            <th>Analyte code</th>
+            <th>LOD (mmol/L)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Urine sodium (Na<sup>+</sup>)</td>
+            <td>UNA</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Urine potassium (K<sup>+</sup>)</td>
+            <td>UK</td>
+            <td>1.5</td>
+        </tr>
+        <tr>
+            <td>Urine chloride (Cl<sup>-</sup>)</td>
+            <td>UCL</td>
+            <td>10</td>
+        </tr>
+    </tbody>
+</table>
+</p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>Data were received after all the laboratory testing was complete. The data were not edited for extreme values.</p>
+<p>Data will only be available through the Research Data Center. </p></div>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2>
+        <div class="block"><p>The laboratory and method were certified according to the Clinical Laboratory Improvement Amendment (1988) guidelines. </p>
+<p>For urine Na<sup>+</sup>, K<sup>+</sup> and Cl<sup>- </sup>, commercially prepared quality control material was purchased from CLINIQA in two levels (LIQUID QC<sup>TM</sup> 1 and LIQUID QC<sup>TM</sup> 2). The controls are liquid and ready for use. Stability of the constituents at 2-8&deg;C is 36 months or until the expiration date, whichever comes first. Bench QC pools were characterized to determine the mean and control limits by analyzing duplicate samples in at least 20 runs. After establishment of the control limits of the pools, QC samples contained within each analytical run were evaluated for validity by use of a multi-rule quality control program. </p>
+<p>
+<table border="1" bordercolor="#000000">
+    <caption valign="top">Performance of QC pools during the study period (June-July 2010):</caption>
+    <thead>
+        <tr>
+            <th>QC Pool</th>
+            <th>Analyte</th>
+            <th>N</th>
+            <th>Mean (mmol/L)</th>
+            <th>SD (mmol/L)</th>
+            <th>CV (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>LIQUID QC<sup>TM</sup> 1</td>
+            <td>UNA</td>
+            <td>33</td>
+            <td>69.9</td>
+            <td>1.06</td>
+            <td>1.5%</td>
+        </tr>
+        <tr>
+            <td>LIQUID QC<sup>TM</sup> 2</td>
+            <td>UNA</td>
+            <td>33</td>
+            <td>162</td>
+            <td>1.12</td>
+            <td>0.7%</td>
+        </tr>
+        <tr>
+            <td>LIQUID QC<sup>TM</sup> 1</td>
+            <td>UK</td>
+            <td>33</td>
+            <td>28.3</td>
+            <td>0.76</td>
+            <td>2.7%</td>
+        </tr>
+        <tr>
+            <td>LIQUID QC<sup>TM</sup> 2</td>
+            <td>UK</td>
+            <td>33</td>
+            <td>74.8</td>
+            <td>2.09</td>
+            <td>2.8%</td>
+        </tr>
+        <tr>
+            <td>LIQUID QC<sup>TM</sup> 1</td>
+            <td>UCL</td>
+            <td>33</td>
+            <td>81.5</td>
+            <td>1.65</td>
+            <td>2.0%</td>
+        </tr>
+        <tr>
+            <td>LIQUID QC<sup>TM</sup> 2</td>
+            <td>UCL</td>
+            <td>33</td>
+            <td>192</td>
+            <td>2.82</td>
+            <td>1.5%</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p>The laboratory achieved satisfactory participation in the CAP proficiency testing surveys during 2010 for the urine chemistry surveys for sodium, potassium, and chloride and for the linearity and calibration verification surveys for sodium. </p>
+<p>The laboratory also included blind QC samples (high or low pool) in each run at a rate of 1 blind QC in every 20 samples. These samples were labeled the same as unknown participant samples and therefore remained unrecognized by the analyst. </p>
+<p>
+<table border="1" bordercolor="#000000">
+    <caption valign="top">Performance of blind QC pools during the study period:</caption>
+    <thead>
+        <tr>
+            <th>Blind QC Pool</th>
+            <th>Analyte</th>
+            <th>N</th>
+            <th>Mean (mmol/L)</th>
+            <th>SD (mmol/L)</th>
+            <th>CV</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Low</td>
+            <td>UNA</td>
+            <td>33</td>
+            <td>168</td>
+            <td>1.37</td>
+            <td>0.8%</td>
+        </tr>
+        <tr>
+            <td>High</td>
+            <td>UNA</td>
+            <td>33</td>
+            <td>60.4</td>
+            <td>1.18</td>
+            <td>2.0%</td>
+        </tr>
+        <tr>
+            <td>Low</td>
+            <td>UK</td>
+            <td>33</td>
+            <td>73.9</td>
+            <td>3.32</td>
+            <td>4.5%</td>
+        </tr>
+        <tr>
+            <td>High</td>
+            <td>UK</td>
+            <td>33</td>
+            <td>37.4</td>
+            <td>1.36</td>
+            <td>3.6%</td>
+        </tr>
+        <tr>
+            <td>Low</td>
+            <td>UCL</td>
+            <td>33</td>
+            <td>185</td>
+            <td>1.94</td>
+            <td>1.0%</td>
+        </tr>
+        <tr>
+            <td>High</td>
+            <td>UCL</td>
+            <td>33</td>
+            <td>56.9</td>
+            <td>0.96</td>
+            <td>1.7%</td>
+        </tr>
+    </tbody>
+</table>
+</p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>The subsample of participants aged 20-59 y from NHANES&nbsp;2003-2006 requires modification of original sampling weights. New sampling weights were generated by NCHS. Weights were created to account for non-response and to sum to the examination weights. The adjustment factors were based on the selection group (1-9) and race/ethnicity. The selection group variable was used since for each of the 9 groups there were different selection probabilities. Given the small cell sizes only one demographic variable could be added to adjust the weights. </p>
+<p>Several sensitivity analyses were run to assess the weights. All methods were quite robust. The method chosen had the least variability of the weights. </p>
+<p>All statistical analyses using these data should assess the relative standard error of the estimates, the degrees of freedom and the design effect. The three diagnostics listed above are important to assess the reliability of the estimates. </p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Caudill SP, Schleicher RL, Pirkle JL. 2008. Multi-rule quality control for the age-related eye disease study. Stat Med 27:4094-4106.</li>
+          <li>Clinical Laboratory Improvement Amendment. Public Law 100-578. 1988. 10-31-1988.</li>
+          <li>Roche Diagnostics ISE/Na<sup>+</sup>, K<sup>+</sup>, Cl<sup>-</sup> Package insert, 2009-03, V6.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			59 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSUNAP">SSUNAP - Urine Sodium (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSUNAP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Urine Sodium (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urine Sodium (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">7.1 to 303</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1241</td>
+                <td class="values" align="right">1241</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1241</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSUKP">SSUKP - Urine Potassium (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSUKP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Urine Potassium (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urine Potassium (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2 to 236</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1241</td>
+                <td class="values" align="right">1241</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1241</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSUCLP">SSUCLP - Urine Chloride (mmol/L)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSUCLP</dd>
+            <dt>SAS Label: </dt>
+            <dd>Urine Chloride (mmol/L)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urine Chloride (mmol/L)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">7.1 to 332</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1241</td>
+                <td class="values" align="right">1241</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1241</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSWT0306">SSWT0306 - Subsample weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSWT0306</dd>
+            <dt>SAS Label: </dt>
+            <dd>Subsample weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Subsample weight</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9956.7511 to 947397.6886</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">0</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9956.7511366</td>
+                <td class="values">9956.7511366</td>
+                <td class="values" align="right">1241</td>
+                <td class="values" align="right">1241</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1241</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

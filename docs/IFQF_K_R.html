@@ -1,0 +1,829 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>IFQF_K_R</title>
+    <meta name="title" content="NHANES 2019-March 2020: Infant Formula Questionnaire File Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0 3em 1em;
+					text-align: left;
+					}
+
+					.nhanes-doc ol,
+					.nhanes-doc ul {
+					margin-left: 2.4em;
+					margin-bottom: 1.2em;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					}
+
+					.nhanes-doc li {
+					margin-top: 0.6em;
+					}
+
+					.nhanes-doc #toc ul,
+					.nhanes-doc #References ul {
+					margin-left: 0em;
+					}
+
+					.nhanes-doc #Sections ol ul,
+					.nhanes-doc #Sections ul ul {
+					margin-left: 0;
+					}
+
+					.nhanes-doc #Sections ol ol,
+					.nhanes-doc #Sections ul ol {
+					margin-left: -1.2em;
+					}
+
+					.nhanes-doc #Sections li {
+					margin-left: 1.2em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					padding: 0;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#IFD001">IFD001 - Any Infant Formula taken?</a>
+              </li>
+              <li>
+                <a href="#IFDCOUNT">IFDCOUNT - Total # of Infant Formulas Taken</a>
+              </li>
+              <li>
+                <a href="#IFPID">IFPID - Formula product ID Number</a>
+              </li>
+              <li>
+                <a href="#IFNAME">IFNAME - Formula name</a>
+              </li>
+              <li>
+                <a href="#IFQ010">IFQ010 - Was container seen?</a>
+              </li>
+              <li>
+                <a href="#IFDMTCH">IFDMTCH - Matching code</a>
+              </li>
+              <li>
+                <a href="#IFQ055">IFQ055 - How long infant formula was taken (days)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2019-March 2020 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Infant Formula Questionnaire File (IFQF_K_R)</h3>
+        <h4>RDC Only  Data File: IFQF_K_R.xpt</h4>
+        <h5 class="left">First Published: April 2023</h5>
+        <h5 class="right">Last Revised: NA</h5>
+        <h5 class="left">Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The NHANES program suspended field operations in March 2020 due to the coronavirus disease 2019 (COVID-19) pandemic. As a result, data collection for the NHANES 2019-2020 cycle was not completed. Data collected in 2019-March 2020 can be accessed as convenience samples through the <a href="https://www.cdc.gov/rdc/" target="_blank">NCHS Research Data Center (RDC)</a>. Any analyses based solely on the 2019-March 2020 data would not be generalizable to the U.S. civilian non-institutionalized population. Please refer to the Analytic Notes section for more details on the use of the data.</p>
+<p>The Infant Formula Questionnaire (IFQ) section provides information on infant formula (IF) consumed by survey participants aged 0-24 months old during the 14-day period prior to the household interview. In 2019, additional questions on infant feeding and introduction of first foods were added to the survey to fill gaps in scientific knowledge and support evidence-based programs and policies related to early childhood nutrition (see details at: <a href="https://wwwn.cdc.gov/Nchs/Nhanes/limited_access/DB24_K_R.htm" target="_blank">DB24_K_R</a>). To complement these data, the infant formula questions were also added in 2019 to capture infant formulas consumed by survey participants.&nbsp;</p>
+<p>The Infant Formula Questionnaire File (IFQF_K_R) contains detailed information about the types of IF reported by each participant.&nbsp;</p>
+<p>IFQF_K_R includes one record for each IF reported for each participant. Each IF is identified by a Formula product ID Number (IFPID). Each record contains, but is not limited to, the information listed below:</p>
+<p>&bull;	Name and ID number of the formula<br />
+&bull;	Total # of formulas taken<br />
+&bull;	How long formula was taken (days)</p>
+<p>These records can be linked to the NHANES Infant Formula Database (NHANES-IFD), using Formula product ID numbers (IFPID), to obtain more detailed information on reported products. The NHANES-IFD provides information on nutrients and ingredients in the infant formulas as reported on the product label. See below the Data Processing and Editing section for additional information related to the use of the NHANES-IFD.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 0-24 months in the NHANES 2019-March 2020 convenience sample were eligible.</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>The IFQ was asked to an adult proxy in the home, by trained interviewers, using the Computer-Assisted Personal Interview (CAPI) system. The <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2019-2020/questionnaires/IFQ_K.pdf" target="_blank">IFQ</a> can be found on the NHANES website.</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>Data were routinely examined for discrepancies and erroneous entries. Trained nutritionists reviewed incoming data and matched reported IF entries to known infant formulas from the NHANES Infant Formula Database (NHANES IFD), where possible; sought additional product labels if feasible; assigned generic infant formula as appropriate; transferred or removed products that were not considered IF; and assigned matching codes (confidence codes). All coding was reviewed by NHANES.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p><strong>Data Collection Methods</strong></p>
+<p><strong>Infant Formula</strong></p>
+<p>During the household interview, the proxy respondent was asked if the infant survey participant had consumed an IF in the past 14 days. Those who answered &ldquo;yes&rdquo; were asked to show the interviewer the IF containers for all the products used. For each IF reported, the interviewer entered the product&rsquo;s complete name from the container. If the containers were not available, the interviewer asked the respondent to verbally report the name of the IF. Interviewers recorded up to five IFs.&nbsp;</p>
+<p>When the interviewer entered the IF name, the name was automatically matched to the IF database to identify an exact match or similar text matches. The interviewer then selected the best match from a list of possible matches. The original entry of the interviewer and the product selected from the list were saved under separate variables for quality control purposes. If an exact match of the product was not found, the interviewer was instructed to select &ldquo;product not found on list&rdquo; from the list. The manufacturer was either selected from the manufacturer list or entered manually. The respondent was also asked how long the participant has been taking each IF.&nbsp;</p>
+<p><strong>Matching reported infant formulas to known products</strong></p>
+<p>NHANES nutritionists matched the product names entered by the interviewer to a known product when possible. Product labels for each IF reported were obtained from sources such as the manufacturer, distributor or retailer, the Internet, and company catalogs. Selected label information was then entered into the NHANES IFD.</p>
+<p>In addition to the product labels, NHANES nutritionists also created and maintained generic IFs in the database. Generics were created in the database when a reported formula has partial information provided, such as a store brand formula name and the manufacturer, but no ingredient information available. Private label manufacturers often make products with identical ingredients and nutrient content for different brands. These generic IFs were linked to the ingredients and nutrient content of another product with identical manufacturer and product characteristics. For example, Brand X Gentle Infant Formula Milk-based Powder was reported, but no label information on ingredient or nutrient content was located. However, there is a label for Brand Y Gentle Infant Formula Milk-based Powder, made by the same manufacturer, in the NHANES IFD. A generic record would be created in the IFD for the Brand X product with ingredient and nutrient content information from Brand Y.&nbsp;</p>
+<p>After the IF data was coded and matched to a product in the NHANES IFD, various types of reviews were conducted to ensure the quality of the data. Interviewers' comments are reviewed to ensure that they have been accounted for in coding. Decisions were made about how to code new or unusual IF products reported. Infant formulas that could not be matched to items in the database were resolved by NHANES nutritionist.</p>
+<p>Product information is released from the NHANES IFD, which contains detailed information on the IF reported for survey participants in NHANES 2019-March 2020. The NHANES IFD release consists of four datasets, which contain information on:</p>
+<p>Infant Formula Product Information (IFPI)<br />
+Infant Formula Nutrient Information (IFNI)<br />
+Infant Formula Ingredient Information (IFII)<br />
+Infant Formula Label Descriptor (IFLD)</p>
+<p>The infant formula product ID numbers (IFPID) located in the Infant Formula Questionnaire file can be used to merge with the NHANES-IFD files. For more information on the NHANES IFD, please refer to the documentation located on the <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=LimitedAccess&amp;CycleBeginYear=2019" target="_blank">NHANES website</a>.</p>
+<p><strong>Data Editing</strong></p>
+<p><strong><span style="text-decoration: underline;">Specific variables and edits:</span></strong></p>
+<p><span style="text-decoration: underline;"><strong>IFD001</strong>: Any infant formula taken in the past 14 days?</span></p>
+<p>Participants having taken a product determined to be an infant formula in the last 14 days are coded &ldquo;1.&rdquo; Participants who did not take any product that was determined to be an infant formula in the last 14 days are coded &ldquo;2&rdquo;. A small number of respondents refused to answer this question (coded 7) or did not know whether the infant participant took an infant formula in the 14 days (coded 9).</p>
+<p><span style="text-decoration: underline;"><strong>IFDCOUNT</strong>: Total # of infant formulas taken</span></p>
+<p>This variable was computed to represent the total number of IF reported for the participant including those IF identified as unknown (IFPID = 666XXXXXXX). Each product reported as refused or don&rsquo;t know is still included in the total count of IF.&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong>IFPID</strong>: Formula product ID number?</span></p>
+<p>Infant formula ID is a unique number assigned to each product entered in the NHANES IFD.</p>
+<p><strong><span style="text-decoration: underline;">IFNAME</span></strong><span style="text-decoration: underline;">: Formula name?</span></p>
+<p>This is the name from the front of the product label. The brand name is generally entered first (i.e., Enfamil) and then followed by the actual product name (i.e., Gentle). Information such as the formula base (i.e., milk-based) of the product, formula form (i.e., Powder, Ready to Use), and other label descriptors that help distinguish a product from a similar product (i.e., DHA, Lutein, Vitamin E) are also included if they are on the front of the product label.&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong>IFQ010</strong>: Was container seen?</span></p>
+<p>This variable indicated whether the product container was seen by the interviewer. Containers were seen for approximately 96% of the records. A more precise name for IF could be recorded by the interviewer, and thus a more precise match to a known IF can be made, when the interviewer saw the IF container rather than recording the respondent&rsquo;s report of the IF name. In general, this was reflected in the matching code, but analysts should be aware that precision was greater when a container was seen.</p>
+<p>This variable was mostly unedited. Interviewers asked to see the containers for each infant formula reported. Therefore, most records included in the infant formula file contained this information.</p>
+<p><strong><span style="text-decoration: underline;">IFDMTCH</span></strong><span style="text-decoration: underline;">: Matching code</span></p>
+<p>Infant formulas were recorded in the IFQ during the household interview with varying degrees of accuracy and completeness. NHANES nutritionists made best efforts to find the exact product to match the reported IFs, however, this match was completed with varying degrees of precision. Variable IFDMTCH indicated the certainty of matching an IF recorded during the interview with the actual product label.</p>
+<p>Exact or near exact match (IFDMTCH=1) indicated that this was the only product that could match this entry.</p>
+<p>Probable match (IFDMTCH=2) indicated that the match was not exact, but knowledge of the company&rsquo;s products strongly suggested that this was the only possible match choice. For example, the entry may not have included words such as DHA, Vitamin E, Lutein, but no other options were available for this brand according to manufacturer or retailer information.</p>
+<p>Generic match (IFDMTCH=3) indicated that information on a reported formula, such as a store brand formula name and the manufacturer, was entered by the interviewer, and there was an identical product made by the same manufacturer for a different distributor or retailer in the database. Thus, the ingredients and nutrient content were matched with the reported IF and considered to be accurate despite lacking an exact brand match.</p>
+<p>Reasonable match (IFDMTCH=4) indicated that the product name may have been incomplete or could have been complete, but other products of this brand also started with these same words so this could not be assured. In these cases, the entered name was matched to the most basic product by this company, as assessed by label wording.</p>
+<p>Default match (IFDMTCH=5) indicated that the exact product could not be obtained because the name was imprecise, or the exact brand product could not be located, and no generic was assigned. In these cases, the entered product was matched to a created default product based upon: a) the most commonly reported brands for major IF products; or b) products manufactured by a large, private-label manufacturer.</p>
+<p>Finally, match codes of No match (IFDMTCH=6) indicated that no product was found and there was not enough detail in the name to assign a generic or default match with any confidence. The words &ldquo;no product information available&rdquo; were listed as the product name (IFNAME).</p>
+<p>Analysts should be aware the self-reported nature of these data. Additionally, for default matches and matches that were made between several similarly named infant formulas, there was less certainty that the ingredients and nutrient content in the IF assigned exactly matched those in the IF actually taken.</p>
+<p><span style="text-decoration: underline;"><strong>IFQ055</strong>: How long infant formula was taken?</span></p>
+<p>This information was collected using two-part (number and unit) questions to allow participants to report how long they had been taking the product or similar product in days, weeks, months, or years. The released variables were edited to standardize the reported length of time to number of days, using the following conversion factors: 7 days per week, 30.4 days per month, and 365 days per year.</p>
+<p>There were persons who reported the use of an infant formula but did not know how long they had been using the product (IFQ055 = 99999) or refused to report the length of use (IFQ055 = 77777).</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The COVID-19 pandemic required suspension of NHANES 2019-2020 field operations in March 2020 after data were collected in 18 of the 30 survey locations in the 2019-2020 sample. Data collection was cancelled for the remaining 12 locations. Calculation of survey weights for this partial cycle is not possible due to incomplete data collection. Therefore, data from survey components that were only collected in 2019-March 2020 are made available as convenience samples through <a href="https://www.cdc.gov/rdc/" target="_blank">NCHS's Research Data Center (RDC)</a> because unbiased estimates for the NHANES target population cannot be produced with these samples.</p>
+<p>For survey components conducted in both 2017-2018 and 2019-2020 cycles, data collected from 2019 to March 2020 were combined with data from 2017 to 2018 to form a nationally representative sample of NHANES 2017-March 2020 pre-pandemic data. Please see the <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Cycle=2017-2020" target="_blank">NHANES 2017-March 2020 pre-pandemic data</a> page for detailed information on this combined sample.</p>
+<p>In NHANES 2019-March 2020, a total of 182 infant formulas were reported for survey participants as taken in the last 14 days prior to the household interview. It is recommended that analysts merge participant dataset with the NHANES Infant Formula Database files to obtain detailed information on the reported infant formulas.</p>
+<p>During the data editing process, outlier values were examined. When there was insufficient information to conclude that values were invalid, they were left in the data set. Analysts should examine the distribution of the data and consider whether or not it is appropriate to include or exclude extreme values in a given analysis.</p>
+<p>The brand name information on infant formulas was collected whenever feasible, to ensure as much accuracy as possible in finding the label information for the exact product taken and providing exact nutrient information for this product to data users. Brand names that are available in a limited geographic area of the U.S. are not released; generic names are used for these products.</p></div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 MONTHS -
+			23 MONTHS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="IFD001">IFD001 - Any Infant Formula taken?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">IFD001</dd>
+            <dt>SAS Label: </dt>
+            <dd>Any Infant Formula taken?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now I'd like to know about any infant and toddler formulas {SP} had in the past two weeks. May I please see the containers for all the infant and toddler formulas that were fed to {SP} (in the past two weeks)?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER INSTRUCTION: TODDLER FORMULAS MAY ALSO BE CALLED TODDLER MILK, GROWING UP MILK, OR FOLLOW-ON FORMULA.
+CAPI INSTRUCTION: IFQ005 THROUGH IFQ040 SHOULD APPEAR ON 1 LINE ON A GRID ALLOWING UP TO 5 ENTRIES.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 MONTHS -
+			23 MONTHS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">191</td>
+                <td class="values" align="right">191</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">24</td>
+                <td class="values" align="right">215</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">215</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">218</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">186</td>
+                <td class="values" align="right">404</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="IFDCOUNT">IFDCOUNT - Total # of Infant Formulas Taken</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">IFDCOUNT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Total # of Infant Formulas Taken</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total # of Infant Formulas Taken Formula</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 MONTHS -
+			23 MONTHS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 2</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">215</td>
+                <td class="values" align="right">215</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">215</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">218</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">186</td>
+                <td class="values" align="right">404</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="IFPID">IFPID - Formula product ID Number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">IFPID</dd>
+            <dt>SAS Label: </dt>
+            <dd>Formula product ID Number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Formula product ID number</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 MONTHS -
+			23 MONTHS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2 to 6660000001</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">191</td>
+                <td class="values" align="right">191</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">213</td>
+                <td class="values" align="right">404</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="IFNAME">IFNAME - Formula name</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">IFNAME</dd>
+            <dt>SAS Label: </dt>
+            <dd>Formula name</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Formula name</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 MONTHS -
+			23 MONTHS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">Formula name</td>
+                <td class="values">Value was recorded</td>
+                <td class="values" align="right">191</td>
+                <td class="values" align="right">191</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">&lt; blank &gt;</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">213</td>
+                <td class="values" align="right">404</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="IFQ010">IFQ010 - Was container seen?</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">IFQ010</dd>
+            <dt>SAS Label: </dt>
+            <dd>Was container seen?</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Infant formula container seen</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">INTERVIEWER:  ENTER 1 RESPONSE
+CAPI INSTRUCTION:
+DISPLAY PRODUCT NAME AS LEFT HEADER.
+DISPLAY "IFQ010" AS COLUMN HEADER</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 MONTHS -
+			23 MONTHS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">180</td>
+                <td class="values" align="right">180</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">191</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">213</td>
+                <td class="values" align="right">404</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="IFDMTCH">IFDMTCH - Matching code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">IFDMTCH</dd>
+            <dt>SAS Label: </dt>
+            <dd>Matching code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Matching code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 MONTHS -
+			23 MONTHS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Exact or near exact match</td>
+                <td class="values" align="right">186</td>
+                <td class="values" align="right">186</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Probable match</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">187</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Generic match</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">189</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Reasonable match</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">190</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Default match</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">190</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">No match</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">191</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">191</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">191</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">213</td>
+                <td class="values" align="right">404</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="IFQ055">IFQ055 - How long infant formula was taken (days)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">IFQ055</dd>
+            <dt>SAS Label: </dt>
+            <dd>How long infant formula was taken (days)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">For how long has {SP} been fed this formula?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 MONTHS -
+			23 MONTHS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 547</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">186</td>
+                <td class="values" align="right">186</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7777777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">186</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9999999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">191</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">213</td>
+                <td class="values" align="right">404</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

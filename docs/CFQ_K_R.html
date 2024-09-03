@@ -1,0 +1,3163 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>CFQ_K_R</title>
+    <meta name="title" content="NHANES 2019-March 2020: Cognitive Functioning  Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0 3em 1em;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					padding: 0 3em 1em;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#CFDSTAT">CFDSTAT - CFQ Completion Status</a>
+              </li>
+              <li>
+                <a href="#CFDMTH2">CFDMTH2 - Exact month</a>
+              </li>
+              <li>
+                <a href="#CFDDATE2">CFDDATE2 - Exact date</a>
+              </li>
+              <li>
+                <a href="#CFDRHINO">CFDRHINO - Animal naming</a>
+              </li>
+              <li>
+                <a href="#CFDCFACE">CFDCFACE - Clock contour (face)</a>
+              </li>
+              <li>
+                <a href="#CFDCNUM">CFDCNUM - Clock numbers</a>
+              </li>
+              <li>
+                <a href="#CFDCHAND">CFDCHAND - Clock hands</a>
+              </li>
+              <li>
+                <a href="#CFDCLOCK">CFDCLOCK - Clock drawing - administration</a>
+              </li>
+              <li>
+                <a href="#CFDTRAIL">CFDTRAIL - Trail Making - Part B</a>
+              </li>
+              <li>
+                <a href="#CFDFACE1">CFDFACE1 - Word recall trial 1: Face</a>
+              </li>
+              <li>
+                <a href="#CFDSVEL1">CFDSVEL1 - Word recall trial 1: Velvet</a>
+              </li>
+              <li>
+                <a href="#CFDCHUR1">CFDCHUR1 - Word recall trial 1: Church</a>
+              </li>
+              <li>
+                <a href="#CFDSDAI1">CFDSDAI1 - Word recall trial 1: Daisy</a>
+              </li>
+              <li>
+                <a href="#CFDRED1">CFDRED1 - Word recall trial 1: Red</a>
+              </li>
+              <li>
+                <a href="#CFDSWR1">CFDSWR1 - Word recall trial 1: Total</a>
+              </li>
+              <li>
+                <a href="#CFDFACE2">CFDFACE2 - Word recall trial 2: Face</a>
+              </li>
+              <li>
+                <a href="#CFDSVEL2">CFDSVEL2 - Word recall trial 2: Velvet</a>
+              </li>
+              <li>
+                <a href="#CFDCHUR2">CFDCHUR2 - Word recall trial 2: Church</a>
+              </li>
+              <li>
+                <a href="#CFDSDAI2">CFDSDAI2 - Word recall trial 2: Daisy</a>
+              </li>
+              <li>
+                <a href="#CFDRED2">CFDRED2 - Word recall trial 2: Red</a>
+              </li>
+              <li>
+                <a href="#CFDSWR2">CFDSWR2 - Word recall trial 2: Total</a>
+              </li>
+              <li>
+                <a href="#CFD5NUM">CFD5NUM - Digit span 5 forward</a>
+              </li>
+              <li>
+                <a href="#CFD3NUM">CFD3NUM - Digit span 3 backwards</a>
+              </li>
+              <li>
+                <a href="#CFDSUBT">CFDSUBT - Serial 7s</a>
+              </li>
+              <li>
+                <a href="#CFDSUB7C">CFDSUB7C - Serial 7s subtractions correct</a>
+              </li>
+              <li>
+                <a href="#CFDSENT">CFDSENT - Sentence recall</a>
+              </li>
+              <li>
+                <a href="#CFDWORD">CFDWORD - Verbal fluency - administration</a>
+              </li>
+              <li>
+                <a href="#CFDFWCNT">CFDFWCNT - Verbal fluency F words count</a>
+              </li>
+              <li>
+                <a href="#CFDALIKE">CFDALIKE - Word pairing</a>
+              </li>
+              <li>
+                <a href="#CFDFACE3">CFDFACE3 - Word recall delay: Face</a>
+              </li>
+              <li>
+                <a href="#CFDSVEL3">CFDSVEL3 - Word recall delay: Velvet</a>
+              </li>
+              <li>
+                <a href="#CFDCHUR3">CFDCHUR3 - Word recall delay: Church</a>
+              </li>
+              <li>
+                <a href="#CFDSDAI3">CFDSDAI3 - Word recall delay: Daisy</a>
+              </li>
+              <li>
+                <a href="#CFDRED3">CFDRED3 - Word recall delay: Red</a>
+              </li>
+              <li>
+                <a href="#CFDSWR3">CFDSWR3 - Word recall delay: Total</a>
+              </li>
+              <li>
+                <a href="#CFQ575B">CFQ575B - Comment: Hearing problem</a>
+              </li>
+              <li>
+                <a href="#CFQ575C">CFQ575C - Comment: Vision problem</a>
+              </li>
+              <li>
+                <a href="#CFQ575D">CFQ575D - Comment: Physical limitation </a>
+              </li>
+              <li>
+                <a href="#CFQ575E">CFQ575E - Comment: Unable to read/write (literacy)</a>
+              </li>
+              <li>
+                <a href="#CFQ575F">CFQ575F - Comment: Doesn't understand English well</a>
+              </li>
+              <li>
+                <a href="#CFQ575G">CFQ575G - Comment: Reported cognitive limitation</a>
+              </li>
+              <li>
+                <a href="#CFQ575H">CFQ575H - Comment: Reported taking medications</a>
+              </li>
+              <li>
+                <a href="#CFQ575I">CFQ575I - Comment: Restless or fidgety (observed)</a>
+              </li>
+              <li>
+                <a href="#CFQ575J">CFQ575J - Comment: Reported wanting to quit</a>
+              </li>
+              <li>
+                <a href="#CFQ575K">CFQ575K - Comment: interruptions/distractions</a>
+              </li>
+              <li>
+                <a href="#CFDTIME">CFDTIME - CFQ Section time (seconds)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2019-March 2020 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Cognitive Functioning  (CFQ_K_R)</h3>
+        <h4>RDC Only  Data File: CFQ_K_R.xpt</h4>
+        <h5 class="left">First Published: April 2022</h5>
+        <h5 class="right">Last Revised: NA</h5>
+        <h5 class="left">Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The NHANES program suspended field operations in March 2020 due to the coronavirus disease 2019 (COVID-19) pandemic. As a result, data collection for the NHANES 2019-2020 cycle, including the cognitive functioning assessment, was not completed. Data collected in 2019-March 2020 can be accessed as convenience samples through the <a href="https://www.cdc.gov/rdc/" target="_blank">NCHS Research Data Center (RDC)</a>. Any analyses based solely on the 2019-March 2020 data would not be generalizable to the U.S. civilian non-institutionalized population. Please refer to the Analytic Notes section for more details on the use of the data. </p>
+<p>Cognitive functioning (variable name prefix CFQ) testing was performed using the survey-adapted Montreal Cognitive Assessment (MoCA-SA), developed, and administered for the National Social Life, Health and Aging Project (Shega et al.). The MoCA-SA is based on Montreal Cognitive Assessment (MoCA), a multidimensional cognitive screening instrument frequently used by clinical health professionals to detect mild cognitive impairment and Alzheimer's disease (Nasreddine et al.). The MoCA-SA incorporates items from 8 MoCA cognitive subdomains: (1) orientation (2) naming: (3) executive function; (4) visuo-construction; (5) memory; (6) attention; (7) language; and (8) abstraction. Scores for the MoCA-SA (ranging from 0 to 20) are highly correlated with full MoCA scores (Kotwal et al., Dale et al.). This instrument was selected for NHANES to shorten administration time and respondent burden while preserving the sensitivity of the original MoCA. </p>
+<p>The data file contains variables that provide scores for each MoCA-SA item. Information obtained during test administration that may be related to cognitive performance (e.g., speech, hearing and visual difficulties) or to the testing environment were coded and included in the data set. Analysts may make their own determinations about which variable responses to use when calculating MoCA-SA scores, or may choose to only analyze scores from individual subdomains.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 60 years and older, who spoke English or Spanish, in the NHANES 2019-March 2020 convenience sample were eligible. Persons requiring a proxy informant, or a language interpreter were not eligible.</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>Questions and tasks were administered at the mobile examination center (MEC), by trained interviewers, using the Computer-Assisted Personal Interview (CAPI) system during the MEC interview session. Interviewers closely followed the administration guidelines of the MoCA. Survey participants orally agreed to audio record the testing session before the administration of any questions or tasks.</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>Tests were administered by four primary interviewers. After each interview, two interviewers independently assigned points for each item in the assessment according to MoCA scoring criteria (MoCA Version 8.1). Scoring was usually conducted on the same day as the assessment. Interviewers entered itemized scores and verbatim responses into an electronic scoring application and the scores of the two interviewers were compared. Any differences in scores were adjudicated by a reviewer who completed MoCA certification and training.</p>
+<p>Approximately 5% of audio-recorded interviews were independently reviewed over the course of the data collection cycle to evaluate consistency in administration of instructions, to determine accuracy in scoring, and to examine differences in scoring by interviewers.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Edits were made, as necessary, to ensure the completeness, consistency, and analytic usefulness of the data. Recordings of approximately 4% of participants with refusal and don&rsquo;t know responses were evaluated to ensure the consistent application of response codes. Summary variables with test administration notes including instructions not understood or nonperformance due to a physical impairment were created for some tasks.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The COVID-19 pandemic required suspension of NHANES 2019-2020 field operations in March 2020 after data were collected in 18 of the 30 survey locations in the 2019-2020 sample. Data collection was cancelled for the remaining 12 locations. Calculation of survey weights for this partial cycle is not possible due to incomplete data collection. Therefore, data from survey components that were only collected in 2019-March 2020 (including CFQ) are made available as convenience samples through <a href="https://www.cdc.gov/rdc/" target="_blank">NCHS's Research Data Center (RDC)</a> because unbiased estimates for the NHANES target population cannot be produced with these samples.</p>
+<p><strong>CFDSTAT</strong> (CFQ Completion Status): This variable provides the overall status for the cognitive functioning component completion. About 9% of persons aged 60 years and older who attended a MEC session were not administered the cognitive functioning assessment. Some of the participants were not eligible for the assessment because they required a proxy informant or only spoke a language other than English or Spanish. For those who were eligible, the main reasons this component was not done were due to arriving late or leaving MEC session early, refusing a the MEC interview (which included the CFQ assessment), or equipment failure. Participants coded as &ldquo;Not Eligible&rdquo; or &ldquo;Not Done&rdquo; in CFDSTAT are missing all CFQ variables. Analysts should be aware that a small number of participants completed most, but not all CFQ tasks.</p>
+<p><strong>CFDCLOCK</strong> (Clock drawing &ndash; administration): Overall completion codes for the clock drawing exercise (face, numbers, hands) coded by interviewer at time of administration. Participants who were unable to understand instructions, unable to do because of a visual or physical impairment or refused (n=12) have missing scores for CFDCFACE, CFDCNUM and CFDCHAND.</p>
+<p><strong>CFDWORD</strong> (Verbal fluency &ndash; administration): Overall completion codes for verbal fluency exercise naming words starting with letter F coded by interviewer at time of administration. Participants who used the full time for the exercise, and those who started but stopped early have scores for CFDFWCNT.</p></div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>Dale W, Kotwal AA, Shega JW, et al. Cognitive Function and its Risk Factors Among Older US Adults Living at Home. Alzheimer Dis Assoc Disord. 2018;32(3):207-213.</li>
+          <li>Kotwal AA, Schumm P, Kern DW, McClintock MK, Waite LJ, Shega JW, et al. Evaluation of a Brief Survey Instrument for Assessing Subtle Differences in Cognitive Function Among Older Adults. Alzheimer Dis Assoc Disord. 2015b;29:317&ndash;24.</li>
+          <li>Nasreddine ZS, Phillips NA, Bedirian V, Charbonneau S, Whitehead V, Collin I, et al. The Montreal Cognitive Assessment, MoCA: a brief screening tool for mild cognitive impairment. J Am Geriatr Soc 2005 Apr; 53(4):695-9.</li>
+          <li>Shega J, Sunkara P, Kotwal A, et al. Measuring Cognition: The Chicago Cognitive Function Measure (CCFM) in the National Social Life, Health and Aging Project (NSHAP), Wave 2. The Journals of Gerontology Series B: Psychological Sciences and Social Sciences, Nov 2014, 69 Suppl 2:S166-7.</li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDSTAT">CFDSTAT - CFQ Completion Status</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDSTAT</dd>
+            <dt>SAS Label: </dt>
+            <dd>CFQ Completion Status</dd>
+            <dt>English Text: </dt>
+            <dd class="info">CFQ Section Status</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">All or some tasks completed</td>
+                <td class="values" align="right">1022</td>
+                <td class="values" align="right">1022</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Not Eligible - Proxy</td>
+                <td class="values" align="right">23</td>
+                <td class="values" align="right">1045</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Not Eligible - Language</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">1063</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Not done</td>
+                <td class="values" align="right">60</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDMTH2">CFDMTH2 - Exact month</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDMTH2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Exact month</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The next questions are about problem solving and memory. The questions may seem unusual, but they are routine questions we ask everyone. Some of the questions are very easy and some are difficult, so don’t be surprised if you have trouble with some of them. Try your best to answer all of the questions without using clues from around the room. If you wear glasses for reading, please use them. 
+
+Tell me the date today. First, tell me the month.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Incorrect</td>
+                <td class="values" align="right">32</td>
+                <td class="values" align="right">32</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Correct</td>
+                <td class="values" align="right">981</td>
+                <td class="values" align="right">1013</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1014</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">1022</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">101</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDDATE2">CFDDATE2 - Exact date</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDDATE2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Exact date</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now, tell me the exact date.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Incorrect</td>
+                <td class="values" align="right">188</td>
+                <td class="values" align="right">188</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Correct</td>
+                <td class="values" align="right">813</td>
+                <td class="values" align="right">1001</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1002</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">20</td>
+                <td class="values" align="right">1022</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">101</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDRHINO">CFDRHINO - Animal naming</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDRHINO</dd>
+            <dt>SAS Label: </dt>
+            <dd>Animal naming</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now, I want you to name this animal.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Incorrect</td>
+                <td class="values" align="right">177</td>
+                <td class="values" align="right">177</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Correct</td>
+                <td class="values" align="right">819</td>
+                <td class="values" align="right">996</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">996</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">26</td>
+                <td class="values" align="right">1022</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">101</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDCFACE">CFDCFACE - Clock contour (face)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDCFACE</dd>
+            <dt>SAS Label: </dt>
+            <dd>Clock contour (face)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The next few things I will ask you to do are pencil and paper tasks. PLACE BLANK CLOCK PAPER FROM ALL-IN-ONE BOOKLET AND PEN BEFORE RESPONDENT.
+
+Now, I'd like you to draw a clock. Put in all the numbers and set the time to 10 after 11. (PROMPT IF NECESSARY: Try your best to complete this task without using clues from around the room, such as a clock or a watch.)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Incorrect</td>
+                <td class="values" align="right">31</td>
+                <td class="values" align="right">31</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Correct</td>
+                <td class="values" align="right">979</td>
+                <td class="values" align="right">1010</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">113</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDCNUM">CFDCNUM - Clock numbers</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDCNUM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Clock numbers</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now, I'd like you to draw a clock. Put in all the numbers and set the time to 10 after 11. (PROMPT IF NECESSARY: Try your best to complete this task without using clues from around the room, such as a clock or a watch.) 
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Incorrect</td>
+                <td class="values" align="right">155</td>
+                <td class="values" align="right">155</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Correct</td>
+                <td class="values" align="right">855</td>
+                <td class="values" align="right">1010</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">113</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDCHAND">CFDCHAND - Clock hands</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDCHAND</dd>
+            <dt>SAS Label: </dt>
+            <dd>Clock hands</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Clock hands</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Incorrect</td>
+                <td class="values" align="right">431</td>
+                <td class="values" align="right">431</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Correct</td>
+                <td class="values" align="right">579</td>
+                <td class="values" align="right">1010</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">113</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDCLOCK">CFDCLOCK - Clock drawing - administration</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDCLOCK</dd>
+            <dt>SAS Label: </dt>
+            <dd>Clock drawing - administration</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Clock drawing - administration</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Completed task</td>
+                <td class="values" align="right">1010</td>
+                <td class="values" align="right">1010</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Unable to understand instructions</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1011</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Visual or Physical Impairment</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1022</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">101</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDTRAIL">CFDTRAIL - Trail Making - Part B</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDTRAIL</dd>
+            <dt>SAS Label: </dt>
+            <dd>Trail Making - Part B</dd>
+            <dt>English Text: </dt>
+            <dd class="info">PLACE TRAIL PAPER FROM ALL-IN-ONE BOOKLET AND PEN BEFORE RESPONDENT 
+Take a minute to look over the paper. Notice, there are both numbers and letters. Please draw a line, going from a number to a letter in increasing order. Begin here (POINT TO 1), and draw a line from 1 to A, then from A to 2, and so on. End here (POINT TO E). The first two lines have been drawn for you.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Incorrect</td>
+                <td class="values" align="right">492</td>
+                <td class="values" align="right">492</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Correct</td>
+                <td class="values" align="right">510</td>
+                <td class="values" align="right">1002</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Unable to understand instructions</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">1010</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Visual or Physical Impairment</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDFACE1">CFDFACE1 - Word recall trial 1: Face</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDFACE1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall trial 1: Face</dd>
+            <dt>English Text: </dt>
+            <dd class="info">This next section tests your memory. I am going to read a list of words that you will have to remember now and later on. Listen carefully. When I am through, tell me as many words as you can remember. It doesn’t matter in what order you say them. Ready? 
+READ SLOWLY (AT A RATE OF 1 WORD PER SECOND) AND PRONOUNCE CLEARLY: Face, Velvet, Church, Daisy, Red.  INSTRUCT RESPONDENT TO REPEAT LIST.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">238</td>
+                <td class="values" align="right">238</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">782</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDSVEL1">CFDSVEL1 - Word recall trial 1: Velvet</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDSVEL1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall trial 1: Velvet</dd>
+            <dt>English Text: </dt>
+            <dd class="info">This next section tests your memory. I am going to read a list of words that you will have to remember now and later on. Listen carefully. When I am through, tell me as many words as you can remember. It doesn’t matter in what order you say them. Ready? 
+READ SLOWLY (AT A RATE OF 1 WORD PER SECOND) AND PRONOUNCE CLEARLY: Face, Velvet, Church, Daisy, Red.  INSTRUCT RESPONDENT TO REPEAT LIST.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">165</td>
+                <td class="values" align="right">165</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">855</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDCHUR1">CFDCHUR1 - Word recall trial 1: Church</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDCHUR1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall trial 1: Church</dd>
+            <dt>English Text: </dt>
+            <dd class="info">This next section tests your memory. I am going to read a list of words that you will have to remember now and later on. Listen carefully. When I am through, tell me as many words as you can remember. It doesn’t matter in what order you say them. Ready? 
+READ SLOWLY (AT A RATE OF 1 WORD PER SECOND) AND PRONOUNCE CLEARLY: Face, Velvet, Church, Daisy, Red.  INSTRUCT RESPONDENT TO REPEAT LIST.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">203</td>
+                <td class="values" align="right">203</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">817</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDSDAI1">CFDSDAI1 - Word recall trial 1: Daisy</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDSDAI1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall trial 1: Daisy</dd>
+            <dt>English Text: </dt>
+            <dd class="info">This next section tests your memory. I am going to read a list of words that you will have to remember now and later on. Listen carefully. When I am through, tell me as many words as you can remember. It doesn’t matter in what order you say them. Ready? 
+READ SLOWLY (AT A RATE OF 1 WORD PER SECOND) AND PRONOUNCE CLEARLY: Face, Velvet, Church, Daisy, Red.  INSTRUCT RESPONDENT TO REPEAT LIST.
+
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">287</td>
+                <td class="values" align="right">287</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">733</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDRED1">CFDRED1 - Word recall trial 1: Red</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDRED1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall trial 1: Red</dd>
+            <dt>English Text: </dt>
+            <dd class="info">This next section tests your memory. I am going to read a list of words that you will have to remember now and later on. Listen carefully. When I am through, tell me as many words as you can remember. It doesn’t matter in what order you say them. Ready? 
+READ SLOWLY (AT A RATE OF 1 WORD PER SECOND) AND PRONOUNCE CLEARLY: Face, Velvet, Church, Daisy, Red.  INSTRUCT RESPONDENT TO REPEAT LIST.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">162</td>
+                <td class="values" align="right">162</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">858</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDSWR1">CFDSWR1 - Word recall trial 1: Total</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDSWR1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall trial 1: Total</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Word recall trial 1: Total</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Count the number of recalled words (=1) in CFDFACE1, CFDSVEL1, CFDCHUR1, CFDSDAI1, CFDRED1.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">0</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">1</td>
+                <td class="values" align="right">21</td>
+                <td class="values" align="right">28</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">2</td>
+                <td class="values" align="right">80</td>
+                <td class="values" align="right">108</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3</td>
+                <td class="values" align="right">181</td>
+                <td class="values" align="right">289</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">4</td>
+                <td class="values" align="right">334</td>
+                <td class="values" align="right">623</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">5</td>
+                <td class="values" align="right">397</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDFACE2">CFDFACE2 - Word recall trial 2: Face</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDFACE2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall trial 2: Face</dd>
+            <dt>English Text: </dt>
+            <dd class="info">I'm going to read the same list for a second time. Try to remember and tell me as many words as you can, including words you said the first time. 
+READ SLOWLY (AT A RATE OF 1 WORD PER SECOND) AND PRONOUNCE CLEARLY: Face, Velvet, Church, Daisy, Red. INSTRUCT RESPONDENT TO REPEAT LIST.   I will ask you to recall these words again later on.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">156</td>
+                <td class="values" align="right">156</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">864</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDSVEL2">CFDSVEL2 - Word recall trial 2: Velvet</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDSVEL2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall trial 2: Velvet</dd>
+            <dt>English Text: </dt>
+            <dd class="info">I'm going to read the same list for a second time. Try to remember and tell me as many words as you can, including words you said the first time. 
+READ SLOWLY (AT A RATE OF 1 WORD PER SECOND) AND PRONOUNCE CLEARLY: Face, Velvet, Church, Daisy, Red. INSTRUCT RESPONDENT TO REPEAT LIST.   I will ask you to recall these words again later on.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">96</td>
+                <td class="values" align="right">96</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">924</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDCHUR2">CFDCHUR2 - Word recall trial 2: Church</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDCHUR2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall trial 2: Church</dd>
+            <dt>English Text: </dt>
+            <dd class="info">I'm going to read the same list for a second time. Try to remember and tell me as many words as you can, including words you said the first time. 
+READ SLOWLY (AT A RATE OF 1 WORD PER SECOND) AND PRONOUNCE CLEARLY: Face, Velvet, Church, Daisy, Red. INSTRUCT RESPONDENT TO REPEAT LIST.   I will ask you to recall these words again later on.
+
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">47</td>
+                <td class="values" align="right">47</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">973</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDSDAI2">CFDSDAI2 - Word recall trial 2: Daisy</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDSDAI2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall trial 2: Daisy</dd>
+            <dt>English Text: </dt>
+            <dd class="info">I'm going to read the same list for a second time. Try to remember and tell me as many words as you can, including words you said the first time. 
+READ SLOWLY (AT A RATE OF 1 WORD PER SECOND) AND PRONOUNCE CLEARLY: Face, Velvet, Church, Daisy, Red. INSTRUCT RESPONDENT TO REPEAT LIST.   I will ask you to recall these words again later on.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">128</td>
+                <td class="values" align="right">128</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">892</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDRED2">CFDRED2 - Word recall trial 2: Red</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDRED2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall trial 2: Red</dd>
+            <dt>English Text: </dt>
+            <dd class="info">I'm going to read the same list for a second time. Try to remember and tell me as many words as you can, including words you said the first time. 
+READ SLOWLY (AT A RATE OF 1 WORD PER SECOND) AND PRONOUNCE CLEARLY: Face, Velvet, Church, Daisy, Red. INSTRUCT RESPONDENT TO REPEAT LIST.   I will ask you to recall these words again later on.
+
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">78</td>
+                <td class="values" align="right">78</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">942</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDSWR2">CFDSWR2 - Word recall trial 2: Total</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDSWR2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall trial 2: Total</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Word recall trial 2: Total
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Count the number of recalled words (=1) in CFDFACE2, CFDSVEL2, CFDCHUR2, CFDSDAI2, CFDRED2.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">0</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">7</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">1</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">12</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">2</td>
+                <td class="values" align="right">19</td>
+                <td class="values" align="right">31</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3</td>
+                <td class="values" align="right">73</td>
+                <td class="values" align="right">104</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">4</td>
+                <td class="values" align="right">247</td>
+                <td class="values" align="right">351</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">5</td>
+                <td class="values" align="right">669</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFD5NUM">CFD5NUM - Digit span 5 forward</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFD5NUM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Digit span 5 forward</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now, I am going to say some numbers and when I am through, repeat them to me exactly as I said them. READ THE FIVE NUMBER SEQUENCE TO THE RESPONDENT AT A RATE OF ONE DIGIT PER SECOND. 
+2, 1, 8, 5, 4.   HAVE RESPONDENT REPEAT DIGITS
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Incorrect answer</td>
+                <td class="values" align="right">182</td>
+                <td class="values" align="right">182</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Correct answer (2,1,8,5,4)</td>
+                <td class="values" align="right">820</td>
+                <td class="values" align="right">1002</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Tried, unable to do</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Unable to understand instructions</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFD3NUM">CFD3NUM - Digit span 3 backwards</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFD3NUM</dd>
+            <dt>SAS Label: </dt>
+            <dd>Digit span 3 backwards</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now I am going to say some more numbers, but when I am through, I want you to repeat them to me in the backwards order. 
+READ THE THREE NUMBER SEQUENCE TO THE RESPONDENT AT A RATE OF ONE DIGIT PER SECOND. HAVE R REPEAT DIGITS IN THE BACKWARDS ORDER</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Incorrect answer</td>
+                <td class="values" align="right">309</td>
+                <td class="values" align="right">309</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Correct answer (2,4,7)</td>
+                <td class="values" align="right">708</td>
+                <td class="values" align="right">1017</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Tried, unable to do</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Unable to understand instructions</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDSUBT">CFDSUBT - Serial 7s</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDSUBT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Serial 7s</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Now, starting with 100, I would like you to subtract 7 and then keep counting down by 7. (YOU CAN REPEAT THESE INSTRUCTIONS IF NECESSARY.)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No correct subtractions</td>
+                <td class="values" align="right">130</td>
+                <td class="values" align="right">130</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">1 correct  subtraction</td>
+                <td class="values" align="right">118</td>
+                <td class="values" align="right">248</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">2-3 correct subtractions</td>
+                <td class="values" align="right">252</td>
+                <td class="values" align="right">500</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">4-5 correct subtractions</td>
+                <td class="values" align="right">502</td>
+                <td class="values" align="right">1002</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">121</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDSUB7C">CFDSUB7C - Serial 7s subtractions correct</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDSUB7C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Serial 7s subtractions correct</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Serial 7s subtractions correct
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">0</td>
+                <td class="values" align="right">109</td>
+                <td class="values" align="right">109</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">1</td>
+                <td class="values" align="right">118</td>
+                <td class="values" align="right">227</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">2</td>
+                <td class="values" align="right">88</td>
+                <td class="values" align="right">315</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3</td>
+                <td class="values" align="right">164</td>
+                <td class="values" align="right">479</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">4</td>
+                <td class="values" align="right">186</td>
+                <td class="values" align="right">665</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">5</td>
+                <td class="values" align="right">316</td>
+                <td class="values" align="right">981</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">999</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">21</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDSENT">CFDSENT - Sentence recall</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDSENT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Sentence recall</dd>
+            <dt>English Text: </dt>
+            <dd class="info">I am going to read you a sentence. Repeat it after me, exactly as I say it. (PAUSE) 
+READ SENTENCE: The cat always hid under the couch when dogs were in the room. 
+HAVE R REPEAT SENTENCE.
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Incorrect recall</td>
+                <td class="values" align="right">654</td>
+                <td class="values" align="right">654</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Correct recall</td>
+                <td class="values" align="right">357</td>
+                <td class="values" align="right">1011</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Tried unable to do</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">1019</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Unable to understand instructions</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1020</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDWORD">CFDWORD - Verbal fluency - administration</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDWORD</dd>
+            <dt>SAS Label: </dt>
+            <dd>Verbal fluency - administration</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Tell me as many words as you can think of that begin with a certain letter of the alphabet that I will tell you in a moment. You can say any kind of word you want, except for proper nouns and names like Bob or Boston, and numbers or words that begin with the same sound, but have a different ending, for example, love, lover, loving. I will tell you to stop after 1 minute. Are you ready?
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Completed task</td>
+                <td class="values" align="right">974</td>
+                <td class="values" align="right">974</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Stopped before 60 sec elapsed</td>
+                <td class="values" align="right">37</td>
+                <td class="values" align="right">1011</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Unable to understand instructions</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">1016</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">1019</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">104</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDFWCNT">CFDFWCNT - Verbal fluency F words count</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDFWCNT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Verbal fluency F words count</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Total of correct words that  start with letter F
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 28</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 28</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1011</td>
+                <td class="values" align="right">1011</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">112</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDALIKE">CFDALIKE - Word pairing</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDALIKE</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word pairing</dd>
+            <dt>English Text: </dt>
+            <dd class="info">For this exercise, tell me how an orange and a banana alike?  Now tell me another way that they are alike.  Yes, they are both fruit. Now, tell me how a ruler and a watch are alike?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Measuring instruments</td>
+                <td class="values" align="right">68</td>
+                <td class="values" align="right">68</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Used to measure</td>
+                <td class="values" align="right">441</td>
+                <td class="values" align="right">509</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">They have numbers</td>
+                <td class="values" align="right">356</td>
+                <td class="values" align="right">865</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Other explanation</td>
+                <td class="values" align="right">134</td>
+                <td class="values" align="right">999</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">1002</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">17</td>
+                <td class="values" align="right">1019</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">104</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDFACE3">CFDFACE3 - Word recall delay: Face</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDFACE3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall delay: Face</dd>
+            <dt>English Text: </dt>
+            <dd class="info">I read a list of words to you earlier, which I asked you to repeat and remember. Tell me as many of those words as you can remember. It doesn’t matter in what order you say them. 
+
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">498</td>
+                <td class="values" align="right">498</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">521</td>
+                <td class="values" align="right">1019</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">104</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDSVEL3">CFDSVEL3 - Word recall delay: Velvet</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDSVEL3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall delay: Velvet</dd>
+            <dt>English Text: </dt>
+            <dd class="info">I read a list of words to you earlier, which I asked you to repeat and remember. Tell me as many of those words as you can remember. It doesn’t matter in what order you say them. 
+
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">409</td>
+                <td class="values" align="right">409</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">610</td>
+                <td class="values" align="right">1019</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">104</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDCHUR3">CFDCHUR3 - Word recall delay: Church</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDCHUR3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall delay: Church</dd>
+            <dt>English Text: </dt>
+            <dd class="info">I read a list of words to you earlier, which I asked you to repeat and remember. Tell me as many of those words as you can remember. It doesn’t matter in what order you say them. 
+
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">393</td>
+                <td class="values" align="right">393</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">626</td>
+                <td class="values" align="right">1019</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">104</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDSDAI3">CFDSDAI3 - Word recall delay: Daisy</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDSDAI3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall delay: Daisy</dd>
+            <dt>English Text: </dt>
+            <dd class="info">I read a list of words to you earlier, which I asked you to repeat and remember. Tell me as many of those words as you can remember. It doesn’t matter in what order you say them. 
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">677</td>
+                <td class="values" align="right">677</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">342</td>
+                <td class="values" align="right">1019</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">104</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDRED3">CFDRED3 - Word recall delay: Red</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDRED3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall delay: Red</dd>
+            <dt>English Text: </dt>
+            <dd class="info">I read a list of words to you earlier, which I asked you to repeat and remember. Tell me as many of those words as you can remember. It doesn’t matter in what order you say them. 
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Did not recall</td>
+                <td class="values" align="right">443</td>
+                <td class="values" align="right">443</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Recalled</td>
+                <td class="values" align="right">576</td>
+                <td class="values" align="right">1019</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">104</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDSWR3">CFDSWR3 - Word recall delay: Total</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDSWR3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Word recall delay: Total</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Word recall delay: Total
+
+</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">Count the number of recalled words (=1) in CFDFACE3, CFDSVEL3, CFDCHUR3, CFDSDAI3, CFDRED3.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">0</td>
+                <td class="values" align="right">149</td>
+                <td class="values" align="right">149</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">1</td>
+                <td class="values" align="right">109</td>
+                <td class="values" align="right">258</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">2</td>
+                <td class="values" align="right">179</td>
+                <td class="values" align="right">437</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">3</td>
+                <td class="values" align="right">249</td>
+                <td class="values" align="right">686</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">4</td>
+                <td class="values" align="right">204</td>
+                <td class="values" align="right">890</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">5</td>
+                <td class="values" align="right">129</td>
+                <td class="values" align="right">1019</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">104</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFQ575B">CFQ575B - Comment: Hearing problem</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFQ575B</dd>
+            <dt>SAS Label: </dt>
+            <dd>Comment: Hearing problem</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Comment: Hearing problem
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Hearing problem</td>
+                <td class="values" align="right">92</td>
+                <td class="values" align="right">92</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1031</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFQ575C">CFQ575C - Comment: Vision problem</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFQ575C</dd>
+            <dt>SAS Label: </dt>
+            <dd>Comment: Vision problem</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Comment: Vision problem</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Vision problem</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">15</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1108</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFQ575D">CFQ575D - Comment: Physical limitation </h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFQ575D</dd>
+            <dt>SAS Label: </dt>
+            <dd>Comment: Physical limitation </dd>
+            <dt>English Text: </dt>
+            <dd class="info">Comment: Physical limitation affecting writing/drawing</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Physical limitation affecting writing/drawing</td>
+                <td class="values" align="right">20</td>
+                <td class="values" align="right">20</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1103</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFQ575E">CFQ575E - Comment: Unable to read/write (literacy)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFQ575E</dd>
+            <dt>SAS Label: </dt>
+            <dd>Comment: Unable to read/write (literacy)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Comment: Unable to read/write (literacy)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Unable to read/write (literacy)</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">12</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1111</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFQ575F">CFQ575F - Comment: Doesn't understand English well</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFQ575F</dd>
+            <dt>SAS Label: </dt>
+            <dd>Comment: Doesn't understand English well</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Comment: Does not understand English well
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">Does not understand English well</td>
+                <td class="values" align="right">23</td>
+                <td class="values" align="right">23</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1100</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFQ575G">CFQ575G - Comment: Reported cognitive limitation</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFQ575G</dd>
+            <dt>SAS Label: </dt>
+            <dd>Comment: Reported cognitive limitation</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Comment: SP reported cognitive limitation
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">SP reported cognitive limitation</td>
+                <td class="values" align="right">13</td>
+                <td class="values" align="right">13</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1110</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFQ575H">CFQ575H - Comment: Reported taking medications</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFQ575H</dd>
+            <dt>SAS Label: </dt>
+            <dd>Comment: Reported taking medications</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Comment: Reported taking medications
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">SP reported taking medications</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1121</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFQ575I">CFQ575I - Comment: Restless or fidgety (observed)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFQ575I</dd>
+            <dt>SAS Label: </dt>
+            <dd>Comment: Restless or fidgety (observed)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Comment: SP was restless or fidgety
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">SP was restless or fidgety</td>
+                <td class="values" align="right">38</td>
+                <td class="values" align="right">38</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1085</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFQ575J">CFQ575J - Comment: Reported wanting to quit</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFQ575J</dd>
+            <dt>SAS Label: </dt>
+            <dd>Comment: Reported wanting to quit</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Comment: SP reported wanting to quit
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10</td>
+                <td class="values">SP reported wanting to quit</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">9</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1114</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFQ575K">CFQ575K - Comment: interruptions/distractions</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFQ575K</dd>
+            <dt>SAS Label: </dt>
+            <dd>Comment: interruptions/distractions</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Comment: Interruptions/distraction during testing
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">11</td>
+                <td class="values">Interruptions/distraction during testing</td>
+                <td class="values" align="right">8</td>
+                <td class="values" align="right">8</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1115</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CFDTIME">CFDTIME - CFQ Section time (seconds)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CFDTIME</dd>
+            <dt>SAS Label: </dt>
+            <dd>CFQ Section time (seconds)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">CFQ Section time in seconds</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 60 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">317 to 1909</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1022</td>
+                <td class="values" align="right">1022</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">101</td>
+                <td class="values" align="right">1123</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

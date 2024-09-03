@@ -1,0 +1,681 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>P_CBQ_R</title>
+    <meta name="title" content="NHANES 2017-March 2020: Consumer Behavior Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#CBD071">CBD071 - Money spent at supermarket/grocery store</a>
+              </li>
+              <li>
+                <a href="#CBD091">CBD091 - Money spent on nonfood items</a>
+              </li>
+              <li>
+                <a href="#CBD111">CBD111 - Money spent on food at other stores</a>
+              </li>
+              <li>
+                <a href="#CBD121">CBD121 - Money spent on eating out</a>
+              </li>
+              <li>
+                <a href="#CBD131">CBD131 - Money spent on carryout/delivered foods</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2017-March 2020 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Consumer Behavior (P_CBQ_R)</h3>
+        <h4>RDC Only  Data File: P_CBQ_R.xpt</h4>
+        <h5 class="left">First Published: December 2021</h5>
+        <h5 class="right">Last Revised: NA</h5>
+        <h5 class="left">At this time, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The NHANES program suspended field operations in March 2020 due to the coronavirus disease 2019 (COVID-19) pandemic. As a result, data collection for the NHANES 2019-2020 cycle was not completed and the collected data are not nationally representative. Therefore, data collected from 2019 to March 2020 were combined with data from the NHANES 2017-2018 cycle to form a nationally representative sample of NHANES 2017-March 2020 pre-pandemic data. These data are available to the public. Please refer to the Analytic Notes section for more details on the use of the data.</p>
+<p>The Consumer Behavior questionnaire (variable name prefix CBQ) section provides interview data on food expenditures at the family level as part of the Flexible Consumer Behavior Survey (FCBS) module. </p>
+<p>The FCBS module has been included in NHANES since 2007. This module was developed in collaboration with the Economic Research Service (ERS) of the U.S. Department of Agriculture (USDA). It was designed to collect information on respondents&rsquo; knowledge, attitudes, and beliefs toward nutrition and food choices. The FCBS module has two elements: a core set of questions asked in the household interview, and a supplementary module asked as a telephone follow-up interview with focuses specifically designed for each 2-year data collection cycle.</p>
+<p>The core set of the FCBS module collects information on dietary-related consumer behavior in participants&rsquo; families. For example, family monthly income and family assets, food expenditures, as well as the family&rsquo;s participation on federal food assistance programs. The family food expenditures data are released in the present CBQ section, while the monthly income and family assets data are included in the Income (INQ) section, and food program participation data are included in the Food Security (FSQ) section.</p>
+<p>The core set of the FCBS module also includes questions on individual participant&rsquo;s food choices, such as getting meals prepared away from home, meals from fast food or pizza places, use of convenience foods or ready-to-eat meals bought in stores, and participant&rsquo;s awareness on federal nutrition programs. These individual-level questions, in the core set of FCBS module, are included in the Diet Behavior and Nutrition questionnaire (DBQ) section and released in a separate file. </p>
+<p>Data from the phone follow-up FCBS supplementary module are to be released in separate files and made available on the NHANES website. Similar to other datasets created from the NHANES 2017-March 2020 pre-pandemic sample, all FCBS related data files can be linked by the respondent sequence number (SEQN). For more information on the other FCBS related data refer to the documentations accompanying the datasets. </p><h2 id="Eligible_Sample">Eligible Sample</h2><p>All participants in the NHANES 2017-March 2020 pre-pandemic sample were eligible.</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>These questions were asked as part of the NHANES Family Questionnaire in the home, using the Computer-Assisted Personal interview (CAPI) system. Hand cards showing response categories were also used for some questions. One respondent in each family answered these questions.</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>The CAPI system is programmed with built-in consistency checks to reduce data entry errors. CAPI also uses online help screens to assist interviewers in defining key terms used in the questionnaire. All data was reviewed by the NHANES field office staff for accuracy and completeness.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Frequency counts were checked, "skip" patterns were verified, and the reasonableness of question responses was reviewed. Edits were made to some variables to ensure the completeness, consistency, and analytic usefulness of the data. Edits were also made, when necessary, to address data disclosure concerns. When a variable was modified globally, as part of the editing process, the third letter in the variable name was changed from a Q (i.e., CBQ) to a D (i.e., CBD). For example, some data were collected using two variables (a number variable and a unit of measure variable), but were combined into a single variable for data release purposes.</p>
+<p><strong>CBD071, CBD091, CBD111, CBD121, and CBD131 </strong><br />
+(Food expenditures &ndash; Money spent on food in the past 30 days).</p>
+<p>This information was collected using two-part (number and unit) questions to allow respondents to report the amount of money as either per week or per month. The released variables were edited to standardize the reported amount to number of dollars in the last 30 days. Reported expenditures at or more than $8,400 in the past 30 days were coded as &ldquo;$8,400 and over&rdquo; due to disclosure concerns. This cut-point is consistent with the top category used in reporting family monthly income.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>The COVID-19 pandemic required suspension of NHANES 2019-2020 field operations in March 2020 after data were collected in 18 of the 30 survey locations in the 2019-2020 sample. Data collection was cancelled for the remaining 12 locations. Because the collected data from 18 locations were not nationally representative, these data were combined with data from the previous cycle (2017-2018) to create a 2017-March 2020 pre-pandemic data file. A special weighting process was applied to the 2017-March 2020 pre-pandemic data file. The resulting sample weights in the present file should be used to calculate estimates from the combined cycles. These sample weights are not appropriate for independent analyses of the 2019-2020 data and will not yield nationally representative results for either the 2017-2018 data alone or the 2019-March 2020 data alone. Please refer to the NHANES website for additional information for the NHANES 2017-March 2020 pre-pandemic data, and for the previous 2017-2018 public use data file with specific weights for that 2-year cycle.</p>
+<p>Please refer to the&nbsp;<a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx" target="_blank">NHANES Analytic Guidelines</a> and the on-line&nbsp;<a href="https://wwwn.cdc.gov/nchs/nhanes/tutorials/default.aspx" target="_blank">NHANES Tutorial</a> for further details on the use of sample weights and other analytic issues. Both&nbsp;are available on the NHANES website.</p></div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CBD071">CBD071 - Money spent at supermarket/grocery store</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CBD071</dd>
+            <dt>SAS Label: </dt>
+            <dd>Money spent at supermarket/grocery store</dd>
+            <dt>English Text: </dt>
+            <dd class="info">The next questions are about how much money {your family spends/you spend} on food. First I'll ask you about money spent at supermarkets or grocery stores. Then we will talk about money spent at other types of stores. When you answer these questions, please do not include money spent on alcoholic beverages. During the past 30 days, how much money {did your family/did you} spend at supermarkets or grocery stores? Please include purchases made with food stamps. (You can tell me per week or per month.)</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE AS DOLLAR AMOUNT OF MONEY SPENT IN 30 DAYS. ENTER "0" IF SP SAYS NO MONEY WAS SPENT.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 4285</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">14253</td>
+                <td class="values" align="right">14253</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8400</td>
+                <td class="values">8400 and over</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">14257</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">777777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">24</td>
+                <td class="values" align="right">14281</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">200</td>
+                <td class="values" align="right">14481</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1079</td>
+                <td class="values" align="right">15560</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CBD091">CBD091 - Money spent on nonfood items</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CBD091</dd>
+            <dt>SAS Label: </dt>
+            <dd>Money spent on nonfood items</dd>
+            <dt>English Text: </dt>
+            <dd class="info">About how much money was spent on nonfood items? (You can tell me per week or per month.)</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE AS DOLLAR AMOUNT OF MONEY SPENT IN 30 DAYS. AMOUNT CANNOT BE MORE THAN THE AMOUNT ENTERED ON CBD071.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 857</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">14199</td>
+                <td class="values" align="right">14199</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8400</td>
+                <td class="values">8400 and over</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">14199</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">777777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">25</td>
+                <td class="values" align="right">14224</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">249</td>
+                <td class="values" align="right">14473</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1087</td>
+                <td class="values" align="right">15560</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CBD111">CBD111 - Money spent on food at other stores</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CBD111</dd>
+            <dt>SAS Label: </dt>
+            <dd>Money spent on food at other stores</dd>
+            <dt>English Text: </dt>
+            <dd class="info">About how much money {did your family/did you} spend on food at these types of stores? Please do not include money you have already told me about. (You can tell me per week or per month.)</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD CBQ1. CODE AS DOLLAR AMOUNT OF MONEY SPENT IN 30 DAYS. ENTER "0" IF SP SAYS NO MONEY WAS SPENT.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 3000</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">14271</td>
+                <td class="values" align="right">14271</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8400</td>
+                <td class="values">8400 and over</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">14271</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">777777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">13</td>
+                <td class="values" align="right">14284</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">197</td>
+                <td class="values" align="right">14481</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1079</td>
+                <td class="values" align="right">15560</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CBD121">CBD121 - Money spent on eating out</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CBD121</dd>
+            <dt>SAS Label: </dt>
+            <dd>Money spent on eating out</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 30 days, how much money {did your family/did you} spend on eating out? Please include money spent in cafeterias at work or at school or on vending machines, for all family members. (You can tell me per week or per month.)</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE AS DOLLAR AMOUNT OF MONEY SPENT IN 30 DAYS. IF RESPONDENT KNOWS ONLY AMOUNT FOR SELF, CODE DK. ENTER "0" IF SP SAYS NO MONEY WAS SPENT.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 5200</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">14118</td>
+                <td class="values" align="right">14118</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8400</td>
+                <td class="values">8400 and over</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">14118</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">777777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">15</td>
+                <td class="values" align="right">14133</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">348</td>
+                <td class="values" align="right">14481</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1079</td>
+                <td class="values" align="right">15560</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CBD131">CBD131 - Money spent on carryout/delivered foods</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CBD131</dd>
+            <dt>SAS Label: </dt>
+            <dd>Money spent on carryout/delivered foods</dd>
+            <dt>English Text: </dt>
+            <dd class="info">During the past 30 days, how much money {did your family/did you} spend on food carried out or delivered? Please do not include money you have already told me about. (You can tell me per week or per month.)</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CODE AS DOLLAR AMOUNT OF MONEY SPENT IN 30 DAYS. IF RESPONDENT KNOWS ONLY AMOUNT FOR SELF, CODE DK. ENTER "0" IF SP SAYS NO MONEY WAS SPENT.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 1285</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">14231</td>
+                <td class="values" align="right">14231</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8400</td>
+                <td class="values">8400 and over</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">14231</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">777777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">14242</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">999999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">236</td>
+                <td class="values" align="right">14478</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">1082</td>
+                <td class="values" align="right">15560</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

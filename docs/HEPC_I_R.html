@@ -1,0 +1,1416 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Hepatitis C: Confirmed Antibody (INNO-LIA) - 2016" />
+    <meta name="DC.Subject" content="NHANES 2016-2016: Hepatitis C: Confirmed Antibody (INNO-LIA) - 2016 Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2016-2016 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2016">
+      <title>
+						NHANES 2016-2016:
+						Hepatitis C: Confirmed Antibody (INNO-LIA) - 2016 Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Method_Files">Laboratory Method Files</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#VPSU">VPSU - Variance PSU</a>
+                </li>
+                <li>
+                  <a href="#VSTRA">VSTRA - Variance stratum</a>
+                </li>
+                <li>
+                  <a href="#WTMEC1YR">WTMEC1YR - Full Sample 1 Year MEC Exam Weight</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR01">WTM1YR01 - 1 Year MEC Weight - Jackknife 01</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR02">WTM1YR02 - 1 Year MEC Weight - Jackknife 02</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR03">WTM1YR03 - 1 Year MEC Weight - Jackknife 03</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR04">WTM1YR04 - 1 Year MEC Weight - Jackknife 04</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR05">WTM1YR05 - 1 Year MEC Weight - Jackknife 05</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR06">WTM1YR06 - 1 Year MEC Weight - Jackknife 06</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR07">WTM1YR07 - 1 Year MEC Weight - Jackknife 07</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR08">WTM1YR08 - 1 Year MEC Weight - Jackknife 08</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR09">WTM1YR09 - 1 Year MEC Weight - Jackknife 09</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR10">WTM1YR10 - 1 Year MEC Weight - Jackknife 10</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR11">WTM1YR11 - 1 Year MEC Weight - Jackknife 11</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR12">WTM1YR12 - 1 Year MEC Weight - Jackknife 12</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR13">WTM1YR13 - 1 Year MEC Weight - Jackknife 13</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR14">WTM1YR14 - 1 Year MEC Weight - Jackknife 14</a>
+                </li>
+                <li>
+                  <a href="#WTM1YR15">WTM1YR15 - 1 Year MEC Weight - Jackknife 15</a>
+                </li>
+                <li>
+                  <a href="#LBDHCI">LBDHCI   - Hepatitis C Antibody (confirmed)</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2016-2016 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Hepatitis C: Confirmed Antibody (INNO-LIA) - 2016 (HEPC_I_R)
+			</h3>
+        <h4>RDC Only 
+				Data File: HEPC_I_R.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				January 2018</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+        <h5 class="left">
+					Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (https://www.cdc.gov/rdc).
+				</h5>
+        <div style="width: 75%; margin-left: 20%">
+          <h5 class="specialnote">
+						Note: The confirmatory test (HCV RIBA) for the Hepatitis C screening test was discontinued by the manufacturer in 2012. A new algorithm and confirmatory test (HCV INNO_LIA) to confirm Hepatitis C antibody (Anti-HCV) were implemented/validated, and will be released in two-single year datasets (2015 Surplus Specimen Data: SSHC_I_R and 2016 Data: HEPC_I_R) in the NCHS Research Data Center (RDC).</h5>
+        </div>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block">Hepatitis viruses constitute a major public health problem because of the morbidity and mortality associated with the acute and chronic consequences of these infections. New immunization strategies have been developed to eliminate the spread of hepatitis B virus (HBV) and hepatitis A virus (HAV) in the United States. Recommendations have also been developed for the prevention and control of hepatitis C virus (HCV) infection. Because of the high rate of asymptomatic infection with these viruses, information about the prevalence of these diseases is needed to monitor prevention efforts. By testing a nationally representative sample of the U.S. population, NHANES will provide the most reliable estimates of age-specific prevalence needed to evaluate the effectiveness of the strategies to prevent these infections. In addition, NHANES provides the means to better define the epidemiology of other hepatitis viruses. NHANES testing for markers of infection with hepatitis viruses will be used to determine secular trends in infection rates across most age and racial/ethnic groups, and will provide a national picture of the epidemiologic determinants of these infections.
+<p>In 2013, CDC revised its guidelines for Hepatitis C (HCV) testing because of following: 1) changes in the availability of certain commercial HCV antibody tests; 2) evidence that many persons who are identified as reactive by an HCV antibody test might not subsequently be evaluated to determine if they have current HCV infection; and 3) there have been significant advances in the development of antiviral agents with improved efficacy against HCV.<sup>1</sup> This new guidance was adopted beginning in the NHANES 2013-2014 cycle. Among persons aged 6 years and older who participated in NHANES during the 2013&ndash;2014 and 2015-2016 cycles, antibody confirmation testing was conducted using a&nbsp;3rd generation commercial line immunoassay test for the subset of participants whose serum was reactive using a hepatitis C virus (HCV) antibody screening procedure, subsequently found to be negative for HCV RNA. In the 2013-2014 cycle and 2015 only, participants who had stored serum samples were analyzed. In 2016, the regular samples collected for eligible participants were analyzed.</p>
+<p>For these reasons, use of 2013 and later data for comparisons or trending with data from 2012 and earlier is not advised.</p>
+<p>The new Hepatitis C algorithm flow chart can be found in the laboratory method file and/or by following the MMWR link below: </p>
+<p><a href="https://www.cdc.gov/mmwr/pdf/wk/mm62e0507a2.pdf">https://www.cdc.gov/mmwr/pdf/wk/mm62e0507a2.pdf</a></p>
+<p><b><i>Beginning in the 2017-2018 cycle, the HCV confirmatory antibody test (INNO-LIA) will be released in the HEPC dataset with HCV RNA and Genotype data.</i></b></p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>Examined participants in 2016, aged 6 years and older and were both HCV antibody screening reactive and HCV-RNA negative, were eligible.</p></div>
+        <h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2>
+        <div class="block"><p><strong>Hepatitis C Confirmed Antibody (INNO-LIA)</strong></p>
+<p>In 2012 and earlier years, the hepatitis C virus testing algorithm began with an antibody screening test, and antibody screening reactive samples were then tested with a recombinant/synthetic immunoblot assay as the antibody confirmation test. Samples with positive antibody confirmation results were then tested with a nucleic acid amplification test for hepatitis C virus RNA. HCV-RNA positive samples were then tested with a line probe assay to determine the virus genotype from six genotypes, and subtype for genotype 1, the most prevalent genotype in the US. Beginning in 2013, samples reactive to the antibody screening test were first tested for RNA. Then, all RNA positive samples were tested for genotype, and only RNA negative samples were tested with an antibody confirmation test. This change in the testing algorithm was made to align the NHANES HCV testing algorithm with a 2013 update to CDC&rsquo;s guidance on testing for HCV infection by clinicians and laboratorians. Additionally, the antibody confirmation test changed to a 3rd generation line immunoassay in 2013 because the test used in 2012 and earlier was no longer commercially available and the stored supply of these test kits had been exhausted.</p>
+<p>For the antibody confirmation test, the manual 16-hour sample incubation test procedure is used. 10ul of specimens and controls are diluted in 1mL diluent in test troughs to ensure test strips will slide easily and remain submerged during incubation. Specimens and controls are incubated with agitation by rocker at 34 rpm overnight (16&plusmn;2 hours) at room temperature (18&ndash;25&deg;). After a 3X/5min each wash step on microtiter plate shaker, conjugate is added with a 30-minute incubation at room temperature, followed by aspiration, 3X/5min each wash step and 30-minute incubation in substrate solution also on microtiter plate shaker. Finally, strips are agitated with stop solution for 10&ndash;30 minutes at room temperature. The microtiter plate shaker is set for 160 rpm and used for all the washes and solution incubations. Strips are then dried completely in a dry incubator at 37&deg;C for 30 minutes then mounted on the line immunoassay score data reporting sheet with inverted tape for reading within one hour using the reading card. The strips have lines for a background control, three reference lines for antibody (level &plusmn;, human IgG, weak positive; level 1+ human IgG, moderate positive; and level 3+, anti-human Ig, strong positive), and six lines for HCV antigens (C1, C2, E2, NS3, NS4, and NS5). Samples with a positive antibody confirmation test result are reported as positive. Samples with a negative antibody confirmation test result are reported as negative. Samples with an indeterminate antibody confirmation test result are released as missing. Only specimens insufficient in quantity are deemed indeterminate.</p>
+<p>There were no changes to the lab method, lab equipment, or lab site for this component in the NHANES 2015-2016 cycle.
+</p></div>
+        <h2 id="Laboratory_Method_Files">Laboratory Method Files</h2>
+        <div class="block">
+          <p><a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/labmethods/HEPC_I_R_MET_HEPATITIS_C_ANTIBODY_CONFIRMED.pdf">Hepatitis C Antibody / Hepatitis C Confirmatory Test (Anti-HCV)</a><span> (January 2018)</span></p>
+        </div>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2>
+        <div class="block"><p>Serum samples were processed, stored, and shipped to the Division of Viral Hepatitis, National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention, Centers for Disease Control and Prevention, Atlanta, GA for analysis.</p>
+<p>Detailed instructions on specimen collection and processing are discussed in the <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/manuals/2016_MEC_Laboratory_Procedures_Manual.pdf">NHANES Laboratory Procedures Manual (LPM)</a>. Vials are stored under appropriate frozen (&ndash;30&deg;C) conditions until they are shipped to Division of Viral Hepatitis, National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention for testing.</p>
+<p>The NHANES quality assurance and quality control (QA/QC) protocols meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions are discussed in the <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/manuals/2016_MEC_Laboratory_Procedures_Manual.pdf">NHANES LPM</a>.</p>
+<p><strong>Mobile Examination Centers (MECs)</strong></p>
+<p>Laboratory team performance is monitored using several techniques. NCHS and contract consultants use a structured competency assessment evaluation during visits to evaluate both the quality of the laboratory work and the quality-control procedures. Each laboratory staff member is observed for equipment operation, specimen collection and preparation; testing procedures and constructive feedback are given to each staff member. Formal retraining sessions are conducted annually to ensure that required skill levels were maintained.</p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>The data were reviewed. Incomplete data or improbable values were sent to the performing laboratory for confirmation.</p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>Refer to the <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2015"><span style="color: #003399;">2015-2016 Laboratory Data Overview</span></a> for general information on NHANES laboratory data.</p>
+<p><strong>Demographic and Other Related Variables</strong></p>
+<p>The analysis of NHANES laboratory data must be conducted using the appropriate survey design and demographic variables. The <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2015"><span style="color: #003399;">NHANES 2015-2016 Demographics File</span></a> contains demographic data, health indicators, and other related information collected during household interviews as well as the sample design variables. The recommended procedure for variance estimation requires use of stratum and PSU variables (SDMVSTRA and SDMVPSU, respectively) in the demographic data file. </p>
+<p>A special one-year MEC sample weight (WTMEC1YR) is provided for the 2015 Surplus Specimen Hepatitis C antibody (confirmed) dataset (SSHC_I_R), and the 2016 Hepatitis C antibody (confirmed) dataset (HEPC_I_R). This sample weight, along with strata (VSTRA) and PSUs (VPSU) are used to calculate variance estimates based on the Taylor Series Linearization method. In addition, 15 Jackknife replicate weights (WTM1YR01 &ndash; WTM1YR15) can be used with VSTRA and VPSU, and are included in the files to obtain variance estimates based on a replication method.</p>
+<p>This laboratory data file can be linked to the other NHANES data files using the unique survey participant identifier (i.e., SEQN).
+</p>
+<p><strong>Detection Limits </strong></p>
+<p>This data is qualitative. The use of lower limits of detection (LLODs) is not applicable. </p>
+<p>Exam sample weights should be used for analyses. Please refer to the NHANES <a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx"><span style="color: #003399;">Analytic Guidelines</span></a> and the on-line NHANES <span style="color: #003399;"><a href="https://www.cdc.gov/nchs/tutorials/">Tutorial</a> </span> for further details on the use of sample weights and other analytic issues.<br />
+</p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Centers for Disease Control and Prevention. Recommendations for prevention and control of hepatitis C virus (HCV) infection and HCV-related chronic disease. MMWR 1998;47(No. RR-19):1-39. Available from: <a href="https://www.cdc.gov/mmwr/PDF/RR/RR4719.pdf">https://www.cdc.gov/mmwr/PDF/RR/RR4719.pdf</a></li>
+          <li>Centers for Disease Control and Prevention. Recommendations for the identification of chronic hepatitis C virus infection among persons born during 1945-1965. MMWR. 2012;61(RR-4):1-32. Available from: <a href="http://www.cdc.gov/mmwr/pdf/rr/rr6104.pdf">http://www.cdc.gov/mmwr/pdf/rr/rr6104.pdf</a></li>
+          <li>Centers for Disease Control and Prevention. Testing for HCV Infection: An Update of Guidance for Clinicians and Laboratorians. MMWR. 2013; 62 Early Release:1-4. Available from: <a href="https://www.cdc.gov/mmwr/pdf/wk/mm62e0507a2.pdf">https://www.cdc.gov/mmwr/pdf/wk/mm62e0507a2.pdf</a></li>
+          <li>Moyer VA. Screening for Hepatitis C Virus Infection in Adults: U.S. Preventive Services Task Force Recommendation Statement. Annals of Internal Medicine. 2013;159(5):349-357. Available from: <a href="https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/hepatitis-c-screening">https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/hepatitis-c-screening</a></li>
+          <li>World Health Organization. Prequalification of In Vitro Diagnostics Public Report: INNO-LIA HCV Score. PPQDx 0202-073-00. July 24, 2015. Available from: <a href="http://www.who.int/diagnostics_laboratory/evaluations/150729_final_report_0202_073_00_hcv.pdf">http://www.who.int/diagnostics_laboratory/evaluations/150729_final_report_0202_073_00_hcv.pdf</a></li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VPSU">VPSU - Variance PSU</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VPSU</dd>
+            <dt>SAS Label: </dt>
+            <dd>Variance PSU</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Variance PSU</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 15</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3888</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="VSTRA">VSTRA - Variance stratum</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">VSTRA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Variance stratum</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Variance stratum</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">1</td>
+                <td class="values" align="right">3888</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTMEC1YR">WTMEC1YR - Full Sample 1 Year MEC Exam Weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTMEC1YR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Full Sample 1 Year MEC Exam Weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Full Sample 1 Year MEC Exam Weight</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9570.545706 to 408850.81108</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3888</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No complete MEC collection</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR01">WTM1YR01 - 1 Year MEC Weight - Jackknife 01</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR01</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 01</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 01</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">13333.694463 to 421536.22258</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3638</td>
+                <td class="values" align="right">3638</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">250</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR02">WTM1YR02 - 1 Year MEC Weight - Jackknife 02</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR02</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 02</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 02</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10072.610225 to 461789.33681</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3636</td>
+                <td class="values" align="right">3636</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">252</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR03">WTM1YR03 - 1 Year MEC Weight - Jackknife 03</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR03</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 03</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 03</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9726.451084 to 422135.14926</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3635</td>
+                <td class="values" align="right">3635</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">253</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR04">WTM1YR04 - 1 Year MEC Weight - Jackknife 04</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR04</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 04</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 04</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9317.447522 to 400120.81047</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3637</td>
+                <td class="values" align="right">3637</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">251</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR05">WTM1YR05 - 1 Year MEC Weight - Jackknife 05</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR05</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 05</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 05</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">11429.722637 to 431283.40874</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3650</td>
+                <td class="values" align="right">3650</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">238</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR06">WTM1YR06 - 1 Year MEC Weight - Jackknife 06</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR06</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 06</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 06</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10500.521568 to 448253.64041</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3698</td>
+                <td class="values" align="right">3698</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">190</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR07">WTM1YR07 - 1 Year MEC Weight - Jackknife 07</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR07</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 07</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 07</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9398.345682 to 428400.39041</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3605</td>
+                <td class="values" align="right">3605</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">283</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR08">WTM1YR08 - 1 Year MEC Weight - Jackknife 08</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR08</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 08</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 08</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 20 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10426.349382 to 436874.43752</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3588</td>
+                <td class="values" align="right">3588</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">300</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR09">WTM1YR09 - 1 Year MEC Weight - Jackknife 09</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR09</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 09</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 09</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10935.798074 to 441605.81042</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3683</td>
+                <td class="values" align="right">3683</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">205</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR10">WTM1YR10 - 1 Year MEC Weight - Jackknife 10</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR10</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 10</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 10</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9827.888425 to 417038.24289</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3742</td>
+                <td class="values" align="right">3742</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">146</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR11">WTM1YR11 - 1 Year MEC Weight - Jackknife 11</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR11</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 11</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 11
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9542.309558 to 471876.35771</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3643</td>
+                <td class="values" align="right">3643</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">245</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR12">WTM1YR12 - 1 Year MEC Weight - Jackknife 12</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR12</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 12</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 12</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10723.421466 to 433572.26492</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3593</td>
+                <td class="values" align="right">3593</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">295</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR13">WTM1YR13 - 1 Year MEC Weight - Jackknife 13</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR13</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 13</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 13
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9511.825464 to 444954.06699</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3533</td>
+                <td class="values" align="right">3533</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">355</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR14">WTM1YR14 - 1 Year MEC Weight - Jackknife 14</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR14</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 14</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 14</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10302.546721 to 454605.94406</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3529</td>
+                <td class="values" align="right">3529</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">359</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTM1YR15">WTM1YR15 - 1 Year MEC Weight - Jackknife 15</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTM1YR15</dd>
+            <dt>SAS Label: </dt>
+            <dd>1 Year MEC Weight - Jackknife 15</dd>
+            <dt>English Text: </dt>
+            <dd class="info">1 Year MEC Weight - Jackknife replicate weight 15</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">9837.858643 to 462382.47684</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3622</td>
+                <td class="values" align="right">3622</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Not in Replicate Sample</td>
+                <td class="values" align="right">266</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBDHCI">LBDHCI   - Hepatitis C Antibody (confirmed)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBDHCI  </dd>
+            <dt>SAS Label: </dt>
+            <dd>Hepatitis C Antibody (confirmed)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Hepatitis C Antibody (confirmed)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Positive</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">16</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Negative</td>
+                <td class="values" align="right">13</td>
+                <td class="values" align="right">29</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Negative Screening HCV Antibody</td>
+                <td class="values" align="right">3247</td>
+                <td class="values" align="right">3276</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Positive HCV RNA</td>
+                <td class="values" align="right">19</td>
+                <td class="values" align="right">3295</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">593</td>
+                <td class="values" align="right">3888</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

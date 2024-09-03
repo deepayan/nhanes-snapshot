@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Hemagglutination inhibition antibody titers to influenza A/ H1N1 viruses (Surplus)" />
+    <meta name="DC.Subject" content="NHANES 2007-2008: Hemagglutination inhibition antibody titers to influenza A/ H1N1 viruses (Surplus) Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2007-2008 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2007">
+      <title>
+						NHANES 2007-2008:
+						Hemagglutination inhibition antibody titers to influenza A/ H1N1 viruses (Surplus) Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#SSH12009">SSH12009 - H1N1 virus A/California/7/2009</a>
+                </li>
+                <li>
+                  <a href="#SSH12007">SSH12007 - H1N1 virus A/Brisbane/59/2007</a>
+                </li>
+                <li>
+                  <a href="#SSH11976">SSH11976 - H1N1 virus A/New Jersey/8/1976</a>
+                </li>
+                <li>
+                  <a href="#WTH1N1">WTH1N1 - H1N1 sample weight</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2007-2008 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Hemagglutination inhibition antibody titers to influenza A/ H1N1 viruses (Surplus) (SSH1N1_E)
+			</h3>
+        <h4>RDC Only 
+				Data File: SSH1N1_E.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				October 2011</h5>
+        <h5 class="right">
+				Last Revised:
+				July 2012</h5>
+        <h5 class="left">
+					Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (https://www.cdc.gov/rdc).
+				</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>Among a sample of participants of all ages, the antibody testing of stored sera specimens from NHANES 2007&ndash;2008 was conducted to determine population levels of pre-pandemic cross reactive antibody to the 2009 pandemic influenza A/H1N1 virus and related influenza A/H1N1 viruses prior to the spread of the novel 2009 H1N1 virus. This data release contains the hemagglutination inhibition assay titers to 2009 H1N1 and two past H1N1 influenza viruses.</p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>A sample of participants from NHANES 2007-08, aged 1 year and over, and with stored sera were tested.</p></div>
+        <h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2>
+        <div class="block"><p>Antibody titers against 2009 H1N1 and two past H1N1 influenza viruses were measured with the hemagglutination inhibition (HI) assay following standard procedures by Focus Diagnositcs, Inc., Cypress, CA.</p>
+<p>The selected virus targets were A/California/7/2009, A/Brisbane/59/2007, and A/New Jersey/8/1976.</p>
+<p>The HI assay for each target virus was performed in triplicate. The geometric mean HI titers are reported. An HI titer of &ge;40 indicates prior infection with an influenza virus antigenically similar to the tested virus. </p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>Data was received after all the antibody testing was complete. The data were not edited.</p>
+<p>Data Access: All data are publicly available. </p></div>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2>
+        <div class="block"><p>Commercial reagents were used for all testing. All QC procedures recommended by the manufacturers were followed.</p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>There are three variables:</p>
+<p>H1GMT2009 : Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H1N1 virus A/California/7/2009. Continuous variable - Values range from &lt;10 (the limit of detection) to 403.</p>
+<p>H1GMT2007 : Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H1N1 virus A/Brisbane/59/2007. Continuous variable - Values range from &lt;10 (the limit of detection) to 1280.</p>
+<p>H1GMT1976 : Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H1N1 virus A/New Jersey/8/1976. Continuous variable - Values range from &lt;10 (the limit of detection) to 320&nbsp;<br />
+<br />
+Analytic Guidelines for H1N1:<br />
+<br />
+1. Given the limited sample size it is suggested that prevalence estimates are only be presented by 1-way classifications.<br />
+<br />
+2. Estimates should not be presented for the age group of 1-5 y due to limited sample size.<br />
+<br />
+3. Overall estimates of prevalence for all ages (1+) can be done. However, all other analyses by age should only be presented for ages 6+.<br />
+<br />
+4. All estimates should be weighted, using the adjusted weight, WTH1N1. All variance estimates should account for the complex design (SDMVPSU and SDMVSTRA). The dataset should be merged with the 2007-2008 demographic file and then create a subset of your sample population using the subpopn statement in the SUDAAN procedure (or similar procedure in another statistical package) itself and not in the SAS data step for proper variance calculation.<br />
+<br />
+5. All estimates should be assessed for design effects, relative standard error, and degrees of freedom. Design effects (DEFF) for a variable can be different for age groups. DEFF can be very different for different variables due to differences in variation by geography, by household intra class correlation, and by demographic heterogeneity. Because DEFFs are highly variable for different variables within each 2-year cycle of the continuous NHANES, it is difficult to set a single minimum sample size for analysis. The general statistical consideration is that an estimated proportion should have a relative standard error of 30% or less. <br />
+<br />
+https://www.cdc.gov/nchs/tutorials/nhanes/surveydesign/varianceestimation/info3.htm <br />
+https://www.cdc.gov/nchs/tutorials/nhanes/surveydesign/varianceestimation/info1.htm <br />
+<br />
+6. For prevalence estimates near 0% or near 100%, standard methods of calculating confidence limits, such as the Wald method, may produce lower limits less than 0% or upper limits greater than 100%. In these cases, it is often recommended to use alternative methods for calculating 95% confidence limits using transformations (such as the logit or arcsine transformation), using the Wilson method, or calculating exact confidence limits such as the Clopper-Pearson approach. For applications to survey data, see Korn and Graubard.<br />
+<br />
+https://www.cdc.gov/nchs/tutorials/nhanes/surveydesign/varianceestimation/info3.htm<br />
+<br />
+&nbsp;</p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>Garten RJ, Davis CT, Russell CA, et al. Antigenic and genetic characteristics of swine-origin 2009 A(H1N1) influenza viruses circulating in humans. Science 2009; 325(5937):197-201.</li>
+          <li>Hancock K, Veguilla V, Lu X, et al. Cross-reactive antibody responses to the 2009 pandemic H1N1 influenza virus. N Engl J Med 2009; 361(20):1945-52.</li>
+          <li>Veguilla V, Hancock K, Schiffer J, et al. Sensitivity and Specificity of Serologic Assays for Detection of Human Infection with 2009 Pandemic H1N1 Virus in U.S. Populations. J Clin Microbiol 2011; 49(6):2210-5.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSH12009">SSH12009 - H1N1 virus A/California/7/2009</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSH12009</dd>
+            <dt>SAS Label: </dt>
+            <dd>H1N1 virus A/California/7/2009</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Geometric mean hemogglutination inhibition titer against influenza A/H1N1Virus A/California/7/2009</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10 to 403</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">366</td>
+                <td class="values" align="right">366</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Less than 10</td>
+                <td class="values" align="right">776</td>
+                <td class="values" align="right">1142</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1142</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSH12007">SSH12007 - H1N1 virus A/Brisbane/59/2007</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSH12007</dd>
+            <dt>SAS Label: </dt>
+            <dd>H1N1 virus A/Brisbane/59/2007</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Geometric mean hemogglutination inhibition titer against influenza A/H1N1 virus A/Brisbane/59/2007</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10 to 1280</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">584</td>
+                <td class="values" align="right">584</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Less than 10</td>
+                <td class="values" align="right">558</td>
+                <td class="values" align="right">1142</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1142</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSH11976">SSH11976 - H1N1 virus A/New Jersey/8/1976</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSH11976</dd>
+            <dt>SAS Label: </dt>
+            <dd>H1N1 virus A/New Jersey/8/1976</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Geometric mean hemagglutination inhibition titer against influenza A/H1H1 virus A/New Jersey/8/1976</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10 to 320</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">137</td>
+                <td class="values" align="right">137</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Less than 10</td>
+                <td class="values" align="right">1005</td>
+                <td class="values" align="right">1142</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1142</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTH1N1">WTH1N1 - H1N1 sample weight</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTH1N1</dd>
+            <dt>SAS Label: </dt>
+            <dd>H1N1 sample weight</dd>
+            <dt>English Text: </dt>
+            <dd class="info">H1N1 sample weight</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 1 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">25680.325814 to 1730466.4155</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1141</td>
+                <td class="values" align="right">1141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1730466.4155</td>
+                <td class="values">1730466.4155</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1142</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1142</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

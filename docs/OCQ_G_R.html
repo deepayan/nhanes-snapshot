@@ -1,0 +1,2158 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Occupation - Industry &amp; Occupation Codes" />
+    <meta name="DC.Subject" content="NHANES 2011-2012: Occupation - Industry &amp; Occupation Codes Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2011-2012 Questionnaire page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&amp;CycleBeginYear=2011">
+      <title>
+						NHANES 2011-2012:
+						Occupation - Industry &amp; Occupation Codes Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#OCD231R">OCD231R - Detailed industry code: current job</a>
+                </li>
+                <li>
+                  <a href="#OCD241R">OCD241R - Detailed occupation code: current job</a>
+                </li>
+                <li>
+                  <a href="#OCD391R">OCD391R - Detailed industry code: longest job</a>
+                </li>
+                <li>
+                  <a href="#OCD392R">OCD392R - Detailed occupation code: longest job</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#Appendix_A:__SAS_Format_for_Detailed_Industry_&amp;_Occupation_Codes">Appendix A:  SAS Format for Detailed Industry &amp; Occupation Codes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2011-2012 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Occupation - Industry &amp; Occupation Codes (OCQ_G_R)
+			</h3>
+        <h4>RDC Only 
+				Data File: OCQ_G_R.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				September 2017</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+        <h5 class="left">
+					Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (https://www.cdc.gov/rdc).
+				</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>The Occupation questionnaire section (variable name prefix OCQ) of the NHANES sample person household interview contains data on employment and variables relating to the work environment. OCQ_G is the main public release dataset for the NHANES 2011-2012 Occupation data; however, in the NHANES household interview, detailed descriptions of work history are obtained. This data has been coded using the 2002 version of the U.S. Bureau of the Census Industrial &amp; Occupational Classification Codes. This detailed coded data is considered confidential because it represents potentially personally identifiable information, hence these codes are not publicly released by NHANES. Rather, the industry and occupation code dataset OCQ_G_R is available to researchers through the NCHS Research Data Center (RDC). </p>
+<p>
+The following NHANES 2011-2012 occupation and industry variables are collected and available through the NCHS RDC:
+<br />
+<br />
+Data for Sample Person&rsquo;s Current Job:
+<br />
+Industry classification code &nbsp;&nbsp;&nbsp;&nbsp;(OCD231R)
+<br />
+Occupational code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;(OCD241R) </p>
+<p>Data for Sample Person&rsquo;s Longest Held Job:
+<br />
+Industry classification code &nbsp;&nbsp;&nbsp;&nbsp;(OCD391R)
+<br />
+Occupational code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(OCD392R) <br />
+<span style="text-decoration: underline;">
+</span></p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>In NHANES 2011-2012 survey, the OCQ Questionnaire was administered to a full sample of survey participants 16+ years of age. </p></div>
+        <h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2>
+        <div class="block"><p>These questions were asked, in the home, by trained interviewers using the Computer-Assisted Personal Interview (CAPI) system. Participants 16 years of age are interviewed directly. </p></div>
+        <h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2>
+        <div class="block"><p>The CAPI system is programmed with built-in consistency checks to reduce data entry errors. CAPI also uses online help screens to assist interviewers in defining key terms used in the questionnaire. During the 2011-2012 data collection cycle, periodic QC checks were performed on the Occupation questionnaire data being collected and interviewer specific feedback and retraining was performed as appropriate.<br />
+</p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>A subject&rsquo;s questionnaire interview responses were entered into a pentop computer and then uploaded into a computerized database in the same manner as other sections of the Sample Person Questionnaire. The data was then edited for completeness, consistency, and illogical values. </p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>Analyses requiring detailed occupation and industry codes are restricted to NHCS RDC use. Proposals for such analyses must be submitted to the NHCS RDC for review and approval and the analysis must be conducted through the RDC.</p>
+<p>Four digit codes were applied to the NHANES 2011-2012 occupation and industry data using the 2002 U.S. Bureau of the Census Industrial &amp; Occupational Classification coding system. The coding was done by CDC&rsquo;s National Institute for Occupational Safety and Health. The 2002 Census Bureau industry codes are based on the year 2002 North American Industry Classification System, and the 2002 Census Bureau occupation codes are based on the year 2000 Standard Occupational Classification System. Coding manuals and detailed data dictionaries of the alphabetical and classified indices of industries and occupations are available (NIOSH, 2017). </p>
+<p>The U.S. Census Bureau&rsquo;s year 2002 version of its Occupation and Industry coding system was also used for detailed coding of the NHANES 2007-2008 and NHANES 2009-2010 occupation and industry group code data; however, the 2001-2006 NHANES coding was based on the earlier year 2000 version of the U.S. Census Bureau Industry and Occupation data coding system. The 2000 and 2002 versions of the Census Bureau Industry and Occupation codes are comparable in many but not in all respects, and data analysts who wish to combine the NHANES 2005-2006 industry or occupation group code data with the NHANES 2007-2012 occupation group code data should consult the U.S. Census Bureau&rsquo;s literature on the comparability of the these 2 versions of the Census Bureau&rsquo;s coding system before performing their analyses. Appendix 1 provides analysts with SAS formats for the set of Census 2002 industry and occupation codes.</p>
+<p>With respect to the 4-digit Census 2002 industry and occupation codes, analysis should be aware that in the NHANES OCQ_G_R data file, the Census 2002 industry and occupation codes are formatted as numeric variables. This means that industry and occupation codes below 1000 are represented by 3 rather than 4 digits. This is because the NHANES numeric variable format does not support values that are leading zeros. For example, the official Census 2002 code for agricultural crop production is 0170, however in the OCQ_G_R data file this code value is 170. </p>
+<p>The OCQ data were collected as part of the household questionnaire and therefore the full sample NHANES interview weights WTINT2YR should be used for statistical analysis. However, if the OCQ data are merged with the NHANES MEC exam or laboratory data, then NHANES examination sample weights WTMEC2YR should be used for analyses. Please refer to the <a href="https://wwwn.cdc.gov/Nchs/Nhanes/AnalyticGuidelines.aspx" target="_blank">NHANES Analytic Guidelines</a>&nbsp;and the on-line <a href="https://www.cdc.gov/nchs/tutorials/" target="_blank">NHANES Tutorial</a> for further details on the use of sample weights and other analytic issues. </p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li>National Institute for Occupational Safety and Health. 2017. Available from: <a href="https://www.cdc.gov/niosh/topics/coding/nioccsuserdocumentation.html">https://www.cdc.gov/niosh/topics/coding/nioccsuserdocumentation.html</a></li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OCD231R">OCD231R - Detailed industry code: current job</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OCD231R</dd>
+            <dt>SAS Label: </dt>
+            <dd>Detailed industry code: current job</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What kind of business or industry is this? (For example: TV and radio management, retail shoe store, state labor department, farm.)</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">See List of Detailed Industry Codes in Appendix A.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">170 to 9990</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3048</td>
+                <td class="values" align="right">3048</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3127</td>
+                <td class="values" align="right">6175</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OCD241R">OCD241R - Detailed occupation code: current job</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OCD241R</dd>
+            <dt>SAS Label: </dt>
+            <dd>Detailed occupation code: current job</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What kind of work {were you/was SP} doing? (For example: farming, mail clerk, computer specialist.)</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">See List of Detailed Occupation Codes in Appendix A.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10 to 9830</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3048</td>
+                <td class="values" align="right">3048</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3127</td>
+                <td class="values" align="right">6175</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OCD391R">OCD391R - Detailed industry code: longest job</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OCD391R</dd>
+            <dt>SAS Label: </dt>
+            <dd>Detailed industry code: longest job</dd>
+            <dt>English Text: </dt>
+            <dd class="info">What kind of business or industry is this? (For example: TV and radio management, retail shoe store, state labor department, farm.)</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">See List of Detailed Industry Codes in Appendix A.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">170 to 9990</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3440</td>
+                <td class="values" align="right">3440</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2735</td>
+                <td class="values" align="right">6175</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="OCD392R">OCD392R - Detailed occupation code: longest job</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">OCD392R</dd>
+            <dt>SAS Label: </dt>
+            <dd>Detailed occupation code: longest job</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Thinking of all the paid jobs or businesses {you/SP} ever had, what kind of work {were you/was s/he} doing the longest? (For example, electrical engineer, stock clerk, typist, farmer.)</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">List of Detailed Occupation Codes in Appendix A.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">10 to 9840</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3440</td>
+                <td class="values" align="right">3440</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2735</td>
+                <td class="values" align="right">6175</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="Appendices" xmlns="">
+        <div id="Appendix">
+          <h2 id="Appendix_A:__SAS_Format_for_Detailed_Industry_&amp;_Occupation_Codes">Appendix A:  SAS Format for Detailed Industry &amp; Occupation Codes</h2><p><strong>For Industry Variables (OCD231, OCD391)
+</strong><br />
+<br />
+PROC FORMAT;
+<br />
+VALUE IND
+<br />
+170	=  'AGR - Crop production'
+<br />
+180	=  'AGR - Animal production'
+<br />
+190	=  'AGR   Forestry except Logging'
+<br />
+270	=  'AGR   Logging'
+<br />
+280	=  'AGR   Fishing, hunting, and trapping'
+<br />
+290	=  'AGR   Support activities for agriculture and forestry'
+<br />
+370	=  'EXT   Oil and gas extraction'
+<br />
+380	=  'EXT   Coal mining'
+<br />
+390	=  'EXT   Metal ore mining'
+<br />
+470	=  'EXT   Nonmetallic mineral mining and quarrying'
+<br />
+480	=  'EXT   Not specified type of mining'
+<br />
+490	=  'EXT   Support activities for mining'
+<br />
+570	=  'UTL   Electric power generation, transmission, distribution'
+<br />
+580	=  'UTL   Natural gas distribution'
+<br />
+590	=  'UTL   Electric and gas, and other combinations'
+<br />
+670	=  'UTL   Water, steam, air conditioning, and irrigation systems'
+<br />
+680	=  'UTL   Sewage treatment facilities'
+<br />
+690	=  'UTL   Not specified utilities'
+<br />
+770	=  'CON  Construction'
+<br />
+1070=  'MFG   Animal food, grain and oilseed milling'
+<br />
+1080=  'MFG   Sugar and confectionery products'
+<br />
+1090=  'MFG   Fruit and vegetable preserving and specialty foods'
+<br />
+1170=  'MFG   Dairy products'
+<br />
+1180=  'MFG   Animal slaughtering and processing'
+<br />
+1190=  'MFG   Retail bakeries'
+<br />
+1270=  'MFG   Bakeries, except retail'
+<br />
+1280=  'MFG   Seafood and other miscellaneous food, nec'
+<br />
+1290=  'MFG   Not specified food industries'
+<br />
+1370=  'MFG   Beverage'
+<br />
+1390=  'MFG   Tobacco'
+<br />
+1470=  'MFG   Fiber, yarn, and thread mills'
+<br />
+1480=  'MFG   Fabric mills, except knitting'
+<br />
+1490=  'MFG   Textile and fabric finishing and coating mills'
+<br />
+1570=  'MFG   Carpets and rugs'
+<br />
+1590=  'MFG   Textile product mills except carpets and rugs'
+<br />
+1670=  'MFG   Knitting mills'
+<br />
+1680=  'MFG   Cut and sew apparel'
+<br />
+1690=  'MFG   Apparel accessories and other apparel'
+<br />
+1770=  'MFG   Footwear'
+<br />
+1790=  'MFG   Leather tanning and products, except footwear'
+<br />
+1870=  'MFG   Pulp, paper, and paperboard mills'
+<br />
+1880=  'MFG   Paperboard containers and boxes'
+<br />
+1890=  'MFG   Miscellaneous paper and pulp products'
+<br />
+1990=  'MFG   Printing and related support activities'
+<br />
+2070=  'MFG   Petroleum refining'
+<br />
+2090=  'MFG   Miscellaneous petroleum and coal products'
+<br />
+2170=  'MFG   Resin, synthetic rubber and fibers, and filaments'
+<br />
+2180=  'MFG   Agricultural chemicals'
+<br />
+2190=  'MFG   Pharmaceuticals and medicines'
+<br />
+2270=  'MFG   Paint, coating, and adhesives'
+<br />
+2280=  'MFG   Soap, cleaning compound, and cosmetics'
+<br />
+2290=  'MFG   Industrial and miscellaneous chemicals'
+<br />
+2370=  'MFG   Plastics products'
+<br />
+2380=  'MFG   Tires'
+<br />
+2390=  'MFG   Rubber products, except tires'
+<br />
+2470=  'MFG   Pottery, ceramics, and related products'
+<br />
+2480=  'MFG   Structural clay products'
+<br />
+2490=  'MFG   Glass and glass products'
+<br />
+2570=  'MFG   Cement, concrete, lime, and gypsum products'
+<br />
+2590=  'MFG   Miscellaneous nonmetallic mineral products'
+<br />
+2670=  'MFG   Iron and steel mills and steel products'
+<br />
+2680=  'MFG   Aluminum production and processing'
+<br />
+2690=  'MFG   Nonferrous metal, except aluminum, production and processing'
+<br />
+2770=  'MFG   Foundries'
+<br />
+2780=  'MFG   Metal forgings and stampings'
+<br />
+2790=  'MFG   Cutlery and hand tools'
+<br />
+2870=  'MFG   Structural metals, and tank and shipping containers'
+<br />
+2880=  'MFG   Machine shops, turned products, screws, nuts, bolts'
+<br />
+2890=  'MFG   Coating, engraving, heat treating and allied activities'
+<br />
+2970=  'MFG   Ordnance'
+<br />
+2980=  'MFG   Miscellaneous fabricated metal products'
+<br />
+2990=  'MFG   Not specified metal industries'
+<br />
+3070=  'MFG   Agricultural implements'
+<br />
+3080=  'MFG   Construction mining and oil field machinery'
+<br />
+3090=  'MFG   Commercial and service industry machinery'
+<br />
+3170=  'MFG   Metalworking machinery'
+<br />
+3180=  'MFG   Engines, turbines, and power transmission equipment'
+<br />
+3190=  'MFG   Machinery, n.e.c.'
+<br />
+3290=  'MFG   Not specified machinery'
+<br />
+3360=  'MFG   Computer and peripheral equipment'
+<br />
+3370=  'MFG   Communications, audio, and video equipment'
+<br />
+3380=  'MFG   Navigational, measuring, electomedical, and control instruments'
+<br />
+3390=  'MFG   Electronic components and products, nec.'
+<br />
+3470=  'MFG   Household appliances'
+<br />
+3490=  'MFG   Electrical machinery, equipment, and supplies, nec.'
+<br />
+3570=  'MFG   Motor vehicles and motor vehicle equipment'
+<br />
+3580=  'MFG   Aircraft and parts'
+<br />
+3590=  'MFG   Aerospace products and parts'
+<br />
+3670=  'MFG   Railroad rolling stock'
+<br />
+3680=  'MFG   Ship and boat building'
+<br />
+3690=  'MFG   Other transportation equipment'
+<br />
+3770=  'MFG   Sawmills and wood preservation'
+<br />
+3780=  'MFG   Veneer, plywood, and engineered wood products'
+<br />
+3790=  'MFG   Prefabricated wood buildings and mobile homes'
+<br />
+3870=  'MFG   Miscellaneous wood products'
+<br />
+3890=  'MFG   Furniture and fixtures'
+<br />
+3960=  'MFG   Medical equipment and supplies'
+<br />
+3970=  'MFG   Toys, amusement, and sporting goods'
+<br />
+3980=  'MFG   Miscellaneous manufacturing, n.e.c.'
+<br />
+3990=  'MFG   Not specified industries'
+<br />
+4070=  'WHL   Motor vehicles, parts and supplies'
+<br />
+4080=  'WHL   Furniture and home furnishing'
+<br />
+4090=  'WHL   Lumber and other construction materials'
+<br />
+4170=  'WHL   Professional and commercial equipment and supplies'
+<br />
+4180=  'WHL   Metals and minerals, except petroleum'
+<br />
+4190=  'WHL   Electrical goods'
+<br />
+4260=  'WHL   Hardware, plumbing and heating equipment, and supplies'
+<br />
+4270=  'WHL   Machinery, equipment, and supplies'
+<br />
+4280=  'WHL   Recyclable materials'
+<br />
+4290=  'WHL   Miscellaneous durable goods'
+<br />
+4370=  'WHL   Paper and paper products'
+<br />
+4380=  'WHL   Drugs, sundries, and chemical and allied products'
+<br />
+4390=  'WHL   Apparel, fabrics, and notions'
+<br />
+4470=  'WHL   Groceries and related products'
+<br />
+4480=  'WHL   Farm product raw materials'
+<br />
+4490=  'WHL   Petroleum and petroleum products'
+<br />
+4560=  'WHL   Alcoholic beverages'
+<br />
+4570=  'WHL   Farm supplies'
+<br />
+4580=  'WHL   Miscellaneous nondurable goods'
+<br />
+4585=  'WHL   Wholesale electronic markets, agents, brokers'
+<br />
+4590=  'WHL   Not specified trade'
+<br />
+4670=  'RET   Automobile dealers'
+<br />
+4680=  'RET   Other motor vehicle dealers'
+<br />
+4690=  'RET   Auto parts, accessories, and tire stores'
+<br />
+4770=  'RET   Furniture and home furnishings stores'
+<br />
+4780=  'RET   Household appliance stores'
+<br />
+4790=  'RET   Radio, TV, and computer stores'
+<br />
+4870=  'RET   Building material and supplies dealers'
+<br />
+4880=  'RET   Hardware stores'
+<br />
+4890=  'RET   Lawn and garden equipment and supplies stores'
+<br />
+4970=  'RET   Grocery stores'
+<br />
+4980=  'RET   Specialty food stores'
+<br />
+4990=  'RET   Beer, wine, and liquor stores'
+<br />
+5070=  'RET   Pharmacies and drug stores'
+<br />
+5080=  'RET   Health and personal care, except drug, stores'
+<br />
+5090=  'RET   Gasoline stations'
+<br />
+5170=  'RET   Clothing and accessories, except shoe, stores'
+<br />
+5180=  'RET   Shoe stores'
+<br />
+5190=  'RET   Jewelry, luggage, and leather goods stores'
+<br />
+5270=  'RET   Sporting goods, camera, and hobby and toy stores'
+<br />
+5280=  'RET   Sewing, needlework and piece goods stores'
+<br />
+5290=  'RET   Music stores'
+<br />
+5370=  'RET   Book stores and news dealers'
+<br />
+5380=  'RET   Department stores and Discount stores'
+<br />
+5390=  'RET   Miscellaneous general merchandise stores'
+<br />
+5470=  'RET   Retail florists'
+<br />
+5480=  'RET   Office supplies and stationary stores'
+<br />
+5490=  'RET   Used merchandise stores'
+<br />
+5570=  'RET   Gift, novelty, and souvenir shops'
+<br />
+5580=  'RET   Miscellaneous stores'
+<br />
+5590=  'RET   Electronic shopping'
+<br />
+5591=  'RET   Electronic auctions'
+<br />
+5592=  'RET   Mail order houses'
+<br />
+5670=  'RET   Vending machine operators'
+<br />
+5680=  'RET   Fuel dealers'
+<br />
+5690=  'RET   Other direct selling establishments'
+<br />
+5790=  'RET   Not specified trade'
+<br />
+6070=  'TRN   Air transportation'
+<br />
+6080=  'TRN   Rail transportation'
+<br />
+6090=  'TRN   Water transportation'
+<br />
+6170=  'TRN   Truck transportation'
+<br />
+6180=  'TRN   Bus service and urban transit'
+<br />
+6190=  'TRN   Taxi and limousine service'
+<br />
+6270=  'TRN   Pipeline transportation'
+<br />
+6280=  'TRN   Scenic and sightseeing transportation'
+<br />
+6290=  'TRN   Services incidental to transportation'
+<br />
+6370=  'TRN   Postal Service'
+<br />
+6380=  'TRN   Couriers and messengers'
+<br />
+6390=  'TRN   Warehousing and storage'
+<br />
+6470=  'INF   Newspaper publishers'
+<br />
+6480=  'INF   Publishing, except newspapers and software'
+<br />
+6490=  'INF   Software publishing'
+<br />
+6570=  'INF   Motion pictures and video industries'
+<br />
+6590=  'INF   Sound recording industries'
+<br />
+6670=  'INF   Radio and television broadcasting and cable'
+<br />
+6675=  'INF   Internet and publishing and broadcasting'
+<br />
+6680=  'INF   Wired telecommunications carriers'
+<br />
+6690=  'INF   Other telecommunication services'
+<br />
+6692=  'INF   Internet service providers'
+<br />
+6695=  'INF   Data processing, hosting, and related services'
+<br />
+6770=  'INF   Libraries and archives'
+<br />
+6780=  'INF   Other information services'
+<br />
+6870=  'FIN   Banking and related activities'
+<br />
+6880=  'FIN   Savings institutions, including credit unions'
+<br />
+6890=  'FIN   Non-depository credit and related activities'
+<br />
+6970=  'FIN   Securities, commodities, funds, trusts, and other financial investments'
+<br />
+6990=  'FIN   Insurance carriers and related activities'
+<br />
+7070=  'FIN   Real estate'
+<br />
+7080=  'FIN   Automotive equipment rental and leasing'
+<br />
+7170=  'FIN   Video tape and disk rental'
+<br />
+7180=  'FIN   Other consumer goods rental'
+<br />
+7190=  'FIN   Commercial, industrial, and other intangible assets rental and leasing'
+<br />
+7270=  'PRF   Legal services'
+<br />
+7280=  'PRF   Accounting, tax preparation, bookkeeping and payroll services'
+<br />
+7290=  'PRF   Architectural, engineering, and related services'
+<br />
+7370=  'PRF   Specialized design services'
+<br />
+7380=  'PRF   Computer systems design and related services'
+<br />
+7390=  'PRF   Management, scientific and technical consulting services'
+<br />
+7460=  'PRF   Scientific research and development services'
+<br />
+7470=  'PRF   Advertising and related services'
+<br />
+7480=  'PRF   Veterinary services'
+<br />
+7490=  'PRF   Other professional, scientific and technical services'
+<br />
+7570=  'PRF   Management of companies and enterprises'
+<br />
+7580=  'PRF   Employment services'
+<br />
+7590=  'PRF   Business support services'
+<br />
+7670=  'PRF   Travel arrangements and reservation services'
+<br />
+7680=  'PRF   Investigation and security services'
+<br />
+7690=  'PRF   Services to buildings and dwellings'
+<br />
+7770=  'PRF   Landscaping services'
+<br />
+7780=  'PRF   Other administrative, and other support services'
+<br />
+7790=  'PRF   Waste management and remediation services'
+<br />
+7860=  'EDU   Elementary and secondary school'
+<br />
+7870=  'EDU   Colleges, including junior colleges, and universities'
+<br />
+7880=  'EDU   Business, technical, and trade schools and training'
+<br />
+7890=  'EDU   Other schools, instruction and educational services'
+<br />
+7970=  'MED   Offices of physicians'
+<br />
+7980=  'MED   Offices of dentists'
+<br />
+7990=  'MED   Office of chiropractors'
+<br />
+8070=  'MED   Offices of optometrists'
+<br />
+8080=  'MED   Offices of other health practitioners'
+<br />
+8090=  'MED   Outpatient care centers'
+<br />
+8170=  'MED   Home health care services'
+<br />
+8180=  'MED   Other health care services'
+<br />
+8190=  'MED   Hospitals'
+<br />
+8270=  'MED   Nursing care facilities	'
+<br />
+8290=  'MED   Residential care facilities, without nursing'
+<br />
+8370=  'SCA   Individual and family services'
+<br />
+8380=  'SCA   Community food and housing, and emergency services'
+<br />
+8390=  'SCA   Vocational rehabilitation services'
+<br />
+8470=  'SCA   Child day care services'
+<br />
+8560=  'ENT   Independent artists, performing arts, spectator sports and related industries'
+<br />
+8570=  'ENT   Museums, art galleries, historical sites, and similar institutions'
+<br />
+8580=  'ENT   Bowling centers'
+<br />
+8590=  'ENT   Other amusement, gambling, and recreation industries'
+<br />
+8660=  'ENT   Traveler accommodation'
+<br />
+8670=  'ENT   Recreational vehicle parks and camps, and rooming and boarding houses'
+<br />
+8680=  'ENT   Restaurants and other food services'
+<br />
+8690=  'ENT   Drinking places, alcohol beverages'
+<br />
+8770=  'SRV   Automotive repair and maintenance'
+<br />
+8780=  'SRV   Car washes'
+<br />
+8790=  'SRV   Electronic and precision equipment repair and maintenance'
+<br />
+8870=  'SRV   Commercial and industrial machinery and equipment repair and maintenance'
+<br />
+8880=  'SRV   Personal and household goods repair and maintenance'
+<br />
+8890=  'SRV   Footwear and leather goods repair'
+<br />
+8970=  'SRV   Barber shops'
+<br />
+8980=  'SRV   Beauty salons'
+<br />
+8990=  'SRV   Nail salons and other personal care services'
+<br />
+9070=  'SRV   Dry cleaning and laundry services'
+<br />
+9080=  'SRV   Funeral homes, cemeteries and crematories'
+<br />
+9090=  'SRV   Other personal services'
+<br />
+9160=  'SRV   Religious organizations'
+<br />
+9170=  'SRV   Civic, social, advocacy organizations and grantmaking and giving services'
+<br />
+9180=  'SRV   Labor unions'
+<br />
+9190=  'SRV   Business, professional, political and similar organizations'
+<br />
+9290=  'SRV   Private households'
+<br />
+9370=  'ADM   Executive offices and legislative bodies'
+<br />
+9380=  'ADM   Public finance activities'
+<br />
+9390=  'ADM   Other general government and support'
+<br />
+9470=  'ADM   Justice, public order, and safety activities'
+<br />
+9480=  'ADM   Administration of human resource programs'
+<br />
+9490=  'ADM   Administration of environmental quality and housing programs'
+<br />
+9570=  'ADM   Administration of economic programs and space research'
+<br />
+9590=  'ADM   National security and international affairs'
+<br />
+9890=  'Armed Forces'
+<br />
+9670=  'U.S. Army'
+<br />
+9680=  'U.S. Air Force'
+<br />
+9690=  'U.S. Navy'
+<br />
+9770=  'U.S. Marines'
+<br />
+9780=  'U.S. Coast Guard'
+<br />
+9790=  'U.S. Armed Forces, Branch Not Specified'
+<br />
+9870=  'Military Reserves or National Guard'
+<br />
+9990=  'Uncodable';
+<br />
+RUN;</p>
+<p><strong>For Occupational Title Variables (OCD241, OCD392)
+</strong><br />
+</p>
+<p>PROC FORMAT; <br />
+VALUE OCC
+<br />
+10	= 'Chief Executives'
+<br />
+20	= 'General and Operations Mangers'
+<br />
+30	= 'Legislators'
+<br />
+40	= 'Advertising and Promotions Managers'
+<br />
+50	= 'Marketing and Sales Managers'
+<br />
+60	= 'Public Relations Managers'
+<br />
+100	= 'Administrative Services Managers'
+<br />
+110	= 'Computer and Information Systems Managers'
+<br />
+120	= 'Financial Managers'
+<br />
+130	= 'Human Resources Managers'
+<br />
+140	= 'Industrial Production Managers'
+<br />
+150	= 'Purchasing Managers'
+<br />
+160	= 'Transportation, Storage, and Distribution Managers'
+<br />
+200	= 'Farm, Ranch, and Other Agricultural Managers'
+<br />
+210	= 'Farmers and Ranchers'
+<br />
+220	= 'Construction Managers'
+<br />
+230	= 'Education Administrators'
+<br />
+300	= 'Engineering Managers'
+<br />
+310	= 'Food Service Managers'
+<br />
+320	= 'Funeral Directors'
+<br />
+330	= 'Gaming Managers'
+<br />
+340	= 'Lodging Managers'
+<br />
+350	= 'Medical and Health Services Managers'
+<br />
+360	= 'Natural Sciences Managers'
+<br />
+400	= 'Postmasters and Mail Superintendents'
+<br />
+410	= 'Property, Real Estate, and Community Association Managers'
+<br />
+420	= 'Social and Community Service Managers'
+<br />
+430	= 'Managers, All Other'
+<br />
+500	= 'Agents and Business Managers of Artists, Performers, and Athletes'
+<br />
+510	= 'Purchasing Agents and Buyers, Farm Products'
+<br />
+520	= 'Wholesale and Retail Buyers, Except Farm Products'
+<br />
+530	= 'Purchasing Agents, Except Wholesale, Retail, and Farm Products'
+<br />
+540	= 'Claims Adjusters, Appraisers, Examiners, and Investigators'
+<br />
+560	= 'Compliance Officers, Except Agriculture, Constructions, Health and Safety, and Transportation'
+<br />
+600	= 'Cost Estimators'
+<br />
+620	= 'Human Resources, Training, and Labor Relations Specialists'
+<br />
+700	= '	Logisticians'
+<br />
+710	= 'Management Analysts'
+<br />
+720	= 'Meeting and Convention Planners'
+<br />
+730	= 'Other Business Operations Specialists'
+<br />
+800	= 'Accountants and Auditors'
+<br />
+810	= 'Appraisers and Assessors of Real Estate'
+<br />
+820	= 'Budget Analysts'
+<br />
+830	= 'Credit Analysts'
+<br />
+840	= 'Financial Analysts'
+<br />
+850	= 'Personal Finance Advisors'
+<br />
+860	= 'Insurance Underwriters'
+<br />
+900	= 'Financial Examiners'
+<br />
+910	= 'Loan Counselors and Officers'
+<br />
+930	= 'Tax Examiners, Collectors, and Revenue Agents'
+<br />
+940	= 'Tax Preparers'
+<br />
+950	= 'Financial Specialists, All Other'
+<br />
+1000= 'Computer Scientists and Systems Analysts'
+<br />
+1010= 'Computer Programmers'
+<br />
+1020= 'Computer Software Engineers'
+<br />
+1040= '	Computer Support Specialists'
+<br />
+1060= '	Database Administrators'
+<br />
+1100= '	Network and Computer Systems Administrators'
+<br />
+1110= '	Network Systems and Data Communications Analysts'
+<br />
+1200= '	Actuaries'
+<br />
+1210= '	Mathematicians'
+<br />
+1220= '	Operations Research Analysts'
+<br />
+1230= '	Statisticians'
+<br />
+1240= '	Miscellaneous Mathematical Occupations'
+<br />
+1300= '	Architects, Except Naval'
+<br />
+1310= '	Surveyors, Cartographers, and Photogrammetrists'
+<br />
+1320= '	Aerospace Engineers'
+<br />
+1330= '	Agriculture Engineers'
+<br />
+1340= '	Biomedical Engineers'
+<br />
+1350= '	Chemical Engineers'
+<br />
+1360= '	Civil Engineers'
+<br />
+1400= '	Computer Hardware Engineers'
+<br />
+1410= '	Electrical and Electronics Engineers'
+<br />
+1420= '	Environmental Engineers'
+<br />
+1430= '	Industrial Engineers, Including Health and Safety'
+<br />
+1440= '	Marine Engineers and Naval Architects'
+<br />
+1450= '	Materials Engineers'
+<br />
+1460= '	Mechanical Engineers'
+<br />
+1500= '	Mining and Geological Engineers, Including Mining Safety Engineers'
+<br />
+1510= '	Nuclear Engineers'
+<br />
+1520= '	Petroleum Engineers'
+<br />
+1530= '	Engineers, All Other'
+<br />
+1540= '	Drafters'
+<br />
+1550= '	Engineering Technicians, Except Drafters'
+<br />
+1560= '	Surveying and Mapping Technicians'
+<br />
+1600= '	Agricultural and Food Scientists'
+<br />
+1610= '	Biological Scientists'
+<br />
+1640= '	Conservation Scientists and Foresters'
+<br />
+1650= '	Medical Scientists'
+<br />
+1700= '	Astronomers and Physicists'
+<br />
+1710= '	Atmospheric and Space Scientists'
+<br />
+1720= '	Chemists and Materials Scientists'
+<br />
+1740= '	Environmental Scientists and Geoscientists'
+<br />
+1760= '	Physical Scientists, All Other'
+<br />
+1800= '	Economists'
+<br />
+1810= '	Market and Survey Researchers'
+<br />
+1820= '	Psychologists'
+<br />
+1830= '	Sociologists'
+<br />
+1840= '	Urban and Regional Planners'
+<br />
+1860= '	Miscellaneous Social Scientists and Related Workers'
+<br />
+1900= '	Agriculture and Foods Science Technicians'
+<br />
+1910= '	Biological Technicians'
+<br />
+1920= '	Chemical Technicians'
+<br />
+1930= '	Geological and Petroleum Technicians'
+<br />
+1940= '	Nuclear Technicians'
+<br />
+1960= '	Other Life, Physical, and Social Science Technicians'
+<br />
+2000= '	Counselors'
+<br />
+2010= '	Social Workers'
+<br />
+2020= '	Miscellaneous Community and Social Service Specialists'
+<br />
+2040= '	Clergy'
+<br />
+2050= '	Directors, Religious Activities and Education'
+<br />
+2060= '	Religious Workers, All Other'
+<br />
+2100= '	Lawyers'
+<br />
+2110= '	Judges, Magistrates, and Other Judicial Workers'
+<br />
+2140= '	Paralegals and Legal Assistants'
+<br />
+2150= '	Miscellaneous Legal Support Workers'
+<br />
+2200= '	Postsecondary Teachers'
+<br />
+2300= '	Preschool and Kindergarten Teachers'
+<br />
+2310= '	Elementary and Middle School Teachers'
+<br />
+2320= '	Secondary School Teachers'
+<br />
+2330= '	Special Education Teachers'
+<br />
+2340= '	Other Teachers and Instructors'
+<br />
+2400= '	Archivists, Curators, and Museum Technicians'
+<br />
+2430= '	Librarians'
+<br />
+2440= '	Library Technicians'
+<br />
+2540= '	Teacher Assistants'
+<br />
+2550= '	Other Education, Training, and Library Workers'
+<br />
+2600= '	Artists and Related Workers'
+<br />
+2630= '	Designers'
+<br />
+2700= '	Actors'
+<br />
+2710= '	Producers and Directors'
+<br />
+2720= '	Athletes, Coaches, Umpires, and Related Workers'
+<br />
+2740= '	Dancers and Choreographers'
+<br />
+2750= '	Musicians, Singers, and Related Workers'
+<br />
+2760= '	Entertainers and Performers, Sports and Related Workers, All Other'
+<br />
+2800= '	Announcers'
+<br />
+2810= '	News Analysts, Reporters and Correspondents'
+<br />
+2820= '	Public Relations Specialists'
+<br />
+2830= '	Editors'
+<br />
+2840= '	Technical Writers'
+<br />
+2850= '	Writers and Authors'
+<br />
+2860= '	Miscellaneous Media and Communication Workers'
+<br />
+2900= '	Broadcast and Sound Engineering Technicians and Radio Operators'
+<br />
+2910= '	Photographers'
+<br />
+2920= '	Television, Video, and Motion Picture Camera Operators and Editors'
+<br />
+2960= '	Media and Communication Equipment Workers, All Other'
+<br />
+3000= '	Chiropractors'
+<br />
+3010= '	Dentists'
+<br />
+3030= '	Dietitians and Nutritionists'
+<br />
+3040= '	Optometrists'
+<br />
+3050= '	Pharmacists'
+<br />
+3060= '	Physicians and Surgeons'
+<br />
+3110= '	Physician Assistants'
+<br />
+3120= '	Podiatrists'
+<br />
+3130= '	Registered Nurses'
+<br />
+3140= '	Audiologists'
+<br />
+3150= '	Occupational Therapists'
+<br />
+3160= '	Physical Therapists'
+<br />
+3200= '	Radiation Therapists'
+<br />
+3210= '	Recreational Therapists'
+<br />
+3220= '	Respiratory Therapists'
+<br />
+3230= '	Speech-Language Pathologists'
+<br />
+3240= '	Therapists, All Other'
+<br />
+3250= '	Veterinarians'
+<br />
+3260= '	Health Diagnosing and Treating Practitioners, All Other'
+<br />
+3300= '	Clinical Laboratory Technologists and Technicians'
+<br />
+3310= '	Dental Hygienists'
+<br />
+3320= '	Diagnostic Related Technologists and Technicians'
+<br />
+3400= '	Emergency Medical Technicians and Paramedics'
+<br />
+3410= '	Health Diagnosing and Treating Practitioner Support Technicians'
+<br />
+3500= '	Licensed Practical and Licensed Vocational Nurses'
+<br />
+3510= '	Medical Records and Health Information Technicians'
+<br />
+3520= '	Opticians, Dispensing'
+<br />
+3530= '	Miscellaneous Health Technologists and Technicians'
+<br />
+3540= '	Other Healthcare Practitioners and Technical Occupations'
+<br />
+3600= '	Nursing, Psychiatric, and Home Health Aides'
+<br />
+3610= '	Occupational Therapist Assistants and Aides'
+<br />
+3620= '	Physical Therapist Assistants and Aides'
+<br />
+3630= '	Massage Therapists'
+<br />
+3640= '	Dental Assistants'
+<br />
+3650= '	Medical Assistants and Other Healthcare Support Occupations'
+<br />
+3700= '	First-Line Supervisors/Managers of Correctional Officers'
+<br />
+3710= '	First-Line Supervisors/Managers of Police and Detectives'
+<br />
+3720= '	First-Line Supervisors/Managers of Fire Fighting and Prevention Workers'
+<br />
+3730= '	Supervisors, Protective Service Workers, All Other'
+<br />
+3740= '	Fire Fighters'
+<br />
+3750= '	Fire Inspectors'
+<br />
+3800= '	Bailiffs, Correctional Officers, and Jailers'
+<br />
+3820= '	Detectives and Criminal Investigators'
+<br />
+3830= '	Fish and Game Wardens'
+<br />
+3840= '	Parking Enforcement Workers'
+<br />
+3850= '	Police and Sheriffs Patrol Officers'
+<br />
+3860= '	Transit and Railroad Police'
+<br />
+3900= '	Animal Control Workers'
+<br />
+3910= '	Private Detectives and Investigators'
+<br />
+3920= '	Security Guards and Gaming Surveillance Officers'
+<br />
+3940= '	Crossing Guards'
+<br />
+3950= '	Lifeguards and Other Protective Service Workers'
+<br />
+4000= '	Chefs and Head Cooks'
+<br />
+4010= '	First-Line Supervisors/Managers of Food Preparation and Serving Workers'
+<br />
+4020= '	Cooks'
+<br />
+4030= '	Food Preparation Workers'
+<br />
+4040= '	Bartenders'
+<br />
+4050= '	Combined Food Preparation and Serving Workers, Including Fast Food'
+<br />
+4060= '	Counter Attendants, Cafeteria, Food Concession, and Coffee Shop'
+<br />
+4110= '	Waiters and Waitresses'
+<br />
+4120= '	Food Servers, Nonrestaurant'
+<br />
+4130= '	Dining Room and Cafeteria Attendants and Bartender Helpers'
+<br />
+4140= '	Dishwashers'
+<br />
+4150= '	Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop'
+<br />
+4160= '	Food Preparation and Serving Related Workers, All Other'
+<br />
+4200= '	First-Line Supervisors/Managers of Housekeeping and Janitorial Workers'
+<br />
+4210= '	First-Line Supervisors/Managers of Landscaping, Lawn Service, and Groundskeeping Workers'
+<br />
+4220= '	Janitors and Building Cleaners'
+<br />
+4230= '	Maids and Housekeeping Cleaners'
+<br />
+4240= '	Pest Control Workers'
+<br />
+4250= '	Grounds Maintenance Workers'
+<br />
+4300= '	First-Line Supervisors/Managers of Gaming Workers'
+<br />
+4320= '	First-Line Supervisors/Managers of Personal Service Workers'
+<br />
+4340= '	Animal Trainers'
+<br />
+4350= '	Nonfarm Animal Caretakers'
+<br />
+4400= '	Gaming Services Workers'
+<br />
+4410= '	Motion Picture Projectionists'
+<br />
+4420= '	Ushers, Lobby Attendants, and Ticket Takers'
+<br />
+4430= '	Miscellaneous Entertainment Attendants and Related Workers'
+<br />
+4460= '	Funeral Service Workers'
+<br />
+4500= '	Barbers'
+<br />
+4510= '	Hairdressers, Hairstylists, and Cosmetologists'
+<br />
+4520= '	Miscellaneous Personal Appearance Workers'
+<br />
+4530= '	Baggage Porters, Bellhops, and Concierges'
+<br />
+4540= '	Tour and Travel Guides'
+<br />
+4550= '	Transportation Attendants'
+<br />
+4600= '	Child Care Workers'
+<br />
+4610= '	Personal and Home Care Aides'
+<br />
+4620= '	Recreation and Fitness Workers'
+<br />
+4640= '	Residential Advisors'
+<br />
+4650= '	Personal Care and Service Workers, All Other'
+<br />
+4700= '	First-Line Supervisors/Managers of Retail Sales Workers'
+<br />
+4710= '	First-Line Supervisors/Managers of Non-Retail Sales Workers'
+<br />
+4720= '	Cashiers'
+<br />
+4740= '	Counter and Rental Clerks'
+<br />
+4750= '	Parts Salespersons'
+<br />
+4760= '	Retail Salespersons'
+<br />
+4800= '	Advertising Sales Agents'
+<br />
+4810= '	Insurance Sales Agents'
+<br />
+4820= '	Securities, Commodities, and Financial Services Sales Agents'
+<br />
+4830= '	Travel Agent'
+<br />
+4840= '	Sales Representatives, Services, All Other'
+<br />
+4850= '	Sales Representatives, Wholesale and Manufacturing'
+<br />
+4900= '	Models, Demonstrators, and Product Promoters'
+<br />
+4920= '	Real Estate Brokers and Sales Agents'
+<br />
+4930= '	Sales Engineers'
+<br />
+4940= '	Telemarketers'
+<br />
+4950= '	Door-To-Door Sales Workers, News and Street Vendors, and Related Workers'
+<br />
+4960= '	Sales and Related Workers, All Other'
+<br />
+5000= '	First-Line Supervisors/Managers of Office and Administrative Support Workers'
+<br />
+5010= '	Switchboard Operators, Including Answering Service'
+<br />
+5020= '	Telephone Operators'
+<br />
+5030= '	Communications Equipment Operators, All Othe'
+<br />
+5100= '	Bill and Account Collectors'
+<br />
+5110= '	Billing and Posting Clerks and Machine Operators'
+<br />
+5120= '	Bookkeeping, Accounting, and Auditing Clerks'
+<br />
+5130= '	Gaming Cage Worker'
+<br />
+5140= '	Payroll and Timekeeping Clerks'
+<br />
+5150= '	Procurement Clerks'
+<br />
+5160= '	Tellers'
+<br />
+5200= '	Brokerage Clerks'
+<br />
+5210= '	Correspondence Clerks'
+<br />
+5220= '	Court, Municipal, and License Clerks'
+<br />
+5230= '	Credit Authorizers, Checkers, and Clerks'
+<br />
+5240= '	Customer Service Representatives'
+<br />
+5250= '	Eligibility Interviewers, Government Programs'
+<br />
+5260= '	File Clerks'
+<br />
+5300= '	Hotel, Motel, and Resort Desk Clerks'
+<br />
+5310= '	Interviewers, Except Eligibility and Loan'
+<br />
+5320= '	Library Assistants, Clerical'
+<br />
+5330= '	Loan Interviewers and Clerks'
+<br />
+5340= '	New Accounts Clerks'
+<br />
+5350= '	Order Clerks'
+<br />
+5360= '	Human Resources Assistants, Except Payroll and Timekeeping'
+<br />
+5400= '	Receptionists and Information Clerks'
+<br />
+5410= '	Reservation and Transportation Ticket Agents and Travel Clerks'
+<br />
+5420= '	Information and Record Clerks, All Other'
+<br />
+5500= '	Cargo and Freight Agents'
+<br />
+5510= '	Couriers and Messengers'
+<br />
+5520= '	Dispatchers'
+<br />
+5530= '	Meter Readers, Utilities'
+<br />
+5540= '	Postal Service Clerks'
+<br />
+5550= '	Postal Service Mail Carriers'
+<br />
+5560= '	Postal Service Mail Sorters, Processors, and Processing Machine Operators'
+<br />
+5600= '	Production, Planning, and Expediting Clerks'
+<br />
+5610= '	Shipping, Receiving, and Traffic Clerks'
+<br />
+5620= '	Stock Clerks and Order Fillers'
+<br />
+5630= '	Weighers, Measurers, Checkers, and Samplers, Recordkeeping'
+<br />
+5700= '	Secretaries and Administrative Assistants'
+<br />
+5800= '	Computer Operators'
+<br />
+5810= '	Data Entry Keyers'
+<br />
+5820= '	Word Processors and Typists'
+<br />
+5830= '	Desktop Publishers'
+<br />
+5840= '	Insurance Claims and Policy Processing Clerks'
+<br />
+5850= '	Mail Clerks and Mail Machine Operators, Except Postal Service'
+<br />
+5860= '	Office Clerks, General'
+<br />
+5900= '	Office Machine Operators, Except Computer'
+<br />
+5910= '	Proofreaders and Copy Markers'
+<br />
+5920= '	Statistical Assistants'
+<br />
+5930= '	Office and Administrative Support Workers, All Other'
+<br />
+6000= '	First-Line Supervisors/Managers/Contractors of Farming, Fishing, and Forestry Workers'
+<br />
+6010= '	Agricultural Inspectors'
+<br />
+6020= '	Animal Breeders'
+<br />
+6040= '	Graders and Sorters, Agricultural Products'
+<br />
+6050= '	Other Agricultural Workers'
+<br />
+6100= '	Fishers and Related Fishing Workers'
+<br />
+6110= '	Hunters and Trappers'
+<br />
+6120= '	Forest and Conservation Workers'
+<br />
+6130= '	Logging Workers'
+<br />
+6200= '	First-Line Supervisor/Managers of Construction Trades and Extraction Workers'
+<br />
+6210= '	Boilermakers'
+<br />
+6220= '	Brickmasons, Blockmasons, and Stonemasons'
+<br />
+6230= '	Carpenters'
+<br />
+6240= '	Carpet, Floor, and Tile Installers and Finishers'
+<br />
+6250= '	Cement Masons, Concrete Finishers, and Terrazzo Workers'
+<br />
+6260= '	Construction Laborers'
+<br />
+6300= '	Paving, Surfacing, and Tamping Equipment Operations'
+<br />
+6310= '	Pile-Driver Operators'
+<br />
+6320= '	Operating Engineers and Other Construction Equipment Operators'
+<br />
+6330= '	Drywall Installers, Ceiling Tile Installers, and Tapers'
+<br />
+6350= '	Electricians'
+<br />
+6360= '	Glaziers'
+<br />
+6400= '	Insulation Workers'
+<br />
+6420= '	Painters, Construction and Maintenance'
+<br />
+6430= '	Paperhangers'
+<br />
+6440= '	Pipelayers, Plumbers, Pipefitters, and Steamfitters'
+<br />
+6460= '	Plasterers and Stucco Masons'
+<br />
+6500= '	Reinforcing Iron and Rebar Workers'
+<br />
+6510= '	Roofers'
+<br />
+6520= '	Sheet Metal Workers'
+<br />
+6530= '	Structural Iron and Steel Workers'
+<br />
+6600= '	Helpers, Construction Trades'
+<br />
+6660= '	Construction and Building Inspectors'
+<br />
+6700= '	Elevator Installers and Repairers'
+<br />
+6710= '	Fence Erectors'
+<br />
+6720= '	Hazardous Materials Removal Workers'
+<br />
+6730= '	Highway Maintenance Workers	'
+<br />
+6740= '	Rail-Track Laying and Maintenance Equipment Operators'
+<br />
+6750= '	Septic Tank Servicers and Sewer Pipe Cleaners'
+<br />
+6760= '	Miscellaneous Constructions and Related Workers'
+<br />
+6800= '	Derrick, Rotary Drill, and Service Unit Operators, Oil, Gas, and Mining'
+<br />
+6820= '	Earth Drillers, Except Oil and Gas'
+<br />
+6830= '	Explosives Workers, Ordnance Handling Experts, and Blasters'
+<br />
+6840= '	Mining Machine Operators'
+<br />
+6910= '	Roof Bolters, Mining'
+<br />
+6920= '	Roustabouts, Oil and Gas'
+<br />
+6930= '	Helpers, Extraction Workers'
+<br />
+6940= '	Other Extraction Workers'
+<br />
+7000= '	First-Line Supervisors/Managers of Mechanics, Installers, and Repairers'
+<br />
+7010= '	Computer, Automated Teller, and Office Machine Repairers'
+<br />
+7020= '	Radio and Telecommunications Equipment Installers and Repairers'
+<br />
+7030= '	Avionics Technicians'
+<br />
+7040= '	Electric Motor, Power Tool, and Related Repairers'
+<br />
+7050= '	Electrical and Electronics Installers and Repairers, Transportation Equipment'
+<br />
+7100= '	Electrical and Electronics Repairers, Industrial and Utility'
+<br />
+7110= '	Electronic Equipment Installers and Repairers, Motor Vehicles'
+<br />
+7120= '	Electronic Home Entertainment Equipment Installers and Repairers'
+<br />
+7130= '	Security and Fire Alarm Systems Installers'
+<br />
+7140= '	Aircraft Mechanics and Service Technicians'
+<br />
+7150= '	Automotive Body and Related Repairers'
+<br />
+7160= '	Automotive Glass Installers and Repairers'
+<br />
+7200= '	Automotive Service Technicians and Mechanics'
+<br />
+7210= '	Bus and Truck Mechanics and Diesel Engine Specialists'
+<br />
+7220= '	Heavy Vehicle and Mobile Equipment Service Technicians and Mechanics'
+<br />
+7240= '	Small Engine Mechanics'
+<br />
+7260= '	Miscellaneous Vehicle and Mobile Equipment Mechanics, Installers, and Repairers'
+<br />
+7300= '	Control and Valve Installers and Repairers'
+<br />
+7310= '	Heating, Air Conditioning, and Refrigeration Mechanics and Installers'
+<br />
+7320= '	Home Appliance Repairers'
+<br />
+7330= '	Industrial and Refractory Machinery Mechanics'
+<br />
+7340= '	Maintenance and Repair Workers, General'
+<br />
+7350= '	Maintenance Workers, Machinery'
+<br />
+7360= '	Millwrights'
+<br />
+7410= '	Electrical Power-Line Installers and Repairers'
+<br />
+7420= '	Telecommunications Line Installers and Repairers'
+<br />
+7430= '	Precision Instrument and Equipment Repairers'
+<br />
+7510= '	Coin, Vending, and Amusement Machine Servicers and Repairers'
+<br />
+7520= '	Commercial Divers'
+<br />
+7540= '	Locksmiths and Safe Repairers'
+<br />
+7550= '	Manufactured Building and Mobile Home Installers'
+<br />
+7560= '	Riggers'
+<br />
+7600= '	Signal and Track Switch Repairers'
+<br />
+7610= '	Helpers, Installation, Maintenance, and Repair Workers'
+<br />
+7620= '	Other Installation, Maintenance, and Repair Workers'
+<br />
+7700= '	First-Line Supervisors/Managers of Production and Operating Workers'
+<br />
+7710= '	Aircraft Structure, Surfaces, Rigging, and Systems Assemblers'
+<br />
+7720= '	Electrical, Electronics, and Electromechanical Assemblers'
+<br />
+7730= '	Engine and Other Machine Assemblers'
+<br />
+7740= '	Structural Metal Fabricators and Fitters'
+<br />
+7750= '	Miscellaneous Assemblers and Fabricators'
+<br />
+7800= '	Bakers'
+<br />
+7810= '	Butchers and Other Meat, Poultry, and Fish Processing Workers'
+<br />
+7830= '	Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders'
+<br />
+7840= '	Food Batchmakers'
+<br />
+7850= '	Food Cooking Machine Operators and Tenders'
+<br />
+7900= '	Computer Control Programmers and Operators'
+<br />
+7920= '	Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic'
+<br />
+7930= '	Forging Machine Setters, Operators, and Tenders, Metal and Plastic'
+<br />
+7940= '	Rolling Machine Setters, Operators, and Tenders, Metal and Plastic'
+<br />
+7950= '	Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic'
+<br />
+7960= '	Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic'
+<br />
+8000= '	Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic'
+<br />
+8010= '	Lathe and Turning Machine Tool Setters, Operators and Tenders, Metal and Plastic'
+<br />
+8020= '	Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic'
+<br />
+8030= '	Machinists'
+<br />
+8040= '	Metal Furnace and Kiln Operators and Tenders'
+<br />
+8060= '	Model Makers and Patternmakers, Metal and Plastic'
+<br />
+8100= '	Molders and Molding Machine Setters, Operators, and Tenders, Metal and Plastic'
+<br />
+8120= '	Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic'
+<br />
+8130= '	Tool and Die Makers'
+<br />
+8140= '	Welding, Soldering, and Brazing Workers'
+<br />
+8150= '	Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic'
+<br />
+8160= '	Lay-Out Workers, Metal and Plastic'
+<br />
+8200= '	Plating and Coating Machine Setters, Operators, and Tenders, Metal and Plastic'
+<br />
+8210= '	Tool Grinders, Filers, and Sharpeners'
+<br />
+8220= '	Metalworkers and Plastic Workers, All Other'
+<br />
+8230= '	Bookbinders and Bindery Workers'
+<br />
+8240= '	Job Printers'
+<br />
+8250= '	Prepress Technicians and Workers'
+<br />
+8260= '	Printing Machine Operators'
+<br />
+8300= '	Laundry and Dry-Cleaning Workers'
+<br />
+8310= '	Pressers, Textile, Garment, and Related Materials'
+<br />
+8320= '	Sewing Machine Operator'
+<br />
+8330= '	Shoe and Leather Workers and Repairers'
+<br />
+8340= '	Shoe Machine Operators and Tenders'
+<br />
+8350= '	Tailors, Dressmakers, and Sewers'
+<br />
+8360= '	Textile Bleaching and Dyeing Machine Operators and Tenders'
+<br />
+8400= '	Textile Cutting Machine Setters, Operators, and Tenders'
+<br />
+8410= '	Textile Knitting and Weaving Machine Setters, Operators, and Tenders'
+<br />
+8420= '	Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders'
+<br />
+8430= '	Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers'
+<br />
+8440= '	Fabric and Apparel Patternmakers'
+<br />
+8450= '	Upholsters'
+<br />
+8460= '	Textile, Apparel, and Furnishings Workers, All Other'
+<br />
+8500= '	Cabinetmakers and Bench Carpenters'
+<br />
+8510= '	Furniture Finishers'
+<br />
+8520= '	Model Makers and Patternmakers, Wood'
+<br />
+8530= '	Sawing Machine Setters, Operators, and Tenders, Wood'
+<br />
+8540= '	Woodworking Machine Setters, Operators, and Tenders, Except Sawing'
+<br />
+8550= '	Woodworkers, All Other'
+<br />
+8600= '	Power Plant Operators'
+<br />
+8610= '	Stationary Engineers and Boiler Operators'
+<br />
+8620= '	Water and Liquid Waste Treatment Plant and System Operators'
+<br />
+8630= '	Miscellaneous Plant and System Operators'
+<br />
+8640= '	Chemical Processing Machine Setters, Operators, and Tenders'
+<br />
+8650= '	Crushing, Grinding, Polishing, Mixing, and Blending Workers'
+<br />
+8710= '	Cutting Workers'
+<br />
+8720= '	Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders'
+<br />
+8730= '	Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders'
+<br />
+8740= '	Inspectors, Testers, Sorters, Samplers, and Weighers'
+<br />
+8750= '	Jewelers and Precious Stone and Metal Workers'
+<br />
+8760= '	Medical, Dental, and Ophthalmic Laboratory Technicians'
+<br />
+8800= '	Packaging and Filling Machine Operators and Tenders'
+<br />
+8810= '	Painting Workers'
+<br />
+8830= '	Photographic Process Workers and Processing Machine Operators'
+<br />
+8840= '	Semiconductor Processors'
+<br />
+8850= '	Cementing and Gluing Machine Operators and Tenders'
+<br />
+8860= '	Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders'
+<br />
+8900= '	Cooling and Freezing Equipment Operators and Tenders'
+<br />
+8910= '	Etchers and Engravers'
+<br />
+8920= '	Molders, Shapers, and Casters, Except Metal and Plastic'
+<br />
+8930= '	Paper Goods Machine Setters, Operators, and Tenders'
+<br />
+8940= '	Tire Builders'
+<br />
+8950= '	Helpers, Production Workers'
+<br />
+8960= '	Production Workers, All Other'
+<br />
+9000= '	Supervisors, Transportation and Material Moving Workers'
+<br />
+9030= '	Aircraft Pilots and Flight Engineers'
+<br />
+9040= '	Air Traffic Controllers and Airfield Operations Specialists'
+<br />
+9110= '	Ambulance Drivers and Attendants, Except Emergency Medical Technicians'
+<br />
+9120= '	Bus Drivers'
+<br />
+9130= '	Driver/Sales Workers and Truck Drivers'
+<br />
+9140= '	Taxi Drivers and Chauffeurs'
+<br />
+9150= '	Motor Vehicle Operators, All Other'
+<br />
+9200= '	Locomotive Engineers and Operators'
+<br />
+9230= '	Railroad Brake, Signal, and Switch Operators'
+<br />
+9240= '	Railroad Conductors and Yardmasters'
+<br />
+9260= '	Subway, Streetcar, and Other Rail Transportation Workers'
+<br />
+9300= '	Sailors and Marine Oilers'
+<br />
+9310= '	Ship and Boat Captains and Operators'
+<br />
+9330= '	Ship Engineers'
+<br />
+9340= '	Bridge and Lock Tenders'
+<br />
+9350= '	Parking Lot Attendants'
+<br />
+9360= '	Service Station Attendants'
+<br />
+9410= '	Transportation Inspectors'
+<br />
+9420= '	Other Transportation Workers'
+<br />
+9500= '	Conveyor Operators and Tenders'
+<br />
+9510= '	Crane and Tower Operators'
+<br />
+9520= '	Dredge, Excavating, and Loading Machine Operators'
+<br />
+9560= '	Hoist and Winch Operators'
+<br />
+9600= '	Industrial Truck and Tractor Operators'
+<br />
+9610= '	Cleaners of Vehicles and Equipment'
+<br />
+9620= '	Laborers and Freight, Stock, and Material Movers, Hand'
+<br />
+9630= '	Machine Feeders and Offbearers'
+<br />
+9640= '	Packers and Packagers, Hand'
+<br />
+9650= '	Pumping Station Operators'
+<br />
+9720= '	Refuse and Recyclable Material Collectors'
+<br />
+9730= '	Shuttle Car Operators'
+<br />
+9740= '	Tank Car, Truck, and Ship Loaders'
+<br />
+9750= '	Material Moving Workers, All Other'
+<br />
+9840= '	Armed Forces'
+<br />
+9800= '	Military officer special and tactical operations leaders/managers'
+<br />
+9810= '	First-line enlisted military supervisor/managers'
+<br />
+9820= '	Military enlisted tactical operations and air/weapons specialists and crew members'
+<br />
+9830= '	Military, rank not specified'
+<br />
+9950= '	Not in Labor Force'
+<br />
+9960= '	Retired'
+<br />
+9990= '	Uncodable (includes Refused or Classified)';
+<br />
+RUN;
+<br />
+</p>
+<br /></div>
+      </div>
+    </div>
+  </body>
+</html>

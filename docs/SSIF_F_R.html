@@ -1,0 +1,995 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ms="urn:schemas-microsoft-com:xslt" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+					
+					.block {
+					margin: 0 3em 1em;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Influenza A (H3N2) Variant Virus &amp; Historical Seasonal H3N2 Influenza Viruses Antibodies (Surplus)" />
+    <meta name="DC.Subject" content="NHANES 2010-2010: Influenza A (H3N2) Variant Virus &amp; Historical Seasonal H3N2 Influenza Viruses Antibodies (Surplus) Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2010-2010 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2010">
+      <title>
+						NHANES 2010-2010:
+						Influenza A (H3N2) Variant Virus &amp; Historical Seasonal H3N2 Influenza Viruses Antibodies (Surplus) Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#RIDAGEYR">RIDAGEYR - Age in years at screening</a>
+                </li>
+                <li>
+                  <a href="#SSAIND17">SSAIND17 - Influenza A/Indiana/17/2013 H3N2</a>
+                </li>
+                <li>
+                  <a href="#SSAIND6">SSAIND6 - Influenza A/Indiana/6/ 2013 H3N2</a>
+                </li>
+                <li>
+                  <a href="#SSAOHI13">SSAOHI13 - Influenza A/ Ohio/12/2012 H32N2</a>
+                </li>
+                <li>
+                  <a href="#SSAAIC2">SSAAIC2 - Influenza A/Aichi/2/1968 H3N2</a>
+                </li>
+                <li>
+                  <a href="#SSAVIC3">SSAVIC3 - Influenza A/Victoria/3/1975 H3N2</a>
+                </li>
+                <li>
+                  <a href="#SSABAN1">SSABAN1 - Influenza A/Bangkok/1/1979 H3N2</a>
+                </li>
+                <li>
+                  <a href="#SSASHA11">SSASHA11 - Influenza A/Shanghai/11/1987 H3N2</a>
+                </li>
+                <li>
+                  <a href="#SSABEI3">SSABEI3 - Influenza A/Beijing/3/2/1992 H3N2</a>
+                </li>
+                <li>
+                  <a href="#SSAWU359">SSAWU359 - Influenza A/Wuhan/359/1995 H3N2</a>
+                </li>
+                <li>
+                  <a href="#SSASYD5">SSASYD5 - Influenza A/Sydney 5/1997 H3N2</a>
+                </li>
+                <li>
+                  <a href="#SSAFUJ4">SSAFUJ4 - Influenza A/Fujian/4/11/2002 H3N2</a>
+                </li>
+                <li>
+                  <a href="#SSABRI10">SSABRI10 - Influenza A/Brisbane/10/2007 H3N2</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2010-2010 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Influenza A (H3N2) Variant Virus &amp; Historical Seasonal H3N2 Influenza Viruses Antibodies (Surplus) (SSIF_F_R)
+			</h3>
+        <h4>RDC Only 
+				Data File: SSIF_F_R.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				January 2015</h5>
+        <h5 class="right">
+				Last Revised:
+				October 2015</h5>
+        <h5 class="left">
+					Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (https://www.cdc.gov/rdc).
+				</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2>
+        <div class="block"><p>Influenza serological testing of stored sera from NHA NES 2010 collection across various age groups, were used in this study to determine the population level of cross-reactive antibodies to H3N2v virus and historical seasonal H3N2 viruses. This data release contain the hemagglutination inhibition (HI) titers to H3N2v and historical seasonal H3N2 viruses.</p></div>
+        <h2 id="Eligible_Sample">Eligible Sample</h2>
+        <div class="block"><p>A sample of participants across 9 age groups from stored NHANES 2010 sera. Ages 6+ No weights are provided with this file.</p></div>
+        <h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2>
+        <div class="block"><p>Antibody titers against H3N2v and historical seasonal H3N2 influenza viruses were measured with hemagglutination inhibition (HI) assay at Influenza Division, Centers for Disease Control and Prevention. <br />
+<br />
+The selected H3N2v viruses were: A/Indiana/17/2013, A/Indiana/6/2013, and A/Ohio/13/2012. The selected historical H3N2 viruses were: A/Aichi/2/1968, A/Victoria/3/1975, A/Bangkok/1/1979, A/Shanghai/11/1987, A/Beijing/32/1992, A/Wuhan/359/1995, A/Sydney/5/1997, A/Fujian/411/2002, and A/Brisbane/10/2007. <br />
+<br />
+The geometric mean titers are reported. Although H3N2v has been circulating in the United States for a few years, a cut off value for seropositivity has not been determined. </p></div>
+        <h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2>
+        <div class="block"><p>Data was compiled after all the antibody testing was completed. The data were not edited. <br />
+<br />
+Data Access: All data are publicly available. </p></div>
+        <h2 id="Analytic_Notes">Analytic Notes</h2>
+        <div class="block"><p>There are twelve variables: <br />
+<br />
+HI A/INDIANA/17/2013: Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H3N2v virus A/Indiana/17/2013. <br />
+Continuous variable - Values range from &lt;10 (the limit of detection) to 10240 <br />
+<br />
+HI A/INDIANA/6/2013: Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H3N2v virus A/Indiana/06/2013. <br />
+Continuous variable - Values range from &lt;10 (the limit of detection) to 10240 <br />
+<br />
+HI A/OHIO/13/2012: Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H3N2v virus A/Ohio/13/2012. <br />
+Continuous variable - Values range from &lt;10 (the limit of detection) to 10240 <br />
+<br />
+HI A/AICHI/2/1968: Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H3N2 virus A/Aichi/2/1968. <br />
+Continuous variable - Values range from &lt;10 (the limit of detection) to 10240 <br />
+<br />
+HI A/VICTORIA/3/1975: Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H3N2 virus A/Victoria/3/1975. <br />
+Continuous variable - Values range from &lt;10 (the limit of detection) to 10240 <br />
+<br />
+HI A/BANGKOK/1/1979: Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H3N2 virus A/Bangkok/1/1979. <br />
+Continuous variable - Values range from &lt;10 (the limit of detection) to 10240 <br />
+<br />
+HI A/SHANGHAI/11/1987: Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H3N2 virus A/Shanghai/11/1987. <br />
+Continuous variable - Values range from &lt;10 (the limit of detection) to 10240 <br />
+<br />
+HI A/BEIJING/32/1992: Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H3N2 virus A/Beijing/32/1992. <br />
+Continuous variable - Values range from &lt;10 (the limit of detection) to 10240 <br />
+<br />
+HI A/WUHAN/359/1995: Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H3N2 virus A/Wuhan/359/1995. <br />
+Continuous variable - Values range from &lt;10 (the limit of detection) to 10240 <br />
+<br />
+HI A/SYDNEY/5/1997: Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H3N2 virus A/Sydney/5/1997. <br />
+Continuous variable - Values range from &lt;10 (the limit of detection) to 10240 <br />
+<br />
+HI A/FUJIAN/411/2002: Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H3N2 virus A/Fujian/411/2002. <br />
+Continuous variable - Values range from &lt;10 (the limit of detection) to 10240 <br />
+<br />
+HI A/BRISBANE/10/2007: Geometric mean hemagglutination inhibition (HI) titer against the influenza A/H3N2 virus A/Brisbane/10/2007. <br />
+Continuous variable - Values range from &lt;10 (the limit of detection) to 10240 <br />
+<br />
+The limit of detection has been changed to 5 on the data file for all variables. </p></div>
+      </div>
+      <div id="References" xmlns="">
+        <h2>References</h2>
+        <ul>
+          <li><p>Centers for Disease Control and Prevention. Detected U.S. Human infections with H3N2v by State since August 2011. 2013.&nbsp;&nbsp; <br />
+<span style="color: #0000ff;"><a href="http://www.cdc.gov/flu/swineflu/h3n2v-case-count.htm">http://www.cdc.gov/flu/swineflu/h3n2v-case-count.htm</a></span></p>.</li>
+          <li><p>Centers for Disease Control and Prevention. First H3N2 Variant Virus Infection Reported for 2012. 2012. <br />
+<span style="color: #0000ff;"><a href="http://www.cdc.gov/flu/spotlights/h3n2v-variant-utah.htm">http://whqlibdoc.who.int/publications/2011/9789241548090_eng.pdf</a></span></p>.</li>
+          <li><p>Centers for Disease Control and Prevention. Swine-origin influenza A (H3N2) virus infection in two children&mdash;Indiana and Pennsylvania, July-August 2011. MMWR Morb Mortal Wkly Rep, 2011. 60(35): p.1213-5.</p>.</li>
+          <li><p>Epperson, S., et al. Human infections with influenza A (H3N2) variant virus in the United States, 2011-2012. Clin Infect Dis, 2013. 57 Suppl 1: p.S4-S11.</p>.</li>
+          <li><p>World Health Organization. WHO global influenza surveillance network: Manual for the laboratory diagnosis and virological surveillance of influenza. 2011.<br />
+<span style="color: #0000ff;"><a href="http://whqlibdoc.who.int/publications/2011/9789241548090_eng.pdf">http://whqlibdoc.who.int/publications/2011/9789241548090_eng.pdf</a></span></p>.</li>
+        </ul>
+      </div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RIDAGEYR">RIDAGEYR - Age in years at screening</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RIDAGEYR</dd>
+            <dt>SAS Label: </dt>
+            <dd>Age in years at screening</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Age in years at screening</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">6 to 102</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1007</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSAIND17">SSAIND17 - Influenza A/Indiana/17/2013 H3N2</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSAIND17</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Indiana/17/2013 H3N2</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/Indiana/17/2013 H3N2
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 1280</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">374</td>
+                <td class="values" align="right">374</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">633</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSAIND6">SSAIND6 - Influenza A/Indiana/6/ 2013 H3N2</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSAIND6</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Indiana/6/ 2013 H3N2</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/Indiana/6/ 2013 H3N2
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 1280</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1007</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSAOHI13">SSAOHI13 - Influenza A/ Ohio/12/2012 H32N2</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSAOHI13</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/ Ohio/12/2012 H32N2</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/ Ohio/12/2012 H32N2</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 1280</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1007</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSAAIC2">SSAAIC2 - Influenza A/Aichi/2/1968 H3N2</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSAAIC2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Aichi/2/1968 H3N2</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/Aichi/2/1968 H3N2</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 640</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">394</td>
+                <td class="values" align="right">394</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">613</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSAVIC3">SSAVIC3 - Influenza A/Victoria/3/1975 H3N2</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSAVIC3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Victoria/3/1975 H3N2</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/Victoria/3/1975 H3N2</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 80</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">394</td>
+                <td class="values" align="right">394</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">613</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSABAN1">SSABAN1 - Influenza A/Bangkok/1/1979 H3N2</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSABAN1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Bangkok/1/1979 H3N2</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/Bangkok/1/1979 H3N2</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 160</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">394</td>
+                <td class="values" align="right">394</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">613</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSASHA11">SSASHA11 - Influenza A/Shanghai/11/1987 H3N2</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSASHA11</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Shanghai/11/1987 H3N2</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/Shanghai/11/1987 H3N2</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 320</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">578</td>
+                <td class="values" align="right">578</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">429</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSABEI3">SSABEI3 - Influenza A/Beijing/3/2/1992 H3N2</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSABEI3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Beijing/3/2/1992 H3N2</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/Beijing/3/2/1992 H3N2</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 640</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">578</td>
+                <td class="values" align="right">578</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">429</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSAWU359">SSAWU359 - Influenza A/Wuhan/359/1995 H3N2</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSAWU359</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Wuhan/359/1995 H3N2</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/Wuhan/359/1995 H3N2</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 1280</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">578</td>
+                <td class="values" align="right">578</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">429</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSASYD5">SSASYD5 - Influenza A/Sydney 5/1997 H3N2</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSASYD5</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Sydney 5/1997 H3N2</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/Sydney 5/1997 H3N2</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 1280</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">578</td>
+                <td class="values" align="right">578</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">429</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSAFUJ4">SSAFUJ4 - Influenza A/Fujian/4/11/2002 H3N2</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSAFUJ4</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Fujian/4/11/2002 H3N2</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/Fujian/4/11/2002 H3N2</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 2560</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">499</td>
+                <td class="values" align="right">499</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">508</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSABRI10">SSABRI10 - Influenza A/Brisbane/10/2007 H3N2</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSABRI10</dd>
+            <dt>SAS Label: </dt>
+            <dd>Influenza A/Brisbane/10/2007 H3N2</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Influenza A/Brisbane/10/2007 H3N2</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 6 YEARS -
+			150 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">5 to 2560</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">576</td>
+                <td class="values" align="right">576</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">431</td>
+                <td class="values" align="right">1007</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

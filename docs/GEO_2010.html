@@ -1,0 +1,620 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>GEO_2010</title>
+    <meta name="title" content="NHANES 1999-2018: Geocoded Data, NHANES 1999-2018, Census 2010 Data Documentation, Codebook, and Frequencies" />
+    <style type="text/css">
+					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					.nhanes-doc h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					.nhanes-doc h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					.nhanes-doc h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					.nhanes-doc h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					.nhanes-doc h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					.nhanes-doc a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					.nhanes-doc p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					.nhanes-doc ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					.nhanes-doc ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					.nhanes-doc li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					.nhanes-doc table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					page-break-inside: avoid;
+					table-layout: auto;
+					}
+
+					.nhanes-doc th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					.nhanes-doc td p {
+					margin: inherit;
+					}
+
+					.nhanes-doc td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					.nhanes-doc table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					.nhanes-doc div#wrapper { width: 650px; }
+
+					.nhanes-doc div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					.nhanes-doc div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					.nhanes-doc div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					.nhanes-doc div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					.nhanes-doc div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					.nhanes-doc div#Sections { width: 650px; }
+
+					.nhanes-doc div#Codebook { width: 650px; }
+
+					.nhanes-doc div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					.nhanes-doc div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					.nhanes-doc div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc div#References li {
+					word-wrap: break-word;
+					}
+
+					.nhanes-doc div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					.nhanes-doc table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					page-break-inside: avoid;
+					position: relative;
+					width: 600px;
+					}
+
+					.nhanes-doc span.file-size { color: gray; }
+
+					.nhanes-doc .pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					.nhanes-doc div#toc { display: none; }
+				</style>
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#RC2KX">RC2KX - Census 2010 Geocoder General Return Code</a>
+              </li>
+              <li>
+                <a href="#STM2KX">STM2KX - Census 2010 Geocoder Street Matcher RC</a>
+              </li>
+              <li>
+                <a href="#LVL2KX">LVL2KX - Census 2010 Geocoder LAT/LONG Geocoding</a>
+              </li>
+              <li>
+                <a href="#LAT">LAT - Latitude (Decimal)</a>
+              </li>
+              <li>
+                <a href="#LON">LON - Longitude (Decimal)</a>
+              </li>
+              <li>
+                <a href="#STATE2KX">STATE2KX - Census 2010 FIPS State Code</a>
+              </li>
+              <li>
+                <a href="#CNTY2KX">CNTY2KX - Census 2010 FIPS County Code</a>
+              </li>
+              <li>
+                <a href="#CBSA">CBSA - Core Based Statistical Area (CBSA)</a>
+              </li>
+              <li>
+                <a href="#UR2KX">UR2KX - Urban/Rural Indicator</a>
+              </li>
+              <li>
+                <a href="#TRACT2KX">TRACT2KX - Census 2010 Tract</a>
+              </li>
+              <li>
+                <a href="#BG2KX">BG2KX - Census 2010 Block Group</a>
+              </li>
+              <li>
+                <a href="#BLOCK2KX">BLOCK2KX - Census 2010 Block ID</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#Appendix_1._1999-2018_GCP_Match_Census_2010">Appendix 1. 1999-2018 GCP Match Census 2010</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>1999-2018 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Geocoded Data, NHANES 1999-2018, Census 2010 (GEO_2010)</h3>
+        <h4>RDC Only  Data File: GEO_2010.xpt</h4>
+        <h5 class="left">First Published: March 2018</h5>
+        <h5 class="right">Last Revised: July 2021</h5>
+        <h5 class="left">Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The current National Health and Nutrition Examination Survey (NHANES) is a continuous program starting in 1999. The survey interviews and examines a nationally representative sample of 5,000 persons each year. These persons are located in counties across the country, 15 of which are visited each year.  No geographic location was released in order to protect the identification of respondents for the NHANES survey.  State and county information could be obtained through the Research Data Center (RDC).  It is desirable, however, to use a finer level of geography to spatially analyze the NHANES data and to answer various important research questions about the effect of geography on health.  </p>
+<p>Therefore, National Center for Health Statistics (NCHS) entered into an agreement with U.S. Department of Housing and Urban Development (<a href="https://www.hud.gov/" target="_blank">HUD</a>) to use its geocoding services to assign geographic codes to the NHANES address data. HUD geocoded the 1999-2018 NHANES survey data to the 2010 censuses.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>All survey participants have a geocoded record. </p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>NHANES collects residential household information for unique addresses of households containing at least one survey participant.&nbsp; </p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>After geocoding the NHANES survey data HUD provides QC documentation (see Appendix 1). </p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The NHANES&rsquo; participants address data was submitted to HUD and using Geocode Service Center (GSC), was geo-enabled with latitude/longitude coordinates and other legal, statistical, and administrative geographies including census, postal, and other attributes.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc" target="_blank">https://www.cdc.gov/rdc</a>).</p></div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="RC2KX">RC2KX - Census 2010 Geocoder General Return Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">RC2KX</dd>
+            <dt>SAS Label: </dt>
+            <dd>Census 2010 Geocoder General Return Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Reference Census 2010 Geocoder RCs (Return Codes) tab</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="STM2KX">STM2KX - Census 2010 Geocoder Street Matcher RC</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">STM2KX</dd>
+            <dt>SAS Label: </dt>
+            <dd>Census 2010 Geocoder Street Matcher RC</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Census 2010 Geocoder Street Matcher Return Code
+</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LVL2KX">LVL2KX - Census 2010 Geocoder LAT/LONG Geocoding</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LVL2KX</dd>
+            <dt>SAS Label: </dt>
+            <dd>Census 2010 Geocoder LAT/LONG Geocoding</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Reference Census 2010 Geocoder RCs (Return Codes) tab</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LAT">LAT - Latitude (Decimal)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LAT</dd>
+            <dt>SAS Label: </dt>
+            <dd>Latitude (Decimal)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Latitude in decimal format with up to 6 decimal precision</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LON">LON - Longitude (Decimal)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LON</dd>
+            <dt>SAS Label: </dt>
+            <dd>Longitude (Decimal)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">
+Longitude in decimal format with up to 6 decimal precision</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="STATE2KX">STATE2KX - Census 2010 FIPS State Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">STATE2KX</dd>
+            <dt>SAS Label: </dt>
+            <dd>Census 2010 FIPS State Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Census 2010 FIPS State Code (2-digit numeric with leading zeros significant)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CNTY2KX">CNTY2KX - Census 2010 FIPS County Code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CNTY2KX</dd>
+            <dt>SAS Label: </dt>
+            <dd>Census 2010 FIPS County Code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Census 2010 FIPS County Code (3-digit numeric with leading zeros significant)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="CBSA">CBSA - Core Based Statistical Area (CBSA)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">CBSA</dd>
+            <dt>SAS Label: </dt>
+            <dd>Core Based Statistical Area (CBSA)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">CBSA Lowest Level Code. Contains the first of: Metropolitan Division; Micropolitan Area; Metropolitan Area; in this order</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="UR2KX">UR2KX - Urban/Rural Indicator</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">UR2KX</dd>
+            <dt>SAS Label: </dt>
+            <dd>Urban/Rural Indicator</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Urban/Rural Indicator (U = Urban, R = Rural, blank = unknown)  [TIGER/Line RcdType 'S'; UR value]</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="TRACT2KX">TRACT2KX - Census 2010 Tract</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">TRACT2KX</dd>
+            <dt>SAS Label: </dt>
+            <dd>Census 2010 Tract</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Census 2010 Tract (contains leader zeros with the decimal point implied)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BG2KX">BG2KX - Census 2010 Block Group</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BG2KX</dd>
+            <dt>SAS Label: </dt>
+            <dd>Census 2010 Block Group</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Census 2010 Block Group</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="BLOCK2KX">BLOCK2KX - Census 2010 Block ID</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">BLOCK2KX</dd>
+            <dt>SAS Label: </dt>
+            <dd>Census 2010 Block ID</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Census 2010 Block ID - first character is the Census Block Group</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 0 YEARS -
+			150 YEARS</dd>
+          </dl>
+        </div>
+      </div>
+      <div id="Appendices">
+        <div id="Appendix">
+          <h2 id="Appendix_1._1999-2018_GCP_Match_Census_2010">Appendix 1. 1999-2018 GCP Match Census 2010</h2><p>
+</p>
+<table bordercolor="#000000" border="1">
+    <caption align="left" valign="top"><strong>CENSUS 2010 GEOCODER GENERAL RETURN CODE</strong></caption>
+    <thead>
+        <tr>
+            <th>RC2KX</th>
+            <th>Frequency</th>
+            <th>Percent</th>
+            <th>Cumulative Frequency</th>
+            <th>Cumulative Percent</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> </td>
+            <td>35</td>
+            <td>0.03</td>
+            <td>35</td>
+            <td>0.03</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>2718</td>
+            <td>2.68</td>
+            <td>2753</td>
+            <td>2.72</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>3056</td>
+            <td>3.02</td>
+            <td>5809</td>
+            <td>5.73</td>
+        </tr>
+        <tr>
+            <td>S</td>
+            <td>95507</td>
+            <td>94.27</td>
+            <td>101316</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<table bordercolor="#000000" border="1">
+    <caption align="left" valign="top"><strong>CENSUS 2010 GEOCODER LAT/LONG GEOCODING LEVEL RETURN CODE</strong></caption>
+    <thead>
+        <tr>
+            <th>LVL2KX</th>
+            <th>Frequency</th>
+            <th>Percent</th>
+            <th>Cumulative Frequency</th>
+            <th>Cumulative Percent</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> </td>
+            <td>35</td>
+            <td>0.03</td>
+            <td>35</td>
+            <td>0.03</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>1400</td>
+            <td>1.38</td>
+            <td>1435</td>
+            <td>1.42</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>1656</td>
+            <td>1.63</td>
+            <td>3091</td>
+            <td>3.05</td>
+        </tr>
+        <tr>
+            <td>R</td>
+            <td>95507</td>
+            <td>94.27</td>
+            <td>98598</td>
+            <td>97.32</td>
+        </tr>
+        <tr>
+            <td>T</td>
+            <td>2718</td>
+            <td>2.68</td>
+            <td>101316</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Helicobacter pylori (HP1), Second Exam" />
+    <meta name="DC.Subject" content="NHANES 2001-2001: Helicobacter pylori (HP1), Second Exam Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 2001-2001 Laboratory page" href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Laboratory&amp;CycleBeginYear=2001">
+      <title>
+						NHANES 2001-2001:
+						Helicobacter pylori (HP1), Second Exam Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#SEQN">SEQN - Respondent sequence number</a>
+                </li>
+                <li>
+                  <a href="#LB2HP1">LB2HP1 - Helicobacter pylori (HP1)</a>
+                </li>
+                <li>
+                  <a href="#LB2DAY">LB2DAY - Days between the 1st and 2nd exams</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2001-2001 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Helicobacter pylori (HP1), Second Exam (HP2_01_R)
+			</h3>
+        <h4>RDC Only 
+				Data File: HP2_01_R.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				April 2013</h5>
+        <h5 class="right">
+				Last Revised:
+				
+						NA
+					</h5>
+        <h5 class="left">
+					Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (https://www.cdc.gov/rdc).
+				</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p><em>Helicobacter pylori</em> has been shown to be the causative agent in chronic-active gastritis, and evidence has almost completely satisfied Koch's postulates for this organisms' pathogenicity in primary duodenal ulcers. More recent evidence has suggested that chronic <em>H. pylori</em> infection as well as early age of <em>H. pylori</em>-acquisition is a critical precursor to gastric carcinoma. Questions must be addressed in a carefully considered manner that combines systematic, demographic epidemiology with the knowledge of <em>H. pylori</em> positivity or negativity. Furthermore, at-risk cohorts should be particularly examined to address unresolved controversies regarding route of transmission, environmental risk factors (i.e., food or water), inheritability or familial tendencies for infection susceptibility, factors leading to carcinogenesis, the demographics of susceptibility in very young children, and possible growth disturbances caused by <em>H. pylori</em> infection. Because NHANES will have numerous data on environmental exposures, these data was analyzed to add information on potential route of transmission for this organism. </p>
+<p>See the general documentation on Second Day laboratory exams. See the general documentation on second day laboratory exams. Also, see the documentation for the primary exam data.</p>
+<h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged 16-69 years were tested. </p>
+<h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p>The Wampole Laboratories (Wampole) <em>H. pylori</em> IgG Enzyme-Linked Immunosorbent Assays (ELISA) is intended for the detection and qualitative determination of IgG antibodies to Helicobacter pylori in human serum. This assay is intended for use as an aid in the diagnosis of <em>H. pylori</em> infection in persons with gastrointestinal symptoms. For in vitro diagnostic use only. </p>
+<p>Enzyme linked immunosorbent assays (ELISA) rely on the ability of biological materials, (i.e. antigens) to adsorb to plastic surfaces such as polystyrene (solid phase). When antigens bound to the solid phase are brought into contact with a participant's serum, antigen-specific antibody, if present, will bind to the antigen on the solid phase forming antigen-antibody complexes. Excess antibody is removed by washing. This is followed by the addition of goat anti-human IgG conjugated with horseradish peroxidase, which then binds to the antibody-antigen complexes. The excess conjugate is removed by washing, followed by the addition of chromogen substrate tetramethylbenzidine (TMB). If specific antibody to the antigen is present in the participant's serum, a blue color developed. When the enzymatic reaction is stopped with 1N H<sub>2</sub>SO<sub>4</sub>, the contents of the wells turn yellow. The color, which is proportional to the concentration of antibody in the serum, is read on a suitable spectrophotometer or ELISA microwell plate reader. The sensitivity, specificity, and reproducibility of enzyme-linked immunoassays are comparable to other serological tests for antibody, such as immunofluorescence, complement fixation, hemagglutination, and radioimmunoassays. </p>
+<h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>Specimens were processed, stored and shipped to University of Washington, Seattle, Washington. Detailed specimen collection and processing instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed data processing and editing protocols. The analytical methods are described in the Description of the Laboratory Methodology section.</p>
+<h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>The NHANES quality control and quality assurance protocols (QA/QC) meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and quality assurance instructions are discussed in the <span style="text-decoration: underline;">NHANES Laboratory/Medical Technologists Procedures Manual</span> (LPM). Read the LABDOC file for detailed QA/QC protocols. </p>
+<h2 id="Analytic_Notes">Analytic Notes</h2><p>The second day exam data was a convenience sample and thus did not have sample weights.  The analysis of NHANES 2001  laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2001 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews.  The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN.</p>
+<p>A value &lt;0.90 is considered negative for the presence of detectable IgG antibody.  Values between 0.91-1.09 are considered equivocal and values greater than 1.10 indicates the presence of detectable IgG antibody.</p>
+<p>The variable names and variable descriptors are as follows: <br />
+SEQN Sequence number <br />
+LB2HP1 <em>Helicobacter pylori</em> result <br />
+LB2DAY Days between first and second exams</p>
+</div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LB2HP1">LB2HP1 - Helicobacter pylori (HP1)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LB2HP1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Helicobacter pylori (HP1)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Helicobacter pylori (HP1)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.03 to 4.08</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">255</td>
+                <td class="values" align="right">255</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">260</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LB2DAY">LB2DAY - Days between the 1st and 2nd exams</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LB2DAY</dd>
+            <dt>SAS Label: </dt>
+            <dd>Days between the 1st and 2nd exams</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Days between the 1st and 2nd exams </dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 16 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">3 to 47</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">255</td>
+                <td class="values" align="right">255</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">260</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
