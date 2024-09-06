@@ -56,6 +56,6 @@ for (i in seq_len(nrow(mf))) {
 ## Update MANIFEST.txt to list all html files currently present
 
 htmlfiles <- list.files(DOCROOT, pattern = "html$")
-cat(htmlfiles, file = file.path(DOCROOT, "MANIFEST"), sep = "\n")
+cat(htmlfiles, file = file.path(DOCROOT, "MANIFEST.txt"), sep = "\n")
 
 
