@@ -19,7 +19,7 @@ path <-
 
 
 s <-
-    startServer(host = "127.0.0.1",
+    startServer(host = "0.0.0.0",
                 port = 9849,
                 app = list(staticPaths = list(snapshot = path)))
 
