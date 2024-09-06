@@ -53,4 +53,9 @@ for (i in seq_len(nrow(mf))) {
     else message("skipping: ", x)
 }
 
+## Update MANIFEST.txt to list all html files currently present
+
+htmlfiles <- list.files(DOCROOT, pattern = "html$")
+cat(htmlfiles, file = file.path(DOCROOT, "MANIFEST"), sep = "\n")
+
 
