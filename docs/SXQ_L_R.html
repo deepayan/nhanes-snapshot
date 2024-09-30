@@ -1,0 +1,1751 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SXQ_L_R</title>
+    <meta name="title" content="NHANES August 2021-August 2023: Sexual Behavior - Adult  Data Documentation, Codebook, and Frequencies" />
+    <link rel="stylesheet" href="https://wwwn.cdc.gov/nchs/nhanes/css/documentation.css" />
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</a>
+          </li>
+          <li>
+            <a href="#Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#SXD021">SXD021 - Ever had vaginal, anal, or oral sex (B)</a>
+              </li>
+              <li>
+                <a href="#SXD001C">SXD001C - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="#SXQ800">SXQ800 - Ever had vaginal sex with a woman (M)</a>
+              </li>
+              <li>
+                <a href="#SXQ803">SXQ803 - Ever performed oral sex on a woman (M)</a>
+              </li>
+              <li>
+                <a href="#SXQ806">SXQ806 - Ever had anal sex with a woman (M)</a>
+              </li>
+              <li>
+                <a href="#SXQ809">SXQ809 - Ever had any kind of sex w/man (M)</a>
+              </li>
+              <li>
+                <a href="#SXQ700">SXQ700 - Ever had vaginal sex with a man (F)</a>
+              </li>
+              <li>
+                <a href="#SXQ703">SXQ703 - Ever performed oral sex on a man (F)</a>
+              </li>
+              <li>
+                <a href="#SXQ706">SXQ706 - Ever had anal sex with a man (F)</a>
+              </li>
+              <li>
+                <a href="#SXQ709">SXQ709 - Ever had any kind of sex w/woman (F)</a>
+              </li>
+              <li>
+                <a href="#SXD002C">SXD002C - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="#SXD171">SXD171 - # female sex partners/lifetime (M)</a>
+              </li>
+              <li>
+                <a href="#SXD510">SXD510 - # female sex partners/year (M)</a>
+              </li>
+              <li>
+                <a href="#SXQ410">SXQ410 - # male sex partners/lifetime(M)</a>
+              </li>
+              <li>
+                <a href="#SXQ550">SXQ550 - # male sex partners/year (M)</a>
+              </li>
+              <li>
+                <a href="#SXQ648">SXQ648 - Had sex with a new partner past 12mos(B)</a>
+              </li>
+              <li>
+                <a href="#SXD003C">SXD003C - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="#SXD101">SXD101 - # male sex partners/lifetime (F)</a>
+              </li>
+              <li>
+                <a href="#SXD450">SXD450 - # male sex partners/year (F)</a>
+              </li>
+              <li>
+                <a href="#SXQ130">SXQ130 - # female sex partners/lifetime (F)</a>
+              </li>
+              <li>
+                <a href="#SXQ490">SXQ490 - # female sex partners/year (F)</a>
+              </li>
+              <li>
+                <a href="#SXQ260">SXQ260 - Ever told that you had genital herpes(B)</a>
+              </li>
+              <li>
+                <a href="#SXQ265">SXQ265 - Ever told that you had genital warts (B)</a>
+              </li>
+              <li>
+                <a href="#SXD004C">SXD004C - CHECK ITEM</a>
+              </li>
+              <li>
+                <a href="#SXQ295">SXQ295 - Describe sexual identity (F)</a>
+              </li>
+              <li>
+                <a href="#SXQ296">SXQ296 - Describe sexual identity (M)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>August 2021-August 2023 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Sexual Behavior - Adult  (SXQ_L_R)</h3>
+        <h4>RDC Only  Data File: SXQ_L_R.xpt</h4>
+        <h5 class="left">First Published: September 2024</h5>
+        <h5 class="right">Last Revised: NA</h5>
+        <h5 class="left">At this time, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>The Mobile Examination Center (MEC) Interview questionnaire on sexual behavior (variable name prefix SXQ) provides information on lifetime and current sexual behavior for both males and females. Items covered in this section include: sexual identity, age of first sexual encounter, number of sexual partners, circumcision status (male), and history of sexually transmitted infections. </p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Survey participants aged 14-69 years were eligible. Questions in this section are age-specific and gender-specific. Questions were limited to survey participants who were able to understand English or Spanish. Only data from participants aged 18-69 years are included in this data file; data for youths 14-17 years is located, separately, in SXQY_L_R. Both data files are accessed through the <a href="https://www.cdc.gov/rdc/" target="_blank">NCHS Research Data Center</a>.</p><h2 id="Interview_Setting_and_Mode_of_Administration">Interview Setting and Mode of Administration</h2><p>The sexual behavior questions were self-administered in a private room at the MEC, during the MEC Interview, using the Audio Computer-Assisted Self Interview (ACASI) system. No proxy respondents or interpreters were used in situations when the respondents could not self-report for themselves in English or Spanish.&nbsp;</p>
+<p>Due to MEC time constraints in NHANES August 2021-August 2023, the two questions on sexual identity (one for males and one for females) were moved back to ACASI. These questions had been administered using the Computer Assisted Personal Interview (CAPI) system beginning in 2017 to be consistent with their administration mode in the National Health Interview Survey. The questions were specifically placed at the beginning of the ACASI to separate them from the sexual behavior questions asked later. This helps avoid the potential context effect with other behavioral questions, which may make the participant more likely to interpret the sexual orientation question from a behavioral as opposed to a social identity perspective.</p><h2 id="Quality_Assurance_&amp;_Quality_Control">Quality Assurance &amp; Quality Control</h2><p>The ACASI is programmed with built-in consistency checks to reduce data entry errors. The system also uses online help screens to assist in defining key terms used in the questionnaire. All data were reviewed by the NHANES staff for accuracy and completeness.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The variable SXD021 (Ever had vaginal, anal, or oral sex) was derived from whether the respondent reported having any of the specific types of sex. For example, if a male answered &ldquo;yes&rdquo; to having had any of the following types of sex: SXQ800 (Ever had vaginal sex with a woman), SXQ803 (Ever performed oral sex on a woman), SXQ806 (Ever had anal sex with a woman), or SXQ809 (Ever had any sex with a man; anal, oral); he would be coded as a &ldquo;1&rdquo; or &ldquo;yes&rdquo; in SXD021. The value of SXD021 was set to missing if the respondent missed or responded &ldquo;don&rsquo;t know&rdquo; or &ldquo;refuse&rdquo; to at least one of the questions that were part of the algorithm for deriving SXD021 and had &ldquo;no&rdquo; responses for the other questions in the algorithm.&nbsp;</p>
+<p>Edits were made, when necessary, to address data disclosure concerns. For example, responses to age first of first sexual encounter that were 12 years or less were grouped and coded as &ldquo;12 years or younger.&rdquo; Responses to questions on number of partners were grouped and coded as &ldquo;100 or more&rdquo;.&nbsp;</p>
+<p>In general, if a respondent was not asked a question, the response to the question is shown as &ldquo;missing.&rdquo; It is up to the analysts to recode the response to zero as they see fit. For example, if a respondent reported that they had zero lifetime male sex partners, they wouldn't be asked the number of male sex partners in the past 12 months. Since the respondent does not receive the question about partners in the past 12 months, the data will be coded as missing for this variable. Analysts may want to recode this to &ldquo;0&rdquo; for their analyses.&nbsp;</p>
+<p>For questions that ascertain total number of partners for all types of sex (i.e., SXD171, SXD510, SXD101 and SXD450), if the respondent had reported never having any type of sex, the responses were coded as &ldquo;0.&rdquo;</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>Several questions were dropped in NHANES August 2021-August 2023 and are not included in this data file: SXQ618, SXQ824, SXQ827, SXQ636, SXQ841, SXQ853, SXQ864, SXQ827, SXQ845, SXQ610, SXQ251, SXQ724, SXQ741.</p>
+<p>In the ACASI system, if participants did not answer the question and instead pressed &ldquo;next&rdquo; to move forward, they get a screen asking them to indicate: &ldquo;I really meant to answer,&rdquo; &ldquo;I&rsquo;d rather not answer,&rdquo; or &ldquo;I don&rsquo;t know the answer.&rdquo; If they chose &ldquo;I really meant to answer,&rdquo; they were taken back to the question so they could respond. If they selected &ldquo;I&rsquo;d rather not answer,&rdquo; their response was coded as &ldquo;refuse.&rdquo; The selection of &ldquo;I don&rsquo;t know the answer&rdquo; was coded as &ldquo;don&rsquo;t know.&rdquo;</p>
+<p>Although the ACASI has many advantages over interviewer-administered questionnaires for sensitive information, inconsistent responses can occur. Since the questions were self-administered, unlikely answers or confusing questions generally were not clarified by the interviewer. Although the questionnaire was programmed to alert respondents of potential data entry errors or inconsistencies, not every possible consistency check was added. To minimize potential respondent frustration and confusion, the interview was not interrupted each time an inconsistent answer occurred in terms of the number of sexual partners for different periods of recall and/or for different types of sexual behavior.</p>
+<p>Analysis by subgroup characteristics should be conducted carefully. The sample size for the non-heterosexual subgroups is limited and may not meet the minimum sample size requirements for statistical reliability as noted in the <a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx#analytic-guidelines" target="_blank">NHANES analytic guidelines</a>. Additionally, the high rate of selecting a non-specific answer to the questions should be considered (Miller et. al., 2011). That is, selecting &ldquo;don&rsquo;t know,&rdquo; &ldquo;refused,&rdquo; &ldquo;not sure,&rdquo; or &ldquo;something else&rdquo; as a response. Respondents select these answers for a variety of reasons that are well summarized in Table 2 of the NCHS report &ldquo;Design, Development and Testing of the NHIS Sexual Identity Question&rdquo; (Miller et. al., 2011). For example, respondents from the lesbian, gay, bisexual, and transgender (LGBT) community may select &ldquo;something else&rdquo; when they use a different sexual identity label than those presented in the response options. However, the same option may also be selected by others because they are not familiar with the terms presented.&nbsp;</p></div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>Miller K, Ryan JM. Design, Development and Testing of the NHIS Sexual Identity Question Questionnaire Design Research Laboratory, Office of Research and Methodology, National Center for Health Statistics, October 2011. <a href="https://wwwn.cdc.gov/QBANK/report/Miller_NCHS_2011_NHIS%20Sexual%20Identity.pdf">https://wwwn.cdc.gov/QBANK/report/Miller_NCHS_2011_NHIS%20Sexual%20Identity.pdf</a>
+          </li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 18 YEARS -
+			69 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXD021">SXD021 - Ever had vaginal, anal, or oral sex (B)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXD021</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever had vaginal, anal, or oral sex (B)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Ever had vaginal, anal, or oral sex.</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">DERIVED FROM SXQ800, SXQ803, SXQ806, SXQ809 FOR MALES, AND SXQ700, SXQ703, SXQ706, SXQ709 FOR FEMALES.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 18 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">4108</td>
+                <td class="values" align="right">4108</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">236</td>
+                <td class="values" align="right">4344</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">4347</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4347</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">697</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXD001C">SXD001C - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXD001C</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM SXD001C: IF FEMALE, GO TO SXQ700. IF MALE, CONTINUE TO SXQ800.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 18 YEARS -
+			69 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ800">SXQ800 - Ever had vaginal sex with a woman (M)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ800</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever had vaginal sex with a woman (M)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever had vaginal sex, also called sexual intercourse, with a woman? This means your penis in a woman's vagina.</dd>
+            <dt>Target: </dt>
+            <dd> Males only 18 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1763</td>
+                <td class="values" align="right">1763</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">206</td>
+                <td class="values" align="right">1969</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1970</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1970</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3074</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ803">SXQ803 - Ever performed oral sex on a woman (M)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ803</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever performed oral sex on a woman (M)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever performed oral sex on a woman? This means putting your mouth on a woman's vagina or genitals.</dd>
+            <dt>Target: </dt>
+            <dd> Males only 18 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1604</td>
+                <td class="values" align="right">1604</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">363</td>
+                <td class="values" align="right">1967</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1969</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1969</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3075</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ806">SXQ806 - Ever had anal sex with a woman (M)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ806</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever had anal sex with a woman (M)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever had anal sex with a woman? Anal sex means contact between your penis and a woman's anus or butt.</dd>
+            <dt>Target: </dt>
+            <dd> Males only 18 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">790</td>
+                <td class="values" align="right">790</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1175</td>
+                <td class="values" align="right">1965</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">1968</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1968</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3076</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ809">SXQ809 - Ever had any kind of sex w/man (M)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ809</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever had any kind of sex w/man (M)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever had any kind of sex with a man, including oral or anal?</dd>
+            <dt>Target: </dt>
+            <dd> Males only 18 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">188</td>
+                <td class="values" align="right">188</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1778</td>
+                <td class="values" align="right">1966</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1968</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1968</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3076</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ700">SXQ700 - Ever had vaginal sex with a man (F)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ700</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever had vaginal sex with a man (F)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever had vaginal sex, also called sexual intercourse, with a man? This means a man's penis in your vagina.</dd>
+            <dt>Target: </dt>
+            <dd> Females only 18 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">2220</td>
+                <td class="values" align="right">2220</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">154</td>
+                <td class="values" align="right">2374</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2376</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">2377</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2667</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ703">SXQ703 - Ever performed oral sex on a man (F)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ703</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever performed oral sex on a man (F)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever performed oral sex on a man? This means putting your mouth on a man's penis or genitals.</dd>
+            <dt>Target: </dt>
+            <dd> Females only 18 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">1983</td>
+                <td class="values" align="right">1983</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">386</td>
+                <td class="values" align="right">2369</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">2375</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2375</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2669</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ706">SXQ706 - Ever had anal sex with a man (F)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ706</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever had anal sex with a man (F)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever had anal sex? This means contact between a man's penis and your anus or butt.</dd>
+            <dt>Target: </dt>
+            <dd> Females only 18 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">933</td>
+                <td class="values" align="right">933</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1435</td>
+                <td class="values" align="right">2368</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">7</td>
+                <td class="values" align="right">2375</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2375</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2669</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ709">SXQ709 - Ever had any kind of sex w/woman (F)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ709</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever had any kind of sex w/woman (F)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Have you ever had any kind of sex with a woman? By sex, we mean sexual contact with another woman's vagina or genitals.</dd>
+            <dt>Target: </dt>
+            <dd> Females only 18 YEARS -
+			69 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">342</td>
+                <td class="values" align="right">342</td>
+                <td class="values">SXQ648</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2029</td>
+                <td class="values" align="right">2371</td>
+                <td class="values">SXQ648</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">2374</td>
+                <td class="values">SXQ648</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2374</td>
+                <td class="values">SXQ648</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2670</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXD002C">SXD002C - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXD002C</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM SXD002C: IF SP 60-69 YEARS, GO TO END OF SECTION. OTHERWISE, CONTINUE.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 18 YEARS -
+			69 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXD171">SXD171 - # female sex partners/lifetime (M)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXD171</dd>
+            <dt>SAS Label: </dt>
+            <dd># female sex partners/lifetime (M)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In your lifetime, with how many women have you had any kind of sex?</dd>
+            <dt>Target: </dt>
+            <dd> Males only 18 YEARS -
+			59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 99</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 99</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1343</td>
+                <td class="values" align="right">1343</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">100</td>
+                <td class="values">100 or more</td>
+                <td class="values" align="right">32</td>
+                <td class="values" align="right">1375</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">1378</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">1384</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3660</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXD510">SXD510 - # female sex partners/year (M)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXD510</dd>
+            <dt>SAS Label: </dt>
+            <dd># female sex partners/year (M)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past 12 months, with how many women have you had any kind of sex?</dd>
+            <dt>Target: </dt>
+            <dd> Males only 18 YEARS -
+			59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 99</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 53</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1380</td>
+                <td class="values" align="right">1380</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">100</td>
+                <td class="values">100 or more</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1381</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1382</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1383</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3661</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ410">SXQ410 - # male sex partners/lifetime(M)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ410</dd>
+            <dt>SAS Label: </dt>
+            <dd># male sex partners/lifetime(M)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In your lifetime, with how many men have you had anal or oral sex?</dd>
+            <dt>Target: </dt>
+            <dd> Males only 18 YEARS -
+			59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 99</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 80</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">132</td>
+                <td class="values" align="right">132</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">100</td>
+                <td class="values">100 or more</td>
+                <td class="values" align="right">10</td>
+                <td class="values" align="right">142</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4901</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ550">SXQ550 - # male sex partners/year (M)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ550</dd>
+            <dt>SAS Label: </dt>
+            <dd># male sex partners/year (M)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past 12 months, with how many men have you had anal or oral sex?</dd>
+            <dt>Target: </dt>
+            <dd> Males only 18 YEARS -
+			59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 99</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 75</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">142</td>
+                <td class="values" align="right">142</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">100</td>
+                <td class="values">100 or more</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">142</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">143</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4901</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ648">SXQ648 - Had sex with a new partner past 12mos(B)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ648</dd>
+            <dt>SAS Label: </dt>
+            <dd>Had sex with a new partner past 12mos(B)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past 12 months, did you have any kind of sex with a person that you never had sex with before?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">THE ITEM INCLUDES SEX WITH BOTH MALE AND FEMALE PARTNERS.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 18 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">519</td>
+                <td class="values" align="right">519</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">1788</td>
+                <td class="values" align="right">2307</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2307</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2307</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2737</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXD003C">SXD003C - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXD003C</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM SXD003C: IF MALE, GO TO SXQ260. IF FEMALE, CONTINUE TO SXD101.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 18 YEARS -
+			59 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXD101">SXD101 - # male sex partners/lifetime (F)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXD101</dd>
+            <dt>SAS Label: </dt>
+            <dd># male sex partners/lifetime (F)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In your lifetime, with how many men have you had any kind of sex?</dd>
+            <dt>Target: </dt>
+            <dd> Females only 18 YEARS -
+			59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 99</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 99</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1613</td>
+                <td class="values" align="right">1613</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">100</td>
+                <td class="values">100 or more</td>
+                <td class="values" align="right">12</td>
+                <td class="values" align="right">1625</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">11</td>
+                <td class="values" align="right">1636</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1638</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3406</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXD450">SXD450 - # male sex partners/year (F)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXD450</dd>
+            <dt>SAS Label: </dt>
+            <dd># male sex partners/year (F)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past 12 months, with how many men have you had any kind of sex?</dd>
+            <dt>Target: </dt>
+            <dd> Females only 18 YEARS -
+			59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 99</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 40</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">1633</td>
+                <td class="values" align="right">1633</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">100</td>
+                <td class="values">100 or more</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1633</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">1637</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">1637</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3407</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ130">SXQ130 - # female sex partners/lifetime (F)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ130</dd>
+            <dt>SAS Label: </dt>
+            <dd># female sex partners/lifetime (F)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In your lifetime with how many women have you had sex? By sex, we mean sexual contact with another woman's vagina or genitals.</dd>
+            <dt>Target: </dt>
+            <dd> Females only 18 YEARS -
+			59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">1 to 99</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1 to 19</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">287</td>
+                <td class="values" align="right">287</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">100</td>
+                <td class="values">100 or more</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">287</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">4</td>
+                <td class="values" align="right">291</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">291</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4753</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ490">SXQ490 - # female sex partners/year (F)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ490</dd>
+            <dt>SAS Label: </dt>
+            <dd># female sex partners/year (F)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">In the past 12 months, with how many women have you had sex? By sex, we mean sexual contact with another woman's vagina or genitals.</dd>
+            <dt>Target: </dt>
+            <dd> Females only 18 YEARS -
+			59 YEARS</dd>
+            <dt>Hard Edits: </dt>
+            <dd class="info">0 to 99</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 4</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">289</td>
+                <td class="values" align="right">289</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">100</td>
+                <td class="values">100 or more</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">289</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">77777</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">291</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">99999</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">291</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">4753</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ260">SXQ260 - Ever told that you had genital herpes(B)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ260</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever told that you had genital herpes(B)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Has a doctor or other health care professional ever told you that you had genital herpes?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 18 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">141</td>
+                <td class="values" align="right">141</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2672</td>
+                <td class="values" align="right">2813</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">3</td>
+                <td class="values" align="right">2816</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2816</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2228</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ265">SXQ265 - Ever told that you had genital warts (B)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ265</dd>
+            <dt>SAS Label: </dt>
+            <dd>Ever told that you had genital warts (B)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Has a doctor or other health care professional ever told you that you had genital warts?</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 18 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Yes</td>
+                <td class="values" align="right">107</td>
+                <td class="values" align="right">107</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">No</td>
+                <td class="values" align="right">2705</td>
+                <td class="values" align="right">2812</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">2814</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">2814</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">2230</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXD004C">SXD004C - CHECK ITEM</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXD004C</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">CHECK ITEM SXD004C: IF FEMALE, CONTINUE. IF MALE, GO TO SXQ296.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 18 YEARS -
+			59 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ295">SXQ295 - Describe sexual identity (F)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ295</dd>
+            <dt>SAS Label: </dt>
+            <dd>Describe sexual identity (F)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of the following best represents how you think of yourself?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD SXQ1</dd>
+            <dt>Target: </dt>
+            <dd> Females only 18 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Lesbian or Gay</td>
+                <td class="values" align="right">55</td>
+                <td class="values" align="right">55</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Straight, that is, not lesbian or gay</td>
+                <td class="values" align="right">1357</td>
+                <td class="values" align="right">1412</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Bisexual</td>
+                <td class="values" align="right">169</td>
+                <td class="values" align="right">1581</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Something else</td>
+                <td class="values" align="right">53</td>
+                <td class="values" align="right">1634</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">I don't know the answer</td>
+                <td class="values" align="right">36</td>
+                <td class="values" align="right">1670</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1671</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">1673</td>
+                <td class="values">End of Section</td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3371</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SXQ296">SXQ296 - Describe sexual identity (M)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SXQ296</dd>
+            <dt>SAS Label: </dt>
+            <dd>Describe sexual identity (M)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Which of the following best represents how you think of yourself?</dd>
+            <dt class="info">English Instructions: </dt>
+            <dd class="info">HAND CARD SXQ2</dd>
+            <dt>Target: </dt>
+            <dd> Males only 18 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Gay</td>
+                <td class="values" align="right">61</td>
+                <td class="values" align="right">61</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Straight that is not gay</td>
+                <td class="values" align="right">1242</td>
+                <td class="values" align="right">1303</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Bisexual</td>
+                <td class="values" align="right">49</td>
+                <td class="values" align="right">1352</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Something else</td>
+                <td class="values" align="right">25</td>
+                <td class="values" align="right">1377</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">I don't know the answer</td>
+                <td class="values" align="right">29</td>
+                <td class="values" align="right">1406</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Refused</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1407</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Don't know</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1408</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">3636</td>
+                <td class="values" align="right">5044</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

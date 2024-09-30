@@ -1,0 +1,1708 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>HPVN_I_R</title>
+    <meta name="title" content="NHANES 2015-2016: Human Papillomavirus (HPV) - 6, 11, 16, 18, 31, 33, 45, 52, &amp; 58 Antibody – Serum: M9ELISA  Data Documentation, Codebook, and Frequencies" />
+    <link rel="stylesheet" href="https://wwwn.cdc.gov/nchs/nhanes/css/documentation.css" />
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Method_Files">Laboratory Method Files</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#LBD9M6N">LBD9M6N - HPV 6 (IU/mL)</a>
+              </li>
+              <li>
+                <a href="#LBD96NLC">LBD96NLC - HPV 6 (Quantitative) comment code</a>
+              </li>
+              <li>
+                <a href="#LBD9M11N">LBD9M11N - HPV 11 (IU/mL)</a>
+              </li>
+              <li>
+                <a href="#LBD911LC">LBD911LC - HPV 11 (Quantitative) comment code</a>
+              </li>
+              <li>
+                <a href="#LBD9M16N">LBD9M16N - HPV 16 (IU/mL)</a>
+              </li>
+              <li>
+                <a href="#LBD916LC">LBD916LC - HPV 16 (Quantitative) comment code</a>
+              </li>
+              <li>
+                <a href="#LBD9M18N">LBD9M18N - HPV 18 (IU/mL)</a>
+              </li>
+              <li>
+                <a href="#LBD918LC">LBD918LC - HPV 18 (Quantitative) comment code</a>
+              </li>
+              <li>
+                <a href="#LBD9M31N">LBD9M31N - HPV 31 (IU/mL)</a>
+              </li>
+              <li>
+                <a href="#LBD931LC">LBD931LC - HPV 31 (Quantitative) comment code</a>
+              </li>
+              <li>
+                <a href="#LBD9M33N">LBD9M33N - HPV 33 (IU/mL)</a>
+              </li>
+              <li>
+                <a href="#LBD933LC">LBD933LC - HPV 33 (Quantitative) comment code</a>
+              </li>
+              <li>
+                <a href="#LBD9M45N">LBD9M45N - HPV 45 (IU/mL)</a>
+              </li>
+              <li>
+                <a href="#LBD945LC">LBD945LC - HPV 45 (Quantitative) comment code</a>
+              </li>
+              <li>
+                <a href="#LBD9M52N">LBD9M52N - HPV 52 (IU/mL)</a>
+              </li>
+              <li>
+                <a href="#LBD952LC">LBD952LC - HPV 52 (Quantitative) comment code</a>
+              </li>
+              <li>
+                <a href="#LBD9M58N">LBD9M58N - HPV 58 (IU/mL)</a>
+              </li>
+              <li>
+                <a href="#LBD958LC">LBD958LC - HPV 58 (Quantitative) comment code</a>
+              </li>
+              <li>
+                <a href="#LBX9M6">LBX9M6 - HPV6 9-plex coded result</a>
+              </li>
+              <li>
+                <a href="#LBX9M11">LBX9M11 - HPV11 9-plex coded result</a>
+              </li>
+              <li>
+                <a href="#LBX9M16">LBX9M16 - HPV16 9-plex coded result</a>
+              </li>
+              <li>
+                <a href="#LBX9M18">LBX9M18 - HPV18 9-plex coded result</a>
+              </li>
+              <li>
+                <a href="#LBX9M31">LBX9M31 - HPV31 9-plex coded result</a>
+              </li>
+              <li>
+                <a href="#LBX9M33">LBX9M33 - HPV33 9-plex coded result</a>
+              </li>
+              <li>
+                <a href="#LBX9M45">LBX9M45 - HPV45 9-plex coded result</a>
+              </li>
+              <li>
+                <a href="#LBX9M52">LBX9M52 - HPV52 9-plex coded result</a>
+              </li>
+              <li>
+                <a href="#LBX9M58">LBX9M58 - HPV58 9-plex coded result</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2015-2016 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Human Papillomavirus (HPV) - 6, 11, 16, 18, 31, 33, 45, 52, &amp; 58 Antibody – Serum: M9ELISA  (HPVN_I_R)</h3>
+        <h4>RDC Only  Data File: HPVN_I_R.xpt</h4>
+        <h5 class="left">First Published: September 2024</h5>
+        <h5 class="right">Last Revised: NA</h5>
+        <h5 class="left">Due to disclosure issues, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>Human
+papillomavirus (HPV) infection is the most common sexually transmitted
+infection in the United States, and persistent infection
+with certain types of HPV can progress to cancer. HPV-attributable cancers
+include cervical, vaginal, vulvar, anal, penile, and oropharyngeal cancers. NHANES
+offers a unique opportunity to assess the prevalence of HPV infection in the
+general population and the impact of HPV vaccination.</p>
+<p>HPV vaccination was introduced in the
+national immunization program for females in 2006 and for males in 2011.
+Reducing infections of HPV types prevented by the vaccine in young adults and
+increasing the proportion of adolescents vaccinated for HPV are both Healthy
+People 2030 objectives. Knowledge of the national prevalence of HPV infection
+is critical for planning vaccination strategies and monitoring the impact of
+vaccination in the United States. Seroprevalence reflects current and past
+exposure to HPV as well as presence of vaccine-induced antibody and can provide important
+information about HPV epidemiology and vaccination.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Examined
+participants aged 14 to 59 years were eligible.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p>M9ELISA is an assay
+developed for the detection of 9 HPV types, which includes both
+qualitative and quantitative results. </p>
+<p>M9ELISA allows for
+simultaneous detection of antibodies to HPV 6, 11, 16, 18, 31, 33, 45, 52, and 58 in
+one microwell (Panicker et. al., 2021). Virus-like particles (VLP),
+self-assembled HPV L1+L2 protein capsids that resemble intact virions, are used
+as antigen in the assay. HPV-type specific antibodies present in test samples
+will bind to type-specific conformational epitopes on the VLPs adsorbed onto
+the surface of the microwell. Bound human IgG is detected with a SulfoTAG<sup>TM </sup>&nbsp;Anti-Human IgG using electrochemiluminescent detection on the Meso Scale Discovery (MSD) plate reader
+that generates relative light units (RLU). The amount of antibodies in the
+sample is estimated relative to a reference sample using the parallel line
+method and reported in International Units/milliliter (IU/mL). Samples are
+scored as positive or negative using a pre-determined &ldquo;cut-off&rdquo; level. The
+assay is used for research purposes and does not have clinical
+relevance.&nbsp;&nbsp; </p>
+<p>Refer to the
+Laboratory Method Files section for a detailed description of the laboratory
+methods used.</p><h2 id="Laboratory_Method_Files">Laboratory Method Files</h2>
+        <p>
+          <a target="_blank" href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/labmethods/HPVN-I-R-MET-508.pdf">M9ELISA – Multiplexed VLP-based IgG ELISA on the Meso Scale Discovery Platform Lab Procedure Manual</a>
+          <span> (September 2024)</span>
+        </p>
+        <h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>Serum samples were processed, stored, and shipped to the Chronic
+Viral Diseases Branch, Division of High-Consequence Pathogens and Pathology,
+National Center for Emerging and Zoonotic Infectious Diseases, Centers for
+Disease Control and Prevention, Atlanta, GA for analysis.</p>
+<p>Detailed instructions on specimen collection and processing are
+discussed in the&nbsp;<a href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/manuals/2016_MEC_Laboratory_Procedures_Manual.pdf">NHANES
+Laboratory Procedures Manual (LPM)</a>. Vials were stored under appropriate
+frozen conditions (-20&deg;C) until they were shipped to the National Center for
+Emerging and Zoonotic Infectious Diseases for testing. The
+M9ELISA was conducted in the HPV Immunology lab at the Centers for Disease
+Control and Prevention.</p>
+<p>The NHANES quality assurance and quality control (QA/QC) protocols
+meet the 1988 Clinical Laboratory Improvement Amendments mandates. Detailed
+QA/QC instructions are discussed in the NHANES <a href="https://wwwn.cdc.gov/nchs/data/nhanes/2015-2016/manuals/2016_MEC_Laboratory_Procedures_Manual.pdf">LPM</a>.</p>
+<p><strong>Mobile Examination Centers (MECs)</strong></p>
+<p>Laboratory team performance is monitored using several techniques.
+NCHS and contract consultants use a structured competency assessment evaluation
+during visits to evaluate both the quality of the laboratory work and the QC procedures.
+Each laboratory staff member is observed for equipment operation, specimen
+collection and preparation; testing procedures and constructive feedback are
+given to each staff member. Formal retraining sessions are conducted annually
+to ensure that required skill levels were maintained.</p>
+<p><strong>Analytical Laboratories</strong></p>
+<p>NHANES uses several methods to monitor the quality of the analyses
+performed by the contract laboratories. In the MEC, these methods include
+performing blind split samples collected on &ldquo;dry run&rdquo; sessions. In addition,
+contract laboratories randomly perform repeat testing on 2% of all specimens.</p>
+<p>NCHS developed and
+distributed a quality control protocol for all CDC and contract laboratories,
+which outlined the use of Westgard rules (Westgard et. al., 1981) when running
+NHANES specimens. Progress reports containing any problems encountered during
+shipping or receipt of specimens, summary statistics for each control pool, QC
+graphs, instrument calibration, reagents, and any special considerations are
+submitted to NCHS quarterly. The reports are reviewed for trends or shifts in
+the data. The laboratories are required to explain any identified areas of
+concern.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The data were
+reviewed. Incomplete data or improbable values were sent to the performing
+laboratory for confirmation.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>Refer to the&nbsp;<a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2015">2015-2016
+Laboratory Data Overview</a>&nbsp;for general information on NHANES
+laboratory data.</p>
+<p>There are over 800 laboratory tests performed on NHANES
+participants. However, not all participants provided biospecimens or enough
+volume for all the tests to be performed. The specimen availability can also
+vary by age or other population characteristics. Analysts should evaluate the
+extent of missing data in the dataset related to the outcome of interest as
+well as any predictor variables used in the analyses to determine whether
+additional re-weighting for item non-response is necessary.</p>
+<p>Please refer to the NHANES&nbsp;<a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">Analytic Guidelines</a>&nbsp;and the on-line
+NHANES&nbsp;<a href="https://wwwn.cdc.gov/nchs/nhanes/tutorials/default.aspx">Tutorial</a>&nbsp;for
+details on the use of sample weights and other analytic issues.</p>
+<p><strong>Sample Weights</strong></p>
+<p>MEC exam sample weights should be used for analyses.</p>
+<p><strong>Demographic and Other Related Variables</strong></p>
+<p>The analysis of NHANES 2015-2016 laboratory data must be conducted
+using the appropriate survey design and demographic variables. The&nbsp;NHANES <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2015">2015-2016 Demographics File</a>&nbsp;contains
+demographic data, health indicators, and other related information collected
+during household interviews as well as the sample design variables. The
+recommended procedure for variance estimation requires use of stratum and PSU
+variables (SDMVSTRA and SDMVPSU, respectively) in the demographic data file.</p>
+<p>This laboratory data file can be linked to the other NHANES data
+files using the unique survey participant identifier (i.e., SEQN).</p>
+<p><strong>Detection Limits</strong></p>
+<p>Two variables are provided for each of these analytes. The
+variable name ending in &ldquo;LC&rdquo; (ex., LBD9M6LC) indicates whether the result was
+below the limit of quantitation: the value &ldquo;0&rdquo; means that the result was at or
+above the limit of quantitation, &ldquo;1&rdquo; indicates that the result was below the
+limit of quantitation. For analytes with analytic results below the lower limit
+of quantitation (ex. LBD9M6LC =1), an imputed fill value was placed in the
+analyte results field. This value is the lower limit of quantitation divided by
+the square root of 2 (LLOQ/sqrt[2]). The other variable prefixed &ldquo;LBD&rdquo; and
+ended with an &ldquo;N&rdquo; (ex., LBD9M6N) provides the analytic result for the analyte.</p>
+<p>The lower limit of quantitation (LLOQ, in units) for HPV antibody
+6, 11, 16, 18, 31, 33, 45, 52, &amp; 58 are:</p>
+<table bordercolor="#000000" border="1">
+    <caption align="left" valign="top"></caption>
+    <thead>
+        <tr>
+            <th>VARIABLE</th>
+            <th>ANALYTE NAME</th>
+            <th>LLOQ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>LBD9M6N</td>
+            <td>HPV 6 (Quantitative)</td>
+            <td>2.2 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBD9M11N</td>
+            <td>HPV 11 (Quantitative)</td>
+            <td>2.6 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBD9M16N</td>
+            <td>HPV 16 (Quantitative)</td>
+            <td>1.2 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBD9M18N</td>
+            <td>HPV 18 (Quantitative)</td>
+            <td>0.4 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBD9M31N</td>
+            <td>HPV 31 (Quantitative)</td>
+            <td>2.2 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBD9M33N</td>
+            <td>HPV 33 (Quantitative)</td>
+            <td>3.6 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBD9M45N</td>
+            <td>HPV 45 (Quantitative)</td>
+            <td>1.2 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBD9M52N</td>
+            <td>HPV 52 (Quantitative)</td>
+            <td>4.3 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBD9M58N</td>
+            <td>HPV 58 (Quantitative)</td>
+            <td>4.0 IU/ml</td>
+        </tr>
+    </tbody>
+</table>
+<p>
+Note: LLOQ &ndash; lower limit of quantitation; IU/ml &ndash; International Units/milliliter</p>
+<p><strong>Serostatus Cut-off Value</strong></p>
+<p>The qualitative
+results for the analytes are provided in variables prefixed &ldquo;LBX&rdquo; (ex., LBX9M6). Serostatus cut-off value for a positive
+result for each HPV analyte was established as below. An antibody concentration below
+this value is coded as negative and a value equal or above is considered
+positive. </p>
+<table bordercolor="#000000" border="1">
+    <thead>
+        <tr>
+            <th>VARIABLE</th>
+            <th>ANALYTE NAME</th>
+            <th>Cut-off Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>LBX9M6</td>
+            <td>HPV 6 (Qualitative)</td>
+            <td>7.6 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBX9M11</td>
+            <td>HPV 11 (Qualitative)</td>
+            <td>5.2 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBX9M16</td>
+            <td>HPV 16 (Qualitative)</td>
+            <td>1.6 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBX9M18</td>
+            <td>HPV 18 (Qualitative)</td>
+            <td>3.5 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBX9M31</td>
+            <td>HPV 31 (Qualitative)</td>
+            <td>5.5 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBX9M33</td>
+            <td>HPV 33 (Qualitative)</td>
+            <td>6.8 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBX9M45</td>
+            <td>HPV 45 (Qualitative)</td>
+            <td>4.2 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBX9M52</td>
+            <td>HPV 52 (Qualitative)</td>
+            <td>6.2 IU/ml</td>
+        </tr>
+        <tr>
+            <td>LBX9M58</td>
+            <td>HPV 58 (Qualitative)</td>
+            <td>12.8 IU/ml</td>
+        </tr>
+    </tbody>
+</table>
+<p>Note: IU/ml &ndash; International Units/milliliter</p></div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>Panicker G, Rajbhandari I, Pathak HN, Brady AM, Unger ER. Multiplex
+immunoassay to measure antibody response to nine HPV vaccine types. Journal of
+Immunological Methods 2021. <a href="https://doi.org/10.1016/j.jim.2021.113136">https://doi.org/10.1016/j.jim.2021.113136</a></li>
+          <li>Westgard J.O., Barry P.L., Hunt M.R., Groth T. A multi-rule Shewart chart
+for quality control in clinical chemistry. Clin Chem (1981) 27:493-501</li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD9M6N">LBD9M6N - HPV 6 (IU/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD9M6N</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 6 (IU/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 6 (IU/mL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1.6 to 28188</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4252</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD96NLC">LBD96NLC - HPV 6 (Quantitative) comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD96NLC</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 6 (Quantitative) comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 6 (Quantitative) comment code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above the limit of quantitation</td>
+                <td class="values" align="right">2916</td>
+                <td class="values" align="right">2916</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below the limit of quantitation</td>
+                <td class="values" align="right">1336</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD9M11N">LBD9M11N - HPV 11 (IU/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD9M11N</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 11 (IU/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 11 (IU/mL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1.8 to 15990</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4252</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD911LC">LBD911LC - HPV 11 (Quantitative) comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD911LC</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 11 (Quantitative) comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 11 (Quantitative) comment code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above the limit of quantitation</td>
+                <td class="values" align="right">1497</td>
+                <td class="values" align="right">1497</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below the limit of quantitation</td>
+                <td class="values" align="right">2755</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD9M16N">LBD9M16N - HPV 16 (IU/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD9M16N</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 16 (IU/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 16 (IU/mL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.8 to 7404</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4252</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD916LC">LBD916LC - HPV 16 (Quantitative) comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD916LC</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 16 (Quantitative) comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 16 (Quantitative) comment code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above the limit of quantitation</td>
+                <td class="values" align="right">1473</td>
+                <td class="values" align="right">1473</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below the limit of quantitation</td>
+                <td class="values" align="right">2779</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD9M18N">LBD9M18N - HPV 18 (IU/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD9M18N</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 18 (IU/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 18 (IU/mL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.3 to 2808</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4252</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD918LC">LBD918LC - HPV 18 (Quantitative) comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD918LC</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 18 (Quantitative) comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 18 (Quantitative) comment code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above the limit of quantitation</td>
+                <td class="values" align="right">3357</td>
+                <td class="values" align="right">3357</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below the limit of quantitation</td>
+                <td class="values" align="right">895</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD9M31N">LBD9M31N - HPV 31 (IU/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD9M31N</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 31 (IU/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 31 (IU/mL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1.6 to 1694</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4252</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD931LC">LBD931LC - HPV 31 (Quantitative) comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD931LC</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 31 (Quantitative) comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 31 (Quantitative) comment code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above the limit of quantitation</td>
+                <td class="values" align="right">1592</td>
+                <td class="values" align="right">1592</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below the limit of quantitation</td>
+                <td class="values" align="right">2660</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD9M33N">LBD9M33N - HPV 33 (IU/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD9M33N</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 33 (IU/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 33 (IU/mL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2.5 to 1392</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4252</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD933LC">LBD933LC - HPV 33 (Quantitative) comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD933LC</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 33 (Quantitative) comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 33 (Quantitative) comment code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above the limit of quantitation</td>
+                <td class="values" align="right">814</td>
+                <td class="values" align="right">814</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below the limit of quantitation</td>
+                <td class="values" align="right">3438</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD9M45N">LBD9M45N - HPV 45 (IU/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD9M45N</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 45 (IU/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 45 (IU/mL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0.8 to 1035</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4252</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD945LC">LBD945LC - HPV 45 (Quantitative) comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD945LC</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 45 (Quantitative) comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 45 (Quantitative) comment code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above the limit of quantitation</td>
+                <td class="values" align="right">1658</td>
+                <td class="values" align="right">1658</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below the limit of quantitation</td>
+                <td class="values" align="right">2594</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD9M52N">LBD9M52N - HPV 52 (IU/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD9M52N</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 52 (IU/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 52 (IU/mL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">3 to 4590</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4252</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD952LC">LBD952LC - HPV 52 (Quantitative) comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD952LC</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 52 (Quantitative) comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 52 (Quantitative) comment code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above the limit of quantitation</td>
+                <td class="values" align="right">1434</td>
+                <td class="values" align="right">1434</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below the limit of quantitation</td>
+                <td class="values" align="right">2818</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD9M58N">LBD9M58N - HPV 58 (IU/mL)</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD9M58N</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 58 (IU/mL)</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 58 (IU/mL)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">2.8 to 2584.1</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4252</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBD958LC">LBD958LC - HPV 58 (Quantitative) comment code</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBD958LC</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV 58 (Quantitative) comment code</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV 58 (Quantitative) comment code</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">At or above the limit of quantitation</td>
+                <td class="values" align="right">1426</td>
+                <td class="values" align="right">1426</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Below the limit of quantitation</td>
+                <td class="values" align="right">2826</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBX9M6">LBX9M6 - HPV6 9-plex coded result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBX9M6</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV6 9-plex coded result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV6 9-plex coded result</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Positive</td>
+                <td class="values" align="right">1567</td>
+                <td class="values" align="right">1567</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Negative</td>
+                <td class="values" align="right">2685</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBX9M11">LBX9M11 - HPV11 9-plex coded result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBX9M11</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV11 9-plex coded result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV11 9-plex coded result</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Positive</td>
+                <td class="values" align="right">1089</td>
+                <td class="values" align="right">1089</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Negative</td>
+                <td class="values" align="right">3163</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBX9M16">LBX9M16 - HPV16 9-plex coded result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBX9M16</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV16 9-plex coded result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV16 9-plex coded result</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Positive</td>
+                <td class="values" align="right">1324</td>
+                <td class="values" align="right">1324</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Negative</td>
+                <td class="values" align="right">2928</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBX9M18">LBX9M18 - HPV18 9-plex coded result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBX9M18</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV18 9-plex coded result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV18 9-plex coded result</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Positive</td>
+                <td class="values" align="right">1118</td>
+                <td class="values" align="right">1118</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Negative</td>
+                <td class="values" align="right">3134</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBX9M31">LBX9M31 - HPV31 9-plex coded result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBX9M31</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV31 9-plex coded result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV31 9-plex coded result</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Positive</td>
+                <td class="values" align="right">852</td>
+                <td class="values" align="right">852</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Negative</td>
+                <td class="values" align="right">3400</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBX9M33">LBX9M33 - HPV33 9-plex coded result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBX9M33</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV33 9-plex coded result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV33 9-plex coded result</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Positive</td>
+                <td class="values" align="right">475</td>
+                <td class="values" align="right">475</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Negative</td>
+                <td class="values" align="right">3777</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBX9M45">LBX9M45 - HPV45 9-plex coded result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBX9M45</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV45 9-plex coded result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV45 9-plex coded result</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Positive</td>
+                <td class="values" align="right">520</td>
+                <td class="values" align="right">520</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Negative</td>
+                <td class="values" align="right">3732</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBX9M52">LBX9M52 - HPV52 9-plex coded result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBX9M52</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV52 9-plex coded result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV52 9-plex coded result</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Positive</td>
+                <td class="values" align="right">1073</td>
+                <td class="values" align="right">1073</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Negative</td>
+                <td class="values" align="right">3179</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="LBX9M58">LBX9M58 - HPV58 9-plex coded result</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">LBX9M58</dd>
+            <dt>SAS Label: </dt>
+            <dd>HPV58 9-plex coded result</dd>
+            <dt>English Text: </dt>
+            <dd class="info">HPV58 9-plex coded result</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Positive</td>
+                <td class="values" align="right">553</td>
+                <td class="values" align="right">553</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Negative</td>
+                <td class="values" align="right">3699</td>
+                <td class="values" align="right">4252</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">346</td>
+                <td class="values" align="right">4598</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
