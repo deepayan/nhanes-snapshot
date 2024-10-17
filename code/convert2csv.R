@@ -1,7 +1,7 @@
 
 ## Run this from top-level directory (data/ and timestamp/ should be a sub-folders)
 
-## If a local cache is running, set this envvar suitably, otherwise skip
+## If a local cache is running (see README), set this envvar suitably, otherwise skip
 ## Sys.setenv(NHANES_TABLE_BASE = "http://127.0.0.1:8080/cdc")
 
 options(warn = 1) # show warnings immediately
