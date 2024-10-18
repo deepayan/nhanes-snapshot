@@ -8,11 +8,9 @@ options(warn = 1)
 
 library(nhanesA)
 nhanesOptions(use.db = FALSE, log.access = TRUE)
-mf_pub <- nhanesManifest("public") # only for checking
+mf_pub <- readRDS("metadata/manifest.rds")$public # only for checking
 
-## FIXME: delete 'All Years' row?
-
-mf <- nhanesManifest("limitedaccess")
+mf <- readRDS("metadata/manifest.rds")$limitedaccess
 mf <- mf[order(mf$Table), ]
 
 ## Make sure there are no overlaps:

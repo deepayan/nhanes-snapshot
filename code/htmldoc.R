@@ -8,7 +8,7 @@ options(warn = 1)
 
 library(nhanesA)
 nhanesOptions(use.db = FALSE, log.access = TRUE)
-mf <- nhanesManifest()
+mf <- readRDS("metadata/manifest.rds")$public
 
 ## We remove some tables from the download list because they are
 ## large, but we will keep their documentation anyway.

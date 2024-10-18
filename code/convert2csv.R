@@ -8,7 +8,8 @@ options(warn = 1) # show warnings immediately
 
 library(nhanesA)
 nhanesOptions(use.db = FALSE, log.access = TRUE)
-mf <- nhanesManifest()
+
+mf <- readRDS("metadata/manifest.rds")$public
 
 ## Remove the tables we will not download (usually because they are
 ## large; some others have already been removed by nhanesManifest())

@@ -1,8 +1,8 @@
 ## Extracts metadata (including codebook tables) from all
 ## documentation files in doc/ and saves as an RDS files for further
-## processing. Expect errors and warnings to be issued; these can be
-## useful to record unusual or unexpected doc files. To save these in
-## an .Rout file, run the script in batch mode using
+## processing. Errors and warnings may be issued; these can be useful
+## to record unusual or unexpected doc files. To save these in an
+## .Rout file, run the script in batch mode using
 
 ## R CMD BATCH --vanilla code/extract-metadata.R
 
