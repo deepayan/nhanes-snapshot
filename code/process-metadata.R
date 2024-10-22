@@ -108,58 +108,107 @@ saveRDS(variablesDF, file = "metadata/variablesDF.rds")
 ## DataFile
 ## DatePublished
 
-## Somewhat confusingly, most of this information is available not in
-## the manifest of tables, but in the manifest of variables, which is
-## what we use below. The last three fields are collected from the
-## tables manifest.
-
-
 mf <- readRDS("metadata/manifest.rds")
 
-tablesDF <- with(mf$variables,
-                 data.frame(TableName = toupper(Table),
-                            Description = TableDesc,
-                            BeginYear = BeginYear,
-                            EndYear = EndYear,
-                            DataGroup = Component,
-                            UseConstraints = UseConstraints)) |> unique()
+public_tables <-
+    cbind(with(mf, rbind0(cbind(demographics,  Component = "Demographics"),
+                          cbind(dietary,       Component = "Dietary"),
+                          cbind(examination,   Component = "Examination"),
+                          cbind(laboratory,    Component = "Laboratory"),
+                          cbind(questionnaire, Component = "Questionnaire"))),
+          UseConstraints = "None")
+
+limitedaccess_tables <-
+    cbind(mf$limitedaccess,
+          DataURL = "",
+          Component = "LimitedAccess",
+          UseConstraints = "RDC Only")
+
+## Somewhat confusingly, even though the limited access tables are
+## given by
+## <https://wwwn.cdc.gov/nchs/nhanes/search/variablelist.aspx?Component=LimitedAccess>,
+## they also have a 'component' or data group in the regular sense
+## (demographics, laboratory, etc.), which is recorded in the manifest
+## of variables (source: nhanesA:::varURLs). However, the variables
+## manifest also has a lot of spurious records (e.g., from tables that
+## predate 1999), so we will only use it to find the data group for
+## limited access tables.
+
+rdc_vars <- unique(mf$variables[c("Table", "TableDesc",
+                                  "BeginYear", "EndYear",
+                                  "Component", "UseConstraints")])
+
+## make sure no Table is repeated, which might happen if some
+## variables are public and some RDC Only within the same table.
+
+if (anyDuplicated(rdc_vars$Table)) stop("Unexpected error: duplicate table names")
+
+## restrict to non-public tables 
+
+rdc_vars <- subset(rdc_vars, UseConstraints != "None", select = -UseConstraints)
+
+## check if all limited access tables are available
+
+## These are the ones we care about. 
+
+(tables_without_info <- 
+    setdiff(toupper(limitedaccess_tables$Table),
+            toupper(rdc_vars$Table)))
+
+subset(limitedaccess_tables, Table %in% tables_without_info)
+
+## Their doc files do not list variables. We will classify them as
+## Component/DataGroup = Documentation
+
+
+## these are in the variable list, but not in the main list of
+## tables. We will ignore these.
+
+setdiff(toupper(rdc_vars$Table),
+        toupper(limitedaccess_tables$Table))
+
+## Set the Component column of limitedaccess_tables to corresponding column in rdc_vars
+
+rownames(rdc_vars) <- toupper(rdc_vars$Table)
+rdc_vars <- rdc_vars[limitedaccess_tables$Table, ] # sync rows
+
+limitedaccess_tables$Component <- rdc_vars$Component
+limitedaccess_tables <-
+    within(limitedaccess_tables,
+           Component[is.na(Component)] <- "Documentation")
+
+## Sanity check: make sure BeginYear - EndYear are consistent
+
+ok <- with(rdc_vars, paste0(BeginYear, "-", EndYear)) == limitedaccess_tables$Years
+if (!identical(limitedaccess_tables$Table[!ok], tables_without_info))
+    stop("Mismatch in Years for limited access tables")
+
+## OK, now we can merge and proceed
+
+tablesDF <-
+    with(rbind0(public_tables, limitedaccess_tables),
+         data.frame(TableName = toupper(Table),
+                    Description = Description,
+                    BeginYear = as.integer(substring(Years, 1, 4)),
+                    EndYear = as.integer(substring(Years, 6, 9)),
+                    DataGroup = Component,
+                    UseConstraints = UseConstraints,
+                    DocFile = paste0("https://wwwn.cdc.gov", DocURL),
+                    DataFile = ifelse(nzchar(DataURL), paste0("https://wwwn.cdc.gov", DataURL), ""),
+                    DatePublished = Date.Published))
 
 tablesDF <- tablesDF[order(tablesDF$TableName), ]
 
 if (anyDuplicated(tablesDF$TableName)) stop("Unexpected error: duplicate table names")
-
-## Collect (DocFile, DataFile, DatePublished) from manifests of public
-## and limited access tables
-
-info_public <-
-    with(mf$public,
-         data.frame(DocFile = paste0("https://wwwn.cdc.gov", DocURL),
-                    DataFile = paste0("https://wwwn.cdc.gov", DataURL),
-                    DatePublished = Date.Published,
-                    row.names = toupper(Table)))
-
-info_limited <-
-    with(mf$limitedaccess,
-         data.frame(DocFile = paste0("https://wwwn.cdc.gov", DocURL),
-                    DataFile = "",
-                    DatePublished = Date.Published,
-                    row.names = toupper(Table)))
-
-if (length(intersect(rownames(info_public), rownames(info_limited))))
-    stop("Unexpected error: some table names appear in both public and limited access manifests")
-
-info <- rbind(info_public, info_limited, deparse.level = 0)
-
-## Set of tables will not be identical: list differences
-## TODO: investigate these more thoroughly
-
-setdiff(tablesDF$TableName, rownames(info))
-setdiff(rownames(info), tablesDF$TableName)
-
-## Append info to tablesDF
-
-tablesDF <- cbind(tablesDF, info[ tablesDF$TableName, ])
+## Also check if there are any doc files that have been downloaded
+## (from the data manifests) but have somehow been excluded
 
 saveRDS(tablesDF, file = "metadata/tablesDF.rds")
+
+## for comparison with earlier version
+write.csv(tablesDF, file = "/tmp/tablesDF.csv", row.names = FALSE)
+
+docs <- list.files("docs/") |> gsub(".html", "", x =_)
+setdiff(docs, tablesDF$TableName)
 
 
