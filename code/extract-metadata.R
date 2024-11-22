@@ -26,7 +26,7 @@ getElementWith <- function(object, name, Variable, ...)
 doc2codebook <- function(file, metadata = TRUE, codebook = TRUE)
 {
     cb <- nhanesCodebookFromURL(file)
-    Table <- gsub(".html", "", basename(file),
+    Table <- gsub(".htm", "", basename(file),
                   fixed = TRUE)
     ## May not be a list (e.g., SEQN), so convert first
     cb <- lapply(cb, as.list)
@@ -50,7 +50,9 @@ doc2codebook <- function(file, metadata = TRUE, codebook = TRUE)
     ans
 }
 
-tables <- list.files("docs", full.names = TRUE)
+## tables <- list.files("docs", pattern = "", full.names = TRUE, recursive = TRUE)
+
+tables <- paste0("docs/", readLines("docs/MANIFEST.txt"))
 
 options(warn = 1)
 
