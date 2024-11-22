@@ -15,6 +15,7 @@ mf <- readRDS("metadata/manifest.rds")$public
 
 mf <- subset(mf, !startsWith(Table, "PAXMIN"))
 mf <- mf[order(mf$Table), ]
+mf$DestFile <- gsub("/Nchs/Nhanes/", "", mf$DocURL, ignore.case = TRUE)
 
 DOCROOT <- "./docs"
 TSROOT <- "./timestamp"
@@ -33,8 +34,9 @@ update_needed <- function(mf, i)
 {
     ## TRUE if (data file does not exist) OR (timestamp has changed)
     x <- mf$Table[i]
+    dest <- mf$DestFile[i]
     timestamp <- sprintf("%s/%s.txt", TSROOT, x)
-    docfile <- sprintf("%s/%s.html", DOCROOT, x)
+    docfile <- sprintf("%s/%s", DOCROOT, dest)
     if (!file.exists(docfile) || !file.exists(timestamp)) return(TRUE)
     if (identical(mf$Date.Published[i], readLines(timestamp))) return(FALSE)
     else return(TRUE)
@@ -44,8 +46,9 @@ DOC_PREFIX <- Sys.getenv("NHANES_TABLE_BASE", unset = "https://wwwn.cdc.gov")
 
 for (i in seq_len(nrow(mf))) {
     x <- mf$Table[i]
+    dest <- mf$DestFile[i]
     if (update_needed(mf, i)) {
-        docfile <- sprintf("%s/%s.html", DOCROOT, x)
+        docfile <- sprintf("%s/%s", DOCROOT, dest)
         message(x, " -> ", docfile)
         url <- paste0(DOC_PREFIX, mf$DocURL[i])
         download.file(url, destfile = docfile)
@@ -55,7 +58,9 @@ for (i in seq_len(nrow(mf))) {
 
 ## Update MANIFEST.txt to list all html files currently present
 
-htmlfiles <- list.files(DOCROOT, pattern = "html$")
+FIXME
+
+htmlfiles <- list.files(DOCROOT, pattern = "htm$")
 cat(htmlfiles, file = file.path(DOCROOT, "MANIFEST.txt"), sep = "\n")
 
 
