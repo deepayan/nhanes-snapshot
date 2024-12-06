@@ -65,6 +65,7 @@ system.time(
                })
 )
 
-names(all_metadata) <- gsub(".html", "", basename(tables), fixed = TRUE)
+names(all_metadata) <- gsub(".htm", "", basename(tables), fixed = TRUE)
+cat("Tables: ", names(all_metadata), sep = " ", fill = TRUE)
 saveRDS(all_metadata, file = "metadata/all_metadata.rds")
 
