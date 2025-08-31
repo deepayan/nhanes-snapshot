@@ -12,7 +12,8 @@ mf_pub <- readRDS("metadata/manifest.rds")$public # only for checking
 
 mf <- readRDS("metadata/manifest.rds")$limitedaccess
 mf <- mf[order(mf$Table), ]
-mf$DestFile <- gsub("/Nchs/Nhanes/", "", mf$DocURL, ignore.case = TRUE)
+## mf$DestFile <- gsub("/Nchs/Nhanes/", "", mf$DocURL, ignore.case = TRUE)
+mf$DestFile <- sprintf("limited_access/%s", basename(mf$DocURL))
 
 ## Make sure there are no overlaps:
 
