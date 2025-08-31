@@ -2,246 +2,8 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>DSBI</title>
-    <meta name="title" content="NHANES 1999-2020: Dietary Supplement Database - Blend Information Data Documentation, Codebook, and Frequencies" />
-    <style type="text/css">
-					.nhanes-doc { font: 75% Verdana, Arial, Helvetica, sans-serif; }
-
-					.nhanes-doc h1 {
-					color: #0c5205;
-					font-family: "Trebuchet MS", Arial, sans-serif;
-					font-size: 2em;
-					font-weight: normal;
-					margin-bottom: 10px;
-					margin-top: 0;
-					}
-
-					.nhanes-doc h2 {
-					color: #0c5205;
-					font-family: "Trebuchet MS", Arial, sans-serif;
-					font-size: 1.6em;
-					font-weight: normal;
-					}
-
-					.nhanes-doc h3 {
-					color: #000;
-					font-family: "Trebuchet MS", Arial, sans-serif;
-					font-size: 1.5em;
-					font-weight: normal;
-					}
-
-					.nhanes-doc h3.vartitle {
-					background-color: #c1d5b0;
-					padding: 6px 12px;
-					}
-
-					.nhanes-doc h4 {
-					color: #000;
-					font-family: "Trebuchet MS", Arial, sans-serif;
-					font-size: 1.3em;
-					font-weight: bold;
-					}
-
-					.nhanes-doc h5 {
-					color: #000;
-					font-family: Verdana, Arial, Helvetica, sans-serif;
-					font-size: 1em;
-					font-weight: bold;
-					}
-
-					.nhanes-doc h5.specialnote {
-					color: #000;
-					font-family: Verdana, Arial, Helvetica, sans-serif;
-					font-size: 1.2em;
-					font-style: italic;
-					font-weight: bold;
-					}
-
-					.nhanes-doc a {
-					color: #039;
-					text-decoration: none;
-					}
-
-					.nhanes-doc p {
-					font-family: Verdana, Arial, Helvetica, sans-serif;
-					font-size: 1em;
-					line-height: 1.33em;
-					padding: 0 3em 1em;
-					text-align: left;
-					}
-
-					.nhanes-doc ul {
-					list-style-type: disc;
-					padding: 0 3em 1em;
-					}
-
-					.nhanes-doc ol {
-					list-style-type: decimal;
-					margin: 0;
-					overflow: hidden;
-					padding: 0;
-					padding-left: 2em;
-					}
-
-					.nhanes-doc li {
-					margin-left: 1.5em;
-					margin-top: 0.7em;
-					}
-
-					.nhanes-doc table {
-					border: #000 1px solid;
-					border-collapse: collapse;
-					margin: 0 auto 1em;
-					max-width: 600px;
-					padding: 2px;
-					page-break-inside: avoid;
-					table-layout: auto;
-					}
-
-					.nhanes-doc th {
-					background: #f4f4e1;
-					border: #000 1px solid;
-					font-family: Verdana, Arial, Helvetica, sans-serif;
-					padding: 5px;
-					text-align: center;
-					vertical-align: top;
-					}
-
-					.nhanes-doc th.rowheader {
-					background: #f4f4e1;
-					border: #000 1px solid;
-					font-family: Verdana, Arial, Helvetica, sans-serif;
-					padding: 5px;
-					text-align: center;
-					vertical-align: top;
-					}
-
-					.nhanes-doc td {
-					border: #000 1px solid;
-					font-family: Verdana, Arial, Helvetica, sans-serif;
-					padding: 5px;
-					text-align: left;
-					vertical-align: top;
-					}
-
-					.nhanes-doc td p {
-					margin: inherit;
-					padding: 0;
-					}
-
-					.nhanes-doc td.values2 {
-					text-align: RIGHT;
-					vertical-align: top;
-					}
-
-					.nhanes-doc table caption {
-					font-weight: bold;
-					padding-bottom: 0.5em;
-					}
-
-					.nhanes-doc div#wrapper { width: 650px; }
-
-					.nhanes-doc div#toc {
-					border: solid 1px #CCC;
-					float: left;
-					height: 95%;
-					left: 750px;
-					overflow: hidden;
-					position: fixed;
-					top: 10px;
-					width: 400px;
-					z-index: 10;
-					}
-
-					.nhanes-doc div#toc h3 {
-					background-color: #f4f4e1;
-					border-bottom: solid 1px #ccc;
-					letter-spacing: 8px;
-					margin: 0;
-					padding: 8px;
-					text-align: center;
-					text-transform: uppercase;
-					}
-
-					.nhanes-doc div#toc-scroll {
-					height: calc(100% - 1.5em);
-					overflow: scroll;
-					width: 100%;
-					}
-
-					.nhanes-doc div#toc li {
-					margin-left: -0.5em;
-					margin-right: -0.5em;
-					}
-
-					.nhanes-doc div#PageHeader {
-					border-bottom: thin solid #999;
-					margin-bottom: 12px;
-					width: 650px;
-					}
-
-					.nhanes-doc div#Sections { width: 650px; }
-
-					.nhanes-doc div#Codebook { width: 650px; }
-
-					.nhanes-doc div#Codebook dl {
-					margin: 2em 0 10px 40px;
-					padding: 0;
-					width: 600px;
-					display: table;
-					}
-
-					.nhanes-doc div#Codebook dt {
-					float: left;
-					font-weight: bold;
-					margin: 0;
-					padding: 0.5em;
-					width: 150px;
-					display: table-cell;
-					}
-
-					.nhanes-doc div#Codebook dd {
-					float: left;
-					margin: 0;
-					padding: 0.5em;
-					width: 420px;
-					display: table-cell;
-					}
-
-					.nhanes-doc div#References {
-					page-break-after: always;
-					width: 650px;
-					}
-
-					.nhanes-doc div#References li {
-					word-wrap: break-word;
-					}
-
-					.nhanes-doc div#Appendix {
-					page-break-after: always;
-					width: 650px;
-					}
-
-					.nhanes-doc table.values {
-					border: 2px;
-					left: 20px;
-					margin-bottom: 20px;
-					page-break-inside: avoid;
-					position: relative;
-					width: 600px;
-					}
-
-					.nhanes-doc span.file-size { color: gray; }
-
-					.nhanes-doc .pagebreak {
-					background-color: transparent;
-					display: block;
-					page-break-after: always;
-					page-break-inside: avoid;
-					}
-				</style>
-    <style type="text/css" media="print">
-					.nhanes-doc div#toc { display: none; }
-				</style>
+    <meta name="title" content="NHANES 1999-2023: Dietary Supplement Database - Blend Information Data Documentation, Codebook, and Frequencies" />
+    <link rel="stylesheet" href="https://wwwn.cdc.gov/nchs/nhanes/css/documentation.css" />
   </head>
   <body class="nhanes-doc">
     <div id="toc">
@@ -286,26 +48,23 @@
           <li>
             <a href="#Appendix_2:_Conversion_Factors_for_Supplement_Nutrient_Units_to_Food_Units_and_for_Nutrient_Compounds_to_Elemental_Nutrients">Appendix 2: Conversion Factors for Supplement Nutrient Units to Food Units and for Nutrient Compounds to Elemental Nutrients</a>
           </li>
-          <li>
-            <a href="#Appendix_3:__Proc_Format">Appendix 3:  Proc Format</a>
-          </li>
         </ul>
       </div>
     </div>
     <div id="wrapper">
       <div id="PageHeader">
         <h1>National Health and Nutrition Examination Survey</h1>
-        <h2>1999-2020 Data Documentation, Codebook, and Frequencies</h2>
+        <h2>1999-2023 Data Documentation, Codebook, and Frequencies</h2>
         <h3>Dietary Supplement Database - Blend Information (DSBI)</h3>
         <h4> Data File: DSBI.xpt</h4>
-        <h5 class="left">First Published: June 2002</h5>
-        <h5 class="right">Last Revised: July 2022</h5>
+        <h5 class="left">First Published: February 2025</h5>
+        <h5 class="right">Last Revised: NA</h5>
       </div>
       <div id="Sections">
         <h2 id="Component_Description">Component Description</h2><p>The NHANES Dietary Supplement Database (NHANES-DSD) contains detailed information on the dietary supplements (DS) and non-prescription antacids containing calcium and/or magnesium (antacids) reported by survey participants since NHANES 1999. The NHANES-DSD release consists of three datasets containing information on the following: Dietary Supplement Product Information (DSPI), Dietary Supplement Ingredient Information (DSII), and Dietary Supplement Blend Information (DSBI). </p>
 <p>Dietary supplement information from the in-house NCHS Product Label Database (PLD) is publicly released in three files that make up the NHANES-DSD. These files incorporate all products that have been reported by respondents since 1999 from the PLD. With subsequent releases, new products reported will be appended to the NHANES-DSD files. </p>
 <p>The in-house PLD database is maintained by NCHS nutritionists. NCHS attempts to obtain a product label for all dietary supplements or antacids reported by participants from sources such as the manufacturer or retailer, the Internet, company catalogs, and the Physician&rsquo;s Desk Reference (PDR). Label information has also been obtained from the <a href="https://dsld.od.nih.gov/" target="_blank">Dietary Supplement Label Database (DSLD)</a>, which is a joint project of the National Institutes of Health (NIH) Office of Dietary Supplements (ODS) and National Library of Medicine (NLM).  The DSLD contains the full label contents from a sample of dietary supplement products marketed in the U.S. Selected label information is then entered into the PLD including, but not limited to: supplement name; manufacturer and/or distributor; serving size; form of serving size; and ingredients and amounts. The ingredient information entered into the database is taken directly from the supplement facts box on the label or carton. The PLD is used to assist with data editing and then publicly released in the data files (DSPI, DSII, and DSBI). </p>
-<p>In addition to entering labels into the PLD database, NCHS created generic and default dietary supplements and antacids, which are also maintained in the database. Generics were created in the database when we had information about a reported supplement, such as the strength of all ingredients, but no brand name. These were generally single ingredient supplements, which included a strength (e.g., vitamin C 500 mg) or multiple vitamins and/or mineral supplements made by a private label manufacturer that was known to us and for which we had a label with identical ingredients and strengths (e.g., brand X all-purpose multivitamin was reported, and we had a label for brand Y, made by the same manufacturer). When all ingredient strengths were unknown, a default supplement was created in the database. Defaults were created for single ingredient and multiple ingredient supplements based on our own data of most frequently reported supplements of that type, based on the survey cycle in which the data was collected. Created default products and the actual products or strengths that were assigned to these defaults are listed in the documentation for the files associated with participants&rsquo; use of dietary supplements, located on the <a href="https://www.cdc.gov/nchs/nhanes/index.htm" target="_blank">NHANES website</a> under the dietary data links. </p>
+<p>In addition to entering labels into the PLD database, NCHS created generic and default dietary supplements and antacids, which are also maintained in the database. Generics were created in the database when we had information about a reported supplement, such as the strength of all ingredients, but no brand name. These were generally single ingredient supplements, which included a strength (e.g., vitamin C 500 mg) or multiple vitamins and/or mineral supplements made by a private label manufacturer that was known to us and for which we had a label with identical ingredients and strengths (e.g., brand X all-purpose multivitamin was reported, and we had a label for brand Y, made by the same manufacturer). When all ingredient strengths were unknown, a default supplement was created in the database. Defaults were created for single ingredient and multiple ingredient supplements based on our own data of most frequently reported supplements of that type, based on the survey cycle in which the data was collected. Created default products and the actual products or strengths that were assigned to these defaults are listed in the documentation for the files associated with participants&rsquo; use of dietary supplements, located on the <a href="https://www.cdc.gov/nchs/nhanes/?CDC_AAref_Val=https://www.cdc.gov/nchs/nhanes/" target="_blank">NHANES website</a> under the dietary data links. </p>
 <p>In 2019, the application used to manage and access NHANES dietary supplement product database was updated to adapt to the .NET environment. This resulted in the new structure of dietary supplement identifiers. Variables DSDPID, DSDIID, DSDBID were added to indicate the updated supplement ID, ingredient ID, and blend component ID, respectively. The variables DSDSUPID, DSDINGID, and DSDBCID now indicate the old versions for supplement ID, ingredient ID, and blend component ID, respectively.  In addition, six new variables were included to provide information on supplement reformulations: DSDPRDT, DSDPREID, DSDORGID, DSDSGPF, DSDSEQF, DSDLINRF to indicate the product type, previous product ID, original product ID, sequential group formulation, sequential formulation, and linear formulation, respectively. </p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The in-house PLD was used for processing and editing of the dietary supplement data since 1999. </p>
 <p><span style="text-decoration: underline;"><strong>Variables pulled directly from the&nbsp;in-house PLD </strong></span></p>
 <p><span style="text-decoration: underline;"><strong>DSDSUPP: </strong>Name of Supplement <br />
@@ -370,7 +129,7 @@ This is the old unique ingredient ID created by the PLD for each ingredient reco
 <p><span style="text-decoration: underline;"><strong>DSDUNIT:</strong> Ingredient Unit <br />
 </span>Ingredient unit is recorded for each ingredient listed from the product label&rsquo;s supplement facts panel.</p>
 <p>
-NHANES dietary supplement files have vitamin A and E expressed in different units based on what was reported on the product label&rsquo;s supplement facts panel. Vitamin E may be reported in International Units (IU) or  micrograms (&micro;g). Vitamin A may be reported as International Units (IU) or as micrograms (&micro;g) of retinol activity equivalents (RAE). Users should be aware of changes in dietary supplement labeling and are advised to use appropriate unit conversions, <a href="https://www.dietarysupplementdatabase.usda.nih.gov/Conversions.php" target="_blank"> Unit Conversions</a>.</p>
+NHANES dietary supplement files have vitamin A and E expressed in different units based on what was reported on the product label&rsquo;s supplement facts panel. Vitamin E may be reported in International Units (IU) or  micrograms (&micro;g). Vitamin A may be reported as International Units (IU) or as micrograms (&micro;g) of retinol activity equivalents (RAE). Users should be aware of changes in dietary supplement labeling and are advised to use appropriate unit conversions, <a href="https://www.dietarysupplementdatabase.usda.nih.gov/Conversions.php" target="_blank"> </a><a href="https://www.dietarysupplementdatabase.usda.nih.gov/Conversions.php" target="_blank">Unit Conversions</a>.</p>
 <p><span style="text-decoration: underline;"><strong>DSDCAT:</strong> Ingredient Category <br />
 </span>There are ingredient categories: Vitamin, Mineral, Botanical, Others, Amino Acid. These are assigned by NCHS staff. (Please see Appendix 1: Rules for Classifying Ingredients.)</p>
 <p><span style="text-decoration: underline;"><strong>DSDBCNAM:</strong> Blend Component Name <br />
@@ -597,10 +356,10 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
 </table>
 <p>&nbsp;</p>
 &nbsp;
-<p>&nbsp;</p><h2 id="Analytic_Notes">Analytic Notes</h2><p><span style="text-decoration: underline;"><strong>Source of Product Information <br />
-</strong></span>The best source of product information is the label itself, but when this cannot be obtained, other sources are used. Information from other sources may not always be an accurate reflection of what is actually on the supplement label. This is true for the supplement&rsquo;s apparent name as well as for the ingredients. The apparent name on the container is most important, since interviewers see the supplement container and record the name as it appears to them. Differences from what appears on the label are particularly noted for information from the Internet (name and ingredients), the PDR (name), and supplement carton (name). In addition, supplement companies may change the appearance of a label and thus the apparent name without changing the content or may change content with minimal change to the label, or may change both. NCHS attempts to obtain updated labels as they come onto the market, but cannot guarantee complete success. The source of the supplement information is included in the data release. </p>
-<p><span style="text-decoration: underline;"><strong>Using Self-Reported Data <br />
-</strong></span>NHANES data are self-reported and recorded by interviewers, and thus may contain inconsistencies or errors. Some inconsistencies have been edited; however, users may notice situations that still need editing. Users are advised to assess the data and edit it as deemed appropriate for the analyses being undertaken.</p></div>
+<p>&nbsp;</p><h2 id="Analytic_Notes">Analytic Notes</h2><p><strong>Source of Product Information</strong><br />
+The best source of product information is the label itself, but when this cannot be obtained, other sources are used. Information from other sources may not always be an accurate reflection of what is actually on the supplement label. This is true for the supplement&rsquo;s apparent name as well as for the ingredients. The apparent name on the container is most important, since interviewers see the supplement container and record the name as it appears to them. Differences from what appears on the label are particularly noted for information from the Internet (name and ingredients), the PDR (name), and supplement carton (name). In addition, supplement companies may change the appearance of a label and thus the apparent name without changing the content or may change content with minimal change to the label, or may change both. NCHS attempts to obtain updated labels as they come onto the market, but cannot guarantee complete success. The source of the supplement information is included in the data release.</p>
+<p><strong>Using Self-Reported Data</strong><br />
+NHANES data are self-reported and recorded by interviewers, and thus may contain inconsistencies or errors. Some inconsistencies have been edited; however, users may notice situations that still need editing. Users are advised to assess the data and edit it as deemed appropriate for the analyses being undertaken.</p></div>
       <div id="Codebook">
         <h2>Codebook and Frequencies</h2>
         <div class="pagebreak">
@@ -612,9 +371,6 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
             <dd>INGREDIENT ID NUMBER</dd>
             <dt>English Text: </dt>
             <dd class="info">Ingredient ID number</dd>
-            <dt>Target: </dt>
-            <dd> Both males and females 0 YEARS -
-			150 YEARS</dd>
           </dl>
           <table class="values">
             <thead>
@@ -628,10 +384,10 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
             </thead>
             <tbody>
               <tr>
-                <td scope="row" class="values">88 to 14305</td>
+                <td scope="row" class="values">88 to 19815</td>
                 <td class="values">Range of Values</td>
-                <td class="values" align="right">32646</td>
-                <td class="values" align="right">32646</td>
+                <td class="values" align="right">35942</td>
+                <td class="values" align="right">35942</td>
                 <td class="values">
                 </td>
               </tr>
@@ -639,7 +395,7 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
                 <td scope="row" class="values">.</td>
                 <td class="values">Missing</td>
                 <td class="values" align="right">0</td>
-                <td class="values" align="right">32646</td>
+                <td class="values" align="right">35942</td>
                 <td class="values">
                 </td>
               </tr>
@@ -655,9 +411,6 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
             <dd>INGREDIENT NAME</dd>
             <dt>English Text: </dt>
             <dd class="info">Ingredient Name</dd>
-            <dt>Target: </dt>
-            <dd> Both males and females 0 YEARS -
-			150 YEARS</dd>
           </dl>
           <table class="values">
             <thead>
@@ -673,8 +426,8 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
               <tr>
                 <td scope="row" class="values">INGREDIENT NAME</td>
                 <td class="values">Value was recorded</td>
-                <td class="values" align="right">32646</td>
-                <td class="values" align="right">32646</td>
+                <td class="values" align="right">35942</td>
+                <td class="values" align="right">35942</td>
                 <td class="values">
                 </td>
               </tr>
@@ -682,7 +435,7 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
                 <td scope="row" class="values">&lt; blank &gt;</td>
                 <td class="values">Missing</td>
                 <td class="values" align="right">0</td>
-                <td class="values" align="right">32646</td>
+                <td class="values" align="right">35942</td>
                 <td class="values">
                 </td>
               </tr>
@@ -698,9 +451,6 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
             <dd>BLEND COMPONENT ID</dd>
             <dt>English Text: </dt>
             <dd class="info">Blend Component ID</dd>
-            <dt>Target: </dt>
-            <dd> Both males and females 0 YEARS -
-			150 YEARS</dd>
           </dl>
           <table class="values">
             <thead>
@@ -714,10 +464,10 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
             </thead>
             <tbody>
               <tr>
-                <td scope="row" class="values">3 to 14308</td>
+                <td scope="row" class="values">3 to 19809</td>
                 <td class="values">Range of Values</td>
-                <td class="values" align="right">32646</td>
-                <td class="values" align="right">32646</td>
+                <td class="values" align="right">35942</td>
+                <td class="values" align="right">35942</td>
                 <td class="values">
                 </td>
               </tr>
@@ -725,7 +475,7 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
                 <td scope="row" class="values">.</td>
                 <td class="values">Missing</td>
                 <td class="values" align="right">0</td>
-                <td class="values" align="right">32646</td>
+                <td class="values" align="right">35942</td>
                 <td class="values">
                 </td>
               </tr>
@@ -741,9 +491,6 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
             <dd>BLEND COMPONENT NAME</dd>
             <dt>English Text: </dt>
             <dd class="info">Blend component name</dd>
-            <dt>Target: </dt>
-            <dd> Both males and females 0 YEARS -
-			150 YEARS</dd>
           </dl>
           <table class="values">
             <thead>
@@ -759,8 +506,8 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
               <tr>
                 <td scope="row" class="values">BLEND COMPONENT NAME</td>
                 <td class="values">Value was recorded</td>
-                <td class="values" align="right">32646</td>
-                <td class="values" align="right">32646</td>
+                <td class="values" align="right">35942</td>
+                <td class="values" align="right">35942</td>
                 <td class="values">
                 </td>
               </tr>
@@ -768,7 +515,7 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
                 <td scope="row" class="values">&lt; blank &gt;</td>
                 <td class="values">Missing</td>
                 <td class="values" align="right">0</td>
-                <td class="values" align="right">32646</td>
+                <td class="values" align="right">35942</td>
                 <td class="values">
                 </td>
               </tr>
@@ -784,9 +531,6 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
             <dd>BLEND COMPONENT CATEGORY</dd>
             <dt>English Text: </dt>
             <dd class="info">Blend component category</dd>
-            <dt>Target: </dt>
-            <dd> Both males and females 0 YEARS -
-			150 YEARS</dd>
           </dl>
           <table class="values">
             <thead>
@@ -802,40 +546,40 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
               <tr>
                 <td scope="row" class="values">1</td>
                 <td class="values">Vitamin</td>
-                <td class="values" align="right">426</td>
-                <td class="values" align="right">426</td>
+                <td class="values" align="right">449</td>
+                <td class="values" align="right">449</td>
                 <td class="values">
                 </td>
               </tr>
               <tr>
                 <td scope="row" class="values">2</td>
                 <td class="values">Mineral</td>
-                <td class="values" align="right">1815</td>
-                <td class="values" align="right">2241</td>
+                <td class="values" align="right">1921</td>
+                <td class="values" align="right">2370</td>
                 <td class="values">
                 </td>
               </tr>
               <tr>
                 <td scope="row" class="values">3</td>
                 <td class="values">Botanical</td>
-                <td class="values" align="right">19038</td>
-                <td class="values" align="right">21279</td>
+                <td class="values" align="right">20870</td>
+                <td class="values" align="right">23240</td>
                 <td class="values">
                 </td>
               </tr>
               <tr>
                 <td scope="row" class="values">4</td>
                 <td class="values">Other</td>
-                <td class="values" align="right">9366</td>
-                <td class="values" align="right">30645</td>
+                <td class="values" align="right">10667</td>
+                <td class="values" align="right">33907</td>
                 <td class="values">
                 </td>
               </tr>
               <tr>
                 <td scope="row" class="values">5</td>
                 <td class="values">Amino acid</td>
-                <td class="values" align="right">2001</td>
-                <td class="values" align="right">32646</td>
+                <td class="values" align="right">2035</td>
+                <td class="values" align="right">35942</td>
                 <td class="values">
                 </td>
               </tr>
@@ -843,7 +587,7 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
                 <td scope="row" class="values">.</td>
                 <td class="values">Missing</td>
                 <td class="values" align="right">0</td>
-                <td class="values" align="right">32646</td>
+                <td class="values" align="right">35942</td>
                 <td class="values">
                 </td>
               </tr>
@@ -859,9 +603,6 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
             <dd>BLEND COMPONENT ID - OLD VERSION</dd>
             <dt>English Text: </dt>
             <dd class="info">Blend Component ID-old version</dd>
-            <dt>Target: </dt>
-            <dd> Both males and females 0 YEARS -
-			150 YEARS</dd>
           </dl>
           <table class="values">
             <thead>
@@ -877,16 +618,16 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
               <tr>
                 <td scope="row" class="values">BLEND COMPONENT ID - OLD VERSION</td>
                 <td class="values">Value was recorded</td>
-                <td class="values" align="right">25010</td>
-                <td class="values" align="right">25010</td>
+                <td class="values" align="right">24976</td>
+                <td class="values" align="right">24976</td>
                 <td class="values">
                 </td>
               </tr>
               <tr>
                 <td scope="row" class="values">&lt; blank &gt;</td>
                 <td class="values">Missing</td>
-                <td class="values" align="right">7636</td>
-                <td class="values" align="right">32646</td>
+                <td class="values" align="right">10966</td>
+                <td class="values" align="right">35942</td>
                 <td class="values">
                 </td>
               </tr>
@@ -1327,409 +1068,6 @@ This indicator variable denotes whether an ingredient is a blend or not a blend.
 <p style="margin: 0in 0in 0pt 0.1in;"><span style="font-family: 'arial','sans-serif'; font-size: 11pt;">*&nbsp; Conversion factor used for Vitamin A is Retinol, most common form</span></p>
 <p style="margin: 0in 0in 0pt 0.1in;"><span style="font-family: 'arial','sans-serif'; font-size: 11pt;">&dagger; Conversion factor for Calciferol</span></p>
 <p style="margin: 0in 0in 0pt 0.1in;"><span style="font-family: 'arial','sans-serif'; font-size: 11pt;">&Dagger; Conversion factor for Alpha Tocopherol, most common form</span></p></div>
-        <div id="Appendix">
-          <h2 id="Appendix_3:__Proc_Format">Appendix 3:  Proc Format</h2><p>PROC  FORMAT;
-<br />
-/*********  variable DSD010 and DSD010AN  ********/
-<br />
-VALUE  DSD010F
-<br />
-1  = "Yes"
-<br />
-2  = "No"
-<br />
-7  = "Refused"
-<br />
-9  = "Don't Know"
-<br />
-.  = "Missing"
-<br />
-;
-<br />
-/*********  variable DSDCOUNT  ********/
-<br />
-VALUE  DSDCNTF
-<br />
-77  = "Refused"
-<br />
-99  = "Don't know"
-<br />
-;
-<br />
-/*********  variable DSD070  ********/
-<br />
-VALUE  DSD070F
-<br />
-1  = "Yes"
-<br />
-2  = "No"
-<br />
-;
-<br />
-/*********  variable DSDDAY1 and DSDDAY2  ********/
-<br />
-VALUE  DSDDAYF
-<br />
-1  = "Yes"
-<br />
-2  = "No"
-<br />
-;
-<br />
-/*********  variable DSDMTCH ********/
-<br />
-VALUE  DSDMTCHF
-<br />
-1  = "Exact or near exact match"
-<br />
-2  = "Probable match"
-<br />
-3  = "Generic match"
-<br />
-4  = "Reasonable match"
-<br />
-5  = "Default match"
-<br />
-6  = "No match"
-<br />
-7  = "Refused"
-<br />
-9  = "Don't know"
-<br />
-;
-<br />
-/********* variable  DSD122U ********/
-<br />
-VALUE  DSD122UF
-<br />
-1=  "Tablets, capsules, pills, caplets, softgels, gelcaps,  vegicaps"
-<br />
-2=  "Droppers"
-<br />
-3=  "Drops"
-<br />
-5=  "Injections/Shots"
-<br />
-6=  "Lozenges"
-<br />
-7=  "Milliliters"
-<br />
-11=  "Tablespoons"
-<br />
-12=  "Teaspoons"
-<br />
-13=  "Wafers"
-<br />
-15=  "Cans"
-<br />
-16=  "Grams"
-<br />
-17=  "Dots"
-<br />
-18=  "Cups"
-<br />
-19=  "Spray/Squirts"
-<br />
-20=  "Chews"
-<br />
-21=  "Scoop"
-<br />
-22=  "CC"
-<br />
-23=  "Capful"
-<br />
-24=  "MG"
-<br />
-25=  "Units"
-<br />
-26=  "Gulp"
-<br />
-27=  "Ounces"
-<br />
-28=  "Packages/Packets"
-<br />
-29=  "Vial"
-<br />
-30=  "Gumball"
-<br />
-31=  "Strips"
-<br />
-32=  &ldquo;Bottle&rdquo;
-<br />
-77=  "Refused"
-<br />
-99=  "Don't know"
-<br />
-;
-<br />
-/*********  variable DSDANTA********/
-<br />
-VALUE  DSDANTAF
-<br />
-0=  "Non-antacid supplement"
-<br />
-1=  "Antacid reported with dietary supplements(DSQ)"
-<br />
-2=  "Antacid reported with medications(RXQ)"
-<br />
-;
-<br />
-/*********  variable DSD124 ********/
-<br />
-VALUE  DSD124F
-<br />
-1  =  "Decided to take  it for reasons of my own"
-<br />
-2  =  "A doctor or  other health provider told me to"
-<br />
-7  =  "Refused"
-<br />
-9  =  "Don't know"
-<br />
-;
-<br />
-/*********  variable RXQ215A********/
-<br />
-VALUE  RXQ215AF
-<br />
-1  =  "Antacid"
-<br />
-2  =  "Calcium  Supplement"
-<br />
-3  =  "Both"
-<br />
-4  =  "Neither"
-<br />
-7  =  "Refused"
-<br />
-9  =  "Don't know"
-<br />
-;
-<br />
-/*********  variable DSDSRCE ********/
-<br />
-VALUE  DSDSRCEF
-<br />
-1  =   "Directly from  manufacturer"
-<br />
-2  =   "Directly from  distributor"
-<br />
-4  =   "Inferred from  supplement name"
-<br />
-5  =   "Physician s Desk  Reference (PDR)"
-<br />
-7  =   "Product  Catalog"
-<br />
-8  =   "Internet  Listing"
-<br />
-9  =   "Supplement label  or carton"
-<br />
-10  = "Supplement from same manufacturer"
-<br />
-11 =  &ldquo;Dietary Supplement Label Database&rdquo;
-<br />
-7777  = "Refused"
-<br />
-9999  = "Don't know"
-<br />
-;
-<br />
-/*********  variable DSDTYPE ********/
-<br />
-VALUE  DSDTYPEF
-<br />
-1=  "Infant/pediatric formulation"
-<br />
-2=  "Prenatal formulation"
-<br />
-3=  "Mature formulation"
-<br />
-4=  "Standard formulation"
-<br />
-7777  = "Refused"
-<br />
-9999  = "Don't know"
-<br />
-;
-<br />
-/*********  variable DSDSERVU ********/
-<br />
-VALUE  DSDSRVF
-<br />
-1=  "Caplet"
-<br />
-2=  "Capsule"
-<br />
-3=  "Dropper"
-<br />
-4=  "Drop"
-<br />
-5=  "Fluid Ounce"
-<br />
-6=  "Gel Cap"
-<br />
-8=  "Injection/Shot"
-<br />
-9=  "Lozenge"
-<br />
-10=  "Milliliter"
-<br />
-12=  "Package/Packet"
-<br />
-13=  "Pill"
-<br />
-14=  "Tablespoon/Powder"
-<br />
-16=  "Softgel"
-<br />
-17=  "Tablespoon/Liquid"
-<br />
-18=  "Tablet"
-<br />
-19=  "Teaspoon/Liquid"
-<br />
-20=  "Wafer"
-<br />
-21=  "Ounce/Powder"
-<br />
-22=  "Spray/Squirt"
-<br />
-24=  "Scoop/Powder"
-<br />
-25=  "Cup/Powder"
-<br />
-27=  "Chew"
-<br />
-29=  "Vegicap"
-<br />
-30=  "Can/Liquid"
-<br />
-31=  "Capful"
-<br />
-32=  "Gumball"
-<br />
-33=  "Gram/Powder"
-<br />
-34=  "Teaspoon/Powder"
-<br />
-35=  "Can/Powder"
-<br />
-36=  "Scoop/Liquid"
-<br />
-37=  "Cup/Liquid"
-<br />
-38=  "Gram/Liquid"
-<br />
-39=  "Drop/Lozenge"
-<br />
-42=  "Strip"
-<br />
-43=  &ldquo;Bottle/Liquid&rdquo;
-<br />
-99=  "Unknown"
-<br />
-;
-<br />
-/*********  variable DSDUNIT ********/
-<br />
-VALUE  DSDUNTF
-<br />
-1=  "mg"
-<br />
-2=  "IU"
-<br />
-3=  "%"
-<br />
-4=  "mcg"
-<br />
-5=  "gm"
-<br />
-6=  "mL"
-<br />
-7=  "kcal"
-<br />
-8=  "DU"
-<br />
-9=  "HUT"
-<br />
-10=  "LU"
-<br />
-11=  "CU"
-<br />
-12=  "endo-PGO"
-<br />
-13=  "AGU"
-<br />
-14=  "PPM"
-<br />
-15=  "Million"
-<br />
-16=  "Billion"
-<br />
-17=  "LacU"
-<br />
-18=  "X"
-<br />
-19=  "PPB"
-<br />
-20=  "Trace"
-<br />
-21=  "Unknown"
-<br />
-22=  "PU"
-<br />
-23=  "SEU"
-<br />
-24=  "InvU"
-<br />
-25=  "&deg;DP"
-<br />
-26=  "HCU"
-<br />
-27=  "CFU"
-<br />
-28=  "GALU"
-<br />
-29=  "ALU"
-<br />
-30=  "FTU"
-<br />
-31=  "NG"
-<br />
-;
-<br />
-/*********  variable DSDCAT ********/
-<br />
-VALUE  DSDCATF
-<br />
-1  = "vitamin"
-<br />
-2  = "mineral"
-<br />
-3  = "botanical"
-<br />
-4  = "other"
-<br />
-5  = "amino acid"
-<br />
-7777  = "Refused"
-<br />
-9999  = "Don't know"
-<br />
-;
-<br />
-/*********  variable DSDBLFLG ********/
-<br />
-VALUE  DSDBLF
-<br />
-1  = "Ingredient is a blend"
-<br />
-2  = "Ingredient is not a blend"
-<br />
-;
-<br />
-<br />
-</p></div>
       </div>
     </div>
   </body>

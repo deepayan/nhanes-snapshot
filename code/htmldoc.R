@@ -15,7 +15,8 @@ mf <- readRDS("metadata/manifest.rds")$public
 
 mf <- subset(mf, !startsWith(Table, "PAXMIN"))
 mf <- mf[order(mf$Table), ]
-mf$DestFile <- gsub("/Nchs/Nhanes/", "", mf$DocURL, ignore.case = TRUE)
+
+mf$DestFile <- gsub("/Nchs/Data/Nhanes/Public/", "", mf$DocURL, ignore.case = TRUE)
 
 DOCROOT <- "./docs"
 TSROOT <- "./timestamp"
