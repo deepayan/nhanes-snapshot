@@ -1,0 +1,770 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SSMR_J_R</title>
+    <meta name="title" content="NHANES 2017-2018: Mycoplasma genitalium Resistance – Urine (Surplus)   Data Documentation, Codebook, and Frequencies" />
+    <link rel="stylesheet" href="https://wwwn.cdc.gov/nchs/nhanes/css/documentation.css" />
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#SSMRMMUT">SSMRMMUT - MG 23S rRNA mutation name</a>
+              </li>
+              <li>
+                <a href="#SSMRM">SSMRM - MG 23S rRNA MRM mutation detected</a>
+              </li>
+              <li>
+                <a href="#SSPARMUT">SSPARMUT - MG parC gene mutation name</a>
+              </li>
+              <li>
+                <a href="#SSPARSPE">SSPARSPE - MG parC gene other mutation,specify name</a>
+              </li>
+              <li>
+                <a href="#SSPARQR">SSPARQR - MG parC QRAM mutation detected</a>
+              </li>
+              <li>
+                <a href="#SSGYRMUT">SSGYRMUT - MG gyrA gene mutation name</a>
+              </li>
+              <li>
+                <a href="#SSGYRSPE">SSGYRSPE - MG gyrA gene other mutation,specify name</a>
+              </li>
+              <li>
+                <a href="#SSGYRQR">SSGYRQR - MG gyrA QRAM mutation detected</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2017-2018 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Mycoplasma genitalium Resistance – Urine (Surplus)   (SSMR_J_R)</h3>
+        <h4>RDC Only  Data File: SSMR_J_R.xpt</h4>
+        <h5 class="left">First Published: August 2025</h5>
+        <h5 class="right">Last Revised: NA</h5>
+        <h5 class="left">At this time, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p><em>Mycoplasma
+genitalium</em> is a sexually transmitted bacterium that causes
+male urethritis and is associated with cervicitis, pelvic inflammatory disease,
+infertility, and preterm delivery (Taylor-Robinson, et. al.,
+2011; Lis, et. al., 2014). Nucleic acid amplification testing (NAAT) for <em>M.
+genitalium</em> was previously performed on urine samples in the 2017-2018
+NHANES cycle (URXMYGE). </p>
+<p>Resistance to the two main
+antibiotics used to treat <em>M. genitalium</em> in the U.S. (azithromycin-a
+macrolide antibiotic and moxifloxacin-a fluoroquinolone antibiotic) emerged
+rapidly just prior to 2010 and has expanded rapidly (Chua,
+et. al., 2024). The prevalence of macrolide and quinolone
+resistance has not been measured in a nationally representative sample of
+people in the U.S.</p><h2 id="Eligible_Sample">Eligible Sample</h2><p>Participants aged
+14-59 testing positive for <em>Mycoplasma genitalium</em> in urine (URXMYGE = 1) were
+eligible (see: MGEA_J_R and MGEN_J_R).</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p>Mutations in <em>M. genitalium</em>
+that are characteristic of antibiotic resistance were sought in the Jensen
+Laboratory at the Statens Serum Institut in Copenhagen, Denmark using pristine urine
+specimens received from the National Center for Health Statistics. </p>
+<p>DNA was extracted from 1 mL of
+the transport medium and eluted in 0.1 mL on a Roche MagNaPure 96 instrument. Macrolide
+resistance mutations (MRMs) were detected using a modification of the published
+method<sup> </sup>(Salado-Rasmussen,
+et. al., 2014) by using a reverse transcriptase PCR (rt-PCR) followed
+by PyroMark24 sequencing to detect mutations in the 23S rRNA gene. Quinolone
+resistance-associated mutations (QRAMs) were detected using conventional PCR
+assays detecting the <em>parC</em> gene (Fernandez-Huerta,
+et. al., 2019) and the <em>gyrA</em>
+gene<sup> </sup>(Shimada,
+et. al., 2010) followed by Sanger sequencing.</p>
+<p>All results were quality-checked.</p><h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>Urine specimens stored in
+Aptima transport medium were received and accessioned by the Jensen Laboratory
+at the Statens Serum Institut. After being accessioned, the specimens were
+stored in a secure &minus;80&deg;C freezer until assaying. </p>
+<p>Before analyzing the specimens, the rt-PCR MRM detection method was optimized
+using previously tested <em style="mso-bidi-font-style:normal;">M. genitalium</em>-positive
+and -negative urine specimens in Aptima transport medium received for diagnostic
+testing for MRM in an accredited laboratory (ISO 17025). After optimization,
+the 2017-2018 NHANES urine specimens previously testing positive for <em>M. genitalium</em> by nucleic acid amplification testing (NAAT) were analyzed for MRM and <em style="mso-bidi-font-style:normal;">parC</em> and <em style="mso-bidi-font-style:
+normal;">gyrA</em> resistance mutations in an accredited laboratory environment.</p>
+<p>Specimens not amplified initially were re-analyzed using the double
+amount of extracted DNA template. All entries were double-checked by
+experienced staff. Finalized sequencing results were tabulated and variables
+denoting presence vs. absence of MRM and QRAM were created; both individual
+sequencing results and presence vs. absence data were provided to NCHS.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The data were
+reviewed. Incomplete data or improbable values were sent to the performing
+laboratory for confirmation.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>Only those participants
+aged 14-59 testing positive for <em>Mycoplasma genitalium</em> in urine (URXMYGE = 1)
+were eligible for inclusion in this file (see: MGEA_J_R and MGEN_J_R). This file is intended to be used in conjunction with the MGEA_J_R and MGEN_J_R files.
+Participants who were part of the
+eligible population but who did not have sufficient volume of biospecimens or who did not give consent for their specimens to be used for
+future research are included in the file, but have results listed as missing. Participants who were outside of the eligible population
+were not included in the file.</p>
+<p>Refer to the <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2017">2017&ndash;2018 Laboratory Data Overview</a>&nbsp;for general information on NHANES laboratory data. </p>
+<p>There are over 800 laboratory
+tests performed on NHANES participants. However, not all participants provided
+biospecimens or enough volume for all the tests to be performed. Additionally,
+availability of specimens for surplus projects is lower than for other
+laboratory tests performed on NHANES participants. The specimen availability
+can also vary by age or other population characteristics. Analysts should
+evaluate the extent of missing data in the dataset related to the outcome of
+interest as well as any predictor variables used in the analyses to determine
+whether additional re-weighting for item non-response is necessary.</p>
+<p>Please refer to the NHANES&nbsp;<a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">Analytic Guidelines</a>&nbsp;and the on-line&nbsp;<a href="https://wwwn.cdc.gov/nchs/nhanes/tutorials/">NHANES&nbsp;Tutorial</a>&nbsp;for further details on the use of sample
+weights and other analytic issues.</p>
+<p><strong>Demographic and Other
+Related Variables</strong></p>
+<p>The analysis of NHANES laboratory data must be
+conducted using the appropriate survey design and demographic variables.
+The&nbsp;<a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2017">NHANES 2017-2018 Demographics File</a>&nbsp;contains demographic data, health indicators,
+and other related information collected during household interviews as well as
+the sample weight and design variables. The recommended procedure for variance
+estimation requires use of stratum and PSU variables (SDMVSTRA and SDMVPSU,
+respectively) in the demographic data file.</p>
+<p>This laboratory data file can be linked to the
+other NHANES data files using the unique survey participant identifier (i.e.,
+SEQN).</p></div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>Chua T.P.,
+Vodstrcil L.A., Murray G.L, et al. Evolving patterns of macrolide and
+fluoroquinolone resistance in <em>Mycoplasma genitalium</em>: an updated global
+systematic review and meta-analysis. Lancet Microbe. (2025): 101047.</li>
+          <li>Fernandez-Huerta
+M., Bodiyabadu K., Esperalba J, et al. Multicenter clinical evaluation of a novel
+multiplex real-time PCR (qPCR) assay for detection of fluoroquinolone resistance
+in <em>Mycoplasma genitalium</em>. J Clin Microbiol. (2019) 57(11):e00886-19.</li>
+          <li>Lis R.,
+Rowhani-Rahbar A., Manhart L.E. <em>Mycoplasma genitalium</em> infection and female reproductive
+tract disease: A meta-analysis. Clin Infect Dis. (2015) 61(3): 418-26.</li>
+          <li>Salado-Rasmussen
+K., Jensen J.S. <em>Mycoplasma genitalium</em> testing pattern and macrolide resistance:
+a Danish nationwide retrospective survey. Clin Infect Dis. (2014) 59(1): 24-30.</li>
+          <li>Shimada Y.,
+Deguchi T., Nakane K., et al. Emergence of clinical strains of <em>Mycoplasma
+genitalium</em> harbouring alterations in ParC associated with fluoroquinolone
+resistance. Int J Antimicrob Agents. (2010) 36(3):255-8.</li>
+          <li>Taylor-Robinson
+D., Jensen J.S. <em>Mycoplasma genitalium</em>: from Chrysalis to multicolored
+butterfly. Clin Microbiol Rev. (2011) 24(3):498-514.</li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSMRMMUT">SSMRMMUT - MG 23S rRNA mutation name</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSMRMMUT</dd>
+            <dt>SAS Label: </dt>
+            <dd>MG 23S rRNA mutation name</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Mutations detected in M. genitalium (MG) 23S rRNA by rt-PCR and sequencing (E. coli numbering)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Wild type</td>
+                <td class="values" align="right">25</td>
+                <td class="values" align="right">25</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">A2058C</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">27</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">A2058G</td>
+                <td class="values" align="right">14</td>
+                <td class="values" align="right">41</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">A2058T</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">43</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">A2059C</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">43</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">A2059G</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">49</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">A2059T</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">49</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Other (specify)</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">49</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Not done (did not amplify)</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">58</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSMRM">SSMRM - MG 23S rRNA MRM mutation detected</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSMRM</dd>
+            <dt>SAS Label: </dt>
+            <dd>MG 23S rRNA MRM mutation detected</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Detections of any macrolide resistance mutations (MRM) in in M. genitalium (MG) 23S rRNA by rt-PCR and sequencing (E. coli numbering)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No MRM detected</td>
+                <td class="values" align="right">25</td>
+                <td class="values" align="right">25</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">MRM detected (A2058C, A2058G, A2058T, A2059C, A2059G, A2059T)</td>
+                <td class="values" align="right">24</td>
+                <td class="values" align="right">49</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">18</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSPARMUT">SSPARMUT - MG parC gene mutation name</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSPARMUT</dd>
+            <dt>SAS Label: </dt>
+            <dd>MG parC gene mutation name</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Mutations detected in M. genitalium (MG) parC gene by rt-PCR and sequencing (MG numbering)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Wild type</td>
+                <td class="values" align="right">35</td>
+                <td class="values" align="right">35</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">D87H</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">35</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">D87N</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">35</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">D87Y</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">35</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">S83I</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">35</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">S83N</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">35</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">6</td>
+                <td class="values">S83R</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">35</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">7</td>
+                <td class="values">Mutations in the quinolone resistance determining region of unknown significance (D82N, G81C, G81T, S95N)</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">35</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Other (specify)</td>
+                <td class="values" align="right">6</td>
+                <td class="values" align="right">41</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Not done (did not amplify)</td>
+                <td class="values" align="right">17</td>
+                <td class="values" align="right">58</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSPARSPE">SSPARSPE - MG parC gene other mutation,specify name</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSPARSPE</dd>
+            <dt>SAS Label: </dt>
+            <dd>MG parC gene other mutation,specify name</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Detection of other specific mutations in M. genitalium (MG) parC gene by rt-PCR and sequencing (MG numbering), specify:</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">c234t (Silent)</td>
+                <td class="values" align="right">5</td>
+                <td class="values" align="right">5</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">P62S</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">6</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">61</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSPARQR">SSPARQR - MG parC QRAM mutation detected</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSPARQR</dd>
+            <dt>SAS Label: </dt>
+            <dd>MG parC QRAM mutation detected</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Detections of any quinolone associated resistance mutations (QRAM) in the parC gene in M. genitalium (MG) by rt-PCR and sequencing (MG numbering)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No QRAM detected</td>
+                <td class="values" align="right">41</td>
+                <td class="values" align="right">41</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">QRAM detected (D87H, D87N, D87Y, S83I, S83N, or S83R)</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">41</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">26</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSGYRMUT">SSGYRMUT - MG gyrA gene mutation name</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSGYRMUT</dd>
+            <dt>SAS Label: </dt>
+            <dd>MG gyrA gene mutation name</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Mutations detected in M. genitalium (MG) gyrA gene by rt-PCR and sequencing (MG numbering)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">Wild type</td>
+                <td class="values" align="right">40</td>
+                <td class="values" align="right">40</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">M95I</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">40</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">D99N</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">40</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">D99Y</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">40</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">D99G</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">40</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">8</td>
+                <td class="values">Other (specify)</td>
+                <td class="values" align="right">2</td>
+                <td class="values" align="right">42</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">9</td>
+                <td class="values">Not done (did not amplify)</td>
+                <td class="values" align="right">16</td>
+                <td class="values" align="right">58</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">9</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSGYRSPE">SSGYRSPE - MG gyrA gene other mutation,specify name</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSGYRSPE</dd>
+            <dt>SAS Label: </dt>
+            <dd>MG gyrA gene other mutation,specify name</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Detection of other specific mutations in M. genitalium (MG) gyrA gene by rt-PCR and sequencing (MG numbering), specify:</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">c217t (R73C)</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">1</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">t345c (Silent)</td>
+                <td class="values" align="right">1</td>
+                <td class="values" align="right">2</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">65</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSGYRQR">SSGYRQR - MG gyrA QRAM mutation detected</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSGYRQR</dd>
+            <dt>SAS Label: </dt>
+            <dd>MG gyrA QRAM mutation detected</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Detections of any quinolone associated resistance mutations (QRAM) in the gyrA gene in M. genitalium (MG) by rt-PCR and sequencing (MG numbering)</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">No QRAM detected</td>
+                <td class="values" align="right">42</td>
+                <td class="values" align="right">42</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">QRAM detected (M95I, D99N, D99Y, D99G)</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">42</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">25</td>
+                <td class="values" align="right">67</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SSCH_J_R</title>
+    <meta name="title" content="NHANES 2017-2018: Chlamydia Serology - Serum (Surplus) Data Documentation, Codebook, and Frequencies" />
+    <link rel="stylesheet" href="https://wwwn.cdc.gov/nchs/nhanes/css/documentation.css" />
+  </head>
+  <body class="nhanes-doc">
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Eligible_Sample">Eligible Sample</a>
+          </li>
+          <li>
+            <a href="#Description_of_Laboratory_Methodology">Description of Laboratory Methodology</a>
+          </li>
+          <li>
+            <a href="#Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#References">References</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <ul id="CodebookLinks">
+              <li>
+                <a href="#SEQN">SEQN - Respondent sequence number</a>
+              </li>
+              <li>
+                <a href="#WTSSCTJ2">WTSSCTJ2 - Surplus specimen SSCH_J_R 2 year weights</a>
+              </li>
+              <li>
+                <a href="#SSCTIG">SSCTIG - Anti-C. trachomatis pan-IgG detection</a>
+              </li>
+              <li>
+                <a href="#SSCTIGO">SSCTIGO - Anti-CT pan-IgG optical density</a>
+              </li>
+              <li>
+                <a href="#SSCTIG1">SSCTIG1 - Anti-C. trachomatis IgG1 detection</a>
+              </li>
+              <li>
+                <a href="#SSCTIG1O">SSCTIG1O - Anti-CT IgG1 optical density</a>
+              </li>
+              <li>
+                <a href="#SSCTIG3">SSCTIG3 - Anti-C. trachomatis IgG3 detection</a>
+              </li>
+              <li>
+                <a href="#SSCTIG3O">SSCTIG3O - Anti-CT IgG3 optical density</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>2017-2018 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Chlamydia Serology - Serum (Surplus) (SSCH_J_R)</h3>
+        <h4>RDC Only  Data File: SSCH_J_R.xpt</h4>
+        <h5 class="left">First Published: August 2025</h5>
+        <h5 class="right">Last Revised: NA</h5>
+        <h5 class="left">At this time, this dataset is not available publicly. Access may be obtained through the NCHS Research Data Center (<a href="https://www.cdc.gov/rdc">https://www.cdc.gov/rdc</a>).</h5>
+      </div>
+      <div id="Sections">
+        <h2 id="Component_Description">Component Description</h2><p>Chlamydia serologic assays can
+be used to identify whether someone has been infected with <em style="mso-bidi-font-style:
+normal;">Chlamydia trachomatis</em> (CT, the bacteria that causes chlamydia). IgG
+(pan-IgG, reactive against IgG1, IgG2, IgG3, and IgG4), IgG1, and IgG3 comprise
+the predominant targets in serologic assays used to estimate CT seroprevalence
+(Geisler, et. al., 2012; Waters, et. al., 2024). There are several CT serologic
+assays (Waters, et. al., 2024); some have been used to estimate prior infection
+with chlamydia in nationally representative data (Petersen, et. al., 2021;
+Anyalechi, et. al., 2021). However, few assays can distinguish a recent
+infection from past infection.&nbsp;&nbsp; </p>
+<p>For participants with
+available serum specimens, three mixed-peptide ELISAs (enzyme linked
+immunosorbent assays) were performed to measure serum antibodies to CT.
+Specimens with a positive test for either IgG, IgG1, or IgG3, indicate an
+antibody response to a previous infection with or exposure to CT. It is hypothesized that specimens
+with a positive test for IgG3 indicate a recent prior infection with or recent
+exposure to CT (in the past 1-6 months) (Geisler, et. al., 2012). </p><h2 id="Eligible_Sample">Eligible Sample</h2><p>All examined partcipants aged 14-59 years were eligible.</p><h2 id="Description_of_Laboratory_Methodology">Description of Laboratory Methodology</h2><p>The Hybiske Laboratory at the
+University of Washington in Seattle, Washington, USA performed the mixed
+peptide ELISAs on serum specimens received from the National Center for Health
+Statistics. </p>
+<p>Prior to this study, positive
+and negative cutoffs for IgG, IgG1, and IgG3 for the mixed peptide ELISAs were
+established by testing a receiver operating characteristic (ROC) curve on 48 serum
+samples with a known history of CT and preexisting CT serologic data. The mixed
+peptide ELISAs were repeated five to six times per serum sample to obtain
+several optical density (OD) 450 nm values. The mean of these OD values for
+each serum sample was used in the ROC curve where the sum of sensitivity and
+specificity was maximized. The &lsquo;cutpointr&rsquo; package (Thiele, et. al., 2021) in
+R/RStudio<sup> </sup>(Posit Team, 2023; R Core Team, 2022) was used to calculate
+the ROC curve. Background subtracted OD values greater than or equal to 0.0646,
+0.0222, and 0.0108 for IgG, IgG1, and IgG3, respectively, are considered
+positive and OD values below these cut points are considered negative. </p>
+<p>Assays were run according to
+standardized, published protocols for the CT mixed peptide ELISA assays (Rahman,
+et. al., 2018a; Rahman, et. al., 2018b). All results were quality checked and
+summarized in the accompanying data file.</p><h2 id="Laboratory_Quality_Assurance_and_Monitoring">Laboratory Quality Assurance and Monitoring</h2><p>Serum specimens were received
+and accessioned by the Hybiske Laboratory at the University of Washington.
+After being accessioned, the specimens were stored in a secure &minus;80&deg;C freezer
+until assaying. </p>
+<p>Prior to assaying the specimens, the CT mixed peptide ELISAs were verified
+in-house using previously-tested specimens for which CT infection and serology
+were established. After validation, the NHANES 2017-2018 serum specimens were
+analyzed by the CT mixed peptide ELISAs. ELISA serologies were performed in
+singlet.</p>
+<p>ELISA absorbance values were normalized by Hybiske lab staff, entered
+into a spreadsheet database, and quality checked by other staff. All data
+entries were reviewed each week as part of quality control. </p>
+<p>For samples that had abnormally high absorbance readings for control
+wells (non-CT peptides), samples were rerun and a manual quality check was
+performed. The value of the second reading was used for final reporting when
+results were discordant. Finalized individual absorbance results were tabulated
+and variables denoting serostatus (seropositive vs. seronegative) for each
+mixed peptide ELISA were created; both individual absorbance results and
+serostatus data were provided to NCHS.</p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The data were reviewed. Incomplete data or improbable values were sent to the performing laboratory for confirmation.</p><h2 id="Analytic_Notes">Analytic Notes</h2><p>Refer to the <a href="https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewlab.aspx?BeginYear=2017">2017&ndash;2018 Laboratory Data Overview</a>  for general information on NHANES laboratory data.</p>
+<p>There are over 800 laboratory tests performed on NHANES participants. However, not all participants provided biospecimens or enough volume for all the tests to be performed. Additionally, availability of specimens for surplus projects is lower than for other laboratory tests performed on NHANES participants. The specimen availability can also vary by age or other population characteristics. Analysts should evaluate the extent of missing data in the dataset related to the outcome of interest as well as any predictor variables used in the analyses to determine whether additional re-weighting for item non-response is necessary.</p>
+<p>Please refer to the NHANES <a href="https://wwwn.cdc.gov/nchs/nhanes/analyticguidelines.aspx">Analytic Guidelines</a>  and the on-line NHANES <a href="https://wwwn.cdc.gov/nchs/nhanes/tutorials/">Tutorial</a>  for further details on the use of sample weights and other analytic issues.</p>
+<p><strong>Subsample Weights</strong></p>
+<p>The analytes included in this dataset were measured in examined participants aged 14&ndash;59 years and older. Special sample weights are required to analyze these data properly. Specific sample weights for this subsample, WTSSCTJ2, are included in this data file and should be used when analyzing these data. The sample weights created for this file used the examination sample weight, i.e., WTMEC2YR, as the base weight. The base weight was adjusted for additional nonresponse to these lab tests and re-poststratified to the population total using sex, age, and race/Hispanic origin. Participants who were part of the eligible population but who did not provide a serum specimen, or did not have sufficient volume of biospecimens, or who did not give consent for their specimens to be used for future research are included in the file, but they have a sample weight assigned &ldquo;0&rdquo; in their records.</p>
+<p><strong>Demographic and Other Related Variables</strong></p>
+<p>The analysis of NHANES laboratory data must be conducted using the appropriate survey design and demographic variables. The <a href="https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics&amp;CycleBeginYear=2017">NHANES 2017-2018 Demographics File</a>  contains demographic data, health indicators, and other related information collected during household interviews as well as the sample design variables. The recommended procedure for variance estimation requires use of stratum and PSU variables (SDMVSTRA and SDMVPSU, respectively) in the demographic data file.</p>
+<p>This laboratory data file can be linked to the other NHANES data files using the unique survey participant identifier (i.e., SEQN).</p></div>
+      <div id="References">
+        <h2>References</h2>
+        <ul>
+          <li>Anyalechi G.E., Hong J., Danavall D.C., et al. High plasmid gene protein 3 (Pgp3) <em>Chlamydia trachomatis</em> seropositivity, pelvic inflammatory disease, and infertility among women, National Health and Nutrition Examination Survey, United States, 2013-2016. Clin Infect Dis. (2021) 73(8):1507-16.</li>
+          <li>Geisler W.M., Morrison S.G., Doemland M.L., et al. Immunoglobulin-specific responses to <em>Chlamydia</em> elementary bodies in individuals with and at risk for genital chlamydial infection. J Infect Dis. (2012) 206:1836-43.</li>
+          <li>Petersen M.R., Patel E.U., Grabowski M.K., Gaydos C.A., Quinn T.C, Tobian A.A.R. Seroprevalence of <em>Chlamydia trachomatis</em> among female adults in the United States: The National Health and Nutrition Examination Surveys. Clin Infect Dis. (2021) 73(3):e629-37.</li>
+          <li>Posit team. RStudio: Integrated Development Environment for R. Published online 2023. Accessed January 13, 2024. http://www.posit.co/</li>
+          <li>R Core Team. R: A language and environment for statistical computing. R Foundation for Statistical Computing. (2022) https://www.R-project.org/</li>
+          <li>Rahman K.S., Darville T., Russell A.N., et al. Comprehensive molecular serology of human <em>Chlamydia trachomatis</em> infections by peptide enzyme-linked immunosorbent assays. mSphere. (2018a) 3.</li>
+          <li>Rahman K.S., Darville T., Wiesenfeld H.C., et al. Mixed <em>Chlamydia trachomatis</em> peptide antigens provide a specific and sensitive single-well colorimetric enzyme-linked immunosorbent assay for detection of human anti-C. <em>trachomatis</em> antibodies. mSphere (2018b) 3.</li>
+          <li>Thiele C., Hirschfeld G. cutpointr: improved estimation and validation of optimal cutpoints in R. J Stat Softw. (2021) 98(11):1-27.</li>
+          <li>Waters M.B., Hybiske K., Ikeda R., et al. <em>Chlamydia trachomatis</em> seroassays used in epidemiologic research: a narrative review and practical considerations. J Infect Dis. (2024) 230(1):250-62.</li>
+        </ul>
+      </div>
+      <div id="Codebook">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SEQN">SEQN - Respondent sequence number</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SEQN</dd>
+            <dt>SAS Label: </dt>
+            <dd>Respondent sequence number</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Respondent sequence number.</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="WTSSCTJ2">WTSSCTJ2 - Surplus specimen SSCH_J_R 2 year weights</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">WTSSCTJ2</dd>
+            <dt>SAS Label: </dt>
+            <dd>Surplus specimen SSCH_J_R 2 year weights</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Surplus specimen SSCH_J_R 2 year weights</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0 to 507424.70173</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">4092</td>
+                <td class="values" align="right">4092</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">4092</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSCTIG">SSCTIG - Anti-C. trachomatis pan-IgG detection</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSCTIG</dd>
+            <dt>SAS Label: </dt>
+            <dd>Anti-C. trachomatis pan-IgG detection</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Detection of anti-C. trachomatis (CT) pan-IgG (IgG1, IgG2, IgG3, IgG4) by mixed peptide ELISA</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">CT IgG below threshold</td>
+                <td class="values" align="right">2841</td>
+                <td class="values" align="right">2841</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">CT IgG detected</td>
+                <td class="values" align="right">389</td>
+                <td class="values" align="right">3230</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">862</td>
+                <td class="values" align="right">4092</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSCTIGO">SSCTIGO - Anti-CT pan-IgG optical density</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSCTIGO</dd>
+            <dt>SAS Label: </dt>
+            <dd>Anti-CT pan-IgG optical density</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Optical density (OD) 450 nm values for anti-C. trachomatis (CT) pan-IgG (IgG1, IgG2, IgG3, IgG4) on mixed peptide ELISA</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">-0.805 to 0.482</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3230</td>
+                <td class="values" align="right">3230</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">862</td>
+                <td class="values" align="right">4092</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSCTIG1">SSCTIG1 - Anti-C. trachomatis IgG1 detection</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSCTIG1</dd>
+            <dt>SAS Label: </dt>
+            <dd>Anti-C. trachomatis IgG1 detection</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Detection of anti-C. trachomatis (CT) IgG1 by mixed peptide ELISA</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">CT IgG1 below threshold</td>
+                <td class="values" align="right">2735</td>
+                <td class="values" align="right">2735</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">CT IgG1 detected</td>
+                <td class="values" align="right">495</td>
+                <td class="values" align="right">3230</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">862</td>
+                <td class="values" align="right">4092</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSCTIG1O">SSCTIG1O - Anti-CT IgG1 optical density</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSCTIG1O</dd>
+            <dt>SAS Label: </dt>
+            <dd>Anti-CT IgG1 optical density</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Optical density (OD) 450 nm values for anti-C. trachomatis (CT) IgG1 on mixed peptide ELISA</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">-0.474 to 0.849</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3230</td>
+                <td class="values" align="right">3230</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">862</td>
+                <td class="values" align="right">4092</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSCTIG3">SSCTIG3 - Anti-C. trachomatis IgG3 detection</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSCTIG3</dd>
+            <dt>SAS Label: </dt>
+            <dd>Anti-C. trachomatis IgG3 detection</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Detection of anti-C. trachomatis (CT) IgG3 by mixed peptide ELISA</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">0</td>
+                <td class="values">CT IgG3 below threshold</td>
+                <td class="values" align="right">2175</td>
+                <td class="values" align="right">2175</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">CT IgG3 detected</td>
+                <td class="values" align="right">1055</td>
+                <td class="values" align="right">3230</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">862</td>
+                <td class="values" align="right">4092</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="SSCTIG3O">SSCTIG3O - Anti-CT IgG3 optical density</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">SSCTIG3O</dd>
+            <dt>SAS Label: </dt>
+            <dd>Anti-CT IgG3 optical density</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Optical density (OD) 450 nm values for anti-C. trachomatis (CT) IgG3 on mixed peptide ELISA</dd>
+            <dt>Target: </dt>
+            <dd> Both males and females 14 YEARS -
+			59 YEARS</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">-0.35 to 0.971</td>
+                <td class="values">Range of Values</td>
+                <td class="values" align="right">3230</td>
+                <td class="values" align="right">3230</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">862</td>
+                <td class="values" align="right">4092</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
