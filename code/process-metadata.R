@@ -1,4 +1,7 @@
 
+
+if (!exists("%||%")) `%||%` <- function (x, y) if (is.null(x)) y else x
+
 ## version of rbind() that does not add row names
 
 rbind0 <- function(...) {

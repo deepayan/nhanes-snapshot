@@ -112,7 +112,7 @@ metadata and codebooks. This step is a little slow (~15 minutes) as it
 needs to process all documentation files one by one. The combined
 results are stored in `metadata/all_metadata.rds`.
 
-The second step is to run 
+The second step (also slow) is to run 
 
 ```sh
 R --vanilla < code/process-metadata.R
