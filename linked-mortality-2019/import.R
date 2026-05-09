@@ -40,7 +40,7 @@ import_cycle <- function(cycle, eligible.only = TRUE)
 {
     infile <- sprintf("NHANES_%s_MORT_2019_PUBLIC.dat", cycle)
     ## read in the fixed-width format ASCII file
-    mort <- read.fwf(file = srvyin,
+    mort <- read.fwf(file = infile,
                      widths = c(6, -8, 1, 1, 3, 1, 1, -21, 3, 3),
                      header = FALSE,
                      col.names = c("SEQN", "eligstat", "mortstat",
@@ -83,6 +83,8 @@ mort <- subset(mort, eligstat == 1)
 
 
 
+
+
 #UCOD_LEADING: Underlying Cause of Death: Recode
 xtabs(~ ucod_leading, mort, addNA = TRUE)
 # 1 = Diseases of heart (I00-I09, I11, I13, I20-I51)
@@ -108,6 +110,7 @@ table(mort$hyperten, useNA="ifany")
 # 0 = No - Condition not listed as a multiple cause of death
 # 1 = Yes - Condition listed as a multiple cause of death
 # <NA> = Assumed alive, under age 18, ineligible for mortality follow-up, or MCOD not available
+
 
 saveRDS(mort, file = "nhanes-linked-mortality.rds")
 
